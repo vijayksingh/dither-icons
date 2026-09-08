@@ -1,4 +1,5 @@
 import type {ReactNode} from 'react';
+import {ControlArtwork} from './ControlArtwork';
 import {CorrespondenceArtwork} from './CorrespondenceArtwork';
 import {FileArtwork} from './FileArtwork';
 import {DirectionalArtwork} from './DirectionalArtwork';
@@ -12,6 +13,7 @@ const Accent=({part,children}:{part:string;children:ReactNode})=><g data-part={p
 
 export function CraftedArtwork({name,draw,texture}:Props){
  if(!studies[name])return null;
+ if(['play','pause','volume','code'].includes(name))return <ControlArtwork name={name} draw={draw} texture={texture}/>;
  if(['book','mail','message','send'].includes(name))return <CorrespondenceArtwork name={name} draw={draw} texture={texture}/>;
  if(['folder','file','copy','trash'].includes(name))return <FileArtwork name={name} draw={draw} texture={texture}/>;
  if(['arrow-right','arrow-up','external-link','upload'].includes(name))return <DirectionalArtwork name={name} draw={draw} texture={texture}/>;

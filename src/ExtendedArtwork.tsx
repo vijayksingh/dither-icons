@@ -9,10 +9,6 @@ export function ExtendedArtwork({name,draw,texture}:{name:string;draw:Draw;textu
  const definition=definitions.find(d=>d.name===name)!;
  const shape=(index:number)=>{const part=definition.parts[index];return <g transform={part.transform}>{draw(part.path!)}</g>};
  switch(name){
-  case 'play':return <><g data-part="triangle">{shape(0)}</g>{accent('start-light',stroke('M2.5 12h2.3'))}</>;
-  case 'pause':return <><g data-part="bar-left">{draw('M5 4a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1Z')}</g><g data-part="bar-right">{draw('M14 4a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1Z')}</g>{accent('seats',stroke('M6 22h3M15 22h3',.5))}</>;
-  case 'volume':return <><g data-part="speaker">{shape(0)}</g><g data-part="wave-near">{draw('M15.5 9a4 4 0 0 1 0 6l-1.2-1.6a2 2 0 0 0 0-2.8Z')}</g><g data-part="wave-far">{draw('M17 6a8 8 0 0 1 0 12l-1.2-1.6a6 6 0 0 0 0-8.8Z')}{accent('sound-light',stroke('M18.3 8.2q2 3.8 0 7.6',.45))}</g></>;
-  case 'code':return <><g data-part="bracket-left">{shape(0)}</g><g data-part="bracket-right">{shape(1)}</g><g data-part="slash">{shape(2)}{accent('syntax-light',stroke('M12.1 11l.7-3.3',.55))}</g></>;
   case 'terminal':return <>{shape(0)}<g data-part="prompt">{shape(1)}</g><g data-part="cursor">{shape(2)}</g>{accent('line-light',stroke('M11.5 10.5h5.5',.55))}</>;
   case 'cpu':return <>{shape(0)}{accent('input',stroke('M2.5 8H7l2.5 2.5',.75))}<g data-part="die">{shape(1)}{accent('die-light',stroke('M10 13v-3h3',.7))}</g>{accent('output',stroke('M14.5 13.5L17 16h4.5',.75))}</>;
   case 'chart':return <>{shape(0)}<g data-part="bar-small">{shape(1)}{accent('cap-small',stroke('M6.4 12.5h2.2',.7))}</g><g data-part="bar-medium">{shape(2)}{accent('cap-medium',stroke('M12.4 7.5h2.2',.7))}</g><g data-part="bar-tall">{shape(3)}{accent('cap-tall',stroke('M18.4 3.5h2.2',.7))}</g></>;

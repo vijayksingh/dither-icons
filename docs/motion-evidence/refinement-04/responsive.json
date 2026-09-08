@@ -1,0 +1,181 @@
+{
+  "client": 390,
+  "columns": [
+    173,
+    173,
+    173,
+    173
+  ],
+  "scroll": 390,
+  "keyboard": [
+    {
+      "icon": "play",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "6.25px 12px",
+          "part": "triangle",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "6.55px 12px",
+          "part": "release-edge",
+          "transform": "matrix(1, 0, 0, 0.35, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "4.9px 12px",
+          "part": "launch-stroke",
+          "transform": "matrix(0.18, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "4.5px 12px",
+          "part": "release-fan",
+          "transform": "matrix(0.45, 0, 0, 0.55, 0, 0)"
+        }
+      ],
+      "playing": "true"
+    },
+    {
+      "icon": "pause",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "7.75px 21px",
+          "part": "bar-left",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "origin": "16.25px 21px",
+          "part": "bar-right",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "7.75px 21.45px",
+          "part": "seat-left",
+          "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "16.25px 21.45px",
+          "part": "seat-right",
+          "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "4.85px 20.65px",
+          "part": "stop-left",
+          "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "19.15px 20.65px",
+          "part": "stop-right",
+          "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+        }
+      ],
+      "playing": "true"
+    },
+    {
+      "icon": "volume",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "7px 12px",
+          "part": "cone",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "12.05px 12px",
+          "part": "diaphragm-light",
+          "transform": "matrix(1, 0, 0, 0.35, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "origin": "11px 12px",
+          "part": "wave-near",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "origin": "11px 12px",
+          "part": "wave-far",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "11px 12px",
+          "part": "wave-light",
+          "transform": "matrix(1, 0, 0, 0.45, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "11px 12px",
+          "part": "sound-front",
+          "transform": "matrix(0.82, 0, 0, 0.82, 0, 0)"
+        }
+      ],
+      "playing": "true"
+    },
+    {
+      "icon": "code",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "6px 12px",
+          "part": "bracket-left",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "6px 12px",
+          "part": "registration-left",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "18px 12px",
+          "part": "bracket-right",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "18px 12px",
+          "part": "registration-right",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "12px 12px",
+          "part": "slash",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 12px",
+          "part": "syntax-trace",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "1.9px 12px",
+          "part": "alignment-left",
+          "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "22.1px 12px",
+          "part": "alignment-right",
+          "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": "true"
+    }
+  ],
+  "errors": []
+}

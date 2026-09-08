@@ -1,11 +1,8 @@
+import {code} from './code';
 import {motion,actor,pose,light,ease} from './authoring';
 /** MOT-02/03/05: syntax, readiness, signal flow, and comparison have different clocks. */
 export const development={
- code:motion(1060,'Paired brackets make room for an expression.',['Invite','Enclose','Align'],[
-  actor('bracket-left','7px 12px',[pose(0,'none'),pose(130,'translateX(.4px)'),pose(380,'translateX(-.65px)',ease.settle),pose(590,'translateX(-.65px)'),pose(880,'translateX(.08px)'),pose(1060,'none')]),
-  actor('bracket-right','17px 12px',[pose(0,'none'),pose(160,'translateX(-.4px)'),pose(420,'translateX(.65px)',ease.settle),pose(630,'translateX(.65px)'),pose(920,'translateX(-.08px)'),pose(1060,'none')]),
-  actor('slash','12px 12px',[pose(0,'none'),pose(240,'none'),pose(500,'rotate(4deg)',ease.settle),pose(730,'rotate(4deg)'),pose(920,'rotate(-.4deg)'),pose(1060,'none')]),
-  actor('syntax-light','12px 12px',[light(0,0),light(350,0),light(550,.5),light(850,0),light(1060,0)])]),
+ code,
  terminal:motion(1160,'A prompt invites the cursor into readiness.',['Prompt','Respond','Ready'],[
   actor('prompt','7px 12px',[pose(0,'none'),pose(130,'translateX(-.3px)'),pose(360,'translateX(.75px)',ease.settle),pose(520,'translateX(.65px)'),pose(830,'translateX(-.08px)'),pose(1160,'none')]),
   actor('cursor','15px 17px',[pose(0,'none'),pose(300,'none'),pose(440,'scale(.82,.55)'),pose(610,'scale(1.04,1.1)',ease.settle),pose(820,'scale(.995,.99)'),pose(1030,'none'),pose(1160,'none')]),

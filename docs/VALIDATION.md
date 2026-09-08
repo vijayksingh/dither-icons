@@ -170,3 +170,31 @@ Scope: **book, mail, message, send**, the next four in the motion catalog. Indiv
 - Existing checks continue covering all 36 timelines and 108 material variants, real target binding, ordered clocks, transform/opacity-only tracks, exact identity return, hidden accent endpoints, accessibility, and shared CSS fallback.
 - ESM library, declarations, gallery, and downloadable tarball built. Library output is 112.74KB before compression; named imports still share the complete catalog. The unchanged React peer contract was previously tested with React 18; a fresh consumer install was not repeated for this artwork-only batch.
 - Standalone CSS SVG shares the choreography and retains the documented hover-departure limitation. No publication or deployment.
+
+## Focused refinement 04 — 2026-09-09
+
+Scope: **play, pause, volume, code**, the next four in catalog order. Each received its own Interface Craft critique, timestamp storyboard, geometry, and motion configuration under MOT-01–16. Refinement / 04 is the default study family. The playback engine and the other 32 timelines remain unchanged.
+
+### Rendered decisions
+
+- Play: a softly resolved, inset triangle gathers pressure, releases forward, and coasts. Attached rear-edge light precedes an axial stroke and two smaller pressure marks. The entire outlined contour stays inside the viewBox through the stretch.
+- Pause: narrower rounded bars make two small vertical arrivals 45ms apart. Both feet stop at y=21 before compression. Each contact gives its own seat light and short outward tick. The conclusion holds still for more than 300ms; the bars do not squeeze together.
+- Volume: a fixed neck, independently flexing cone, two concentric rounded wave bands, and a fine transient outer wavefront. The source leads the near wave, far wave, and final front. Outline uses centerline arcs and open joined speaker contours to avoid heavy doubled narrow bands or a seam at the neck.
+- Code: mirrored chevrons share one opening and registration clock. A short clipped highlight travels down the existing slash; the slash accommodates slightly. Attached terminal-edge light and two exterior ticks give the shared closure its payoff. Solid can absorb the interior trace without losing the gesture.
+
+### Browser evidence and interaction
+
+- Eight fresh [native browser reference poses](motion-evidence/refinement-04/): 0%, 10%, 30%, 40%, 50%, 62%, 82%, and 100%. `poses.json` records every named part's computed transform, origin, and opacity. The 0% and 100% records are identical for all four icons.
+- Actual-speed playback inspected through release, paired contact, propagation, registration, and recovery. `playback.json` records all four active at approximately 320, 441, 636, and 801ms, and idle at 1401ms. Normal durations are 970 / 1040 / 1280 / 1160ms. Half-speed continuous playback was also reviewed; separate impact and registration screenshots capture those windows.
+- Dark Iris dither and outline, plus light Cobalt solid, reviewed at the 112px study size. The three media icons and Code were also inspected in the collection at 24px solid and 64px dither. Compact icon recognition does not depend on the accents. Solid or outline remains the recommendation for small controls; dither benefits from 48px upward.
+- Paused dither-to-outline switching at 40% preserved all part transforms, origins, and opacities exactly. `material-continuity.json` contains both records, including the source-attached highlights and clipped code trace.
+- Enter followed by Tab departure was exercised on each study. Each gesture remained active after departure and all returned to idle afterward. Reduced-motion emulation produced zero playing icons, zero transformed parts, and zero visible accents. Motion-off disabled all four study buttons. `lifecycle.json` captures these states; idle is represented by an absent `data-playing` attribute.
+- At 390 CSS px, client and scroll widths both measured 390px. Study buttons used two 173px columns, and keyboard replay started all four. `responsive.json` captures this layout and an empty browser-error log. This is layout and keyboard verification, not physical-device touch testing; no mobile screenshot is used as evidence because the native capture did not reflect the emulated viewport correctly.
+- The static study surface has no loading, empty, or error data states. Disabled, focus, active playback, departure, light/dark, reduced-motion, material, and relevant size states were inspected. The shared hover lifecycle was not changed.
+
+### Automated and package checks
+
+- TypeScript and **22 tests passed**. Four new tests cover Play's contour bounds including outline stroke; Pause's fixed feet, gap, contact timing, and held stillness; Volume's attached neck, separated wave bands, and response order; and Code's mirrored interpolation and unique trace clips.
+- Existing checks cover all 36 timelines and 108 material variants, complete ordered clocks, actual target binding, transform/opacity-only tracks, identity return, hidden accent endpoints, accessibility, CSS fallback, and earlier geometric relationships.
+- ESM library, declarations, gallery, and downloadable tarball built successfully. Library output is 126.65KB before compression. The unchanged React peer contract was tested in an earlier pass; no fresh consumer install was repeated for this artwork/timing batch.
+- Standalone CSS SVG shares the choreography and retains the documented hover-departure limitation. No publication or deployment.

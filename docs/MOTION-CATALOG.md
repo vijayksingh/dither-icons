@@ -18,10 +18,10 @@ The four accepted foundation performances remain intact. The remaining 32 use in
 | [mail](icon-reviews/mail.md) | an envelope containing correspondence | Unfold / Reveal / Tuck away | 1360ms |
 | [message](icon-reviews/message.md) | an ongoing conversation or a short thought | Gather / Answer / Resolve | 1180ms |
 | [send](icon-reviews/send.md) | direct a message toward its destination | Gather / Launch / Glide home | 1220ms |
-| [play](icon-reviews/play.md) | start forward progression | Load / Start / Coast | 800ms |
-| [pause](icon-reviews/pause.md) | arrest motion and hold position | Brake / Hold / Relax | 840ms |
-| [volume](icon-reviews/volume.md) | sound propagating away from a source | Source / Near / Far | 1100ms |
-| [code](icon-reviews/code.md) | a bounded expression between delimiters | Invite / Enclose / Align | 1060ms |
+| [play](icon-reviews/play.md) | start forward progression | Gather / Release / Coast | 970ms |
+| [pause](icon-reviews/pause.md) | arrest motion and hold position | Take up / Seat / Hold | 1040ms |
+| [volume](icon-reviews/volume.md) | sound propagating away from a source | Source / Propagate / Dissipate | 1280ms |
+| [code](icon-reviews/code.md) | a bounded expression between delimiters | Open / Trace / Align | 1160ms |
 | [terminal](icon-reviews/terminal.md) | a command prompt ready for input | Prompt / Respond / Ready | 1160ms |
 | [cpu](icon-reviews/cpu.md) | receive a signal, process it, emit a response | Receive / Process / Respond | 1280ms |
 | [chart](icon-reviews/chart.md) | compare ordered quantities against a shared baseline | Compare / Emphasize / Resolve | 1260ms |
@@ -55,7 +55,11 @@ The subsequent polish pass keeps these same four: finer folder planes and a cont
 
 ## Focused refinement 03
 
-The next bounded batch is **book, mail, message, and send**. **Refinement / 03** is the default study group. Book turns a page onto a receiving bed; Mail reveals a letter through a properly layered flap; Message carries a readable dot sequence into one conversational response; Send flexes a folded wing and leaves a staggered wake. Each has an independent Interface Craft report, named timing source, and new browser references in `motion-evidence/refinement-03/`. The preceding twelve refined performances remain unchanged.
+The next bounded batch is **book, mail, message, and send**. Choose **Refinement / 03** to review this group. Book turns a page onto a receiving bed; Mail reveals a letter through a properly layered flap; Message carries a readable dot sequence into one conversational response; Send flexes a folded wing and leaves a staggered wake. Each has an independent Interface Craft report, named timing source, and new browser references in `motion-evidence/refinement-03/`. The preceding twelve refined performances remain unchanged.
+
+## Focused refinement 04
+
+The next bounded batch is **play, pause, volume, and code**. **Refinement / 04** is now the default study group. Play releases a short wake and coasts; Pause arrests two feet in a small stagger and finishes in stillness; Volume carries pressure from its fixed source through concentric waves; Code scans its existing slash before paired registration. Each has its own timing module, Interface Craft report, and browser references in `motion-evidence/refinement-04/`. Earlier accepted performances retain their tracks.
 
 ## How to use these references
 
