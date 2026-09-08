@@ -21,6 +21,7 @@ These rules encode the accepted Bell, Heart, Download, and Layers studies. Apply
 | MOT-13 | Verify the whole sequence | Inspect rest, anticipation, action, recovery, and rest again. Review at actual size and actual speed, then slow/scrub to diagnose. |
 | MOT-14 | Do not simulate app success | A library preview is a gesture study. It does not assert that a file downloaded, a message sent, or a setting changed. |
 | MOT-15 | Review meaning individually | Apply Interface Craft critique and storyboard to each icon. Record meaning, invariant, named parts, causal timing, and rendered evidence before calling that icon complete. |
+| MOT-16 | Make the climax legible | Give the strongest action a brief, localized response: tip rays after extension, an updraft behind a lift, a corner echo after reaching out, or a flare after release. Place it at the cause, let it peak just after the action, then decay independently. A technically smooth gesture with no perceptible payoff is unfinished. |
 
 ## Per-icon process
 
@@ -31,3 +32,5 @@ These rules encode the accepted Bell, Heart, Download, and Layers studies. Apply
 5. Check the neutral ending, repeated input, reduced motion, and SVG export. Record the inspected frames and remaining limits.
 
 The four accepted studies remain reference examples. Newly finished icons use the same native playback lifecycle and inspector. Standalone CSS hover exports share the tracks but cannot continue after pointer departure; React supplies that stronger lifecycle contract.
+
+The 2026-09-09 focused refinement adds MOT-16 after user feedback that the new icons lacked Download's satisfying impact. Apply it through the object's own meaning; do not turn every gesture into a collision. The current review batch is exactly arrow-right, arrow-up, external-link, and upload.

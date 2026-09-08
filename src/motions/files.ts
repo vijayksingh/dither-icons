@@ -1,10 +1,8 @@
+import {upload} from './upload';
 import {motion,actor,pose,light,ease} from './authoring';
 /** MOT-02/03/05: hinges, sources, and containers define the motion. */
 export const files={
- upload:motion(1000,'Brace below. Release upward.',['Brace','Release','Return'],[
-  actor('arrow','12px 10px',[pose(0,'none'),pose(130,'translateY(.65px)'),pose(370,'translateY(-1.5px)',ease.settle),pose(580,'translateY(-1.1px)'),pose(830,'translateY(.12px)'),pose(1000,'none')]),
-  actor('tray','12px 20px',[pose(0,'none'),pose(140,'scale(1.04,.91)'),pose(330,'scale(.985,1.025)',ease.settle),pose(680,'none'),pose(1000,'none')]),
-  actor('wake','12px 17px',[light(0,0,'scaleY(.3)'),light(230,0,'scaleY(.3)'),light(430,.65,'translateY(-.5px) scaleY(1)'),light(720,0,'translateY(-1.2px) scaleY(.5)'),light(1000,0)])]),
+ upload,
  folder:motion(1160,'A cover opens to reveal what it holds.',['Unseat','Reveal','Close'],[
   actor('cover','12px 20px',[pose(0,'none'),pose(110,'scaleY(1.025)'),pose(390,'scaleY(.7)',ease.settle),pose(650,'scaleY(.7)'),pose(960,'scaleY(1.025)'),pose(1160,'none')]),
   actor('paper','12px 12px',[pose(0,'none'),pose(200,'none'),pose(470,'translateY(-2px)',ease.settle),pose(660,'translateY(-2px)'),pose(920,'translateY(.1px)'),pose(1160,'none')])]),

@@ -1,4 +1,5 @@
 import type {ReactNode} from 'react';
+import {DirectionalArtwork} from './DirectionalArtwork';
 import {ExtendedArtwork} from './ExtendedArtwork';
 import {studies} from './choreography';
 
@@ -9,6 +10,7 @@ const Accent=({part,children}:{part:string;children:ReactNode})=><g data-part={p
 
 export function CraftedArtwork({name,draw,texture}:Props){
  if(!studies[name])return null;
+ if(['arrow-right','arrow-up','external-link','upload'].includes(name))return <DirectionalArtwork name={name} draw={draw} texture={texture}/>;
  if(!['bell','heart','download','layers'].includes(name))return <ExtendedArtwork name={name} draw={draw} texture={texture}/>;
  if(name==='bell')return <>
   <g data-part="shell">{draw('M5.5 17.5c1.5-1.7 1.5-3.5 1.5-7.5a5 5 0 0 1 10 0c0 4 0 5.8 1.5 7.5Z')}<path d="M10.8 4.8V4a1.2 1.2 0 0 1 2.4 0v.8" fill="none" stroke="currentColor" strokeWidth=".8" opacity=".6"/></g>

@@ -1,46 +1,45 @@
-# external-link: Interface Craft review
+# external-link: Interface Craft refinement 01
 
 ## Context
-An SVG action icon in a reusable developer library. Its semantic meaning is **open another destination while retaining the current context**. It appears in routine controls where recognition matters more than spectacle.
+**Meaning:** open another destination while retaining the source context. The frame is the source; the diagonal arrow points beyond it. This replaces the previous rollout review.
 
 ## First Impressions
-Moving the entire glyph loses the relationship between a source and a destination.
+The old arrow moved outward, but the frame also drifted slightly. Its small corner highlight did not make the destination feel distinct. The source had no reason to move.
 
 ## Visual Design
-**Identity boundary** — Retain both the frame and the diagonal arrow. Stable dither follows the contour. Color inherits the selected palette; accents use the same ink and stay below the primary silhouette in visual weight. Typography and card framing belong to the shared inspector, not the glyph.
+The frame is now completely static. The outer corner leads a connected diagonal shaft; the tail follows later through the opening. This produces a reach and then a follow-through, rather than one rigid diagonal nudge. A finer outer corner briefly echoes the destination at the crest. It remains separate from the main corner and never becomes a second full window.
+
+The shaft is drawn in a fixed diagonal coordinate frame with positive local coordinates, preserving its entire grain mask. Open outline contours meet with round caps, avoiding an artificial diagonal crossbar.
 
 ## Interface Design
-The missed opportunity is to express **open another destination while retaining the current context** through a causal gesture. Hold the source frame while the corner arrow reaches outward; frame response follows at a fraction of the travel. The inspector exposes replay and timing only when requested; the icon itself adds no controls or labels.
+The head reaches outward at 340ms. The destination echo crests at 430ms. The tail follows by 520ms while the outer corner holds its position. A brief reading interval precedes the return. The source remains available visually throughout; there is no success badge or navigation side effect.
 
 ## Consistency & Conventions
-Retain the conventional glyph. Use the shared hover, focus, click, reduced-motion, and completion contracts. MOT-01, MOT-02, MOT-03, MOT-04, MOT-05, MOT-08, MOT-09, MOT-10, MOT-11, MOT-12, MOT-14, MOT-15 apply.
+MOT-01–13, MOT-14, MOT-15, MOT-16. The stable frame follows Download's stable-reference principle, while its climax expresses opening elsewhere rather than impact. Runtime and inline SVG share the same clock and named actors.
 
 ## User Context
-Do not fly offscreen or imply an actual window has opened. Recognizability must survive a brief glance and the still-motion variant.
+This glyph is often small and appears beside a text link. Both the open frame and upper-right corner must remain recognizable without the echo. The effect adds spatial punctuation rather than changing the conventional meaning.
 
-## Top Opportunities
-1. Hold the source frame while the corner arrow reaches outward; frame response follows at a fraction of the travel.
-2. Retain both the frame and the diagonal arrow.
-3. Do not fly offscreen or imply an actual window has opened.
+## Top Opportunities addressed
+1. Hold the source frame still.
+2. Let the corner lead before the tail leaves the source.
+3. Echo the destination exactly at that reach, then clear the extra line.
 
-## Encoded storyboard and review
+## Encoded storyboard
+Source: [externalLink.ts](../../src/motions/externalLink.ts). `TIMING`, `LINK_SHAFT`, `CORNER`, `TAIL`, `ECHO`, and `EASING` expose its independent choreography. The diagonal joint is checked in both axes between keyframes.
 
-**Duration:** 920ms. **Sequence:** Anchor / Reach / Return.
-
-Timing source: [navigation.ts](../../src/motions/navigation.ts). Geometry binds each named track in `CraftedArtwork.tsx` or `ExtendedArtwork.tsx`. Times below are milliseconds from the same clock; transform values, pivots and easing live in that source.
-
-| Named part | Keyframe times (ms) |
+| Time | Action |
 | --- | --- |
-| `arrow` | 0, 120, 350, 570, 780, 920 |
-| `frame` | 0, 190, 400, 740, 920 |
-| `corner-light` | 0, 270, 430, 670, 920 |
+| 0–125ms | Corner draws inward 0.35 units. |
+| 125–340ms | Corner reaches 1.25 units diagonally outward; tail lags. |
+| 280–430ms | A finer corner appears just beyond the destination. |
+| 340–520ms | Tail follows 1.55 units through the source opening. |
+| 430–730ms | Echo dissipates outward. |
+| 660–1120ms | Continuous arrow returns; frame remains fixed. |
 
-**Rendered review:** Both the source frame and outward diagonal remain legible. The small frame response makes the corner reach relational rather than a detached arrow.
+## Rendered review
+Third icon from the left. Checked at 0%, 10%, 35%, 70%, and 100%; actual and half-speed replay; dither, outline, and light-theme solid. The frame stays registered and the echo clears before rest. The arrow remains continuous as its tail catches up. Shared checks are in [batch validation](../VALIDATION.md#focused-refinement-01--2026-09-09).
 
-Reviewed at preparation (20%), action (40%), recovery (70%) and neutral endpoint (100%), with actual playback and per-part endpoint inspection in the live gallery. These samples establish the reviewed poses; they do not replace the full timeline or the shared lifecycle checks in [VALIDATION.md](../VALIDATION.md).
+![Four-icon crest; external-link is third](../motion-evidence/refinement-01/crest.png)
 
-**Visual reference:** icon 3 from the left in this family.
-
-![external-link: action pose at 40%, position 3](../motion-evidence/rollout/navigation.png)
-
-[Preparation image](../motion-evidence/rollout/navigation-prepare.png) · [Recovery image](../motion-evidence/rollout/navigation-recover.png)
+[Rest](../motion-evidence/refinement-01/rest.png) · [Preparation](../motion-evidence/refinement-01/prepare.png) · [Recovery](../motion-evidence/refinement-01/recover.png) · [Outline](../motion-evidence/refinement-01/outline.png)

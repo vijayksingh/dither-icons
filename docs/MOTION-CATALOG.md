@@ -6,10 +6,10 @@ The four accepted foundation performances remain intact. The remaining 32 use in
 
 | Icon / individual review | Semantic meaning | Sequence | Duration |
 | --- | --- | --- | --- |
-| [arrow-right](icon-reviews/arrow-right.md) | continue or advance horizontally | Draw back / Lead / Arrive | 780ms |
-| [arrow-up](icon-reviews/arrow-up.md) | move upward or return toward the top | Gather / Lift / Level | 860ms |
-| [external-link](icon-reviews/external-link.md) | open another destination while retaining the current context | Anchor / Reach / Return | 920ms |
-| [upload](icon-reviews/upload.md) | transfer from a local container toward another destination | Brace / Release / Return | 1000ms |
+| [arrow-right](icon-reviews/arrow-right.md) | continue or advance horizontally | Draw back / Extend / Resolve | 900ms |
+| [arrow-up](icon-reviews/arrow-up.md) | move upward or return toward the top | Gather / Lift / Float home | 1120ms |
+| [external-link](icon-reviews/external-link.md) | open another destination while retaining the current context | Reach out / Follow through / Return | 1120ms |
+| [upload](icon-reviews/upload.md) | transfer from a local container toward another destination | Gather / Release / Ease home | 1180ms |
 | [folder](icon-reviews/folder.md) | contain and reveal grouped files | Unseat / Reveal / Close | 1160ms |
 | [file](icon-reviews/file.md) | a document with content and a folded corner | Lift / Read / Lay flat | 960ms |
 | [copy](icon-reviews/copy.md) | duplicate while retaining the source | Register / Separate / Nest | 1040ms |
@@ -42,6 +42,10 @@ The four accepted foundation performances remain intact. The remaining 32 use in
 | [heart](icon-reviews/heart.md) | express affection through a brief release of energy | Gather / Bloom / Exhale | 820ms |
 | [download](icon-reviews/download.md) | receive an item into a destination | Lift / Receive / Settle | 1120ms |
 | [layers](icon-reviews/layers.md) | reveal separate planes within a stack | Gather / Separate / Nest | 1120ms |
+
+## Focused refinement 01
+
+The user requested a smaller, more careful batch after the broad rollout. Only the first four entries above have been refined in this pass. Their new reviews supersede the earlier rollout reports for those four. Choose **Refinement / 01** in Motion studies. Each now has connected geometry, its own named timing/configuration, and a localized climax (MOT-16). The remaining icons are outside this batch.
 
 ## How to use these references
 

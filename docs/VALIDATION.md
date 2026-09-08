@@ -51,3 +51,35 @@ All 36 icons now have individual Interface Craft reviews in [MOTION-CATALOG.md](
 ### Delivery limits
 
 No npm publication or remote deployment was requested. The React runtime completes gestures after input leaves; standalone inline SVG uses the same tracks as CSS hover animations and stops when hover ends. Masks and SVG vector rendering may repaint; transform/opacity-only authoring is not a claim that every browser promotes every SVG actor to a compositor layer. Light accents can merge into a solid fill, so the identifying contour and primary motion do not depend on them.
+
+## Focused refinement 01 — 2026-09-09
+
+The user limited the next quality pass to **arrow-right, arrow-up, external-link, and upload**. These four reviews replace their broad-rollout assessments. Other timelines and the accepted foundation remain unchanged. This pass also responds to the user's missing-climax feedback: Download's impact was the reference for a visible, localized payoff (new MOT-16).
+
+### What changed
+
+- Arrow-right: fixed tail, connected extending shaft, rigid leading head, tip rays at the crest.
+- Arrow-up: head leads, foot catches up, curved updrafts follow the lift, weighted return.
+- External-link: unmoving source frame, connected corner/shaft with delayed tail follow-through, outer destination echo.
+- Upload: stationary source bed, pivoting side walls, leading head/lagging foot, source light and exterior release flare.
+- Separate source files expose each storyboard, named timing, geometry, pivots, easing, and accent settings. The existing playback engine is unchanged.
+- Gallery opens with the four together under **Refinement / 01**. Individual review records contain the semantic critique and browser images.
+
+### Rendered and interaction checks
+
+- Five paused poses: 0%, 10%, 35%, 70%, 100%. [Images and computed transforms](motion-evidence/refinement-01/) are saved together. At 35%, the localized effects provide the visible crest; at 100%, all identity parts are neutral and all accents are hidden.
+- Actual-speed and half-speed replay started all four. Sampled computed transforms/opacities showed each effect appearing and dissipating; actual-speed playback returned all four to idle.
+- Keyboard Enter and subsequent Tab departure checked on each of the four. Previous gestures continued while focus advanced, without restarting; all four finished at idle.
+- Dither, solid, and outline inspected at the 112px study size. Split outline contours initially had pinholes at the arrow necks; round caps corrected those. Light Cobalt solid and dark Iris dither/outline reviewed. Solid collection icons inspected at 24px; dither collection inspected at 64px.
+- Material switches kept the paused geometry and attached effects. The existing runtime rebinds its targets when material nodes change.
+- Reduced-motion emulation removed all transforms and hid every accent. Replay produced zero playing study icons. Motion-off disabled every study and set all four SVGs to `data-animate=false`.
+- Narrow viewport: nominal 390px emulation yielded 354 CSS pixels under the browser's zoom. Client/scroll widths were both 354px; study columns were approximately 155px each. All controls fit, and keyboard replay started all four. This is responsive-layout/keyboard evidence, not physical-device touch testing.
+- Browser console had no error entries. Loading/error/empty data states do not apply to these static motion studies. The library event lifecycle was not rewritten.
+
+### Automated/package checks
+
+- TypeScript passed. All 11 targeted tests passed, including the new geometric invariant: head and shaft endpoints remain coincident between keyframes for each of the four, including the external link's rotated coordinate frame.
+- Existing tests cover 36 timelines and 108 material variants, unique SVG targets, complete clocks, transform/opacity-only animation, exact neutral endpoints, hidden accent endpoints, identity, accessibility, and CSS fallback.
+- ESM/declarations/gallery/downloadable tarball built successfully. Library output is 82.23KB before compression; named imports still share the complete catalog.
+- The new tarball was installed into a fresh React 18.3.1 consumer. All 36 named exports, 36 timelines, and 108 server-rendered variants passed. Local development uses React 19.
+- `git diff --check` passed. No npm publication or deployment was performed. Standalone inline SVG shares the tracks but retains the documented CSS hover-departure limitation.

@@ -9,10 +9,6 @@ export function ExtendedArtwork({name,draw,texture}:{name:string;draw:Draw;textu
  const definition=definitions.find(d=>d.name===name)!;
  const shape=(index:number)=>{const part=definition.parts[index];return <g transform={part.transform}>{draw(part.path!)}</g>};
  switch(name){
-  case 'arrow-right':return <><g data-part="arrow">{shape(0)}</g>{accent('tail-light',stroke('M1.5 12h2.8'))}</>;
-  case 'arrow-up':return <><g data-part="arrow">{shape(0)}</g>{accent('lift-light',stroke('M12 22.5v-2.5'))}</>;
-  case 'external-link':return <><g data-part="frame">{shape(0)}</g><g data-part="arrow">{shape(1)}{accent('corner-light',stroke('M17 3.7h3.3V7'))}</g></>;
-  case 'upload':return <><g data-part="tray">{shape(0)}</g><g data-part="arrow">{shape(1)}</g>{accent('wake',stroke('M10.5 17v-2M13.5 17v-2',.55))}</>;
   case 'folder':return <>{texture==='solid'?draw(definition.parts[0].path!+'M4 9h16v8H4Z'):shape(0)}<g data-part="paper" opacity=".7">{draw('M6 9h12v9H6Z')}<path d="M8 11h8" stroke="currentColor" strokeWidth=".4"/></g><g data-part="cover">{shape(1)}</g></>;
   case 'file':return <><g data-part="page">{shape(0)}{accent('content-light',stroke('M8 13h8M8 16h5',.65))}</g><g data-part="fold">{shape(1)}</g></>;
   case 'copy':return <><g data-part="source">{shape(0)}</g>{accent('registration',stroke('M5.5 8V5.5H8',.55))}<g data-part="duplicate">{shape(1)}</g></>;

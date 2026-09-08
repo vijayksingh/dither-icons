@@ -1,45 +1,45 @@
-# arrow-up: Interface Craft review
+# arrow-up: Interface Craft refinement 01
 
 ## Context
-An SVG action icon in a reusable developer library. Its semantic meaning is **move upward or return toward the top**. It appears in routine controls where recognition matters more than spectacle.
+**Meaning:** rise or move toward the top. An upward navigation symbol, with no promise of a transfer. This review replaces its earlier rollout assessment.
 
 ## First Impressions
-A generic rise gives no sense of clearance or landing.
+The old whole-arrow rise and lower tick showed direction but had little sense of weight. The first refined version gained a joined stem but still lacked the payoff the user liked in Download.
 
 ## Visual Design
-**Identity boundary** — The tip always points upward. Stable dither follows the contour. Color inherits the selected palette; accents use the same ink and stay below the primary silhouette in visual weight. Typography and card framing belong to the shared inspector, not the glyph.
+The head leads while the foot initially stays behind. The stem length responds to those two endpoints, so the glyph stretches continuously without a detached chevron. The foot then catches up during the float. Two fine curved updrafts appear below the passing shoulders; they travel a little upward and disappear. They do not form a halo above the tip or a second arrow.
+
+Outline contour caps were rounded after rendered review exposed small gaps where the stem and head met. The material retains its stable grain throughout.
 
 ## Interface Design
-The missed opportunity is to express **move upward or return toward the top** through a causal gesture. Compress slightly, lift along the vertical axis, let the short wake fade, and level out. The inspector exposes replay and timing only when requested; the icon itself adds no controls or labels.
+A 150ms downward gathering precedes the rise. The head reaches its high point at 370ms, the updraft peaks at 410ms, and the foot catches up at 540ms. The weight returns before the head fully settles. This is a single rise with a distinct crest, rather than an idle bob.
 
 ## Consistency & Conventions
-Retain the conventional glyph. Use the shared hover, focus, click, reduced-motion, and completion contracts. MOT-01, MOT-02, MOT-03, MOT-04, MOT-05, MOT-08, MOT-09, MOT-10, MOT-11, MOT-12, MOT-14, MOT-15 apply.
+MOT-01–13, MOT-14, MOT-15, MOT-16. Arrow direction and both arms remain visible. The slower float distinguishes it from arrow-right's tension and upload's source release. Shared keyboard/click/reduced-motion behavior and CSS export limitations remain in effect.
 
 ## User Context
-Use less overshoot than the heart; this is a directional control. Recognizability must survive a brief glance and the still-motion variant.
+Upward motion can mean navigation, elevation, or returning to the top. Avoid rocket imagery, disappearing glyphs, or a completion state. The 1120ms study gives the weight time to catch up while remaining a single finite gesture.
 
-## Top Opportunities
-1. Compress slightly, lift along the vertical axis, let the short wake fade, and level out.
-2. The tip always points upward.
-3. Use less overshoot than the heart; this is a directional control.
+## Top Opportunities addressed
+1. Give ascent a leading head and lagging foot.
+2. Make the crest perceptible through small updrafts behind the head.
+3. Keep the stem connected and the return weighted without a long oscillation.
 
-## Encoded storyboard and review
+## Encoded storyboard
+Source: [arrowUp.ts](../../src/motions/arrowUp.ts). Named `TIMING`, `UP_STEM`, `HEAD`, `FOOT`, `WAKE`, and `EASING` expose the tuning. The moving foot and stem scale use the same interpolation as the head.
 
-**Duration:** 860ms. **Sequence:** Gather / Lift / Level.
-
-Timing source: [navigation.ts](../../src/motions/navigation.ts). Geometry binds each named track in `CraftedArtwork.tsx` or `ExtendedArtwork.tsx`. Times below are milliseconds from the same clock; transform values, pivots and easing live in that source.
-
-| Named part | Keyframe times (ms) |
+| Time | Action |
 | --- | --- |
-| `arrow` | 0, 130, 350, 560, 720, 860 |
-| `lift-light` | 0, 200, 400, 650, 860 |
+| 0–150ms | Head gathers 0.7 units downward. |
+| 150–370ms | Head rises 1.85 units; foot lags. |
+| 280–410ms | Updrafts appear behind the shoulders and crest. |
+| 370–540ms | Foot follows; the head floats. |
+| 410–730ms | Updrafts rise and dissipate. |
+| 540–1120ms | Foot returns, then the head settles through 0.09 units. |
 
-**Rendered review:** The point remains upright and inside the frame. The downward preparation reads as gathering lift; the short wake clears during recovery.
+## Rendered review
+Second icon from the left. Inspected at 0%, 10%, 35%, 70%, and 100%; actual and half-speed replay; all three materials. The updraft follows the lift, the foot catches up, and the icon returns with no lingering light. The split-contour gap was corrected. [Batch validation](../VALIDATION.md#focused-refinement-01--2026-09-09) records shared checks.
 
-Reviewed at preparation (20%), action (40%), recovery (70%) and neutral endpoint (100%), with actual playback and per-part endpoint inspection in the live gallery. These samples establish the reviewed poses; they do not replace the full timeline or the shared lifecycle checks in [VALIDATION.md](../VALIDATION.md).
+![Four-icon crest; arrow-up is second](../motion-evidence/refinement-01/crest.png)
 
-**Visual reference:** icon 2 from the left in this family.
-
-![arrow-up: action pose at 40%, position 2](../motion-evidence/rollout/navigation.png)
-
-[Preparation image](../motion-evidence/rollout/navigation-prepare.png) · [Recovery image](../motion-evidence/rollout/navigation-recover.png)
+[Rest](../motion-evidence/refinement-01/rest.png) · [Preparation](../motion-evidence/refinement-01/prepare.png) · [Recovery](../motion-evidence/refinement-01/recover.png) · [Outline](../motion-evidence/refinement-01/outline.png)
