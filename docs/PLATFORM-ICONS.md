@@ -29,3 +29,16 @@ import { FlaskIcon, RetryIcon } from '@unlocalhosted/dither-icons';
 ```
 
 The export remains transparent and color-inheriting. React completes an initiated gesture after departure. Standalone CSS SVG shares its tracks but cannot keep a hover animation running after hover ends.
+
+## Platform / 02
+
+| Library export | Actual platform need | Observed source in CraftingAttention |
+| --- | --- | --- |
+| `TensorIcon` | NumPy arrays and inspecting an indexed slice | `app/src/components/study-sheets/SheetHero.tsx:4–52`; the NumPy hero selects a rigid layer from a 3D array |
+| `NetworkIcon` | PyTorch connected computation | `app/src/components/study-sheets/SheetHero.tsx:65–76`; input × weight → prediction, then a separate weight update |
+| `CheckpointIcon` | Workspace version history and dashboard Checkpoints | `app/src/routes/workspace.tsx:70,91`; History currently labels retained versions. `app/src/routes/dashboard.tsx:309,340,575` uses GitCommitVertical |
+| `HintIcon` | Progressive help in Lab Units | `app/src/components/lab/LabHintDrawer.tsx:26–53`; first hint, more specific hint, then answer approach |
+
+Source inspected 2026-09-09. Tensor is an inspection metaphor: extracting a solid 1 × 2 × 2 block does not delete values. Network expresses connected computation, not a full autograd or training model. Checkpoint denotes the retained version; Retry remains appropriate for the separate restore/reset action. Hint belongs beside the native disclosure label and must not reveal content automatically.
+
+Apply the same UI-2/4, COLOR-2/5, A11Y-2/4, and MOTION-1/4/6/7 integration rules above. The four are available as named exports and in the Learning filter, with their complete gestures in **Platform / 02**. Prefer still solid/outline in compact, frequently used controls. No platform call sites are modified by this library batch.

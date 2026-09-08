@@ -1,6 +1,6 @@
 # Dither Icons
 
-36 original animated SVG icons for React. A standalone project by Unlocalhosted, inspired by the discoverability and interaction model of [lucide-animated](https://lucide-animated.com/). No Lucide paths or source are included.
+44 original animated SVG icons for React, including eight Learning icons selected for CraftingAttention. A standalone project by Unlocalhosted, inspired by the discoverability and interaction model of [lucide-animated](https://lucide-animated.com/). No Lucide paths or source are included.
 
 ## Run the catalog
 
@@ -31,7 +31,7 @@ import { BellIcon } from '@unlocalhosted/dither-icons';
 </button>
 ```
 
-React 18+ is the only peer dependency. ESM and TypeScript declarations ship in `dist/`. CSS is embedded in each SVG so exports work without a stylesheet. All 36 icons use native Web Animations in React, with the same tracks compiled to CSS for standalone SVG hover. Named exports currently share the complete 36-icon geometry catalog; per-icon bundle splitting is not implemented.
+React 18+ is the only peer dependency. ESM and TypeScript declarations ship in `dist/`. CSS is embedded in each SVG so exports work without a stylesheet. All 44 icons use native Web Animations in React, with the same tracks compiled to CSS for standalone SVG hover. Named exports currently share the complete geometry catalog; per-icon bundle splitting is not implemented.
 
 ### API
 
@@ -50,7 +50,7 @@ All components forward an SVG ref and accept ordinary SVG props, including `colo
 
 `DitherIcon` also accepts a `name` for runtime selection. Invalid names throw a descriptive error. `definitions` and `IconArtwork` support building custom catalogs. Use `di-trigger` on a parent button to animate on the whole target's hover and keyboard focus. Touch users can tap a `di-trigger` button, or explicitly trigger with `active`.
 
-Motion obeys `prefers-reduced-motion: reduce`. No looping animation, timers, filters, generated noise, or layout animation. All 36 performances finish after pointer/focus leaves, ignore retriggers while playing, and cancel on unmount, motion-off, or reduced-motion changes. CSS-only SVG hover playback cannot persist after the pointer leaves; use React for the full interaction contract. Caller-supplied `animate={false}` takes precedence over `active`. Do not use motion as the only indicator of a state change.
+Motion obeys `prefers-reduced-motion: reduce`. No looping animation, timers, filters, generated noise, or layout animation. All performances finish after pointer/focus leaves, ignore retriggers while playing, and cancel on unmount, motion-off, or reduced-motion changes. CSS-only SVG hover playback cannot persist after the pointer leaves; use React for the full interaction contract. Caller-supplied `animate={false}` takes precedence over `active`. Do not use motion as the only indicator of a state change.
 
 ## Visual contract
 
@@ -58,7 +58,7 @@ Motion obeys `prefers-reduced-motion: reduce`. No looping animation, timers, fil
 - An 8 × 8 Bayer threshold matrix samples directional shading into quarter-unit stipple marks. A subtle tonal base preserves the silhouette. No checkerboard fill or stepped contour.
 - `currentColor` throughout. The hosting interface supplies contrast.
 - Prefer solid / outline at 16–24px. Dither is clearest at 48px+. Contours remain smooth at every size.
-- Motion belongs to semantic parts: lids hinge, arrows lead, bells pivot, and signals pass through a chip. All 36 performances are individually authored, last 720–1400ms, and end at neutral. No catalog icon uses a generic motion preset.
+- Motion belongs to semantic parts: lids hinge, arrows lead, bells pivot, and signals pass through a chip. All 44 performances are individually authored, last 720–1400ms, and end at neutral. No catalog icon uses a generic motion preset.
 - Every new icon needs a name, category, motion explanation, and bounded original geometry in `src/shapes.ts`. The catalog offers eight curated primary colors, with separate light/dark values, and exports the selected color.
 
 ## Checks
@@ -78,14 +78,14 @@ MIT. Original icon geometry and implementation. The reference project's logo, br
 
 ## Individual motion studies
 
-Open `/#motion-studies` and choose a family to inspect all 36 icons. The Foundation family preserves Bell, Heart, Download, and Layers. Use **Half speed**, **Inspect timing**, and the keyboard-accessible scrubber to inspect the same timelines used in the components. These are preview gestures, not claims that a download or notification action occurred.
+Open `/#motion-studies` and choose a family to inspect all 44 icons. **Platform / 02** opens Tensor, Network, Checkpoint, and Hint; **Platform / 01** contains Path, Flask, Target, and Retry. The Foundation family preserves Bell, Heart, Download, and Layers. Use **Half speed**, **Inspect timing**, and the keyboard-accessible scrubber to inspect the same timelines used in the components. These are preview gestures, not claims that a download or notification action occurred.
 
 - Bell: anchored shell swing, delayed clapper, asymmetric ringing cues.
 - Heart: compression, release, a brief highlight and four quiet escaping flecks.
 - Download: the arrow remains visible; the tray catches, rebounds, and settles. No symbol substitution.
 - Layers: independent planes compress, separate, hold, and return in sequence.
 
-`src/choreography.ts` collects the accepted foundation and the individually authored tracks in `src/motions/`. `src/CraftedArtwork.tsx` and `src/ExtendedArtwork.tsx` name the mechanical parts. `src/useChoreography.ts` owns interaction lifecycle and scrubbing. See [motion review evidence](docs/MOTION-REVIEW.md).
+`src/choreography.ts` collects the accepted foundation and the individually authored tracks in `src/motions/`. `src/CraftedArtwork.tsx`, `src/ExtendedArtwork.tsx`, `src/LearningArtwork.tsx`, and `src/PlatformArtwork.tsx` name the semantic parts. `src/useChoreography.ts` owns interaction lifecycle and scrubbing. See [motion review evidence](docs/MOTION-REVIEW.md) and [platform integration mapping](docs/PLATFORM-ICONS.md).
 
 ## Authoring and review
 

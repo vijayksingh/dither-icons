@@ -1,3 +1,7 @@
+import {TENSOR_ART} from './motions/tensor';
+import {NETWORK_ART} from './motions/network';
+import {CHECKPOINT_ART} from './motions/checkpoint';
+import {HINT_ART} from './motions/hint';
 import {PATH_ART} from './motions/path';
 import {FLASK_ART} from './motions/flask';
 import {TARGET_ART} from './motions/target';
@@ -58,6 +62,10 @@ export const definitions = [
  def('flask','Learning','A contained experiment stirs and responds.',vector(FLASK_ART.outer+FLASK_ART.inside)),
  def('target','Learning','Focus an objective at a precise center.',vector(TARGET_ART.outer),vector(TARGET_ART.inner),vector(TARGET_ART.dart)),
  def('retry','Learning','Wind back to make another attempt.',vector(RETRY_ART.arc),vector(RETRY_ART.head)),
+ def('tensor','Learning','Inspect one solid slice of a multidimensional array.',vector(TENSOR_ART.top),vector(TENSOR_ART.left),vector(TENSOR_ART.cut),vector(TENSOR_ART.sliceTop),vector(TENSOR_ART.sliceLeft),vector(TENSOR_ART.face)),
+ def('network','Learning','Combine connected inputs into an output.',vector(NETWORK_ART.upper),vector(NETWORK_ART.lower),vector(NETWORK_ART.output)),
+ def('checkpoint','Learning','Preserve an exact Workspace state.',vector(CHECKPOINT_ART.ring),vector(CHECKPOINT_ART.state),vector(CHECKPOINT_ART.rail)),
+ def('hint','Learning','A small nudge illuminates an idea.',vector(HINT_ART.outer+HINT_ART.inside),vector(HINT_ART.base)),
 ] as const;
 export type IconName = typeof definitions[number]['name'];
 

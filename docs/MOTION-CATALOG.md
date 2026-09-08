@@ -42,11 +42,14 @@ The four accepted foundation performances remain intact. The remaining icons use
 | [heart](icon-reviews/heart.md) | express affection through a brief release of energy | Gather / Bloom / Exhale | 820ms |
 | [download](icon-reviews/download.md) | receive an item into a destination | Lift / Receive / Settle | 1120ms |
 | [layers](icon-reviews/layers.md) | reveal separate planes within a stack | Gather / Separate / Nest | 1120ms |
-
 | [path](icon-reviews/path.md) | follow an ordered Path through Milestones | Depart / Connect / Arrive | 1380ms |
 | [flask](icon-reviews/flask.md) | represent a Lab Unit and bounded experimentation | Stir / React / Settle | 1400ms |
 | [target](icon-reviews/target.md) | focus a learner objective | Aim / Seat / Resolve | 1260ms |
 | [retry](icon-reviews/retry.md) | restart an experiment or make another attempt | Rewind / Catch / Ready | 1280ms |
+| [tensor](icon-reviews/tensor.md) | inspect a solid slice while preserving cell order | Select / Extract / Rejoin | 1400ms |
+| [network](icon-reviews/network.md) | combine connected inputs into an output | Receive / Combine / Transmit | 1380ms |
+| [checkpoint](icon-reviews/checkpoint.md) | retain an exact Workspace state | Receive / Register / Hold | 1320ms |
+| [hint](icon-reviews/hint.md) | offer a small nudge toward understanding | Conduct / Illuminate / Ease | 1260ms |
 
 ## Focused refinement 01
 
@@ -68,7 +71,11 @@ The next bounded batch is **play, pause, volume, and code**. Choose **Refinement
 
 ## Platform batch 01
 
-**Path, Flask, Target, Retry** are new additions selected from actual platform flows, rather than the remaining generic catalog order. **Platform / 01** is the default study group. Each has a named React export, original geometry, its own Interface Craft critique and timing source, and browser references in `motion-evidence/platform-01/`. The Learning category gathers these four; the original 36 performances are unchanged. Read [PLATFORM-ICONS.md](PLATFORM-ICONS.md) for call-site mapping and integration guidance.
+**Path, Flask, Target, Retry** are new additions selected from actual platform flows. Choose **Platform / 01** to inspect them. Each has a named React export, original geometry, its own Interface Craft critique and timing source, and browser references in `motion-evidence/platform-01/`. The original 36 performances are unchanged. Read [PLATFORM-ICONS.md](PLATFORM-ICONS.md) for call-site mapping and integration guidance.
+
+## Platform batch 02
+
+**Tensor, Network, Checkpoint, Hint** extend the Learning category to eight icons. **Platform / 02** is the default study group. These cover NumPy slicing, connected PyTorch computation, retained Workspace versions, and progressive Lab help. Tensor extracts a solid block with three joined faces and exposes a cut plane; Network combines both inputs before transmitting; Checkpoint captures once and holds; Hint conducts light through a fixed filament before the surrounding rays answer. Each has an individual Interface Craft report and browser references in `motion-evidence/platform-02/`. All earlier forty timelines remain unchanged.
 
 ## How to use these references
 

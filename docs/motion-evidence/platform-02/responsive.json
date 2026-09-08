@@ -1,0 +1,29 @@
+{
+  "playing": [
+    {
+      "icon": "tensor",
+      "playing": "true"
+    },
+    {
+      "icon": "network",
+      "playing": "true"
+    },
+    {
+      "icon": "checkpoint",
+      "playing": "true"
+    },
+    {
+      "icon": "hint",
+      "playing": "true"
+    }
+  ],
+  "scrollWidth": 390,
+  "stageWidths": [
+    173,
+    173,
+    173,
+    173
+  ],
+  "viewport": 390,
+  "errors": []
+}

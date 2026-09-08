@@ -1,4 +1,5 @@
 import type {ReactNode} from 'react';
+import {PlatformArtwork} from './PlatformArtwork';
 import {LearningArtwork} from './LearningArtwork';
 import {ControlArtwork} from './ControlArtwork';
 import {CorrespondenceArtwork} from './CorrespondenceArtwork';
@@ -14,6 +15,7 @@ const Accent=({part,children}:{part:string;children:ReactNode})=><g data-part={p
 
 export function CraftedArtwork({name,draw,texture}:Props){
  if(!studies[name])return null;
+ if(['tensor','network','checkpoint','hint'].includes(name))return <PlatformArtwork name={name} draw={draw} texture={texture}/>;
  if(['path','flask','target','retry'].includes(name))return <LearningArtwork name={name} draw={draw} texture={texture}/>;
  if(['play','pause','volume','code'].includes(name))return <ControlArtwork name={name} draw={draw} texture={texture}/>;
  if(['book','mail','message','send'].includes(name))return <CorrespondenceArtwork name={name} draw={draw} texture={texture}/>;

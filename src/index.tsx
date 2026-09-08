@@ -97,3 +97,8 @@ export const PathIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(fun
 export const FlaskIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function FlaskIcon(props,ref){return <DitherIcon {...props} name="flask" ref={ref}/>;});
 export const TargetIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function TargetIcon(props,ref){return <DitherIcon {...props} name="target" ref={ref}/>;});
 export const RetryIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function RetryIcon(props,ref){return <DitherIcon {...props} name="retry" ref={ref}/>;});
+
+export const TensorIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function TensorIcon(props,ref){return <DitherIcon {...props} name="tensor" ref={ref}/>;});
+export const NetworkIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function NetworkIcon(props,ref){return <DitherIcon {...props} name="network" ref={ref}/>;});
+export const CheckpointIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function CheckpointIcon(props,ref){return <DitherIcon {...props} name="checkpoint" ref={ref}/>;});
+export const HintIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function HintIcon(props,ref){return <DitherIcon {...props} name="hint" ref={ref}/>;});

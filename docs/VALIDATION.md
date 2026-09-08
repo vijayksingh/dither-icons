@@ -209,3 +209,26 @@ Added **Path, Flask, Target, Retry** from live platform source needs. Individual
 - `responsive.json`: 390px client/scroll width, two 173px study columns, all four playing after keyboard replay, no browser errors. This verifies emulated responsive layout and keyboard playback, not physical touch.
 - TypeScript and **26 tests passed**. Four additions cover named exports/accessibility in all materials, path glint-to-node geometry and handoff order, target dart/occluder identity and axial contact, and repeated-instance chamber/joint isolation. All 40 timelines and 120 material variants bind to real SVG actors and return to neutral.
 - ESM/declarations/gallery/downloadable package built; library is 144.90KB before compression. No publication, deployment, or platform-source integration. Standalone CSS hover exports retain their documented departure limitation.
+
+## Platform batch 02 — 2026-09-09
+
+Added **Tensor, Network, Checkpoint, Hint**, chosen from the NumPy/PyTorch sheets, Workspace history, dashboard, and progressive Lab hint flow. Each has original SVG geometry, an individual Interface Craft report, a timestamp storyboard and commented `TIMING` object, a named React export, and a distinct causal response. **Platform / 02** is the default family. Learning now contains eight icons; the previous forty timelines are unchanged.
+
+### Tensor correction
+
+The user identified that the initial Tensor extracted a surface rather than a solid slice. The final version divides a 2 × 2 × 2 cube into two solid cuboids. The moving 1 × 2 × 2 slice has connected top, side, and front faces; its full silhouette occludes a stationary cut plane. All faces translate rigidly along the projection axis. Edge light and a dimension witness describe the actual gap. The final evidence below replaces the initial surface-only renders.
+
+### Rendered verification
+
+- Actual and half-speed continuous playback after the correction; eight poses at 0/10/28/36/45/65/82/100%. Twelve native screenshots in [platform-02](motion-evidence/platform-02/) cover the poses, dark Iris outline, light Cobalt solid, 24px solid collection, and 64px dither collection.
+- `poses.json`: all computed transforms, origins, and opacities match at 0% and 100%. `material-continuity.json`: dither, solid, and outline preserve the same 45% pose, including the Tensor, Network, and Checkpoint occluders.
+- `playback.json`: all four run through the recorded early/late samples and finish by the final sample, approximately 1.6 seconds after trigger. `lifecycle.json`: each keyboard-triggered gesture continues after Tab departure and completes; reduced motion clears transforms and hidden accents; motion-off disables the study buttons. Shared pointer-hover engine remains unchanged.
+- `responsive.json`: 390px client/scroll width, two 173px columns, all four playing after keyboard replay, no browser errors. This is emulated layout and keyboard evidence, not a physical touch-device test.
+- Default, active, focus-visible, disabled/motion-off, light, dark, reduced-motion, compact sizes, and narrow layout inspected. Loading, empty, and error states do not apply to the new static studies. Existing catalog search/empty behavior is unchanged.
+
+### Automated and package verification
+
+- TypeScript passed. The existing 26 tests passed against the expanded 44-icon catalog; five new tests passed after correcting an over-specific test serialization assertion. They cover named exports and repeated-instance mask isolation, Tensor's three moving faces/rigid travel/bounds, Network's diagonal carriers and input dependency, Checkpoint's held state and retainer occlusion, and Hint's contained illumination/order.
+- All **44 timelines / 132 material variants** bind to real SVG actors, have complete ordered clocks, animate transform/opacity only, and return to neutral. Built ESM imports and server rendering passed for all four new named exports.
+- ESM, declarations, gallery, and downloadable package built successfully. Library output is **166.72KB** before compression. The complete gallery bundle is 510.38kB / 156.46kB gzip; Vite flags its existing single-bundle architecture at the 500kB threshold. Per-icon splitting is still outside this batch.
+- No fresh React 18 consumer install was repeated; the unchanged peer contract was checked in an earlier pass. No npm publication, deployment, or platform call-site integration. Standalone CSS SVG keeps the documented hover-departure limitation.
