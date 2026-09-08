@@ -1,3 +1,7 @@
+import {SIGMA_ART} from './motions/sigma';
+import {BUG_ART} from './motions/bug';
+import {SLIDERS_ART,SLIDERS_KNOBS} from './motions/sliders';
+import {CAP_ART} from './motions/graduation-cap';
 import {TENSOR_ART} from './motions/tensor';
 import {WORKSPACE_ART} from './motions/workspace';
 import {GAUGE_ART} from './motions/gauge';
@@ -74,6 +78,10 @@ export const definitions = [
  def('gauge','Interface','Take a reading against a stable scale.',vector(GAUGE_ART.rim),vector(GAUGE_ART.needle),vector(GAUGE_ART.hub)),
  def('orbit','Learning','Explore a relationship around a stable center.',vector(ORBIT_ART.rear),vector(ORBIT_ART.front),vector(ORBIT_ART.core),vector(ORBIT_ART.satellite)),
  def('lifebuoy','Interface','Support that yields and holds.',vector(LIFEBUOY_ART.body),...LIFEBUOY_ART.bands.map(d=>vector(d))),
+ def('sigma','Learning','Collect terms into one sum.',vector(SIGMA_ART.body)),
+ def('bug','Development','Locate the fault without losing its context.',vector(BUG_ART.head),vector(BUG_ART.left),vector(BUG_ART.right)),
+ def('sliders','Interface','Adjust one variable against a stable reference.',...SLIDERS_KNOBS.map(k=>vector(SLIDERS_ART.knob(k.x,k.y)))),
+ def('graduation-cap','Learning','An invitation to explore a learning path.',vector(CAP_ART.board),vector(CAP_ART.crown),vector(CAP_ART.tuft)),
 ] as const;
 export type IconName = typeof definitions[number]['name'];
 

@@ -244,3 +244,26 @@ Added **Workspace, Gauge, Orbit, Lifebuoy** from the platform navigation and cat
 - TypeScript and **36 tests passed**. New checks cover named exports and isolated masks, source/tree clearance, needle/scale registration, orbital curve interpolation and occlusion, and actual buoy/waterline contact.
 - ESM, declarations, gallery, and downloadable package built. Built-module smoke rendered all four named exports against 48 definitions. Library: 188.03KB; gallery: 523.21kB / 160.34kB gzip, with the existing Vite single-bundle size warning. No fresh React 18 consumer install; peer contract unchanged and previously checked.
 - No publication, deployment, or platform call-site integration. Standalone CSS SVG retains its documented hover-departure limitation.
+
+## Platform batch 04 — 2026-09-09
+
+Added **Sigma, Bug, Sliders, Graduation Cap**, selected from the platform's Sum reduction, buggy-case diagnosis, independent experiment controls, and Browse Paths. Each has original SVG geometry, an individual Interface Craft critique, a timestamp storyboard and named actor configuration, a named React export, and a distinct localized response (MOT-01–16). **Platform / 04** is the default family. All previous 48 timelines and the runtime remain unchanged.
+
+### Rendered decisions and evidence
+
+- Sigma keeps the operator fixed while three terms converge. Output waits for the last term, traces the real lower stroke, then gives two terminal witnesses. Same-color light merges into solid fill; input dots and exterior response preserve the sequence there.
+- Bug's feelers and forelegs precede shell exposure, then a pinpoint and close locator identify the existing seam fault. The initial outline crowded the seam; its inner centerlines were inset to preserve clearance. Both shell halves and the fault remain present throughout.
+- Sliders moves only its middle thumb. The knockout and proportional fill share its timing/easing, maintaining continuity between keyframes. A .18-unit overshoot seats exactly at the fixed detent before the exterior marks answer.
+- Graduation Cap keeps crown and mortarboard rigid while two nested tassel hinges carry delayed motion. Board occlusion prevents doubled crown grain. The tassel's reversal and short local arc give the late payoff; no completion claim or confetti.
+- Eight [native reference poses](motion-evidence/platform-04/) at 0/10/28/38/48/66/82/100%, plus dark outline, light Cobalt solid, 24px solid collection, and 64px dither collection. `poses.json` confirms exact start/end equality. `material-continuity.json` confirms the same computed 48% pose in all three materials, including mask actors.
+- Full half-speed playback reviewed through return. Actual-speed `playback.json` samples all four active at approximately 153/503/859/1247ms and idle by 1656ms. Durations: 1520/1320/1380/1440ms.
+- `lifecycle.json`: Enter then Tab departure exercised for each icon; each remained active after departure and all finished. Reduced-motion emulation yielded zero transformed parts, zero playing icons and zero visible accents. Motion-off disabled all four study buttons. Shared pointer-hover lifecycle unchanged.
+- `responsive.json`: client/scroll width both 390px, two 173px study columns, all replay/inspection controls in bounds, all four playing after keyboard replay, no browser errors. The compact mobile navigation hides the desktop Motion studies link; replay remains available through the study controls. This is emulated layout/keyboard evidence, not a physical touch-device test.
+- Default, focus, active playback, departure, disabled, reduced motion, light/dark, materials, compact and narrow states inspected. Loading/empty/error states do not apply to these new static studies.
+
+### Automated and package checks
+
+- TypeScript passed. **41 tests pass across the full run and targeted rerun**: the first run exposed the second old catalog-count assertion and a floating-point equality in the new route test; both test assertions were corrected. The targeted ten-test rerun passed. No production defect was hidden by those test corrections.
+- Five new tests cover accessible named exports and isolated masks/clips, Sigma input dependency and contour route, Bug seam/outline clearance and diagnosis order, Sliders' continuous knob/fill/knockout relationship, and both cap hinges with delayed tassel recovery. Existing checks cover all 52 timelines / 156 material variants and exact identity/hidden-accent endpoints.
+- ESM, declarations, gallery, and downloadable package built successfully. Built-module smoke imported the four named exports and rendered all three materials against 52 definitions and 52 timelines. Library: **208.41KB** before compression; gallery: **536.02kB / 164.05kB gzip**. Vite retains the existing warning for the single gallery chunk above 500kB. Per-icon splitting remains outside this artwork batch.
+- `git diff --check` passed. React's peer contract is unchanged and was checked with React 18 in an earlier pass; no fresh consumer installation was repeated. No publication, deployment, or CraftingAttention call-site integration. Standalone CSS SVG retains the documented hover-departure limitation.

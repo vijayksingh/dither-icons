@@ -1,0 +1,45 @@
+{
+  "client": 390,
+  "controls": [
+    {
+      "label": "Study family",
+      "right": 165.5,
+      "x": 16
+    },
+    {
+      "label": "Playback speed",
+      "right": 292.5,
+      "x": 179.5
+    },
+    {
+      "label": "Inspect timing",
+      "right": 88.765625,
+      "x": 16
+    },
+    {
+      "label": "↻ Replay set",
+      "right": 164.8671875,
+      "x": 102.765625
+    }
+  ],
+  "scroll": 390,
+  "stages": [
+    {
+      "playing": "true",
+      "width": 173
+    },
+    {
+      "playing": "true",
+      "width": 173
+    },
+    {
+      "playing": "true",
+      "width": 173
+    },
+    {
+      "playing": "true",
+      "width": 173
+    }
+  ],
+  "errors": []
+}

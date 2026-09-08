@@ -54,6 +54,10 @@ The four accepted foundation performances remain intact. The remaining icons use
 | [gauge](icon-reviews/gauge.md) | take a reading against a stable scale | Calibrate / Read / Hold | 1280ms |
 | [orbit](icon-reviews/orbit.md) | explore a relationship around a stable center | Depart / Pass / Return | 1560ms |
 | [lifebuoy](icon-reviews/lifebuoy.md) | accept a load and keep it supported | Meet / Support / Settle | 1460ms |
+| [sigma](icon-reviews/sigma.md) | collect terms into one result | Gather / Combine / Release | 1520ms |
+| [bug](icon-reviews/bug.md) | expose and locate a fault | Feel / Expose / Locate | 1320ms |
+| [sliders](icon-reviews/sliders.md) | adjust one variable precisely | Adjust / Register / Hold | 1380ms |
+| [graduation-cap](icon-reviews/graduation-cap.md) | acknowledge an invitation to learn | Acknowledge / Catch / Settle | 1440ms |
 
 ## Focused refinement 01
 
@@ -83,10 +87,14 @@ The next bounded batch is **play, pause, volume, and code**. Choose **Refinement
 
 ## Platform batch 03
 
-**Workspace, Gauge, Orbit, Lifebuoy** cover four existing platform navigation needs: Workspace, Dashboard, the curriculum atlas, and Support. **Platform / 03** is the default study group. Workspace opens space before source lines respond; Gauge registers on a fixed tick; Orbit uses a single finite satellite traversal with real front/rear occlusion; Lifebuoy meets a receiving waterline before its ripples begin. Each has an individual Interface Craft report, named export, original contours, and browser evidence in `motion-evidence/platform-03/`. All previous forty-four timelines retain their authored behavior.
+**Workspace, Gauge, Orbit, Lifebuoy** cover four existing platform navigation needs: Workspace, Dashboard, the curriculum atlas, and Support. Choose **Platform / 03** to review them. Workspace opens space before source lines respond; Gauge registers on a fixed tick; Orbit uses a single finite satellite traversal with real front/rear occlusion; Lifebuoy meets a receiving waterline before its ripples begin. Each has an individual Interface Craft report, named export, original contours, and browser evidence in `motion-evidence/platform-03/`. All previous forty-four timelines retain their authored behavior.
 
 ## How to use these references
 
 Read the individual critique before touching a timeline. Use the gallery family selector, actual/half-speed replay and Inspect timing to compare the implementation with its report. Preserve the listed identity boundary at every frame. Update the report and its images when a semantic or geometric decision changes.
 
 Screenshots show browser-rendered poses, not invented concept art. Color remains inherited from the host. Dither is the primary material; solid and outline retain the same semantic gesture. Some light accents merge into a solid fill, so recognition never depends on them.
+
+## Platform / 04
+
+**Sigma, Bug, Sliders, Graduation Cap** cover loss reduction, diagnosis, experiment parameters, and Browse Paths. **Platform / 04** is the default study group. Sigma waits for all input terms before releasing its result. Bug reveals a fault in its existing seam. Sliders adjusts one thumb against two fixed controls, with a connected fill and exact detent. Graduation Cap keeps two physical tassel hinges as the rigid cap tips. Each has an individual Interface Craft report and browser references in `motion-evidence/platform-04/`. All previous forty-eight timelines remain unchanged.

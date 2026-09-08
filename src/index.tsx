@@ -106,3 +106,11 @@ export const WorkspaceIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>
 export const GaugeIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function GaugeIcon(props,ref){return <DitherIcon {...props} name="gauge" ref={ref}/>;});
 export const OrbitIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function OrbitIcon(props,ref){return <DitherIcon {...props} name="orbit" ref={ref}/>;});
 export const LifebuoyIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function LifebuoyIcon(props,ref){return <DitherIcon {...props} name="lifebuoy" ref={ref}/>;});
+
+export const SigmaIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function SigmaIcon(props,ref){return <DitherIcon {...props} name="sigma" ref={ref}/>;});
+
+export const BugIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function BugIcon(props,ref){return <DitherIcon {...props} name="bug" ref={ref}/>;});
+
+export const SlidersIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function SlidersIcon(props,ref){return <DitherIcon {...props} name="sliders" ref={ref}/>;});
+
+export const GraduationCapIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function GraduationCapIcon(props,ref){return <DitherIcon {...props} name="graduation-cap" ref={ref}/>;});
