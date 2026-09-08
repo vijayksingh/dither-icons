@@ -1,4 +1,4 @@
-import { forwardRef, type SVGProps } from 'react';
+import { forwardRef, useId, type SVGProps } from 'react';
 import {definitions,type IconDefinition} from './shapes';
 export {definitions} from './shapes';
 export type {IconDefinition,Motion,Part} from './shapes';
@@ -6,16 +6,19 @@ export type Texture = 'dither'|'solid'|'outline';
 export interface DitherIconProps extends SVGProps<SVGSVGElement> { name?:string; size?:number|string; texture?:Texture; animate?:boolean; active?:boolean; title?:string; }
 export const motionStyles = `
 .di-part{transform-box:fill-box;transform-origin:center}
-.di-icon[data-animate=true]:is(:hover,:focus-visible) .di-part,.di-trigger:is(:hover,:focus-visible) .di-icon[data-animate=true] .di-part,.di-icon[data-active=true] .di-part{animation-duration:600ms;animation-timing-function:cubic-bezier(.22,.68,0,1.1);animation-iteration-count:1}
+.di-icon[data-animate=true]:is(:hover,:focus-visible) .di-part,.di-trigger:is(:hover,:focus-visible) .di-icon[data-animate=true] .di-part,.di-icon[data-active=true] .di-part{animation-duration:600ms;animation-timing-function:cubic-bezier(.22,1,.36,1);animation-iteration-count:1}
 .di-icon[data-animate=true]:is(:hover,:focus-visible) .di-part,.di-trigger:is(:hover,:focus-visible) .di-icon[data-animate=true] .di-part,.di-icon[data-active=true] .di-part{animation-name:var(--di-motion)}
-@keyframes di-ring{20%{transform:rotate(16deg)}45%{transform:rotate(-12deg)}70%{transform:rotate(6deg)}}
+@keyframes di-ring{20%{transform:rotate(12deg)}44%{transform:rotate(-8deg)}68%{transform:rotate(3deg)}88%{transform:rotate(-1deg)}}
 @keyframes di-rise{40%{transform:translateY(-3px)}}
 @keyframes di-fall{40%{transform:translateY(3px)}}
 @keyframes di-slide{40%{transform:translateX(3px)}}
-@keyframes di-pulse{25%{transform:scale(1.12)}50%{transform:scale(.96)}75%{transform:scale(1.06)}}
-@keyframes di-turn{to{transform:rotate(90deg)}}
+@keyframes di-pulse{24%{transform:scale(1.08)}48%{transform:scale(.99)}72%{transform:scale(1.035)}}
+@keyframes di-turn{65%,100%{transform:rotate(90deg)}}
 @keyframes di-blink{35%{opacity:.3}70%{opacity:1}}
 @keyframes di-draw{0%{opacity:.4;transform:translateY(-2px)}60%{opacity:1;transform:translateY(1px)}}
+.di-icon[data-icon=bell] .di-part{transform-origin:50% 6%}
+.di-icon[data-icon=layers] .di-part:nth-of-type(2){animation-delay:35ms}
+.di-icon[data-icon=layers] .di-part:nth-of-type(3){animation-delay:70ms}
 @media(prefers-reduced-motion:reduce){.di-icon .di-part{animation:none!important}}
 `;
 export function cellPaths(cells:number[][],texture:Texture) {
@@ -26,15 +29,22 @@ export function cellPaths(cells:number[][],texture:Texture) {
  }
  return {ink,grain};
 }
+// Bayer thresholds turn a directional tonal field into stable binary marks.
+const bayer=[0,32,8,40,2,34,10,42,48,16,56,24,50,18,58,26,12,44,4,36,14,46,6,38,60,28,52,20,62,30,54,22,3,35,11,43,1,33,9,41,51,19,59,27,49,17,57,25,15,47,7,39,13,45,5,37,63,31,55,23,61,29,53,21];
+export const ditherField=Array.from({length:96*96},(_,i)=>{const x=i%96,y=Math.floor(i/96);const tone=.12+.8*(.35*x/95+.65*y/95);return (bayer[(y%8)*8+x%8]+.5)/64<tone?`M${x/4} ${y/4}h.25v.25h-.25z`:''}).join('');
 export const DitherIcon=forwardRef<SVGSVGElement,DitherIconProps>(function DitherIcon({name='sparkles',size=24,texture='dither',animate=true,active=false,title,className='',...props},ref){
  const definition=definitions.find(d=>d.name===name);
  if(!definition)throw new Error(`Unknown Dither icon: ${name}`);
  return <IconArtwork ref={ref} definition={definition} size={size} texture={texture} animate={animate} active={active} title={title} className={className} {...props}/>;
 });
 export const IconArtwork=forwardRef<SVGSVGElement,DitherIconProps&{definition:IconDefinition}>(function IconArtwork({definition,size=24,texture='dither',animate=true,active=false,title,className='',...props},ref){
- return <svg xmlns="http://www.w3.org/2000/svg" ref={ref} width={size} height={size} viewBox="0 0 24 24" fill="currentColor" role={title?'img':undefined} aria-label={title} aria-hidden={title?undefined:true} {...props} className={`di-icon ${className}`} data-animate={animate} data-active={animate&&active}>
+ const id=useId().replace(/:/g,'');
+ return <svg xmlns="http://www.w3.org/2000/svg" ref={ref} width={size} height={size} viewBox="0 0 24 24" fill="currentColor" role={title?'img':undefined} aria-label={title} aria-hidden={title?undefined:true} {...props} className={`di-icon ${className}`} data-icon={definition.name} data-animate={animate} data-active={animate&&active}>
  {title&&<title>{title}</title>}<style>{motionStyles}</style>
- {definition.parts.map((part,i)=>{const {ink,grain}=cellPaths(part.cells,texture);return <g key={i} className={part.motion?'di-part':undefined} style={part.motion?{'--di-motion':`di-${part.motion}`} as React.CSSProperties:undefined}><path d={ink}/>{grain&&<path d={grain} opacity=".65"/>}</g>})}
+ {texture==='dither'&&<defs><mask id={`${id}-grain`} maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24"><path d={ditherField} fill="white"/></mask></defs>}
+ {definition.parts.map((part,i)=>{const path=part.path||cellPaths(part.cells,'solid').ink;const shapeProps={d:path,transform:part.transform,fillRule:'evenodd' as const,strokeLinejoin:'round' as const,strokeLinecap:'round' as const};return <g key={i} className={part.motion?'di-part':undefined} style={part.motion?{'--di-motion':`di-${part.motion}`} as React.CSSProperties:undefined}>
+ {texture==='dither'?<><path {...shapeProps} fill={part.stroke?'none':'currentColor'} stroke={part.stroke?'currentColor':'none'} strokeWidth={2} opacity=".16"/><path {...shapeProps} fill={part.stroke?'none':'currentColor'} stroke={part.stroke?'currentColor':'none'} strokeWidth={2} mask={`url(#${id}-grain)`}/></>:<path {...shapeProps} fill={part.stroke||texture==='outline'?'none':'currentColor'} stroke={part.stroke||texture==='outline'?'currentColor':'none'} strokeWidth={texture==='outline'?1.4:2}/>}
+ </g>})}
  </svg>;
 });
 export const BellIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function BellIcon(props,ref){return <DitherIcon {...props} name="bell" ref={ref}/>;});

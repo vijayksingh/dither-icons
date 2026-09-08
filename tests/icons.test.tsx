@@ -11,3 +11,10 @@ test('all original icons render every texture without duplicate or out-of-grid c
 test('dither keeps boundary pixels and alternates interior pixels',()=>{const cells=Array.from({length:25},(_,i)=>[i%5,Math.floor(i/5)]);const d=cellPaths(cells,'dither'),o=cellPaths(cells,'outline'),s=cellPaths(cells,'solid');assert.equal(d.ink,o.ink);assert.equal((d.ink.match(/M/g)||[]).length,16);assert.equal((d.grain.match(/M/g)||[]).length,5);assert.equal((s.ink.match(/M/g)||[]).length,25)});
 test('decorative and named icons expose appropriate accessibility',()=>{assert.match(renderToStaticMarkup(<BellIcon/>),/aria-hidden="true"/);const named=renderToStaticMarkup(<BellIcon title="Notifications"/>);assert.match(named,/role="img"/);assert.match(named,/aria-label="Notifications"/);assert.ok(!named.includes('aria-hidden'));assert.match(motionStyles,/prefers-reduced-motion:reduce/)});
 test('invalid dynamic names fail clearly',()=>assert.throws(()=>renderToStaticMarkup(<DitherIcon name="missing"/>),/Unknown Dither icon/));
+
+test('every displayed part has an authored vector contour, independent of the old pixel map',()=>{
+ for(const icon of definitions)for(const part of icon.parts)assert.ok(part.path?.startsWith('M'),icon.name);
+ const svg=renderToStaticMarkup(<BellIcon texture="dither" color="#315bc4"/>);
+ assert.match(svg,/maskUnits="userSpaceOnUse"/);assert.match(svg,/color="#315bc4"/);assert.match(svg,/a5 5/);
+ const still=renderToStaticMarkup(<BellIcon animate={false} active/>);assert.match(still,/data-active="false"/);
+});

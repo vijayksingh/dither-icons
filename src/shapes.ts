@@ -1,16 +1,16 @@
-/** Original geometry authored on a 24 × 24 grid. No third-party paths. */
+/** Original vector geometry authored in a 24 × 24 viewBox. No third-party paths. */
 export type Motion = 'ring'|'rise'|'fall'|'pulse'|'turn'|'slide'|'blink'|'draw';
-export type Part = { cells: number[][]; motion?: Motion };
+export type Part = { cells: number[][]; path?:string; stroke?:boolean; transform?:string; motion?: Motion };
 export type IconDefinition = { name:string; category:string; description:string; parts:Part[] };
 const rect=(x:number,y:number,w:number,h:number)=>Array.from({length:w*h},(_,i)=>[x+i%w,y+Math.floor(i/w)]);
 const poly=(points:number[][])=>{const cells:number[][]=[];for(let y=1;y<23;y++)for(let x=1;x<23;x++){let inside=false;for(let i=0,j=points.length-1;i<points.length;j=i++){const [a,b]=points[i],[c,d]=points[j];if((b>y+.5)!==(d>y+.5)&&x+.5<(c-a)*(y+.5-b)/(d-b)+a)inside=!inside;}if(inside)cells.push([x,y]);}return cells;};
 const line=(points:number[][])=>{const cells:number[][]=[];for(let i=1;i<points.length;i++){const [x,y]=points[i-1],[a,b]=points[i];const n=Math.max(Math.abs(a-x),Math.abs(b-y));for(let j=0;j<=n;j++)cells.push(...rect(Math.round(x+(a-x)*j/(n||1)),Math.round(y+(b-y)*j/(n||1)),2,2));}return cells;};
 const ring=(x:number,y:number,r:number,t=2)=>{const c:number[][]=[];for(let b=1;b<23;b++)for(let a=1;a<23;a++){const d=Math.hypot(a+.5-x,b+.5-y);if(d<r&&d>=r-t)c.push([a,b]);}return c;};
 const part=(cells:number[][],motion?:Motion):Part=>({cells:[...new Map(cells.map(c=>[c.join(','),c])).values()],motion});
-const p=(points:number[][],motion?:Motion)=>part(poly(points),motion);
-const l=(points:number[][],motion?:Motion)=>part(line(points),motion);
-const r=(x:number,y:number,w:number,h:number,motion?:Motion)=>part(rect(x,y,w,h),motion);
-const o=(x:number,y:number,rad:number,motion?:Motion)=>part(ring(x,y,rad),motion);
+const p=(points:number[][],motion?:Motion)=>({...part(poly(points),motion),path:'M'+points.map(p=>p.join(' ')).join('L')+'Z'});
+const l=(points:number[][],motion?:Motion)=>({...part(line(points),motion),path:'M'+points.map(p=>p.join(' ')).join('L'),stroke:true});
+const r=(x:number,y:number,w:number,h:number,motion?:Motion)=>({...part(rect(x,y,w,h),motion),path:`M${x} ${y}h${w}v${h}h-${w}Z`});
+const o=(x:number,y:number,rad:number,motion?:Motion)=>({...part(ring(x,y,rad),motion),path:`M${x-rad+1} ${y}a${rad-1} ${rad-1} 0 1 0 ${2*(rad-1)} 0a${rad-1} ${rad-1} 0 1 0 -${2*(rad-1)} 0`,stroke:true});
 const def=(name:string,category:string,description:string,...parts:Part[]):IconDefinition=>({name,category,description,parts});
 export const definitions = [
  def('bell','Interface','The bell swings from its crown.',p([[7,5],[10,3],[14,3],[17,5],[17,15],[20,18],[4,18],[7,15]],'ring'),r(10,20,4,2)),
@@ -51,3 +51,46 @@ export const definitions = [
  def('bolt','Interface','One quick flash of energy.',p([[13,1],[3,14],[10,14],[8,23],[22,9],[14,9],[17,1]],'blink')),
 ] as const;
 export type IconName = typeof definitions[number]['name'];
+
+// Curves are independent of the stipple grid: texture never dictates the contour.
+const vectors:Record<string,string[]>={
+ bell:['M5.5 17.5c1.5-1.7 1.5-3.5 1.5-7.5a5 5 0 0 1 10 0c0 4 0 5.8 1.5 7.5Z','M10 20h4a2 2 0 0 1-4 0Z'],
+ heart:['M12 20.5C9.4 18.4 3 13.8 3 8.4A4.6 4.6 0 0 1 12 7a4.6 4.6 0 0 1 9 1.4c0 5.4-6.4 10-9 12.1Z'],
+ sparkles:['M12 2.5C13.2 8.8 15.2 10.8 21.5 12C15.2 13.2 13.2 15.2 12 21.5C10.8 15.2 8.8 13.2 2.5 12C8.8 10.8 10.8 8.8 12 2.5Z','M20 2l.65 1.35L22 4l-1.35.65L20 6l-.65-1.35L18 4l1.35-.65Z'],
+ search:['M10.5 3.5a7 7 0 1 0 0 14a7 7 0 1 0 0-14Zm0 2a5 5 0 1 1 0 10a5 5 0 1 1 0-10Z','M15 16.5l1.5-1.5 5 5a1.06 1.06 0 0 1-1.5 1.5Z'],
+ home:['M3 10.2 11 3.4a1.5 1.5 0 0 1 2 0l8 6.8v9.3a1.5 1.5 0 0 1-1.5 1.5H15v-7H9v7H4.5A1.5 1.5 0 0 1 3 19.5Z','M10.5 15.5h3V21h-3Z'],
+ settings:['M9 2h6l.7 3.1 2.2 1.3L21 5.5l3 5.2-2.4 2.2v2.6L24 18l-3 5-3.1-.9-2.2 1.3L15 26H9l-.7-2.6-2.2-1.3L3 23l-3-5 2.4-2.5v-2.6L0 10.7l3-5.2 3.1.9 2.2-1.3ZM12 9a5 5 0 1 0 0 10a5 5 0 1 0 0-10'],
+ check:['M3.5 12.5 9 18l12-12-1.5-1.5L9 15 5 11Z'],
+ close:['M5.3 4 12 10.7 18.7 4 20 5.3 13.3 12 20 18.7 18.7 20 12 13.3 5.3 20 4 18.7 10.7 12 4 5.3Z'],
+ plus:['M11 3h2v8h8v2h-8v8h-2v-8H3v-2h8Z'],
+ 'arrow-right':['M3 11h14.2l-5.7-5.7L13 4l8 8-8 8-1.5-1.3 5.7-5.7H3Z'],
+ 'arrow-up':['M11 21V6.8l-5.7 5.7L4 11l8-8 8 8-1.3 1.5L13 6.8V21Z'],
+ 'external-link':['M4 5h6v2H5v12h12v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z','M13 3h8v8h-2V6.4l-8.3 8.3-1.4-1.4L17.6 5H13Z'],
+ download:['M3 16h2v4h14v-4h2v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Z','M11 2h2v11.2l4.3-4.3 1.4 1.4L12 17l-6.7-6.7 1.4-1.4 4.3 4.3Z'],
+ upload:['M3 16h2v4h14v-4h2v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Z','M11 17V5.8L6.7 10 5.3 8.6 12 2l6.7 6.6-1.4 1.4L13 5.8V17Z'],
+ folder:['M2 6a2 2 0 0 1 2-2h5l3 3h8a2 2 0 0 1 2 2v10H2Z','M3 10h18a1 1 0 0 1 1 1.2l-1.5 8a1 1 0 0 1-1 .8h-15a1 1 0 0 1-1-.8l-1.5-8A1 1 0 0 1 3 10Z'],
+ file:['M6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z','M14 2v6h6L14 2Z'],
+ copy:['M4 2h11a2 2 0 0 1 2 2v2h-2V4H4v11h2v2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z','M10 8h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2Z'],
+ trash:['M5 8h14l-1 12a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2Zm4 3v8h1v-8Zm5 0v8h1v-8Z','M3 5h6V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2h6v2H3Zm8-1v1h2V4Z'],
+ mail:['M3 6h18v13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Z','M3 5h18l-9 8Z'],
+ message:['M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H10l-6 4v-4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z','M6 9h2v2H6ZM11 9h2v2h-2ZM16 9h2v2h-2Z'],
+ send:['M2.5 10.3 21 2.5a.5.5 0 0 1 .5.5l-7.8 18.5a.5.5 0 0 1-.9 0L9.5 14l7-7-8 6-6-1.8a.5.5 0 0 1 0-.9Z'],
+ user:['M12 2a5 5 0 1 0 0 10a5 5 0 1 0 0-10Z','M3 22v-2c0-8 18-8 18 0v2Z'],
+ lock:['M6 10V7a6 6 0 0 1 12 0v3h-2V7a4 4 0 0 0-8 0v3Z','M5 10h14a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V11a1 1 0 0 1 1-1Zm7 4a1.5 1.5 0 0 0-1 2.6V19h2v-2.4a1.5 1.5 0 0 0-1-2.6Z'],
+ eye:['M1 12Q12-2 23 12Q12 26 1 12Zm2.7 0Q12 1.8 20.3 12Q12 22.2 3.7 12Z','M12 8a4 4 0 1 0 0 8a4 4 0 1 0 0-8Z'],
+ play:['M6 4a1 1 0 0 1 1.5-.9l14 8a1 1 0 0 1 0 1.8l-14 8A1 1 0 0 1 6 20Z'],
+ pause:['M5 4a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1ZM14 4a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1Z'],
+ volume:['M2 9h5l6-5v16l-6-5H2Z','M17 6a8 8 0 0 1 0 12l-1.2-1.6a6 6 0 0 0 0-8.8ZM15.5 9a4 4 0 0 1 0 6l-1.2-1.6a2 2 0 0 0 0-2.8Z'],
+ sun:['M12 7a5 5 0 1 0 0 10a5 5 0 1 0 0-10ZM11 1h2v3h-2ZM11 20h2v3h-2ZM1 11h3v2H1ZM20 11h3v2h-3ZM3.5 5l1.5-1.5L7 5.5 5.5 7ZM17 18.5l1.5-1.5 2 2-1.5 1.5ZM17 5.5l2-2L20.5 5l-2 2ZM3.5 19l2-2L7 18.5l-2 2Z'],
+ moon:['M14 2A10 10 0 1 0 22 14A9 9 0 0 1 14 2Z'],
+ code:['M7 5 1 12l6 7 1.5-1.3L3.6 12l4.9-5.7Z','M17 5l6 7-6 7-1.5-1.3 4.9-5.7-4.9-5.7Z','M13 3h2l-4 18H9Z'],
+ terminal:['M4 3h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm0 2v14h16V5Z','M6 8l4 4-4 4-1.4-1.4L7.2 12 4.6 9.4Z','M12 15h6v2h-6Z'],
+ layers:['M2 15l10 5 10-5v2l-10 5-10-5Z','M2 11l10 5 10-5v2l-10 5-10-5Z','M2 7l10-5 10 5-10 5Z'],
+ cpu:['M5 5h14v14H5ZM2 7h3v2H2ZM2 15h3v2H2ZM19 7h3v2h-3ZM19 15h3v2h-3ZM7 2h2v3H7ZM15 2h2v3h-2ZM7 19h2v3H7ZM15 19h2v3h-2Z','M9 9h6v6H9Z'],
+ chart:['M2 3h2v17h18v2H2Z','M6 12h3v6H6Z','M12 7h3v11h-3Z','M18 3h3v15h-3Z'],
+ book:['M3 3h5q3 0 4 2q1-2 4-2h5v17h-5q-3 0-4 2q-1-2-4-2H3Z','M11.25 5h1.5v16h-1.5Z'],
+ bolt:['M13 2 4 13h7l-1 9 10-13h-7l1-7Z']
+};
+for(const icon of definitions)icon.parts.forEach((part,i)=>{if(vectors[icon.name]?.[i]){part.path=vectors[icon.name][i];part.stroke=false;}});
+
+const gear=definitions.find(d=>d.name==='settings')!;gear.parts[0].transform='translate(3 1.5) scale(.75)';

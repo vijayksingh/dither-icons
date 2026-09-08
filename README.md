@@ -51,12 +51,12 @@ Motion obeys `prefers-reduced-motion: reduce`. No looping animation, timers, fil
 
 ## Visual contract
 
-- Original geometry on a 24 × 24 integer grid. Square cells and stepped diagonals.
-- Solid boundary pixels; alternating interior pixels at 65% opacity. Stable ordered dithering, never random noise.
+- Original vector contours in a 24 × 24 viewBox. Curves, consistent negative space, and optical proportions are independent of the texture grid.
+- An 8 × 8 Bayer threshold matrix samples directional shading into quarter-unit stipple marks. A subtle tonal base preserves the silhouette. No checkerboard fill or stepped contour.
 - `currentColor` throughout. The hosting interface supplies contrast.
-- Prefer solid / outline at 16–24px. Dither is clearest at 48px+. Use integer multiples for crisp grid rendering.
+- Prefer solid / outline at 16–24px. Dither is clearest at 48px+. Contours remain smooth at every size.
 - Motion belongs to semantic parts: lids lift, arrows travel, bells pivot, cursors blink. 600ms maximum, once per interaction.
-- Every new icon needs a name, category, motion explanation, and bounded original geometry in `src/shapes.ts`.
+- Every new icon needs a name, category, motion explanation, and bounded original geometry in `src/shapes.ts`. The catalog offers eight curated primary colors, with separate light/dark values, and exports the selected color.
 
 ## Checks
 
