@@ -1,46 +1,45 @@
-# file: Interface Craft review
+# file: Interface Craft refinement 02
 
 ## Context
-An SVG action icon in a reusable developer library. Its semantic meaning is **a document with content and a folded corner**. It appears in routine controls where recognition matters more than spectacle.
+**Meaning:** a document with a folded corner. The action is a small peel of paper around an existing crease. This review supersedes the earlier rollout assessment.
 
 ## First Impressions
-A floating rectangle makes the folded corner incidental.
+The old page drifted slightly and its fold rotated around one point. That made the folded surface feel loosely attached. Its content highlight also disappeared into a solid fill. The distinctive corner deserved to carry the gesture.
 
 ## Visual Design
-**Identity boundary** — Page silhouette remains anchored and the top-right fold remains legible. Stable dither follows the contour. Color inherits the selected palette; accents use the same ink and stay below the primary silhouette in visual weight. Typography and card framing belong to the shared inspector, not the glyph.
+The page is now completely anchored. The triangular fold narrows in projection around the diagonal from (14,2) to (20,8); both crease endpoints stay fixed. A thin permanent crease preserves the corner while the flap approaches edge-on. Two quiet text lines remain visible in all materials, using actual cutouts for solid.
+
+The crease catches a short highlight; a fine curved air mark appears outside the peeling corner. Their stroke widths remain well below the main outline. Neither changes the document's identity.
 
 ## Interface Design
-The missed opportunity is to express **a document with content and a folded corner** through a causal gesture. Lift the corner around its crease, reveal quiet content strokes, and lay it back onto the page. The inspector exposes replay and timing only when requested; the icon itself adds no controls or labels.
+The fold takes up tension for 130ms, peels toward the hinge by 400ms, and pauses briefly. The crease light peaks at 445ms, followed by the small curl at 490ms. The paper lays down through a single restrained elastic correction. The entire page does not float or rotate.
 
 ## Consistency & Conventions
-Retain the conventional glyph. Use the shared hover, focus, click, reduced-motion, and completion contracts. MOT-01, MOT-02, MOT-03, MOT-04, MOT-05, MOT-08, MOT-09, MOT-10, MOT-11, MOT-12, MOT-14, MOT-15 apply.
+MOT-01–13 and MOT-14–16 apply. Physical attachment gives the movement meaning; the climax stays localized at the corner. The existing single browser clock is retained. SVG export, frame inspection, and native React playback share the same affine hinge transforms.
 
 ## User Context
-Avoid suggesting edits or a new document being created. Recognizability must survive a brief glance and the still-motion variant.
+This is a document affordance, not a writing or file-creation simulation. The two content lines are already present at rest. A quiet corner peel offers tactile interest without adding a progress or success state.
 
-## Top Opportunities
-1. Lift the corner around its crease, reveal quiet content strokes, and lay it back onto the page.
-2. Page silhouette remains anchored and the top-right fold remains legible.
-3. Avoid suggesting edits or a new document being created.
+## Top Opportunities addressed
+1. Hold both crease endpoints instead of rotating around one corner.
+2. Let the paper's edge catch light and shed a small curl of air.
+3. Preserve readable page content in solid as well as dither and outline.
 
-## Encoded storyboard and review
+## Encoded storyboard
+Source: [file.ts](../../src/motions/file.ts). `TIMING`, `FILE_ART`, `FILE_HINGE`, `FOLD`, `GLINT`, `CURL`, and `EASE` carry the decisions. The hinge composes a fixed 45-degree rotation, a perpendicular scale, and the inverse rotation around (17,5).
 
-**Duration:** 960ms. **Sequence:** Lift / Read / Lay flat.
-
-Timing source: [files.ts](../../src/motions/files.ts). Geometry binds each named track in `CraftedArtwork.tsx` or `ExtendedArtwork.tsx`. Times below are milliseconds from the same clock; transform values, pivots and easing live in that source.
-
-| Named part | Keyframe times (ms) |
+| Time | Action |
 | --- | --- |
-| `page` | 0, 170, 380, 680, 960 |
-| `fold` | 0, 110, 350, 550, 800, 960 |
-| `content-light` | 0, 230, 430, 710, 900, 960 |
+| 0–130ms | Fold gathers to 1.04 perpendicular scale. |
+| 130–400ms | Fold peels to 0.18 projection; both crease ends remain fixed. |
+| 285–445ms | Crease light builds to its crest. |
+| 340–490ms | Curled air mark follows the peeling edge. |
+| 620–800ms | Fold starts returning; accents disappear. |
+| 940–1160ms | A 1.035-scale paper correction resolves to exact rest. |
 
-**Rendered review:** The fold has a physical seam after the solid-mode review. It pivots within the page corner; content emphasis stays quiet and the page remains identifiable.
+## Rendered review
+Second icon in Refinement / 02. The 42% reference captures the fold, crease light, and curl together. Dither, outline, and light Cobalt solid were inspected; the body remains fixed and the fold stays connected along its diagonal. Automated interpolation checks verify both crease endpoints. [Batch validation](../VALIDATION.md#focused-refinement-02--2026-09-09) covers input, stillness, and responsive review.
 
-Reviewed at preparation (20%), action (40%), recovery (70%) and neutral endpoint (100%), with actual playback and per-part endpoint inspection in the live gallery. These samples establish the reviewed poses; they do not replace the full timeline or the shared lifecycle checks in [VALIDATION.md](../VALIDATION.md).
+![File peel, second icon](../motion-evidence/refinement-02/reveal.png)
 
-**Visual reference:** icon 3 from the left in this family.
-
-![file: action pose at 40%, position 3](../motion-evidence/rollout/files-transfer.png)
-
-[Preparation image](../motion-evidence/rollout/files-transfer-prepare.png) · [Recovery image](../motion-evidence/rollout/files-transfer-recover.png)
+[Rest](../motion-evidence/refinement-02/rest.png) · [Preparation](../motion-evidence/refinement-02/prepare.png) · [Recovery](../motion-evidence/refinement-02/recover.png) · [Solid](../motion-evidence/refinement-02/solid-light.png) · [Outline](../motion-evidence/refinement-02/outline.png)

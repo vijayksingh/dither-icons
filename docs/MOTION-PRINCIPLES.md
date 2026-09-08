@@ -33,4 +33,6 @@ These rules encode the accepted Bell, Heart, Download, and Layers studies. Apply
 
 The four accepted studies remain reference examples. Newly finished icons use the same native playback lifecycle and inspector. Standalone CSS hover exports share the tracks but cannot continue after pointer departure; React supplies that stronger lifecycle contract.
 
-The 2026-09-09 focused refinement adds MOT-16 after user feedback that the new icons lacked Download's satisfying impact. Apply it through the object's own meaning; do not turn every gesture into a collision. The current review batch is exactly arrow-right, arrow-up, external-link, and upload.
+The 2026-09-09 focused refinement adds MOT-16 after user feedback that the new icons lacked Download's satisfying impact. Apply it through the object's own meaning; do not turn every gesture into a collision. The first focused batch was exactly arrow-right, arrow-up, external-link, and upload; the user accepted it before the next batch began.
+
+Refinement / 02 applies the same rules to folder, file, copy, and trash. Two concrete attachment checks support MOT-03 and MOT-07: moving paper occluders must share their visible plane's complete track, and a folded surface must keep both crease endpoints fixed. Climax timing follows the event: reveal and registration occur earlier; trash's impact occurs on closure.

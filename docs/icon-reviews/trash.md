@@ -1,46 +1,47 @@
-# trash: Interface Craft review
+# trash: Interface Craft refinement 02
 
 ## Context
-An SVG action icon in a reusable developer library. Its semantic meaning is **place something into a removable container**. It appears in routine controls where recognition matters more than spectacle.
+**Meaning:** an available receptacle for removal. The glyph previews a lid opening and closing, while the bin, lid, handle, and vents remain visible. This is the fourth icon in the bounded batch.
 
 ## First Impressions
-A whole-bin bounce makes the object feel toy-like rather than useful.
+The earlier lid opened and the bin responded during opening. A small rim accent appeared while the lid was still raised, so the gesture never delivered a convincing contact event. The natural climax belongs to the lid meeting the rim.
 
 ## Visual Design
-**Identity boundary** — Bin, open top, and lid remain recognizable. Stable dither follows the contour. Color inherits the selected palette; accents use the same ink and stay below the primary silhouette in visual weight. Typography and card framing belong to the shared inspector, not the glyph.
+The lid pivots from a left support while the bin stays planted. A separate handle follows with a much smaller lag. The handle has enough headroom for the open pose in all materials. The bin retains its two vents and grounded base.
+
+At contact, a fine line catches the rim and two short exterior ticks spread sideways. The bin yields slightly after the lid arrives. The silhouette remains the primary visual weight; the effects clear before rest.
 
 ## Interface Design
-The missed opportunity is to express **place something into a removable container** through a causal gesture. Lid releases around one end, bin reacts slightly later, then the lid seats with a small damping beat. The inspector exposes replay and timing only when requested; the icon itself adds no controls or labels.
+A small brace precedes opening. The lid holds open briefly, then accelerates toward the rim. Contact occurs at 730ms; the body and rim light crest at 785ms; the exterior ticks peak at 810ms. The lid and handle dissipate the remaining motion on different timings. This later climax deliberately differs from the reveal and registration events in the other three icons.
 
 ## Consistency & Conventions
-Retain the conventional glyph. Use the shared hover, focus, click, reduced-motion, and completion contracts. MOT-01, MOT-02, MOT-03, MOT-04, MOT-05, MOT-08, MOT-09, MOT-10, MOT-11, MOT-12, MOT-14, MOT-15 apply.
+MOT-01–13 and MOT-14–16 apply. Download's causal impact is the reference: contact first, receiving object second, localized response third. The preview does not remove anything or assert that a deletion completed. No sound is generated; the weight is conveyed visually.
 
 ## User Context
-Do not dissolve the bin or imply that user data was deleted. Recognizability must survive a brief glance and the still-motion variant.
+Removal can be consequential. A controlled lid movement provides tactility without celebrating destruction, dissolving the bin, or scattering mock content. Its stable rest pose and reduced-motion rendering remain conventional trash icons.
 
-## Top Opportunities
-1. Lid releases around one end, bin reacts slightly later, then the lid seats with a small damping beat.
-2. Bin, open top, and lid remain recognizable.
-3. Do not dissolve the bin or imply that user data was deleted.
+## Top Opportunities addressed
+1. Move the climax from opening to actual rim contact.
+2. Keep the bin still until the lid arrives, then give it a restrained response.
+3. Let the handle, lid, rim light, and exterior ticks dissipate separately.
 
-## Encoded storyboard and review
+## Encoded storyboard
+Source: [trash.ts](../../src/motions/trash.ts). `TIMING`, `TRASH_ART`, `LID`, `HANDLE`, `BIN`, `RIM`, `IMPACT`, and `EASE` define the performance.
 
-**Duration:** 1100ms. **Sequence:** Release / Open / Seat.
-
-Timing source: [files.ts](../../src/motions/files.ts). Geometry binds each named track in `CraftedArtwork.tsx` or `ExtendedArtwork.tsx`. Times below are milliseconds from the same clock; transform values, pivots and easing live in that source.
-
-| Named part | Keyframe times (ms) |
+| Time | Action |
 | --- | --- |
-| `lid` | 0, 110, 350, 570, 850, 1100 |
-| `bin` | 0, 200, 430, 760, 1100 |
-| `rim-light` | 0, 300, 480, 730, 1100 |
+| 0–120ms | Lid braces downward 0.25 units. |
+| 120–340ms | Lid opens −11 degrees around its left support. |
+| 390–520ms | Handle finishes following; brief open hold. |
+| 520–730ms | Lid accelerates back to the rim. |
+| 730–785ms | Bin yields 2.5%; rim light crests after contact. |
+| 730–810ms | Exterior impact ticks appear and peak. |
+| 900–1010ms | Lid rebounds slightly; lights clear. |
+| 1070–1240ms | Handle and lid finish settling into exact rest. |
 
-**Rendered review:** The lifted lid retains its handle and stays close to the bin. A delayed bin response follows the lid; the lid returns to its original seat.
+## Rendered review
+Fourth icon in Refinement / 02. Its open pose appears in the 42% reference, contact near 59%, and the visible impact at 65%. Actual/half-speed replay confirmed the later payoff. The outline retains handle clearance and the source stays recognizable through the slight compression. [Batch validation](../VALIDATION.md#focused-refinement-02--2026-09-09) covers keyboard, stillness, and responsive checks.
 
-Reviewed at preparation (20%), action (40%), recovery (70%) and neutral endpoint (100%), with actual playback and per-part endpoint inspection in the live gallery. These samples establish the reviewed poses; they do not replace the full timeline or the shared lifecycle checks in [VALIDATION.md](../VALIDATION.md).
+![Trash impact, fourth icon](../motion-evidence/refinement-02/impact.png)
 
-**Visual reference:** icon 2 from the left in this family.
-
-![trash: action pose at 40%, position 2](../motion-evidence/rollout/files-containers.png)
-
-[Preparation image](../motion-evidence/rollout/files-containers-prepare.png) · [Recovery image](../motion-evidence/rollout/files-containers-recover.png)
+[Open](../motion-evidence/refinement-02/reveal.png) · [Contact](../motion-evidence/refinement-02/contact.png) · [Recovery](../motion-evidence/refinement-02/recover.png) · [Rest](../motion-evidence/refinement-02/settled.png) · [Outline](../motion-evidence/refinement-02/outline.png)

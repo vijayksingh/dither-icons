@@ -1,0 +1,940 @@
+[
+  {
+    "phase": "rest",
+    "progress": 0,
+    "icons": [
+      {
+        "icon": "folder",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 20px",
+            "part": "cover-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 19px",
+            "part": "rear-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 19px",
+            "part": "front-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.58",
+            "origin": "12px 19px",
+            "part": "rear-paper",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.85",
+            "origin": "12px 19px",
+            "part": "front-paper",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 20px",
+            "part": "cover",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "17px 8px",
+            "part": "reveal-rays",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0, 0.5)"
+          }
+        ]
+      },
+      {
+        "icon": "file",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "17px 5px",
+            "part": "fold",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "17px 5px",
+            "part": "crease-light",
+            "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "21px 6px",
+            "part": "curl-air",
+            "transform": "matrix(0.45, 0, 0, 0.45, -0.3, 0.4)"
+          }
+        ]
+      },
+      {
+        "icon": "copy",
+        "parts": [
+          {
+            "opacity": "0",
+            "origin": "6.5px 6.5px",
+            "part": "source-glint",
+            "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "9px 9px",
+            "part": "duplicate",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "20.5px 20.5px",
+            "part": "registration-ticks",
+            "transform": "matrix(0.65, 0, 0, 0.65, -0.45, -0.45)"
+          }
+        ]
+      },
+      {
+        "icon": "trash",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 22px",
+            "part": "bin",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "4.5px 6.5px",
+            "part": "lid",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 5px",
+            "part": "handle",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 8px",
+            "part": "rim-light",
+            "transform": "matrix(0.3, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 8px",
+            "part": "impact-ticks",
+            "transform": "matrix(0.75, 0, 0, 1, 0, 0)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "phase": "prepare",
+    "progress": 10,
+    "icons": [
+      {
+        "icon": "folder",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 20px",
+            "part": "cover-occlusion",
+            "transform": "matrix(1, 0, 0, 0.910142, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 19px",
+            "part": "rear-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 19px",
+            "part": "front-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.58",
+            "origin": "12px 19px",
+            "part": "rear-paper",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.85",
+            "origin": "12px 19px",
+            "part": "front-paper",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 20px",
+            "part": "cover",
+            "transform": "matrix(1, 0, 0, 0.910142, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "17px 8px",
+            "part": "reveal-rays",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0, 0.5)"
+          }
+        ]
+      },
+      {
+        "icon": "file",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "17px 5px",
+            "part": "fold",
+            "transform": "matrix(1.01921, -0.0192118, -0.0192118, 1.01921, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "17px 5px",
+            "part": "crease-light",
+            "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "21px 6px",
+            "part": "curl-air",
+            "transform": "matrix(0.45, 0, 0, 0.45, -0.3, 0.4)"
+          }
+        ]
+      },
+      {
+        "icon": "copy",
+        "parts": [
+          {
+            "opacity": "0.0949091",
+            "origin": "6.5px 6.5px",
+            "part": "source-glint",
+            "transform": "matrix(0.749091, 0, 0, 0.749091, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "9px 9px",
+            "part": "duplicate",
+            "transform": "matrix(0.999246, -0.0388346, 0.0388346, 0.999246, -0.489636, -0.578661)"
+          },
+          {
+            "opacity": "0",
+            "origin": "20.5px 20.5px",
+            "part": "registration-ticks",
+            "transform": "matrix(0.65, 0, 0, 0.65, -0.45, -0.45)"
+          }
+        ]
+      },
+      {
+        "icon": "trash",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 22px",
+            "part": "bin",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "4.5px 6.5px",
+            "part": "lid",
+            "transform": "matrix(0.999995, -0.00312304, 0.00312304, 0.999995, 0, 0.220527)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 5px",
+            "part": "handle",
+            "transform": "matrix(0.999988, 0.0049164, -0.0049164, 0.999988, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 8px",
+            "part": "rim-light",
+            "transform": "matrix(0.3, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 8px",
+            "part": "impact-ticks",
+            "transform": "matrix(0.75, 0, 0, 1, 0, 0)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "phase": "reveal",
+    "progress": 42,
+    "icons": [
+      {
+        "icon": "folder",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 20px",
+            "part": "cover-occlusion",
+            "transform": "matrix(1, 0, 0, 0.607298, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 19px",
+            "part": "rear-occlusion",
+            "transform": "matrix(0.997564, -0.0697565, 0.0697565, 0.997564, 0, -2.25)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 19px",
+            "part": "front-occlusion",
+            "transform": "matrix(0.998135, 0.0610485, -0.0610485, 0.998135, 0, -2.65)"
+          },
+          {
+            "opacity": "0.58",
+            "origin": "12px 19px",
+            "part": "rear-paper",
+            "transform": "matrix(0.997564, -0.0697565, 0.0697565, 0.997564, 0, -2.25)"
+          },
+          {
+            "opacity": "0.85",
+            "origin": "12px 19px",
+            "part": "front-paper",
+            "transform": "matrix(0.998135, 0.0610485, -0.0610485, 0.998135, 0, -2.65)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 20px",
+            "part": "cover",
+            "transform": "matrix(1, 0, 0, 0.607298, 0, 0)"
+          },
+          {
+            "opacity": "0.708765",
+            "origin": "17px 8px",
+            "part": "reveal-rays",
+            "transform": "matrix(0.938956, 0, 0, 0.938956, 0, 0.0678261)"
+          }
+        ]
+      },
+      {
+        "icon": "file",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "17px 5px",
+            "part": "fold",
+            "transform": "matrix(0.604524, 0.395476, 0.395476, 0.604524, 0, 0)"
+          },
+          {
+            "opacity": "0.748958",
+            "origin": "17px 5px",
+            "part": "crease-light",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.70656",
+            "origin": "21px 6px",
+            "part": "curl-air",
+            "transform": "matrix(0.989733, 0, 0, 0.989733, -0.0056, 0.00746667)"
+          }
+        ]
+      },
+      {
+        "icon": "copy",
+        "parts": [
+          {
+            "opacity": "0",
+            "origin": "6.5px 6.5px",
+            "part": "source-glint",
+            "transform": "matrix(0.95039, 0, 0, 0.95039, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "9px 9px",
+            "part": "duplicate",
+            "transform": "matrix(1, 0, 0, 1, 1.35, 1.35)"
+          },
+          {
+            "opacity": "0.797729",
+            "origin": "20.5px 20.5px",
+            "part": "registration-ticks",
+            "transform": "matrix(1.00403, 0, 0, 1.00403, 0.0150968, 0.0150968)"
+          }
+        ]
+      },
+      {
+        "icon": "trash",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 22px",
+            "part": "bin",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "4.5px 6.5px",
+            "part": "lid",
+            "transform": "matrix(0.981627, -0.190808, 0.190808, 0.981627, 0, -0.0499971)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 5px",
+            "part": "handle",
+            "transform": "matrix(0.998135, 0.0610456, -0.0610456, 0.998135, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 8px",
+            "part": "rim-light",
+            "transform": "matrix(0.3, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 8px",
+            "part": "impact-ticks",
+            "transform": "matrix(0.75, 0, 0, 1, 0, 0)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "phase": "contact",
+    "progress": 59,
+    "icons": [
+      {
+        "icon": "folder",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 20px",
+            "part": "cover-occlusion",
+            "transform": "matrix(1, 0, 0, 0.724822, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 19px",
+            "part": "rear-occlusion",
+            "transform": "matrix(0.999958, -0.00914006, 0.00914006, 0.999958, 0, -0.294578)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 19px",
+            "part": "front-occlusion",
+            "transform": "matrix(0.999455, 0.0330241, -0.0330241, 0.999455, 0, -1.43288)"
+          },
+          {
+            "opacity": "0.58",
+            "origin": "12px 19px",
+            "part": "rear-paper",
+            "transform": "matrix(0.999958, -0.00914006, 0.00914006, 0.999958, 0, -0.294578)"
+          },
+          {
+            "opacity": "0.85",
+            "origin": "12px 19px",
+            "part": "front-paper",
+            "transform": "matrix(0.999455, 0.0330241, -0.0330241, 0.999455, 0, -1.43288)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 20px",
+            "part": "cover",
+            "transform": "matrix(1, 0, 0, 0.724822, 0, 0)"
+          },
+          {
+            "opacity": "0.161477",
+            "origin": "17px 8px",
+            "part": "reveal-rays",
+            "transform": "matrix(1.08031, 0, 0, 1.08031, 0, -0.481846)"
+          }
+        ]
+      },
+      {
+        "icon": "file",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "17px 5px",
+            "part": "fold",
+            "transform": "matrix(0.659588, 0.340412, 0.340412, 0.659588, 0, 0)"
+          },
+          {
+            "opacity": "0.276789",
+            "origin": "17px 5px",
+            "part": "crease-light",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.26849",
+            "origin": "21px 6px",
+            "part": "curl-air",
+            "transform": "matrix(1.07525, 0, 0, 1.07525, 0.282194, -0.376258)"
+          }
+        ]
+      },
+      {
+        "icon": "copy",
+        "parts": [
+          {
+            "opacity": "0",
+            "origin": "6.5px 6.5px",
+            "part": "source-glint",
+            "transform": "matrix(0.877, 0, 0, 0.877, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "9px 9px",
+            "part": "duplicate",
+            "transform": "matrix(1, -0.000215534, 0.000215534, 1, 1.27837, 1.27837)"
+          },
+          {
+            "opacity": "0.254168",
+            "origin": "20.5px 20.5px",
+            "part": "registration-ticks",
+            "transform": "matrix(1.05579, 0, 0, 1.05579, 0.209226, 0.209226)"
+          }
+        ]
+      },
+      {
+        "icon": "trash",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 22px",
+            "part": "bin",
+            "transform": "matrix(1.00429, 0, 0, 0.995712, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "4.5px 6.5px",
+            "part": "lid",
+            "transform": "matrix(0.999986, 0.00526662, -0.00526662, 0.999986, 0, 0.369949)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 5px",
+            "part": "handle",
+            "transform": "matrix(0.999406, 0.0344578, -0.0344578, 0.999406, 0, 0)"
+          },
+          {
+            "opacity": "0.157046",
+            "origin": "12px 8px",
+            "part": "rim-light",
+            "transform": "matrix(0.398154, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.016",
+            "origin": "12px 8px",
+            "part": "impact-ticks",
+            "transform": "matrix(0.755, 0, 0, 1, 0, 0)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "phase": "impact",
+    "progress": 65,
+    "icons": [
+      {
+        "icon": "folder",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 20px",
+            "part": "cover-occlusion",
+            "transform": "matrix(1, 0, 0, 0.83093, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 19px",
+            "part": "rear-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 19px",
+            "part": "front-occlusion",
+            "transform": "matrix(0.999975, 0.00710299, -0.00710299, 0.999975, 0, -0.308138)"
+          },
+          {
+            "opacity": "0.58",
+            "origin": "12px 19px",
+            "part": "rear-paper",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.85",
+            "origin": "12px 19px",
+            "part": "front-paper",
+            "transform": "matrix(0.999975, 0.00710299, -0.00710299, 0.999975, 0, -0.308138)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 20px",
+            "part": "cover",
+            "transform": "matrix(1, 0, 0, 0.83093, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "17px 8px",
+            "part": "reveal-rays",
+            "transform": "matrix(1.06857, 0, 0, 1.06857, 0, -0.537143)"
+          }
+        ]
+      },
+      {
+        "icon": "file",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "17px 5px",
+            "part": "fold",
+            "transform": "matrix(0.848396, 0.151604, 0.151604, 0.848396, 0, 0)"
+          },
+          {
+            "opacity": "0.110141",
+            "origin": "17px 5px",
+            "part": "crease-light",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.106839",
+            "origin": "21px 6px",
+            "part": "curl-air",
+            "transform": "matrix(1.10219, 0, 0, 1.10219, 0.383226, -0.510968)"
+          }
+        ]
+      },
+      {
+        "icon": "copy",
+        "parts": [
+          {
+            "opacity": "0",
+            "origin": "6.5px 6.5px",
+            "part": "source-glint",
+            "transform": "matrix(0.851098, 0, 0, 0.851098, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "9px 9px",
+            "part": "duplicate",
+            "transform": "matrix(0.999998, -0.00179154, 0.00179154, 0.999998, 0.754644, 0.754644)"
+          },
+          {
+            "opacity": "0.0623226",
+            "origin": "20.5px 20.5px",
+            "part": "registration-ticks",
+            "transform": "matrix(1.07406, 0, 0, 1.07406, 0.277742, 0.277742)"
+          }
+        ]
+      },
+      {
+        "icon": "trash",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 22px",
+            "part": "bin",
+            "transform": "matrix(1.00341, 0, 0, 0.998749, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "4.5px 6.5px",
+            "part": "lid",
+            "transform": "matrix(0.99977, -0.0214263, 0.0214263, 0.99977, 0, -0.0978936)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 5px",
+            "part": "handle",
+            "transform": "matrix(0.999436, 0.0335912, -0.0335912, 0.999436, 0, 0)"
+          },
+          {
+            "opacity": "0.764957",
+            "origin": "12px 8px",
+            "part": "rim-light",
+            "transform": "matrix(0.877391, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.76",
+            "origin": "12px 8px",
+            "part": "impact-ticks",
+            "transform": "matrix(0.9875, 0, 0, 1, 0, 0)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "phase": "recover",
+    "progress": 85,
+    "icons": [
+      {
+        "icon": "folder",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 20px",
+            "part": "cover-occlusion",
+            "transform": "matrix(1, 0, 0, 1.01199, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 19px",
+            "part": "rear-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 19px",
+            "part": "front-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.58",
+            "origin": "12px 19px",
+            "part": "rear-paper",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.85",
+            "origin": "12px 19px",
+            "part": "front-paper",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 20px",
+            "part": "cover",
+            "transform": "matrix(1, 0, 0, 1.01199, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "17px 8px",
+            "part": "reveal-rays",
+            "transform": "matrix(0.772245, 0, 0, 0.772245, 0, 0.0555102)"
+          }
+        ]
+      },
+      {
+        "icon": "file",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "17px 5px",
+            "part": "fold",
+            "transform": "matrix(1.01129, -0.0112942, -0.0112942, 1.01129, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "17px 5px",
+            "part": "crease-light",
+            "transform": "matrix(0.793333, 0, 0, 0.793333, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "21px 6px",
+            "part": "curl-air",
+            "transform": "matrix(0.773833, 0, 0, 0.773833, 0.0625, -0.0833333)"
+          }
+        ]
+      },
+      {
+        "icon": "copy",
+        "parts": [
+          {
+            "opacity": "0",
+            "origin": "6.5px 6.5px",
+            "part": "source-glint",
+            "transform": "matrix(0.764756, 0, 0, 0.764756, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "9px 9px",
+            "part": "duplicate",
+            "transform": "matrix(0.999993, -0.00380963, 0.00380963, 0.999993, -0.0873105, -0.0873105)"
+          },
+          {
+            "opacity": "0",
+            "origin": "20.5px 20.5px",
+            "part": "registration-ticks",
+            "transform": "matrix(0.845154, 0, 0, 0.845154, -0.109615, -0.109615)"
+          }
+        ]
+      },
+      {
+        "icon": "trash",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 22px",
+            "part": "bin",
+            "transform": "matrix(0.999968, 0, 0, 1.00005, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "4.5px 6.5px",
+            "part": "lid",
+            "transform": "matrix(0.999977, -0.0068311, 0.0068311, 0.999977, 0, -0.0361289)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 5px",
+            "part": "handle",
+            "transform": "matrix(0.999976, -0.00688849, 0.00688849, 0.999976, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 8px",
+            "part": "rim-light",
+            "transform": "matrix(0.866087, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 8px",
+            "part": "impact-ticks",
+            "transform": "matrix(1.01687, 0, 0, 1, 0, 0.202174)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "phase": "settled",
+    "progress": 100,
+    "icons": [
+      {
+        "icon": "folder",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 20px",
+            "part": "cover-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 19px",
+            "part": "rear-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 19px",
+            "part": "front-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.58",
+            "origin": "12px 19px",
+            "part": "rear-paper",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.85",
+            "origin": "12px 19px",
+            "part": "front-paper",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 20px",
+            "part": "cover",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "17px 8px",
+            "part": "reveal-rays",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0, 0.5)"
+          }
+        ]
+      },
+      {
+        "icon": "file",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "17px 5px",
+            "part": "fold",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "17px 5px",
+            "part": "crease-light",
+            "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "21px 6px",
+            "part": "curl-air",
+            "transform": "matrix(0.45, 0, 0, 0.45, -0.3, 0.4)"
+          }
+        ]
+      },
+      {
+        "icon": "copy",
+        "parts": [
+          {
+            "opacity": "0",
+            "origin": "6.5px 6.5px",
+            "part": "source-glint",
+            "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "9px 9px",
+            "part": "duplicate",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "20.5px 20.5px",
+            "part": "registration-ticks",
+            "transform": "matrix(0.65, 0, 0, 0.65, -0.45, -0.45)"
+          }
+        ]
+      },
+      {
+        "icon": "trash",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 22px",
+            "part": "bin",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "4.5px 6.5px",
+            "part": "lid",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 5px",
+            "part": "handle",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 8px",
+            "part": "rim-light",
+            "transform": "matrix(0.3, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 8px",
+            "part": "impact-ticks",
+            "transform": "matrix(0.75, 0, 0, 1, 0, 0)"
+          }
+        ]
+      }
+    ]
+  }
+]

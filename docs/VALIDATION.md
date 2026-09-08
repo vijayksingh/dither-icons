@@ -83,3 +83,33 @@ The user limited the next quality pass to **arrow-right, arrow-up, external-link
 - ESM/declarations/gallery/downloadable tarball built successfully. Library output is 82.23KB before compression; named imports still share the complete catalog.
 - The new tarball was installed into a fresh React 18.3.1 consumer. All 36 named exports, 36 timelines, and 108 server-rendered variants passed. Local development uses React 19.
 - `git diff --check` passed. No npm publication or deployment was performed. Standalone inline SVG shares the tracks but retains the documented CSS hover-departure limitation.
+
+## Focused refinement 02 — 2026-09-09
+
+Scope: **folder, file, copy, trash**, after the user accepted the previous four. The accepted foundation and Refinement / 01 timelines remain unchanged. Interface Craft's individual critique/storyboard workflow and MOT-01 through MOT-16 govern these four reports.
+
+### Rendered decisions and corrections
+
+- Folder: fixed shaded back; staggered rear/front papers; hinged front; reveal rays. Moving occlusion removes the former accumulation of overlapping grain. An initial outlined back read as a briefcase; the final filled back restores the folder silhouette. Foreground and hidden cutout tracks are identical.
+- File: fixed page with legible content marks in every material; a diagonal fold hinge holds both crease endpoints; crease light and a curved air mark form the climax.
+- Copy: fixed source; a small peel followed by parallel registration; source glint precedes the stronger exterior destination ticks.
+- Trash: opening lid and delayed handle; the bin stays planted until the lid meets it; rim light and exterior ticks respond to the later contact event.
+
+### Browser verification
+
+- Inspected 112px studies in dither, outline, and solid. Dark Iris and light Cobalt were reviewed. Solid collection icons were inspected at 24px, dither at 64px.
+- Saved [seven poses](motion-evidence/refinement-02/): 0%, 10%, 42% reveal, 59% contact, 65% impact, 85% recovery, 100% rest. Per-part computed transforms and half-speed playback samples accompany the screenshots. Trash's climax is intentionally later than the others.
+- Actual and half-speed replay started all four and returned them to idle. Accent opacities visibly increased at their respective events and returned to zero. Every identity part returned to its initial transform.
+- Keyboard Enter and Tab departure checked on each of the four. All previous gestures continued while focus advanced; every gesture finished. Mid-play keyboard activation did not restart the active sequence.
+- Paused dither-to-solid material switching at 42% preserved every named part's computed transform, including the folder's moving cutouts.
+- Reduced-motion emulation cleared all part transforms and hid every accent. Replay produced zero playing study icons. Motion-off disabled all four study controls and left zero playing icons.
+- At 390 CSS pixels, client and scroll widths were both 390px. The study grid had two 173px columns, all controls stayed within the viewport, and keyboard replay started all four. This is responsive-layout/keyboard evidence, not physical-device touch verification.
+- Browser console: no error entries. Loading/empty/error data states do not apply to these static studies. The playback engine and unrelated catalog flows were not modified.
+
+### Automated and package verification
+
+- TypeScript and all **13 tests** passed. New tests verify matching paper/cutout trajectories and unique mask IDs across instances/materials, plus fixed file-crease endpoints between keyframes.
+- Existing checks cover all 36 timelines, 108 material variants, SVG target binding, ordered clocks, transform/opacity-only tracks, neutral endpoints, hidden accents, previous directional joints, accessibility, and CSS fallback.
+- ESM library, declarations, gallery, and downloadable tarball built successfully. Library size is 94.53KB before compression; named imports still share the complete catalog.
+- The new tarball installed in a fresh React 18.3.1 consumer. All 36 named exports, 36 timelines, and 108 server-rendered variants passed. Repository checks use React 19.
+- No npm publication or deployment. Standalone inline SVG carries the same tracks and retains the documented CSS hover-departure limitation.

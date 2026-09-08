@@ -10,10 +10,10 @@ The four accepted foundation performances remain intact. The remaining 32 use in
 | [arrow-up](icon-reviews/arrow-up.md) | move upward or return toward the top | Gather / Lift / Float home | 1120ms |
 | [external-link](icon-reviews/external-link.md) | open another destination while retaining the current context | Reach out / Follow through / Return | 1120ms |
 | [upload](icon-reviews/upload.md) | transfer from a local container toward another destination | Gather / Release / Ease home | 1180ms |
-| [folder](icon-reviews/folder.md) | contain and reveal grouped files | Unseat / Reveal / Close | 1160ms |
-| [file](icon-reviews/file.md) | a document with content and a folded corner | Lift / Read / Lay flat | 960ms |
-| [copy](icon-reviews/copy.md) | duplicate while retaining the source | Register / Separate / Nest | 1040ms |
-| [trash](icon-reviews/trash.md) | place something into a removable container | Release / Open / Seat | 1100ms |
+| [folder](icon-reviews/folder.md) | contain and reveal grouped files | Open / Reveal / Tuck away | 1320ms |
+| [file](icon-reviews/file.md) | a document with content and a folded corner | Gather / Peel / Lay flat | 1160ms |
+| [copy](icon-reviews/copy.md) | duplicate while retaining the source | Register / Separate / Nest | 1180ms |
+| [trash](icon-reviews/trash.md) | place something into a removable container | Lift / Close / Dissipate | 1240ms |
 | [book](icon-reviews/book.md) | open and inspect bound knowledge | Part / Read / Bind | 1180ms |
 | [mail](icon-reviews/mail.md) | an envelope containing correspondence | Unfold / Reveal / Close | 1140ms |
 | [message](icon-reviews/message.md) | an ongoing conversation or a short thought | Begin / Answer / Rest | 1020ms |
@@ -46,6 +46,10 @@ The four accepted foundation performances remain intact. The remaining 32 use in
 ## Focused refinement 01
 
 The user requested a smaller, more careful batch after the broad rollout. Only the first four entries above have been refined in this pass. Their new reviews supersede the earlier rollout reports for those four. Choose **Refinement / 01** in Motion studies. Each now has connected geometry, its own named timing/configuration, and a localized climax (MOT-16). The remaining icons are outside this batch.
+
+## Focused refinement 02
+
+After the user accepted Refinement / 01, the next bounded batch is **folder, file, copy, and trash**. Choose **Refinement / 02**, now the default study group. Folder gains true layer occlusion and a staggered reveal; file has an anchored diagonal crease; copy registers its twin with a light handoff; trash delivers its impact when the lid closes. Their four linked reviews replace the broad-rollout reports. Earlier accepted gestures remain unchanged.
 
 ## How to use these references
 

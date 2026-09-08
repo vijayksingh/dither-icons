@@ -1,8 +1,8 @@
 import {useState} from 'react';
 import {DitherIcon,studies,type Texture} from '../src';
-const SETS:Record<string,string[]>={'Refinement / 01':['arrow-right','arrow-up','external-link','upload'],Foundation:['bell','heart','download','layers'],Navigation:['arrow-right','arrow-up','external-link'],'Files / transfer':['upload','copy','file'],'Files / containers':['folder','trash','book'],Communication:['mail','message','send'],Media:['play','pause','volume'],Development:['code','terminal','cpu','chart'],'Interface / places':['search','home','settings'],'Interface / actions':['check','close','plus'],'Interface / presence':['user','lock','eye'],'Interface / light':['sparkles','sun','moon','bolt']};
+const SETS:Record<string,string[]>={'Refinement / 02':['folder','file','copy','trash'],'Refinement / 01':['arrow-right','arrow-up','external-link','upload'],Foundation:['bell','heart','download','layers'],Navigation:['arrow-right','arrow-up','external-link'],'Files / transfer':['upload','copy','file'],'Files / containers':['folder','trash','book'],Communication:['mail','message','send'],Media:['play','pause','volume'],Development:['code','terminal','cpu','chart'],'Interface / places':['search','home','settings'],'Interface / actions':['check','close','plus'],'Interface / presence':['user','lock','eye'],'Interface / light':['sparkles','sun','moon','bolt']};
 export function MotionStudies({texture,enabled}:{texture:Texture;enabled:boolean}){
- const [set,setSet]=useState('Refinement / 01');
+ const [set,setSet]=useState('Refinement / 02');
  const ORDER=SETS[set].filter(name=>studies[name]);
  const [speed,setSpeed]=useState(1),[replay,setReplay]=useState(0),[progress,setProgress]=useState<number|undefined>();
  return <section className="motion-studies" id="motion-studies" aria-labelledby="studies-heading">
