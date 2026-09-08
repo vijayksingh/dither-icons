@@ -1,0 +1,1194 @@
+[
+  {
+    "percent": 0,
+    "icons": [
+      {
+        "icon": "workspace",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "9.5px 8.5px",
+            "part": "divider",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12.2px 14px",
+            "part": "source",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12.2px 11.275px",
+            "part": "source-first",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.65",
+            "origin": "13.6px 14.125px",
+            "part": "source-second",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "17.75px 17px",
+            "part": "editor-caret",
+            "transform": "matrix(1, 0, 0, 0.3, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "20px 14px",
+            "part": "editor-edge",
+            "transform": "matrix(1, 0, 0, 0.2, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "gauge",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 14.5px",
+            "part": "needle",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "15.7px 8.09141px",
+            "part": "reading-tick",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 14.5px",
+            "part": "reading-echo",
+            "transform": "matrix(0.96, 0, 0, 0.96, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "orbit",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-rear",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "10.45px 9.55px",
+            "part": "orbital-surface",
+            "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 12px",
+            "part": "orbital-wake",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-front",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "lifebuoy",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 10.8px",
+            "part": "buoy",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 18.15px",
+            "part": "buoy-contact",
+            "transform": "matrix(0.35, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "6.4px 20.1px",
+            "part": "ripple-left",
+            "transform": "matrix(0.55, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "17.6px 20.1px",
+            "part": "ripple-right",
+            "transform": "matrix(0.55, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "7.2px 22px",
+            "part": "echo-left",
+            "transform": "matrix(0.55, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "16.8px 22px",
+            "part": "echo-right",
+            "transform": "matrix(0.55, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": null
+      }
+    ]
+  },
+  {
+    "percent": 10,
+    "icons": [
+      {
+        "icon": "workspace",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "9.5px 8.5px",
+            "part": "divider",
+            "transform": "matrix(1, 0, 0, 1, -0.520354, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12.2px 14px",
+            "part": "source",
+            "transform": "matrix(1, 0, 0, 1, -0.514539, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12.2px 11.275px",
+            "part": "source-first",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.65",
+            "origin": "13.6px 14.125px",
+            "part": "source-second",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "17.75px 17px",
+            "part": "editor-caret",
+            "transform": "matrix(1, 0, 0, 0.3, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "20px 14px",
+            "part": "editor-edge",
+            "transform": "matrix(1, 0, 0, 0.2, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "gauge",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 14.5px",
+            "part": "needle",
+            "transform": "matrix(0.916189, -0.400746, 0.400746, 0.916189, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "15.7px 8.09141px",
+            "part": "reading-tick",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 14.5px",
+            "part": "reading-echo",
+            "transform": "matrix(0.96, 0, 0, 0.96, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "orbit",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-occlusion",
+            "transform": "matrix(1.00289, 0, 0, 1.00289, -0.128494, 0.155389)"
+          },
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-rear",
+            "transform": "matrix(1.00289, 0, 0, 1.00289, -0.128494, 0.155389)"
+          },
+          {
+            "opacity": "0",
+            "origin": "10.45px 9.55px",
+            "part": "orbital-surface",
+            "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 12px",
+            "part": "orbital-wake",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-front",
+            "transform": "matrix(1.00289, 0, 0, 1.00289, -0.128494, 0.155389)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "lifebuoy",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 10.8px",
+            "part": "buoy",
+            "transform": "matrix(0.998634, -0.0522579, 0.0522579, 0.998634, 0, -0.349478)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 18.15px",
+            "part": "buoy-contact",
+            "transform": "matrix(0.35, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "6.4px 20.1px",
+            "part": "ripple-left",
+            "transform": "matrix(0.55, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "17.6px 20.1px",
+            "part": "ripple-right",
+            "transform": "matrix(0.55, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "7.2px 22px",
+            "part": "echo-left",
+            "transform": "matrix(0.55, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "16.8px 22px",
+            "part": "echo-right",
+            "transform": "matrix(0.55, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": null
+      }
+    ]
+  },
+  {
+    "percent": 28,
+    "icons": [
+      {
+        "icon": "workspace",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "9.5px 8.5px",
+            "part": "divider",
+            "transform": "matrix(1, 0, 0, 1, -1.2, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12.2px 14px",
+            "part": "source",
+            "transform": "matrix(1, 0, 0, 1, -1, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12.2px 11.275px",
+            "part": "source-first",
+            "transform": "matrix(1.1401, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.65",
+            "origin": "13.6px 14.125px",
+            "part": "source-second",
+            "transform": "matrix(1.09006, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "17.75px 17px",
+            "part": "editor-caret",
+            "transform": "matrix(1, 0, 0, 0.3, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "20px 14px",
+            "part": "editor-edge",
+            "transform": "matrix(1, 0, 0, 0.2, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "gauge",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 14.5px",
+            "part": "needle",
+            "transform": "matrix(0.99639, 0.0848926, -0.0848926, 0.99639, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "15.7px 8.09141px",
+            "part": "reading-tick",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 14.5px",
+            "part": "reading-echo",
+            "transform": "matrix(0.96, 0, 0, 0.96, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "orbit",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-occlusion",
+            "transform": "matrix(1.05242, 0, 0, 1.05242, -8.19455, 2.81761)"
+          },
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-rear",
+            "transform": "matrix(1.05242, 0, 0, 1.05242, -8.19455, 2.81761)"
+          },
+          {
+            "opacity": "0",
+            "origin": "10.45px 9.55px",
+            "part": "orbital-surface",
+            "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+          },
+          {
+            "opacity": "0.4774",
+            "origin": "12px 12px",
+            "part": "orbital-wake",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-front",
+            "transform": "matrix(1.05242, 0, 0, 1.05242, -8.19455, 2.81761)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "lifebuoy",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 10.8px",
+            "part": "buoy",
+            "transform": "matrix(0.999403, 0.0345516, -0.0345516, 0.999403, 0, 1.09422)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 18.15px",
+            "part": "buoy-contact",
+            "transform": "matrix(0.35, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "6.4px 20.1px",
+            "part": "ripple-left",
+            "transform": "matrix(0.55, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "17.6px 20.1px",
+            "part": "ripple-right",
+            "transform": "matrix(0.55, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "7.2px 22px",
+            "part": "echo-left",
+            "transform": "matrix(0.55, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "16.8px 22px",
+            "part": "echo-right",
+            "transform": "matrix(0.55, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": null
+      }
+    ]
+  },
+  {
+    "percent": 36,
+    "icons": [
+      {
+        "icon": "workspace",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "9.5px 8.5px",
+            "part": "divider",
+            "transform": "matrix(1, 0, 0, 1, -1.2, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12.2px 14px",
+            "part": "source",
+            "transform": "matrix(1, 0, 0, 1, -1, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12.2px 11.275px",
+            "part": "source-first",
+            "transform": "matrix(1.15, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.65",
+            "origin": "13.6px 14.125px",
+            "part": "source-second",
+            "transform": "matrix(1.12, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "17.75px 17px",
+            "part": "editor-caret",
+            "transform": "matrix(1, 0, 0, 0.3, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "20px 14px",
+            "part": "editor-edge",
+            "transform": "matrix(1, 0, 0, 0.2, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "gauge",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 14.5px",
+            "part": "needle",
+            "transform": "matrix(0.999997, 0.00238904, -0.00238904, 0.999997, 0, 0)"
+          },
+          {
+            "opacity": "0.810667",
+            "origin": "15.7px 8.09141px",
+            "part": "reading-tick",
+            "transform": "matrix(0.9148, 0, 0, 0.9148, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 14.5px",
+            "part": "reading-echo",
+            "transform": "matrix(0.96, 0, 0, 0.96, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "orbit",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-occlusion",
+            "transform": "matrix(1.0285, 0, 0, 1.0285, -15.2097, 1.53194)"
+          },
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-rear",
+            "transform": "matrix(1.0285, 0, 0, 1.0285, -15.2097, 1.53194)"
+          },
+          {
+            "opacity": "0.603807",
+            "origin": "10.45px 9.55px",
+            "part": "orbital-surface",
+            "transform": "matrix(0.951586, 0, 0, 0.951586, 0, 0)"
+          },
+          {
+            "opacity": "0.698368",
+            "origin": "12px 12px",
+            "part": "orbital-wake",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-front",
+            "transform": "matrix(1.0285, 0, 0, 1.0285, -15.2097, 1.53194)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "lifebuoy",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 10.8px",
+            "part": "buoy",
+            "transform": "matrix(0.999986, -0.00527757, 0.00527757, 0.999986, 0, 0.504536)"
+          },
+          {
+            "opacity": "0.840774",
+            "origin": "12px 18.15px",
+            "part": "buoy-contact",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.5168",
+            "origin": "6.4px 20.1px",
+            "part": "ripple-left",
+            "transform": "matrix(0.856, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.5168",
+            "origin": "17.6px 20.1px",
+            "part": "ripple-right",
+            "transform": "matrix(0.856, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.0415698",
+            "origin": "7.2px 22px",
+            "part": "echo-left",
+            "transform": "matrix(0.601962, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.0415698",
+            "origin": "16.8px 22px",
+            "part": "echo-right",
+            "transform": "matrix(0.601962, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": null
+      }
+    ]
+  },
+  {
+    "percent": 45,
+    "icons": [
+      {
+        "icon": "workspace",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "9.5px 8.5px",
+            "part": "divider",
+            "transform": "matrix(1, 0, 0, 1, -1.2, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12.2px 14px",
+            "part": "source",
+            "transform": "matrix(1, 0, 0, 1, -1, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12.2px 11.275px",
+            "part": "source-first",
+            "transform": "matrix(1.15, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.65",
+            "origin": "13.6px 14.125px",
+            "part": "source-second",
+            "transform": "matrix(1.12, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.787111",
+            "origin": "17.75px 17px",
+            "part": "editor-caret",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.718667",
+            "origin": "20px 14px",
+            "part": "editor-edge",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "gauge",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 14.5px",
+            "part": "needle",
+            "transform": "matrix(0.999913, 0.0131634, -0.0131634, 0.999913, 0, 0)"
+          },
+          {
+            "opacity": "0.730667",
+            "origin": "15.7px 8.09141px",
+            "part": "reading-tick",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.754623",
+            "origin": "12px 14.5px",
+            "part": "reading-echo",
+            "transform": "matrix(1.00183, 0, 0, 1.00183, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "orbit",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-occlusion",
+            "transform": "matrix(0.925046, 0, 0, 0.925046, -17.4448, -2.68596)"
+          },
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-rear",
+            "transform": "matrix(0.925046, 0, 0, 0.925046, -17.4448, -2.68596)"
+          },
+          {
+            "opacity": "0.238629",
+            "origin": "10.45px 9.55px",
+            "part": "orbital-surface",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.20416",
+            "origin": "12px 12px",
+            "part": "orbital-wake",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-front",
+            "transform": "matrix(0.925046, 0, 0, 0.925046, -17.4448, -2.68596)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "lifebuoy",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 10.8px",
+            "part": "buoy",
+            "transform": "matrix(0.99994, -0.010962, 0.010962, 0.99994, 0, -0.136857)"
+          },
+          {
+            "opacity": "0.586452",
+            "origin": "12px 18.15px",
+            "part": "buoy-contact",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.606",
+            "origin": "6.4px 20.1px",
+            "part": "ripple-left",
+            "transform": "matrix(1.02026, 0, 0, 1, -0.182368, 0.0506579)"
+          },
+          {
+            "opacity": "0.606",
+            "origin": "17.6px 20.1px",
+            "part": "ripple-right",
+            "transform": "matrix(1.02026, 0, 0, 1, 0.182368, 0.0506579)"
+          },
+          {
+            "opacity": "0.220075",
+            "origin": "7.2px 22px",
+            "part": "echo-left",
+            "transform": "matrix(0.825094, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.220075",
+            "origin": "16.8px 22px",
+            "part": "echo-right",
+            "transform": "matrix(0.825094, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": null
+      }
+    ]
+  },
+  {
+    "percent": 58,
+    "icons": [
+      {
+        "icon": "workspace",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "9.5px 8.5px",
+            "part": "divider",
+            "transform": "matrix(1, 0, 0, 1, -1.02894, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12.2px 14px",
+            "part": "source",
+            "transform": "matrix(1, 0, 0, 1, -0.857453, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12.2px 11.275px",
+            "part": "source-first",
+            "transform": "matrix(1.12862, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.65",
+            "origin": "13.6px 14.125px",
+            "part": "source-second",
+            "transform": "matrix(1.10289, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.335289",
+            "origin": "17.75px 17px",
+            "part": "editor-caret",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.306133",
+            "origin": "20px 14px",
+            "part": "editor-edge",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "gauge",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 14.5px",
+            "part": "needle",
+            "transform": "matrix(0.999982, 0.00591651, -0.00591651, 0.999982, 0, 0)"
+          },
+          {
+            "opacity": "0.286933",
+            "origin": "15.7px 8.09141px",
+            "part": "reading-tick",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.296341",
+            "origin": "12px 14.5px",
+            "part": "reading-echo",
+            "transform": "matrix(1.01165, 0, 0, 1.01165, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "orbit",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-occlusion",
+            "transform": "matrix(0.842335, 0, 0, 0.842335, -6.53571, -5.64961)"
+          },
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-rear",
+            "transform": "matrix(0.842335, 0, 0, 0.842335, -6.53571, -5.64961)"
+          },
+          {
+            "opacity": "0",
+            "origin": "10.45px 9.55px",
+            "part": "orbital-surface",
+            "transform": "matrix(0.9457, 0, 0, 0.9457, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 12px",
+            "part": "orbital-wake",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-front",
+            "transform": "matrix(0.842335, 0, 0, 0.842335, -6.53571, -5.64961)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "lifebuoy",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 10.8px",
+            "part": "buoy",
+            "transform": "matrix(0.999966, -0.00830568, 0.00830568, 0.999966, 0, -0.131784)"
+          },
+          {
+            "opacity": "0.219097",
+            "origin": "12px 18.15px",
+            "part": "buoy-contact",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.2264",
+            "origin": "6.4px 20.1px",
+            "part": "ripple-left",
+            "transform": "matrix(1.07021, 0, 0, 1, -0.631895, 0.175526)"
+          },
+          {
+            "opacity": "0.2264",
+            "origin": "17.6px 20.1px",
+            "part": "ripple-right",
+            "transform": "matrix(1.07021, 0, 0, 1, 0.631895, 0.175526)"
+          },
+          {
+            "opacity": "0.20376",
+            "origin": "7.2px 22px",
+            "part": "echo-left",
+            "transform": "matrix(1, 0, 0, 1, -0.1953, 0.0434)"
+          },
+          {
+            "opacity": "0.20376",
+            "origin": "16.8px 22px",
+            "part": "echo-right",
+            "transform": "matrix(1, 0, 0, 1, 0.1953, 0.0434)"
+          }
+        ],
+        "playing": null
+      }
+    ]
+  },
+  {
+    "percent": 82,
+    "icons": [
+      {
+        "icon": "workspace",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "9.5px 8.5px",
+            "part": "divider",
+            "transform": "matrix(1, 0, 0, 1, -9.37061e-05, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12.2px 14px",
+            "part": "source",
+            "transform": "matrix(1, 0, 0, 1, -7.80884e-05, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12.2px 11.275px",
+            "part": "source-first",
+            "transform": "matrix(1.00001, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.65",
+            "origin": "13.6px 14.125px",
+            "part": "source-second",
+            "transform": "matrix(1.00001, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "17.75px 17px",
+            "part": "editor-caret",
+            "transform": "matrix(1, 0, 0, 0.689455, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "20px 14px",
+            "part": "editor-edge",
+            "transform": "matrix(1, 0, 0, 0.645091, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "gauge",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 14.5px",
+            "part": "needle",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "15.7px 8.09141px",
+            "part": "reading-tick",
+            "transform": "matrix(0.791116, 0, 0, 0.791116, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 14.5px",
+            "part": "reading-echo",
+            "transform": "matrix(0.991077, 0, 0, 0.991077, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "orbit",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-occlusion",
+            "transform": "matrix(0.997606, 0, 0, 0.997606, 0.064284, -0.0857276)"
+          },
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-rear",
+            "transform": "matrix(0.997606, 0, 0, 0.997606, 0.064284, -0.0857276)"
+          },
+          {
+            "opacity": "0",
+            "origin": "10.45px 9.55px",
+            "part": "orbital-surface",
+            "transform": "matrix(0.8053, 0, 0, 0.8053, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 12px",
+            "part": "orbital-wake",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-front",
+            "transform": "matrix(0.997606, 0, 0, 0.997606, 0.064284, -0.0857276)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "lifebuoy",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 10.8px",
+            "part": "buoy",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 18.15px",
+            "part": "buoy-contact",
+            "transform": "matrix(0.69164, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "6.4px 20.1px",
+            "part": "ripple-left",
+            "transform": "matrix(0.83908, 0, 0, 1, -0.47304, 0.1314)"
+          },
+          {
+            "opacity": "0",
+            "origin": "17.6px 20.1px",
+            "part": "ripple-right",
+            "transform": "matrix(0.83908, 0, 0, 1, 0.47304, 0.1314)"
+          },
+          {
+            "opacity": "0",
+            "origin": "7.2px 22px",
+            "part": "echo-left",
+            "transform": "matrix(0.78652, 0, 0, 1, -0.23652, 0.05256)"
+          },
+          {
+            "opacity": "0",
+            "origin": "16.8px 22px",
+            "part": "echo-right",
+            "transform": "matrix(0.78652, 0, 0, 1, 0.23652, 0.05256)"
+          }
+        ],
+        "playing": null
+      }
+    ]
+  },
+  {
+    "percent": 100,
+    "icons": [
+      {
+        "icon": "workspace",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "9.5px 8.5px",
+            "part": "divider",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12.2px 14px",
+            "part": "source",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12.2px 11.275px",
+            "part": "source-first",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.65",
+            "origin": "13.6px 14.125px",
+            "part": "source-second",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "17.75px 17px",
+            "part": "editor-caret",
+            "transform": "matrix(1, 0, 0, 0.3, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "20px 14px",
+            "part": "editor-edge",
+            "transform": "matrix(1, 0, 0, 0.2, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "gauge",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 14.5px",
+            "part": "needle",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "15.7px 8.09141px",
+            "part": "reading-tick",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 14.5px",
+            "part": "reading-echo",
+            "transform": "matrix(0.96, 0, 0, 0.96, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "orbit",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-rear",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "10.45px 9.55px",
+            "part": "orbital-surface",
+            "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 12px",
+            "part": "orbital-wake",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-front",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "lifebuoy",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 10.8px",
+            "part": "buoy",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 18.15px",
+            "part": "buoy-contact",
+            "transform": "matrix(0.35, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "6.4px 20.1px",
+            "part": "ripple-left",
+            "transform": "matrix(0.55, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "17.6px 20.1px",
+            "part": "ripple-right",
+            "transform": "matrix(0.55, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "7.2px 22px",
+            "part": "echo-left",
+            "transform": "matrix(0.55, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "16.8px 22px",
+            "part": "echo-right",
+            "transform": "matrix(0.55, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": null
+      }
+    ]
+  }
+]

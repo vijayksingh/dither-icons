@@ -102,3 +102,7 @@ export const TensorIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(f
 export const NetworkIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function NetworkIcon(props,ref){return <DitherIcon {...props} name="network" ref={ref}/>;});
 export const CheckpointIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function CheckpointIcon(props,ref){return <DitherIcon {...props} name="checkpoint" ref={ref}/>;});
 export const HintIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function HintIcon(props,ref){return <DitherIcon {...props} name="hint" ref={ref}/>;});
+export const WorkspaceIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function WorkspaceIcon(props,ref){return <DitherIcon {...props} name="workspace" ref={ref}/>;});
+export const GaugeIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function GaugeIcon(props,ref){return <DitherIcon {...props} name="gauge" ref={ref}/>;});
+export const OrbitIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function OrbitIcon(props,ref){return <DitherIcon {...props} name="orbit" ref={ref}/>;});
+export const LifebuoyIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function LifebuoyIcon(props,ref){return <DitherIcon {...props} name="lifebuoy" ref={ref}/>;});

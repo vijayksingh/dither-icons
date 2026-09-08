@@ -42,3 +42,16 @@ The export remains transparent and color-inheriting. React completes an initiate
 Source inspected 2026-09-09. Tensor is an inspection metaphor: extracting a solid 1 × 2 × 2 block does not delete values. Network expresses connected computation, not a full autograd or training model. Checkpoint denotes the retained version; Retry remains appropriate for the separate restore/reset action. Hint belongs beside the native disclosure label and must not reveal content automatically.
 
 Apply the same UI-2/4, COLOR-2/5, A11Y-2/4, and MOTION-1/4/6/7 integration rules above. The four are available as named exports and in the Learning filter, with their complete gestures in **Platform / 02**. Prefer still solid/outline in compact, frequently used controls. No platform call sites are modified by this library batch.
+
+## Platform / 03
+
+| Library export | Actual platform need | Observed source in CraftingAttention |
+| --- | --- | --- |
+| `WorkspaceIcon` | Navigate to the Learner's growing codebase and saved state | `app/src/components/PlatformCommandPalette.tsx:113–118`; currently FolderTree for Workspace history |
+| `GaugeIcon` | Dashboard overview and a calibrated difficulty cue | `app/src/components/PlatformCommandPalette.tsx:105–110`; Gauge for Dashboard. `app/src/components/home/LearningCatalogPage.tsx:175` uses Gauge beside difficulty |
+| `OrbitIcon` | Explore the curriculum atlas | `app/src/components/PlatformCommandPalette.tsx:97–102`; Orbit routes to `/paths/universe` |
+| `LifebuoyIcon` | Open Support | `app/src/components/PlatformCommandPalette.tsx:129–134`; currently LifeBuoy |
+
+Source inspected 2026-09-09. Workspace depicts an organized working surface; history and restoration still belong to the platform's real Checkpoint flow. Gauge returns to its starting reading and cannot indicate increased mastery. Orbit makes one finite traversal with a stationary center; it is not a loading spinner. Lifebuoy offers support without sending a request or implying a response.
+
+Catalog categories reflect general meaning: Workspace is Development, Gauge and Lifebuoy are Interface, and Orbit is Learning. **Platform / 03** groups all four for review. The existing UI-2/4, COLOR-2/5, A11Y-2/4, and MOTION-1/4/6/7 handoff rules remain binding; frequent navigation should generally use still compact icons. This batch does not change platform call sites.

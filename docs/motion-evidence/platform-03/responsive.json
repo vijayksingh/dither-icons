@@ -1,0 +1,29 @@
+{
+  "playing": [
+    {
+      "icon": "workspace",
+      "playing": "true"
+    },
+    {
+      "icon": "gauge",
+      "playing": "true"
+    },
+    {
+      "icon": "orbit",
+      "playing": "true"
+    },
+    {
+      "icon": "lifebuoy",
+      "playing": "true"
+    }
+  ],
+  "scrollWidth": 390,
+  "stageWidths": [
+    173,
+    173,
+    173,
+    173
+  ],
+  "viewport": 390,
+  "errors": []
+}

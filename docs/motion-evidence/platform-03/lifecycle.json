@@ -1,0 +1,472 @@
+{
+  "keyboard": [
+    {
+      "icon": "workspace",
+      "departed": {
+        "icon": "workspace",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "9.5px 8.5px",
+            "part": "divider",
+            "transform": "matrix(1, 0, 0, 1, 0.0120479, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12.2px 14px",
+            "part": "source",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12.2px 11.275px",
+            "part": "source-first",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.65",
+            "origin": "13.6px 14.125px",
+            "part": "source-second",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "17.75px 17px",
+            "part": "editor-caret",
+            "transform": "matrix(1, 0, 0, 0.3, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "20px 14px",
+            "part": "editor-edge",
+            "transform": "matrix(1, 0, 0, 0.2, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      "finished": {
+        "icon": "workspace",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "9.5px 8.5px",
+            "part": "divider",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "origin": "12.2px 14px",
+            "part": "source",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "origin": "12.2px 11.275px",
+            "part": "source-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.65",
+            "origin": "13.6px 14.125px",
+            "part": "source-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "origin": "17.75px 17px",
+            "part": "editor-caret",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "origin": "20px 14px",
+            "part": "editor-edge",
+            "transform": "none"
+          }
+        ],
+        "playing": null
+      }
+    },
+    {
+      "icon": "gauge",
+      "departed": {
+        "icon": "gauge",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 14.5px",
+            "part": "needle",
+            "transform": "matrix(0.998674, -0.0514768, 0.0514768, 0.998674, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "15.7px 8.09141px",
+            "part": "reading-tick",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 14.5px",
+            "part": "reading-echo",
+            "transform": "matrix(0.96, 0, 0, 0.96, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      "finished": {
+        "icon": "gauge",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 14.5px",
+            "part": "needle",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "origin": "15.7px 8.09141px",
+            "part": "reading-tick",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 14.5px",
+            "part": "reading-echo",
+            "transform": "none"
+          }
+        ],
+        "playing": null
+      }
+    },
+    {
+      "icon": "orbit",
+      "departed": {
+        "icon": "orbit",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-rear",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "10.45px 9.55px",
+            "part": "orbital-surface",
+            "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 12px",
+            "part": "orbital-wake",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-front",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      "finished": {
+        "icon": "orbit",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-occlusion",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-rear",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "origin": "10.45px 9.55px",
+            "part": "orbital-surface",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 12px",
+            "part": "orbital-wake",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "origin": "20.6452px 13.4707px",
+            "part": "satellite-front",
+            "transform": "none"
+          }
+        ],
+        "playing": null
+      }
+    },
+    {
+      "icon": "lifebuoy",
+      "departed": {
+        "icon": "lifebuoy",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 10.8px",
+            "part": "buoy",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 18.15px",
+            "part": "buoy-contact",
+            "transform": "matrix(0.35, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "6.4px 20.1px",
+            "part": "ripple-left",
+            "transform": "matrix(0.55, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "17.6px 20.1px",
+            "part": "ripple-right",
+            "transform": "matrix(0.55, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "7.2px 22px",
+            "part": "echo-left",
+            "transform": "matrix(0.55, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "16.8px 22px",
+            "part": "echo-right",
+            "transform": "matrix(0.55, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      "finished": {
+        "icon": "lifebuoy",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 10.8px",
+            "part": "buoy",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 18.15px",
+            "part": "buoy-contact",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "origin": "6.4px 20.1px",
+            "part": "ripple-left",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "origin": "17.6px 20.1px",
+            "part": "ripple-right",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "origin": "7.2px 22px",
+            "part": "echo-left",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "origin": "16.8px 22px",
+            "part": "echo-right",
+            "transform": "none"
+          }
+        ],
+        "playing": null
+      }
+    }
+  ],
+  "reduced": [
+    {
+      "icon": "workspace",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "9.5px 8.5px",
+          "part": "divider",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "12.2px 14px",
+          "part": "source",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "12.2px 11.275px",
+          "part": "source-first",
+          "transform": "none"
+        },
+        {
+          "opacity": "0.65",
+          "origin": "13.6px 14.125px",
+          "part": "source-second",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "17.75px 17px",
+          "part": "editor-caret",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "20px 14px",
+          "part": "editor-edge",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "gauge",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "12px 14.5px",
+          "part": "needle",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "15.7px 8.09141px",
+          "part": "reading-tick",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 14.5px",
+          "part": "reading-echo",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "orbit",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "20.6452px 13.4707px",
+          "part": "satellite-occlusion",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "20.6452px 13.4707px",
+          "part": "satellite-rear",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "10.45px 9.55px",
+          "part": "orbital-surface",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 12px",
+          "part": "orbital-wake",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "20.6452px 13.4707px",
+          "part": "satellite-front",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "lifebuoy",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "12px 10.8px",
+          "part": "buoy",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 18.15px",
+          "part": "buoy-contact",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "6.4px 20.1px",
+          "part": "ripple-left",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "17.6px 20.1px",
+          "part": "ripple-right",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "7.2px 22px",
+          "part": "echo-left",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "16.8px 22px",
+          "part": "echo-right",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    }
+  ],
+  "off": [
+    {
+      "animated": "false",
+      "disabled": true,
+      "label": "Play workspace study"
+    },
+    {
+      "animated": "false",
+      "disabled": true,
+      "label": "Play gauge study"
+    },
+    {
+      "animated": "false",
+      "disabled": true,
+      "label": "Play orbit study"
+    },
+    {
+      "animated": "false",
+      "disabled": true,
+      "label": "Play lifebuoy study"
+    }
+  ]
+}

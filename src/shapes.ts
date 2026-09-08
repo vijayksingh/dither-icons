@@ -1,4 +1,8 @@
 import {TENSOR_ART} from './motions/tensor';
+import {WORKSPACE_ART} from './motions/workspace';
+import {GAUGE_ART} from './motions/gauge';
+import {ORBIT_ART} from './motions/orbit';
+import {LIFEBUOY_ART} from './motions/lifebuoy';
 import {NETWORK_ART} from './motions/network';
 import {CHECKPOINT_ART} from './motions/checkpoint';
 import {HINT_ART} from './motions/hint';
@@ -66,6 +70,10 @@ export const definitions = [
  def('network','Learning','Combine connected inputs into an output.',vector(NETWORK_ART.upper),vector(NETWORK_ART.lower),vector(NETWORK_ART.output)),
  def('checkpoint','Learning','Preserve an exact Workspace state.',vector(CHECKPOINT_ART.ring),vector(CHECKPOINT_ART.state),vector(CHECKPOINT_ART.rail)),
  def('hint','Learning','A small nudge illuminates an idea.',vector(HINT_ART.outer+HINT_ART.inside),vector(HINT_ART.base)),
+ def('workspace','Development','An organized surface for your growing codebase.',vector(WORKSPACE_ART.frame),vector(WORKSPACE_ART.divider),vector(WORKSPACE_ART.first),vector(WORKSPACE_ART.second),vector(WORKSPACE_ART.third)),
+ def('gauge','Interface','Take a reading against a stable scale.',vector(GAUGE_ART.rim),vector(GAUGE_ART.needle),vector(GAUGE_ART.hub)),
+ def('orbit','Learning','Explore a relationship around a stable center.',vector(ORBIT_ART.rear),vector(ORBIT_ART.front),vector(ORBIT_ART.core),vector(ORBIT_ART.satellite)),
+ def('lifebuoy','Interface','Support that yields and holds.',vector(LIFEBUOY_ART.body),...LIFEBUOY_ART.bands.map(d=>vector(d))),
 ] as const;
 export type IconName = typeof definitions[number]['name'];
 

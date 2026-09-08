@@ -50,6 +50,10 @@ The four accepted foundation performances remain intact. The remaining icons use
 | [network](icon-reviews/network.md) | combine connected inputs into an output | Receive / Combine / Transmit | 1380ms |
 | [checkpoint](icon-reviews/checkpoint.md) | retain an exact Workspace state | Receive / Register / Hold | 1320ms |
 | [hint](icon-reviews/hint.md) | offer a small nudge toward understanding | Conduct / Illuminate / Ease | 1260ms |
+| [workspace](icon-reviews/workspace.md) | make room in an organized working surface | Open / Arrange / Return | 1360ms |
+| [gauge](icon-reviews/gauge.md) | take a reading against a stable scale | Calibrate / Read / Hold | 1280ms |
+| [orbit](icon-reviews/orbit.md) | explore a relationship around a stable center | Depart / Pass / Return | 1560ms |
+| [lifebuoy](icon-reviews/lifebuoy.md) | accept a load and keep it supported | Meet / Support / Settle | 1460ms |
 
 ## Focused refinement 01
 
@@ -75,7 +79,11 @@ The next bounded batch is **play, pause, volume, and code**. Choose **Refinement
 
 ## Platform batch 02
 
-**Tensor, Network, Checkpoint, Hint** extend the Learning category to eight icons. **Platform / 02** is the default study group. These cover NumPy slicing, connected PyTorch computation, retained Workspace versions, and progressive Lab help. Tensor extracts a solid block with three joined faces and exposes a cut plane; Network combines both inputs before transmitting; Checkpoint captures once and holds; Hint conducts light through a fixed filament before the surrounding rays answer. Each has an individual Interface Craft report and browser references in `motion-evidence/platform-02/`. All earlier forty timelines remain unchanged.
+**Tensor, Network, Checkpoint, Hint** extend the Learning category to eight icons. Choose **Platform / 02** to inspect them. These cover NumPy slicing, connected PyTorch computation, retained Workspace versions, and progressive Lab help. Tensor extracts a solid block with three joined faces and exposes a cut plane; Network combines both inputs before transmitting; Checkpoint captures once and holds; Hint conducts light through a fixed filament before the surrounding rays answer. Each has an individual Interface Craft report and browser references in `motion-evidence/platform-02/`. All earlier forty timelines remain unchanged.
+
+## Platform batch 03
+
+**Workspace, Gauge, Orbit, Lifebuoy** cover four existing platform navigation needs: Workspace, Dashboard, the curriculum atlas, and Support. **Platform / 03** is the default study group. Workspace opens space before source lines respond; Gauge registers on a fixed tick; Orbit uses a single finite satellite traversal with real front/rear occlusion; Lifebuoy meets a receiving waterline before its ripples begin. Each has an individual Interface Craft report, named export, original contours, and browser evidence in `motion-evidence/platform-03/`. All previous forty-four timelines retain their authored behavior.
 
 ## How to use these references
 
