@@ -1,13 +1,17 @@
-import { forwardRef, useId, type SVGProps } from 'react';
+import { forwardRef, useId, useRef, useImperativeHandle, type SVGProps } from 'react';
+import {CraftedArtwork} from './CraftedArtwork';
+import {studies,styleForStudy} from './choreography';
+import {useChoreography} from './useChoreography';
+export {studies} from './choreography';
 import {definitions,type IconDefinition} from './shapes';
 export {definitions} from './shapes';
 export type {IconDefinition,Motion,Part} from './shapes';
 export type Texture = 'dither'|'solid'|'outline';
-export interface DitherIconProps extends SVGProps<SVGSVGElement> { name?:string; size?:number|string; texture?:Texture; animate?:boolean; active?:boolean; title?:string; }
+export interface DitherIconProps extends SVGProps<SVGSVGElement> { name?:string; size?:number|string; texture?:Texture; animate?:boolean; active?:boolean; replayKey?:number; speed?:number; progress?:number; title?:string; }
 export const motionStyles = `
 .di-part{transform-box:fill-box;transform-origin:center}
-.di-icon[data-animate=true]:is(:hover,:focus-visible) .di-part,.di-trigger:is(:hover,:focus-visible) .di-icon[data-animate=true] .di-part,.di-icon[data-active=true] .di-part{animation-duration:600ms;animation-timing-function:cubic-bezier(.22,1,.36,1);animation-iteration-count:1}
-.di-icon[data-animate=true]:is(:hover,:focus-visible) .di-part,.di-trigger:is(:hover,:focus-visible) .di-icon[data-animate=true] .di-part,.di-icon[data-active=true] .di-part{animation-name:var(--di-motion)}
+.di-icon:not([data-crafted=true])[data-animate=true]:is(:hover,:focus-visible) .di-part,.di-trigger:is(:hover,:focus-visible) .di-icon:not([data-crafted=true])[data-animate=true] .di-part,.di-icon:not([data-crafted=true])[data-active=true] .di-part{animation-duration:600ms;animation-timing-function:cubic-bezier(.22,1,.36,1);animation-iteration-count:1}
+.di-icon:not([data-crafted=true])[data-animate=true]:is(:hover,:focus-visible) .di-part,.di-trigger:is(:hover,:focus-visible) .di-icon:not([data-crafted=true])[data-animate=true] .di-part,.di-icon:not([data-crafted=true])[data-active=true] .di-part{animation-name:var(--di-motion)}
 @keyframes di-ring{20%{transform:rotate(12deg)}44%{transform:rotate(-8deg)}68%{transform:rotate(3deg)}88%{transform:rotate(-1deg)}}
 @keyframes di-rise{40%{transform:translateY(-3px)}}
 @keyframes di-fall{40%{transform:translateY(3px)}}
@@ -37,12 +41,17 @@ export const DitherIcon=forwardRef<SVGSVGElement,DitherIconProps>(function Dithe
  if(!definition)throw new Error(`Unknown Dither icon: ${name}`);
  return <IconArtwork ref={ref} definition={definition} size={size} texture={texture} animate={animate} active={active} title={title} className={className} {...props}/>;
 });
-export const IconArtwork=forwardRef<SVGSVGElement,DitherIconProps&{definition:IconDefinition}>(function IconArtwork({definition,size=24,texture='dither',animate=true,active=false,title,className='',...props},ref){
+export const IconArtwork=forwardRef<SVGSVGElement,DitherIconProps&{definition:IconDefinition}>(function IconArtwork({definition,size=24,texture='dither',animate=true,active=false,replayKey=0,speed=1,progress,title,className='',...props},ref){
  const id=useId().replace(/:/g,'');
- return <svg xmlns="http://www.w3.org/2000/svg" ref={ref} width={size} height={size} viewBox="0 0 24 24" fill="currentColor" role={title?'img':undefined} aria-label={title} aria-hidden={title?undefined:true} {...props} className={`di-icon ${className}`} data-icon={definition.name} data-animate={animate} data-active={animate&&active}>
- {title&&<title>{title}</title>}<style>{motionStyles}</style>
+ const svgRef=useRef<SVGSVGElement>(null);
+ useImperativeHandle(ref,()=>svgRef.current!,[]);
+ useChoreography(svgRef,definition.name,animate,active,replayKey,speed,progress);
+ const crafted=Boolean(studies[definition.name]);
+ const draw=(path:string)=><g>{texture==='dither'?<><path d={path} fillRule="evenodd" opacity=".16"/><path d={path} fillRule="evenodd" mask={`url(#${id}-grain)`}/></>:<path d={path} fillRule="evenodd" fill={texture==='outline'?'none':'currentColor'} stroke={texture==='outline'?'currentColor':'none'} strokeWidth={1.4} strokeLinejoin="round"/>}</g>;
+ return <svg xmlns="http://www.w3.org/2000/svg" ref={svgRef} width={size} height={size} viewBox="0 0 24 24" fill="currentColor" role={title?'img':undefined} aria-label={title} aria-hidden={title?undefined:true} {...props} className={`di-icon ${className}`} data-crafted={crafted} data-icon={definition.name} data-animate={animate} data-active={animate&&active}>
+ {title&&<title>{title}</title>}<style>{motionStyles}{crafted?styleForStudy(definition.name):''}</style>
  {texture==='dither'&&<defs><mask id={`${id}-grain`} maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24"><path d={ditherField} fill="white"/></mask></defs>}
- {definition.parts.map((part,i)=>{const path=part.path||cellPaths(part.cells,'solid').ink;const shapeProps={d:path,transform:part.transform,fillRule:'evenodd' as const,strokeLinejoin:'round' as const,strokeLinecap:'round' as const};return <g key={i} className={part.motion?'di-part':undefined} style={part.motion?{'--di-motion':`di-${part.motion}`} as React.CSSProperties:undefined}>
+ {crafted?<CraftedArtwork name={definition.name} draw={draw}/>:definition.parts.map((part,i)=>{const path=part.path||cellPaths(part.cells,'solid').ink;const shapeProps={d:path,transform:part.transform,fillRule:'evenodd' as const,strokeLinejoin:'round' as const,strokeLinecap:'round' as const};return <g key={i} className={part.motion?'di-part':undefined} style={part.motion?{'--di-motion':`di-${part.motion}`} as React.CSSProperties:undefined}>
  {texture==='dither'?<><path {...shapeProps} fill={part.stroke?'none':'currentColor'} stroke={part.stroke?'currentColor':'none'} strokeWidth={2} opacity=".16"/><path {...shapeProps} fill={part.stroke?'none':'currentColor'} stroke={part.stroke?'currentColor':'none'} strokeWidth={2} mask={`url(#${id}-grain)`}/></>:<path {...shapeProps} fill={part.stroke||texture==='outline'?'none':'currentColor'} stroke={part.stroke||texture==='outline'?'currentColor':'none'} strokeWidth={texture==='outline'?1.4:2}/>}
  </g>})}
  </svg>;

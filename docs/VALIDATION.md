@@ -22,3 +22,7 @@ User rejected the pixel-art contours and coarse checkerboard. The rendered famil
 - Eight curated palettes: Iris, Cobalt, Jade, Amber, Coral, Rose, Citron, Graphite. Dark/light values are separate; selected color appears in React snippets and SVG exports.
 - Live checks: palette selection, light Cobalt export (#315bc4), dark Iris clipboard export (#bea5f5), SVG copying, icon selection, dark/light render, reduced-motion computed animation none, narrow viewport client/scroll both 354px. Browser console showed no errors.
 - Typecheck, five targeted tests, library declarations, packed download, and catalog build passed.
+
+## Four motion studies
+
+See [MOTION-REVIEW.md](MOTION-REVIEW.md) for the focused bell/heart/download/layers review, actual playback evidence, frame inspection, reduced-motion behavior, and the download identity correction. Nine targeted tests pass; the other 32 icons keep their earlier motion presets.
