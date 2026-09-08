@@ -1,5 +1,13 @@
+import {communication} from './motions/communication';
+import {media} from './motions/media';
+import {files} from './motions/files';
+import {navigation} from './motions/navigation';
+import {development} from './motions/development';
+import {controls} from './motions/controls';
+import {presence} from './motions/presence';
+import {atmosphere} from './motions/atmosphere';
 /**
- * FOUR MOTION STUDIES — one clock, independent mechanical parts.
+ * ONE MOTION LANGUAGE — one clock, individually authored mechanical parts.
  *
  * Bell       0ms brace; 120ms swing; 190ms clapper strikes; 940ms settle.
  * Heart      0ms gather; 130ms release; 240ms flecks travel; 820ms settle.
@@ -15,6 +23,7 @@ export type Study = { duration:number; caption:string; stages:string[]; tracks:T
 const EASE={settle:'cubic-bezier(.22,1,.36,1)',accelerate:'cubic-bezier(.55,0,.85,.45)',smooth:'cubic-bezier(.4,0,.2,1)'};
 const track=(part:string,origin:string,frames:Frame[]):Track=>({part,origin,frames});
 export const studies:Record<string,Study>={
+ ...navigation,...files,...communication,...media,...development,...controls,...presence,...atmosphere,
  bell:{duration:940,caption:'A little weight. A lingering ring.',stages:['Anticipate','Strike','Resonate'],tracks:[
   track('shell','12px 5px',[
    {at:0,transform:'rotate(0deg)',easing:EASE.smooth},{at:100,transform:'rotate(-7deg)',easing:EASE.accelerate},

@@ -20,6 +20,7 @@ These rules encode the accepted Bell, Heart, Download, and Layers studies. Apply
 | MOT-12 | One source of timing | The named SVG parts, native playback, CSS fallback, and frame inspector use the same authored tracks. Transform and opacity only. |
 | MOT-13 | Verify the whole sequence | Inspect rest, anticipation, action, recovery, and rest again. Review at actual size and actual speed, then slow/scrub to diagnose. |
 | MOT-14 | Do not simulate app success | A library preview is a gesture study. It does not assert that a file downloaded, a message sent, or a setting changed. |
+| MOT-15 | Review meaning individually | Apply Interface Craft critique and storyboard to each icon. Record meaning, invariant, named parts, causal timing, and rendered evidence before calling that icon complete. |
 
 ## Per-icon process
 

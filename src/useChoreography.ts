@@ -1,7 +1,7 @@
 import {useEffect,useRef,type RefObject} from 'react';
 import {studies,keyframesFor} from './choreography';
 
-export function useChoreography(ref:RefObject<SVGSVGElement|null>,name:string,enabled:boolean,active:boolean,replayKey:number,speed:number,progress?:number){
+export function useChoreography(ref:RefObject<SVGSVGElement|null>,name:string,enabled:boolean,active:boolean,replayKey:number,speed:number,progress?:number,material?:string){
  const progressRef=useRef(progress);progressRef.current=progress;
  const seekRef=useRef<(progress?:number)=>void>(()=>{});
  const playRef=useRef<()=>void>(()=>{});
@@ -44,7 +44,7 @@ export function useChoreography(ref:RefObject<SVGSVGElement|null>,name:string,en
   const changed=()=>{if(media.matches)cancel();else if(progressRef.current!==undefined)seekRef.current(progressRef.current);};
   target.addEventListener('pointerenter',pointer);target.addEventListener('focusin',focus);target.addEventListener('click',play);media.addEventListener('change',changed);
   return()=>{disposed=true;cancel();playRef.current=()=>{};seekRef.current=()=>{};delete svg.dataset.motionRuntime;target.removeEventListener('pointerenter',pointer);target.removeEventListener('focusin',focus);target.removeEventListener('click',play);media.removeEventListener('change',changed);};
- },[ref,name,enabled,speed]);
- useEffect(()=>{seekRef.current(progress);},[progress,name,enabled,speed]);
+ },[ref,name,enabled,speed,material]);
+ useEffect(()=>{seekRef.current(progress);},[progress,name,enabled,speed,material]);
  useEffect(()=>{if(active||replayKey>0)playRef.current();},[active,replayKey,name,enabled]);
 }

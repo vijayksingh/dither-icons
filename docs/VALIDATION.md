@@ -25,4 +25,29 @@ User rejected the pixel-art contours and coarse checkerboard. The rendered famil
 
 ## Four motion studies
 
-See [MOTION-REVIEW.md](MOTION-REVIEW.md) for the focused bell/heart/download/layers review, actual playback evidence, frame inspection, reduced-motion behavior, and the download identity correction. Nine targeted tests pass; the other 32 icons keep their earlier motion presets.
+See [MOTION-REVIEW.md](MOTION-REVIEW.md) for the focused bell/heart/download/layers review, actual playback evidence, frame inspection, reduced-motion behavior, and the download identity correction. That earlier review covered four studies. The complete rollout below supersedes its remaining-icon status.
+
+## Complete semantic motion rollout — 2026-09-09
+
+All 36 icons now have individual Interface Craft reviews in [MOTION-CATALOG.md](MOTION-CATALOG.md). The accepted four foundation timelines are preserved; the other 32 use separate authored actors and timing. MOT-01 through MOT-15 govern this rollout.
+
+### Rendered inspection
+
+- Each new icon reviewed in its family at 20% preparation, 40% action, 70% recovery, and 100% neutral. Per-part endpoint inspection confirmed visible actors return to neutral and accents disappear. Browser images are linked from every individual report.
+- Actual playback started for every new family and returned to idle. Half-speed playback and keyboard departure checked on folder/trash: the folder continued after focus moved to trash, then both settled. No timer or recurring animation loop added.
+- All six catalog categories inspected at the rendered 64px size. Dark Iris studies and light Cobalt catalog inspected. All 36 catalog instances report authored choreography.
+- Material review covered dither/solid/outline for development icons and layered solid-mode cases. Corrections: CPU die clearance; file crease; solid folder interior; mail hinge/seams; solid message dot cutouts; joined search handle; inset code brackets. The folder interior cutout is limited to solid mode so dither retains the original material hierarchy.
+- Switching a paused message from dither to solid preserved all three computed dot transforms exactly. The animation hook now rebinds when material changes replace actors.
+- Reduced-motion emulation canceled the inspected transforms and left all actors with computed animation `none`; replay produced zero playing icons. Motion-off disabled study replay, timing inspection, and the inspector replay, with all 36 catalog icons marked `data-animate=false`.
+- Mobile layout at 390px: client width and scroll width both 390px, two 173px study columns, 358px timeline, and all controls inside the viewport. Narrow-layout keyboard replay worked. Native mobile screenshots and pointer coordinates were unreliable in the browser automation surface; this is a layout/keyboard check, not a claim of physical-device touch verification.
+- Browser console: no error entries. Loading/error states do not exist in the motion component; existing catalog search/copy flows were not changed by this rollout.
+
+### Automated and package checks
+
+- TypeScript passed; 10 targeted tests passed. Coverage includes all 36 definitions, 108 material variants, unique track bindings, ordered complete clocks, transform/opacity-only tracks, visible-actor opacity and neutral return, hidden accent endpoints, download identity, accessibility, and independent eye aperture IDs.
+- ESM library, declarations, catalog, and downloadable tarball built successfully. The final library is approximately 73KB before compression; named exports still share the complete catalog.
+- The final tarball installed into a fresh React 18.3.1 consumer at `/tmp/dither-consumer-52SWCT`. All 36 named exports, 36 timelines, and 108 server-rendered variants passed; the repository development checks use React 19.
+
+### Delivery limits
+
+No npm publication or remote deployment was requested. The React runtime completes gestures after input leaves; standalone inline SVG uses the same tracks as CSS hover animations and stops when hover ends. Masks and SVG vector rendering may repaint; transform/opacity-only authoring is not a claim that every browser promotes every SVG actor to a compositor layer. Light accents can merge into a solid fill, so the identifying contour and primary motion do not depend on them.

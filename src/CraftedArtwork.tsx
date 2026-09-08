@@ -1,13 +1,15 @@
 import type {ReactNode} from 'react';
+import {ExtendedArtwork} from './ExtendedArtwork';
 import {studies} from './choreography';
 
-type Props={name:string;draw:(path:string)=>ReactNode};
+type Props={name:string;draw:(path:string)=>ReactNode;texture:'dither'|'solid'|'outline'};
 const HEART='M12 20.5C9.4 18.4 3 13.8 3 8.4A4.6 4.6 0 0 1 12 7a4.6 4.6 0 0 1 9 1.4c0 5.4-6.4 10-9 12.1Z';
 const Stroke=({d}: {d:string})=><path d={d} fill="none" stroke="currentColor" strokeWidth=".8" strokeLinecap="round" strokeLinejoin="round"/>;
 const Accent=({part,children}:{part:string;children:ReactNode})=><g data-part={part} opacity="0">{children}</g>;
 
-export function CraftedArtwork({name,draw}:Props){
+export function CraftedArtwork({name,draw,texture}:Props){
  if(!studies[name])return null;
+ if(!['bell','heart','download','layers'].includes(name))return <ExtendedArtwork name={name} draw={draw} texture={texture}/>;
  if(name==='bell')return <>
   <g data-part="shell">{draw('M5.5 17.5c1.5-1.7 1.5-3.5 1.5-7.5a5 5 0 0 1 10 0c0 4 0 5.8 1.5 7.5Z')}<path d="M10.8 4.8V4a1.2 1.2 0 0 1 2.4 0v.8" fill="none" stroke="currentColor" strokeWidth=".8" opacity=".6"/></g>
   <g data-part="clapper">{draw('M10 19.3h4a2 2 0 0 1-4 0Z')}</g>
