@@ -1,45 +1,47 @@
-# mail: Interface Craft review
+# mail: Interface Craft refinement 03
 
 ## Context
-An SVG action icon in a reusable developer library. Its semantic meaning is **an envelope containing correspondence**. It appears in routine controls where recognition matters more than spectacle.
+**Meaning:** an envelope containing correspondence. **Invariant:** a wide envelope, its V-shaped pocket, and an attached horizontal flap hinge. The action reveals a letter locally; outgoing flight belongs to Send.
 
 ## First Impressions
-Lifting a flat triangle is not a convincing hinged flap.
+The previous opening still resembled a house: its raised triangular flap supplied a roof above a nearly square body. The letter was faint and poorly separated from the envelope. It lacked a clear reveal payoff.
 
 ## Visual Design
-**Identity boundary** — Envelope body stays fixed while the flap remains attached. Stable dither follows the contour. Color inherits the selected palette; accents use the same ink and stay below the primary silhouette in visual weight. Typography and card framing belong to the shared inspector, not the glyph.
+Use a wider envelope with rounded lower corners, visible pocket seams, a quieter flap, and a real rounded letter containing two short lines. The letter rises above the shallow opened flap, giving the silhouette a flat paper top instead of a roof.
+
+Material masks separate pocket, back, flap, and letter. Two fixed half-planes meet at y=7.1: below the hinge, the flap occludes the letter; above it, the letter occludes the opened flap. Both moving masks follow their physical planes, so there is no abrupt layer-order switch at the crossing. Text and pocket seams are negative cuts in filled materials and fine strokes in outline.
 
 ## Interface Design
-The missed opportunity is to express **an envelope containing correspondence** through a causal gesture. Rotate the flap in its own plane by flattening then opening around the top fold; reveal a paper edge and close. The inspector exposes replay and timing only when requested; the icon itself adds no controls or labels.
+The flap opens before the letter emerges. An attached paper-edge glint leads two exterior reveal marks. The letter starts tucking first, clears the pocket, and the flap then seats with a smaller crease response. The reveal is the primary climax; closure is quieter.
 
 ## Consistency & Conventions
-Retain the conventional glyph. Use the shared hover, focus, click, reduced-motion, and completion contracts. MOT-01, MOT-02, MOT-03, MOT-04, MOT-05, MOT-08, MOT-09, MOT-10, MOT-11, MOT-12, MOT-14, MOT-15 apply.
+MOT-01–16 apply. The full horizontal hinge stays fixed; the flap and letter never dissolve during their motion. Occlusion supplies visibility naturally. React and standalone SVG share the same transforms, including the front/rear mask choreography. No mail-read, delivered, or sent state is asserted.
 
 ## User Context
-Avoid an outgoing flight, which belongs to send. Recognizability must survive a brief glance and the still-motion variant.
+An envelope must remain recognizable when the user glances at it. The corrected open pose reads as correspondence in all three materials. Solid was inspected at 24px; dark dither and outline at 112px. Stillness retains the complete closed envelope.
 
-## Top Opportunities
-1. Rotate the flap in its own plane by flattening then opening around the top fold; reveal a paper edge and close.
-2. Envelope body stays fixed while the flap remains attached.
-3. Avoid an outgoing flight, which belongs to send.
+## Top Opportunities addressed
+1. Keep envelope identity through opening by revealing a clear letter above the flap.
+2. Give the hinge correct front/back occlusion without a visual layer jump.
+3. Connect the letter edge, reveal marks, tuck, and quiet closure.
 
-## Encoded storyboard and review
+## Encoded storyboard
+Source: [mail.ts](../../src/motions/mail.ts). `TIMING`, `MAIL_ART`, `MAIL_HINGE`, `FLAP`, `LETTER`, `EDGE`, `RAYS`, `SEAM`, and `EASE` define the performance.
 
-**Duration:** 1140ms. **Sequence:** Unfold / Reveal / Close.
-
-Timing source: [communication.ts](../../src/motions/communication.ts). Geometry binds each named track in `CraftedArtwork.tsx` or `ExtendedArtwork.tsx`. Times below are milliseconds from the same clock; transform values, pivots and easing live in that source.
-
-| Named part | Keyframe times (ms) |
+| Time | Action |
 | --- | --- |
-| `flap` | 0, 130, 420, 680, 970, 1140 |
-| `letter` | 0, 220, 460, 720, 940, 1140 |
+| 0–115ms | Small flap preparation. |
+| 115–325ms | Flap rolls behind the horizontal hinge. |
+| 240–505ms | Letter rises 5.25 units from the pocket. |
+| 505 / 560ms | Paper edge then exterior reveal marks crest. |
+| 650–945ms | Letter tucks back inside. |
+| 880–1090ms | Flap returns as the paper clears, then seats. |
+| 1125–1240ms | Smaller closure glint appears and clears. |
+| 1360ms | Exact closed envelope. |
 
-**Rendered review:** The first open pose resembled a house. The corrected hinge join and envelope seams preserve its identity. Solid mode uses negative seams; dither retains the lighter crease treatment.
+## Rendered review
+The 40% and 52% frames preserve a flat-topped letter above the envelope; the house-like open silhouette is gone. Grain remains separated across the layer handoff. Normal and half-speed review includes the complete tuck and closing seam. Paused switching into outline preserved all visible and mask transforms.
 
-Reviewed at preparation (20%), action (40%), recovery (70%) and neutral endpoint (100%), with actual playback and per-part endpoint inspection in the live gallery. These samples establish the reviewed poses; they do not replace the full timeline or the shared lifecycle checks in [VALIDATION.md](../VALIDATION.md).
+![Mail reveal, second icon](../motion-evidence/refinement-03/reveal.png)
 
-**Visual reference:** icon 1 from the left in this family.
-
-![mail: action pose at 40%, position 1](../motion-evidence/rollout/communication.png)
-
-[Preparation image](../motion-evidence/rollout/communication-prepare.png) · [Recovery image](../motion-evidence/rollout/communication-recover.png)
+[Rest](../motion-evidence/refinement-03/rest.png) · [Recovery](../motion-evidence/refinement-03/recover.png) · [Outline](../motion-evidence/refinement-03/outline.png) · [24px solid](../motion-evidence/refinement-03/compact-communication.png) · [Batch validation](../VALIDATION.md#focused-refinement-03--2026-09-09)

@@ -1,0 +1,23 @@
+{
+  "landing": [
+    {
+      "percent": 45,
+      "measurement": {
+        "height": 0,
+        "width": -0.000019073486328125,
+        "x": 0.000030517578125,
+        "y": 0
+      }
+    },
+    {
+      "percent": 49,
+      "measurement": {
+        "height": 0,
+        "width": -0.000019073486328125,
+        "x": 0.000030517578125,
+        "y": 0
+      }
+    }
+  ],
+  "materialProgressPreserved": true
+}

@@ -1,0 +1,1343 @@
+[
+  {
+    "elapsed": 8,
+    "icons": [
+      {
+        "icon": "book",
+        "parts": [
+          {
+            "opacity": "0.0679074",
+            "part": "page-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "left-bed",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.0679074",
+            "part": "turning-page",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "page-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "landing-light",
+            "transform": "matrix(0.3, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "page-air",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0.3, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "mail",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "flap-occlusion",
+            "transform": "matrix(1, 0, 0, 1.00107, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "letter-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "letter-rear-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "flap",
+            "transform": "matrix(1, 0, 0, 1.00107, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "letter",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "letter-edge",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "closure-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "reveal-rays",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0, 0.3)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "message",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "dot-left",
+            "transform": "matrix(0.995791, 0, 0, 0.995791, 0, 0.00701505)"
+          },
+          {
+            "opacity": "1",
+            "part": "dot-center",
+            "transform": "matrix(0.999022, 0, 0, 0.999022, 0, 0.0016307)"
+          },
+          {
+            "opacity": "1",
+            "part": "dot-right",
+            "transform": "matrix(0.99961, 0, 0, 0.99961, 0, 0.000650489)"
+          },
+          {
+            "opacity": "0",
+            "part": "reply-edge",
+            "transform": "matrix(1, 0, 0, 0.3, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "reply-echo",
+            "transform": "matrix(1, 0, 0, 0.35, -0.15, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "send",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "plane",
+            "transform": "matrix(0.999998, -0.00190851, 0.00190851, 0.999998, -0.0203078, 0.0156214)"
+          },
+          {
+            "opacity": "1",
+            "part": "lower-wing",
+            "transform": "matrix(0.999116, -0.000884175, -0.000884175, 0.999116, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "crease-light",
+            "transform": "matrix(0.45, 0, 0, 0.45, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "wake-near",
+            "transform": "matrix(0.35, 0, 0, 0.35, 0.15, -0.15)"
+          },
+          {
+            "opacity": "0",
+            "part": "wake-far",
+            "transform": "matrix(0.35, 0, 0, 0.35, 0.15, -0.15)"
+          }
+        ],
+        "playing": "true"
+      }
+    ]
+  },
+  {
+    "elapsed": 281,
+    "icons": [
+      {
+        "icon": "book",
+        "parts": [
+          {
+            "opacity": "0.98",
+            "part": "page-occlusion",
+            "transform": "matrix(0.957529, -0.0191087, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "left-bed",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.98",
+            "part": "turning-page",
+            "transform": "matrix(0.957529, -0.0191087, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "page-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "landing-light",
+            "transform": "matrix(0.3, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "page-air",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0.3, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "mail",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "flap-occlusion",
+            "transform": "matrix(1, 0, 0, 0.197738, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "letter-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "letter-rear-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "flap",
+            "transform": "matrix(1, 0, 0, 0.197738, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "letter",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "letter-edge",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "closure-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "reveal-rays",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0, 0.3)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "message",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "dot-left",
+            "transform": "matrix(1.11358, 0, 0, 1.11358, 0, -0.672133)"
+          },
+          {
+            "opacity": "1",
+            "part": "dot-center",
+            "transform": "matrix(0.934338, 0, 0, 0.934338, 0, 0.109437)"
+          },
+          {
+            "opacity": "1",
+            "part": "dot-right",
+            "transform": "matrix(0.968902, 0, 0, 0.968902, 0, 0.0518307)"
+          },
+          {
+            "opacity": "0",
+            "part": "reply-edge",
+            "transform": "matrix(1, 0, 0, 0.3, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "reply-echo",
+            "transform": "matrix(1, 0, 0, 0.35, -0.15, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "send",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "plane",
+            "transform": "matrix(0.999765, -0.0216834, 0.0216834, 0.999765, 0.00121158, -0.107797)"
+          },
+          {
+            "opacity": "1",
+            "part": "lower-wing",
+            "transform": "matrix(0.952429, -0.047571, -0.047571, 0.952429, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "crease-light",
+            "transform": "matrix(0.45, 0, 0, 0.45, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "wake-near",
+            "transform": "matrix(0.35, 0, 0, 0.35, 0.15, -0.15)"
+          },
+          {
+            "opacity": "0",
+            "part": "wake-far",
+            "transform": "matrix(0.35, 0, 0, 0.35, 0.15, -0.15)"
+          }
+        ],
+        "playing": "true"
+      }
+    ]
+  },
+  {
+    "elapsed": 540,
+    "icons": [
+      {
+        "icon": "book",
+        "parts": [
+          {
+            "opacity": "0.98",
+            "part": "page-occlusion",
+            "transform": "matrix(0.4089, -0.0920899, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "left-bed",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.98",
+            "part": "turning-page",
+            "transform": "matrix(0.4089, -0.0920899, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.475053",
+            "part": "page-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "landing-light",
+            "transform": "matrix(0.3, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "page-air",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0.3, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "mail",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "flap-occlusion",
+            "transform": "matrix(1, 0, 0, -0.363313, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "letter-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, -2.33771)"
+          },
+          {
+            "opacity": "1",
+            "part": "letter-rear-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, -2.33771)"
+          },
+          {
+            "opacity": "1",
+            "part": "flap",
+            "transform": "matrix(1, 0, 0, -0.363313, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "letter",
+            "transform": "matrix(1, 0, 0, 1, 0, -2.33771)"
+          },
+          {
+            "opacity": "0",
+            "part": "letter-edge",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "closure-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "reveal-rays",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0, 0.3)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "message",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "dot-left",
+            "transform": "matrix(1.17, 0, 0, 1.17, 0, -0.9)"
+          },
+          {
+            "opacity": "1",
+            "part": "dot-center",
+            "transform": "matrix(1.10196, 0, 0, 1.10196, 0, -0.625203)"
+          },
+          {
+            "opacity": "1",
+            "part": "dot-right",
+            "transform": "matrix(0.926323, 0, 0, 0.926323, 0, 0.122796)"
+          },
+          {
+            "opacity": "0",
+            "part": "reply-edge",
+            "transform": "matrix(1, 0, 0, 0.3, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "reply-echo",
+            "transform": "matrix(1, 0, 0, 0.35, -0.15, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "send",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "plane",
+            "transform": "matrix(0.999665, 0.0258825, -0.0258825, 0.999665, 0.78744, -0.84161)"
+          },
+          {
+            "opacity": "1",
+            "part": "lower-wing",
+            "transform": "matrix(1.00855, 0.00855136, 0.00855136, 1.00855, 0, 0)"
+          },
+          {
+            "opacity": "0.177112",
+            "part": "crease-light",
+            "transform": "matrix(0.563269, 0, 0, 0.563269, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "wake-near",
+            "transform": "matrix(0.35, 0, 0, 0.35, 0.15, -0.15)"
+          },
+          {
+            "opacity": "0",
+            "part": "wake-far",
+            "transform": "matrix(0.35, 0, 0, 0.35, 0.15, -0.15)"
+          }
+        ],
+        "playing": "true"
+      }
+    ]
+  },
+  {
+    "elapsed": 801,
+    "icons": [
+      {
+        "icon": "book",
+        "parts": [
+          {
+            "opacity": "0.98",
+            "part": "page-occlusion",
+            "transform": "matrix(-0.0756814, -0.140245, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "left-bed",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.98",
+            "part": "turning-page",
+            "transform": "matrix(-0.0756814, -0.140245, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.545635",
+            "part": "page-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "landing-light",
+            "transform": "matrix(0.3, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "page-air",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0.3, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "mail",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "flap-occlusion",
+            "transform": "matrix(1, 0, 0, -0.38, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "letter-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, -5.06852)"
+          },
+          {
+            "opacity": "1",
+            "part": "letter-rear-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, -5.06852)"
+          },
+          {
+            "opacity": "1",
+            "part": "flap",
+            "transform": "matrix(1, 0, 0, -0.38, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "letter",
+            "transform": "matrix(1, 0, 0, 1, 0, -5.06852)"
+          },
+          {
+            "opacity": "0.135708",
+            "part": "letter-edge",
+            "transform": "matrix(0.369742, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "closure-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "reveal-rays",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0, 0.3)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "message",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "dot-left",
+            "transform": "matrix(1.01301, 0, 0, 1.01301, 0, -0.0915226)"
+          },
+          {
+            "opacity": "1",
+            "part": "dot-center",
+            "transform": "matrix(1.16988, 0, 0, 1.16988, 0, -0.899391)"
+          },
+          {
+            "opacity": "1",
+            "part": "dot-right",
+            "transform": "matrix(1.14594, 0, 0, 1.14594, 0, -0.758025)"
+          },
+          {
+            "opacity": "0",
+            "part": "reply-edge",
+            "transform": "matrix(1, 0, 0, 0.3, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "reply-echo",
+            "transform": "matrix(1, 0, 0, 0.35, -0.15, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "send",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "plane",
+            "transform": "matrix(0.999764, 0.0217234, -0.0217234, 0.999764, 0.972915, -1.00926)"
+          },
+          {
+            "opacity": "1",
+            "part": "lower-wing",
+            "transform": "matrix(1.01626, 0.0162551, 0.0162551, 1.01626, 0, 0)"
+          },
+          {
+            "opacity": "0.851706",
+            "part": "crease-light",
+            "transform": "matrix(0.994696, 0, 0, 0.994696, 0, 0)"
+          },
+          {
+            "opacity": "0.728746",
+            "part": "wake-near",
+            "transform": "matrix(0.876317, 0, 0, 0.876317, -0.133401, 0.133401)"
+          },
+          {
+            "opacity": "0.193223",
+            "part": "wake-far",
+            "transform": "matrix(0.534699, 0, 0, 0.534699, 0.0505469, -0.0505469)"
+          }
+        ],
+        "playing": "true"
+      }
+    ]
+  },
+  {
+    "elapsed": 1101,
+    "icons": [
+      {
+        "icon": "book",
+        "parts": [
+          {
+            "opacity": "0.98",
+            "part": "page-occlusion",
+            "transform": "matrix(-0.962556, -0.00568281, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "left-bed",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.98",
+            "part": "turning-page",
+            "transform": "matrix(-0.962556, -0.00568281, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "page-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "landing-light",
+            "transform": "matrix(0.3, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "page-air",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0.3, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "mail",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "flap-occlusion",
+            "transform": "matrix(1, 0, 0, -0.38, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "letter-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, -5.25)"
+          },
+          {
+            "opacity": "1",
+            "part": "letter-rear-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, -5.25)"
+          },
+          {
+            "opacity": "1",
+            "part": "flap",
+            "transform": "matrix(1, 0, 0, -0.38, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "letter",
+            "transform": "matrix(1, 0, 0, 1, 0, -5.25)"
+          },
+          {
+            "opacity": "0.715876",
+            "part": "letter-edge",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "closure-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.817535",
+            "part": "reveal-rays",
+            "transform": "matrix(0.987965, 0, 0, 0.987965, 0, 0.00802313)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "message",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "dot-left",
+            "transform": "matrix(0.988881, 0, 0, 0.988881, 0, 0.0481811)"
+          },
+          {
+            "opacity": "1",
+            "part": "dot-center",
+            "transform": "matrix(0.994056, 0, 0, 0.994056, 0, 0.00610961)"
+          },
+          {
+            "opacity": "1",
+            "part": "dot-right",
+            "transform": "matrix(1.23764, 0, 0, 1.23764, 0, -1.10905)"
+          },
+          {
+            "opacity": "0.55717",
+            "part": "reply-edge",
+            "transform": "matrix(1, 0, 0, 0.800025, 0, 0)"
+          },
+          {
+            "opacity": "0.125747",
+            "part": "reply-echo",
+            "transform": "matrix(1, 0, 0, 0.442881, -0.128566, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "send",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "plane",
+            "transform": "matrix(0.999919, 0.0127159, -0.0127159, 0.999919, 1.11228, -1.13314)"
+          },
+          {
+            "opacity": "1",
+            "part": "lower-wing",
+            "transform": "matrix(0.996089, -0.00391072, -0.00391072, 0.996089, 0, 0)"
+          },
+          {
+            "opacity": "0.5608",
+            "part": "crease-light",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.623564",
+            "part": "wake-near",
+            "transform": "matrix(0.953927, 0, 0, 0.953927, -0.353576, 0.353576)"
+          },
+          {
+            "opacity": "0.571075",
+            "part": "wake-far",
+            "transform": "matrix(0.975972, 0, 0, 0.975972, -0.280092, 0.280092)"
+          }
+        ],
+        "playing": "true"
+      }
+    ]
+  },
+  {
+    "elapsed": 1361,
+    "icons": [
+      {
+        "icon": "book",
+        "parts": [
+          {
+            "opacity": "0.98",
+            "part": "page-occlusion",
+            "transform": "matrix(-1, 0.00986394, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "left-bed",
+            "transform": "matrix(1, -0.00986394, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.98",
+            "part": "turning-page",
+            "transform": "matrix(-1, 0.00986394, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "page-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.835447",
+            "part": "landing-light",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.569396",
+            "part": "page-air",
+            "transform": "matrix(0.862474, 0, 0, 0.862474, 0.0916843, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "mail",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "flap-occlusion",
+            "transform": "matrix(1, 0, 0, -0.38, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "letter-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, -5.11996)"
+          },
+          {
+            "opacity": "1",
+            "part": "letter-rear-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, -5.11996)"
+          },
+          {
+            "opacity": "1",
+            "part": "flap",
+            "transform": "matrix(1, 0, 0, -0.38, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "letter",
+            "transform": "matrix(1, 0, 0, 1, 0, -5.11996)"
+          },
+          {
+            "opacity": "0.398585",
+            "part": "letter-edge",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "closure-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.471269",
+            "part": "reveal-rays",
+            "transform": "matrix(0.978052, 0, 0, 0.978052, 0, -0.219483)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "message",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "dot-left",
+            "transform": "matrix(0.999889, 0, 0, 0.999889, 0, 0.000479969)"
+          },
+          {
+            "opacity": "1",
+            "part": "dot-center",
+            "transform": "matrix(0.987179, 0, 0, 0.987179, 0, 0.0555586)"
+          },
+          {
+            "opacity": "1",
+            "part": "dot-right",
+            "transform": "matrix(1.02606, 0, 0, 1.02606, 0, -0.129532)"
+          },
+          {
+            "opacity": "0.564873",
+            "part": "reply-edge",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.741766",
+            "part": "reply-echo",
+            "transform": "matrix(1, 0, 0, 1.01257, 0.0706876, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "send",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "plane",
+            "transform": "matrix(0.999938, 0.0111547, -0.0111547, 0.999938, 1.03941, -1.05838)"
+          },
+          {
+            "opacity": "1",
+            "part": "lower-wing",
+            "transform": "matrix(0.995346, -0.00465414, -0.00465414, 0.995346, 0, 0)"
+          },
+          {
+            "opacity": "0.307758",
+            "part": "crease-light",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.342201",
+            "part": "wake-near",
+            "transform": "matrix(0.907034, 0, 0, 0.907034, -0.509888, 0.509888)"
+          },
+          {
+            "opacity": "0.313397",
+            "part": "wake-far",
+            "transform": "matrix(0.919132, 0, 0, 0.919132, -0.469561, 0.469561)"
+          }
+        ],
+        "playing": "true"
+      }
+    ]
+  },
+  {
+    "elapsed": 1651,
+    "icons": [
+      {
+        "icon": "book",
+        "parts": [
+          {
+            "opacity": "0.98",
+            "part": "page-occlusion",
+            "transform": "matrix(-1, -6.04103e-05, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "left-bed",
+            "transform": "matrix(1, 6.04103e-05, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.98",
+            "part": "turning-page",
+            "transform": "matrix(-1, -6.04103e-05, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "page-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.0832825",
+            "part": "landing-light",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.53872",
+            "part": "page-air",
+            "transform": "matrix(1.02744, 0, 0, 1.02744, -0.171512, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "mail",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "flap-occlusion",
+            "transform": "matrix(1, 0, 0, -0.38, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "letter-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.727422)"
+          },
+          {
+            "opacity": "1",
+            "part": "letter-rear-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.727422)"
+          },
+          {
+            "opacity": "1",
+            "part": "flap",
+            "transform": "matrix(1, 0, 0, -0.38, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "letter",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.727422)"
+          },
+          {
+            "opacity": "0.0168896",
+            "part": "letter-edge",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "closure-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.0199695",
+            "part": "reveal-rays",
+            "transform": "matrix(0.951189, 0, 0, 0.951189, 0, -0.488113)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "message",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "dot-left",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "dot-center",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "dot-right",
+            "transform": "matrix(0.987188, 0, 0, 0.987188, 0, 0.0555204)"
+          },
+          {
+            "opacity": "0.234344",
+            "part": "reply-edge",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.30773",
+            "part": "reply-echo",
+            "transform": "matrix(1, 0, 0, 1.05202, 0.292638, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "send",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "plane",
+            "transform": "matrix(1, -0.000259661, 0.000259661, 1, 0.1736, -0.181414)"
+          },
+          {
+            "opacity": "1",
+            "part": "lower-wing",
+            "transform": "matrix(0.999062, -0.000938207, -0.000938207, 0.999062, 0, 0)"
+          },
+          {
+            "opacity": "0.00335198",
+            "part": "crease-light",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.00372713",
+            "part": "wake-near",
+            "transform": "matrix(0.850621, 0, 0, 0.850621, -0.697929, 0.697929)"
+          },
+          {
+            "opacity": "0.00341339",
+            "part": "wake-far",
+            "transform": "matrix(0.850753, 0, 0, 0.850753, -0.69749, 0.69749)"
+          }
+        ],
+        "playing": "true"
+      }
+    ]
+  },
+  {
+    "elapsed": 2051,
+    "icons": [
+      {
+        "icon": "book",
+        "parts": [
+          {
+            "opacity": "0.124318",
+            "part": "page-occlusion",
+            "transform": "matrix(-1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "left-bed",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.124318",
+            "part": "turning-page",
+            "transform": "matrix(-1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "page-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "landing-light",
+            "transform": "matrix(0.748329, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.0633171",
+            "part": "page-air",
+            "transform": "matrix(1.07382, 0, 0, 1.07382, -0.461392, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "mail",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "flap-occlusion",
+            "transform": "matrix(1, 0, 0, 0.924262, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "letter-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "letter-rear-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "flap",
+            "transform": "matrix(1, 0, 0, 0.924262, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "letter",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "letter-edge",
+            "transform": "matrix(0.721115, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "closure-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "reveal-rays",
+            "transform": "matrix(0.801261, 0, 0, 0.801261, 0, -0.202522)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "message",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "dot-left",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "dot-center",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "dot-right",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "reply-edge",
+            "transform": "matrix(1, 0, 0, 0.727699, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "reply-echo",
+            "transform": "matrix(1, 0, 0, 0.796028, 0.216599, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "send",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "plane",
+            "transform": "matrix(0.999996, -0.00280065, 0.00280065, 0.999996, -0.0401164, 0.035659)"
+          },
+          {
+            "opacity": "1",
+            "part": "lower-wing",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "crease-light",
+            "transform": "matrix(0.716628, 0, 0, 0.716628, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "wake-near",
+            "transform": "matrix(0.592389, 0, 0, 0.592389, -0.262061, 0.262061)"
+          },
+          {
+            "opacity": "0",
+            "part": "wake-far",
+            "transform": "matrix(0.592389, 0, 0, 0.592389, -0.262061, 0.262061)"
+          }
+        ],
+        "playing": "true"
+      }
+    ]
+  },
+  {
+    "elapsed": 2800,
+    "icons": [
+      {
+        "icon": "book",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "page-occlusion",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "left-bed",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "turning-page",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "page-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "landing-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "page-air",
+            "transform": "none"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "mail",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "flap-occlusion",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "letter-occlusion",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "letter-rear-occlusion",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "flap",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "letter",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "letter-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "closure-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "reveal-rays",
+            "transform": "none"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "message",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "dot-left",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "dot-center",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "dot-right",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "reply-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "reply-echo",
+            "transform": "none"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "send",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "plane",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "lower-wing",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "crease-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "wake-near",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "wake-far",
+            "transform": "none"
+          }
+        ],
+        "playing": null
+      }
+    ]
+  }
+]

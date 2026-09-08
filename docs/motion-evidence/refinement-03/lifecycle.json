@@ -1,0 +1,105 @@
+{
+  "keyboard": [
+    {
+      "icon": "book",
+      "afterDeparture": [
+        [
+          "book",
+          "true"
+        ],
+        [
+          "mail",
+          "true"
+        ],
+        [
+          "message",
+          null
+        ],
+        [
+          "send",
+          null
+        ]
+      ]
+    },
+    {
+      "icon": "mail",
+      "afterDeparture": [
+        [
+          "book",
+          "true"
+        ],
+        [
+          "mail",
+          "true"
+        ],
+        [
+          "message",
+          "true"
+        ],
+        [
+          "send",
+          null
+        ]
+      ]
+    },
+    {
+      "icon": "message",
+      "afterDeparture": [
+        [
+          "book",
+          "true"
+        ],
+        [
+          "mail",
+          "true"
+        ],
+        [
+          "message",
+          "true"
+        ],
+        [
+          "send",
+          "true"
+        ]
+      ]
+    },
+    {
+      "icon": "send",
+      "afterDeparture": [
+        [
+          "book",
+          "true"
+        ],
+        [
+          "mail",
+          "true"
+        ],
+        [
+          "message",
+          "true"
+        ],
+        [
+          "send",
+          "true"
+        ]
+      ]
+    }
+  ],
+  "idle": 0,
+  "stillness": {
+    "playing": 0,
+    "transformed": 0,
+    "visibleAccents": 0
+  },
+  "disabled": {
+    "disabled": 4,
+    "playing": 0
+  },
+  "narrow": {
+    "client": 390,
+    "columns": "173px 173px",
+    "scroll": 390
+  },
+  "narrowPlaying": 4,
+  "errors": []
+}

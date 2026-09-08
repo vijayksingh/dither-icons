@@ -14,10 +14,10 @@ The four accepted foundation performances remain intact. The remaining 32 use in
 | [file](icon-reviews/file.md) | a document with content and a folded corner | Gather / Curl / Lay flat | 1160ms |
 | [copy](icon-reviews/copy.md) | duplicate while retaining the source | Register / Separate / Nest | 1190ms |
 | [trash](icon-reviews/trash.md) | place something into a removable container | Lift / Contact / Dissipate | 1250ms |
-| [book](icon-reviews/book.md) | open and inspect bound knowledge | Part / Read / Bind | 1180ms |
-| [mail](icon-reviews/mail.md) | an envelope containing correspondence | Unfold / Reveal / Close | 1140ms |
-| [message](icon-reviews/message.md) | an ongoing conversation or a short thought | Begin / Answer / Rest | 1020ms |
-| [send](icon-reviews/send.md) | direct a message toward its destination | Aim / Lead / Ease back | 1040ms |
+| [book](icon-reviews/book.md) | open and inspect bound knowledge | Lift / Turn / Land | 1360ms |
+| [mail](icon-reviews/mail.md) | an envelope containing correspondence | Unfold / Reveal / Tuck away | 1360ms |
+| [message](icon-reviews/message.md) | an ongoing conversation or a short thought | Gather / Answer / Resolve | 1180ms |
+| [send](icon-reviews/send.md) | direct a message toward its destination | Gather / Launch / Glide home | 1220ms |
 | [play](icon-reviews/play.md) | start forward progression | Load / Start / Coast | 800ms |
 | [pause](icon-reviews/pause.md) | arrest motion and hold position | Brake / Hold / Relax | 840ms |
 | [volume](icon-reviews/volume.md) | sound propagating away from a source | Source / Near / Far | 1100ms |
@@ -49,9 +49,13 @@ The user requested a smaller, more careful batch after the broad rollout. Only t
 
 ## Focused refinement 02
 
-After the user accepted Refinement / 01, the next bounded batch is **folder, file, copy, and trash**. Choose **Refinement / 02**, now the default study group. Folder gains true layer occlusion and a staggered reveal; file has an anchored diagonal crease; copy registers its twin with a light handoff; trash delivers its impact when the lid closes. Their four linked reviews replace the broad-rollout reports. Earlier accepted gestures remain unchanged.
+After the user accepted Refinement / 01, the next bounded batch is **folder, file, copy, and trash**. Choose **Refinement / 02** to review this group. Folder gains true layer occlusion and a staggered reveal; file has an anchored diagonal crease; copy registers its twin with a light handoff; trash delivers its impact when the lid closes. Their four linked reviews replace the broad-rollout reports. Earlier accepted gestures remain unchanged.
 
 The subsequent polish pass keeps these same four: finer folder planes and a continuous return, a complete paper underside in file, identical physically occluded sheets in copy, and measured lid/rim contact maintained through trash compression. Each response now starts on its object before dissipating into the surrounding space. The current reports and `refinement-02-polish` images supersede the first Refinement / 02 references.
+
+## Focused refinement 03
+
+The next bounded batch is **book, mail, message, and send**. **Refinement / 03** is the default study group. Book turns a page onto a receiving bed; Mail reveals a letter through a properly layered flap; Message carries a readable dot sequence into one conversational response; Send flexes a folded wing and leaves a staggered wake. Each has an independent Interface Craft report, named timing source, and new browser references in `motion-evidence/refinement-03/`. The preceding twelve refined performances remain unchanged.
 
 ## How to use these references
 

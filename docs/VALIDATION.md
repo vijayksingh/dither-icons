@@ -141,3 +141,32 @@ Scope remains **folder, file, copy, trash** after the user requested more polish
 - TypeScript and **15 tests passed**, including new checks for file/copy occlusion identity and maintained trash contact throughout compression. Existing checks continue covering all 36 timelines, 108 material variants, fixed file hinge, directional joints, exact rest, hidden accents, accessibility, and CSS fallback.
 - ESM, declarations, gallery, and downloadable tarball built. Library output is 96.45KB before compression. React 18 consumer installation was verified in the preceding pass; it was not repeated for this artwork/timing-only change.
 - Standalone CSS SVG uses the same tracks and retains the documented hover-departure limitation. No publication or deployment.
+
+## Focused refinement 03 — 2026-09-09
+
+Scope: **book, mail, message, send**, the next four in the motion catalog. Individual Interface Craft critiques and storyboards were applied under MOT-01–16. The preceding foundation and two refinement groups keep their existing performances. The playback engine was not changed.
+
+### Rendered decisions
+
+- Book: replace the slight two-leaf skew with one page turn around a fixed full binding. A moving occluder prevents stacked grain. The page and receiving bed meet, yield together, and give a landing glint followed by escaping air. The extra leaf merges into the stack before its hidden reset; the identity spread stays visible throughout.
+- Mail: correct the house-like open silhouette with a wider envelope and a clearly revealed letter. Front/rear clipping at the horizontal hinge handles the letter/flap ordering continuously. Letter edge, exterior reveal, tuck, and quieter closure have distinct causal timing.
+- Message: replace low-contrast square marks with round apertures in dither and solid, and filled circles in outline. A stronger final dot leads the nearby edge response and one exterior echo. The bubble remains fixed and the sequence never loops.
+- Send: two paper faces, a wing flex with anchored keel, attached crease light, and separate near/far wakes. The nose leads the material response; a small coast precedes the return.
+
+### Browser evidence and interaction
+
+- Eight fresh [reference poses](motion-evidence/refinement-03/): 0%, 10%, 25%, 40%, 45%, 52%, 82%, and 100%. `poses.json` captures every named part's transform, origin, and opacity. References show native browser output, not concept drawings.
+- Actual-speed replay inspected through crossing, reveal, climax, and recovery. Half-speed playback in `playback.json` records all four active through their gestures and idle at 2800ms. Normal durations: Book 1360ms, Mail 1360ms, Message 1180ms, Send 1220ms.
+- Book page/bed bounding rectangles at 45% and 49% matched within 0.000031 CSS px. The related test checks both spine endpoints and corresponding curve points between contact frames. `geometry.json` records measurements and material continuity.
+- Dark Iris dither/outline and light Cobalt solid reviewed at 112px. Solid collection icons checked at 24px; dither at 64px. Small-size recognition remains independent of highlights. Separate compact references cover Book and the three communication icons.
+- Paused dither-to-outline switching at 52% preserved every named transform, including Message's dots moving between masked and visible SVG groups.
+- Keyboard Enter and Tab departure verified on each icon: every gesture continued after departure, then all four returned to idle. Reduced motion produced zero playing icons, transformed parts, or visible accents. Motion off disabled all four study controls. `lifecycle.json` records the checks.
+- At 390 CSS px, client and scroll widths both measured 390px; two study columns measured 173px each. Keyboard replay started all four. This is responsive-layout and keyboard verification, not physical-device touch testing.
+- Browser error log was empty. Loading, empty, and error data states do not apply to these static icon studies.
+
+### Automated and package checks
+
+- TypeScript and **18 tests passed**. New tests cover moving occluder synchronization and unique apertures, Mail's matching hinge half-planes, Book's fixed binding and coupled landing, and Send's fixed keel endpoints between poses.
+- Existing checks continue covering all 36 timelines and 108 material variants, real target binding, ordered clocks, transform/opacity-only tracks, exact identity return, hidden accent endpoints, accessibility, and shared CSS fallback.
+- ESM library, declarations, gallery, and downloadable tarball built. Library output is 112.74KB before compression; named imports still share the complete catalog. The unchanged React peer contract was previously tested with React 18; a fresh consumer install was not repeated for this artwork-only batch.
+- Standalone CSS SVG shares the choreography and retains the documented hover-departure limitation. No publication or deployment.

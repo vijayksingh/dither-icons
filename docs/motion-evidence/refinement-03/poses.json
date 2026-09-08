@@ -1,0 +1,1362 @@
+[
+  {
+    "percent": 0,
+    "label": "rest",
+    "icons": [
+      {
+        "icon": "book",
+        "parts": [
+          {
+            "opacity": "0",
+            "origin": "12px 14px",
+            "part": "page-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 14px",
+            "part": "left-bed",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 14px",
+            "part": "turning-page",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "19.9px 11px",
+            "part": "page-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "origin": "13.2px 20px",
+            "part": "landing-light",
+            "transform": "matrix(0.3, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "2px 11.4px",
+            "part": "page-air",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0.3, 0)"
+          }
+        ]
+      },
+      {
+        "icon": "mail",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 7.1px",
+            "part": "flap-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 18px",
+            "part": "letter-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 18px",
+            "part": "letter-rear-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 7.1px",
+            "part": "flap",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 18px",
+            "part": "letter",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "7.1px 9.1px",
+            "part": "letter-edge",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 13.5px",
+            "part": "closure-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "origin": "18px 5px",
+            "part": "reveal-rays",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0, 0.3)"
+          }
+        ]
+      },
+      {
+        "icon": "message",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "7px 10.5px",
+            "part": "dot-left",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 10.5px",
+            "part": "dot-center",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "17px 10.5px",
+            "part": "dot-right",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "20.35px 10.5px",
+            "part": "reply-edge",
+            "transform": "matrix(1, 0, 0, 0.3, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "22.5px 10.5px",
+            "part": "reply-echo",
+            "transform": "matrix(1, 0, 0, 0.35, -0.15, 0)"
+          }
+        ]
+      },
+      {
+        "icon": "send",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "10px 14px",
+            "part": "plane",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "15px 9px",
+            "part": "lower-wing",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "15px 9px",
+            "part": "crease-light",
+            "transform": "matrix(0.45, 0, 0, 0.45, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "4px 15px",
+            "part": "wake-near",
+            "transform": "matrix(0.35, 0, 0, 0.35, 0.15, -0.15)"
+          },
+          {
+            "opacity": "0",
+            "origin": "7px 18px",
+            "part": "wake-far",
+            "transform": "matrix(0.35, 0, 0, 0.35, 0.15, -0.15)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "percent": 10,
+    "label": "prepare",
+    "icons": [
+      {
+        "icon": "book",
+        "parts": [
+          {
+            "opacity": "0.98",
+            "origin": "12px 14px",
+            "part": "page-occlusion",
+            "transform": "matrix(0.9724, -0.0160584, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 14px",
+            "part": "left-bed",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.98",
+            "origin": "12px 14px",
+            "part": "turning-page",
+            "transform": "matrix(0.9724, -0.0160584, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "19.9px 11px",
+            "part": "page-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "origin": "13.2px 20px",
+            "part": "landing-light",
+            "transform": "matrix(0.3, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "2px 11.4px",
+            "part": "page-air",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0.3, 0)"
+          }
+        ]
+      },
+      {
+        "icon": "mail",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 7.1px",
+            "part": "flap-occlusion",
+            "transform": "matrix(1, 0, 0, 0.577982, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 18px",
+            "part": "letter-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 18px",
+            "part": "letter-rear-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 7.1px",
+            "part": "flap",
+            "transform": "matrix(1, 0, 0, 0.577982, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 18px",
+            "part": "letter",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "7.1px 9.1px",
+            "part": "letter-edge",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 13.5px",
+            "part": "closure-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "origin": "18px 5px",
+            "part": "reveal-rays",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0, 0.3)"
+          }
+        ]
+      },
+      {
+        "icon": "message",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "7px 10.5px",
+            "part": "dot-left",
+            "transform": "matrix(0.965255, 0, 0, 0.965255, 0, -0.0731461)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 10.5px",
+            "part": "dot-center",
+            "transform": "matrix(0.95837, 0, 0, 0.95837, 0, 0.0693828)"
+          },
+          {
+            "opacity": "1",
+            "origin": "17px 10.5px",
+            "part": "dot-right",
+            "transform": "matrix(0.981886, 0, 0, 0.981886, 0, 0.0301904)"
+          },
+          {
+            "opacity": "0",
+            "origin": "20.35px 10.5px",
+            "part": "reply-edge",
+            "transform": "matrix(1, 0, 0, 0.3, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "22.5px 10.5px",
+            "part": "reply-echo",
+            "transform": "matrix(1, 0, 0, 0.35, -0.15, 0)"
+          }
+        ]
+      },
+      {
+        "icon": "send",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "10px 14px",
+            "part": "plane",
+            "transform": "matrix(0.998252, -0.0591085, 0.0591085, 0.998252, -0.629319, 0.484092)"
+          },
+          {
+            "opacity": "1",
+            "origin": "15px 9px",
+            "part": "lower-wing",
+            "transform": "matrix(0.964302, -0.0356983, -0.0356983, 0.964302, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "15px 9px",
+            "part": "crease-light",
+            "transform": "matrix(0.45, 0, 0, 0.45, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "4px 15px",
+            "part": "wake-near",
+            "transform": "matrix(0.35, 0, 0, 0.35, 0.15, -0.15)"
+          },
+          {
+            "opacity": "0",
+            "origin": "7px 18px",
+            "part": "wake-far",
+            "transform": "matrix(0.35, 0, 0, 0.35, 0.15, -0.15)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "percent": 25,
+    "label": "crossing",
+    "icons": [
+      {
+        "icon": "book",
+        "parts": [
+          {
+            "opacity": "0.98",
+            "origin": "12px 14px",
+            "part": "page-occlusion",
+            "transform": "matrix(0.18, -0.122785, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 14px",
+            "part": "left-bed",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.98",
+            "origin": "12px 14px",
+            "part": "turning-page",
+            "transform": "matrix(0.18, -0.122785, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.8",
+            "origin": "19.9px 11px",
+            "part": "page-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "origin": "13.2px 20px",
+            "part": "landing-light",
+            "transform": "matrix(0.3, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "2px 11.4px",
+            "part": "page-air",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0.3, 0)"
+          }
+        ]
+      },
+      {
+        "icon": "mail",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 7.1px",
+            "part": "flap-occlusion",
+            "transform": "matrix(1, 0, 0, -0.38, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 18px",
+            "part": "letter-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, -4.43147)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 18px",
+            "part": "letter-rear-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, -4.43147)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 7.1px",
+            "part": "flap",
+            "transform": "matrix(1, 0, 0, -0.38, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 18px",
+            "part": "letter",
+            "transform": "matrix(1, 0, 0, 1, 0, -4.43147)"
+          },
+          {
+            "opacity": "0",
+            "origin": "7.1px 9.1px",
+            "part": "letter-edge",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 13.5px",
+            "part": "closure-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "origin": "18px 5px",
+            "part": "reveal-rays",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0, 0.3)"
+          }
+        ]
+      },
+      {
+        "icon": "message",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "7px 10.5px",
+            "part": "dot-left",
+            "transform": "matrix(1.16551, 0, 0, 1.16551, 0, -0.87687)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 10.5px",
+            "part": "dot-center",
+            "transform": "matrix(1.13257, 0, 0, 1.13257, 0, -0.74882)"
+          },
+          {
+            "opacity": "1",
+            "origin": "17px 10.5px",
+            "part": "dot-right",
+            "transform": "matrix(0.920423, 0, 0, 0.920423, 0, 0.132629)"
+          },
+          {
+            "opacity": "0",
+            "origin": "20.35px 10.5px",
+            "part": "reply-edge",
+            "transform": "matrix(1, 0, 0, 0.3, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "22.5px 10.5px",
+            "part": "reply-echo",
+            "transform": "matrix(1, 0, 0, 0.35, -0.15, 0)"
+          }
+        ]
+      },
+      {
+        "icon": "send",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "10px 14px",
+            "part": "plane",
+            "transform": "matrix(0.999604, 0.0281451, -0.0281451, 0.999604, 0.824849, -0.876526)"
+          },
+          {
+            "opacity": "1",
+            "origin": "15px 9px",
+            "part": "lower-wing",
+            "transform": "matrix(1.01259, 0.012587, 0.012587, 1.01259, 0, 0)"
+          },
+          {
+            "opacity": "0.328824",
+            "origin": "15px 9px",
+            "part": "crease-light",
+            "transform": "matrix(0.660294, 0, 0, 0.660294, 0, 0)"
+          },
+          {
+            "opacity": "0.0642857",
+            "origin": "4px 15px",
+            "part": "wake-near",
+            "transform": "matrix(0.396429, 0, 0, 0.396429, 0.125, -0.125)"
+          },
+          {
+            "opacity": "0",
+            "origin": "7px 18px",
+            "part": "wake-far",
+            "transform": "matrix(0.35, 0, 0, 0.35, 0.15, -0.15)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "percent": 40,
+    "label": "reveal",
+    "icons": [
+      {
+        "icon": "book",
+        "parts": [
+          {
+            "opacity": "0.98",
+            "origin": "12px 14px",
+            "part": "page-occlusion",
+            "transform": "matrix(-0.937119, -0.00954362, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 14px",
+            "part": "left-bed",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.98",
+            "origin": "12px 14px",
+            "part": "turning-page",
+            "transform": "matrix(-0.937119, -0.00954362, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.0409302",
+            "origin": "19.9px 11px",
+            "part": "page-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "origin": "13.2px 20px",
+            "part": "landing-light",
+            "transform": "matrix(0.3, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "2px 11.4px",
+            "part": "page-air",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0.3, 0)"
+          }
+        ]
+      },
+      {
+        "icon": "mail",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 7.1px",
+            "part": "flap-occlusion",
+            "transform": "matrix(1, 0, 0, -0.38, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 18px",
+            "part": "letter-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, -5.25)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 18px",
+            "part": "letter-rear-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, -5.25)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 7.1px",
+            "part": "flap",
+            "transform": "matrix(1, 0, 0, -0.38, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 18px",
+            "part": "letter",
+            "transform": "matrix(1, 0, 0, 1, 0, -5.25)"
+          },
+          {
+            "opacity": "0.751045",
+            "origin": "7.1px 9.1px",
+            "part": "letter-edge",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 13.5px",
+            "part": "closure-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.672",
+            "origin": "18px 5px",
+            "part": "reveal-rays",
+            "transform": "matrix(0.91, 0, 0, 0.91, 0, 0.06)"
+          }
+        ]
+      },
+      {
+        "icon": "message",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "7px 10.5px",
+            "part": "dot-left",
+            "transform": "matrix(0.970019, 0, 0, 0.970019, 0, 0.129917)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 10.5px",
+            "part": "dot-center",
+            "transform": "matrix(1.12185, 0, 0, 1.12185, 0, -0.652041)"
+          },
+          {
+            "opacity": "1",
+            "origin": "17px 10.5px",
+            "part": "dot-right",
+            "transform": "matrix(1.22678, 0, 0, 1.22678, 0, -1.06911)"
+          },
+          {
+            "opacity": "0",
+            "origin": "20.35px 10.5px",
+            "part": "reply-edge",
+            "transform": "matrix(1, 0, 0, 0.3, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "22.5px 10.5px",
+            "part": "reply-echo",
+            "transform": "matrix(1, 0, 0, 0.35, -0.15, 0)"
+          }
+        ]
+      },
+      {
+        "icon": "send",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "10px 14px",
+            "part": "plane",
+            "transform": "matrix(0.999886, 0.0151175, -0.0151175, 0.999886, 1.07513, -1.10011)"
+          },
+          {
+            "opacity": "1",
+            "origin": "15px 9px",
+            "part": "lower-wing",
+            "transform": "matrix(1.00172, 0.00172192, 0.00172192, 1.00172, 0, 0)"
+          },
+          {
+            "opacity": "0.702165",
+            "origin": "15px 9px",
+            "part": "crease-light",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.78075",
+            "origin": "4px 15px",
+            "part": "wake-near",
+            "transform": "matrix(0.980125, 0, 0, 0.980125, -0.26625, 0.26625)"
+          },
+          {
+            "opacity": "0.59437",
+            "origin": "7px 18px",
+            "part": "wake-far",
+            "transform": "matrix(0.918148, 0, 0, 0.918148, -0.155926, 0.155926)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "percent": 45,
+    "label": "landing",
+    "icons": [
+      {
+        "icon": "book",
+        "parts": [
+          {
+            "opacity": "0.98",
+            "origin": "12px 14px",
+            "part": "page-occlusion",
+            "transform": "matrix(-1, 0.00169334, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 14px",
+            "part": "left-bed",
+            "transform": "matrix(1, -0.00169334, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.98",
+            "origin": "12px 14px",
+            "part": "turning-page",
+            "transform": "matrix(-1, 0.00169334, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "19.9px 11px",
+            "part": "page-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.03",
+            "origin": "13.2px 20px",
+            "part": "landing-light",
+            "transform": "matrix(0.323333, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.015619",
+            "origin": "2px 11.4px",
+            "part": "page-air",
+            "transform": "matrix(0.558571, 0, 0, 0.558571, 0.294286, 0)"
+          }
+        ]
+      },
+      {
+        "icon": "mail",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 7.1px",
+            "part": "flap-occlusion",
+            "transform": "matrix(1, 0, 0, -0.38, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 18px",
+            "part": "letter-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, -5.25)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 18px",
+            "part": "letter-rear-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, -5.25)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 7.1px",
+            "part": "flap",
+            "transform": "matrix(1, 0, 0, -0.38, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 18px",
+            "part": "letter",
+            "transform": "matrix(1, 0, 0, 1, 0, -5.25)"
+          },
+          {
+            "opacity": "0.578507",
+            "origin": "7.1px 9.1px",
+            "part": "letter-edge",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 13.5px",
+            "part": "closure-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.684",
+            "origin": "18px 5px",
+            "part": "reveal-rays",
+            "transform": "matrix(0.990714, 0, 0, 0.990714, 0, -0.0928571)"
+          }
+        ]
+      },
+      {
+        "icon": "message",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "7px 10.5px",
+            "part": "dot-left",
+            "transform": "matrix(0.982689, 0, 0, 0.982689, 0, 0.0750155)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 10.5px",
+            "part": "dot-center",
+            "transform": "matrix(1.02823, 0, 0, 1.02823, 0, -0.169889)"
+          },
+          {
+            "opacity": "1",
+            "origin": "17px 10.5px",
+            "part": "dot-right",
+            "transform": "matrix(1.23969, 0, 0, 1.23969, 0, -1.11879)"
+          },
+          {
+            "opacity": "0.336632",
+            "origin": "20.35px 10.5px",
+            "part": "reply-edge",
+            "transform": "matrix(1, 0, 0, 0.602105, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "22.5px 10.5px",
+            "part": "reply-echo",
+            "transform": "matrix(1, 0, 0, 0.35, -0.15, 0)"
+          }
+        ]
+      },
+      {
+        "icon": "send",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "10px 14px",
+            "part": "plane",
+            "transform": "matrix(0.999917, 0.0128954, -0.0128954, 0.999917, 1.1095, -1.13067)"
+          },
+          {
+            "opacity": "1",
+            "origin": "15px 9px",
+            "part": "lower-wing",
+            "transform": "matrix(0.996491, -0.00350925, -0.00350925, 0.996491, 0, 0)"
+          },
+          {
+            "opacity": "0.578729",
+            "origin": "15px 9px",
+            "part": "crease-light",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.6435",
+            "origin": "4px 15px",
+            "part": "wake-near",
+            "transform": "matrix(0.95725, 0, 0, 0.95725, -0.3425, 0.3425)"
+          },
+          {
+            "opacity": "0.589333",
+            "origin": "7px 18px",
+            "part": "wake-far",
+            "transform": "matrix(0.98, 0, 0, 0.98, -0.266667, 0.266667)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "percent": 52,
+    "label": "climax",
+    "icons": [
+      {
+        "icon": "book",
+        "parts": [
+          {
+            "opacity": "0.98",
+            "origin": "12px 14px",
+            "part": "page-occlusion",
+            "transform": "matrix(-1, 0.00200189, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 14px",
+            "part": "left-bed",
+            "transform": "matrix(1, -0.00200189, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.98",
+            "origin": "12px 14px",
+            "part": "turning-page",
+            "transform": "matrix(-1, 0.00200189, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "19.9px 11px",
+            "part": "page-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.714",
+            "origin": "13.2px 20px",
+            "part": "landing-light",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.759086",
+            "origin": "2px 11.4px",
+            "part": "page-air",
+            "transform": "matrix(0.966571, 0, 0, 0.966571, 0.0222857, 0)"
+          }
+        ]
+      },
+      {
+        "icon": "mail",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 7.1px",
+            "part": "flap-occlusion",
+            "transform": "matrix(1, 0, 0, -0.38, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 18px",
+            "part": "letter-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, -4.78756)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 18px",
+            "part": "letter-rear-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, -4.78756)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 7.1px",
+            "part": "flap",
+            "transform": "matrix(1, 0, 0, -0.38, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 18px",
+            "part": "letter",
+            "transform": "matrix(1, 0, 0, 1, 0, -4.78756)"
+          },
+          {
+            "opacity": "0.336955",
+            "origin": "7.1px 9.1px",
+            "part": "letter-edge",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 13.5px",
+            "part": "closure-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.3984",
+            "origin": "18px 5px",
+            "part": "reveal-rays",
+            "transform": "matrix(0.973714, 0, 0, 0.973714, 0, -0.262857)"
+          }
+        ]
+      },
+      {
+        "icon": "message",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "7px 10.5px",
+            "part": "dot-left",
+            "transform": "matrix(0.996593, 0, 0, 0.996593, 0, 0.0147632)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 10.5px",
+            "part": "dot-center",
+            "transform": "matrix(0.970374, 0, 0, 0.970374, 0, 0.128378)"
+          },
+          {
+            "opacity": "1",
+            "origin": "17px 10.5px",
+            "part": "dot-right",
+            "transform": "matrix(1.17198, 0, 0, 1.17198, 0, -0.80507)"
+          },
+          {
+            "opacity": "0.717161",
+            "origin": "20.35px 10.5px",
+            "part": "reply-edge",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.670756",
+            "origin": "22.5px 10.5px",
+            "part": "reply-echo",
+            "transform": "matrix(1, 0, 0, 0.845444, -0.0356667, 0)"
+          }
+        ]
+      },
+      {
+        "icon": "send",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "10px 14px",
+            "part": "plane",
+            "transform": "matrix(0.999926, 0.0121504, -0.0121504, 0.999926, 1.11495, -1.13488)"
+          },
+          {
+            "opacity": "1",
+            "origin": "15px 9px",
+            "part": "lower-wing",
+            "transform": "matrix(0.995022, -0.00497833, -0.00497833, 0.995022, 0, 0)"
+          },
+          {
+            "opacity": "0.40592",
+            "origin": "15px 9px",
+            "part": "crease-light",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.45135",
+            "origin": "4px 15px",
+            "part": "wake-near",
+            "transform": "matrix(0.925225, 0, 0, 0.925225, -0.44925, 0.44925)"
+          },
+          {
+            "opacity": "0.413358",
+            "origin": "7px 18px",
+            "part": "wake-far",
+            "transform": "matrix(0.941182, 0, 0, 0.941182, -0.396061, 0.396061)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "percent": 82,
+    "label": "recover",
+    "icons": [
+      {
+        "icon": "book",
+        "parts": [
+          {
+            "opacity": "0",
+            "origin": "12px 14px",
+            "part": "page-occlusion",
+            "transform": "matrix(0.104, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 14px",
+            "part": "left-bed",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 14px",
+            "part": "turning-page",
+            "transform": "matrix(0.104, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "19.9px 11px",
+            "part": "page-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "origin": "13.2px 20px",
+            "part": "landing-light",
+            "transform": "matrix(0.636, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "2px 11.4px",
+            "part": "page-air",
+            "transform": "matrix(0.98248, 0, 0, 0.98248, -0.3528, 0)"
+          }
+        ]
+      },
+      {
+        "icon": "mail",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 7.1px",
+            "part": "flap-occlusion",
+            "transform": "matrix(1, 0, 0, 1.01125, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 18px",
+            "part": "letter-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 18px",
+            "part": "letter-rear-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 7.1px",
+            "part": "flap",
+            "transform": "matrix(1, 0, 0, 1.01125, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 18px",
+            "part": "letter",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "7.1px 9.1px",
+            "part": "letter-edge",
+            "transform": "matrix(0.603077, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.396",
+            "origin": "12px 13.5px",
+            "part": "closure-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "origin": "18px 5px",
+            "part": "reveal-rays",
+            "transform": "matrix(0.738308, 0, 0, 0.738308, 0, -0.0766154)"
+          }
+        ]
+      },
+      {
+        "icon": "message",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "7px 10.5px",
+            "part": "dot-left",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 10.5px",
+            "part": "dot-center",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "17px 10.5px",
+            "part": "dot-right",
+            "transform": "matrix(0.999667, 0, 0, 0.999667, 0, 0.00144515)"
+          },
+          {
+            "opacity": "0",
+            "origin": "20.35px 10.5px",
+            "part": "reply-edge",
+            "transform": "matrix(1, 0, 0, 0.9195, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "22.5px 10.5px",
+            "part": "reply-echo",
+            "transform": "matrix(1, 0, 0, 0.99605, 0.381, 0)"
+          }
+        ]
+      },
+      {
+        "icon": "send",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "10px 14px",
+            "part": "plane",
+            "transform": "matrix(0.999995, -0.00313638, 0.00313638, 0.999995, -0.0446052, 0.0396001)"
+          },
+          {
+            "opacity": "1",
+            "origin": "15px 9px",
+            "part": "lower-wing",
+            "transform": "matrix(0.999998, -1.69873e-06, -1.69873e-06, 0.999998, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "15px 9px",
+            "part": "crease-light",
+            "transform": "matrix(0.763714, 0, 0, 0.763714, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "4px 15px",
+            "part": "wake-near",
+            "transform": "matrix(0.635195, 0, 0, 0.635195, -0.334831, 0.334831)"
+          },
+          {
+            "opacity": "0",
+            "origin": "7px 18px",
+            "part": "wake-far",
+            "transform": "matrix(0.635195, 0, 0, 0.635195, -0.334831, 0.334831)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "percent": 100,
+    "label": "settled",
+    "icons": [
+      {
+        "icon": "book",
+        "parts": [
+          {
+            "opacity": "0",
+            "origin": "12px 14px",
+            "part": "page-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 14px",
+            "part": "left-bed",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 14px",
+            "part": "turning-page",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "19.9px 11px",
+            "part": "page-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "origin": "13.2px 20px",
+            "part": "landing-light",
+            "transform": "matrix(0.3, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "2px 11.4px",
+            "part": "page-air",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0.3, 0)"
+          }
+        ]
+      },
+      {
+        "icon": "mail",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 7.1px",
+            "part": "flap-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 18px",
+            "part": "letter-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 18px",
+            "part": "letter-rear-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 7.1px",
+            "part": "flap",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 18px",
+            "part": "letter",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "7.1px 9.1px",
+            "part": "letter-edge",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "12px 13.5px",
+            "part": "closure-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "origin": "18px 5px",
+            "part": "reveal-rays",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0, 0.3)"
+          }
+        ]
+      },
+      {
+        "icon": "message",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "7px 10.5px",
+            "part": "dot-left",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 10.5px",
+            "part": "dot-center",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "17px 10.5px",
+            "part": "dot-right",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "20.35px 10.5px",
+            "part": "reply-edge",
+            "transform": "matrix(1, 0, 0, 0.3, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "22.5px 10.5px",
+            "part": "reply-echo",
+            "transform": "matrix(1, 0, 0, 0.35, -0.15, 0)"
+          }
+        ]
+      },
+      {
+        "icon": "send",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "10px 14px",
+            "part": "plane",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "15px 9px",
+            "part": "lower-wing",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "15px 9px",
+            "part": "crease-light",
+            "transform": "matrix(0.45, 0, 0, 0.45, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "4px 15px",
+            "part": "wake-near",
+            "transform": "matrix(0.35, 0, 0, 0.35, 0.15, -0.15)"
+          },
+          {
+            "opacity": "0",
+            "origin": "7px 18px",
+            "part": "wake-far",
+            "transform": "matrix(0.35, 0, 0, 0.35, 0.15, -0.15)"
+          }
+        ]
+      }
+    ]
+  }
+]

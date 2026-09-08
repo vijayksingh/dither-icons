@@ -1,46 +1,47 @@
-# book: Interface Craft review
+# book: Interface Craft refinement 03
 
 ## Context
-An SVG action icon in a reusable developer library. Its semantic meaning is **open and inspect bound knowledge**. It appears in routine controls where recognition matters more than spectacle.
+**Meaning:** open and inspect bound knowledge. **Invariant:** two readable leaves and the full central binding remain visible. Reading invites one considered page turn, not an endless flip loop.
 
 ## First Impressions
-A blinking spine ignores the actual relationship between two pages.
+The previous spread skewed its two broad faces by a few degrees. It retained its book shape but delivered little sense of turning a page or arriving anywhere. Its text highlight had no distinct physical cause.
 
 ## Visual Design
-**Identity boundary** — Keep two leaves and their shared spine. Stable dither follows the contour. Color inherits the selected palette; accents use the same ink and stay below the primary silhouette in visual weight. Typography and card framing belong to the shared inspector, not the glyph.
+Give the open spread gently curved page edges and permanent content lines. A separate leaf turns over the same vertical binding. Its material occluder follows the identical transform and opacity, so the moving leaf hides underlying grain rather than doubling it. The left bed uses 72% ink; the turning leaf uses 98% during its visible movement.
+
+The page's free edge catches light during the turn. At landing, a curved lower-edge glint belongs to the arriving page, while a short breath of air escapes beyond the left edge. The page merges into the receiving stack before its invisible overlay resets; the two identity leaves remain present throughout.
 
 ## Interface Design
-The missed opportunity is to express **open and inspect bound knowledge** through a causal gesture. Leaves open around a fixed spine, one page catches light, then both nest back against the binding. The inspector exposes replay and timing only when requested; the icon itself adds no controls or labels.
+Gather the right leaf, pass it across the spine, land it on its mirrored left bed. After contact, both shapes yield with matching deformation and easing. Their entire binding stays fixed, including top and bottom endpoints. The landing response happens after the page arrives, and the exterior air decays last.
 
 ## Consistency & Conventions
-Retain the conventional glyph. Use the shared hover, focus, click, reduced-motion, and completion contracts. MOT-01, MOT-02, MOT-03, MOT-04, MOT-05, MOT-08, MOT-09, MOT-10, MOT-11, MOT-12, MOT-14, MOT-15 apply.
+MOT-01–16 apply. The fixed spread supplies identity; the transient overlay is the additional moving page, not a disappearing identity part. It ends hidden at its original transform. Native playback, inspector, and CSS export share all tracks. This does not imply that the containing application changed pages.
 
 ## User Context
-Reading should feel unhurried; no rapid page-flicking loop. Recognizability must survive a brief glance and the still-motion variant.
+The static spread remains readable at 24px solid. The finer curl and landing light belong to larger dither previews. Keyboard departure lets the gesture finish, repeated activation does not stack performances, and reduced motion leaves the open book still.
 
-## Top Opportunities
-1. Leaves open around a fixed spine, one page catches light, then both nest back against the binding.
-2. Keep two leaves and their shared spine.
-3. Reading should feel unhurried; no rapid page-flicking loop.
+## Top Opportunities addressed
+1. Replace a slight two-panel skew with one actual page turn.
+2. Keep the complete spine attached through the crossing and landing.
+3. Join the page to its receiving bed before the glint and escaping air.
 
-## Encoded storyboard and review
+## Encoded storyboard
+Source: [book.ts](../../src/motions/book.ts). `TIMING`, `BOOK_ART`, `BOOK_BINDING`, `PAGE`, `BED`, `EDGE`, `LANDING`, `AIR`, and `EASE` expose the performance.
 
-**Duration:** 1180ms. **Sequence:** Part / Read / Bind.
-
-Timing source: [files.ts](../../src/motions/files.ts). Geometry binds each named track in `CraftedArtwork.tsx` or `ExtendedArtwork.tsx`. Times below are milliseconds from the same clock; transform values, pivots and easing live in that source.
-
-| Named part | Keyframe times (ms) |
+| Time | Action |
 | --- | --- |
-| `left-leaf` | 0, 130, 430, 680, 990, 1180 |
-| `right-leaf` | 0, 180, 480, 720, 1040, 1180 |
-| `page-light` | 0, 310, 520, 800, 1020, 1180 |
+| 0–140ms | Overlay joins the right stack; the leaf gathers tension. |
+| 140–340ms | Outer edge curls toward the binding and catches light. |
+| 340–410ms | Leaf crosses the fixed spine at x=12. |
+| 610ms | Page meets the mirrored left bed. |
+| 670ms | Coupled yielding and landing glint. |
+| 715ms | Exterior air reaches its crest. |
+| 850–1060ms | Receiving bed rests; overlay merges into the stack. |
+| 1160–1360ms | Hidden overlay resets, exact neutral spread. |
 
-**Rendered review:** Both leaves preserve the central binding and stay ordered through opening and closure. The right-page detail follows the opening rather than leading it.
+## Rendered review
+Normal and half-speed playback show a single turn, a landing, then dissipation. The 25% image captures the thin crossing leaf; 45% records contact; 52% shows the later response. At 45% and 49%, the browser-measured page and bed rectangles matched within 0.000031 CSS px. The geometric test also checks both spine endpoints and corresponding curve points between landing frames.
 
-Reviewed at preparation (20%), action (40%), recovery (70%) and neutral endpoint (100%), with actual playback and per-part endpoint inspection in the live gallery. These samples establish the reviewed poses; they do not replace the full timeline or the shared lifecycle checks in [VALIDATION.md](../VALIDATION.md).
+![Book crossing, first icon](../motion-evidence/refinement-03/crossing.png)
 
-**Visual reference:** icon 3 from the left in this family.
-
-![book: action pose at 40%, position 3](../motion-evidence/rollout/files-containers.png)
-
-[Preparation image](../motion-evidence/rollout/files-containers-prepare.png) · [Recovery image](../motion-evidence/rollout/files-containers-recover.png)
+[Landing](../motion-evidence/refinement-03/landing.png) · [Climax](../motion-evidence/refinement-03/climax.png) · [Outline](../motion-evidence/refinement-03/outline.png) · [24px solid](../motion-evidence/refinement-03/compact-book.png) · [Batch validation](../VALIDATION.md#focused-refinement-03--2026-09-09)

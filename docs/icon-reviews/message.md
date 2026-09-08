@@ -1,46 +1,46 @@
-# message: Interface Craft review
+# message: Interface Craft refinement 03
 
 ## Context
-An SVG action icon in a reusable developer library. Its semantic meaning is **an ongoing conversation or a short thought**. It appears in routine controls where recognition matters more than spectacle.
+**Meaning:** a short thought or conversational response. **Invariant:** a stable bubble, tail, and three legible dots. This is a finite preview gesture, not a live typing or unread-message indicator.
 
 ## First Impressions
-Blinking all three dots simultaneously feels like an error indicator.
+The prior square dots shared the bubble's dither and became faint marks within the same grain. They lifted in succession, but the sequence had no final response. Recognition and payoff both needed work.
 
 ## Visual Design
-**Identity boundary** — Bubble and tail stay fully readable. Stable dither follows the contour. Color inherits the selected palette; accents use the same ink and stay below the primary silhouette in visual weight. Typography and card framing belong to the shared inspector, not the glyph.
+Use round 2.1-unit dots. In dither and solid they are true negative apertures through the bubble; in outline they are filled circles. They remain clear in every material while sharing the same position and motion.
+
+The last dot receives slightly greater emphasis. A fine line catches the nearby inner bubble edge, then one curved exterior echo grows outward. The bubble and tail themselves remain still, giving the dot motion a fixed reference. All accents use inherited ink and stay below the silhouette in visual weight.
 
 ## Interface Design
-The missed opportunity is to express **an ongoing conversation or a short thought** through a causal gesture. Pass a restrained emphasis across three dots from left to right inside a steady bubble. The inspector exposes replay and timing only when requested; the icon itself adds no controls or labels.
+Pass one impulse from left to middle to right. Each dot gathers, rises, returns, and settles. The stronger last crest supplies the cause for the nearby edge response and the delayed exterior echo. There is one conversational beat and no repeated loader loop.
 
 ## Consistency & Conventions
-Retain the conventional glyph. Use the shared hover, focus, click, reduced-motion, and completion contracts. MOT-01, MOT-02, MOT-03, MOT-04, MOT-05, MOT-08, MOT-09, MOT-10, MOT-11, MOT-12, MOT-14, MOT-15 apply.
+MOT-01–16 apply. The material change relocates the dot groups between mask and visible SVG content; the existing runtime rebinds them and preserves inspected time. Recognition never depends on the exterior echo, and no incoming or successfully sent message is claimed.
 
 ## User Context
-One pass only; do not claim someone is typing indefinitely. Recognizability must survive a brief glance and the still-motion variant.
+Conversation controls are used repeatedly. A restrained, finite response adds character without implying that another person is typing. The three dots remain useful at 24px and when motion is disabled. Keyboard departure preserves the performance instead of cutting it short.
 
-## Top Opportunities
-1. Pass a restrained emphasis across three dots from left to right inside a steady bubble.
-2. Bubble and tail stay fully readable.
-3. One pass only; do not claim someone is typing indefinitely.
+## Top Opportunities addressed
+1. Make all three dots clear against the dithered bubble.
+2. Give the conversational sequence a stronger final beat.
+3. Let a local edge response lead the exterior echo while the bubble stays fixed.
 
-## Encoded storyboard and review
+## Encoded storyboard
+Source: [message.ts](../../src/motions/message.ts). `TIMING`, `MESSAGE_ART`, `DOT`, `EDGE`, `ECHO`, the three dot records, and `EASE` define the performance.
 
-**Duration:** 1020ms. **Sequence:** Begin / Answer / Rest.
-
-Timing source: [communication.ts](../../src/motions/communication.ts). Geometry binds each named track in `CraftedArtwork.tsx` or `ExtendedArtwork.tsx`. Times below are milliseconds from the same clock; transform values, pivots and easing live in that source.
-
-| Named part | Keyframe times (ms) |
+| Time | Action |
 | --- | --- |
-| `dot-left` | 0, 100, 270, 490, 690, 1020 |
-| `dot-center` | 0, 210, 380, 600, 800, 1020 |
-| `dot-right` | 0, 320, 490, 710, 910, 1020 |
+| 110 / 230 / 365ms | Left, middle, and right finish gathering. |
+| 275 / 405ms | First two dots crest at −0.9 units and 117% scale. |
+| 545ms | Final dot crests at −1.12 units and 124% scale. |
+| 585ms | Adjacent inner edge catches the response. |
+| 635ms | Exterior conversational echo reaches its crest. |
+| 745–1000ms | Final dot returns; echo clears by 940ms. |
+| 1180ms | Exact still dots and bubble. |
 
-**Rendered review:** The three dots answer in sequence without moving the bubble or tail. Solid mode uses animated cutouts so the dots do not disappear into a same-color body.
+## Rendered review
+The 25% pose shows the stagger; 40% shows the last dot building; 52% shows the edge and echo climax. Normal-speed playback reads as one finite response. Dither dots now retain their shape instead of blending into the field. Material switching at 52% kept their computed transforms, including the move from masked holes to visible outline dots.
 
-Reviewed at preparation (20%), action (40%), recovery (70%) and neutral endpoint (100%), with actual playback and per-part endpoint inspection in the live gallery. These samples establish the reviewed poses; they do not replace the full timeline or the shared lifecycle checks in [VALIDATION.md](../VALIDATION.md).
+![Message response, third icon](../motion-evidence/refinement-03/climax.png)
 
-**Visual reference:** icon 2 from the left in this family.
-
-![message: action pose at 40%, position 2](../motion-evidence/rollout/communication.png)
-
-[Preparation image](../motion-evidence/rollout/communication-prepare.png) · [Recovery image](../motion-evidence/rollout/communication-recover.png)
+[Preparation](../motion-evidence/refinement-03/prepare.png) · [Stagger](../motion-evidence/refinement-03/crossing.png) · [Light solid](../motion-evidence/refinement-03/solid-light.png) · [24px solid](../motion-evidence/refinement-03/compact-communication.png) · [Batch validation](../VALIDATION.md#focused-refinement-03--2026-09-09)
