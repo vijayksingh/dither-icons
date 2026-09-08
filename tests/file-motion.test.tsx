@@ -5,6 +5,48 @@ import {renderToStaticMarkup} from 'react-dom/server';
 import {DitherIcon} from '../src';
 import {folder} from '../src/motions/folder';
 import {file,FILE_HINGE} from '../src/motions/file';
+import {copy} from '../src/motions/copy';
+import {trash,TRASH_CONTACT} from '../src/motions/trash';
+
+test('file and copy moving surfaces occlude their backing without instance collisions',()=>{
+ for(const [name,study,plane,mask] of [
+  ['file',file,'fold','fold-occlusion'],['copy',copy,'duplicate','duplicate-occlusion'],
+ ] as const){
+  const visible=study.tracks.find(t=>t.part===plane)!;
+  const occluder=study.tracks.find(t=>t.part===mask)!;
+  assert.equal(visible.origin,occluder.origin,name+' origin');
+  assert.deepEqual(visible.frames,occluder.frames,name+' interpolation');
+  for(const texture of ['dither','solid','outline'] as const){
+   const svg=renderToStaticMarkup(<><DitherIcon name={name} texture={texture}/><DitherIcon name={name} texture={texture}/></>);
+   const masks=[...svg.matchAll(/<mask id="([^"]+-file-layers-[^"]+)"/g)].map(m=>m[1]);
+   assert.equal(masks.length,2);assert.equal(new Set(masks).size,2);
+   for(const id of masks)assert.ok(svg.includes(`mask="url(#${id})"`));
+  }
+ }
+});
+
+test('trash lid stays in contact with the receiving rim throughout compression',()=>{
+ const {at,compressedAt,rimY,baseY,lidBottom}=TRASH_CONTACT;
+ const lid=trash.tracks.find(t=>t.part==='lid')!;
+ const bin=trash.tracks.find(t=>t.part==='bin')!;
+ const atFrame=(track:typeof lid,time:number)=>track.frames.find(f=>f.at===time)!;
+ const translate=(time:number)=>{
+  const match=atFrame(lid,time).transform!.match(/^translateY\(([-\d.]+)px\) rotate\(0deg\)$/);
+  assert.ok(match,'lid lies parallel to rim at both contact boundaries');return Number(match[1]);
+ };
+ const scale=(time:number)=>Number(atFrame(bin,time).transform!.match(/^scale\([-\d.]+,([-\d.]+)\)$/)![1]);
+ assert.equal(atFrame(lid,at).easing,atFrame(bin,at).easing,'shared progress through compression');
+ for(const fraction of [0,.1,.25,.5,.75,.9,1]){
+  const y=translate(at)+(translate(compressedAt)-translate(at))*fraction;
+  const sy=scale(at)+(scale(compressedAt)-scale(at))*fraction;
+  assert.ok(Math.abs(lidBottom+y-(baseY-(baseY-rimY)*sy))<1e-9,'lid cannot float or penetrate');
+ }
+ assert.ok(bin.frames.filter(f=>f.at<=at).every(f=>f.transform==='scale(1,1)'), 'receiving bin waits for contact');
+ for(const part of ['rim-light','impact-left','impact-right']){
+  const frames=trash.tracks.find(t=>t.part===part)!.frames;
+  assert.ok(frames.filter(f=>f.at<=at).every(f=>f.opacity===0),part+' cannot precede contact');
+ }
+});
 
 test('folder occlusion stays registered to each physical sheet in React and exported tracks',()=>{
  for(const [plane,mask] of [['cover','cover-occlusion'],['rear-paper','rear-occlusion'],['front-paper','front-occlusion']]){

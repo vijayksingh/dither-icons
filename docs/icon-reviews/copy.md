@@ -1,46 +1,46 @@
-# copy: Interface Craft refinement 02
+# copy: Interface Craft polish
 
 ## Context
-**Meaning:** duplicate while retaining the original. The fixed rear sheet is the source, and the front sheet is its twin. Both remain recognizable throughout.
+**Meaning:** produce a duplicate while retaining the source. **Invariant:** two equivalent sheets remain present; the source stays fixed. This is a preview gesture, not confirmation that clipboard access succeeded.
 
 ## First Impressions
-The previous source and duplicate both drifted, and the registration accent sat near the rear sheet with little connection to the new position. The animation showed separation but lacked a clear moment where the duplicate settled into its own place.
+The former source was an incomplete bracket with a different footprint from the duplicate. Separation was readable, but the objects did not look like twins. A registration tick at the destination felt added on instead of responding to the new sheet.
 
 ## Visual Design
-The source is now absolutely still. The duplicate draws toward it with a slight tilt, peels diagonally free, and squares itself again. Its inset silhouette leaves room for motion and exterior marks within the 24-unit viewBox. Rounded corners match the material family.
+Use the identical rounded 12.5-unit sheet silhouette twice. The fixed source sits 5.25 units up and left, shaded to 50%. The front sheet occludes it with a 0.38-unit transparent seam. Dither no longer piles up in the overlap, and the rear reads as a complete physical sheet.
 
-A smaller source-corner glint appears first. Two short registration ticks answer beside the duplicate's lower and right edges once it becomes parallel. This gives the source and result a visible relationship without producing a third sheet or replacing the icon with a check.
+A source-corner glint precedes separation. An attached lower-right edge light catches as the duplicate squares itself. Two exterior registration strokes then grow along the new edges and disperse outward independently along x and y.
 
 ## Interface Design
-The duplicate gathers for 145ms, reaches its tilted separation at 345ms, and becomes square at 450ms. Registration ticks peak just afterward at 480ms. The two sheets hold briefly, then nest with a single small correction. The climax belongs to the new position, rather than the initial pull.
+The front gathers toward the source with a slight counter-rotation. Translation leads the peel; rotation catches up as the sheet becomes parallel. The intermediate easing carries movement through that handoff instead of stopping at the tilted waypoint. A tiny drift replaces a rigid hold; nesting begins while the exterior marks dissolve.
 
 ## Consistency & Conventions
-MOT-01–13 and MOT-14–16 apply. The reference frame stays fixed; the secondary response follows the primary event. Like the accepted directional batch, the accents have an independent decay. This is an icon gesture, not evidence that clipboard content changed.
+MOT-01–13 and MOT-14–16 apply. Source and duplicate share geometry, while their roles determine different treatment. The occluder and duplicate share their complete track, and the edge accent is nested inside the moving sheet. No checkmark, replacement glyph, or clipboard-success claim.
 
 ## User Context
-Copy controls are used repeatedly. The front sheet moves only a little, keeps its identity, and finishes after pointer or focus departure. Mid-play triggers do not pile up. Motion-off leaves the familiar overlapping-sheet glyph.
+The paired silhouette works at 24px solid without the highlights. Larger dither reveals the material separation. Hover-capable controls, keyboard, and tap use the existing finite playback contract; reduced motion presents the same pair at rest.
 
 ## Top Opportunities addressed
-1. Fix the source so the duplicate's movement has a stable reference.
-2. Introduce a brief peel and then a precise parallel registration.
-3. Hand light from the source to the twin, with the stronger payoff at the destination.
+1. Make source and duplicate visibly the same kind of object.
+2. Carry velocity through peel and squaring.
+3. Hand light from source to sheet edge to exterior registration.
 
 ## Encoded storyboard
-Source: [copy.ts](../../src/motions/copy.ts). `TIMING`, `COPY_ART`, `DUPLICATE`, `SOURCE`, `TARGET`, and `EASE` expose the sequence and geometry.
+Source: [copy.ts](../../src/motions/copy.ts). `TIMING`, `COPY_ART`, `DUPLICATE`, `SOURCE`, `EDGE`, `TARGET`, and `EASE` define the performance.
 
 | Time | Action |
 | --- | --- |
-| 0–145ms | Duplicate draws inward 0.55/0.65 units and tips −2.5 degrees. |
-| 100–210ms | Source glint appears, then clears by 360ms. |
-| 145–345ms | Duplicate peels away with 1.8 degrees of trailing rotation. |
-| 345–450ms | Duplicate squares at a 1.35-unit diagonal offset. |
-| 370–480ms | Exterior ticks crest at the new registration. |
-| 640–790ms | Twin starts nesting; ticks dissipate. |
-| 980–1180ms | A 0.1-unit correction resolves to exact rest. |
+| 0–135ms | Front gathers −0.5 / −0.6 units and rotates −2.2°. |
+| 195ms | Source-corner glint crests. |
+| 320ms | Duplicate has peeled diagonally, trailing +1.45° rotation. |
+| 435ms | It squares at +1.35 / +1.35 units. |
+| 460 / 505ms | Attached edge then exterior registration strokes crest. |
+| 610–825ms | Nesting begins while the marks dissipate. |
+| 985–1190ms | A 0.08-unit correction resolves to exact rest. |
 
 ## Rendered review
-Third icon in Refinement / 02. Actual and half-speed replay showed the smaller source glint before the stronger destination ticks. Both sheets remain visible at the 42% climax and return independently of the accents. Solid 24px collection and 112px studies across all materials were inspected. [Batch validation](../VALIDATION.md#focused-refinement-02--2026-09-09) records shared checks.
+The new source reads as a full sheet in dither, solid, and outline. At 44%, the squared duplicate and registration strokes share a clear corner. Normal and half-speed replay show the shorter, continuous peel handoff. Paused material switching preserved the visible plane and mask transforms. [Current validation](../VALIDATION.md#refinement-02-polish--2026-09-09).
 
-![Copy registration, third icon](../motion-evidence/refinement-02/reveal.png)
+![Copy registration, third icon](../motion-evidence/refinement-02-polish/reveal.png)
 
-[Rest](../motion-evidence/refinement-02/rest.png) · [Preparation](../motion-evidence/refinement-02/prepare.png) · [Recovery](../motion-evidence/refinement-02/recover.png) · [Solid](../motion-evidence/refinement-02/solid-light.png) · [Outline](../motion-evidence/refinement-02/outline.png)
+[Rest](../motion-evidence/refinement-02-polish/rest.png) · [Preparation](../motion-evidence/refinement-02-polish/prepare.png) · [Light solid](../motion-evidence/refinement-02-polish/solid-light.png) · [24px solid](../motion-evidence/refinement-02-polish/compact-solid.png)

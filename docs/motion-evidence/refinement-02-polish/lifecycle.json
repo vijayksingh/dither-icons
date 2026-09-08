@@ -1,0 +1,97 @@
+{
+  "keyboardLog": [
+    {
+      "icon": "folder",
+      "afterDeparture": [
+        [
+          "folder",
+          "true"
+        ],
+        [
+          "file",
+          "true"
+        ],
+        [
+          "copy",
+          null
+        ],
+        [
+          "trash",
+          null
+        ]
+      ]
+    },
+    {
+      "icon": "file",
+      "afterDeparture": [
+        [
+          "folder",
+          "true"
+        ],
+        [
+          "file",
+          "true"
+        ],
+        [
+          "copy",
+          "true"
+        ],
+        [
+          "trash",
+          null
+        ]
+      ]
+    },
+    {
+      "icon": "copy",
+      "afterDeparture": [
+        [
+          "folder",
+          "true"
+        ],
+        [
+          "file",
+          "true"
+        ],
+        [
+          "copy",
+          "true"
+        ],
+        [
+          "trash",
+          "true"
+        ]
+      ]
+    },
+    {
+      "icon": "trash",
+      "afterDeparture": [
+        [
+          "folder",
+          "true"
+        ],
+        [
+          "file",
+          "true"
+        ],
+        [
+          "copy",
+          "true"
+        ],
+        [
+          "trash",
+          "true"
+        ]
+      ]
+    }
+  ],
+  "stillness": {
+    "playing": 0,
+    "transformed": 0,
+    "visibleAccents": 0
+  },
+  "disabled": {
+    "disabled": 4,
+    "playing": 0
+  }
+}

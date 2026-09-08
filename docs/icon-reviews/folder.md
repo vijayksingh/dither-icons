@@ -1,47 +1,47 @@
-# folder: Interface Craft refinement 02
+# folder: Interface Craft polish
 
 ## Context
-**Meaning:** contain and reveal grouped documents. A routine navigation icon with a short moment of discovery. The tab, back panel, and hinged front must remain a folder throughout.
+**Meaning:** contain and reveal grouped files. **Invariant:** the tab, planted back, and hinged front remain a folder through the reveal. This pass stays within Refinement / 02.
 
 ## First Impressions
-The previous version opened the cover but drew the papers through its dither. Overlapping grain accumulated into a bright horizontal band. The reveal had no distinct climax. During this pass, an outlined back also read too much like a briefcase; the final back is a quieter filled plane.
+The previous planes separated correctly, but the papers had square corners and the cover paused partway through its return. The exterior rays had little connection to the material they celebrated. The gesture needed a more connected reveal and closure.
 
 ## Visual Design
-Three layers now separate cleanly: a shaded back, two staggered sheets, and the front cover. Each foreground plane occludes the material behind it before its own grain is drawn. A 0.32-unit transparent seam preserves the edges in solid, outline, and dither. The back uses 45% opacity, the rear paper 58%, and front paper 85%, establishing depth without adding a color.
+Round the two paper corners by 0.6 units. Keep the shaded back at 45%, rear paper at 60%, front paper at 90%, and full-strength cover. Matching moving masks preserve a transparent 0.32-unit seam, so stacked dither does not accumulate into a luminous band.
 
-Two small rays appear above the exposed paper edges. They remain outside the primary silhouette and disappear before the folder closes.
+A fine edge light lives **inside the moving front-paper group**. It extends across the exposed sheet before the two exterior rays crest. The object supplies the first response; the surrounding space supplies the echo.
 
 ## Interface Design
-The cover opens first. The rear sheet rises next, then the front sheet fans in the opposite direction. The reveal rays peak after both paper edges emerge. On return, the rear sheet tucks first, the front clears next, and the cover finishes closing. The cover's lower edge remains the hinge.
+The bottom hinge opens first. Rear and front sheets follow with opposite −6° / +5° fans. The cover relaxes slightly as the front sheet arrives. On return, the rear sheet starts tucking before the front; the cover follows in one uninterrupted closing arc. Its former intermediate stopping point is removed.
 
 ## Consistency & Conventions
-MOT-01, MOT-03–13, MOT-14–16 apply. The folder retains the accepted grain, restrained displacement, and finite playback contract. Its payoff is discovery, not impact. The moving occlusion shapes share the exact visible-plane tracks, including their origin and easing; inline SVG export receives the same definitions.
+MOT-01–13 and MOT-14–16 apply. The gesture previews discovery without claiming that a folder opened in the host application. Every occluder shares its visible plane's exact origin, timing, and easing. Grain stays attached to the paper.
 
 ## User Context
-A folder should invite inspection without looking empty, launching a document, or pretending the containing app has navigated. The complete icon stays useful with motion disabled. Solid was inspected at 24px; the detailed dither reveal was inspected at 112px and the collection at 64px.
+The conventional closed folder remains useful at 24px in solid and with motion disabled. At 112px, layered surfaces and the edge-light handoff supply detail. Accents carry no required information. Keyboard departure lets the complete gesture finish.
 
 ## Top Opportunities addressed
-1. Remove overlapping grain and show distinct physical layers.
-2. Let the sheets follow the opening cover with staggered, opposite fan angles.
-3. Add a localized reveal climax, then tuck contents before closing.
+1. Connect the material's edge response to the exterior reveal rays.
+2. Give the fan finer contours and clearer depth.
+3. Close in one continuous arc after the contents start clearing.
 
 ## Encoded storyboard
-Source: [folder.ts](../../src/motions/folder.ts). Named `TIMING`, `FOLDER_ART`, `COVER`, `REAR`, `FRONT`, `REVEAL`, and `EASE` expose the complete performance.
+Source: [folder.ts](../../src/motions/folder.ts). Named `TIMING`, `FOLDER_ART`, `COVER`, `REAR`, `FRONT`, `EDGE`, `REVEAL`, and `EASE` define the performance.
 
 | Time | Action |
 | --- | --- |
-| 0–120ms | Cover takes up its hinge with a 2% preparation. |
-| 120–360ms | Cover opens from y=20 to 59% vertical projection. |
-| 180–440ms | Rear sheet rises 2.25 units and fans −4 degrees. |
-| 245–525ms | Front sheet follows 2.65 units upward, fanning 3.5 degrees. |
-| 455–570ms | Two rays appear above the revealed contents. |
-| 570–830ms | Rays dissipate; papers begin returning. |
-| 850 / 965ms | Rear sheet, then front sheet, finish tucking. |
-| 1120–1320ms | Cover seats and resolves to exact rest. |
+| 0–105ms | Cover preloads 1.8%. |
+| 105–325ms | Cover opens to 55% vertical projection about y=20. |
+| 165–420ms | Rear sheet rises 2.4 units, fans −6°. |
+| 235–495ms | Front follows 2.8 units upward, fans +5°. Cover relaxes to 59%. |
+| 390–585ms | Attached edge light grows, then reveal rays crest. |
+| 615 / 675ms | Rear then front begin tucking. |
+| 745–1110ms | Cover closes continuously while the papers clear by 955ms. |
+| 1110–1320ms | Small material correction resolves to exact rest. |
 
 ## Rendered review
-First icon in Refinement / 02. Reviewed at rest, preparation, 42% reveal, later return, and exact rest; actual and half-speed playback. The final shaded back restores the folder silhouette; the mask layers remove the former luminous band. Material switching preserved the paused transforms. [Batch validation](../VALIDATION.md#focused-refinement-02--2026-09-09) records lifecycle and responsive checks.
+Reviewed at normal and half speed, and at eight paused poses. The 44% frame shows the edge/ray handoff and clean paper separation. At 85%, the contents have cleared and the cover is completing its closure. Solid at 24px remains recognizable; outline retains distinct paper planes. [Current validation](../VALIDATION.md#refinement-02-polish--2026-09-09) records the interaction checks.
 
-![Folder reveal, first icon](../motion-evidence/refinement-02/reveal.png)
+![Folder reveal, first icon](../motion-evidence/refinement-02-polish/reveal.png)
 
-[Rest](../motion-evidence/refinement-02/rest.png) · [Preparation](../motion-evidence/refinement-02/prepare.png) · [Recovery](../motion-evidence/refinement-02/recover.png) · [Solid](../motion-evidence/refinement-02/solid-light.png) · [Outline](../motion-evidence/refinement-02/outline.png)
+[Rest](../motion-evidence/refinement-02-polish/rest.png) · [Preparation](../motion-evidence/refinement-02-polish/prepare.png) · [Recovery](../motion-evidence/refinement-02-polish/recover.png) · [Outline](../motion-evidence/refinement-02-polish/outline.png)

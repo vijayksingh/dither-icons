@@ -1,45 +1,46 @@
-# file: Interface Craft refinement 02
+# file: Interface Craft polish
 
 ## Context
-**Meaning:** a document with a folded corner. The action is a small peel of paper around an existing crease. This review supersedes the earlier rollout assessment.
+**Meaning:** a document with content and a folded corner. **Invariant:** the page and both diagonal crease endpoints stay fixed. Movement belongs to the folded paper, never the whole document.
 
 ## First Impressions
-The old page drifted slightly and its fold rotated around one point. That made the folded surface feel loosely attached. Its content highlight also disappeared into a solid fill. The distinctive corner deserved to carry the gesture.
+The previous flap narrowed almost to a line and exposed an empty triangular hole. Its hinge was geometrically sound, but the intermediate picture looked like missing paper. An exterior air curl could not repair that material discontinuity.
 
 ## Visual Design
-The page is now completely anchored. The triangular fold narrows in projection around the diagonal from (14,2) to (20,8); both crease endpoints stay fixed. A thin permanent crease preserves the corner while the flap approaches edge-on. Two quiet text lines remain visible in all materials, using actual cutouts for solid.
+Place a quieter, complete paper underside below the moving flap. It uses 58% opacity and the same attached dither. The flap's moving occluder prevents doubled grain; a 0.16-unit seam distinguishes the surfaces. Round the free inner corner by 0.65 units.
 
-The crease catches a short highlight; a fine curved air mark appears outside the peeling corner. Their stroke widths remain well below the main outline. Neither changes the document's identity.
+The fold keeps at least 30% of its perpendicular projection. A short curved lip highlight moves with it, a softer diagonal crease light answers, and the exterior air curl follows. The page's content marks remain stationary. A first 32%-opacity underside was too faint in dark dither; live review increased it to 58%.
 
 ## Interface Design
-The fold takes up tension for 130ms, peels toward the hinge by 400ms, and pauses briefly. The crease light peaks at 445ms, followed by the small curl at 490ms. The paper lays down through a single restrained elastic correction. The entire page does not float or rotate.
+A 110ms gather leads into the peel. The lip catches light at 405ms; the crease crests at 435ms; the air follows at 475ms. The fold begins returning at 575ms while the accent dissipates. Its eased return has a small material correction, not a detached swing or whole-page bounce.
 
 ## Consistency & Conventions
-MOT-01–13 and MOT-14–16 apply. Physical attachment gives the movement meaning; the climax stays localized at the corner. The existing single browser clock is retained. SVG export, frame inspection, and native React playback share the same affine hinge transforms.
+MOT-01–13 and MOT-14–16 apply. The diagonal hinge at (17,5) keeps (14,2) and (20,8) fixed through every interpolated pose. The visible fold and its occluder share one track. The new lip light inherits the fold's frame. React and CSS receive the same definitions.
 
 ## User Context
-This is a document affordance, not a writing or file-creation simulation. The two content lines are already present at rest. A quiet corner peel offers tactile interest without adding a progress or success state.
+A document icon must read instantly in a list. Content, outer silhouette, and diagonal crease remain legible in the static and reduced-motion versions. The delicate lip is optional detail, strongest in dither and outline; its loss at 24px does not remove meaning.
 
 ## Top Opportunities addressed
-1. Hold both crease endpoints instead of rotating around one corner.
-2. Let the paper's edge catch light and shed a small curl of air.
-3. Preserve readable page content in solid as well as dither and outline.
+1. Preserve a continuous paper surface throughout the peel.
+2. Let light originate on the curled edge before the air response.
+3. Overlap return and dissipation instead of freezing the open corner.
 
 ## Encoded storyboard
-Source: [file.ts](../../src/motions/file.ts). `TIMING`, `FILE_ART`, `FILE_HINGE`, `FOLD`, `GLINT`, `CURL`, and `EASE` carry the decisions. The hinge composes a fixed 45-degree rotation, a perpendicular scale, and the inverse rotation around (17,5).
+Source: [file.ts](../../src/motions/file.ts). `TIMING`, `FILE_ART`, `FILE_HINGE`, `FOLD`, `EDGE`, `GLINT`, `CURL`, and `EASE` expose geometry and pacing.
 
 | Time | Action |
 | --- | --- |
-| 0–130ms | Fold gathers to 1.04 perpendicular scale. |
-| 130–400ms | Fold peels to 0.18 projection; both crease ends remain fixed. |
-| 285–445ms | Crease light builds to its crest. |
-| 340–490ms | Curled air mark follows the peeling edge. |
-| 620–800ms | Fold starts returning; accents disappear. |
-| 940–1160ms | A 1.035-scale paper correction resolves to exact rest. |
+| 0–110ms | The flap gathers to 102.5% projection. |
+| 110–365ms | It peels to 30%, exposing the quieter underside. |
+| 205–435ms | Curved lip then diagonal crease catch light. |
+| 345–475ms | Exterior air curl grows after the peeling edge. |
+| 575–770ms | The corner starts returning while the light disappears. |
+| 895ms | Paper lays down at 101.8% projection. |
+| 1160ms | Exact neutral fold. |
 
 ## Rendered review
-Second icon in Refinement / 02. The 42% reference captures the fold, crease light, and curl together. Dither, outline, and light Cobalt solid were inspected; the body remains fixed and the fold stays connected along its diagonal. Automated interpolation checks verify both crease endpoints. [Batch validation](../VALIDATION.md#focused-refinement-02--2026-09-09) covers input, stillness, and responsive review.
+The 32% reference captures the thinnest fold; 44% shows the continuous underside and curl. Light solid makes the layered paper particularly clear. Outline was checked for crease crowding, and solid collection icons at 24px for recognition. Normal/half-speed playback and material switching were reviewed. [Current validation](../VALIDATION.md#refinement-02-polish--2026-09-09).
 
-![File peel, second icon](../motion-evidence/refinement-02/reveal.png)
+![File curl, second icon](../motion-evidence/refinement-02-polish/curl.png)
 
-[Rest](../motion-evidence/refinement-02/rest.png) · [Preparation](../motion-evidence/refinement-02/prepare.png) · [Recovery](../motion-evidence/refinement-02/recover.png) · [Solid](../motion-evidence/refinement-02/solid-light.png) · [Outline](../motion-evidence/refinement-02/outline.png)
+[Reveal](../motion-evidence/refinement-02-polish/reveal.png) · [Light solid](../motion-evidence/refinement-02-polish/solid-light.png) · [Outline](../motion-evidence/refinement-02-polish/outline.png) · [Rest](../motion-evidence/refinement-02-polish/settled.png)

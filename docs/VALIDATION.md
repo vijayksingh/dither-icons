@@ -93,7 +93,7 @@ Scope: **folder, file, copy, trash**, after the user accepted the previous four.
 - Folder: fixed shaded back; staggered rear/front papers; hinged front; reveal rays. Moving occlusion removes the former accumulation of overlapping grain. An initial outlined back read as a briefcase; the final filled back restores the folder silhouette. Foreground and hidden cutout tracks are identical.
 - File: fixed page with legible content marks in every material; a diagonal fold hinge holds both crease endpoints; crease light and a curved air mark form the climax.
 - Copy: fixed source; a small peel followed by parallel registration; source glint precedes the stronger exterior destination ticks.
-- Trash: opening lid and delayed handle; the bin stays planted until the lid meets it; rim light and exterior ticks respond to the later contact event.
+- Trash: opening lid and delayed handle; rim light and exterior ticks target the later closure. The follow-up polish below found and corrected a remaining geometric gap during the intended contact.
 
 ### Browser verification
 
@@ -113,3 +113,31 @@ Scope: **folder, file, copy, trash**, after the user accepted the previous four.
 - ESM library, declarations, gallery, and downloadable tarball built successfully. Library size is 94.53KB before compression; named imports still share the complete catalog.
 - The new tarball installed in a fresh React 18.3.1 consumer. All 36 named exports, 36 timelines, and 108 server-rendered variants passed. Repository checks use React 19.
 - No npm publication or deployment. Standalone inline SVG carries the same tracks and retains the documented CSS hover-departure limitation.
+
+## Refinement 02 polish — 2026-09-09
+
+Scope remains **folder, file, copy, trash** after the user requested more polish. Their Interface Craft reviews now document the actual material and timing corrections; this is not a new batch. MOT-01–16 remain the contract.
+
+### What changed and why
+
+- Folder: finer paper corners, clearer opposing fan, attached edge light before exterior rays, and one continuous cover-closing arc after the contents start tucking.
+- File: a quieter paper underside replaces the triangular hole; a rounded lip catches light before the crease and air curl. Both hinge endpoints remain fixed. A too-faint initial underside was strengthened after live review.
+- Copy: the source and duplicate now use the same full sheet geometry. Moving occlusion separates their grain, and light passes from source corner to attached duplicate edge to exterior registration strokes. Peel and squaring carry movement through the intermediate pose.
+- Trash: closer inspection disproved the earlier assumption of true contact. Lid and rim now meet at 750ms and stay coincident through the 50ms compression, using the same equation and easing. The rim light moves with the bin. Side strokes and the smaller handle response dissipate separately.
+
+### Current rendered evidence
+
+- Eight fresh [native browser poses](motion-evidence/refinement-02-polish/): 0%, 8%, 32%, 44%, 60%, 64%, 85%, and 100%. `poses.json` records every named part's computed transform, origin, and opacity. Earlier images remain archived in `refinement-02/`.
+- Actual-speed replay reviewed through reveal, contact, and recovery. Half-speed samples in `playback.json` show all four playing through the gesture and all four idle by 2701ms. The durations are 1320 / 1160 / 1190 / 1250ms at normal speed.
+- Measured trash contact in the browser: lid/rim edge differences of approximately +0.000008 CSS px at 60%, and −0.000015 CSS px at 64%. The unit test also checks intermediate positions and matching easing, with no body response or accent before contact.
+- Dark Iris dither/outline and light Cobalt solid reviewed at 112px. Solid collection icons checked at 24px; dither at 64px. The unchanged recommendation remains solid or outline for small controls, dither from 48px upward.
+- Paused dither-to-outline switching at 44% preserved every part's transform, including the new moving occluders. Keyboard Enter and Tab departure checked for each icon; each continued playing after departure, and all returned to idle.
+- Reduced-motion emulation: zero playing icons, zero transformed parts, zero visible accents. Motion off: all four study buttons disabled and zero playing icons. `lifecycle.json` records these checks.
+- At 390 CSS px, client and scroll widths both measured 390px; the study grid used two 173px columns. Keyboard replay started all four. This verifies responsive layout and keyboard playback, not physical touch input. `responsive.json` includes these measurements and an empty browser-error log.
+- Loading, empty, and error data states do not apply to static icon studies. No changes to the playback engine or the other 32 performances.
+
+### Automated verification
+
+- TypeScript and **15 tests passed**, including new checks for file/copy occlusion identity and maintained trash contact throughout compression. Existing checks continue covering all 36 timelines, 108 material variants, fixed file hinge, directional joints, exact rest, hidden accents, accessibility, and CSS fallback.
+- ESM, declarations, gallery, and downloadable tarball built. Library output is 96.45KB before compression. React 18 consumer installation was verified in the preceding pass; it was not repeated for this artwork/timing-only change.
+- Standalone CSS SVG uses the same tracks and retains the documented hover-departure limitation. No publication or deployment.

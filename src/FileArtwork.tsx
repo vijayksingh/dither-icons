@@ -27,33 +27,43 @@ export function FileArtwork({name,draw,texture}:Props){
       <g mask={`url(#${id}-cover)`}>
         <g mask={`url(#${id}-front)`}>
           <g mask={`url(#${id}-rear)`}><g opacity=".45">{draw(FOLDER_ART.back)}</g></g>
-          <g data-part="rear-paper" opacity=".58">{draw(FOLDER_ART.rear)}</g>
+          <g data-part="rear-paper" opacity=".6">{draw(FOLDER_ART.rear)}</g>
         </g>
-        <g data-part="front-paper" opacity=".85">{draw(FOLDER_ART.front)}</g>
+        <g data-part="front-paper" opacity=".9">{draw(FOLDER_ART.front)}{accent('paper-edge',FOLDER_ART.edge,.48)}</g>
       </g>
       <g data-part="cover">{draw(FOLDER_ART.cover)}</g>
       {accent('reveal-rays',FOLDER_ART.rays,.6)}
     </>;
   }
   if(name==='file')return <>
+    <defs><mask id={`${id}-fold`} maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+      <rect width="24" height="24" fill="white"/>
+      <g data-part="fold-occlusion"><path d={FILE_ART.fold} fill="black" stroke="black" strokeWidth={FILE_ART.separation}/></g>
+    </mask></defs>
     {draw(FILE_ART.page+(texture==='solid'?FILE_ART.cutouts:''))}
+    <g mask={`url(#${id}-fold)`} opacity=".58">{draw(FILE_ART.underside)}</g>
     {texture!=='solid'&&<g opacity=".4">{line(FILE_ART.lines,.6)}</g>}
     <g opacity=".45">{line(FILE_ART.crease,.5)}</g>
-    <g data-part="fold">{draw(FILE_ART.fold)}</g>
+    <g data-part="fold">{draw(FILE_ART.fold)}{accent('fold-edge',FILE_ART.lip,.5)}</g>
     {accent('crease-light',FILE_ART.glint,.7)}
     {accent('curl-air',FILE_ART.curl,.55)}
   </>;
   if(name==='copy')return <>
-    {draw(COPY_ART.source)}
+    <defs><mask id={`${id}-duplicate`} maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+      <rect width="24" height="24" fill="white"/>
+      <g data-part="duplicate-occlusion"><path d={COPY_ART.sheet} fill="black" stroke="black" strokeWidth={COPY_ART.separation}/></g>
+    </mask></defs>
+    <g mask={`url(#${id}-duplicate)`}><g transform={COPY_ART.sourceOffset} opacity=".5">{draw(COPY_ART.sheet)}</g></g>
     {accent('source-glint',COPY_ART.sourceMark,.55)}
-    <g data-part="duplicate">{draw(COPY_ART.duplicate)}</g>
-    {accent('registration-ticks',COPY_ART.targetMarks,.65)}
+    <g data-part="duplicate">{draw(COPY_ART.sheet)}{accent('duplicate-edge',COPY_ART.edge,.55)}</g>
+    {accent('registration-right',COPY_ART.rightMark,.6)}
+    {accent('registration-bottom',COPY_ART.bottomMark,.6)}
   </>;
   if(name==='trash')return <>
-    <g data-part="bin">{draw(TRASH_ART.bin)}</g>
+    <g data-part="bin">{draw(TRASH_ART.bin)}{accent('rim-light',TRASH_ART.rim,.6)}</g>
     <g data-part="lid">{draw(TRASH_ART.lid)}<g data-part="handle">{draw(TRASH_ART.handle)}</g></g>
-    {accent('rim-light',TRASH_ART.rim,.65)}
-    {accent('impact-ticks',TRASH_ART.ticks,.65)}
+    {accent('impact-left',TRASH_ART.leftTick,.6)}
+    {accent('impact-right',TRASH_ART.rightTick,.6)}
   </>;
   return null;
 }

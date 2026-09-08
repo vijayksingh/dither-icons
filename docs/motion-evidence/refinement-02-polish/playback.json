@@ -1,0 +1,1388 @@
+[
+  {
+    "elapsed": 2,
+    "icons": [
+      {
+        "icon": "folder",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "cover-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "rear-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "front-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "rear-paper",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "front-paper",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "paper-edge",
+            "transform": "matrix(0.2, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "cover",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "reveal-rays",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0, 0.35)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "file",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "fold-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "fold",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "fold-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "crease-light",
+            "transform": "matrix(0.5, 0, 0, 0.5, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "curl-air",
+            "transform": "matrix(0.55, 0, 0, 0.55, -0.15, 0.25)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "copy",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "duplicate-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "source-glint",
+            "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "duplicate",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "duplicate-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "registration-right",
+            "transform": "matrix(1, 0, 0, 0.4, -0.2, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "registration-bottom",
+            "transform": "matrix(0.4, 0, 0, 1, 0, -0.2)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "trash",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "bin",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "rim-light",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "lid",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "handle",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "impact-left",
+            "transform": "matrix(0.45, 0, 0, 0.45, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "impact-right",
+            "transform": "matrix(0.45, 0, 0, 0.45, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      }
+    ]
+  },
+  {
+    "elapsed": 251,
+    "icons": [
+      {
+        "icon": "folder",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "cover-occlusion",
+            "transform": "matrix(1, 0, 0, 0.863131, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "rear-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "front-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "rear-paper",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "front-paper",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "paper-edge",
+            "transform": "matrix(0.2, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "cover",
+            "transform": "matrix(1, 0, 0, 0.863131, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "reveal-rays",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0, 0.35)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "file",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "fold-occlusion",
+            "transform": "matrix(0.936055, 0.0639448, 0.0639448, 0.936055, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "fold",
+            "transform": "matrix(0.936055, 0.0639448, 0.0639448, 0.936055, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "fold-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "crease-light",
+            "transform": "matrix(0.5, 0, 0, 0.5, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "curl-air",
+            "transform": "matrix(0.55, 0, 0, 0.55, -0.15, 0.25)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "copy",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "duplicate-occlusion",
+            "transform": "matrix(0.999292, -0.0376174, 0.0376174, 0.999292, -0.489961, -0.587954)"
+          },
+          {
+            "opacity": "0.253025",
+            "part": "source-glint",
+            "transform": "matrix(0.808439, 0, 0, 0.808439, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "duplicate",
+            "transform": "matrix(0.999292, -0.0376174, 0.0376174, 0.999292, -0.489961, -0.587954)"
+          },
+          {
+            "opacity": "0",
+            "part": "duplicate-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "registration-right",
+            "transform": "matrix(1, 0, 0, 0.4, -0.2, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "registration-bottom",
+            "transform": "matrix(0.4, 0, 0, 1, 0, -0.2)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "trash",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "bin",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "rim-light",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "lid",
+            "transform": "matrix(0.998818, -0.0485998, 0.0485998, 0.998818, 0, 0.140001)"
+          },
+          {
+            "opacity": "1",
+            "part": "handle",
+            "transform": "matrix(0.999935, 0.0114375, -0.0114375, 0.999935, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "impact-left",
+            "transform": "matrix(0.45, 0, 0, 0.45, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "impact-right",
+            "transform": "matrix(0.45, 0, 0, 0.45, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      }
+    ]
+  },
+  {
+    "elapsed": 551,
+    "icons": [
+      {
+        "icon": "folder",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "cover-occlusion",
+            "transform": "matrix(1, 0, 0, 0.5546, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "rear-occlusion",
+            "transform": "matrix(0.995649, -0.0931834, 0.0931834, 0.995649, 0, -2.13871)"
+          },
+          {
+            "opacity": "1",
+            "part": "front-occlusion",
+            "transform": "matrix(0.99898, 0.0451524, -0.0451524, 0.99898, 0, -1.44924)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "rear-paper",
+            "transform": "matrix(0.995649, -0.0931834, 0.0931834, 0.995649, 0, -2.13871)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "front-paper",
+            "transform": "matrix(0.99898, 0.0451524, -0.0451524, 0.99898, 0, -1.44924)"
+          },
+          {
+            "opacity": "0",
+            "part": "paper-edge",
+            "transform": "matrix(0.2, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "cover",
+            "transform": "matrix(1, 0, 0, 0.5546, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "reveal-rays",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0, 0.35)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "file",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "fold-occlusion",
+            "transform": "matrix(0.65922, 0.34078, 0.34078, 0.65922, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "fold",
+            "transform": "matrix(0.65922, 0.34078, 0.34078, 0.65922, 0, 0)"
+          },
+          {
+            "opacity": "0.301477",
+            "part": "fold-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.0386597",
+            "part": "crease-light",
+            "transform": "matrix(0.529738, 0, 0, 0.529738, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "curl-air",
+            "transform": "matrix(0.55, 0, 0, 0.55, -0.15, 0.25)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "copy",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "duplicate-occlusion",
+            "transform": "matrix(0.999722, 0.0235697, -0.0235697, 0.999722, 1.07587, 0.975868)"
+          },
+          {
+            "opacity": "0.349514",
+            "part": "source-glint",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "duplicate",
+            "transform": "matrix(0.999722, 0.0235697, -0.0235697, 0.999722, 1.07587, 0.975868)"
+          },
+          {
+            "opacity": "0",
+            "part": "duplicate-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "registration-right",
+            "transform": "matrix(1, 0, 0, 0.4, -0.2, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "registration-bottom",
+            "transform": "matrix(0.4, 0, 0, 1, 0, -0.2)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "trash",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "bin",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "rim-light",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "lid",
+            "transform": "matrix(0.980379, -0.19712, 0.19712, 0.980379, 0, -0.0569846)"
+          },
+          {
+            "opacity": "1",
+            "part": "handle",
+            "transform": "matrix(0.998884, 0.0472387, -0.0472387, 0.998884, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "impact-left",
+            "transform": "matrix(0.45, 0, 0, 0.45, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "impact-right",
+            "transform": "matrix(0.45, 0, 0, 0.45, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      }
+    ]
+  },
+  {
+    "elapsed": 850,
+    "icons": [
+      {
+        "icon": "folder",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "cover-occlusion",
+            "transform": "matrix(1, 0, 0, 0.581396, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "rear-occlusion",
+            "transform": "matrix(0.994522, -0.104526, 0.104526, 0.994522, 0, -2.39994)"
+          },
+          {
+            "opacity": "1",
+            "part": "front-occlusion",
+            "transform": "matrix(0.99634, 0.0854838, -0.0854838, 0.99634, 0, -2.74615)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "rear-paper",
+            "transform": "matrix(0.994522, -0.104526, 0.104526, 0.994522, 0, -2.39994)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "front-paper",
+            "transform": "matrix(0.99634, 0.0854838, -0.0854838, 0.99634, 0, -2.74615)"
+          },
+          {
+            "opacity": "0.156743",
+            "part": "paper-edge",
+            "transform": "matrix(0.35292, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "cover",
+            "transform": "matrix(1, 0, 0, 0.581396, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "reveal-rays",
+            "transform": "matrix(0.55, 0, 0, 0.55, 0, 0.35)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "file",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "fold-occlusion",
+            "transform": "matrix(0.654959, 0.345041, 0.345041, 0.654959, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "fold",
+            "transform": "matrix(0.654959, 0.345041, 0.345041, 0.654959, 0, 0)"
+          },
+          {
+            "opacity": "0.832289",
+            "part": "fold-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.580263",
+            "part": "crease-light",
+            "transform": "matrix(0.946356, 0, 0, 0.946356, 0, 0)"
+          },
+          {
+            "opacity": "0.419526",
+            "part": "curl-air",
+            "transform": "matrix(0.798403, 0, 0, 0.798403, -0.0119981, 0.0567973)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "copy",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "duplicate-occlusion",
+            "transform": "matrix(1, 0.000251176, -0.000251176, 1, 1.34772, 1.34672)"
+          },
+          {
+            "opacity": "0",
+            "part": "source-glint",
+            "transform": "matrix(0.97781, 0, 0, 0.97781, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "duplicate",
+            "transform": "matrix(1, 0.000251176, -0.000251176, 1, 1.34772, 1.34672)"
+          },
+          {
+            "opacity": "0.534088",
+            "part": "duplicate-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "registration-right",
+            "transform": "matrix(1, 0, 0, 0.4, -0.2, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "registration-bottom",
+            "transform": "matrix(0.4, 0, 0, 1, 0, -0.2)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "trash",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "bin",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "rim-light",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "lid",
+            "transform": "matrix(0.979925, -0.199368, 0.199368, 0.979925, 0, -0.06)"
+          },
+          {
+            "opacity": "1",
+            "part": "handle",
+            "transform": "matrix(0.998806, 0.0488498, -0.0488498, 0.998806, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "impact-left",
+            "transform": "matrix(0.45, 0, 0, 0.45, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "impact-right",
+            "transform": "matrix(0.45, 0, 0, 0.45, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      }
+    ]
+  },
+  {
+    "elapsed": 1150,
+    "icons": [
+      {
+        "icon": "folder",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "cover-occlusion",
+            "transform": "matrix(1, 0, 0, 0.59, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "rear-occlusion",
+            "transform": "matrix(0.994522, -0.104528, 0.104528, 0.994522, 0, -2.4)"
+          },
+          {
+            "opacity": "1",
+            "part": "front-occlusion",
+            "transform": "matrix(0.996195, 0.0871557, -0.0871557, 0.996195, 0, -2.8)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "rear-paper",
+            "transform": "matrix(0.994522, -0.104528, 0.104528, 0.994522, 0, -2.4)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "front-paper",
+            "transform": "matrix(0.996195, 0.0871557, -0.0871557, 0.996195, 0, -2.8)"
+          },
+          {
+            "opacity": "0.722761",
+            "part": "paper-edge",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "cover",
+            "transform": "matrix(1, 0, 0, 0.59, 0, 0)"
+          },
+          {
+            "opacity": "0.694088",
+            "part": "reveal-rays",
+            "transform": "matrix(0.921833, 0, 0, 0.921833, 0, 0.0194819)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "file",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "fold-occlusion",
+            "transform": "matrix(0.692946, 0.307054, 0.307054, 0.692946, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "fold",
+            "transform": "matrix(0.692946, 0.307054, 0.307054, 0.692946, 0, 0)"
+          },
+          {
+            "opacity": "0.478864",
+            "part": "fold-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.394344",
+            "part": "crease-light",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.523599",
+            "part": "curl-air",
+            "transform": "matrix(0.968895, 0, 0, 0.968895, 0.239974, -0.239974)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "copy",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "duplicate-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 1.30442, 1.30442)"
+          },
+          {
+            "opacity": "0",
+            "part": "source-glint",
+            "transform": "matrix(0.923918, 0, 0, 0.923918, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "duplicate",
+            "transform": "matrix(1, 0, 0, 1, 1.30442, 1.30442)"
+          },
+          {
+            "opacity": "0.622604",
+            "part": "duplicate-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.694017",
+            "part": "registration-right",
+            "transform": "matrix(1, 0, 0, 1, 0.0965016, 0)"
+          },
+          {
+            "opacity": "0.694017",
+            "part": "registration-bottom",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0965016)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "trash",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "bin",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "rim-light",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "lid",
+            "transform": "matrix(0.981115, -0.193423, 0.193423, 0.981115, 0, -0.0279814)"
+          },
+          {
+            "opacity": "1",
+            "part": "handle",
+            "transform": "matrix(0.999099, 0.0424453, -0.0424453, 0.999099, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "impact-left",
+            "transform": "matrix(0.45, 0, 0, 0.45, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "impact-right",
+            "transform": "matrix(0.45, 0, 0, 0.45, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      }
+    ]
+  },
+  {
+    "elapsed": 1501,
+    "icons": [
+      {
+        "icon": "folder",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "cover-occlusion",
+            "transform": "matrix(1, 0, 0, 0.590159, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "rear-occlusion",
+            "transform": "matrix(0.999778, -0.0210573, 0.0210573, 0.999778, 0, -0.482634)"
+          },
+          {
+            "opacity": "1",
+            "part": "front-occlusion",
+            "transform": "matrix(0.997797, 0.0663422, -0.0663422, 0.997797, 0, -2.1302)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "rear-paper",
+            "transform": "matrix(0.999778, -0.0210573, 0.0210573, 0.999778, 0, -0.482634)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "front-paper",
+            "transform": "matrix(0.997797, 0.0663422, -0.0663422, 0.997797, 0, -2.1302)"
+          },
+          {
+            "opacity": "0.237774",
+            "part": "paper-edge",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "cover",
+            "transform": "matrix(1, 0, 0, 0.590159, 0, 0)"
+          },
+          {
+            "opacity": "0.296108",
+            "part": "reveal-rays",
+            "transform": "matrix(0.967625, 0, 0, 0.967625, 0, -0.40612)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "file",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "fold-occlusion",
+            "transform": "matrix(0.970496, 0.0295039, 0.0295039, 0.970496, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "fold",
+            "transform": "matrix(0.970496, 0.0295039, 0.0295039, 0.970496, 0, 0)"
+          },
+          {
+            "opacity": "0.0468641",
+            "part": "fold-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.0385925",
+            "part": "crease-light",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.051242",
+            "part": "curl-air",
+            "transform": "matrix(0.906742, 0, 0, 0.906742, 0.519659, -0.519659)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "copy",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "duplicate-occlusion",
+            "transform": "matrix(0.999999, -0.00145568, 0.00145568, 0.999999, 0.580637, 0.580637)"
+          },
+          {
+            "opacity": "0",
+            "part": "source-glint",
+            "transform": "matrix(0.858044, 0, 0, 0.858044, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "duplicate",
+            "transform": "matrix(0.999999, -0.00145568, 0.00145568, 0.999999, 0.580637, 0.580637)"
+          },
+          {
+            "opacity": "0.180557",
+            "part": "duplicate-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.201267",
+            "part": "registration-right",
+            "transform": "matrix(1, 0, 0, 1, 0.382984, 0)"
+          },
+          {
+            "opacity": "0.201267",
+            "part": "registration-bottom",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.382984)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "trash",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "bin",
+            "transform": "matrix(1.00014, 0, 0, 0.999644, 0, 0)"
+          },
+          {
+            "opacity": "0.0031625",
+            "part": "rim-light",
+            "transform": "matrix(0.251959, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "lid",
+            "transform": "matrix(1, 0, 0, 1, 0, 1.00499)"
+          },
+          {
+            "opacity": "1",
+            "part": "handle",
+            "transform": "matrix(0.999243, 0.0388982, -0.0388982, 0.999243, 0, 0)"
+          },
+          {
+            "opacity": "0.00108706",
+            "part": "impact-left",
+            "transform": "matrix(0.450712, 0, 0, 0.450712, -0.000323529, 0)"
+          },
+          {
+            "opacity": "0.00108706",
+            "part": "impact-right",
+            "transform": "matrix(0.450712, 0, 0, 0.450712, 0.000323529, 0)"
+          }
+        ],
+        "playing": "true"
+      }
+    ]
+  },
+  {
+    "elapsed": 1701,
+    "icons": [
+      {
+        "icon": "folder",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "cover-occlusion",
+            "transform": "matrix(1, 0, 0, 0.70952, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "rear-occlusion",
+            "transform": "matrix(1, -0.000225066, 0.000225066, 1, 0, -0.00515813)"
+          },
+          {
+            "opacity": "1",
+            "part": "front-occlusion",
+            "transform": "matrix(0.999947, 0.0103292, -0.0103292, 0.999947, 0, -0.331426)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "rear-paper",
+            "transform": "matrix(1, -0.000225066, 0.000225066, 1, 0, -0.00515813)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "front-paper",
+            "transform": "matrix(0.999947, 0.0103292, -0.0103292, 0.999947, 0, -0.331426)"
+          },
+          {
+            "opacity": "0",
+            "part": "paper-edge",
+            "transform": "matrix(0.983148, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "cover",
+            "transform": "matrix(1, 0, 0, 0.70952, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "reveal-rays",
+            "transform": "matrix(0.941574, 0, 0, 0.941574, 0, -0.579989)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "file",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "fold-occlusion",
+            "transform": "matrix(1.00635, -0.0063501, -0.0063501, 1.00635, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "fold",
+            "transform": "matrix(1.00635, -0.0063501, -0.0063501, 1.00635, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "fold-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "crease-light",
+            "transform": "matrix(0.897294, 0, 0, 0.897294, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "curl-air",
+            "transform": "matrix(0.828106, 0, 0, 0.828106, 0.406211, -0.38567)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "copy",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "duplicate-occlusion",
+            "transform": "matrix(0.999997, -0.00250895, 0.00250895, 0.999997, 0.0601336, 0.0601336)"
+          },
+          {
+            "opacity": "0",
+            "part": "source-glint",
+            "transform": "matrix(0.822116, 0, 0, 0.822116, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "duplicate",
+            "transform": "matrix(0.999997, -0.00250895, 0.00250895, 0.999997, 0.0601336, 0.0601336)"
+          },
+          {
+            "opacity": "0",
+            "part": "duplicate-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "registration-right",
+            "transform": "matrix(1, 0, 0, 0.958722, 0.451842, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "registration-bottom",
+            "transform": "matrix(0.958722, 0, 0, 1, 0, 0.451842)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "trash",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "bin",
+            "transform": "matrix(0.997873, 0, 0, 1.0039, 0, 0)"
+          },
+          {
+            "opacity": "0.554667",
+            "part": "rim-light",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "lid",
+            "transform": "matrix(0.999891, -0.0147931, 0.0147931, 0.999891, 0, 0.157997)"
+          },
+          {
+            "opacity": "1",
+            "part": "handle",
+            "transform": "matrix(0.999973, -0.00741276, 0.00741276, 0.999973, 0, 0)"
+          },
+          {
+            "opacity": "0.776534",
+            "part": "impact-left",
+            "transform": "matrix(0.984889, 0, 0, 0.984889, -0.284, 0)"
+          },
+          {
+            "opacity": "0.776534",
+            "part": "impact-right",
+            "transform": "matrix(0.984889, 0, 0, 0.984889, 0.284, 0)"
+          }
+        ],
+        "playing": "true"
+      }
+    ]
+  },
+  {
+    "elapsed": 2101,
+    "icons": [
+      {
+        "icon": "folder",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "cover-occlusion",
+            "transform": "matrix(1, 0, 0, 1.00149, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "rear-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "front-occlusion",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "rear-paper",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "front-paper",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "paper-edge",
+            "transform": "matrix(0.649815, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "cover",
+            "transform": "matrix(1, 0, 0, 1.00149, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "reveal-rays",
+            "transform": "matrix(0.774908, 0, 0, 0.774908, 0, -0.184155)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "file",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "fold-occlusion",
+            "transform": "matrix(1.0012, -0.00119537, -0.00119537, 1.0012, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "fold",
+            "transform": "matrix(1.0012, -0.00119537, -0.00119537, 1.0012, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "fold-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "crease-light",
+            "transform": "matrix(0.640883, 0, 0, 0.640883, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "curl-air",
+            "transform": "matrix(0.648618, 0, 0, 0.648618, 0.0472367, 0.0245867)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "copy",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "duplicate-occlusion",
+            "transform": "matrix(0.999999, -0.00117418, 0.00117418, 0.999999, -0.0336378, -0.0336378)"
+          },
+          {
+            "opacity": "0",
+            "part": "source-glint",
+            "transform": "matrix(0.75026, 0, 0, 0.75026, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "duplicate",
+            "transform": "matrix(0.999999, -0.00117418, 0.00117418, 0.999999, -0.0336378, -0.0336378)"
+          },
+          {
+            "opacity": "0",
+            "part": "duplicate-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "registration-right",
+            "transform": "matrix(1, 0, 0, 0.629955, 0.0682803, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "registration-bottom",
+            "transform": "matrix(0.629955, 0, 0, 1, 0, 0.0682803)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "icon": "trash",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "bin",
+            "transform": "matrix(0.999852, 0, 0, 1.0003, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "rim-light",
+            "transform": "matrix(0.947287, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "lid",
+            "transform": "matrix(1, -0.000777417, 0.000777417, 1, 0, 0.00395935)"
+          },
+          {
+            "opacity": "1",
+            "part": "handle",
+            "transform": "matrix(0.999972, -0.00745962, 0.00745962, 0.999972, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "impact-left",
+            "transform": "matrix(0.775401, 0, 0, 0.775401, -0.650801, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "impact-right",
+            "transform": "matrix(0.775401, 0, 0, 0.775401, 0.650801, 0)"
+          }
+        ],
+        "playing": "true"
+      }
+    ]
+  },
+  {
+    "elapsed": 2701,
+    "icons": [
+      {
+        "icon": "folder",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "cover-occlusion",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "rear-occlusion",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "front-occlusion",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.6",
+            "part": "rear-paper",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.9",
+            "part": "front-paper",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "paper-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "cover",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "reveal-rays",
+            "transform": "none"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "file",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "fold-occlusion",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "fold",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "fold-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "crease-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "curl-air",
+            "transform": "none"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "copy",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "duplicate-occlusion",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "source-glint",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "duplicate",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "duplicate-edge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "registration-right",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "registration-bottom",
+            "transform": "none"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "trash",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "bin",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "rim-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "lid",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "handle",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "impact-left",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "impact-right",
+            "transform": "none"
+          }
+        ],
+        "playing": null
+      }
+    ]
+  }
+]
