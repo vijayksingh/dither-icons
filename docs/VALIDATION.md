@@ -198,3 +198,14 @@ Scope: **play, pause, volume, code**, the next four in catalog order. Each recei
 - Existing checks cover all 36 timelines and 108 material variants, complete ordered clocks, actual target binding, transform/opacity-only tracks, identity return, hidden accent endpoints, accessibility, CSS fallback, and earlier geometric relationships.
 - ESM library, declarations, gallery, and downloadable tarball built successfully. Library output is 126.65KB before compression. The unchanged React peer contract was tested in an earlier pass; no fresh consumer install was repeated for this artwork/timing batch.
 - Standalone CSS SVG shares the choreography and retains the documented hover-departure limitation. No publication or deployment.
+
+## Platform batch 01 — 2026-09-09
+
+Added **Path, Flask, Target, Retry** from live platform source needs. Individual Interface Craft reports, named timing modules, original SVG contours, named React exports, Learning category, and default Platform / 01 family. Platform mapping is in `PLATFORM-ICONS.md`. All previous 36 tracks remain unchanged.
+
+- Browser review: actual and half speed, 0/10/28/36/45/65/82/100% poses; dark Iris dither/outline, light Cobalt solid; all four at 24px solid and 64px dither. Eight [native reference images](motion-evidence/platform-01/) and computed poses were saved. Initial Retry arc/head overlap made an even-odd notch; a local occluder fixed the joint without doubled grain.
+- `poses.json`: all parts have identical 0% and 100% poses. `material-continuity.json`: dither and outline match exactly at 45%, including target occlusion and flask contents. `playback.json` records actual playback through reaction and arrival, then all idle by 1500ms.
+- `lifecycle.json`: each keyboard-triggered gesture continued after Tab departure, then finished. Reduced motion cleared transforms and accents. Motion-off disabled all four study buttons. No loading, empty, or error state applies to these static studies. Shared hover runtime unchanged.
+- `responsive.json`: 390px client/scroll width, two 173px study columns, all four playing after keyboard replay, no browser errors. This verifies emulated responsive layout and keyboard playback, not physical touch.
+- TypeScript and **26 tests passed**. Four additions cover named exports/accessibility in all materials, path glint-to-node geometry and handoff order, target dart/occluder identity and axial contact, and repeated-instance chamber/joint isolation. All 40 timelines and 120 material variants bind to real SVG actors and return to neutral.
+- ESM/declarations/gallery/downloadable package built; library is 144.90KB before compression. No publication, deployment, or platform-source integration. Standalone CSS hover exports retain their documented departure limitation.

@@ -1,3 +1,7 @@
+import {PATH_ART} from './motions/path';
+import {FLASK_ART} from './motions/flask';
+import {TARGET_ART} from './motions/target';
+import {RETRY_ART} from './motions/retry';
 /** Original vector geometry authored in a 24 × 24 viewBox. No third-party paths. */
 export type Motion = 'ring'|'rise'|'fall'|'pulse'|'turn'|'slide'|'blink'|'draw';
 export type Part = { cells: number[][]; path?:string; stroke?:boolean; transform?:string; motion?: Motion };
@@ -12,6 +16,7 @@ const l=(points:number[][],motion?:Motion)=>({...part(line(points),motion),path:
 const r=(x:number,y:number,w:number,h:number,motion?:Motion)=>({...part(rect(x,y,w,h),motion),path:`M${x} ${y}h${w}v${h}h-${w}Z`});
 const o=(x:number,y:number,rad:number,motion?:Motion)=>({...part(ring(x,y,rad),motion),path:`M${x-rad+1} ${y}a${rad-1} ${rad-1} 0 1 0 ${2*(rad-1)} 0a${rad-1} ${rad-1} 0 1 0 -${2*(rad-1)} 0`,stroke:true});
 const def=(name:string,category:string,description:string,...parts:Part[]):IconDefinition=>({name,category,description,parts});
+const vector=(path:string):Part=>({cells:[],path});
 export const definitions = [
  def('bell','Interface','The bell swings from its crown.',p([[7,5],[10,3],[14,3],[17,5],[17,15],[20,18],[4,18],[7,15]],'ring'),r(10,20,4,2)),
  def('heart','Interface','A double beat, then back to rest.',p([[3,5],[9,5],[12,8],[15,5],[21,5],[22,7],[22,12],[12,22],[2,12],[2,7]],'pulse')),
@@ -49,6 +54,10 @@ export const definitions = [
  def('chart','Development','Bars grow from a shared baseline.',l([[2,3],[2,21],[22,21]]),r(6,12,3,7,'rise'),r(12,7,3,12,'rise'),r(18,3,3,16,'rise')),
  def('book','Files','A page opens for reading.',p([[2,3],[9,3],[12,6],[15,3],[22,3],[22,20],[15,20],[12,22],[9,20],[2,20]]),l([[12,6],[12,20]],'blink')),
  def('bolt','Interface','One quick flash of energy.',p([[13,1],[3,14],[10,14],[8,23],[22,9],[14,9],[17,1]],'blink')),
+ def('path','Learning','Follow a connected sequence of milestones.',vector(PATH_ART.first),vector(PATH_ART.second),vector(PATH_ART.node(5,19)),vector(PATH_ART.node(12,12)),vector(PATH_ART.node(19,5))),
+ def('flask','Learning','A contained experiment stirs and responds.',vector(FLASK_ART.outer+FLASK_ART.inside)),
+ def('target','Learning','Focus an objective at a precise center.',vector(TARGET_ART.outer),vector(TARGET_ART.inner),vector(TARGET_ART.dart)),
+ def('retry','Learning','Wind back to make another attempt.',vector(RETRY_ART.arc),vector(RETRY_ART.head)),
 ] as const;
 export type IconName = typeof definitions[number]['name'];
 

@@ -1,0 +1,1477 @@
+{
+  "keyboard": [
+    {
+      "icon": "path",
+      "departure": [
+        {
+          "icon": "path",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "origin-node",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "12px 12px",
+              "part": "middle-node",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "origin": "19px 5px",
+              "part": "destination-node",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "5px 19px",
+              "part": "source-light",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.5px 16.5px",
+              "part": "route-first",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "14.5px 7.5px",
+              "part": "route-second",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "19px 5px",
+              "part": "arrival-halo",
+              "transform": "matrix(0.8, 0, 0, 0.8, 0, 0)"
+            }
+          ],
+          "playing": "true"
+        },
+        {
+          "icon": "flask",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12px 17px",
+              "part": "liquid",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 17px",
+              "part": "meniscus-light",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 14.8px",
+              "part": "bubble",
+              "transform": "matrix(0.3, 0, 0, 0.3, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "11.8px 12.2px",
+              "part": "reaction-fizz",
+              "transform": "matrix(0.5, 0, 0, 0.5, 0, 0)"
+            }
+          ],
+          "playing": "true"
+        },
+        {
+          "icon": "target",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "10px 14px",
+              "part": "dart-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "10px 14px",
+              "part": "inner-ring",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "10px 14px",
+              "part": "center-response",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "10px 14px",
+              "part": "dart",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "10px 14px",
+              "part": "rim-response",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "retry",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12px 12px",
+              "part": "return-arrow",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 12px",
+              "part": "rewind-trace",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.35px 8.65px",
+              "part": "catch-edge",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.35px 8.65px",
+              "part": "catch-marks",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        }
+      ],
+      "finish": [
+        {
+          "icon": "path",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "origin-node",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "12px 12px",
+              "part": "middle-node",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "19px 5px",
+              "part": "destination-node",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5px 19px",
+              "part": "source-light",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.5px 16.5px",
+              "part": "route-first",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "14.5px 7.5px",
+              "part": "route-second",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "19px 5px",
+              "part": "arrival-halo",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "flask",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12px 17px",
+              "part": "liquid",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 17px",
+              "part": "meniscus-light",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 14.8px",
+              "part": "bubble",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "11.8px 12.2px",
+              "part": "reaction-fizz",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "target",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "10px 14px",
+              "part": "dart-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "10px 14px",
+              "part": "inner-ring",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "10px 14px",
+              "part": "center-response",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "10px 14px",
+              "part": "dart",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "10px 14px",
+              "part": "rim-response",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "retry",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12px 12px",
+              "part": "return-arrow",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 12px",
+              "part": "rewind-trace",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.35px 8.65px",
+              "part": "catch-edge",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.35px 8.65px",
+              "part": "catch-marks",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        }
+      ]
+    },
+    {
+      "icon": "flask",
+      "departure": [
+        {
+          "icon": "path",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "origin-node",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "12px 12px",
+              "part": "middle-node",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "19px 5px",
+              "part": "destination-node",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5px 19px",
+              "part": "source-light",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.5px 16.5px",
+              "part": "route-first",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "14.5px 7.5px",
+              "part": "route-second",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "19px 5px",
+              "part": "arrival-halo",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "flask",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12px 17px",
+              "part": "liquid",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 17px",
+              "part": "meniscus-light",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 14.8px",
+              "part": "bubble",
+              "transform": "matrix(0.3, 0, 0, 0.3, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "11.8px 12.2px",
+              "part": "reaction-fizz",
+              "transform": "matrix(0.5, 0, 0, 0.5, 0, 0)"
+            }
+          ],
+          "playing": "true"
+        },
+        {
+          "icon": "target",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "10px 14px",
+              "part": "dart-occlusion",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "origin": "10px 14px",
+              "part": "inner-ring",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "10px 14px",
+              "part": "center-response",
+              "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "origin": "10px 14px",
+              "part": "dart",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "10px 14px",
+              "part": "rim-response",
+              "transform": "matrix(0.9, 0, 0, 0.9, 0, 0)"
+            }
+          ],
+          "playing": "true"
+        },
+        {
+          "icon": "retry",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12px 12px",
+              "part": "return-arrow",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 12px",
+              "part": "rewind-trace",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.35px 8.65px",
+              "part": "catch-edge",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.35px 8.65px",
+              "part": "catch-marks",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        }
+      ],
+      "finish": [
+        {
+          "icon": "path",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "origin-node",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "12px 12px",
+              "part": "middle-node",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "19px 5px",
+              "part": "destination-node",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5px 19px",
+              "part": "source-light",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.5px 16.5px",
+              "part": "route-first",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "14.5px 7.5px",
+              "part": "route-second",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "19px 5px",
+              "part": "arrival-halo",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "flask",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12px 17px",
+              "part": "liquid",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 17px",
+              "part": "meniscus-light",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 14.8px",
+              "part": "bubble",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "11.8px 12.2px",
+              "part": "reaction-fizz",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "target",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "10px 14px",
+              "part": "dart-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "10px 14px",
+              "part": "inner-ring",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "10px 14px",
+              "part": "center-response",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "10px 14px",
+              "part": "dart",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "10px 14px",
+              "part": "rim-response",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "retry",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12px 12px",
+              "part": "return-arrow",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 12px",
+              "part": "rewind-trace",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.35px 8.65px",
+              "part": "catch-edge",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.35px 8.65px",
+              "part": "catch-marks",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        }
+      ]
+    },
+    {
+      "icon": "target",
+      "departure": [
+        {
+          "icon": "path",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "origin-node",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "12px 12px",
+              "part": "middle-node",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "19px 5px",
+              "part": "destination-node",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5px 19px",
+              "part": "source-light",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.5px 16.5px",
+              "part": "route-first",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "14.5px 7.5px",
+              "part": "route-second",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "19px 5px",
+              "part": "arrival-halo",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "flask",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12px 17px",
+              "part": "liquid",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 17px",
+              "part": "meniscus-light",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 14.8px",
+              "part": "bubble",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "11.8px 12.2px",
+              "part": "reaction-fizz",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "target",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "10px 14px",
+              "part": "dart-occlusion",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "origin": "10px 14px",
+              "part": "inner-ring",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "10px 14px",
+              "part": "center-response",
+              "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "origin": "10px 14px",
+              "part": "dart",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "10px 14px",
+              "part": "rim-response",
+              "transform": "matrix(0.9, 0, 0, 0.9, 0, 0)"
+            }
+          ],
+          "playing": "true"
+        },
+        {
+          "icon": "retry",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12px 12px",
+              "part": "return-arrow",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 12px",
+              "part": "rewind-trace",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.35px 8.65px",
+              "part": "catch-edge",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.35px 8.65px",
+              "part": "catch-marks",
+              "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+            }
+          ],
+          "playing": "true"
+        }
+      ],
+      "finish": [
+        {
+          "icon": "path",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "origin-node",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "12px 12px",
+              "part": "middle-node",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "19px 5px",
+              "part": "destination-node",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5px 19px",
+              "part": "source-light",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.5px 16.5px",
+              "part": "route-first",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "14.5px 7.5px",
+              "part": "route-second",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "19px 5px",
+              "part": "arrival-halo",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "flask",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12px 17px",
+              "part": "liquid",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 17px",
+              "part": "meniscus-light",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 14.8px",
+              "part": "bubble",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "11.8px 12.2px",
+              "part": "reaction-fizz",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "target",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "10px 14px",
+              "part": "dart-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "10px 14px",
+              "part": "inner-ring",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "10px 14px",
+              "part": "center-response",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "10px 14px",
+              "part": "dart",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "10px 14px",
+              "part": "rim-response",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "retry",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12px 12px",
+              "part": "return-arrow",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 12px",
+              "part": "rewind-trace",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.35px 8.65px",
+              "part": "catch-edge",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.35px 8.65px",
+              "part": "catch-marks",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        }
+      ]
+    },
+    {
+      "icon": "retry",
+      "departure": [
+        {
+          "icon": "path",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "origin-node",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "12px 12px",
+              "part": "middle-node",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "19px 5px",
+              "part": "destination-node",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5px 19px",
+              "part": "source-light",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.5px 16.5px",
+              "part": "route-first",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "14.5px 7.5px",
+              "part": "route-second",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "19px 5px",
+              "part": "arrival-halo",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "flask",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12px 17px",
+              "part": "liquid",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 17px",
+              "part": "meniscus-light",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 14.8px",
+              "part": "bubble",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "11.8px 12.2px",
+              "part": "reaction-fizz",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "target",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "10px 14px",
+              "part": "dart-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "10px 14px",
+              "part": "inner-ring",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "10px 14px",
+              "part": "center-response",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "10px 14px",
+              "part": "dart",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "10px 14px",
+              "part": "rim-response",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "retry",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12px 12px",
+              "part": "return-arrow",
+              "transform": "matrix(0.999993, 0.00366299, -0.00366299, 0.999993, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 12px",
+              "part": "rewind-trace",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.35px 8.65px",
+              "part": "catch-edge",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.35px 8.65px",
+              "part": "catch-marks",
+              "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+            }
+          ],
+          "playing": "true"
+        }
+      ],
+      "finish": [
+        {
+          "icon": "path",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "origin-node",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "12px 12px",
+              "part": "middle-node",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "19px 5px",
+              "part": "destination-node",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5px 19px",
+              "part": "source-light",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.5px 16.5px",
+              "part": "route-first",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "14.5px 7.5px",
+              "part": "route-second",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "19px 5px",
+              "part": "arrival-halo",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "flask",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12px 17px",
+              "part": "liquid",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 17px",
+              "part": "meniscus-light",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 14.8px",
+              "part": "bubble",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "11.8px 12.2px",
+              "part": "reaction-fizz",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "target",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "10px 14px",
+              "part": "dart-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "10px 14px",
+              "part": "inner-ring",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "10px 14px",
+              "part": "center-response",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "10px 14px",
+              "part": "dart",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "10px 14px",
+              "part": "rim-response",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "retry",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12px 12px",
+              "part": "return-arrow",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 12px",
+              "part": "rewind-trace",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.35px 8.65px",
+              "part": "catch-edge",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.35px 8.65px",
+              "part": "catch-marks",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        }
+      ]
+    }
+  ],
+  "reduced": [
+    {
+      "icon": "path",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "origin-node",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "12px 12px",
+          "part": "middle-node",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "19px 5px",
+          "part": "destination-node",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "5px 19px",
+          "part": "source-light",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "9.5px 16.5px",
+          "part": "route-first",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "14.5px 7.5px",
+          "part": "route-second",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "19px 5px",
+          "part": "arrival-halo",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "flask",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "12px 17px",
+          "part": "liquid",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 17px",
+          "part": "meniscus-light",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 14.8px",
+          "part": "bubble",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "11.8px 12.2px",
+          "part": "reaction-fizz",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "target",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "10px 14px",
+          "part": "dart-occlusion",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "10px 14px",
+          "part": "inner-ring",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "10px 14px",
+          "part": "center-response",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "10px 14px",
+          "part": "dart",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "10px 14px",
+          "part": "rim-response",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "retry",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "12px 12px",
+          "part": "return-arrow",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 12px",
+          "part": "rewind-trace",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "4.35px 8.65px",
+          "part": "catch-edge",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "4.35px 8.65px",
+          "part": "catch-marks",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    }
+  ],
+  "off": [
+    {
+      "icon": "path",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "origin-node",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "12px 12px",
+          "part": "middle-node",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "19px 5px",
+          "part": "destination-node",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "5px 19px",
+          "part": "source-light",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "9.5px 16.5px",
+          "part": "route-first",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "14.5px 7.5px",
+          "part": "route-second",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "19px 5px",
+          "part": "arrival-halo",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "flask",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "12px 17px",
+          "part": "liquid",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 17px",
+          "part": "meniscus-light",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 14.8px",
+          "part": "bubble",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "11.8px 12.2px",
+          "part": "reaction-fizz",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "target",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "10px 14px",
+          "part": "dart-occlusion",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "10px 14px",
+          "part": "inner-ring",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "10px 14px",
+          "part": "center-response",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "10px 14px",
+          "part": "dart",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "10px 14px",
+          "part": "rim-response",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "retry",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "12px 12px",
+          "part": "return-arrow",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 12px",
+          "part": "rewind-trace",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "4.35px 8.65px",
+          "part": "catch-edge",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "4.35px 8.65px",
+          "part": "catch-marks",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    }
+  ],
+  "disabled": true
+}

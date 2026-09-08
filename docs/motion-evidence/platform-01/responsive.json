@@ -1,0 +1,29 @@
+{
+  "client": 390,
+  "columns": [
+    173,
+    173,
+    173,
+    173
+  ],
+  "scroll": 390,
+  "playing": [
+    {
+      "icon": "path",
+      "playing": "true"
+    },
+    {
+      "icon": "flask",
+      "playing": "true"
+    },
+    {
+      "icon": "target",
+      "playing": "true"
+    },
+    {
+      "icon": "retry",
+      "playing": "true"
+    }
+  ],
+  "errors": []
+}

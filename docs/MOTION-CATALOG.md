@@ -2,7 +2,7 @@
 
 Every icon has an individual Interface Craft critique: semantic meaning, identity boundary, causal sequence, encoded timing, and rendered observations. Shared rules: [MOTION-PRINCIPLES.md](MOTION-PRINCIPLES.md).
 
-The four accepted foundation performances remain intact. The remaining 32 use individually authored tracks, with no catalog icon using the legacy generic presets. Native React and standalone SVG share these timing definitions.
+The four accepted foundation performances remain intact. The remaining icons use individually authored tracks, with no catalog icon using the legacy generic presets. Native React and standalone SVG share these timing definitions.
 
 | Icon / individual review | Semantic meaning | Sequence | Duration |
 | --- | --- | --- | --- |
@@ -43,6 +43,11 @@ The four accepted foundation performances remain intact. The remaining 32 use in
 | [download](icon-reviews/download.md) | receive an item into a destination | Lift / Receive / Settle | 1120ms |
 | [layers](icon-reviews/layers.md) | reveal separate planes within a stack | Gather / Separate / Nest | 1120ms |
 
+| [path](icon-reviews/path.md) | follow an ordered Path through Milestones | Depart / Connect / Arrive | 1380ms |
+| [flask](icon-reviews/flask.md) | represent a Lab Unit and bounded experimentation | Stir / React / Settle | 1400ms |
+| [target](icon-reviews/target.md) | focus a learner objective | Aim / Seat / Resolve | 1260ms |
+| [retry](icon-reviews/retry.md) | restart an experiment or make another attempt | Rewind / Catch / Ready | 1280ms |
+
 ## Focused refinement 01
 
 The user requested a smaller, more careful batch after the broad rollout. Only the first four entries above have been refined in this pass. Their new reviews supersede the earlier rollout reports for those four. Choose **Refinement / 01** in Motion studies. Each now has connected geometry, its own named timing/configuration, and a localized climax (MOT-16). The remaining icons are outside this batch.
@@ -59,7 +64,11 @@ The next bounded batch is **book, mail, message, and send**. Choose **Refinement
 
 ## Focused refinement 04
 
-The next bounded batch is **play, pause, volume, and code**. **Refinement / 04** is now the default study group. Play releases a short wake and coasts; Pause arrests two feet in a small stagger and finishes in stillness; Volume carries pressure from its fixed source through concentric waves; Code scans its existing slash before paired registration. Each has its own timing module, Interface Craft report, and browser references in `motion-evidence/refinement-04/`. Earlier accepted performances retain their tracks.
+The next bounded batch is **play, pause, volume, and code**. Choose **Refinement / 04** for this group. Play releases a short wake and coasts; Pause arrests two feet in a small stagger and finishes in stillness; Volume carries pressure from its fixed source through concentric waves; Code scans its existing slash before paired registration. Each has its own timing module, Interface Craft report, and browser references in `motion-evidence/refinement-04/`. Earlier accepted performances retain their tracks.
+
+## Platform batch 01
+
+**Path, Flask, Target, Retry** are new additions selected from actual platform flows, rather than the remaining generic catalog order. **Platform / 01** is the default study group. Each has a named React export, original geometry, its own Interface Craft critique and timing source, and browser references in `motion-evidence/platform-01/`. The Learning category gathers these four; the original 36 performances are unchanged. Read [PLATFORM-ICONS.md](PLATFORM-ICONS.md) for call-site mapping and integration guidance.
 
 ## How to use these references
 
