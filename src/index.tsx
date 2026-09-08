@@ -1,0 +1,75 @@
+import { forwardRef, type SVGProps } from 'react';
+import {definitions,type IconDefinition} from './shapes';
+export {definitions} from './shapes';
+export type {IconDefinition,Motion,Part} from './shapes';
+export type Texture = 'dither'|'solid'|'outline';
+export interface DitherIconProps extends SVGProps<SVGSVGElement> { name?:string; size?:number|string; texture?:Texture; animate?:boolean; active?:boolean; title?:string; }
+export const motionStyles = `
+.di-part{transform-box:fill-box;transform-origin:center}
+.di-icon[data-animate=true]:is(:hover,:focus-visible) .di-part,.di-trigger:is(:hover,:focus-visible) .di-icon[data-animate=true] .di-part,.di-icon[data-active=true] .di-part{animation-duration:600ms;animation-timing-function:cubic-bezier(.22,.68,0,1.1);animation-iteration-count:1}
+.di-icon[data-animate=true]:is(:hover,:focus-visible) .di-part,.di-trigger:is(:hover,:focus-visible) .di-icon[data-animate=true] .di-part,.di-icon[data-active=true] .di-part{animation-name:var(--di-motion)}
+@keyframes di-ring{20%{transform:rotate(16deg)}45%{transform:rotate(-12deg)}70%{transform:rotate(6deg)}}
+@keyframes di-rise{40%{transform:translateY(-3px)}}
+@keyframes di-fall{40%{transform:translateY(3px)}}
+@keyframes di-slide{40%{transform:translateX(3px)}}
+@keyframes di-pulse{25%{transform:scale(1.12)}50%{transform:scale(.96)}75%{transform:scale(1.06)}}
+@keyframes di-turn{to{transform:rotate(90deg)}}
+@keyframes di-blink{35%{opacity:.3}70%{opacity:1}}
+@keyframes di-draw{0%{opacity:.4;transform:translateY(-2px)}60%{opacity:1;transform:translateY(1px)}}
+@media(prefers-reduced-motion:reduce){.di-icon .di-part{animation:none!important}}
+`;
+export function cellPaths(cells:number[][],texture:Texture) {
+ const occupied=new Set(cells.map(([x,y])=>`${x},${y}`));let ink='',grain='';
+ for(const [x,y] of cells){const edge=[[1,0],[-1,0],[0,1],[0,-1]].some(([a,b])=>!occupied.has(`${x+a},${y+b}`));const command=`M${x} ${y}h1v1h-1z`;
+ if(texture==='solid'||edge)ink+=command;
+ else if(texture==='dither'&&(x+y)%2===0)grain+=command;
+ }
+ return {ink,grain};
+}
+export const DitherIcon=forwardRef<SVGSVGElement,DitherIconProps>(function DitherIcon({name='sparkles',size=24,texture='dither',animate=true,active=false,title,className='',...props},ref){
+ const definition=definitions.find(d=>d.name===name);
+ if(!definition)throw new Error(`Unknown Dither icon: ${name}`);
+ return <IconArtwork ref={ref} definition={definition} size={size} texture={texture} animate={animate} active={active} title={title} className={className} {...props}/>;
+});
+export const IconArtwork=forwardRef<SVGSVGElement,DitherIconProps&{definition:IconDefinition}>(function IconArtwork({definition,size=24,texture='dither',animate=true,active=false,title,className='',...props},ref){
+ return <svg xmlns="http://www.w3.org/2000/svg" ref={ref} width={size} height={size} viewBox="0 0 24 24" fill="currentColor" role={title?'img':undefined} aria-label={title} aria-hidden={title?undefined:true} {...props} className={`di-icon ${className}`} data-animate={animate} data-active={animate&&active}>
+ {title&&<title>{title}</title>}<style>{motionStyles}</style>
+ {definition.parts.map((part,i)=>{const {ink,grain}=cellPaths(part.cells,texture);return <g key={i} className={part.motion?'di-part':undefined} style={part.motion?{'--di-motion':`di-${part.motion}`} as React.CSSProperties:undefined}><path d={ink}/>{grain&&<path d={grain} opacity=".65"/>}</g>})}
+ </svg>;
+});
+export const BellIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function BellIcon(props,ref){return <DitherIcon {...props} name="bell" ref={ref}/>;});
+export const HeartIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function HeartIcon(props,ref){return <DitherIcon {...props} name="heart" ref={ref}/>;});
+export const SparklesIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function SparklesIcon(props,ref){return <DitherIcon {...props} name="sparkles" ref={ref}/>;});
+export const SearchIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function SearchIcon(props,ref){return <DitherIcon {...props} name="search" ref={ref}/>;});
+export const HomeIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function HomeIcon(props,ref){return <DitherIcon {...props} name="home" ref={ref}/>;});
+export const SettingsIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function SettingsIcon(props,ref){return <DitherIcon {...props} name="settings" ref={ref}/>;});
+export const CheckIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function CheckIcon(props,ref){return <DitherIcon {...props} name="check" ref={ref}/>;});
+export const CloseIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function CloseIcon(props,ref){return <DitherIcon {...props} name="close" ref={ref}/>;});
+export const PlusIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function PlusIcon(props,ref){return <DitherIcon {...props} name="plus" ref={ref}/>;});
+export const ArrowRightIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function ArrowRightIcon(props,ref){return <DitherIcon {...props} name="arrow-right" ref={ref}/>;});
+export const ArrowUpIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function ArrowUpIcon(props,ref){return <DitherIcon {...props} name="arrow-up" ref={ref}/>;});
+export const ExternalLinkIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function ExternalLinkIcon(props,ref){return <DitherIcon {...props} name="external-link" ref={ref}/>;});
+export const DownloadIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function DownloadIcon(props,ref){return <DitherIcon {...props} name="download" ref={ref}/>;});
+export const UploadIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function UploadIcon(props,ref){return <DitherIcon {...props} name="upload" ref={ref}/>;});
+export const FolderIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function FolderIcon(props,ref){return <DitherIcon {...props} name="folder" ref={ref}/>;});
+export const FileIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function FileIcon(props,ref){return <DitherIcon {...props} name="file" ref={ref}/>;});
+export const CopyIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function CopyIcon(props,ref){return <DitherIcon {...props} name="copy" ref={ref}/>;});
+export const TrashIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function TrashIcon(props,ref){return <DitherIcon {...props} name="trash" ref={ref}/>;});
+export const MailIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function MailIcon(props,ref){return <DitherIcon {...props} name="mail" ref={ref}/>;});
+export const MessageIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function MessageIcon(props,ref){return <DitherIcon {...props} name="message" ref={ref}/>;});
+export const SendIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function SendIcon(props,ref){return <DitherIcon {...props} name="send" ref={ref}/>;});
+export const UserIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function UserIcon(props,ref){return <DitherIcon {...props} name="user" ref={ref}/>;});
+export const LockIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function LockIcon(props,ref){return <DitherIcon {...props} name="lock" ref={ref}/>;});
+export const EyeIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function EyeIcon(props,ref){return <DitherIcon {...props} name="eye" ref={ref}/>;});
+export const PlayIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function PlayIcon(props,ref){return <DitherIcon {...props} name="play" ref={ref}/>;});
+export const PauseIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function PauseIcon(props,ref){return <DitherIcon {...props} name="pause" ref={ref}/>;});
+export const VolumeIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function VolumeIcon(props,ref){return <DitherIcon {...props} name="volume" ref={ref}/>;});
+export const SunIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function SunIcon(props,ref){return <DitherIcon {...props} name="sun" ref={ref}/>;});
+export const MoonIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function MoonIcon(props,ref){return <DitherIcon {...props} name="moon" ref={ref}/>;});
+export const CodeIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function CodeIcon(props,ref){return <DitherIcon {...props} name="code" ref={ref}/>;});
+export const TerminalIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function TerminalIcon(props,ref){return <DitherIcon {...props} name="terminal" ref={ref}/>;});
+export const LayersIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function LayersIcon(props,ref){return <DitherIcon {...props} name="layers" ref={ref}/>;});
+export const CpuIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function CpuIcon(props,ref){return <DitherIcon {...props} name="cpu" ref={ref}/>;});
+export const ChartIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function ChartIcon(props,ref){return <DitherIcon {...props} name="chart" ref={ref}/>;});
+export const BookIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function BookIcon(props,ref){return <DitherIcon {...props} name="book" ref={ref}/>;});
+export const BoltIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function BoltIcon(props,ref){return <DitherIcon {...props} name="bolt" ref={ref}/>;});
