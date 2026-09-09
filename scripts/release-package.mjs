@@ -54,7 +54,7 @@ if (command === 'validate') {
   }
   let published = await registry(pkg.version);
   if (!published && command === 'publish') {
-    execFileSync('npm', ['publish', 'release/package.tgz', '--access', 'public', '--tag', 'latest', '--ignore-scripts'], { stdio: 'inherit' });
+    execFileSync('npm', ['publish', './release/package.tgz', '--access', 'public', '--tag', 'latest', '--ignore-scripts'], { stdio: 'inherit' });
   }
   // The version endpoint can become available before the package metadata used
   // by npm install. Wait for both the version and latest in that public index.
