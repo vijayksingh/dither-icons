@@ -1,0 +1,27 @@
+{
+  "columns": "155.277px 155.284px",
+  "icons": [
+    {
+      "name": "tokenize",
+      "playing": null
+    },
+    {
+      "name": "embedding-lookup",
+      "playing": null
+    },
+    {
+      "name": "attention-focus",
+      "playing": null
+    },
+    {
+      "name": "batch-sampling",
+      "playing": null
+    }
+  ],
+  "reduced": false,
+  "requestedWidth": 390,
+  "scroll": 354,
+  "viewport": 354,
+  "width": 354,
+  "errors": []
+}

@@ -1,0 +1,2758 @@
+{
+  "keyboard": [
+    {
+      "name": "tokenize",
+      "before": [
+        {
+          "icon": "tokenize",
+          "parts": [
+            {
+              "opacity": "0",
+              "origin": "3.8px 5.4px",
+              "part": "token-reading",
+              "transform": "matrix(0.1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.4px 5.4px",
+              "part": "token-boundary-0",
+              "transform": "matrix(1, 0, 0, 0.25, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "14.2px 5.4px",
+              "part": "token-boundary-1",
+              "transform": "matrix(1, 0, 0, 0.25, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "origin": "6.3px 12.1px",
+              "part": "token-piece-0",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "6.3px 18.8px",
+              "part": "token-index-0",
+              "transform": "matrix(1, 0, 0, 1, 0, -0.35)"
+            },
+            {
+              "opacity": "1",
+              "origin": "11.8px 12.1px",
+              "part": "token-piece-1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "11.8px 18.8px",
+              "part": "token-index-1",
+              "transform": "matrix(1, 0, 0, 1, 0, -0.35)"
+            },
+            {
+              "opacity": "1",
+              "origin": "17.5px 12.1px",
+              "part": "token-piece-2",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "17.5px 18.8px",
+              "part": "token-index-2",
+              "transform": "matrix(1, 0, 0, 1, 0, -0.35)"
+            }
+          ],
+          "playing": "true"
+        },
+        {
+          "icon": "embedding-lookup",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "3.8px 8.5px",
+              "part": "embedding-address",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.5px 8.5px",
+              "part": "embedding-component-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12.95px 8.5px",
+              "part": "embedding-component-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "16.4px 8.5px",
+              "part": "embedding-component-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12.75px 20px",
+              "part": "embedding-readout",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "17.7px 8.5px",
+              "part": "embedding-transfer",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12.75px 22.8px",
+              "part": "embedding-edge",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "21.6px 20px",
+              "part": "embedding-receive-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "21.6px 20px",
+              "part": "embedding-receive-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "attention-focus",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "4.8px 12px",
+              "part": "attention-pupil",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-trace-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 4.8px",
+              "part": "attention-key-response-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-trace-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 12px",
+              "part": "attention-key-response-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-trace-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 19.2px",
+              "part": "attention-key-response-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-weight",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 12px",
+              "part": "attention-frame-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 12px",
+              "part": "attention-frame-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "batch-sampling",
+          "parts": [
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-occlusion-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-occlusion-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-occlusion-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "6px 6px",
+              "part": "batch-mark-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 10.4px",
+              "part": "batch-mark-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 6px",
+              "part": "batch-mark-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-copy-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "6px 22.3px",
+              "part": "batch-seat-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-copy-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 22.3px",
+              "part": "batch-seat-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-copy-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 22.3px",
+              "part": "batch-seat-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 23px",
+              "part": "batch-receipt",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        }
+      ],
+      "after": [
+        {
+          "icon": "tokenize",
+          "parts": [
+            {
+              "opacity": "0.177021",
+              "origin": "3.8px 5.4px",
+              "part": "token-reading",
+              "transform": "matrix(0.312426, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.4px 5.4px",
+              "part": "token-boundary-0",
+              "transform": "matrix(1, 0, 0, 0.25, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "14.2px 5.4px",
+              "part": "token-boundary-1",
+              "transform": "matrix(1, 0, 0, 0.25, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "origin": "6.3px 12.1px",
+              "part": "token-piece-0",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "6.3px 18.8px",
+              "part": "token-index-0",
+              "transform": "matrix(1, 0, 0, 1, 0, -0.35)"
+            },
+            {
+              "opacity": "1",
+              "origin": "11.8px 12.1px",
+              "part": "token-piece-1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "11.8px 18.8px",
+              "part": "token-index-1",
+              "transform": "matrix(1, 0, 0, 1, 0, -0.35)"
+            },
+            {
+              "opacity": "1",
+              "origin": "17.5px 12.1px",
+              "part": "token-piece-2",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "17.5px 18.8px",
+              "part": "token-index-2",
+              "transform": "matrix(1, 0, 0, 1, 0, -0.35)"
+            }
+          ],
+          "playing": "true"
+        },
+        {
+          "icon": "embedding-lookup",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "3.8px 8.5px",
+              "part": "embedding-address",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.5px 8.5px",
+              "part": "embedding-component-0",
+              "transform": "matrix(0.85, 0, 0, 0.85, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12.95px 8.5px",
+              "part": "embedding-component-1",
+              "transform": "matrix(0.85, 0, 0, 0.85, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "16.4px 8.5px",
+              "part": "embedding-component-2",
+              "transform": "matrix(0.85, 0, 0, 0.85, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12.75px 20px",
+              "part": "embedding-readout",
+              "transform": "matrix(0.75, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "17.7px 8.5px",
+              "part": "embedding-transfer",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12.75px 22.8px",
+              "part": "embedding-edge",
+              "transform": "matrix(0.3, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "21.6px 20px",
+              "part": "embedding-receive-upper",
+              "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "21.6px 20px",
+              "part": "embedding-receive-lower",
+              "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+            }
+          ],
+          "playing": "true"
+        },
+        {
+          "icon": "attention-focus",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "4.8px 12px",
+              "part": "attention-pupil",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-trace-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 4.8px",
+              "part": "attention-key-response-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-trace-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 12px",
+              "part": "attention-key-response-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-trace-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 19.2px",
+              "part": "attention-key-response-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-weight",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 12px",
+              "part": "attention-frame-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 12px",
+              "part": "attention-frame-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "batch-sampling",
+          "parts": [
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-occlusion-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-occlusion-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-occlusion-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "6px 6px",
+              "part": "batch-mark-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 10.4px",
+              "part": "batch-mark-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 6px",
+              "part": "batch-mark-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-copy-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "6px 22.3px",
+              "part": "batch-seat-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-copy-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 22.3px",
+              "part": "batch-seat-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-copy-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 22.3px",
+              "part": "batch-seat-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 23px",
+              "part": "batch-receipt",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        }
+      ],
+      "focus": "Play embedding-lookup study"
+    },
+    {
+      "name": "embedding-lookup",
+      "before": [
+        {
+          "icon": "tokenize",
+          "parts": [
+            {
+              "opacity": "0",
+              "origin": "3.8px 5.4px",
+              "part": "token-reading",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.4px 5.4px",
+              "part": "token-boundary-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "14.2px 5.4px",
+              "part": "token-boundary-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "6.3px 12.1px",
+              "part": "token-piece-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "6.3px 18.8px",
+              "part": "token-index-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "11.8px 12.1px",
+              "part": "token-piece-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "11.8px 18.8px",
+              "part": "token-index-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "17.5px 12.1px",
+              "part": "token-piece-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "17.5px 18.8px",
+              "part": "token-index-2",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "embedding-lookup",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "3.8px 8.5px",
+              "part": "embedding-address",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.5px 8.5px",
+              "part": "embedding-component-0",
+              "transform": "matrix(0.85, 0, 0, 0.85, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12.95px 8.5px",
+              "part": "embedding-component-1",
+              "transform": "matrix(0.85, 0, 0, 0.85, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "16.4px 8.5px",
+              "part": "embedding-component-2",
+              "transform": "matrix(0.85, 0, 0, 0.85, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12.75px 20px",
+              "part": "embedding-readout",
+              "transform": "matrix(0.75, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "17.7px 8.5px",
+              "part": "embedding-transfer",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12.75px 22.8px",
+              "part": "embedding-edge",
+              "transform": "matrix(0.3, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "21.6px 20px",
+              "part": "embedding-receive-upper",
+              "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "21.6px 20px",
+              "part": "embedding-receive-lower",
+              "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+            }
+          ],
+          "playing": "true"
+        },
+        {
+          "icon": "attention-focus",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "4.8px 12px",
+              "part": "attention-pupil",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-trace-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 4.8px",
+              "part": "attention-key-response-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-trace-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 12px",
+              "part": "attention-key-response-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-trace-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 19.2px",
+              "part": "attention-key-response-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-weight",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 12px",
+              "part": "attention-frame-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 12px",
+              "part": "attention-frame-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "batch-sampling",
+          "parts": [
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-occlusion-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-occlusion-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-occlusion-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "6px 6px",
+              "part": "batch-mark-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 10.4px",
+              "part": "batch-mark-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 6px",
+              "part": "batch-mark-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-copy-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "6px 22.3px",
+              "part": "batch-seat-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-copy-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 22.3px",
+              "part": "batch-seat-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-copy-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 22.3px",
+              "part": "batch-seat-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 23px",
+              "part": "batch-receipt",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        }
+      ],
+      "after": [
+        {
+          "icon": "tokenize",
+          "parts": [
+            {
+              "opacity": "0",
+              "origin": "3.8px 5.4px",
+              "part": "token-reading",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.4px 5.4px",
+              "part": "token-boundary-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "14.2px 5.4px",
+              "part": "token-boundary-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "6.3px 12.1px",
+              "part": "token-piece-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "6.3px 18.8px",
+              "part": "token-index-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "11.8px 12.1px",
+              "part": "token-piece-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "11.8px 18.8px",
+              "part": "token-index-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "17.5px 12.1px",
+              "part": "token-piece-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "17.5px 18.8px",
+              "part": "token-index-2",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "embedding-lookup",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "3.8px 8.5px",
+              "part": "embedding-address",
+              "transform": "matrix(1, 0, 0, 1, -0.075065, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.5px 8.5px",
+              "part": "embedding-component-0",
+              "transform": "matrix(0.85, 0, 0, 0.85, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12.95px 8.5px",
+              "part": "embedding-component-1",
+              "transform": "matrix(0.85, 0, 0, 0.85, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "16.4px 8.5px",
+              "part": "embedding-component-2",
+              "transform": "matrix(0.85, 0, 0, 0.85, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12.75px 20px",
+              "part": "embedding-readout",
+              "transform": "matrix(0.75, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "17.7px 8.5px",
+              "part": "embedding-transfer",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12.75px 22.8px",
+              "part": "embedding-edge",
+              "transform": "matrix(0.3, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "21.6px 20px",
+              "part": "embedding-receive-upper",
+              "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "21.6px 20px",
+              "part": "embedding-receive-lower",
+              "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+            }
+          ],
+          "playing": "true"
+        },
+        {
+          "icon": "attention-focus",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "4.8px 12px",
+              "part": "attention-pupil",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-trace-0",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 4.8px",
+              "part": "attention-key-response-0",
+              "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-trace-1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 12px",
+              "part": "attention-key-response-1",
+              "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-trace-2",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 19.2px",
+              "part": "attention-key-response-2",
+              "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-weight",
+              "transform": "matrix(0.3, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 12px",
+              "part": "attention-frame-upper",
+              "transform": "matrix(1, 0, 0, 0.8, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 12px",
+              "part": "attention-frame-lower",
+              "transform": "matrix(1, 0, 0, 0.8, 0, 0)"
+            }
+          ],
+          "playing": "true"
+        },
+        {
+          "icon": "batch-sampling",
+          "parts": [
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-occlusion-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-occlusion-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-occlusion-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "6px 6px",
+              "part": "batch-mark-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 10.4px",
+              "part": "batch-mark-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 6px",
+              "part": "batch-mark-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-copy-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "6px 22.3px",
+              "part": "batch-seat-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-copy-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 22.3px",
+              "part": "batch-seat-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-copy-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 22.3px",
+              "part": "batch-seat-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 23px",
+              "part": "batch-receipt",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        }
+      ],
+      "focus": "Play attention-focus study"
+    },
+    {
+      "name": "attention-focus",
+      "before": [
+        {
+          "icon": "tokenize",
+          "parts": [
+            {
+              "opacity": "0",
+              "origin": "3.8px 5.4px",
+              "part": "token-reading",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.4px 5.4px",
+              "part": "token-boundary-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "14.2px 5.4px",
+              "part": "token-boundary-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "6.3px 12.1px",
+              "part": "token-piece-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "6.3px 18.8px",
+              "part": "token-index-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "11.8px 12.1px",
+              "part": "token-piece-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "11.8px 18.8px",
+              "part": "token-index-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "17.5px 12.1px",
+              "part": "token-piece-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "17.5px 18.8px",
+              "part": "token-index-2",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "embedding-lookup",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "3.8px 8.5px",
+              "part": "embedding-address",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.5px 8.5px",
+              "part": "embedding-component-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12.95px 8.5px",
+              "part": "embedding-component-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "16.4px 8.5px",
+              "part": "embedding-component-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12.75px 20px",
+              "part": "embedding-readout",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "17.7px 8.5px",
+              "part": "embedding-transfer",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12.75px 22.8px",
+              "part": "embedding-edge",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "21.6px 20px",
+              "part": "embedding-receive-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "21.6px 20px",
+              "part": "embedding-receive-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "attention-focus",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "4.8px 12px",
+              "part": "attention-pupil",
+              "transform": "matrix(0.987798, 0, 0, 0.987798, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-trace-0",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 4.8px",
+              "part": "attention-key-response-0",
+              "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-trace-1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 12px",
+              "part": "attention-key-response-1",
+              "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-trace-2",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 19.2px",
+              "part": "attention-key-response-2",
+              "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-weight",
+              "transform": "matrix(0.3, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 12px",
+              "part": "attention-frame-upper",
+              "transform": "matrix(1, 0, 0, 0.8, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 12px",
+              "part": "attention-frame-lower",
+              "transform": "matrix(1, 0, 0, 0.8, 0, 0)"
+            }
+          ],
+          "playing": "true"
+        },
+        {
+          "icon": "batch-sampling",
+          "parts": [
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-occlusion-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-occlusion-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-occlusion-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "6px 6px",
+              "part": "batch-mark-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 10.4px",
+              "part": "batch-mark-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 6px",
+              "part": "batch-mark-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-copy-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "6px 22.3px",
+              "part": "batch-seat-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-copy-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 22.3px",
+              "part": "batch-seat-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-copy-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 22.3px",
+              "part": "batch-seat-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 23px",
+              "part": "batch-receipt",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        }
+      ],
+      "after": [
+        {
+          "icon": "tokenize",
+          "parts": [
+            {
+              "opacity": "0",
+              "origin": "3.8px 5.4px",
+              "part": "token-reading",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.4px 5.4px",
+              "part": "token-boundary-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "14.2px 5.4px",
+              "part": "token-boundary-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "6.3px 12.1px",
+              "part": "token-piece-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "6.3px 18.8px",
+              "part": "token-index-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "11.8px 12.1px",
+              "part": "token-piece-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "11.8px 18.8px",
+              "part": "token-index-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "17.5px 12.1px",
+              "part": "token-piece-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "17.5px 18.8px",
+              "part": "token-index-2",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "embedding-lookup",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "3.8px 8.5px",
+              "part": "embedding-address",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.5px 8.5px",
+              "part": "embedding-component-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12.95px 8.5px",
+              "part": "embedding-component-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "16.4px 8.5px",
+              "part": "embedding-component-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12.75px 20px",
+              "part": "embedding-readout",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "17.7px 8.5px",
+              "part": "embedding-transfer",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12.75px 22.8px",
+              "part": "embedding-edge",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "21.6px 20px",
+              "part": "embedding-receive-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "21.6px 20px",
+              "part": "embedding-receive-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "attention-focus",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "4.8px 12px",
+              "part": "attention-pupil",
+              "transform": "matrix(0.860875, 0, 0, 0.860875, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-trace-0",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 4.8px",
+              "part": "attention-key-response-0",
+              "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-trace-1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 12px",
+              "part": "attention-key-response-1",
+              "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-trace-2",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 19.2px",
+              "part": "attention-key-response-2",
+              "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-weight",
+              "transform": "matrix(0.3, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 12px",
+              "part": "attention-frame-upper",
+              "transform": "matrix(1, 0, 0, 0.8, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 12px",
+              "part": "attention-frame-lower",
+              "transform": "matrix(1, 0, 0, 0.8, 0, 0)"
+            }
+          ],
+          "playing": "true"
+        },
+        {
+          "icon": "batch-sampling",
+          "parts": [
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-occlusion-0",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-occlusion-1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-occlusion-2",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "6px 6px",
+              "part": "batch-mark-0",
+              "transform": "matrix(0.75, 0, 0, 0.75, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 10.4px",
+              "part": "batch-mark-1",
+              "transform": "matrix(0.75, 0, 0, 0.75, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 6px",
+              "part": "batch-mark-2",
+              "transform": "matrix(0.75, 0, 0, 0.75, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-copy-0",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "6px 22.3px",
+              "part": "batch-seat-0",
+              "transform": "matrix(0.4, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-copy-1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 22.3px",
+              "part": "batch-seat-1",
+              "transform": "matrix(0.4, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-copy-2",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 22.3px",
+              "part": "batch-seat-2",
+              "transform": "matrix(0.4, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 23px",
+              "part": "batch-receipt",
+              "transform": "matrix(0.3, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": "true"
+        }
+      ],
+      "focus": "Play batch-sampling study"
+    },
+    {
+      "name": "batch-sampling",
+      "before": [
+        {
+          "icon": "tokenize",
+          "parts": [
+            {
+              "opacity": "0",
+              "origin": "3.8px 5.4px",
+              "part": "token-reading",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.4px 5.4px",
+              "part": "token-boundary-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "14.2px 5.4px",
+              "part": "token-boundary-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "6.3px 12.1px",
+              "part": "token-piece-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "6.3px 18.8px",
+              "part": "token-index-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "11.8px 12.1px",
+              "part": "token-piece-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "11.8px 18.8px",
+              "part": "token-index-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "17.5px 12.1px",
+              "part": "token-piece-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "17.5px 18.8px",
+              "part": "token-index-2",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "embedding-lookup",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "3.8px 8.5px",
+              "part": "embedding-address",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.5px 8.5px",
+              "part": "embedding-component-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12.95px 8.5px",
+              "part": "embedding-component-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "16.4px 8.5px",
+              "part": "embedding-component-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12.75px 20px",
+              "part": "embedding-readout",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "17.7px 8.5px",
+              "part": "embedding-transfer",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12.75px 22.8px",
+              "part": "embedding-edge",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "21.6px 20px",
+              "part": "embedding-receive-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "21.6px 20px",
+              "part": "embedding-receive-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "attention-focus",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "4.8px 12px",
+              "part": "attention-pupil",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-trace-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 4.8px",
+              "part": "attention-key-response-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-trace-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 12px",
+              "part": "attention-key-response-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-trace-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 19.2px",
+              "part": "attention-key-response-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-weight",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 12px",
+              "part": "attention-frame-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 12px",
+              "part": "attention-frame-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "batch-sampling",
+          "parts": [
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-occlusion-0",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-occlusion-1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-occlusion-2",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.0833973",
+              "origin": "6px 6px",
+              "part": "batch-mark-0",
+              "transform": "matrix(0.776062, 0, 0, 0.776062, 0, 0)"
+            },
+            {
+              "opacity": "0.0500384",
+              "origin": "12px 10.4px",
+              "part": "batch-mark-1",
+              "transform": "matrix(0.765637, 0, 0, 0.765637, 0, 0)"
+            },
+            {
+              "opacity": "0.0357417",
+              "origin": "18px 6px",
+              "part": "batch-mark-2",
+              "transform": "matrix(0.761169, 0, 0, 0.761169, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-copy-0",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "6px 22.3px",
+              "part": "batch-seat-0",
+              "transform": "matrix(0.4, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-copy-1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 22.3px",
+              "part": "batch-seat-1",
+              "transform": "matrix(0.4, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-copy-2",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 22.3px",
+              "part": "batch-seat-2",
+              "transform": "matrix(0.4, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 23px",
+              "part": "batch-receipt",
+              "transform": "matrix(0.3, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": "true"
+        }
+      ],
+      "after": [
+        {
+          "icon": "tokenize",
+          "parts": [
+            {
+              "opacity": "0",
+              "origin": "3.8px 5.4px",
+              "part": "token-reading",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.4px 5.4px",
+              "part": "token-boundary-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "14.2px 5.4px",
+              "part": "token-boundary-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "6.3px 12.1px",
+              "part": "token-piece-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "6.3px 18.8px",
+              "part": "token-index-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "11.8px 12.1px",
+              "part": "token-piece-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "11.8px 18.8px",
+              "part": "token-index-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "17.5px 12.1px",
+              "part": "token-piece-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "17.5px 18.8px",
+              "part": "token-index-2",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "embedding-lookup",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "3.8px 8.5px",
+              "part": "embedding-address",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.5px 8.5px",
+              "part": "embedding-component-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12.95px 8.5px",
+              "part": "embedding-component-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "16.4px 8.5px",
+              "part": "embedding-component-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12.75px 20px",
+              "part": "embedding-readout",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "17.7px 8.5px",
+              "part": "embedding-transfer",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12.75px 22.8px",
+              "part": "embedding-edge",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "21.6px 20px",
+              "part": "embedding-receive-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "21.6px 20px",
+              "part": "embedding-receive-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "attention-focus",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "4.8px 12px",
+              "part": "attention-pupil",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-trace-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 4.8px",
+              "part": "attention-key-response-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-trace-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 12px",
+              "part": "attention-key-response-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-trace-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 19.2px",
+              "part": "attention-key-response-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "7.6px 12px",
+              "part": "attention-weight",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 12px",
+              "part": "attention-frame-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.4px 12px",
+              "part": "attention-frame-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "batch-sampling",
+          "parts": [
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-occlusion-0",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-occlusion-1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-occlusion-2",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.350949",
+              "origin": "6px 6px",
+              "part": "batch-mark-0",
+              "transform": "matrix(0.859672, 0, 0, 0.859672, 0, 0)"
+            },
+            {
+              "opacity": "0.21057",
+              "origin": "12px 10.4px",
+              "part": "batch-mark-1",
+              "transform": "matrix(0.815803, 0, 0, 0.815803, 0, 0)"
+            },
+            {
+              "opacity": "0.150407",
+              "origin": "18px 6px",
+              "part": "batch-mark-2",
+              "transform": "matrix(0.797002, 0, 0, 0.797002, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-copy-0",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "6px 22.3px",
+              "part": "batch-seat-0",
+              "transform": "matrix(0.4, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-copy-1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 22.3px",
+              "part": "batch-seat-1",
+              "transform": "matrix(0.4, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "batch-copy-2",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 22.3px",
+              "part": "batch-seat-2",
+              "transform": "matrix(0.4, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 23px",
+              "part": "batch-receipt",
+              "transform": "matrix(0.3, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": "true"
+        }
+      ],
+      "focus": "Inspect bell"
+    }
+  ],
+  "finished": [
+    {
+      "icon": "tokenize",
+      "parts": [
+        {
+          "opacity": "0",
+          "origin": "3.8px 5.4px",
+          "part": "token-reading",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "9.4px 5.4px",
+          "part": "token-boundary-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "14.2px 5.4px",
+          "part": "token-boundary-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "6.3px 12.1px",
+          "part": "token-piece-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "6.3px 18.8px",
+          "part": "token-index-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "11.8px 12.1px",
+          "part": "token-piece-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "11.8px 18.8px",
+          "part": "token-index-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "17.5px 12.1px",
+          "part": "token-piece-2",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "17.5px 18.8px",
+          "part": "token-index-2",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "embedding-lookup",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "3.8px 8.5px",
+          "part": "embedding-address",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "9.5px 8.5px",
+          "part": "embedding-component-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12.95px 8.5px",
+          "part": "embedding-component-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "16.4px 8.5px",
+          "part": "embedding-component-2",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12.75px 20px",
+          "part": "embedding-readout",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "17.7px 8.5px",
+          "part": "embedding-transfer",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12.75px 22.8px",
+          "part": "embedding-edge",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "21.6px 20px",
+          "part": "embedding-receive-upper",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "21.6px 20px",
+          "part": "embedding-receive-lower",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "attention-focus",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "4.8px 12px",
+          "part": "attention-pupil",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "7.6px 12px",
+          "part": "attention-trace-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "18.4px 4.8px",
+          "part": "attention-key-response-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "7.6px 12px",
+          "part": "attention-trace-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "18.4px 12px",
+          "part": "attention-key-response-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "7.6px 12px",
+          "part": "attention-trace-2",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "18.4px 19.2px",
+          "part": "attention-key-response-2",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "7.6px 12px",
+          "part": "attention-weight",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "18.4px 12px",
+          "part": "attention-frame-upper",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "18.4px 12px",
+          "part": "attention-frame-lower",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "batch-sampling",
+      "parts": [
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "batch-occlusion-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "batch-occlusion-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "batch-occlusion-2",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "6px 6px",
+          "part": "batch-mark-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 10.4px",
+          "part": "batch-mark-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "18px 6px",
+          "part": "batch-mark-2",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "batch-copy-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "6px 22.3px",
+          "part": "batch-seat-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "batch-copy-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 22.3px",
+          "part": "batch-seat-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "batch-copy-2",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "18px 22.3px",
+          "part": "batch-seat-2",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 23px",
+          "part": "batch-receipt",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    }
+  ],
+  "reduced": [
+    {
+      "icon": "tokenize",
+      "parts": [
+        {
+          "opacity": "0",
+          "origin": "3.8px 5.4px",
+          "part": "token-reading",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "9.4px 5.4px",
+          "part": "token-boundary-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "14.2px 5.4px",
+          "part": "token-boundary-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "6.3px 12.1px",
+          "part": "token-piece-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "6.3px 18.8px",
+          "part": "token-index-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "11.8px 12.1px",
+          "part": "token-piece-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "11.8px 18.8px",
+          "part": "token-index-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "17.5px 12.1px",
+          "part": "token-piece-2",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "17.5px 18.8px",
+          "part": "token-index-2",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "embedding-lookup",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "3.8px 8.5px",
+          "part": "embedding-address",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "9.5px 8.5px",
+          "part": "embedding-component-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12.95px 8.5px",
+          "part": "embedding-component-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "16.4px 8.5px",
+          "part": "embedding-component-2",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12.75px 20px",
+          "part": "embedding-readout",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "17.7px 8.5px",
+          "part": "embedding-transfer",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12.75px 22.8px",
+          "part": "embedding-edge",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "21.6px 20px",
+          "part": "embedding-receive-upper",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "21.6px 20px",
+          "part": "embedding-receive-lower",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "attention-focus",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "4.8px 12px",
+          "part": "attention-pupil",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "7.6px 12px",
+          "part": "attention-trace-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "18.4px 4.8px",
+          "part": "attention-key-response-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "7.6px 12px",
+          "part": "attention-trace-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "18.4px 12px",
+          "part": "attention-key-response-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "7.6px 12px",
+          "part": "attention-trace-2",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "18.4px 19.2px",
+          "part": "attention-key-response-2",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "7.6px 12px",
+          "part": "attention-weight",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "18.4px 12px",
+          "part": "attention-frame-upper",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "18.4px 12px",
+          "part": "attention-frame-lower",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "batch-sampling",
+      "parts": [
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "batch-occlusion-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "batch-occlusion-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "batch-occlusion-2",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "6px 6px",
+          "part": "batch-mark-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 10.4px",
+          "part": "batch-mark-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "18px 6px",
+          "part": "batch-mark-2",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "batch-copy-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "6px 22.3px",
+          "part": "batch-seat-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "batch-copy-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 22.3px",
+          "part": "batch-seat-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "batch-copy-2",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "18px 22.3px",
+          "part": "batch-seat-2",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 23px",
+          "part": "batch-receipt",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    }
+  ],
+  "motionOff": [
+    {
+      "disabled": true,
+      "label": "Play tokenize study"
+    },
+    {
+      "disabled": true,
+      "label": "Play embedding-lookup study"
+    },
+    {
+      "disabled": true,
+      "label": "Play attention-focus study"
+    },
+    {
+      "disabled": true,
+      "label": "Play batch-sampling study"
+    }
+  ]
+}

@@ -1,3 +1,7 @@
+import {TOKEN_ART,TOKEN_PIECES} from './motions/tokenize';
+import {EMBEDDING_ART} from './motions/embedding-lookup';
+import {ATTENTION_ART,ATTENTION_KEYS} from './motions/attention-focus';
+import {BATCH_ART} from './motions/batch-sampling';
 import {RHYTHM_ART} from './motions/learning-rhythm';
 import {GRADIENT_ART} from './motions/gradient-check';
 import {COMPARE_ART} from './motions/experiment-compare';
@@ -98,6 +102,10 @@ export const definitions = [
  {...def('gradient-check','Learning','Inspect a derivative using two neighboring samples.',vector(GRADIENT_ART.band)),label:'Gradient Check',keywords:['centered audit','derivative','finite difference','epsilon','samples']},
  {...def('experiment-compare','Learning','Inspect distinct experiments against one reference.',vector(COMPARE_ART.pane(2.8)),vector(COMPARE_ART.pane(13.1))),label:'Experiment Compare',keywords:['optimizer','comparison','paired','plots','evidence']},
  {...def('training-step','Learning','Advance one bounded optimizer update.',vector(STEP_ART.band)),label:'Training Step',keywords:['optimizer','descent','parameter','loss','update']},
+ {...def('tokenize','Learning','Separate text into ordered subword tokens.',...TOKEN_PIECES.map(p=>vector(TOKEN_ART.tile(p.x,p.w)))),label:'Tokenize',keywords:['tokenizer','subword','text','encode','segmentation']},
+ {...def('embedding-lookup','Learning','Read a vector by token ID without changing the table.',vector(EMBEDDING_ART.token)),label:'Embedding Lookup',keywords:['embedding table','vector','token id','row','dictionary']},
+ {...def('attention-focus','Learning','Inspect query-key relations while retaining every contributor.',vector(ATTENTION_ART.lens),...ATTENTION_KEYS.map(k=>vector(ATTENTION_ART.key(k.y)))),label:'Attention Focus',keywords:['query','key','soft lookup','weights','relation']},
+ {...def('batch-sampling','Learning','Copy a subset of records while retaining the dataset.',vector(BATCH_ART.tray)),label:'Batch Sampling',keywords:['mini batch','minibatch','dataset','subset','sample selection']},
 ] as const;
 export type IconName = typeof definitions[number]['name'];
 

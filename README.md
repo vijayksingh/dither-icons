@@ -1,6 +1,6 @@
 # Dither Icons
 
-60 original animated SVG icons for React, including 24 icons selected for CraftingAttention. A standalone project by Unlocalhosted, inspired by the discoverability and interaction model of [lucide-animated](https://lucide-animated.com/). No Lucide paths or source are included.
+64 original animated SVG icons for React, including 28 icons selected for CraftingAttention. A standalone project by Unlocalhosted, inspired by the discoverability and interaction model of [lucide-animated](https://lucide-animated.com/). No Lucide paths or source are included.
 
 ## Run the catalog
 
@@ -31,7 +31,7 @@ import { BellIcon } from '@unlocalhosted/dither-icons';
 </button>
 ```
 
-React 18+ is the only peer dependency. ESM and TypeScript declarations ship in `dist/`. CSS is embedded in each SVG so exports work without a stylesheet. All 60 icons use native Web Animations in React, with the same tracks compiled to CSS for standalone SVG hover. Named exports currently share the complete geometry catalog; per-icon bundle splitting is not implemented.
+React 18+ is the only peer dependency. ESM and TypeScript declarations ship in `dist/`. CSS is embedded in each SVG so exports work without a stylesheet. All 64 icons use native Web Animations in React, with the same tracks compiled to CSS for standalone SVG hover. Named exports currently share the complete geometry catalog; per-icon bundle splitting is not implemented.
 
 ### API
 
@@ -58,7 +58,7 @@ Motion obeys `prefers-reduced-motion: reduce`. No looping animation, timers, fil
 - An 8 × 8 Bayer threshold matrix samples directional shading into quarter-unit stipple marks. A subtle tonal base preserves the silhouette. No checkerboard fill or stepped contour.
 - `currentColor` throughout. The hosting interface supplies contrast.
 - Prefer solid / outline at 16–24px. Dither is clearest at 48px+. Contours remain smooth at every size.
-- Motion belongs to semantic parts: lids hinge, arrows lead, bells pivot, and signals pass through a chip. All 60 performances are individually authored, last 720–1600ms, and end at neutral. No catalog icon uses a generic motion preset.
+- Motion belongs to semantic parts: lids hinge, arrows lead, bells pivot, and signals pass through a chip. All 64 performances are individually authored, last 720–1600ms, and end at neutral. No catalog icon uses a generic motion preset.
 - Every new icon needs a name, category, motion explanation, and bounded original geometry in `src/shapes.ts`. The catalog offers eight curated primary colors, with separate light/dark values, and exports the selected color.
 
 ## Checks
@@ -78,14 +78,14 @@ MIT. Original icon geometry and implementation. The reference project's logo, br
 
 ## Individual motion studies
 
-Open `/#motion-studies` and choose a family to inspect all 60 icons. **Platform / 06** opens Learning Rhythm, Gradient Check, Experiment Compare, and Training Step; **Platform / 05** contains Code Run, Test Suite, Milestone, and Concept Review; **Platform / 04** contains Sigma, Bug, Sliders, and Graduation Cap; **Platform / 03** contains Workspace, Gauge, Orbit, and Lifebuoy; **Platform / 02** contains Tensor, Network, Checkpoint, and Hint; **Platform / 01** contains Path, Flask, Target, and Retry. The Foundation family preserves Bell, Heart, Download, and Layers. Use **Half speed**, **Inspect timing**, and the keyboard-accessible scrubber to inspect the same timelines used in the components. These are preview gestures, not claims that a download or notification action occurred.
+Open `/#motion-studies` and choose a family to inspect all 64 icons. **Platform / 07** opens Tokenize, Embedding Lookup, Attention Focus, and Batch Sampling; **Platform / 06** contains Learning Rhythm, Gradient Check, Experiment Compare, and Training Step; **Platform / 05** contains Code Run, Test Suite, Milestone, and Concept Review; **Platform / 04** contains Sigma, Bug, Sliders, and Graduation Cap; **Platform / 03** contains Workspace, Gauge, Orbit, and Lifebuoy; **Platform / 02** contains Tensor, Network, Checkpoint, and Hint; **Platform / 01** contains Path, Flask, Target, and Retry. The Foundation family preserves Bell, Heart, Download, and Layers. Use **Half speed**, **Inspect timing**, and the keyboard-accessible scrubber to inspect the same timelines used in the components. These are preview gestures, not claims that a download or notification action occurred.
 
 - Bell: anchored shell swing, delayed clapper, asymmetric ringing cues.
 - Heart: compression, release, a brief highlight and four quiet escaping flecks.
 - Download: the arrow remains visible; the tray catches, rebounds, and settles. No symbol substitution.
 - Layers: independent planes compress, separate, hold, and return in sequence.
 
-`src/choreography.ts` collects the accepted foundation and the individually authored tracks in `src/motions/`. `src/CraftedArtwork.tsx`, `src/ExtendedArtwork.tsx`, `src/LearningArtwork.tsx`, `src/PlatformArtwork.tsx`, `src/PlatformNavigationArtwork.tsx`, `src/PlatformToolsArtwork.tsx`, `src/LearningWorkflowArtwork.tsx`, and `src/LearningPracticeArtwork.tsx` name the semantic parts. `src/useChoreography.ts` owns interaction lifecycle and scrubbing. See [motion review evidence](docs/MOTION-REVIEW.md) and [platform integration mapping](docs/PLATFORM-ICONS.md).
+`src/choreography.ts` collects the accepted foundation and the individually authored tracks in `src/motions/`. `src/CraftedArtwork.tsx`, `src/ExtendedArtwork.tsx`, `src/LearningArtwork.tsx`, `src/PlatformArtwork.tsx`, `src/PlatformNavigationArtwork.tsx`, `src/PlatformToolsArtwork.tsx`, `src/LearningWorkflowArtwork.tsx`, `src/LearningPracticeArtwork.tsx`, and `src/DataFlowArtwork.tsx` name the semantic parts. `src/useChoreography.ts` owns interaction lifecycle and scrubbing. See [motion review evidence](docs/MOTION-REVIEW.md) and [platform integration mapping](docs/PLATFORM-ICONS.md).
 
 ## Authoring and review
 
@@ -94,3 +94,5 @@ Read [motion principles](docs/MOTION-PRINCIPLES.md), then the icon's [individual
 Platform / 05 uses semantic display names in the gallery and exported usage examples. Search also matches use-case keywords such as `execute`, `assertions`, `capability`, and `recall`; stable IDs and exports are `code-run` / `CodeRunIcon`, `test-suite` / `TestSuiteIcon`, `milestone` / `MilestoneIcon`, and `concept-review` / `ConceptReviewIcon`.
 
 Platform / 06 adds `LearningRhythmIcon`, `GradientCheckIcon`, `ExperimentCompareIcon`, and `TrainingStepIcon`. Their semantic labels appear in the catalog and their use-case keywords include `daily goal`, `finite difference`, `paired`, and `descent`.
+
+Platform / 07 adds `TokenizeIcon`, `EmbeddingLookupIcon`, `AttentionFocusIcon`, and `BatchSamplingIcon`. These four concept studies are retained at the user's request. Future batches must be selected from actual platform interface controls and navigation, with a concrete call site for each icon. See [platform selection policy](docs/PLATFORM-ICONS.md).

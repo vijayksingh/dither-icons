@@ -1,3 +1,4 @@
+import {DataFlowArtwork} from './DataFlowArtwork';
 import {LearningPracticeArtwork} from './LearningPracticeArtwork';
 import {LearningWorkflowArtwork} from './LearningWorkflowArtwork';
 import {PlatformToolsArtwork} from './PlatformToolsArtwork';
@@ -19,6 +20,7 @@ const Accent=({part,children}:{part:string;children:ReactNode})=><g data-part={p
 
 export function CraftedArtwork({name,draw,texture}:Props){
  if(!studies[name])return null;
+ if(['tokenize','embedding-lookup','attention-focus','batch-sampling'].includes(name))return <DataFlowArtwork name={name} draw={draw} texture={texture}/>;
  if(['learning-rhythm','gradient-check','experiment-compare','training-step'].includes(name))return <LearningPracticeArtwork name={name} draw={draw} texture={texture}/>;
  if(['code-run','test-suite','milestone','concept-review'].includes(name))return <LearningWorkflowArtwork name={name} draw={draw} texture={texture}/>;
  if(['sigma','bug','sliders','graduation-cap'].includes(name))return <PlatformToolsArtwork name={name} draw={draw} texture={texture}/>;

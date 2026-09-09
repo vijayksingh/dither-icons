@@ -92,3 +92,20 @@ Source inspected 2026-09-09. Preserve Run versus Submission and advisory visible
 Source inspected 2026-09-09. These are proposed semantic affordances for real controls, not replacements already made. Learning Rhythm does not start a timer or change the Daily goal. Gradient Check does not claim the audit passed. Comparison retains different evidence and no invented winner. Training Step illustrates one update, not guaranteed loss reduction or convergence. The actual lesson remains authoritative for state and numeric results.
 
 Apply UI-2/4, COLOR-2/5, A11Y-2/4 and MOTION-1/4/6/7. Preserve native labels, focus, disabled states and actual control semantics. The less familiar mathematical icons especially need their labels; use solid/outline for compact controls and 48px+ dither for entry points. **Platform / 06** contains the four named exports. No platform call sites changed.
+
+## Selection policy — user correction, 2026-09-09
+
+Future batches must come from **real platform interface needs**: existing controls, navigation, status affordances or actions missing from this library. Inspect the platform source first. Record the concrete call site and existing label/icon before selecting each candidate. Prefer useful reusable interface icons; do not select another set merely because its concepts appear in lesson content. Keep batches to four.
+
+## Platform / 07 — retained concept studies
+
+These four were already created when the user corrected the direction and explicitly requested committing them. They remain available in the library; their lesson references are semantic grounding, not evidence of missing interface icons or approval to integrate them.
+
+| Name / export | Semantic source inspected in CraftingAttention |
+| --- | --- |
+| Tokenize / `TokenizeIcon` | `app/src/lessons/primitives/systems/TokenizerViz.tsx:586–609`; text input and tokenized result |
+| Embedding Lookup / `EmbeddingLookupIcon` | `app/src/content/tokens-language-modeling/tiny-language-model-lab/index.ts:89–103`; token ID selects a copied table row |
+| Attention Focus / `AttentionFocusIcon` | `app/src/lessons/primitives/viz/AttentionHeatmap.tsx:288–300`; query/key relations. `nn/DictionaryLookupViz.tsx:7–16` distinguishes attention from hard lookup |
+| Batch Sampling / `BatchSamplingIcon` | `app/src/lessons/primitives/math/GradientBatchEstimatorViz.tsx:13–16,51–66`; full, single and mini-batch sample selection |
+
+No call sites changed. These gestures do not perform tokenization, return numerical embeddings, compute attention or alter batch selection. Apply UI-2/4, COLOR-2/5, A11Y-2/4 and MOTION-1/4/6/7 to any later integration. Preserve native labels and real state; prefer still solid/outline for compact controls. Dither is intended for larger labeled entry points.

@@ -130,3 +130,11 @@ export const GradientCheckIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'na
 export const ExperimentCompareIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function ExperimentCompareIcon(props,ref){return <DitherIcon {...props} name="experiment-compare" ref={ref}/>;});
 
 export const TrainingStepIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function TrainingStepIcon(props,ref){return <DitherIcon {...props} name="training-step" ref={ref}/>;});
+
+export const TokenizeIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function TokenizeIcon(props,ref){return <DitherIcon {...props} name="tokenize" ref={ref}/>;});
+
+export const EmbeddingLookupIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function EmbeddingLookupIcon(props,ref){return <DitherIcon {...props} name="embedding-lookup" ref={ref}/>;});
+
+export const AttentionFocusIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function AttentionFocusIcon(props,ref){return <DitherIcon {...props} name="attention-focus" ref={ref}/>;});
+
+export const BatchSamplingIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function BatchSamplingIcon(props,ref){return <DitherIcon {...props} name="batch-sampling" ref={ref}/>;});

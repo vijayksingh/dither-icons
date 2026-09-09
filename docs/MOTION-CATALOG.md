@@ -68,6 +68,10 @@ The four accepted foundation performances remain intact. The remaining icons use
 | [Gradient Check](icon-reviews/gradient-check.md) | inspect a derivative from two neighboring samples | Sample / Narrow / Inspect | 1500ms |
 | [Experiment Compare](icon-reviews/experiment-compare.md) | inspect distinct experiments against one reference | Separate / Scan / Compare | 1520ms |
 | [Training Step](icon-reviews/training-step.md) | advance one bounded optimizer update | Read / Step / Inspect | 1500ms |
+| [Tokenize](icon-reviews/tokenize.md) | segment a sequence without losing its order | Read / Split / Index | 1420ms |
+| [Embedding Lookup](icon-reviews/embedding-lookup.md) | read a copy of one addressed vector | Address / Select / Read | 1520ms |
+| [Attention Focus](icon-reviews/attention-focus.md) | compare all keys and emphasize a relation | Query / Compare / Attend | 1460ms |
+| [Batch Sampling](icon-reviews/batch-sampling.md) | collect a subset while retaining the source | Mark / Collect / Hold | 1540ms |
 
 ## Focused refinement 01
 
@@ -115,4 +119,10 @@ Choose **Platform / 05** for **Code Run, Test Suite, Milestone, Concept Review**
 
 ## Platform / 06
 
-**Learning Rhythm, Gradient Check, Experiment Compare, Training Step** are the default study group. The selection comes from Learning rhythm settings, the centered derivative audit, paired optimizer views and Step motion. One weighted beat, two symmetric probes, shared sampling of distinct plots, and a bounded descent each have their own local response. The four reviews and [browser references](motion-evidence/platform-06/) include the rendered contour refinements and JavaScript-free SVG board. Earlier fifty-six timelines retain their behavior.
+Choose **Platform / 06** for **Learning Rhythm, Gradient Check, Experiment Compare, Training Step**. The selection comes from Learning rhythm settings, the centered derivative audit, paired optimizer views and Step motion. One weighted beat, two symmetric probes, shared sampling of distinct plots, and a bounded descent each have their own local response. The four reviews and [browser references](motion-evidence/platform-06/) include the rendered contour refinements and JavaScript-free SVG board. Earlier fifty-six timelines retain their behavior.
+
+## Platform / 07
+
+The default family contains **Tokenize, Embedding Lookup, Attention Focus, Batch Sampling**. Each has original contours, a separate semantic storyboard, a localized response, and [rendered references](motion-evidence/platform-07/). Tokens retain order; the table retains its row; attention retains every key; sampling retains the source. Earlier sixty timelines and the runtime are unchanged.
+
+The user requested retaining and committing these four, then corrected the selection direction: subsequent batches must cover actual platform interface needs, not additional concept illustrations. Follow the selection policy in [PLATFORM-ICONS.md](PLATFORM-ICONS.md).
