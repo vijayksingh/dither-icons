@@ -17,6 +17,8 @@ The build job checks that the tag matches both package versions and that its com
 
 The built tarball, website archive, package integrity, version, and source SHA are passed between jobs as a single GitHub Actions artifact. Publish uses that tarball with npm OIDC. It checks the public registry integrity and `latest`, then repeats the consumer test against the exact published version.
 
+Registry publication can precede availability in the metadata used by `npm install`. The publish job waits up to three minutes for that public metadata and `latest` before checking the consumer. A successful publish response alone is insufficient.
+
 Only after npm passes does deployment upload the prepared website to Cloudflare Pages `dither-icons`, branch `main`. The public `/release.json` identifies its package version, commit, and tarball integrity. The final check uses normal DNS and HTTPS, verifies that source SHA, page metadata, sharing PNGs, scripts/styles, and crawler files. A GitHub Release with package artifacts is created after those checks succeed.
 
 ## One-time credentials and bootstrap

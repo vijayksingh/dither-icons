@@ -10,8 +10,8 @@ const git = (...args) => execFileSync('git', args, { encoding: 'utf8' }).trim();
 const integrity = file => `sha512-${createHash('sha512').update(readFileSync(file)).digest('base64')}`;
 const registryUrl = `https://registry.npmjs.org/${encodeURIComponent(pkg.name)}`;
 
-async function registry(path) {
-  const response = await fetch(`${registryUrl}/${path}`, { signal: AbortSignal.timeout(20_000) });
+async function registry(path = '') {
+  const response = await fetch(path ? `${registryUrl}/${path}` : registryUrl, { signal: AbortSignal.timeout(20_000) });
   if (response.status === 404) return null;
   assert.equal(response.status, 200, `Registry check failed: HTTP ${response.status}`);
   return response.json();
@@ -56,13 +56,19 @@ if (command === 'validate') {
   if (!published && command === 'publish') {
     execFileSync('npm', ['publish', 'release/package.tgz', '--access', 'public', '--tag', 'latest', '--ignore-scripts'], { stdio: 'inherit' });
   }
-  for (let attempt = 0; !published && attempt < 12; attempt++) {
+  // The version endpoint can become available before the package metadata used
+  // by npm install. Wait for both the version and latest in that public index.
+  let manifest;
+  for (let attempt = 0; attempt < 36; attempt++) {
+    manifest = await registry();
+    published = manifest?.versions?.[pkg.version];
+    if (published && manifest['dist-tags']?.latest === pkg.version) break;
+    if (attempt === 0) console.log('Waiting for public npm metadata propagation...');
     await setTimeout(5000);
-    published = await registry(pkg.version);
   }
   assert.ok(published, 'Package is not visible in the public registry');
   assert.equal(published.dist.integrity, artifact.integrity, 'Published version differs from this artifact; never overwrite or retag it');
-  assert.equal((await registry('latest'))?.version, pkg.version, 'npm latest does not point to this release');
+  assert.equal(manifest['dist-tags']?.latest, pkg.version, 'npm latest does not point to this release');
   console.log(`Verified ${pkg.name}@${pkg.version} and latest, with matching package integrity`);
 } else {
   throw new Error('Usage: node scripts/release-package.mjs validate|prepare|publish|verify');
