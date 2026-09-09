@@ -18,7 +18,7 @@ For manual recovery, build the revision being released with `SITE_URL=https://di
   --project-name dither-icons --branch main --commit-hash <release-sha> --commit-dirty=false
 ```
 
-Credentials remain in the root-owned infra secret file. Do not copy them into this repository. Record the deployment URL and source commit, then verify the custom domain below.
+The manual-recovery credential remains in the root-owned infra secret file and is restricted to that machine's IP. GitHub Actions uses a separate Pages Edit token, as documented in [RELEASING.md](RELEASING.md). Do not copy either credential into this repository. Record the deployment URL and source commit, then verify the custom domain below.
 
 The `dist` directory is the React library, not the website. Publish the complete `site-dist` directory. It includes downloadable packages, documentation, 77 route-specific HTML entries, social PNGs, robots.txt, and a sitemap.
 
