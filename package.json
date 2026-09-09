@@ -23,19 +23,21 @@
   },
   "scripts": {
     "dev": "vite --host 127.0.0.1 --port 4192",
-    "build": "npm run generate:docs && tsup src/index.tsx --format esm --dts --external react --clean && node scripts/package-gallery.mjs && vite build",
+    "build": "npm run generate:docs && npm run generate:social && tsup src/index.tsx --format esm --dts --external react --clean && node scripts/package-gallery.mjs && vite build && tsx scripts/generate-share-pages.ts",
     "typecheck": "tsc --noEmit",
     "test": "tsx --test tests/*.test.tsx",
     "prepack": "npm run generate:docs && tsup src/index.tsx --format esm --dts --external react --clean",
-    "generate:docs": "tsx scripts/generate-docs.tsx"
+    "generate:docs": "tsx scripts/generate-docs.tsx",
+    "generate:social": "tsx scripts/generate-social.tsx"
   },
   "peerDependencies": {
     "react": ">=18"
   },
   "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "@types/node": "^22.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tsup": "^8.0.0",

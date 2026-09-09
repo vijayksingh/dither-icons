@@ -11,7 +11,7 @@
 ## Documentation
 
 - [A good place to start.](/docs/introduction.md): A small library with a particular point of view. Here’s how to make it part of yours.
-- [In your project in minutes.](/docs/installation.md): A local package for React. A standalone SVG for everywhere else.
+- [In your project in minutes.](/docs/installation.md): A downloadable package for React. A standalone SVG for everywhere else.
 - [React, without ceremony.](/docs/react.md): Named components, ordinary SVG props, and a few deliberate controls for motion.
 - [Motion with a meaning.](/docs/motion.md): A short action, a clear response, and an exact return to rest.
 - [A little delight. For everyone.](/docs/accessibility.md): The interaction should still make sense with a keyboard, a screen reader, or no motion at all.

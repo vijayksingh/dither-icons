@@ -150,7 +150,7 @@ npm run generate:docs # Regenerate guides, manifest and visual references
 
 `dist/` contains the built React package; `site-dist/` contains the built public site. Build and pack regenerate the documentation from the real exports. Edit `demo/content/docs.ts` and `demo/content/agent.ts`, then regenerate instead of hand-editing generated files.
 
-Static hosting needs a fallback from client-side routes to `index.html`. The included `public/_redirects` supplies it for compatible hosts; serve existing resource files normally. No hosted gallery or registry release is assumed by these instructions.
+Cloudflare Pages serves the generated route directories and provides its native SPA fallback. Do not add a catch-all rewrite that replaces route-specific HTML. See [Cloudflare deployment](docs/DEPLOYMENT.md) for the production settings. The React package is distributed as a download; a registry release is not yet available.
 
 ## Contributing
 
@@ -162,6 +162,20 @@ For a new icon, begin with an actual interface action. Define its meaning, the s
 
 ## Credits and license
 
-Created by [Vijay Singh](https://github.com/vijayksingh) / Unlocalhosted. The public browsing experience takes inspiration from [lucide-animated](https://lucide-animated.com/) and [transitions.dev](https://transitions.dev/). The icon geometry and implementation are original; reference branding, assets and source are not included.
+Created by [Vijay Singh](https://github.com/vijayksingh) / Unlocalhosted. Find me on [Twitter / X](https://twitter.com/dprophecyguy) and [LinkedIn](https://www.linkedin.com/in/iamvijaysingh/). The public browsing experience takes inspiration from [lucide-animated](https://lucide-animated.com/) and [transitions.dev](https://transitions.dev/). The icon geometry and implementation are original; reference branding, assets and source are not included.
 
 [MIT](LICENSE) — free to use, modify and distribute, including in commercial projects. Retain the license notice.
+
+## Social previews
+
+The production build generates 1200 × 630 PNG previews and crawler-readable HTML for the home page, guides, motion studio, AI page, and all 68 icons. Share an icon URL to show that icon in the preview. Open Graph and Twitter card metadata are present in the initial HTML; crawlers do not need JavaScript.
+
+The canonical origin defaults to `https://dithered.dev`. To build for another origin:
+
+```sh
+SITE_URL=https://your-domain.example npm run build
+```
+
+Deploy the complete `site-dist/` directory, including route directories and `og/`. Existing files must take precedence over the SPA fallback. Social networks can cache previews; publishing a build does not invalidate their caches. No deployment is performed by `npm run build`.
+
+`npm run generate:social` regenerates just the images from the original artwork. Their bundled DM Sans font is licensed under the [SIL Open Font License](scripts/assets/OFL-DM-Sans.txt). Preview metadata follows the [Open Graph specification](https://ogp.me/).

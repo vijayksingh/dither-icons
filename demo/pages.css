@@ -89,3 +89,7 @@ a.card-title { display: flex; flex-direction: column; justify-content: center; }
 }
 @media (prefers-reduced-motion: reduce) { .page-arrival { animation: none; }.agent-example-button:active { transform: none; } }
 .app[data-motion=false] .page-arrival { animation: none; }
+
+.site-footer { flex-wrap: wrap; }.site-footer .creator-socials { margin-left: auto; gap: 17px; }.site-footer > span a { color: var(--text); }.site-footer nav[aria-label="Footer navigation"] { margin-left: 0; }
+@media(max-width:900px){.site-footer .creator-socials { margin-left: 0; }.site-footer { gap: 14px 24px; }}
+@media(max-width:600px){.site-footer .creator-socials { order: 3; justify-content: flex-start; gap: 24px; }.site-footer > span { order: 4; }}

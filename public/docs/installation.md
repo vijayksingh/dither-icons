@@ -1,6 +1,6 @@
 # In your project in minutes.
 
-A local package for React. A standalone SVG for everywhere else.
+A downloadable package for React. A standalone SVG for everywhere else.
 
 ## 01. Take the package.
 

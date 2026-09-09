@@ -19,6 +19,8 @@
     "src",
     "demo",
     "tests",
-    "scripts/generate-docs.tsx"
+    "scripts/generate-docs.tsx",
+    "scripts/generate-social.tsx",
+    "scripts/generate-share-pages.ts"
   ]
 }

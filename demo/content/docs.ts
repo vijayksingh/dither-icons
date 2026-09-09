@@ -32,7 +32,7 @@ export const docs: Doc[] = [
       { type: 'image', src: '/reference/textures.svg', alt: 'The same Download icon in dither, solid and outline textures.', caption: 'One drawing. Three ways to belong in your interface.' },
     ] },
     { id: 'your-first-icon', title: 'Your first little detail.', blocks: [
-      { type: 'text', text: 'Install the local package, import a named component, and add it to a real button. The icon inherits your text color and needs no separate stylesheet.' },
+      { type: 'text', text: 'Install the downloaded package, import a named component, and add it to a real button. The icon inherits your text color and needs no separate stylesheet.' },
       { type: 'code', language: 'tsx', title: 'DownloadButton.tsx', value: basicExample },
       { type: 'demo', kind: 'button' },
     ] },
@@ -42,10 +42,10 @@ export const docs: Doc[] = [
     ] },
     { id: 'what-ships', title: 'Small surface. Considered behavior.', blocks: [
       { type: 'list', items: ['React 18+ is the only peer dependency. ESM and TypeScript declarations are included.', 'Hover, focus and tap play once. A gesture finishes after the pointer leaves.', 'Reduced-motion preferences are respected automatically. Static icons remain useful.', 'MIT licensed. Original geometry and individually authored animation tracks.'] },
-      { type: 'note', text: 'The package is currently a local download, not published to the npm registry. Named exports share the complete geometry catalog; per-icon bundle splitting is not implemented.' },
+      { type: 'note', text: 'Install the downloadable React package. A registry release is not available yet. Named exports share the complete geometry catalog; per-icon bundle splitting is not implemented.' },
     ] },
   ] },
-  { slug: 'installation', title: 'In your project in minutes.', eyebrow: 'INSTALLATION', description: 'A local package for React. A standalone SVG for everywhere else.', sections: [
+  { slug: 'installation', title: 'In your project in minutes.', eyebrow: 'INSTALLATION', description: 'A downloadable package for React. A standalone SVG for everywhere else.', sections: [
     { id: 'download', title: '01. Take the package.', blocks: [
       { type: 'text', text: 'Download the .tgz package using Get the library. Place it in your application directory, then install it using your package manager.' },
       { type: 'code', language: 'sh', title: 'Terminal', value: installCommand },
