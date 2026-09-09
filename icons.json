@@ -5,8 +5,8 @@
   "count": 68,
   "license": "MIT",
   "installation": {
-    "publishedToNpm": false,
-    "command": "npm install ./unlocalhosted-dither-icons-0.1.0.tgz",
+    "publishedToNpm": true,
+    "command": "npm install @unlocalhosted/dither-icons",
     "peerDependencies": {
       "react": ">=18"
     }

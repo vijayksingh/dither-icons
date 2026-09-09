@@ -33,6 +33,10 @@
   "peerDependencies": {
     "react": ">=18"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "devDependencies": {
     "@resvg/resvg-js": "^2.6.2",
     "@types/node": "^22.0.0",

@@ -12,7 +12,7 @@ One drawing. Three ways to belong in your interface.
 
 ## Your first little detail.
 
-Install the downloaded package, import a named component, and add it to a real button. The icon inherits your text color and needs no separate stylesheet.
+Install the package, import a named component, and add it to a real button. The icon inherits your text color and needs no separate stylesheet.
 
 ```tsx
 import { DownloadIcon } from '@unlocalhosted/dither-icons';
@@ -39,4 +39,4 @@ The texture changes the material, not the drawing or meaning. Color and contrast
 - Reduced-motion preferences are respected automatically. Static icons remain useful.
 - MIT licensed. Original geometry and individually authored animation tracks.
 
-> Install the downloadable React package. A registry release is not available yet. Named exports share the complete geometry catalog; per-icon bundle splitting is not implemented.
+> Install the React package from npm. Named exports share the complete geometry catalog; per-icon bundle splitting is not implemented.

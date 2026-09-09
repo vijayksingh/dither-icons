@@ -4,7 +4,7 @@ Use existing components from @unlocalhosted/dither-icons. Do not invent export n
 
 ## Installation
 
-The package is not published to the npm registry. Download the site's .tgz file or run npm pack in the library checkout. Install the actual local file in the target app. React 18+ is the only peer dependency. The package contains ESM, TypeScript declarations, this AI.md guide, and icons.json.
+Install @unlocalhosted/dither-icons from the npm registry. React 18+ is the only peer dependency. The package contains ESM, TypeScript declarations, this AI.md guide, and icons.json.
 
 ## Selection
 
@@ -30,10 +30,10 @@ Standalone SVG includes compiled CSS tracks and internal texture definitions. In
 
 Verify the imported name exists in icons.json. Check the actual rendered size, label, focus ring, keyboard activation, disabled/loading state, color contrast and reduced motion. Inspect real state changes separately from icon feedback. Named exports currently share the complete geometry catalog; do not claim per-icon bundle splitting.
 
-## Install the downloaded package
+## Install from npm
 
 ```sh
-npm install ./unlocalhosted-dither-icons-0.1.0.tgz
+npm install @unlocalhosted/dither-icons
 ```
 
 # React, without ceremony.

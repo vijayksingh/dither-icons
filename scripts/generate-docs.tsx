@@ -26,7 +26,7 @@ const manifest = {
   version: packageInfo.version,
   count: definitions.length,
   license: 'MIT',
-  installation: { publishedToNpm: false, command: installCommand, peerDependencies: packageInfo.peerDependencies },
+  installation: { publishedToNpm: true, command: installCommand, peerDependencies: packageInfo.peerDependencies },
   textures: ['dither', 'solid', 'outline'],
   sizing: { viewBox: '0 0 24 24', default: 24, ditherRecommendedMinimum: 48, compactRecommendation: 'solid or outline' },
   icons: definitions.map(icon => ({ name: icon.name, component: componentName(icon.name), label: labelFor(icon.name), category: icon.category, description: icon.description, keywords: icon.keywords ?? [], page: `/icons/${icon.name}`, motion: { caption: studies[icon.name].caption, durationMs: studies[icon.name].duration, stages: studies[icon.name].stages } })),
@@ -34,10 +34,10 @@ const manifest = {
 const serialized = JSON.stringify(manifest, null, 2) + '\n';
 write('public/icons.json', serialized); write('icons.json', serialized);
 const api = docs.find(doc => doc.slug === 'react')!;
-const agentGuide = `${agentContract}\n## Install the downloaded package\n\n\`\`\`sh\n${installCommand}\n\`\`\`\n\n${markdown(api)}\n## Visual references\n\n- Material comparison: /reference/textures.svg\n- Labeled contact sheet: /reference/icons.svg\n\nThese references are served by the website. Download them alongside this guide when working with a remote agent.\n`;
+const agentGuide = `${agentContract}\n## Install from npm\n\n\`\`\`sh\n${installCommand}\n\`\`\`\n\n${markdown(api)}\n## Visual references\n\n- Material comparison: /reference/textures.svg\n- Labeled contact sheet: /reference/icons.svg\n\nThese references are served by the website. Download them alongside this guide when working with a remote agent.\n`;
 write('AI.md', agentGuide); write('public/AI.md', agentGuide);
 for (const doc of docs) write(`public/docs/${doc.slug || 'introduction'}.md`, markdown(doc));
-write('public/llms.txt', `# Dither Icons\n\n> ${definitions.length} original SVG icons with fine ordered dither and individually authored semantic motion. React 18+, MIT.\n\n## Start here\n\n- [Complete integration guide](/llms-full.txt): API, examples, behavior and valid exports.\n- [Agent contract](/AI.md): concise instructions for integrating the library.\n- [Icon manifest](/icons.json): schema version 1; exact names, exports, keywords and motion metadata.\n\n## Documentation\n\n${docs.map(doc => `- [${doc.title}](/docs/${doc.slug || 'introduction'}.md): ${doc.description}`).join('\n')}\n\n## Visual references\n\n- [Material comparison](/reference/textures.svg)\n- [All icons with export names](/reference/icons.svg)\n\n## Installation status\n\nVersion ${packageInfo.version}. Local .tgz package only; not published to the npm registry.\n`);
+write('public/llms.txt', `# Dither Icons\n\n> ${definitions.length} original SVG icons with fine ordered dither and individually authored semantic motion. React 18+, MIT.\n\n## Start here\n\n- [Complete integration guide](/llms-full.txt): API, examples, behavior and valid exports.\n- [Agent contract](/AI.md): concise instructions for integrating the library.\n- [Icon manifest](/icons.json): schema version 1; exact names, exports, keywords and motion metadata.\n\n## Documentation\n\n${docs.map(doc => `- [${doc.title}](/docs/${doc.slug || 'introduction'}.md): ${doc.description}`).join('\n')}\n\n## Visual references\n\n- [Material comparison](/reference/textures.svg)\n- [All icons with export names](/reference/icons.svg)\n\n## Installation status\n\nVersion ${packageInfo.version}. Install with \`${installCommand}\`.\n`);
 write('public/llms-full.txt', `${agentContract}\n${docs.map(markdown).join('\n')}\n## Available icons\n\n| Stable name | React export | Meaning |\n| --- | --- | --- |\n${manifest.icons.map(icon => `| ${icon.name} | ${icon.component} | ${icon.motion.caption} |`).join('\n')}\n\n## Visual references\n\n![Three textures](/reference/textures.svg)\n\n![All ${definitions.length} labeled icons](/reference/icons.svg)\n`);
 
 // Render the actual accepted drawings. One shared grain field keeps these

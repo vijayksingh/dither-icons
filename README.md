@@ -52,14 +52,10 @@ Open **http://127.0.0.1:4192** to explore the gallery. Hover or tap a preview to
 
 ## Use in your React app
 
-The package is **not published to npm yet**. Create a local package from this checkout:
+Install the package from npm:
 
 ```sh
-# Inside the dither-icons checkout, after npm ci:
-npm pack
-
-# Inside your application, use the path to the generated file:
-npm install /absolute/path/to/unlocalhosted-dither-icons-0.1.0.tgz
+npm install @unlocalhosted/dither-icons
 ```
 
 Import a named component and put the action on a real control:
@@ -119,7 +115,7 @@ ESM and TypeScript declarations are included. Named exports currently share the 
 | Guide | Contents |
 | --- | --- |
 | [Introduction](public/docs/introduction.md) | First icon, materials and library behavior |
-| [Installation](public/docs/installation.md) | Local package, React environments and SVG use |
+| [Installation](public/docs/installation.md) | npm package, React environments and SVG use |
 | [React API](public/docs/react.md) | Props, named exports, dynamic selection and replay |
 | [Motion](public/docs/motion.md) | Semantic gestures, triggers and frame inspection |
 | [Accessibility](public/docs/accessibility.md) | Labels, keyboard interaction, state and reduced motion |
@@ -150,7 +146,7 @@ npm run generate:docs # Regenerate guides, manifest and visual references
 
 `dist/` contains the built React package; `site-dist/` contains the built public site. Build and pack regenerate the documentation from the real exports. Edit `demo/content/docs.ts` and `demo/content/agent.ts`, then regenerate instead of hand-editing generated files.
 
-Cloudflare Pages serves the generated route directories and provides its native SPA fallback. Do not add a catch-all rewrite that replaces route-specific HTML. See [Cloudflare deployment](docs/DEPLOYMENT.md) for the production settings. The React package is distributed as a download; a registry release is not yet available.
+Cloudflare Pages serves the generated route directories and provides its native SPA fallback. Do not add a catch-all rewrite that replaces route-specific HTML. See [Cloudflare deployment](docs/DEPLOYMENT.md) for the production settings. The React package is published to npm as `@unlocalhosted/dither-icons`.
 
 ## Contributing
 

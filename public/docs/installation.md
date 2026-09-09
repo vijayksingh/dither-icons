@@ -1,16 +1,16 @@
 # In your project in minutes.
 
-A downloadable package for React. A standalone SVG for everywhere else.
+A React package from npm. A standalone SVG for everywhere else.
 
 ## 01. Take the package.
 
-Download the .tgz package using Get the library. Place it in your application directory, then install it using your package manager.
+Install the package from npm using your package manager.
 
 ```sh
-npm install ./unlocalhosted-dither-icons-0.1.0.tgz
+npm install @unlocalhosted/dither-icons
 ```
 
-> Run this command in the directory containing the downloaded file, or replace the relative path with its actual location. A bare npm install @unlocalhosted/dither-icons is not available yet.
+> React 18 or newer is the only peer dependency.
 
 ## 02. Add an icon.
 

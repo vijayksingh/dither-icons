@@ -5,7 +5,7 @@ export function agentPrompt(name: string, texture: Texture, size: number, origin
 
 Read ${origin}/llms-full.txt for the integration contract and ${origin}/icons.json for valid names and exports. If these URLs are not reachable from your environment, ask for the downloaded AI.md and icons.json files instead.
 
-Use the existing ${componentName(name)} export from @unlocalhosted/dither-icons, with texture="${texture}" and size={${size}}. This package is a local .tgz download, not published on the npm registry. Verify it is installed before adding the import.
+Use the existing ${componentName(name)} export from @unlocalhosted/dither-icons, with texture="${texture}" and size={${size}}. Install @unlocalhosted/dither-icons from npm before adding the import.
 
 Keep the existing application action and state. Use a real button with a meaningful accessible name and visible focus; add di-trigger to that button. Let the icon inherit the interface's semantic color. Respect reduced motion, and never use the gesture as proof that an action succeeded. Preserve the original geometry and individual animation tracks.
 
@@ -21,7 +21,7 @@ Use existing components from @unlocalhosted/dither-icons. Do not invent export n
 
 ## Installation
 
-The package is not published to the npm registry. Download the site's .tgz file or run npm pack in the library checkout. Install the actual local file in the target app. React 18+ is the only peer dependency. The package contains ESM, TypeScript declarations, this AI.md guide, and icons.json.
+Install @unlocalhosted/dither-icons from the npm registry. React 18+ is the only peer dependency. The package contains ESM, TypeScript declarations, this AI.md guide, and icons.json.
 
 ## Selection
 

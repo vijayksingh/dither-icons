@@ -13,7 +13,7 @@ const manifest = JSON.parse(read('public/icons.json'));
 test('agent manifest resolves every exported icon and its actual motion', () => {
   assert.equal(manifest.count, library.definitions.length);
   assert.equal(manifest.icons.length, library.definitions.length);
-  assert.equal(manifest.installation.publishedToNpm, false);
+  assert.equal(manifest.installation.publishedToNpm, true);
   assert.equal(new Set(manifest.icons.map((icon: { name: string }) => icon.name)).size, library.definitions.length);
   for (const icon of manifest.icons) {
     const definition = library.definitions.find(item => item.name === icon.name);
@@ -47,7 +47,7 @@ test('every downloadable guide contains the published sections and working local
 
 test('agent instructions carry the selected component and host integration contract', () => {
   const prompt = agentPrompt('sign-out', 'outline', 24, 'https://icons.example');
-  for (const token of ['SignOutIcon', 'texture="outline"', 'size={24}', 'color="currentColor"', 'aria-label="Sign Out"', 'di-trigger', 'https://icons.example/icons.json', 'reduced motion', 'existing application action and state', 'not published']) assert.ok(prompt.includes(token), token);
+  for (const token of ['SignOutIcon', 'texture="outline"', 'size={24}', 'color="currentColor"', 'aria-label="Sign Out"', 'di-trigger', 'https://icons.example/icons.json', 'reduced motion', 'existing application action and state', 'Install @unlocalhosted/dither-icons from npm']) assert.ok(prompt.includes(token), token);
   assert.ok(!prompt.includes('SavePreferencesIcon'));
 });
 
