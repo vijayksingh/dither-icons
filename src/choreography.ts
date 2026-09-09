@@ -1,3 +1,4 @@
+import {platformActions} from './motions/platform-actions';
 import {dataFlow} from './motions/data-flow';
 import {learningPractice} from './motions/learning-practice';
 import {learningWorkflow} from './motions/learning-workflow';
@@ -29,7 +30,7 @@ export type Study = { duration:number; caption:string; stages:string[]; tracks:T
 const EASE={settle:'cubic-bezier(.22,1,.36,1)',accelerate:'cubic-bezier(.55,0,.85,.45)',smooth:'cubic-bezier(.4,0,.2,1)'};
 const track=(part:string,origin:string,frames:Frame[]):Track=>({part,origin,frames});
 export const studies:Record<string,Study>={
- ...learningWorkflow,...learningPractice,...dataFlow,...platformTools,...navigation,...files,...learning,...platformNavigation,...communication,...media,...development,...controls,...presence,...atmosphere,
+ ...learningWorkflow,...learningPractice,...dataFlow,...platformActions,...platformTools,...navigation,...files,...learning,...platformNavigation,...communication,...media,...development,...controls,...presence,...atmosphere,
  bell:{duration:940,caption:'A little weight. A lingering ring.',stages:['Anticipate','Strike','Resonate'],tracks:[
   track('shell','12px 5px',[
    {at:0,transform:'rotate(0deg)',easing:EASE.smooth},{at:100,transform:'rotate(-7deg)',easing:EASE.accelerate},

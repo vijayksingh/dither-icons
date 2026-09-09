@@ -72,6 +72,10 @@ The four accepted foundation performances remain intact. The remaining icons use
 | [Embedding Lookup](icon-reviews/embedding-lookup.md) | read a copy of one addressed vector | Address / Select / Read | 1520ms |
 | [Attention Focus](icon-reviews/attention-focus.md) | compare all keys and emphasize a relation | Query / Compare / Attend | 1460ms |
 | [Batch Sampling](icon-reviews/batch-sampling.md) | collect a subset while retaining the source | Mark / Collect / Hold | 1540ms |
+| [Save Preferences](icon-reviews/save-preferences.md) | store deliberately edited preferences | Open / Write / Seat | 1380ms |
+| [File Explorer](icon-reviews/file-explorer.md) | reveal the file tree while retaining context | Reveal / Arrange / Settle | 1460ms |
+| [Expand View](icon-reviews/expand-view.md) | increase room around the current subject | Gather / Expand / Breathe | 1440ms |
+| [Sign Out](icon-reviews/sign-out.md) | leave the authenticated account session | Open / Leave / Release | 1540ms |
 
 ## Focused refinement 01
 
@@ -123,6 +127,10 @@ Choose **Platform / 06** for **Learning Rhythm, Gradient Check, Experiment Compa
 
 ## Platform / 07
 
-The default family contains **Tokenize, Embedding Lookup, Attention Focus, Batch Sampling**. Each has original contours, a separate semantic storyboard, a localized response, and [rendered references](motion-evidence/platform-07/). Tokens retain order; the table retains its row; attention retains every key; sampling retains the source. Earlier sixty timelines and the runtime are unchanged.
+The **Platform / 07** family contains **Tokenize, Embedding Lookup, Attention Focus, Batch Sampling**. Each has original contours, a separate semantic storyboard, a localized response, and [rendered references](motion-evidence/platform-07/). Tokens retain order; the table retains its row; attention retains every key; sampling retains the source. Earlier sixty timelines and the runtime are unchanged.
 
 The user requested retaining and committing these four, then corrected the selection direction: subsequent batches must cover actual platform interface needs, not additional concept illustrations. Follow the selection policy in [PLATFORM-ICONS.md](PLATFORM-ICONS.md).
+
+## Platform / 08
+
+The default group contains **Save Preferences, File Explorer, Expand View, Sign Out**, selected from existing functional controls in Settings and the Lab/Problem workbenches. Writing precedes shutter closure; opening space keeps file-tree endpoints connected; expansion preserves the subject; the exit arrow waits for the doorway. Each has an individual Interface Craft critique, named export and [browser references](motion-evidence/platform-08/). The previous sixty-four timelines and the runtime remain unchanged.

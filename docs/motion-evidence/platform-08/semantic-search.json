@@ -1,0 +1,52 @@
+{
+  "queries": [
+    {
+      "query": "persist",
+      "expected": "save-preferences",
+      "results": [
+        "Inspect save-preferences"
+      ]
+    },
+    {
+      "query": "sidebar",
+      "expected": "file-explorer",
+      "results": [
+        "Inspect file-explorer"
+      ]
+    },
+    {
+      "query": "maximize",
+      "expected": "expand-view",
+      "results": [
+        "Inspect expand-view"
+      ]
+    },
+    {
+      "query": "logout",
+      "expected": "sign-out",
+      "results": [
+        "Inspect sign-out"
+      ]
+    }
+  ],
+  "emptyStateObserved": true,
+  "resetCount": 68,
+  "snippets": [
+    {
+      "name": "save-preferences",
+      "text": "import { SavePreferencesIcon } from '@unlocalhosted/dither-icons';\n\n<button className=\"di-trigger\" aria-label=\"Save Preferences\">\n  <SavePreferencesIcon size={64} texture=\"dither\" color=\"#bea5f5\" animate={true} />\n</button>"
+    },
+    {
+      "name": "file-explorer",
+      "text": "import { FileExplorerIcon } from '@unlocalhosted/dither-icons';\n\n<button className=\"di-trigger\" aria-label=\"File Explorer\">\n  <FileExplorerIcon size={64} texture=\"dither\" color=\"#bea5f5\" animate={true} />\n</button>"
+    },
+    {
+      "name": "expand-view",
+      "text": "import { ExpandViewIcon } from '@unlocalhosted/dither-icons';\n\n<button className=\"di-trigger\" aria-label=\"Expand View\">\n  <ExpandViewIcon size={64} texture=\"dither\" color=\"#bea5f5\" animate={true} />\n</button>"
+    },
+    {
+      "name": "sign-out",
+      "text": "import { SignOutIcon } from '@unlocalhosted/dither-icons';\n\n<button className=\"di-trigger\" aria-label=\"Sign Out\">\n  <SignOutIcon size={64} texture=\"dither\" color=\"#bea5f5\" animate={true} />\n</button>"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "columns": "173px 173px",
+  "icons": [
+    {
+      "name": "save-preferences",
+      "playing": "true"
+    },
+    {
+      "name": "file-explorer",
+      "playing": "true"
+    },
+    {
+      "name": "expand-view",
+      "playing": "true"
+    },
+    {
+      "name": "sign-out",
+      "playing": "true"
+    }
+  ],
+  "scroll": 390,
+  "width": 390,
+  "errors": []
+}

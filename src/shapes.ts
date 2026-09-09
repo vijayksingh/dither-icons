@@ -1,3 +1,7 @@
+import {SAVE_ART} from './motions/save-preferences';
+import {EXPLORER_ART} from './motions/file-explorer';
+import {EXPAND_ART} from './motions/expand-view';
+import {EXIT_ART} from './motions/sign-out';
 import {TOKEN_ART,TOKEN_PIECES} from './motions/tokenize';
 import {EMBEDDING_ART} from './motions/embedding-lookup';
 import {ATTENTION_ART,ATTENTION_KEYS} from './motions/attention-focus';
@@ -106,6 +110,10 @@ export const definitions = [
  {...def('embedding-lookup','Learning','Read a vector by token ID without changing the table.',vector(EMBEDDING_ART.token)),label:'Embedding Lookup',keywords:['embedding table','vector','token id','row','dictionary']},
  {...def('attention-focus','Learning','Inspect query-key relations while retaining every contributor.',vector(ATTENTION_ART.lens),...ATTENTION_KEYS.map(k=>vector(ATTENTION_ART.key(k.y)))),label:'Attention Focus',keywords:['query','key','soft lookup','weights','relation']},
  {...def('batch-sampling','Learning','Copy a subset of records while retaining the dataset.',vector(BATCH_ART.tray)),label:'Batch Sampling',keywords:['mini batch','minibatch','dataset','subset','sample selection']},
+ {...def('save-preferences','Interface','Store deliberately edited preferences.',vector(SAVE_ART.shell),vector(SAVE_ART.shutter)),label:'Save Preferences',keywords:['save','settings','persist','disk','profile']},
+ {...def('file-explorer','Development','Reveal the file tree while retaining the active file.',vector(EXPLORER_ART.frame)),label:'File Explorer',keywords:['sidebar','panel','files','editor','show explorer']},
+ {...def('expand-view','Interface','Make room around the current visualizer.',vector(EXPAND_ART.corner)),label:'Expand View',keywords:['expand','maximize','fullscreen','visualizer','enlarge']},
+ {...def('sign-out','Interface','Leave the authenticated account session.',vector(EXIT_ART.frame),vector(EXIT_ART.arrow)),label:'Sign Out',keywords:['logout','log out','account','session','exit']},
 ] as const;
 export type IconName = typeof definitions[number]['name'];
 

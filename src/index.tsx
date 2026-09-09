@@ -138,3 +138,8 @@ export const EmbeddingLookupIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'
 export const AttentionFocusIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function AttentionFocusIcon(props,ref){return <DitherIcon {...props} name="attention-focus" ref={ref}/>;});
 
 export const BatchSamplingIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function BatchSamplingIcon(props,ref){return <DitherIcon {...props} name="batch-sampling" ref={ref}/>;});
+
+export const SavePreferencesIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function SavePreferencesIcon(props,ref){return <DitherIcon {...props} name="save-preferences" ref={ref}/>;});
+export const FileExplorerIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function FileExplorerIcon(props,ref){return <DitherIcon {...props} name="file-explorer" ref={ref}/>;});
+export const ExpandViewIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function ExpandViewIcon(props,ref){return <DitherIcon {...props} name="expand-view" ref={ref}/>;});
+export const SignOutIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function SignOutIcon(props,ref){return <DitherIcon {...props} name="sign-out" ref={ref}/>;});

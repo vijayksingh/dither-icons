@@ -109,3 +109,16 @@ These four were already created when the user corrected the direction and explic
 | Batch Sampling / `BatchSamplingIcon` | `app/src/lessons/primitives/math/GradientBatchEstimatorViz.tsx:13–16,51–66`; full, single and mini-batch sample selection |
 
 No call sites changed. These gestures do not perform tokenization, return numerical embeddings, compute attention or alter batch selection. Apply UI-2/4, COLOR-2/5, A11Y-2/4 and MOTION-1/4/6/7 to any later integration. Preserve native labels and real state; prefer still solid/outline for compact controls. Dither is intended for larger labeled entry points.
+
+## Platform / 08 — existing interface controls
+
+| Semantic name / export | Concrete platform control | Observed source in CraftingAttention |
+| --- | --- | --- |
+| Save Preferences / `SavePreferencesIcon` | Save preferences, idle/pending icon | `app/src/components/ui/amicro/ActionMorph.tsx:244–251`; invoked with real persistence in `app/src/routes/settings.tsx:322–342` |
+| File Explorer / `FileExplorerIcon` | Show file explorer | `app/src/routes/lab.$slug.tsx:1669–1678`; `explorerOpen`, `toggleExplorer`, PanelLeftOpen/PanelLeftClose |
+| Expand View / `ExpandViewIcon` | Expand visualizer | `app/src/routes/problem.$slug.tsx:1786–1795`; `setExpanded(true)` guarded by `canExpand`, existing ExpandIcon |
+| Sign Out / `SignOutIcon` | Authenticated Sign out | `app/src/routes/settings.tsx:170–179`; `originSession.signOut()`, currently ShieldCheck |
+
+Source inspected 2026-09-09 before selection. Every candidate maps to an existing functional control, not a lesson topic. The Bookmark affordance was excluded from this batch because its inspected button had no action handler.
+
+Apply UI-2/4, COLOR-2/5, A11Y-2/4 and MOTION-1/4/6/7. Retain native targets, accessible labels and state. SaveActionButton owns pending/success/error; this animation never certifies persistence. Use File Explorer for Show and preserve a truthful Hide treatment. Keep Expand's desktop eligibility and disabled explanation. Sign Out belongs only to the authenticated action; keep Sign in distinct. Prefer still solid/outline at compact, frequently used controls; full gestures suit larger infrequent entry points. No platform call sites changed in this library batch.

@@ -1,0 +1,593 @@
+[
+  {
+    "texture": "dither",
+    "icons": [
+      {
+        "icon": "save-preferences",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "8.5px 7px",
+            "part": "save-shutter",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.2224",
+            "origin": "9.5px 14.25px",
+            "part": "save-write-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.2224",
+            "origin": "9.5px 16.45px",
+            "part": "save-write-1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.873",
+            "origin": "15px 7px",
+            "part": "save-stop",
+            "transform": "matrix(1, 0, 0, 0.982, 0, 0)"
+          },
+          {
+            "opacity": "0.776",
+            "origin": "15px 7px",
+            "part": "save-witness-upper",
+            "transform": "matrix(0.9895, 0, 0, 0.9895, 0, 0)"
+          },
+          {
+            "opacity": "0.776",
+            "origin": "15px 7px",
+            "part": "save-witness-lower",
+            "transform": "matrix(0.9895, 0, 0, 0.9895, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "file-explorer",
+        "parts": [
+          {
+            "opacity": "0.45",
+            "origin": "0px 0px",
+            "part": "explorer-code",
+            "transform": "matrix(1, 0, 0, 1, 2.3, 0)"
+          },
+          {
+            "opacity": "0.65",
+            "origin": "0px 0px",
+            "part": "explorer-divider",
+            "transform": "matrix(1, 0, 0, 1, 2.3, 0)"
+          },
+          {
+            "opacity": "0.6",
+            "origin": "5.6px 10.6px",
+            "part": "explorer-branch-0",
+            "transform": "matrix(2.35294, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.6",
+            "origin": "5.6px 13.8px",
+            "part": "explorer-branch-1",
+            "transform": "matrix(2.35294, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.6",
+            "origin": "5.6px 17px",
+            "part": "explorer-branch-2",
+            "transform": "matrix(2.35294, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "0px 0px",
+            "part": "explorer-nodes",
+            "transform": "matrix(1, 0, 0, 1, 2.3, 0)"
+          },
+          {
+            "opacity": "0.452",
+            "origin": "7.3px 13.8px",
+            "part": "explorer-active",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.556308",
+            "origin": "11.1px 13.8px",
+            "part": "explorer-seat-top",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.556308",
+            "origin": "11.1px 13.8px",
+            "part": "explorer-seat-bottom",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "expand-view",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 12px",
+            "part": "expand-corner-0",
+            "transform": "matrix(1, 0, 0, 1, -1.6, -1.6)"
+          },
+          {
+            "opacity": "0.443857",
+            "origin": "6px 6px",
+            "part": "expand-echo-0",
+            "transform": "matrix(1.01269, 0, 0, 1.01269, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 12px",
+            "part": "expand-corner-1",
+            "transform": "matrix(1, 0, 0, 1, 1.6, -1.6)"
+          },
+          {
+            "opacity": "0.540348",
+            "origin": "18px 6px",
+            "part": "expand-echo-1",
+            "transform": "matrix(1.00675, 0, 0, 1.00675, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 12px",
+            "part": "expand-corner-2",
+            "transform": "matrix(1, 0, 0, 1, 1.6, 1.6)"
+          },
+          {
+            "opacity": "0.443857",
+            "origin": "18px 18px",
+            "part": "expand-echo-2",
+            "transform": "matrix(1.01269, 0, 0, 1.01269, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 12px",
+            "part": "expand-corner-3",
+            "transform": "matrix(1, 0, 0, 1, -1.6, 1.6)"
+          },
+          {
+            "opacity": "0.540348",
+            "origin": "6px 18px",
+            "part": "expand-echo-3",
+            "transform": "matrix(1.00675, 0, 0, 1.00675, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "sign-out",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "5.2px 12px",
+            "part": "exit-occlusion",
+            "transform": "matrix(0.58, 0.13, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "10.1px 12px",
+            "part": "exit-arrow",
+            "transform": "matrix(1, 0, 0, 1, 2.1, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "5.2px 12px",
+            "part": "exit-leaf",
+            "transform": "matrix(0.58, 0.13, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.549474",
+            "origin": "11.6px 12px",
+            "part": "exit-witness-upper",
+            "transform": "matrix(1.03208, 0, 0, 1.03208, 0, 0)"
+          },
+          {
+            "opacity": "0.549474",
+            "origin": "11.6px 12px",
+            "part": "exit-witness-lower",
+            "transform": "matrix(1.03208, 0, 0, 1.03208, 0, 0)"
+          }
+        ],
+        "playing": null
+      }
+    ]
+  },
+  {
+    "texture": "outline",
+    "icons": [
+      {
+        "icon": "save-preferences",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "8.5px 7px",
+            "part": "save-shutter",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.2224",
+            "origin": "9.5px 14.25px",
+            "part": "save-write-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.2224",
+            "origin": "9.5px 16.45px",
+            "part": "save-write-1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.873",
+            "origin": "15px 7px",
+            "part": "save-stop",
+            "transform": "matrix(1, 0, 0, 0.982, 0, 0)"
+          },
+          {
+            "opacity": "0.776",
+            "origin": "15px 7px",
+            "part": "save-witness-upper",
+            "transform": "matrix(0.9895, 0, 0, 0.9895, 0, 0)"
+          },
+          {
+            "opacity": "0.776",
+            "origin": "15px 7px",
+            "part": "save-witness-lower",
+            "transform": "matrix(0.9895, 0, 0, 0.9895, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "file-explorer",
+        "parts": [
+          {
+            "opacity": "0.45",
+            "origin": "0px 0px",
+            "part": "explorer-code",
+            "transform": "matrix(1, 0, 0, 1, 2.3, 0)"
+          },
+          {
+            "opacity": "0.65",
+            "origin": "0px 0px",
+            "part": "explorer-divider",
+            "transform": "matrix(1, 0, 0, 1, 2.3, 0)"
+          },
+          {
+            "opacity": "0.6",
+            "origin": "5.6px 10.6px",
+            "part": "explorer-branch-0",
+            "transform": "matrix(2.35294, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.6",
+            "origin": "5.6px 13.8px",
+            "part": "explorer-branch-1",
+            "transform": "matrix(2.35294, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.6",
+            "origin": "5.6px 17px",
+            "part": "explorer-branch-2",
+            "transform": "matrix(2.35294, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "0px 0px",
+            "part": "explorer-nodes",
+            "transform": "matrix(1, 0, 0, 1, 2.3, 0)"
+          },
+          {
+            "opacity": "0.452",
+            "origin": "7.3px 13.8px",
+            "part": "explorer-active",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.556308",
+            "origin": "11.1px 13.8px",
+            "part": "explorer-seat-top",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.556308",
+            "origin": "11.1px 13.8px",
+            "part": "explorer-seat-bottom",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "expand-view",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 12px",
+            "part": "expand-corner-0",
+            "transform": "matrix(1, 0, 0, 1, -1.6, -1.6)"
+          },
+          {
+            "opacity": "0.443857",
+            "origin": "6px 6px",
+            "part": "expand-echo-0",
+            "transform": "matrix(1.01269, 0, 0, 1.01269, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 12px",
+            "part": "expand-corner-1",
+            "transform": "matrix(1, 0, 0, 1, 1.6, -1.6)"
+          },
+          {
+            "opacity": "0.540348",
+            "origin": "18px 6px",
+            "part": "expand-echo-1",
+            "transform": "matrix(1.00675, 0, 0, 1.00675, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 12px",
+            "part": "expand-corner-2",
+            "transform": "matrix(1, 0, 0, 1, 1.6, 1.6)"
+          },
+          {
+            "opacity": "0.443857",
+            "origin": "18px 18px",
+            "part": "expand-echo-2",
+            "transform": "matrix(1.01269, 0, 0, 1.01269, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 12px",
+            "part": "expand-corner-3",
+            "transform": "matrix(1, 0, 0, 1, -1.6, 1.6)"
+          },
+          {
+            "opacity": "0.540348",
+            "origin": "6px 18px",
+            "part": "expand-echo-3",
+            "transform": "matrix(1.00675, 0, 0, 1.00675, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "sign-out",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "5.2px 12px",
+            "part": "exit-occlusion",
+            "transform": "matrix(0.58, 0.13, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "10.1px 12px",
+            "part": "exit-arrow",
+            "transform": "matrix(1, 0, 0, 1, 2.1, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "5.2px 12px",
+            "part": "exit-leaf",
+            "transform": "matrix(0.58, 0.13, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.549474",
+            "origin": "11.6px 12px",
+            "part": "exit-witness-upper",
+            "transform": "matrix(1.03208, 0, 0, 1.03208, 0, 0)"
+          },
+          {
+            "opacity": "0.549474",
+            "origin": "11.6px 12px",
+            "part": "exit-witness-lower",
+            "transform": "matrix(1.03208, 0, 0, 1.03208, 0, 0)"
+          }
+        ],
+        "playing": null
+      }
+    ]
+  },
+  {
+    "texture": "solid",
+    "icons": [
+      {
+        "icon": "save-preferences",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "8.5px 7px",
+            "part": "save-shutter",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.2224",
+            "origin": "9.5px 14.25px",
+            "part": "save-write-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.2224",
+            "origin": "9.5px 16.45px",
+            "part": "save-write-1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.873",
+            "origin": "15px 7px",
+            "part": "save-stop",
+            "transform": "matrix(1, 0, 0, 0.982, 0, 0)"
+          },
+          {
+            "opacity": "0.776",
+            "origin": "15px 7px",
+            "part": "save-witness-upper",
+            "transform": "matrix(0.9895, 0, 0, 0.9895, 0, 0)"
+          },
+          {
+            "opacity": "0.776",
+            "origin": "15px 7px",
+            "part": "save-witness-lower",
+            "transform": "matrix(0.9895, 0, 0, 0.9895, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "file-explorer",
+        "parts": [
+          {
+            "opacity": "0.45",
+            "origin": "0px 0px",
+            "part": "explorer-code",
+            "transform": "matrix(1, 0, 0, 1, 2.3, 0)"
+          },
+          {
+            "opacity": "0.65",
+            "origin": "0px 0px",
+            "part": "explorer-divider",
+            "transform": "matrix(1, 0, 0, 1, 2.3, 0)"
+          },
+          {
+            "opacity": "0.6",
+            "origin": "5.6px 10.6px",
+            "part": "explorer-branch-0",
+            "transform": "matrix(2.35294, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.6",
+            "origin": "5.6px 13.8px",
+            "part": "explorer-branch-1",
+            "transform": "matrix(2.35294, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.6",
+            "origin": "5.6px 17px",
+            "part": "explorer-branch-2",
+            "transform": "matrix(2.35294, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "0px 0px",
+            "part": "explorer-nodes",
+            "transform": "matrix(1, 0, 0, 1, 2.3, 0)"
+          },
+          {
+            "opacity": "0.452",
+            "origin": "7.3px 13.8px",
+            "part": "explorer-active",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.556308",
+            "origin": "11.1px 13.8px",
+            "part": "explorer-seat-top",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.556308",
+            "origin": "11.1px 13.8px",
+            "part": "explorer-seat-bottom",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "expand-view",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 12px",
+            "part": "expand-corner-0",
+            "transform": "matrix(1, 0, 0, 1, -1.6, -1.6)"
+          },
+          {
+            "opacity": "0.443857",
+            "origin": "6px 6px",
+            "part": "expand-echo-0",
+            "transform": "matrix(1.01269, 0, 0, 1.01269, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 12px",
+            "part": "expand-corner-1",
+            "transform": "matrix(1, 0, 0, 1, 1.6, -1.6)"
+          },
+          {
+            "opacity": "0.540348",
+            "origin": "18px 6px",
+            "part": "expand-echo-1",
+            "transform": "matrix(1.00675, 0, 0, 1.00675, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 12px",
+            "part": "expand-corner-2",
+            "transform": "matrix(1, 0, 0, 1, 1.6, 1.6)"
+          },
+          {
+            "opacity": "0.443857",
+            "origin": "18px 18px",
+            "part": "expand-echo-2",
+            "transform": "matrix(1.01269, 0, 0, 1.01269, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 12px",
+            "part": "expand-corner-3",
+            "transform": "matrix(1, 0, 0, 1, -1.6, 1.6)"
+          },
+          {
+            "opacity": "0.540348",
+            "origin": "6px 18px",
+            "part": "expand-echo-3",
+            "transform": "matrix(1.00675, 0, 0, 1.00675, 0, 0)"
+          }
+        ],
+        "playing": null
+      },
+      {
+        "icon": "sign-out",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "5.2px 12px",
+            "part": "exit-occlusion",
+            "transform": "matrix(0.58, 0.13, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "10.1px 12px",
+            "part": "exit-arrow",
+            "transform": "matrix(1, 0, 0, 1, 2.1, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "5.2px 12px",
+            "part": "exit-leaf",
+            "transform": "matrix(0.58, 0.13, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.549474",
+            "origin": "11.6px 12px",
+            "part": "exit-witness-upper",
+            "transform": "matrix(1.03208, 0, 0, 1.03208, 0, 0)"
+          },
+          {
+            "opacity": "0.549474",
+            "origin": "11.6px 12px",
+            "part": "exit-witness-lower",
+            "transform": "matrix(1.03208, 0, 0, 1.03208, 0, 0)"
+          }
+        ],
+        "playing": null
+      }
+    ]
+  }
+]
