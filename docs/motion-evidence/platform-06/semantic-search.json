@@ -1,0 +1,26 @@
+[
+  {
+    "query": "daily goal",
+    "result": [
+      "Inspect learning-rhythm"
+    ]
+  },
+  {
+    "query": "finite difference",
+    "result": [
+      "Inspect gradient-check"
+    ]
+  },
+  {
+    "query": "paired",
+    "result": [
+      "Inspect experiment-compare"
+    ]
+  },
+  {
+    "query": "descent",
+    "result": [
+      "Inspect training-step"
+    ]
+  }
+]

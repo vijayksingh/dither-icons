@@ -64,6 +64,11 @@ The four accepted foundation performances remain intact. The remaining icons use
 | [Milestone](icon-reviews/milestone.md) | Orient toward a capability on a Path. | Anchor / Unfurl / Hold | 1420ms |
 | [Concept Review](icon-reviews/concept-review.md) | Revisit an earlier idea while retaining context. | Open / Recall / Nest | 1480ms |
 
+| [Learning Rhythm](icon-reviews/learning-rhythm.md) | keep a measured learning cadence | Pick up / Beat / Rest | 1460ms |
+| [Gradient Check](icon-reviews/gradient-check.md) | inspect a derivative from two neighboring samples | Sample / Narrow / Inspect | 1500ms |
+| [Experiment Compare](icon-reviews/experiment-compare.md) | inspect distinct experiments against one reference | Separate / Scan / Compare | 1520ms |
+| [Training Step](icon-reviews/training-step.md) | advance one bounded optimizer update | Read / Step / Inspect | 1500ms |
+
 ## Focused refinement 01
 
 The user requested a smaller, more careful batch after the broad rollout. Only the first four entries above have been refined in this pass. Their new reviews supersede the earlier rollout reports for those four. Choose **Refinement / 01** in Motion studies. Each now has connected geometry, its own named timing/configuration, and a localized climax (MOT-16). The remaining icons are outside this batch.
@@ -106,4 +111,8 @@ Screenshots show browser-rendered poses, not invented concept art. Color remains
 
 ## Platform / 05
 
-**Code Run, Test Suite, Milestone, Concept Review** are the default study family. Their semantic names and keywords also appear in collection search and usage snippets. Source receipts precede launch; separate cases precede a collection response; connected cloth transmits one wave; retained cards expose the earlier idea before recall light arrives. Concept Review received a subsequent arrow contour refinement. Each has its own Interface Craft report and references in `motion-evidence/platform-05/`. Previous fifty-two timelines remain unchanged.
+Choose **Platform / 05** for **Code Run, Test Suite, Milestone, Concept Review**. Their semantic names and keywords also appear in collection search and usage snippets. Source receipts precede launch; separate cases precede a collection response; connected cloth transmits one wave; retained cards expose the earlier idea before recall light arrives. Concept Review received a subsequent arrow contour refinement. Each has its own Interface Craft report and references in `motion-evidence/platform-05/`. Previous fifty-two timelines remain unchanged.
+
+## Platform / 06
+
+**Learning Rhythm, Gradient Check, Experiment Compare, Training Step** are the default study group. The selection comes from Learning rhythm settings, the centered derivative audit, paired optimizer views and Step motion. One weighted beat, two symmetric probes, shared sampling of distinct plots, and a bounded descent each have their own local response. The four reviews and [browser references](motion-evidence/platform-06/) include the rendered contour refinements and JavaScript-free SVG board. Earlier fifty-six timelines retain their behavior.

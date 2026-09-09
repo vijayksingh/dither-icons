@@ -122,3 +122,11 @@ export const TestSuiteIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>
 export const MilestoneIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function MilestoneIcon(props,ref){return <DitherIcon {...props} name="milestone" ref={ref}/>;});
 
 export const ConceptReviewIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function ConceptReviewIcon(props,ref){return <DitherIcon {...props} name="concept-review" ref={ref}/>;});
+
+export const LearningRhythmIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function LearningRhythmIcon(props,ref){return <DitherIcon {...props} name="learning-rhythm" ref={ref}/>;});
+
+export const GradientCheckIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function GradientCheckIcon(props,ref){return <DitherIcon {...props} name="gradient-check" ref={ref}/>;});
+
+export const ExperimentCompareIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function ExperimentCompareIcon(props,ref){return <DitherIcon {...props} name="experiment-compare" ref={ref}/>;});
+
+export const TrainingStepIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function TrainingStepIcon(props,ref){return <DitherIcon {...props} name="training-step" ref={ref}/>;});

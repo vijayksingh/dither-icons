@@ -4,7 +4,7 @@ import React from 'react';
 import {renderToStaticMarkup} from 'react-dom/server';
 import {DitherIcon,BellIcon,definitions,cellPaths,motionStyles} from '../src/index';
 test('all original icons render every texture without duplicate or out-of-grid cells',()=>{
- assert.equal(definitions.length,56);assert.equal(new Set(definitions.map(d=>d.name)).size,56);
+ assert.equal(definitions.length,60);assert.equal(new Set(definitions.map(d=>d.name)).size,60);
  for(const d of definitions){for(const p of d.parts){assert.equal(new Set(p.cells.map(c=>c.join(','))).size,p.cells.length);assert.ok(p.cells.every(([x,y])=>Number.isInteger(x)&&Number.isInteger(y)&&x>=0&&y>=0&&x<24&&y<24),d.name)}
  for(const texture of ['dither','solid','outline'] as const){const svg=renderToStaticMarkup(<DitherIcon name={d.name} texture={texture}/>);assert.ok(svg.includes('viewBox="0 0 24 24"'));assert.ok(!svg.includes('NaN'));}}
 });

@@ -1,3 +1,7 @@
+import {RHYTHM_ART} from './motions/learning-rhythm';
+import {GRADIENT_ART} from './motions/gradient-check';
+import {COMPARE_ART} from './motions/experiment-compare';
+import {STEP_ART} from './motions/training-step';
 import {CODE_RUN_ART} from './motions/code-run';
 import {SUITE_ART,SUITE_CASES} from './motions/test-suite';
 import {MILESTONE_ART} from './motions/milestone';
@@ -90,6 +94,10 @@ export const definitions = [
  {...def('test-suite','Development','Inspect independent test cases in a shared fixture.',...SUITE_CASES.map(c=>vector(SUITE_ART.glass(c.x,c.top)))),label:'Test Suite',keywords:['tests','visible tests','cases','assertions','compare','samples']},
  {...def('milestone','Learning','Orient toward a capability checkpoint in a Path.',vector(MILESTONE_ART.mast),vector(MILESTONE_ART.base),vector(MILESTONE_ART.root),vector(MILESTONE_ART.free)),label:'Milestone',keywords:['capability','checkpoint','path','flag','goal']},
  {...def('concept-review','Learning','Revisit an earlier idea while preserving its context.',vector(REVIEW_ART.rear),vector(REVIEW_ART.front)),label:'Concept Review',keywords:['recall','revisit','reflection','review view','memory','cards']},
+ {...def('learning-rhythm','Learning','Keep a measured learning cadence.',vector(RHYTHM_ART.case),vector(RHYTHM_ART.weight)),label:'Learning Rhythm',keywords:['daily goal','cadence','metronome','time','schedule']},
+ {...def('gradient-check','Learning','Inspect a derivative using two neighboring samples.',vector(GRADIENT_ART.band)),label:'Gradient Check',keywords:['centered audit','derivative','finite difference','epsilon','samples']},
+ {...def('experiment-compare','Learning','Inspect distinct experiments against one reference.',vector(COMPARE_ART.pane(2.8)),vector(COMPARE_ART.pane(13.1))),label:'Experiment Compare',keywords:['optimizer','comparison','paired','plots','evidence']},
+ {...def('training-step','Learning','Advance one bounded optimizer update.',vector(STEP_ART.band)),label:'Training Step',keywords:['optimizer','descent','parameter','loss','update']},
 ] as const;
 export type IconName = typeof definitions[number]['name'];
 

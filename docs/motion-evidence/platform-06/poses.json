@@ -1,0 +1,1506 @@
+{
+  "0": [
+    {
+      "icon": "learning-rhythm",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "12px 17.8px",
+          "part": "rhythm-arm",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 9.8px",
+          "part": "rhythm-glint",
+          "transform": "matrix(0.5, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "18px 8px",
+          "part": "rhythm-beat-upper",
+          "transform": "matrix(1, 0, 0, 1, -0.2, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "18px 8px",
+          "part": "rhythm-beat-lower",
+          "transform": "matrix(1, 0, 0, 1, -0.2, 0)"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "gradient-check",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-knockout-0",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-knockout-1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0.55",
+          "origin": "12px 13.56px",
+          "part": "gradient-chord",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-probe-0",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-probe-1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 15px",
+          "part": "gradient-center",
+          "transform": "matrix(0.65, 0, 0, 0.65, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 18.4px",
+          "part": "gradient-witness",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.25)"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "experiment-compare",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "6.85px 12px",
+          "part": "compare-pane-0",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "compare-cursor-0",
+          "transform": "matrix(1, 0, 0, 1, 4.7, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "compare-point-0",
+          "transform": "matrix(1, 0, 0, 1, 4.7, 15)"
+        },
+        {
+          "opacity": "0",
+          "origin": "9.1px 9.5px",
+          "part": "compare-response-0",
+          "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "origin": "17.15px 12px",
+          "part": "compare-pane-1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "compare-cursor-1",
+          "transform": "matrix(1, 0, 0, 1, 14.9, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "compare-point-1",
+          "transform": "matrix(1, 0, 0, 1, 14.9, 15.5)"
+        },
+        {
+          "opacity": "0",
+          "origin": "19.3px 9.2px",
+          "part": "compare-response-1",
+          "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 21px",
+          "part": "compare-receipt",
+          "transform": "matrix(0.4, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "training-step",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "training-knockout",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "4.668px 8.912px",
+          "part": "training-read",
+          "transform": "matrix(0.4, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "4.668px 8.912px",
+          "part": "training-origin",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "training-point",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-ring",
+          "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-normal-upper",
+          "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-normal-lower",
+          "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+        }
+      ],
+      "playing": null
+    }
+  ],
+  "10": [
+    {
+      "icon": "learning-rhythm",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "12px 17.8px",
+          "part": "rhythm-arm",
+          "transform": "matrix(0.997815, -0.0660717, 0.0660717, 0.997815, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 9.8px",
+          "part": "rhythm-glint",
+          "transform": "matrix(0.5, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "18px 8px",
+          "part": "rhythm-beat-upper",
+          "transform": "matrix(1, 0, 0, 1, -0.2, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "18px 8px",
+          "part": "rhythm-beat-lower",
+          "transform": "matrix(1, 0, 0, 1, -0.2, 0)"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "gradient-check",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-knockout-0",
+          "transform": "matrix(1, 0, 0, 1, -0.239149, 0.00249171)"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-knockout-1",
+          "transform": "matrix(1, 0, 0, 1, 0.239149, -0.236658)"
+        },
+        {
+          "opacity": "0.55",
+          "origin": "12px 13.56px",
+          "part": "gradient-chord",
+          "transform": "matrix(1.03986, -0.019928, -1.00729e-08, 1, 0, -0.117083)"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-probe-0",
+          "transform": "matrix(1, 0, 0, 1, -0.239149, 0.00249171)"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-probe-1",
+          "transform": "matrix(1, 0, 0, 1, 0.239149, -0.236658)"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 15px",
+          "part": "gradient-center",
+          "transform": "matrix(0.65, 0, 0, 0.65, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 18.4px",
+          "part": "gradient-witness",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.25)"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "experiment-compare",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "6.85px 12px",
+          "part": "compare-pane-0",
+          "transform": "matrix(1, 0, 0, 1, -6.7386e-05, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "compare-cursor-0",
+          "transform": "matrix(1, 0, 0, 1, 4.7, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "compare-point-0",
+          "transform": "matrix(1, 0, 0, 1, 4.7, 15)"
+        },
+        {
+          "opacity": "0",
+          "origin": "9.1px 9.5px",
+          "part": "compare-response-0",
+          "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "origin": "17.15px 12px",
+          "part": "compare-pane-1",
+          "transform": "matrix(1, 0, 0, 1, 6.7386e-05, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "compare-cursor-1",
+          "transform": "matrix(1, 0, 0, 1, 14.9, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "compare-point-1",
+          "transform": "matrix(1, 0, 0, 1, 14.9, 15.5)"
+        },
+        {
+          "opacity": "0",
+          "origin": "19.3px 9.2px",
+          "part": "compare-response-1",
+          "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 21px",
+          "part": "compare-receipt",
+          "transform": "matrix(0.4, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "training-step",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "training-knockout",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0.85",
+          "origin": "4.668px 8.912px",
+          "part": "training-read",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "4.668px 8.912px",
+          "part": "training-origin",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "training-point",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-ring",
+          "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-normal-upper",
+          "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-normal-lower",
+          "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+        }
+      ],
+      "playing": null
+    }
+  ],
+  "30": [
+    {
+      "icon": "learning-rhythm",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "12px 17.8px",
+          "part": "rhythm-arm",
+          "transform": "matrix(0.883146, 0.469097, -0.469097, 0.883146, 0, 0)"
+        },
+        {
+          "opacity": "0.108571",
+          "origin": "12px 9.8px",
+          "part": "rhythm-glint",
+          "transform": "matrix(0.557143, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0.0857143",
+          "origin": "18px 8px",
+          "part": "rhythm-beat-upper",
+          "transform": "matrix(1, 0, 0, 1, -0.177143, 0)"
+        },
+        {
+          "opacity": "0.0857143",
+          "origin": "18px 8px",
+          "part": "rhythm-beat-lower",
+          "transform": "matrix(1, 0, 0, 1, -0.177143, 0)"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "gradient-check",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-knockout-0",
+          "transform": "matrix(1, 0, 0, 1, 2.8612, -0.384963)"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-knockout-1",
+          "transform": "matrix(1, 0, 0, 1, -2.8612, 2.47624)"
+        },
+        {
+          "opacity": "0.55",
+          "origin": "12px 13.56px",
+          "part": "gradient-chord",
+          "transform": "matrix(0.523162, 0.238672, 0.000191706, 0.999872, 0, 1.04564)"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-probe-0",
+          "transform": "matrix(1, 0, 0, 1, 2.8612, -0.384963)"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-probe-1",
+          "transform": "matrix(1, 0, 0, 1, -2.8612, 2.47624)"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 15px",
+          "part": "gradient-center",
+          "transform": "matrix(0.65, 0, 0, 0.65, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 18.4px",
+          "part": "gradient-witness",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.25)"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "experiment-compare",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "6.85px 12px",
+          "part": "compare-pane-0",
+          "transform": "matrix(1, 0, 0, 1, -0.35, 0)"
+        },
+        {
+          "opacity": "0.26",
+          "origin": "0px 0px",
+          "part": "compare-cursor-0",
+          "transform": "matrix(1, 0, 0, 1, 5.46, 0)"
+        },
+        {
+          "opacity": "0.85",
+          "origin": "0px 0px",
+          "part": "compare-point-0",
+          "transform": "matrix(1, 0, 0, 1, 5.46, 12.1845)"
+        },
+        {
+          "opacity": "0",
+          "origin": "9.1px 9.5px",
+          "part": "compare-response-0",
+          "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "origin": "17.15px 12px",
+          "part": "compare-pane-1",
+          "transform": "matrix(1, 0, 0, 1, 0.35, 0)"
+        },
+        {
+          "opacity": "0.26",
+          "origin": "0px 0px",
+          "part": "compare-cursor-1",
+          "transform": "matrix(1, 0, 0, 1, 15.66, 0)"
+        },
+        {
+          "opacity": "0.85",
+          "origin": "0px 0px",
+          "part": "compare-point-1",
+          "transform": "matrix(1, 0, 0, 1, 15.66, 15.293)"
+        },
+        {
+          "opacity": "0",
+          "origin": "19.3px 9.2px",
+          "part": "compare-response-1",
+          "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 21px",
+          "part": "compare-receipt",
+          "transform": "matrix(0.4, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "training-step",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "training-knockout",
+          "transform": "matrix(1, 0, 0, 1, 0.9025, 1.55191)"
+        },
+        {
+          "opacity": "0",
+          "origin": "4.668px 8.912px",
+          "part": "training-read",
+          "transform": "matrix(0.933898, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0.13",
+          "origin": "4.668px 8.912px",
+          "part": "training-origin",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "training-point",
+          "transform": "matrix(1, 0, 0, 1, 0.9025, 1.55191)"
+        },
+        {
+          "opacity": "0",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-ring",
+          "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-normal-upper",
+          "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-normal-lower",
+          "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+        }
+      ],
+      "playing": null
+    }
+  ],
+  "44": [
+    {
+      "icon": "learning-rhythm",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "12px 17.8px",
+          "part": "rhythm-arm",
+          "transform": "matrix(0.995778, 0.0917902, -0.0917902, 0.995778, 0, 0)"
+        },
+        {
+          "opacity": "0.361826",
+          "origin": "12px 9.8px",
+          "part": "rhythm-glint",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0.285652",
+          "origin": "18px 8px",
+          "part": "rhythm-beat-upper",
+          "transform": "matrix(1, 0, 0, 1, 0.309565, 0)"
+        },
+        {
+          "opacity": "0.285652",
+          "origin": "18px 8px",
+          "part": "rhythm-beat-lower",
+          "transform": "matrix(1, 0, 0, 1, 0.309565, 0)"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "gradient-check",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-knockout-0",
+          "transform": "matrix(1, 0, 0, 1, 3.5, -0.56)"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-knockout-1",
+          "transform": "matrix(1, 0, 0, 1, -3.5, 2.94)"
+        },
+        {
+          "opacity": "0.55",
+          "origin": "12px 13.56px",
+          "part": "gradient-chord",
+          "transform": "matrix(0.416667, 0.291667, 0, 1, 0, 1.19)"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-probe-0",
+          "transform": "matrix(1, 0, 0, 1, 3.5, -0.56)"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-probe-1",
+          "transform": "matrix(1, 0, 0, 1, -3.5, 2.94)"
+        },
+        {
+          "opacity": "0.865385",
+          "origin": "12px 15px",
+          "part": "gradient-center",
+          "transform": "matrix(1.01154, 0, 0, 1.01154, 0, 0)"
+        },
+        {
+          "opacity": "0.769231",
+          "origin": "12px 18.4px",
+          "part": "gradient-witness",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0115385)"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "experiment-compare",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "6.85px 12px",
+          "part": "compare-pane-0",
+          "transform": "matrix(1, 0, 0, 1, -0.35, 0)"
+        },
+        {
+          "opacity": "0.26",
+          "origin": "0px 0px",
+          "part": "compare-cursor-0",
+          "transform": "matrix(1, 0, 0, 1, 7.588, 0)"
+        },
+        {
+          "opacity": "0.85",
+          "origin": "0px 0px",
+          "part": "compare-point-0",
+          "transform": "matrix(1, 0, 0, 1, 7.588, 12.7974)"
+        },
+        {
+          "opacity": "0",
+          "origin": "9.1px 9.5px",
+          "part": "compare-response-0",
+          "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "origin": "17.15px 12px",
+          "part": "compare-pane-1",
+          "transform": "matrix(1, 0, 0, 1, 0.35, 0)"
+        },
+        {
+          "opacity": "0.26",
+          "origin": "0px 0px",
+          "part": "compare-cursor-1",
+          "transform": "matrix(1, 0, 0, 1, 17.788, 0)"
+        },
+        {
+          "opacity": "0.85",
+          "origin": "0px 0px",
+          "part": "compare-point-1",
+          "transform": "matrix(1, 0, 0, 1, 17.788, 9.85078)"
+        },
+        {
+          "opacity": "0",
+          "origin": "19.3px 9.2px",
+          "part": "compare-response-1",
+          "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 21px",
+          "part": "compare-receipt",
+          "transform": "matrix(0.4, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "training-step",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "training-knockout",
+          "transform": "matrix(1, 0, 0, 1, 3.73629, 6.22745)"
+        },
+        {
+          "opacity": "0",
+          "origin": "4.668px 8.912px",
+          "part": "training-read",
+          "transform": "matrix(0.827119, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0.34",
+          "origin": "4.668px 8.912px",
+          "part": "training-origin",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "training-point",
+          "transform": "matrix(1, 0, 0, 1, 3.73629, 6.22745)"
+        },
+        {
+          "opacity": "0",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-ring",
+          "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-normal-upper",
+          "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-normal-lower",
+          "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+        }
+      ],
+      "playing": null
+    }
+  ],
+  "54": [
+    {
+      "icon": "learning-rhythm",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "12px 17.8px",
+          "part": "rhythm-arm",
+          "transform": "matrix(0.999996, 0.00299457, -0.00299457, 0.999996, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 9.8px",
+          "part": "rhythm-glint",
+          "transform": "matrix(0.96, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "18px 8px",
+          "part": "rhythm-beat-upper",
+          "transform": "matrix(1, 0, 0, 1, 0.444, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "18px 8px",
+          "part": "rhythm-beat-lower",
+          "transform": "matrix(1, 0, 0, 1, 0.444, 0)"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "gradient-check",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-knockout-0",
+          "transform": "matrix(1, 0, 0, 1, 3.5, -0.56)"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-knockout-1",
+          "transform": "matrix(1, 0, 0, 1, -3.5, 2.94)"
+        },
+        {
+          "opacity": "0.55",
+          "origin": "12px 13.56px",
+          "part": "gradient-chord",
+          "transform": "matrix(0.416667, 0.291667, 0, 1, 0, 1.19)"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-probe-0",
+          "transform": "matrix(1, 0, 0, 1, 3.5, -0.56)"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-probe-1",
+          "transform": "matrix(1, 0, 0, 1, -3.5, 2.94)"
+        },
+        {
+          "opacity": "0.346154",
+          "origin": "12px 15px",
+          "part": "gradient-center",
+          "transform": "matrix(1.18462, 0, 0, 1.18462, 0, 0)"
+        },
+        {
+          "opacity": "0.307692",
+          "origin": "12px 18.4px",
+          "part": "gradient-witness",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.184615)"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "experiment-compare",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "6.85px 12px",
+          "part": "compare-pane-0",
+          "transform": "matrix(1, 0, 0, 1, -0.35, 0)"
+        },
+        {
+          "opacity": "0.26",
+          "origin": "0px 0px",
+          "part": "compare-cursor-0",
+          "transform": "matrix(1, 0, 0, 1, 9.1, 0)"
+        },
+        {
+          "opacity": "0.85",
+          "origin": "0px 0px",
+          "part": "compare-point-0",
+          "transform": "matrix(1, 0, 0, 1, 9.1, 9.5)"
+        },
+        {
+          "opacity": "0.008",
+          "origin": "9.1px 9.5px",
+          "part": "compare-response-0",
+          "transform": "matrix(0.5545, 0, 0, 0.5545, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "origin": "17.15px 12px",
+          "part": "compare-pane-1",
+          "transform": "matrix(1, 0, 0, 1, 0.35, 0)"
+        },
+        {
+          "opacity": "0.26",
+          "origin": "0px 0px",
+          "part": "compare-cursor-1",
+          "transform": "matrix(1, 0, 0, 1, 19.3, 0)"
+        },
+        {
+          "opacity": "0.85",
+          "origin": "0px 0px",
+          "part": "compare-point-1",
+          "transform": "matrix(1, 0, 0, 1, 19.3, 9.2)"
+        },
+        {
+          "opacity": "0.008",
+          "origin": "19.3px 9.2px",
+          "part": "compare-response-1",
+          "transform": "matrix(0.5545, 0, 0, 0.5545, 0, 0)"
+        },
+        {
+          "opacity": "0.007",
+          "origin": "12px 21px",
+          "part": "compare-receipt",
+          "transform": "matrix(0.406, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "training-step",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "training-knockout",
+          "transform": "matrix(1, 0, 0, 1, 4.03678, 6.59566)"
+        },
+        {
+          "opacity": "0",
+          "origin": "4.668px 8.912px",
+          "part": "training-read",
+          "transform": "matrix(0.750847, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0.4",
+          "origin": "4.668px 8.912px",
+          "part": "training-origin",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "training-point",
+          "transform": "matrix(1, 0, 0, 1, 4.03678, 6.59566)"
+        },
+        {
+          "opacity": "0.766667",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-ring",
+          "transform": "matrix(1.02083, 0, 0, 1.02083, 0, 0)"
+        },
+        {
+          "opacity": "0.766667",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-normal-upper",
+          "transform": "matrix(1.01042, 0, 0, 1.01042, 0, 0)"
+        },
+        {
+          "opacity": "0.766667",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-normal-lower",
+          "transform": "matrix(1.01042, 0, 0, 1.01042, 0, 0)"
+        }
+      ],
+      "playing": null
+    }
+  ],
+  "60": [
+    {
+      "icon": "learning-rhythm",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "12px 17.8px",
+          "part": "rhythm-arm",
+          "transform": "matrix(0.999932, 0.0116415, -0.0116415, 0.999932, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 9.8px",
+          "part": "rhythm-glint",
+          "transform": "matrix(0.9, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "18px 8px",
+          "part": "rhythm-beat-upper",
+          "transform": "matrix(1, 0, 0, 1, 0.36, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "18px 8px",
+          "part": "rhythm-beat-lower",
+          "transform": "matrix(1, 0, 0, 1, 0.36, 0)"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "gradient-check",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-knockout-0",
+          "transform": "matrix(1, 0, 0, 1, 3.5, -0.56)"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-knockout-1",
+          "transform": "matrix(1, 0, 0, 1, -3.5, 2.94)"
+        },
+        {
+          "opacity": "0.55",
+          "origin": "12px 13.56px",
+          "part": "gradient-chord",
+          "transform": "matrix(0.416667, 0.291667, 0, 1, 0, 1.19)"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-probe-0",
+          "transform": "matrix(1, 0, 0, 1, 3.5, -0.56)"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-probe-1",
+          "transform": "matrix(1, 0, 0, 1, -3.5, 2.94)"
+        },
+        {
+          "opacity": "0.0346154",
+          "origin": "12px 15px",
+          "part": "gradient-center",
+          "transform": "matrix(1.28846, 0, 0, 1.28846, 0, 0)"
+        },
+        {
+          "opacity": "0.0307692",
+          "origin": "12px 18.4px",
+          "part": "gradient-witness",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.288462)"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "experiment-compare",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "6.85px 12px",
+          "part": "compare-pane-0",
+          "transform": "matrix(1, 0, 0, 1, -0.35, 0)"
+        },
+        {
+          "opacity": "0.2405",
+          "origin": "0px 0px",
+          "part": "compare-cursor-0",
+          "transform": "matrix(1, 0, 0, 1, 9.1, 0)"
+        },
+        {
+          "opacity": "0.78625",
+          "origin": "0px 0px",
+          "part": "compare-point-0",
+          "transform": "matrix(1, 0, 0, 1, 9.1, 9.5)"
+        },
+        {
+          "opacity": "0.74",
+          "origin": "9.1px 9.5px",
+          "part": "compare-response-0",
+          "transform": "matrix(1.0375, 0, 0, 1.0375, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "origin": "17.15px 12px",
+          "part": "compare-pane-1",
+          "transform": "matrix(1, 0, 0, 1, 0.35, 0)"
+        },
+        {
+          "opacity": "0.2405",
+          "origin": "0px 0px",
+          "part": "compare-cursor-1",
+          "transform": "matrix(1, 0, 0, 1, 19.3, 0)"
+        },
+        {
+          "opacity": "0.78625",
+          "origin": "0px 0px",
+          "part": "compare-point-1",
+          "transform": "matrix(1, 0, 0, 1, 19.3, 9.2)"
+        },
+        {
+          "opacity": "0.74",
+          "origin": "19.3px 9.2px",
+          "part": "compare-response-1",
+          "transform": "matrix(1.0375, 0, 0, 1.0375, 0, 0)"
+        },
+        {
+          "opacity": "0.6475",
+          "origin": "12px 21px",
+          "part": "compare-receipt",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "training-step",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "training-knockout",
+          "transform": "matrix(1, 0, 0, 1, 4.03678, 6.59566)"
+        },
+        {
+          "opacity": "0",
+          "origin": "4.668px 8.912px",
+          "part": "training-read",
+          "transform": "matrix(0.705085, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0.4",
+          "origin": "4.668px 8.912px",
+          "part": "training-origin",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "training-point",
+          "transform": "matrix(1, 0, 0, 1, 4.03678, 6.59566)"
+        },
+        {
+          "opacity": "0.466667",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-ring",
+          "transform": "matrix(1.20833, 0, 0, 1.20833, 0, 0)"
+        },
+        {
+          "opacity": "0.466667",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-normal-upper",
+          "transform": "matrix(1.10417, 0, 0, 1.10417, 0, 0)"
+        },
+        {
+          "opacity": "0.466667",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-normal-lower",
+          "transform": "matrix(1.10417, 0, 0, 1.10417, 0, 0)"
+        }
+      ],
+      "playing": null
+    }
+  ],
+  "84": [
+    {
+      "icon": "learning-rhythm",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "12px 17.8px",
+          "part": "rhythm-arm",
+          "transform": "matrix(1, 3.59903e-05, -3.59903e-05, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 9.8px",
+          "part": "rhythm-glint",
+          "transform": "matrix(0.66, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "18px 8px",
+          "part": "rhythm-beat-upper",
+          "transform": "matrix(1, 0, 0, 1, 0.024, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "18px 8px",
+          "part": "rhythm-beat-lower",
+          "transform": "matrix(1, 0, 0, 1, 0.024, 0)"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "gradient-check",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-knockout-0",
+          "transform": "matrix(1, 0, 0, 1, 0.0329274, -0.000723757)"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-knockout-1",
+          "transform": "matrix(1, 0, 0, 1, -0.0329274, 0.0322036)"
+        },
+        {
+          "opacity": "0.55",
+          "origin": "12px 13.56px",
+          "part": "gradient-chord",
+          "transform": "matrix(0.994514, 0.00275165, 1.30904e-08, 0.999998, 0, 0.01574)"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-probe-0",
+          "transform": "matrix(1, 0, 0, 1, 0.0329274, -0.000723757)"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-probe-1",
+          "transform": "matrix(1, 0, 0, 1, -0.0329274, 0.0322036)"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 15px",
+          "part": "gradient-center",
+          "transform": "matrix(0.914407, 0, 0, 0.914407, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 18.4px",
+          "part": "gradient-witness",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.270339)"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "experiment-compare",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "6.85px 12px",
+          "part": "compare-pane-0",
+          "transform": "matrix(1, 0, 0, 1, -0.00184134, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "compare-cursor-0",
+          "transform": "matrix(1, 0, 0, 1, 7.02626, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "compare-point-0",
+          "transform": "matrix(1, 0, 0, 1, 7.02626, 12.0922)"
+        },
+        {
+          "opacity": "0",
+          "origin": "9.1px 9.5px",
+          "part": "compare-response-0",
+          "transform": "matrix(1.05226, 0, 0, 1.05226, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "origin": "17.15px 12px",
+          "part": "compare-pane-1",
+          "transform": "matrix(1, 0, 0, 1, 0.00184134, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "compare-cursor-1",
+          "transform": "matrix(1, 0, 0, 1, 17.2263, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "compare-point-1",
+          "transform": "matrix(1, 0, 0, 1, 17.2263, 12.1692)"
+        },
+        {
+          "opacity": "0",
+          "origin": "19.3px 9.2px",
+          "part": "compare-response-1",
+          "transform": "matrix(1.05226, 0, 0, 1.05226, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 21px",
+          "part": "compare-receipt",
+          "transform": "matrix(0.717217, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "training-step",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "training-knockout",
+          "transform": "matrix(1, 0, 0, 1, 0.232067, 0.376183)"
+        },
+        {
+          "opacity": "0",
+          "origin": "4.668px 8.912px",
+          "part": "training-read",
+          "transform": "matrix(0.522034, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0.0615385",
+          "origin": "4.668px 8.912px",
+          "part": "training-origin",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "training-point",
+          "transform": "matrix(1, 0, 0, 1, 0.232067, 0.376183)"
+        },
+        {
+          "opacity": "0",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-ring",
+          "transform": "matrix(1.04565, 0, 0, 1.04565, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-normal-upper",
+          "transform": "matrix(0.986957, 0, 0, 0.986957, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-normal-lower",
+          "transform": "matrix(0.986957, 0, 0, 0.986957, 0, 0)"
+        }
+      ],
+      "playing": null
+    }
+  ],
+  "100": [
+    {
+      "icon": "learning-rhythm",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "12px 17.8px",
+          "part": "rhythm-arm",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 9.8px",
+          "part": "rhythm-glint",
+          "transform": "matrix(0.5, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "18px 8px",
+          "part": "rhythm-beat-upper",
+          "transform": "matrix(1, 0, 0, 1, -0.2, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "18px 8px",
+          "part": "rhythm-beat-lower",
+          "transform": "matrix(1, 0, 0, 1, -0.2, 0)"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "gradient-check",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-knockout-0",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-knockout-1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0.55",
+          "origin": "12px 13.56px",
+          "part": "gradient-chord",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-probe-0",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-probe-1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 15px",
+          "part": "gradient-center",
+          "transform": "matrix(0.65, 0, 0, 0.65, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 18.4px",
+          "part": "gradient-witness",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.25)"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "experiment-compare",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "6.85px 12px",
+          "part": "compare-pane-0",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "compare-cursor-0",
+          "transform": "matrix(1, 0, 0, 1, 4.7, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "compare-point-0",
+          "transform": "matrix(1, 0, 0, 1, 4.7, 15)"
+        },
+        {
+          "opacity": "0",
+          "origin": "9.1px 9.5px",
+          "part": "compare-response-0",
+          "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "origin": "17.15px 12px",
+          "part": "compare-pane-1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "compare-cursor-1",
+          "transform": "matrix(1, 0, 0, 1, 14.9, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "compare-point-1",
+          "transform": "matrix(1, 0, 0, 1, 14.9, 15.5)"
+        },
+        {
+          "opacity": "0",
+          "origin": "19.3px 9.2px",
+          "part": "compare-response-1",
+          "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 21px",
+          "part": "compare-receipt",
+          "transform": "matrix(0.4, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "training-step",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "training-knockout",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "4.668px 8.912px",
+          "part": "training-read",
+          "transform": "matrix(0.4, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "4.668px 8.912px",
+          "part": "training-origin",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "training-point",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-ring",
+          "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-normal-upper",
+          "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-normal-lower",
+          "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+        }
+      ],
+      "playing": null
+    }
+  ]
+}

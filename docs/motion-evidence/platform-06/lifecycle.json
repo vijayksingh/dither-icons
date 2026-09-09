@@ -1,0 +1,1726 @@
+{
+  "keyboard": [
+    {
+      "icon": "learning-rhythm",
+      "afterDeparture": [
+        {
+          "icon": "learning-rhythm",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12px 17.8px",
+              "part": "rhythm-arm",
+              "transform": "matrix(0.998895, -0.046991, 0.046991, 0.998895, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 9.8px",
+              "part": "rhythm-glint",
+              "transform": "matrix(0.5, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 8px",
+              "part": "rhythm-beat-upper",
+              "transform": "matrix(1, 0, 0, 1, -0.2, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 8px",
+              "part": "rhythm-beat-lower",
+              "transform": "matrix(1, 0, 0, 1, -0.2, 0)"
+            }
+          ],
+          "playing": "true"
+        },
+        {
+          "icon": "gradient-check",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-knockout-0",
+              "transform": "matrix(1, 0, 0, 1, -0.232772, 0.00248771)"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-knockout-1",
+              "transform": "matrix(1, 0, 0, 1, 0.232772, -0.230284)"
+            },
+            {
+              "opacity": "0.55",
+              "origin": "12px 13.56px",
+              "part": "gradient-chord",
+              "transform": "matrix(1.0388, -0.0193976, -9.41754e-10, 1, 0, -0.113898)"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-probe-0",
+              "transform": "matrix(1, 0, 0, 1, -0.232772, 0.00248771)"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-probe-1",
+              "transform": "matrix(1, 0, 0, 1, 0.232772, -0.230284)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 15px",
+              "part": "gradient-center",
+              "transform": "matrix(0.65, 0, 0, 0.65, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 18.4px",
+              "part": "gradient-witness",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.25)"
+            }
+          ],
+          "playing": "true"
+        },
+        {
+          "icon": "experiment-compare",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "6.85px 12px",
+              "part": "compare-pane-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-cursor-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-point-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.1px 9.5px",
+              "part": "compare-response-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "17.15px 12px",
+              "part": "compare-pane-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-cursor-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-point-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "19.3px 9.2px",
+              "part": "compare-response-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 21px",
+              "part": "compare-receipt",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "training-step",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "training-knockout",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.668px 8.912px",
+              "part": "training-read",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.668px 8.912px",
+              "part": "training-origin",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "training-point",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.70478px 15.5077px",
+              "part": "training-ring",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.70478px 15.5077px",
+              "part": "training-normal-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.70478px 15.5077px",
+              "part": "training-normal-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        }
+      ],
+      "finished": [
+        {
+          "icon": "learning-rhythm",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12px 17.8px",
+              "part": "rhythm-arm",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 9.8px",
+              "part": "rhythm-glint",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 8px",
+              "part": "rhythm-beat-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 8px",
+              "part": "rhythm-beat-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "gradient-check",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-knockout-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-knockout-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0.55",
+              "origin": "12px 13.56px",
+              "part": "gradient-chord",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-probe-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-probe-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 15px",
+              "part": "gradient-center",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 18.4px",
+              "part": "gradient-witness",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "experiment-compare",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "6.85px 12px",
+              "part": "compare-pane-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-cursor-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-point-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.1px 9.5px",
+              "part": "compare-response-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "17.15px 12px",
+              "part": "compare-pane-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-cursor-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-point-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "19.3px 9.2px",
+              "part": "compare-response-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 21px",
+              "part": "compare-receipt",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "training-step",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "training-knockout",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.668px 8.912px",
+              "part": "training-read",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.668px 8.912px",
+              "part": "training-origin",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "training-point",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.70478px 15.5077px",
+              "part": "training-ring",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.70478px 15.5077px",
+              "part": "training-normal-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.70478px 15.5077px",
+              "part": "training-normal-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        }
+      ]
+    },
+    {
+      "icon": "gradient-check",
+      "afterDeparture": [
+        {
+          "icon": "learning-rhythm",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12px 17.8px",
+              "part": "rhythm-arm",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 9.8px",
+              "part": "rhythm-glint",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 8px",
+              "part": "rhythm-beat-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 8px",
+              "part": "rhythm-beat-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "gradient-check",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-knockout-0",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-knockout-1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.55",
+              "origin": "12px 13.56px",
+              "part": "gradient-chord",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-probe-0",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-probe-1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 15px",
+              "part": "gradient-center",
+              "transform": "matrix(0.65, 0, 0, 0.65, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 18.4px",
+              "part": "gradient-witness",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.25)"
+            }
+          ],
+          "playing": "true"
+        },
+        {
+          "icon": "experiment-compare",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "6.85px 12px",
+              "part": "compare-pane-0",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-cursor-0",
+              "transform": "matrix(1, 0, 0, 1, 4.7, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-point-0",
+              "transform": "matrix(1, 0, 0, 1, 4.7, 15)"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.1px 9.5px",
+              "part": "compare-response-0",
+              "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "origin": "17.15px 12px",
+              "part": "compare-pane-1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-cursor-1",
+              "transform": "matrix(1, 0, 0, 1, 14.9, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-point-1",
+              "transform": "matrix(1, 0, 0, 1, 14.9, 15.5)"
+            },
+            {
+              "opacity": "0",
+              "origin": "19.3px 9.2px",
+              "part": "compare-response-1",
+              "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 21px",
+              "part": "compare-receipt",
+              "transform": "matrix(0.4, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": "true"
+        },
+        {
+          "icon": "training-step",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "training-knockout",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.668px 8.912px",
+              "part": "training-read",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.668px 8.912px",
+              "part": "training-origin",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "training-point",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.70478px 15.5077px",
+              "part": "training-ring",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.70478px 15.5077px",
+              "part": "training-normal-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.70478px 15.5077px",
+              "part": "training-normal-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        }
+      ],
+      "finished": [
+        {
+          "icon": "learning-rhythm",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12px 17.8px",
+              "part": "rhythm-arm",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 9.8px",
+              "part": "rhythm-glint",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 8px",
+              "part": "rhythm-beat-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 8px",
+              "part": "rhythm-beat-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "gradient-check",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-knockout-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-knockout-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0.55",
+              "origin": "12px 13.56px",
+              "part": "gradient-chord",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-probe-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-probe-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 15px",
+              "part": "gradient-center",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 18.4px",
+              "part": "gradient-witness",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "experiment-compare",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "6.85px 12px",
+              "part": "compare-pane-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-cursor-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-point-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.1px 9.5px",
+              "part": "compare-response-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "17.15px 12px",
+              "part": "compare-pane-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-cursor-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-point-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "19.3px 9.2px",
+              "part": "compare-response-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 21px",
+              "part": "compare-receipt",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "training-step",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "training-knockout",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.668px 8.912px",
+              "part": "training-read",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.668px 8.912px",
+              "part": "training-origin",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "training-point",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.70478px 15.5077px",
+              "part": "training-ring",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.70478px 15.5077px",
+              "part": "training-normal-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.70478px 15.5077px",
+              "part": "training-normal-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        }
+      ]
+    },
+    {
+      "icon": "experiment-compare",
+      "afterDeparture": [
+        {
+          "icon": "learning-rhythm",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12px 17.8px",
+              "part": "rhythm-arm",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 9.8px",
+              "part": "rhythm-glint",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 8px",
+              "part": "rhythm-beat-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 8px",
+              "part": "rhythm-beat-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "gradient-check",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-knockout-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-knockout-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0.55",
+              "origin": "12px 13.56px",
+              "part": "gradient-chord",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-probe-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-probe-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 15px",
+              "part": "gradient-center",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 18.4px",
+              "part": "gradient-witness",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "experiment-compare",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "6.85px 12px",
+              "part": "compare-pane-0",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-cursor-0",
+              "transform": "matrix(1, 0, 0, 1, 4.7, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-point-0",
+              "transform": "matrix(1, 0, 0, 1, 4.7, 15)"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.1px 9.5px",
+              "part": "compare-response-0",
+              "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "origin": "17.15px 12px",
+              "part": "compare-pane-1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-cursor-1",
+              "transform": "matrix(1, 0, 0, 1, 14.9, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-point-1",
+              "transform": "matrix(1, 0, 0, 1, 14.9, 15.5)"
+            },
+            {
+              "opacity": "0",
+              "origin": "19.3px 9.2px",
+              "part": "compare-response-1",
+              "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 21px",
+              "part": "compare-receipt",
+              "transform": "matrix(0.4, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": "true"
+        },
+        {
+          "icon": "training-step",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "training-knockout",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.668px 8.912px",
+              "part": "training-read",
+              "transform": "matrix(0.4, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.668px 8.912px",
+              "part": "training-origin",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "training-point",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.70478px 15.5077px",
+              "part": "training-ring",
+              "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.70478px 15.5077px",
+              "part": "training-normal-upper",
+              "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.70478px 15.5077px",
+              "part": "training-normal-lower",
+              "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+            }
+          ],
+          "playing": "true"
+        }
+      ],
+      "finished": [
+        {
+          "icon": "learning-rhythm",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12px 17.8px",
+              "part": "rhythm-arm",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 9.8px",
+              "part": "rhythm-glint",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 8px",
+              "part": "rhythm-beat-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 8px",
+              "part": "rhythm-beat-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "gradient-check",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-knockout-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-knockout-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0.55",
+              "origin": "12px 13.56px",
+              "part": "gradient-chord",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-probe-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-probe-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 15px",
+              "part": "gradient-center",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 18.4px",
+              "part": "gradient-witness",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "experiment-compare",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "6.85px 12px",
+              "part": "compare-pane-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-cursor-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-point-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.1px 9.5px",
+              "part": "compare-response-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "17.15px 12px",
+              "part": "compare-pane-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-cursor-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-point-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "19.3px 9.2px",
+              "part": "compare-response-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 21px",
+              "part": "compare-receipt",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "training-step",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "training-knockout",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.668px 8.912px",
+              "part": "training-read",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.668px 8.912px",
+              "part": "training-origin",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "training-point",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.70478px 15.5077px",
+              "part": "training-ring",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.70478px 15.5077px",
+              "part": "training-normal-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.70478px 15.5077px",
+              "part": "training-normal-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        }
+      ]
+    },
+    {
+      "icon": "training-step",
+      "afterDeparture": [
+        {
+          "icon": "learning-rhythm",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12px 17.8px",
+              "part": "rhythm-arm",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 9.8px",
+              "part": "rhythm-glint",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 8px",
+              "part": "rhythm-beat-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 8px",
+              "part": "rhythm-beat-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "gradient-check",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-knockout-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-knockout-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0.55",
+              "origin": "12px 13.56px",
+              "part": "gradient-chord",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-probe-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-probe-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 15px",
+              "part": "gradient-center",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 18.4px",
+              "part": "gradient-witness",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "experiment-compare",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "6.85px 12px",
+              "part": "compare-pane-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-cursor-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-point-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.1px 9.5px",
+              "part": "compare-response-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "17.15px 12px",
+              "part": "compare-pane-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-cursor-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-point-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "19.3px 9.2px",
+              "part": "compare-response-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 21px",
+              "part": "compare-receipt",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "training-step",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "training-knockout",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.113844",
+              "origin": "4.668px 8.912px",
+              "part": "training-read",
+              "transform": "matrix(0.475896, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.668px 8.912px",
+              "part": "training-origin",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "training-point",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.70478px 15.5077px",
+              "part": "training-ring",
+              "transform": "matrix(0.55, 0, 0, 0.55, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.70478px 15.5077px",
+              "part": "training-normal-upper",
+              "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.70478px 15.5077px",
+              "part": "training-normal-lower",
+              "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+            }
+          ],
+          "playing": "true"
+        }
+      ],
+      "finished": [
+        {
+          "icon": "learning-rhythm",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12px 17.8px",
+              "part": "rhythm-arm",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 9.8px",
+              "part": "rhythm-glint",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 8px",
+              "part": "rhythm-beat-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18px 8px",
+              "part": "rhythm-beat-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "gradient-check",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-knockout-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-knockout-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0.55",
+              "origin": "12px 13.56px",
+              "part": "gradient-chord",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-probe-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "gradient-probe-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 15px",
+              "part": "gradient-center",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 18.4px",
+              "part": "gradient-witness",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "experiment-compare",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "6.85px 12px",
+              "part": "compare-pane-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-cursor-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-point-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "9.1px 9.5px",
+              "part": "compare-response-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "17.15px 12px",
+              "part": "compare-pane-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-cursor-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "0px 0px",
+              "part": "compare-point-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "19.3px 9.2px",
+              "part": "compare-response-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 21px",
+              "part": "compare-receipt",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "training-step",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "training-knockout",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.668px 8.912px",
+              "part": "training-read",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "4.668px 8.912px",
+              "part": "training-origin",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "0px 0px",
+              "part": "training-point",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.70478px 15.5077px",
+              "part": "training-ring",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.70478px 15.5077px",
+              "part": "training-normal-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.70478px 15.5077px",
+              "part": "training-normal-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        }
+      ]
+    }
+  ],
+  "reduced": [
+    {
+      "icon": "learning-rhythm",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "12px 17.8px",
+          "part": "rhythm-arm",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 9.8px",
+          "part": "rhythm-glint",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "18px 8px",
+          "part": "rhythm-beat-upper",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "18px 8px",
+          "part": "rhythm-beat-lower",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "gradient-check",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-knockout-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-knockout-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "0.55",
+          "origin": "12px 13.56px",
+          "part": "gradient-chord",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-probe-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "gradient-probe-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 15px",
+          "part": "gradient-center",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 18.4px",
+          "part": "gradient-witness",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "experiment-compare",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "6.85px 12px",
+          "part": "compare-pane-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "compare-cursor-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "compare-point-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "9.1px 9.5px",
+          "part": "compare-response-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "17.15px 12px",
+          "part": "compare-pane-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "compare-cursor-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "0px 0px",
+          "part": "compare-point-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "19.3px 9.2px",
+          "part": "compare-response-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 21px",
+          "part": "compare-receipt",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "training-step",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "training-knockout",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "4.668px 8.912px",
+          "part": "training-read",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "4.668px 8.912px",
+          "part": "training-origin",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "0px 0px",
+          "part": "training-point",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-ring",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-normal-upper",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "8.70478px 15.5077px",
+          "part": "training-normal-lower",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    }
+  ],
+  "motionOff": [
+    {
+      "disabled": true,
+      "label": "Play learning-rhythm study"
+    },
+    {
+      "disabled": true,
+      "label": "Play gradient-check study"
+    },
+    {
+      "disabled": true,
+      "label": "Play experiment-compare study"
+    },
+    {
+      "disabled": true,
+      "label": "Play training-step study"
+    }
+  ]
+}

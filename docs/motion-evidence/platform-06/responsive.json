@@ -1,0 +1,27 @@
+{
+  "client": 390,
+  "scroll": 390,
+  "stages": [
+    {
+      "left": 16,
+      "playing": "true",
+      "width": 173
+    },
+    {
+      "left": 201,
+      "playing": "true",
+      "width": 173
+    },
+    {
+      "left": 16,
+      "playing": "true",
+      "width": 173
+    },
+    {
+      "left": 201,
+      "playing": "true",
+      "width": 173
+    }
+  ],
+  "errors": []
+}

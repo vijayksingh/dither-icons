@@ -79,3 +79,16 @@ Apply UI-2/4, COLOR-2/5, A11Y-2/4, and MOTION-1/4/6/7. Preserve the native contr
 | Concept Review / `ConceptReviewIcon` | Revisit a concept in a Review View | `app/src/content/reviews/nn-review/index.ts:4–13`; proposed entry-point affordance for the real Review View |
 
 Source inspected 2026-09-09. Preserve Run versus Submission and advisory visible tests versus authoritative server grading (ADR-0005). A Milestone flag does not claim completion. Concept Review retains context and does not reveal an answer. Apply UI-2/4, COLOR-2/5, A11Y-2/4 and MOTION-1/4/6/7. Use native labels/state and semantic currentColor; prefer still compact solid/outline for repeated actions. **Platform / 05** groups the four exports. No platform call sites changed.
+
+## Platform / 06
+
+| Semantic name / export | Actual platform need | Observed source in CraftingAttention |
+| --- | --- | --- |
+| Learning Rhythm / `LearningRhythmIcon` | Daily learning cadence and goal | `app/src/routes/settings.tsx:184–204`; Learning rhythm, Daily goal, currently Clock3 |
+| Gradient Check / `GradientCheckIcon` | Centered derivative audit | `app/src/lessons/primitives/r3f/GradientCheckMicroscope.tsx:583–593`; Centered audit, currently GitBranch |
+| Experiment Compare / `ExperimentCompareIcon` | Paired optimizer views | `app/src/lessons/primitives/r3f/MomentumNesterovPhysicsLab.tsx:1167–1171`; Compare, currently GitCompare |
+| Training Step / `TrainingStepIcon` | Commit one optimizer step | `app/src/lessons/primitives/r3f/MomentumNesterovPhysicsLab.tsx:1226–1231`; Step motion, currently StepForward |
+
+Source inspected 2026-09-09. These are proposed semantic affordances for real controls, not replacements already made. Learning Rhythm does not start a timer or change the Daily goal. Gradient Check does not claim the audit passed. Comparison retains different evidence and no invented winner. Training Step illustrates one update, not guaranteed loss reduction or convergence. The actual lesson remains authoritative for state and numeric results.
+
+Apply UI-2/4, COLOR-2/5, A11Y-2/4 and MOTION-1/4/6/7. Preserve native labels, focus, disabled states and actual control semantics. The less familiar mathematical icons especially need their labels; use solid/outline for compact controls and 48px+ dither for entry points. **Platform / 06** contains the four named exports. No platform call sites changed.
