@@ -3,3 +3,4 @@ dist/
 site-dist/
 *.tgz
 public/*.tgz
+release/

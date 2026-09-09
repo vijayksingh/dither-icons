@@ -132,6 +132,7 @@ npm run typecheck     # TypeScript
 npm test              # Geometry, choreography, exports and documentation checks
 npm run build         # React package, downloadable tarball and public site
 npm run generate:docs # Regenerate guides, manifest and visual references
+npm run verify:deployment # Verify the public domain, assets and sharing metadata
 ```
 
 | Directory | Purpose |
@@ -146,7 +147,7 @@ npm run generate:docs # Regenerate guides, manifest and visual references
 
 `dist/` contains the built React package; `site-dist/` contains the built public site. Build and pack regenerate the documentation from the real exports. Edit `demo/content/docs.ts` and `demo/content/agent.ts`, then regenerate instead of hand-editing generated files.
 
-Cloudflare Pages serves the generated route directories and provides its native SPA fallback. Do not add a catch-all rewrite that replaces route-specific HTML. See [Cloudflare deployment](docs/DEPLOYMENT.md) for the production settings. The React package is published to npm as `@unlocalhosted/dither-icons`.
+Cloudflare Pages serves the generated route directories and provides its native SPA fallback. Do not add a catch-all rewrite that replaces route-specific HTML. Stable `vX.Y.Z` tags publish the React package to npm and deploy the same release to Cloudflare. See the [release and agent runbook](docs/RELEASING.md) and [Cloudflare deployment checks](docs/DEPLOYMENT.md). Main pushes run CI without publishing.
 
 ## Contributing
 

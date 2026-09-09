@@ -17,6 +17,7 @@ const featured = ['download', 'bell', 'layers', 'heart', 'send', 'code-run', 'sa
 export const collection = [...featured.map(name => definitions.find(icon => icon.name === name)!), ...definitions.filter(icon => !featured.includes(icon.name))];
 export const labelFor = (name: string) => definitions.find(icon => icon.name === name)?.label ?? name.split('-').map(word => word[0].toUpperCase() + word.slice(1)).join(' ');
 export const componentName = (name: string) => name.split('-').map(word => word[0].toUpperCase() + word.slice(1)).join('') + 'Icon';
+export const packageVersion = packageInfo.version;
 export const packageUrl = `https://www.npmjs.com/package/${packageInfo.name}`;
 export const installCommand = `npm install ${packageInfo.name}`;
 

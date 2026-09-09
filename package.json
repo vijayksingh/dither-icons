@@ -1,6 +1,6 @@
 {
   "name": "@unlocalhosted/dither-icons",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Original dithered, animated SVG icons for React",
   "type": "module",
   "license": "MIT",
@@ -25,6 +25,8 @@
     "dev": "vite --host 127.0.0.1 --port 4192",
     "build": "npm run generate:docs && npm run generate:social && tsup src/index.tsx --format esm --dts --external react --clean && node scripts/package-gallery.mjs && vite build && tsx scripts/generate-share-pages.ts",
     "typecheck": "tsc --noEmit",
+    "verify:deployment": "node scripts/verify-deployment.mjs",
+    "verify:consumer": "node scripts/verify-consumer.mjs",
     "test": "tsx --test tests/*.test.tsx",
     "prepack": "npm run generate:docs && tsup src/index.tsx --format esm --dts --external react --clean",
     "generate:docs": "tsx scripts/generate-docs.tsx",

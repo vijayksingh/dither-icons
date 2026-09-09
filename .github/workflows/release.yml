@@ -1,0 +1,101 @@
+name: Release
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: read
+concurrency:
+  group: production-release
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - run: node scripts/release-package.mjs validate
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+      - run: npm ci
+      - run: npm run typecheck && npm test
+      - run: npm run build
+        env:
+          SITE_URL: https://dithered.dev
+      - run: node scripts/release-package.mjs prepare
+      - run: npm run verify:consumer -- release/package.tgz
+      - run: tar -czf release/site.tar.gz -C site-dist .
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: release
+          path: release/
+          retention-days: 30
+          if-no-files-found: error
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
+          registry-url: https://registry.npmjs.org
+          package-manager-cache: false
+      - run: npm install --global npm@12.0.2
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: release
+          path: release
+      - run: node scripts/release-package.mjs publish
+      - name: Verify installation from the public registry
+        run: npm run verify:consumer -- "@unlocalhosted/dither-icons@$(node -p 'JSON.parse(require("fs").readFileSync("package.json")).version')"
+  deploy:
+    needs: publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: release
+          path: release
+      - run: mkdir site-dist && tar -xzf release/site.tar.gz -C site-dist
+      - name: Deploy the verified release to Cloudflare
+        run: npx --yes wrangler@4.127.0 pages deploy site-dist --project-name dither-icons --branch main --commit-hash "$GITHUB_SHA" --commit-dirty=false
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: e3ae6e5dd1aac7f5d4c1d4aa45c00f83
+      - name: Verify the public domain and deployed revision
+        run: |
+          for attempt in 1 2 3 4 5 6; do
+            echo "Public verification attempt $attempt/6"
+            npm run verify:deployment && exit 0
+            sleep 10
+          done
+          exit 1
+        env:
+          RELEASE_SHA: ${{ github.sha }}
+          SITE_URL: https://dithered.dev
+      - name: Record the verified release
+        run: |
+          if ! gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            gh release create "$RELEASE_TAG" --verify-tag --title "$RELEASE_TAG" --notes-file release/notes.md release/package.tgz release/package.json
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.ref_name }}
