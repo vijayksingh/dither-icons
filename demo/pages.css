@@ -90,6 +90,46 @@ a.card-title { display: flex; flex-direction: column; justify-content: center; }
 @media (prefers-reduced-motion: reduce) { .page-arrival { animation: none; }.agent-example-button:active { transform: none; } }
 .app[data-motion=false] .page-arrival { animation: none; }
 
-.site-footer { flex-wrap: wrap; }.site-footer .creator-socials { margin-left: auto; gap: 17px; }.site-footer > span a { color: var(--text); }.site-footer nav[aria-label="Footer navigation"] { margin-left: 0; }
-@media(max-width:900px){.site-footer .creator-socials { margin-left: 0; }.site-footer { gap: 14px 24px; }}
-@media(max-width:600px){.site-footer .creator-socials { order: 3; justify-content: flex-start; gap: 24px; }.site-footer > span { order: 4; }}
+/* Compact utility controls borrow the reference's quiet pills and native brand marks. */
+.header-actions { flex-shrink: 0; }
+.multi-page-header > .brand { flex-shrink: 0; }
+.multi-page-header .header-actions { gap: 8px; }
+.header-social-links { display: flex; gap: 6px; }
+.social-link { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-width: 36px; height: 36px; border-radius: 999px; color: var(--muted); background: var(--surface); border: 1px solid var(--line); transition: background 160ms, border-color 160ms, color 160ms; }
+.social-link:hover, .social-link:focus-visible { color: var(--text); background: var(--surface-raised); border-color: var(--line-strong); }
+.social-link:active { background: var(--line); }
+.social-link svg { flex-shrink: 0; }
+.github-stars { padding-inline: 12px; min-width: 72px; }
+.github-count { min-width: 3ch; text-align: center; font-size: 12px; font-variant-numeric: tabular-nums; }
+.mobile-theme { display: none; }
+.site-footer { flex-wrap: wrap; }
+.site-footer > span a { color: var(--text); }
+@media (max-width: 1150px) {
+  .multi-page-header { gap: 22px; }
+  .multi-page-header .header-search span, .multi-page-header .header-search kbd { display: none; }
+  .multi-page-header .header-search { width: 36px; padding: 0; justify-content: center; }
+}
+@media (max-width: 1050px) { .multi-page-header .header-download { display: none; } }
+@media (max-width: 760px) {
+  .multi-page-header > nav { display: none; }
+  .multi-page-header .header-actions { margin-left: auto; }
+  .header-social-links, .multi-page-header .desktop-theme { display: none; }
+  .mobile-menu { display: block; position: relative; z-index: 12; }
+  .mobile-menu summary { min-width: 44px; min-height: 44px; display: grid; place-items: center; list-style: none; cursor: pointer; color: var(--muted); }
+  .mobile-menu summary::-webkit-details-marker { display: none; }
+  .mobile-menu nav { position: absolute; top: calc(100% + 10px); right: 0; width: 245px; padding: 9px; display: flex; flex-direction: column; align-items: stretch; background: var(--surface); border: 1px solid var(--line-strong); border-radius: 15px; box-shadow: var(--shadow); }
+  .multi-page-header .mobile-menu nav > a, .mobile-theme { display: flex; justify-content: space-between; align-items: center; padding: 0 12px; min-height: 44px; border-radius: 8px; }
+  .mobile-theme { font-size: 12px; color: var(--muted); }
+  .mobile-theme:hover { background: var(--surface-raised); color: var(--text); }
+  .multi-page-header .mobile-social-links { display: flex; gap: 8px; padding: 12px 3px 3px; margin-top: 6px; border-top: 1px solid var(--line); }
+  .multi-page-header .mobile-social-links a { display: flex; flex: 1; justify-content: center; padding: 0 8px; height: 44px; font-size: 10px; white-space: nowrap; }
+  .social-link { min-height: 44px; }
+}
+@media (max-width: 400px) {
+  .multi-page-header { padding-inline: 14px; gap: 8px; }
+  .multi-page-header .header-actions { gap: 4px; }
+  .multi-page-header .brand { gap: 5px; font-size: 17px; }
+  .github-stars { min-width: 64px; padding-inline: 8px; }
+}
+@media (prefers-reduced-motion: reduce) { .social-link { transition: none; } }
+.app[data-motion=false] .social-link { transition: none; }
