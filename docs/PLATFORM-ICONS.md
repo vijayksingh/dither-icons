@@ -68,3 +68,14 @@ Catalog categories reflect general meaning: Workspace is Development, Gauge and 
 Source inspected 2026-09-09. Sigma denotes reduction, not an invented numerical answer. Bug locates the fault without asserting a repair. Sliders previews one independent adjustment without changing a real parameter. Graduation Cap invites curriculum exploration without certifying completion. The category split is Learning / Development / Interface / Learning.
 
 Apply UI-2/4, COLOR-2/5, A11Y-2/4, and MOTION-1/4/6/7. Preserve the native control's label, state and keyboard behavior; use semantic currentColor. Prefer still 24px solid/outline for frequent actions and 48px+ dither for larger entry points. **Platform / 04** groups the four performances. This batch adds library exports and does not modify platform call sites.
+
+## Platform / 05
+
+| Semantic name / export | Actual platform need | Observed source in CraftingAttention |
+| --- | --- | --- |
+| Code Run / `CodeRunIcon` | Start a Run | `app/src/routes/lab.$slug.tsx:656`; Run code |
+| Test Suite / `TestSuiteIcon` | Run tests / visible tests | `app/src/routes/lab.$slug.tsx:657`, `app/src/routes/problem.$slug.tsx:2913–2925`; `ExecutionState.tsx:71–74` uses TestTube2 |
+| Milestone / `MilestoneIcon` | Capability marker in a Path | `app/src/routes/paths.universe.tsx:1661`; proposed affordance beside the existing Milestone label |
+| Concept Review / `ConceptReviewIcon` | Revisit a concept in a Review View | `app/src/content/reviews/nn-review/index.ts:4–13`; proposed entry-point affordance for the real Review View |
+
+Source inspected 2026-09-09. Preserve Run versus Submission and advisory visible tests versus authoritative server grading (ADR-0005). A Milestone flag does not claim completion. Concept Review retains context and does not reveal an answer. Apply UI-2/4, COLOR-2/5, A11Y-2/4 and MOTION-1/4/6/7. Use native labels/state and semantic currentColor; prefer still compact solid/outline for repeated actions. **Platform / 05** groups the four exports. No platform call sites changed.

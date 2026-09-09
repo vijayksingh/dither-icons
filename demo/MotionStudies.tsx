@@ -1,8 +1,8 @@
 import {useState} from 'react';
-import {DitherIcon,studies,type Texture} from '../src';
-const SETS:Record<string,string[]>={'Platform / 04':['sigma','bug','sliders','graduation-cap'],'Platform / 03':['workspace','gauge','orbit','lifebuoy'],'Platform / 02':['tensor','network','checkpoint','hint'],'Platform / 01':['path','flask','target','retry'],'Refinement / 04':['play','pause','volume','code'],'Refinement / 03':['book','mail','message','send'],'Refinement / 02':['folder','file','copy','trash'],'Refinement / 01':['arrow-right','arrow-up','external-link','upload'],Foundation:['bell','heart','download','layers'],Navigation:['arrow-right','arrow-up','external-link'],'Files / transfer':['upload','copy','file'],'Files / containers':['folder','trash','book'],Communication:['mail','message','send'],Media:['play','pause','volume'],Development:['code','terminal','cpu','chart'],'Interface / places':['search','home','settings'],'Interface / actions':['check','close','plus'],'Interface / presence':['user','lock','eye'],'Interface / light':['sparkles','sun','moon','bolt']};
+import {DitherIcon,studies,definitions,type Texture} from '../src';
+const SETS:Record<string,string[]>={'Platform / 05':['code-run','test-suite','milestone','concept-review'],'Platform / 04':['sigma','bug','sliders','graduation-cap'],'Platform / 03':['workspace','gauge','orbit','lifebuoy'],'Platform / 02':['tensor','network','checkpoint','hint'],'Platform / 01':['path','flask','target','retry'],'Refinement / 04':['play','pause','volume','code'],'Refinement / 03':['book','mail','message','send'],'Refinement / 02':['folder','file','copy','trash'],'Refinement / 01':['arrow-right','arrow-up','external-link','upload'],Foundation:['bell','heart','download','layers'],Navigation:['arrow-right','arrow-up','external-link'],'Files / transfer':['upload','copy','file'],'Files / containers':['folder','trash','book'],Communication:['mail','message','send'],Media:['play','pause','volume'],Development:['code','terminal','cpu','chart'],'Interface / places':['search','home','settings'],'Interface / actions':['check','close','plus'],'Interface / presence':['user','lock','eye'],'Interface / light':['sparkles','sun','moon','bolt']};
 export function MotionStudies({texture,enabled}:{texture:Texture;enabled:boolean}){
- const [set,setSet]=useState('Platform / 04');
+ const [set,setSet]=useState('Platform / 05');
  const ORDER=SETS[set].filter(name=>studies[name]);
  const [speed,setSpeed]=useState(1),[replay,setReplay]=useState(0),[progress,setProgress]=useState<number|undefined>();
  return <section className="motion-studies" id="motion-studies" aria-labelledby="studies-heading">
@@ -13,7 +13,7 @@ export function MotionStudies({texture,enabled}:{texture:Texture;enabled:boolean
     <span className="study-number">0{index+1}</span><span className="study-play">↻</span>
     <DitherIcon name={name} size={112} texture={texture} animate={enabled} speed={speed} replayKey={replay} progress={progress}/>
     <span className="study-progress"/>
-   </button><div className="study-copy"><h3>{name}</h3><p>{studies[name].caption}</p><div className="study-beats">{studies[name].stages.map((stage,i)=><span key={stage}><small>{i+1}</small>{stage}</span>)}</div></div>
+   </button><div className="study-copy"><h3>{definitions.find(d=>d.name===name)?.label??name}</h3><p>{studies[name].caption}</p><div className="study-beats">{studies[name].stages.map((stage,i)=><span key={stage}><small>{i+1}</small>{stage}</span>)}</div></div>
   </article>)}</div><p className="study-hint">Hover, focus, or tap to play. Each gesture finishes before another begins.</p>
  </section>
 }

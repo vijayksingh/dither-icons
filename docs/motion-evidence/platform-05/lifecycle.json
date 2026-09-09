@@ -1,0 +1,1618 @@
+{
+  "keyboard": [
+    {
+      "icon": "code-run",
+      "afterDeparture": [
+        {
+          "icon": "code-run",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12.6px 15.5px",
+              "part": "run-occlusion",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.531303",
+              "origin": "5.5px 10px",
+              "part": "source-charge-0",
+              "transform": "matrix(0.737544, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 10px",
+              "part": "source-charge-1",
+              "transform": "matrix(0.3, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 10px",
+              "part": "source-charge-2",
+              "transform": "matrix(0.3, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "origin": "12.6px 15.5px",
+              "part": "run-launch",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "20px 15.5px",
+              "part": "run-edge",
+              "transform": "matrix(0.8, 0, 0, 0.8, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "21px 15.5px",
+              "part": "run-witness-upper",
+              "transform": "matrix(1, 0, 0, 1, -0.4, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "21px 15.5px",
+              "part": "run-witness-lower",
+              "transform": "matrix(1, 0, 0, 1, -0.4, 0)"
+            }
+          ],
+          "playing": "true"
+        },
+        {
+          "icon": "test-suite",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "5.5px 10.4px",
+              "part": "case-0",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 16.7px",
+              "part": "seat-light-0",
+              "transform": "matrix(0.45, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "origin": "12px 9.1px",
+              "part": "case-1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 16.7px",
+              "part": "seat-light-1",
+              "transform": "matrix(0.45, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "origin": "18.5px 10px",
+              "part": "case-2",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.5px 16.7px",
+              "part": "seat-light-2",
+              "transform": "matrix(0.45, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 19px",
+              "part": "suite-datum",
+              "transform": "matrix(0.2, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": "true"
+        },
+        {
+          "icon": "milestone",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "9.5px 8.5px",
+              "part": "flag-root",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "14px 9px",
+              "part": "flag-free",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "19.35px 8.8px",
+              "part": "flag-edge",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "20px 9px",
+              "part": "flag-air-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "20px 9px",
+              "part": "flag-air-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "concept-review",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "19px 19.5px",
+              "part": "review-occlusion",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.55px 7.5px",
+              "part": "recall-line",
+              "transform": "matrix(0.2, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "origin": "19px 19.5px",
+              "part": "review-card",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "6.6px 17.6px",
+              "part": "recall-trace",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "7px 4px",
+              "part": "recall-witness",
+              "transform": "matrix(0.75, 0, 0, 0.75, 0, 0)"
+            }
+          ],
+          "playing": "true"
+        }
+      ],
+      "finished": [
+        {
+          "icon": "code-run",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12.6px 15.5px",
+              "part": "run-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 10px",
+              "part": "source-charge-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 10px",
+              "part": "source-charge-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 10px",
+              "part": "source-charge-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "12.6px 15.5px",
+              "part": "run-launch",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "20px 15.5px",
+              "part": "run-edge",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "21px 15.5px",
+              "part": "run-witness-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "21px 15.5px",
+              "part": "run-witness-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "test-suite",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "5.5px 10.4px",
+              "part": "case-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 16.7px",
+              "part": "seat-light-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "12px 9.1px",
+              "part": "case-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 16.7px",
+              "part": "seat-light-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "18.5px 10px",
+              "part": "case-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.5px 16.7px",
+              "part": "seat-light-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 19px",
+              "part": "suite-datum",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "milestone",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "9.5px 8.5px",
+              "part": "flag-root",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "14px 9px",
+              "part": "flag-free",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "19.35px 8.8px",
+              "part": "flag-edge",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "20px 9px",
+              "part": "flag-air-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "20px 9px",
+              "part": "flag-air-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "concept-review",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "19px 19.5px",
+              "part": "review-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.55px 7.5px",
+              "part": "recall-line",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "19px 19.5px",
+              "part": "review-card",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "6.6px 17.6px",
+              "part": "recall-trace",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "7px 4px",
+              "part": "recall-witness",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        }
+      ]
+    },
+    {
+      "icon": "test-suite",
+      "afterDeparture": [
+        {
+          "icon": "code-run",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12.6px 15.5px",
+              "part": "run-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 10px",
+              "part": "source-charge-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 10px",
+              "part": "source-charge-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 10px",
+              "part": "source-charge-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "12.6px 15.5px",
+              "part": "run-launch",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "20px 15.5px",
+              "part": "run-edge",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "21px 15.5px",
+              "part": "run-witness-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "21px 15.5px",
+              "part": "run-witness-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "test-suite",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "5.5px 10.4px",
+              "part": "case-0",
+              "transform": "matrix(1, 0, 0, 1, 0, -0.04351)"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 16.7px",
+              "part": "seat-light-0",
+              "transform": "matrix(0.45, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "origin": "12px 9.1px",
+              "part": "case-1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 16.7px",
+              "part": "seat-light-1",
+              "transform": "matrix(0.45, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "origin": "18.5px 10px",
+              "part": "case-2",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.5px 16.7px",
+              "part": "seat-light-2",
+              "transform": "matrix(0.45, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 19px",
+              "part": "suite-datum",
+              "transform": "matrix(0.2, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": "true"
+        },
+        {
+          "icon": "milestone",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "9.5px 8.5px",
+              "part": "flag-root",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "origin": "14px 9px",
+              "part": "flag-free",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "19.35px 8.8px",
+              "part": "flag-edge",
+              "transform": "matrix(1, 0, 0, 0.45, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "20px 9px",
+              "part": "flag-air-upper",
+              "transform": "matrix(1, 0, 0, 1, -0.2, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "20px 9px",
+              "part": "flag-air-lower",
+              "transform": "matrix(1, 0, 0, 1, -0.2, 0)"
+            }
+          ],
+          "playing": "true"
+        },
+        {
+          "icon": "concept-review",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "19px 19.5px",
+              "part": "review-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.55px 7.5px",
+              "part": "recall-line",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "19px 19.5px",
+              "part": "review-card",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "6.6px 17.6px",
+              "part": "recall-trace",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "7px 4px",
+              "part": "recall-witness",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        }
+      ],
+      "finished": [
+        {
+          "icon": "code-run",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12.6px 15.5px",
+              "part": "run-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 10px",
+              "part": "source-charge-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 10px",
+              "part": "source-charge-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 10px",
+              "part": "source-charge-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "12.6px 15.5px",
+              "part": "run-launch",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "20px 15.5px",
+              "part": "run-edge",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "21px 15.5px",
+              "part": "run-witness-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "21px 15.5px",
+              "part": "run-witness-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "test-suite",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "5.5px 10.4px",
+              "part": "case-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 16.7px",
+              "part": "seat-light-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "12px 9.1px",
+              "part": "case-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 16.7px",
+              "part": "seat-light-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "18.5px 10px",
+              "part": "case-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.5px 16.7px",
+              "part": "seat-light-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 19px",
+              "part": "suite-datum",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "milestone",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "9.5px 8.5px",
+              "part": "flag-root",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "14px 9px",
+              "part": "flag-free",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "19.35px 8.8px",
+              "part": "flag-edge",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "20px 9px",
+              "part": "flag-air-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "20px 9px",
+              "part": "flag-air-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "concept-review",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "19px 19.5px",
+              "part": "review-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.55px 7.5px",
+              "part": "recall-line",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "19px 19.5px",
+              "part": "review-card",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "6.6px 17.6px",
+              "part": "recall-trace",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "7px 4px",
+              "part": "recall-witness",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        }
+      ]
+    },
+    {
+      "icon": "milestone",
+      "afterDeparture": [
+        {
+          "icon": "code-run",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12.6px 15.5px",
+              "part": "run-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 10px",
+              "part": "source-charge-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 10px",
+              "part": "source-charge-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 10px",
+              "part": "source-charge-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "12.6px 15.5px",
+              "part": "run-launch",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "20px 15.5px",
+              "part": "run-edge",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "21px 15.5px",
+              "part": "run-witness-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "21px 15.5px",
+              "part": "run-witness-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "test-suite",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "5.5px 10.4px",
+              "part": "case-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 16.7px",
+              "part": "seat-light-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "12px 9.1px",
+              "part": "case-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 16.7px",
+              "part": "seat-light-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "18.5px 10px",
+              "part": "case-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.5px 16.7px",
+              "part": "seat-light-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 19px",
+              "part": "suite-datum",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "milestone",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "9.5px 8.5px",
+              "part": "flag-root",
+              "transform": "matrix(0.999536, 0.00162003, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "origin": "14px 9px",
+              "part": "flag-free",
+              "transform": "matrix(0.998143, -0.00242667, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "19.35px 8.8px",
+              "part": "flag-edge",
+              "transform": "matrix(1, 0, 0, 0.45, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "20px 9px",
+              "part": "flag-air-upper",
+              "transform": "matrix(1, 0, 0, 1, -0.2, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "20px 9px",
+              "part": "flag-air-lower",
+              "transform": "matrix(1, 0, 0, 1, -0.2, 0)"
+            }
+          ],
+          "playing": "true"
+        },
+        {
+          "icon": "concept-review",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "19px 19.5px",
+              "part": "review-occlusion",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.55px 7.5px",
+              "part": "recall-line",
+              "transform": "matrix(0.2, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "origin": "19px 19.5px",
+              "part": "review-card",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "6.6px 17.6px",
+              "part": "recall-trace",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "7px 4px",
+              "part": "recall-witness",
+              "transform": "matrix(0.75, 0, 0, 0.75, 0, 0)"
+            }
+          ],
+          "playing": "true"
+        }
+      ],
+      "finished": [
+        {
+          "icon": "code-run",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12.6px 15.5px",
+              "part": "run-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 10px",
+              "part": "source-charge-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 10px",
+              "part": "source-charge-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 10px",
+              "part": "source-charge-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "12.6px 15.5px",
+              "part": "run-launch",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "20px 15.5px",
+              "part": "run-edge",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "21px 15.5px",
+              "part": "run-witness-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "21px 15.5px",
+              "part": "run-witness-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "test-suite",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "5.5px 10.4px",
+              "part": "case-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 16.7px",
+              "part": "seat-light-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "12px 9.1px",
+              "part": "case-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 16.7px",
+              "part": "seat-light-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "18.5px 10px",
+              "part": "case-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.5px 16.7px",
+              "part": "seat-light-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 19px",
+              "part": "suite-datum",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "milestone",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "9.5px 8.5px",
+              "part": "flag-root",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "14px 9px",
+              "part": "flag-free",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "19.35px 8.8px",
+              "part": "flag-edge",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "20px 9px",
+              "part": "flag-air-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "20px 9px",
+              "part": "flag-air-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "concept-review",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "19px 19.5px",
+              "part": "review-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.55px 7.5px",
+              "part": "recall-line",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "19px 19.5px",
+              "part": "review-card",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "6.6px 17.6px",
+              "part": "recall-trace",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "7px 4px",
+              "part": "recall-witness",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        }
+      ]
+    },
+    {
+      "icon": "concept-review",
+      "afterDeparture": [
+        {
+          "icon": "code-run",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12.6px 15.5px",
+              "part": "run-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 10px",
+              "part": "source-charge-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 10px",
+              "part": "source-charge-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 10px",
+              "part": "source-charge-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "12.6px 15.5px",
+              "part": "run-launch",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "20px 15.5px",
+              "part": "run-edge",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "21px 15.5px",
+              "part": "run-witness-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "21px 15.5px",
+              "part": "run-witness-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "test-suite",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "5.5px 10.4px",
+              "part": "case-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 16.7px",
+              "part": "seat-light-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "12px 9.1px",
+              "part": "case-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 16.7px",
+              "part": "seat-light-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "18.5px 10px",
+              "part": "case-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.5px 16.7px",
+              "part": "seat-light-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 19px",
+              "part": "suite-datum",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "milestone",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "9.5px 8.5px",
+              "part": "flag-root",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "14px 9px",
+              "part": "flag-free",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "19.35px 8.8px",
+              "part": "flag-edge",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "20px 9px",
+              "part": "flag-air-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "20px 9px",
+              "part": "flag-air-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "concept-review",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "19px 19.5px",
+              "part": "review-occlusion",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.55px 7.5px",
+              "part": "recall-line",
+              "transform": "matrix(0.2, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "origin": "19px 19.5px",
+              "part": "review-card",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "6.6px 17.6px",
+              "part": "recall-trace",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "origin": "7px 4px",
+              "part": "recall-witness",
+              "transform": "matrix(0.75, 0, 0, 0.75, 0, 0)"
+            }
+          ],
+          "playing": "true"
+        }
+      ],
+      "finished": [
+        {
+          "icon": "code-run",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "12.6px 15.5px",
+              "part": "run-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 10px",
+              "part": "source-charge-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 10px",
+              "part": "source-charge-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 10px",
+              "part": "source-charge-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "12.6px 15.5px",
+              "part": "run-launch",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "20px 15.5px",
+              "part": "run-edge",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "21px 15.5px",
+              "part": "run-witness-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "21px 15.5px",
+              "part": "run-witness-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "test-suite",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "5.5px 10.4px",
+              "part": "case-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "5.5px 16.7px",
+              "part": "seat-light-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "12px 9.1px",
+              "part": "case-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 16.7px",
+              "part": "seat-light-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "18.5px 10px",
+              "part": "case-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "18.5px 16.7px",
+              "part": "seat-light-2",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "12px 19px",
+              "part": "suite-datum",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "milestone",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "9.5px 8.5px",
+              "part": "flag-root",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "14px 9px",
+              "part": "flag-free",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "19.35px 8.8px",
+              "part": "flag-edge",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "20px 9px",
+              "part": "flag-air-upper",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "20px 9px",
+              "part": "flag-air-lower",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        },
+        {
+          "icon": "concept-review",
+          "parts": [
+            {
+              "opacity": "1",
+              "origin": "19px 19.5px",
+              "part": "review-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "8.55px 7.5px",
+              "part": "recall-line",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "origin": "19px 19.5px",
+              "part": "review-card",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "6.6px 17.6px",
+              "part": "recall-trace",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "origin": "7px 4px",
+              "part": "recall-witness",
+              "transform": "none"
+            }
+          ],
+          "playing": null
+        }
+      ]
+    }
+  ],
+  "reduced": [
+    {
+      "icon": "code-run",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "12.6px 15.5px",
+          "part": "run-occlusion",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "5.5px 10px",
+          "part": "source-charge-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "5.5px 10px",
+          "part": "source-charge-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "5.5px 10px",
+          "part": "source-charge-2",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "12.6px 15.5px",
+          "part": "run-launch",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "20px 15.5px",
+          "part": "run-edge",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "21px 15.5px",
+          "part": "run-witness-upper",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "21px 15.5px",
+          "part": "run-witness-lower",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "test-suite",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "5.5px 10.4px",
+          "part": "case-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "5.5px 16.7px",
+          "part": "seat-light-0",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "12px 9.1px",
+          "part": "case-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 16.7px",
+          "part": "seat-light-1",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "18.5px 10px",
+          "part": "case-2",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "18.5px 16.7px",
+          "part": "seat-light-2",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "12px 19px",
+          "part": "suite-datum",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "milestone",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "9.5px 8.5px",
+          "part": "flag-root",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "14px 9px",
+          "part": "flag-free",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "19.35px 8.8px",
+          "part": "flag-edge",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "20px 9px",
+          "part": "flag-air-upper",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "20px 9px",
+          "part": "flag-air-lower",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    },
+    {
+      "icon": "concept-review",
+      "parts": [
+        {
+          "opacity": "1",
+          "origin": "19px 19.5px",
+          "part": "review-occlusion",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "8.55px 7.5px",
+          "part": "recall-line",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "origin": "19px 19.5px",
+          "part": "review-card",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "6.6px 17.6px",
+          "part": "recall-trace",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "origin": "7px 4px",
+          "part": "recall-witness",
+          "transform": "none"
+        }
+      ],
+      "playing": null
+    }
+  ],
+  "motionOff": [
+    {
+      "disabled": true,
+      "label": "Play code-run study"
+    },
+    {
+      "disabled": true,
+      "label": "Play test-suite study"
+    },
+    {
+      "disabled": true,
+      "label": "Play milestone study"
+    },
+    {
+      "disabled": true,
+      "label": "Play concept-review study"
+    }
+  ]
+}

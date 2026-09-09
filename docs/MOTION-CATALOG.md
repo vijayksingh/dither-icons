@@ -59,6 +59,11 @@ The four accepted foundation performances remain intact. The remaining icons use
 | [sliders](icon-reviews/sliders.md) | adjust one variable precisely | Adjust / Register / Hold | 1380ms |
 | [graduation-cap](icon-reviews/graduation-cap.md) | acknowledge an invitation to learn | Acknowledge / Catch / Settle | 1440ms |
 
+| [Code Run](icon-reviews/code-run.md) | Launch written code into execution. | Read / Launch / Coast | 1360ms |
+| [Test Suite](icon-reviews/test-suite.md) | Observe independent test cases in one collection. | Sample / Seat / Compare | 1460ms |
+| [Milestone](icon-reviews/milestone.md) | Orient toward a capability on a Path. | Anchor / Unfurl / Hold | 1420ms |
+| [Concept Review](icon-reviews/concept-review.md) | Revisit an earlier idea while retaining context. | Open / Recall / Nest | 1480ms |
+
 ## Focused refinement 01
 
 The user requested a smaller, more careful batch after the broad rollout. Only the first four entries above have been refined in this pass. Their new reviews supersede the earlier rollout reports for those four. Choose **Refinement / 01** in Motion studies. Each now has connected geometry, its own named timing/configuration, and a localized climax (MOT-16). The remaining icons are outside this batch.
@@ -97,4 +102,8 @@ Screenshots show browser-rendered poses, not invented concept art. Color remains
 
 ## Platform / 04
 
-**Sigma, Bug, Sliders, Graduation Cap** cover loss reduction, diagnosis, experiment parameters, and Browse Paths. **Platform / 04** is the default study group. Sigma waits for all input terms before releasing its result. Bug reveals a fault in its existing seam. Sliders adjusts one thumb against two fixed controls, with a connected fill and exact detent. Graduation Cap keeps two physical tassel hinges as the rigid cap tips. Each has an individual Interface Craft report and browser references in `motion-evidence/platform-04/`. All previous forty-eight timelines remain unchanged.
+**Sigma, Bug, Sliders, Graduation Cap** cover loss reduction, diagnosis, experiment parameters, and Browse Paths. Choose **Platform / 04** for this group. Sigma waits for all input terms before releasing its result. Bug reveals a fault in its existing seam. Sliders adjusts one thumb against two fixed controls, with a connected fill and exact detent. Graduation Cap keeps two physical tassel hinges as the rigid cap tips. Each has an individual Interface Craft report and browser references in `motion-evidence/platform-04/`. All previous forty-eight timelines remain unchanged.
+
+## Platform / 05
+
+**Code Run, Test Suite, Milestone, Concept Review** are the default study family. Their semantic names and keywords also appear in collection search and usage snippets. Source receipts precede launch; separate cases precede a collection response; connected cloth transmits one wave; retained cards expose the earlier idea before recall light arrives. Concept Review received a subsequent arrow contour refinement. Each has its own Interface Craft report and references in `motion-evidence/platform-05/`. Previous fifty-two timelines remain unchanged.

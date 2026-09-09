@@ -1,3 +1,7 @@
+import {CODE_RUN_ART} from './motions/code-run';
+import {SUITE_ART,SUITE_CASES} from './motions/test-suite';
+import {MILESTONE_ART} from './motions/milestone';
+import {REVIEW_ART} from './motions/concept-review';
 import {SIGMA_ART} from './motions/sigma';
 import {BUG_ART} from './motions/bug';
 import {SLIDERS_ART,SLIDERS_KNOBS} from './motions/sliders';
@@ -17,7 +21,7 @@ import {RETRY_ART} from './motions/retry';
 /** Original vector geometry authored in a 24 × 24 viewBox. No third-party paths. */
 export type Motion = 'ring'|'rise'|'fall'|'pulse'|'turn'|'slide'|'blink'|'draw';
 export type Part = { cells: number[][]; path?:string; stroke?:boolean; transform?:string; motion?: Motion };
-export type IconDefinition = { name:string; category:string; description:string; parts:Part[] };
+export type IconDefinition = { name:string; label?:string; keywords?:readonly string[]; category:string; description:string; parts:Part[] };
 const rect=(x:number,y:number,w:number,h:number)=>Array.from({length:w*h},(_,i)=>[x+i%w,y+Math.floor(i/w)]);
 const poly=(points:number[][])=>{const cells:number[][]=[];for(let y=1;y<23;y++)for(let x=1;x<23;x++){let inside=false;for(let i=0,j=points.length-1;i<points.length;j=i++){const [a,b]=points[i],[c,d]=points[j];if((b>y+.5)!==(d>y+.5)&&x+.5<(c-a)*(y+.5-b)/(d-b)+a)inside=!inside;}if(inside)cells.push([x,y]);}return cells;};
 const line=(points:number[][])=>{const cells:number[][]=[];for(let i=1;i<points.length;i++){const [x,y]=points[i-1],[a,b]=points[i];const n=Math.max(Math.abs(a-x),Math.abs(b-y));for(let j=0;j<=n;j++)cells.push(...rect(Math.round(x+(a-x)*j/(n||1)),Math.round(y+(b-y)*j/(n||1)),2,2));}return cells;};
@@ -82,6 +86,10 @@ export const definitions = [
  def('bug','Development','Locate the fault without losing its context.',vector(BUG_ART.head),vector(BUG_ART.left),vector(BUG_ART.right)),
  def('sliders','Interface','Adjust one variable against a stable reference.',...SLIDERS_KNOBS.map(k=>vector(SLIDERS_ART.knob(k.x,k.y)))),
  def('graduation-cap','Learning','An invitation to explore a learning path.',vector(CAP_ART.board),vector(CAP_ART.crown),vector(CAP_ART.tuft)),
+ {...def('code-run','Development','Execute learner code in the Browser Runtime.',vector(CODE_RUN_ART.frame),vector(CODE_RUN_ART.launch)),label:'Code Run',keywords:['execute','execution','source','runtime','launch']},
+ {...def('test-suite','Development','Inspect independent test cases in a shared fixture.',...SUITE_CASES.map(c=>vector(SUITE_ART.glass(c.x,c.top)))),label:'Test Suite',keywords:['tests','visible tests','cases','assertions','compare','samples']},
+ {...def('milestone','Learning','Orient toward a capability checkpoint in a Path.',vector(MILESTONE_ART.mast),vector(MILESTONE_ART.base),vector(MILESTONE_ART.root),vector(MILESTONE_ART.free)),label:'Milestone',keywords:['capability','checkpoint','path','flag','goal']},
+ {...def('concept-review','Learning','Revisit an earlier idea while preserving its context.',vector(REVIEW_ART.rear),vector(REVIEW_ART.front)),label:'Concept Review',keywords:['recall','revisit','reflection','review view','memory','cards']},
 ] as const;
 export type IconName = typeof definitions[number]['name'];
 

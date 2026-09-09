@@ -1,0 +1,57 @@
+{
+  "search": [
+    {
+      "query": "execute",
+      "result": [
+        "Inspect code-run"
+      ]
+    },
+    {
+      "query": "assertions",
+      "result": [
+        "Inspect test-suite"
+      ]
+    },
+    {
+      "query": "capability",
+      "result": [
+        "Inspect milestone"
+      ]
+    },
+    {
+      "query": "recall",
+      "result": [
+        "Inspect concept-review"
+      ]
+    },
+    {
+      "query": "Code Run",
+      "result": [
+        "Inspect code-run"
+      ]
+    },
+    {
+      "query": "zznoicon",
+      "result": []
+    }
+  ],
+  "resetCount": 56,
+  "snippets": [
+    {
+      "icon": "code-run",
+      "snippet": "import { CodeRunIcon } from '@unlocalhosted/dither-icons';\n\n<button className=\"di-trigger\" aria-label=\"Code Run\">\n  <CodeRunIcon size={64} texture=\"dither\" color=\"#bea5f5\" animate={true} />\n</button>"
+    },
+    {
+      "icon": "test-suite",
+      "snippet": "import { TestSuiteIcon } from '@unlocalhosted/dither-icons';\n\n<button className=\"di-trigger\" aria-label=\"Test Suite\">\n  <TestSuiteIcon size={64} texture=\"dither\" color=\"#bea5f5\" animate={true} />\n</button>"
+    },
+    {
+      "icon": "milestone",
+      "snippet": "import { MilestoneIcon } from '@unlocalhosted/dither-icons';\n\n<button className=\"di-trigger\" aria-label=\"Milestone\">\n  <MilestoneIcon size={64} texture=\"dither\" color=\"#bea5f5\" animate={true} />\n</button>"
+    },
+    {
+      "icon": "concept-review",
+      "snippet": "import { ConceptReviewIcon } from '@unlocalhosted/dither-icons';\n\n<button className=\"di-trigger\" aria-label=\"Concept Review\">\n  <ConceptReviewIcon size={64} texture=\"dither\" color=\"#bea5f5\" animate={true} />\n</button>"
+    }
+  ]
+}

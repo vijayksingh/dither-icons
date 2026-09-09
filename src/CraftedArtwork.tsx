@@ -1,3 +1,4 @@
+import {LearningWorkflowArtwork} from './LearningWorkflowArtwork';
 import {PlatformToolsArtwork} from './PlatformToolsArtwork';
 import type {ReactNode} from 'react';
 import {PlatformNavigationArtwork} from './PlatformNavigationArtwork';
@@ -17,6 +18,7 @@ const Accent=({part,children}:{part:string;children:ReactNode})=><g data-part={p
 
 export function CraftedArtwork({name,draw,texture}:Props){
  if(!studies[name])return null;
+ if(['code-run','test-suite','milestone','concept-review'].includes(name))return <LearningWorkflowArtwork name={name} draw={draw} texture={texture}/>;
  if(['sigma','bug','sliders','graduation-cap'].includes(name))return <PlatformToolsArtwork name={name} draw={draw} texture={texture}/>;
  if(['workspace','gauge','orbit','lifebuoy'].includes(name))return <PlatformNavigationArtwork name={name} draw={draw} texture={texture}/>;
  if(['tensor','network','checkpoint','hint'].includes(name))return <PlatformArtwork name={name} draw={draw} texture={texture}/>;
