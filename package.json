@@ -42,5 +42,21 @@
     "tsx": "^4.0.0",
     "typescript": "^5.8.0",
     "vite": "^6.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vijayksingh/dither-icons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vijayksingh/dither-icons/issues"
+  },
+  "homepage": "https://github.com/vijayksingh/dither-icons#readme",
+  "keywords": [
+    "icons",
+    "react",
+    "svg",
+    "dither",
+    "animation",
+    "typescript"
+  ]
 }

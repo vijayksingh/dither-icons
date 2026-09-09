@@ -1,115 +1,167 @@
 # Dither Icons
 
-68 original animated SVG icons for React, including 32 icons selected for CraftingAttention. A standalone project by Unlocalhosted, inspired by the discoverability and interaction model of [lucide-animated](https://lucide-animated.com/). No Lucide paths or source are included.
+**A little grain. A lot of character.**
 
-## Run the catalog
+68 original animated SVG icons for React. Clean vector contours, fine ordered dither, and a small gesture that belongs to each icon: a bell rings, a tray catches, a lid opens.
 
-Node 22+ recommended.
+[Get started](#get-started) · [Documentation](public/docs/introduction.md) · [For AI agents](AI.md) · [Contributing](CONTRIBUTING.md) · [MIT license](LICENSE)
+
+![The Download icon in dither, solid and outline. One drawing, three materials.](public/reference/textures.svg)
+
+## Made for the little details
+
+- **Three materials.** Dither, solid and outline share the same original geometry in a 24 × 24 viewBox.
+- **Individual motion.** Every icon has an authored gesture. Semantic parts move together; the grain stays attached to its surface.
+- **Real interactions.** Hover, keyboard focus and tap play once. React playback finishes after you leave and ignores overlapping triggers.
+- **Accessible by default.** Reduced motion is respected. Decorative icons stay out of the accessibility tree; meaningful images can have a title.
+- **Your interface, your color.** Icons inherit `currentColor`. The gallery includes eight curated palettes with light and dark variants.
+- **React or SVG.** Typed components, forwarded SVG refs and standalone SVG export. No separate stylesheet or animation dependency.
+- **Context for your agent.** An exact export manifest, integration guide and labeled visual references ship alongside the code.
+
+<details>
+<summary>See all 68 icons</summary>
+
+![All 68 Dither Icons, labeled with their React component exports.](public/reference/icons.svg)
+
+Browse the [machine-readable collection](icons.json) or the [individual motion catalog](docs/MOTION-CATALOG.md).
+
+</details>
+
+## Get started
+
+Node.js 22+ is recommended for development. React 18+ is the library's only peer dependency.
 
 ```sh
-npm install
+git clone https://github.com/vijayksingh/dither-icons.git
+cd dither-icons
+npm ci
 npm run dev
 ```
 
-Open http://127.0.0.1:4192. Hover or tap a card preview to play its gesture; select its name to open its shareable icon page. Copy React directly from a card, or customize and export React/SVG on that page. Search by name or use case with Cmd/Ctrl-K, choose a texture and palette, and expand the complete collection. The motion studio lives at `/motion`; the old `/#motion-studies` link still works. See the [homepage craft review](docs/site-reviews/homepage.md).
+Open **http://127.0.0.1:4192** to explore the gallery. Hover or tap a preview to play it; select the name to open its page. Customize the material, color and size, then copy React or download an SVG.
 
-## Public pages and agent context
+| Local page | What you can do |
+| --- | --- |
+| `/` | Search and explore the collection |
+| `/icons/download` | Preview, inspect timing, copy source and export one icon |
+| `/motion` | Compare gestures, play at half speed and inspect individual frames |
+| `/docs` | Read installation, API, motion, accessibility and SVG guides |
+| `/ai` | Build integration instructions and download agent context |
 
-- `/icons/:name`: individual previews, frame inspection, React source and SVG downloads for every icon.
-- `/motion`: the complete set of original motion studies.
-- `/docs`: introduction, installation, React API, motion, accessibility and SVG guides.
-- `/ai`: an instruction composer with real component names, accessible examples and visual references.
-- `/llms.txt`, `/llms-full.txt`, `/AI.md`, `/icons.json`: agent-readable context and the complete machine-readable catalog.
-- `/reference/textures.svg`, `/reference/icons.svg`: actual rendered artwork, labeled for visual comparison.
+**Cmd/Ctrl-K** searches pages and icons. **/** focuses the collection filter. Browser Back restores your filter, scroll position and focused icon.
 
-Cmd/Ctrl-K searches pages and icons; `/` focuses the collection filter. Back restores the collection filter, scroll position and focused icon. Theme, material and palette stay consistent between pages.
+## Use in your React app
 
-`npm run generate:docs` creates Markdown, agent guides, the manifest and visual sheets from the real exports and shared page content. The production build and `npm pack` regenerate them automatically. Edit `demo/content/docs.ts` and `demo/content/agent.ts`, then regenerate; do not hand-edit generated outputs. `AI.md` and `icons.json` also ship inside the package.
-
-The site uses client-side routes. `public/_redirects` supplies an SPA fallback for compatible static hosts; configure an equivalent fallback to `index.html` on other hosts, while serving existing resource files normally. See the [secondary-page review](docs/site-reviews/secondary-pages.md).
-
-## Use the library
-
-Not published to npm yet. Build a local tarball:
+The package is **not published to npm yet**. Create a local package from this checkout:
 
 ```sh
+# Inside the dither-icons checkout, after npm ci:
 npm pack
-# In your application:
+
+# Inside your application, use the path to the generated file:
 npm install /absolute/path/to/unlocalhosted-dither-icons-0.1.0.tgz
 ```
 
-```tsx
-import { BellIcon } from '@unlocalhosted/dither-icons';
+Import a named component and put the action on a real control:
 
-<button className="di-trigger" aria-label="Notifications">
-  <BellIcon size={32} texture="dither" />
-</button>
+```tsx
+import { DownloadIcon } from '@unlocalhosted/dither-icons';
+
+export function DownloadButton({ onDownload }: { onDownload: () => void }) {
+  return (
+    <button type="button" className="di-trigger" onClick={onDownload}>
+      <DownloadIcon size={48} texture="dither" />
+      <span>Download file</span>
+    </button>
+  );
+}
 ```
 
-React 18+ is the only peer dependency. ESM and TypeScript declarations ship in `dist/`. CSS is embedded in each SVG so exports work without a stylesheet. All 68 icons use native Web Animations in React, with the same tracks compiled to CSS for standalone SVG hover. Named exports currently share the complete geometry catalog; per-icon bundle splitting is not implemented.
+`di-trigger` lets the whole control's hover, focus or tap trigger the icon. The visible text names this button; use `aria-label` for an icon-only control. Your application owns the action, loading state and result. The gesture never substitutes for confirmation that an operation succeeded.
 
-### API
+### Choose a material
 
-All components forward an SVG ref and accept ordinary SVG props, including `color`, `className`, `style`, and event handlers.
+| Material | Suggested use |
+| --- | --- |
+| `dither` | Expressive detail at 48px and above |
+| `solid` | Clear silhouettes in compact 16–24px controls |
+| `outline` | A lighter presence in toolbars and navigation |
+
+The texture sits inside a smooth vector silhouette. Color comes from the surrounding interface; check contrast at the size you actually use.
+
+### Component API
+
+All components accept ordinary SVG props and forward an SVG ref.
 
 | Prop | Default | Behavior |
 | --- | --- | --- |
-| `size` | `24` | SVG width and height, number or CSS-compatible string |
-| `texture` | `dither` | `dither`, `solid`, or `outline` |
-| `animate` | `true` | Enable one-shot hover / focus animations |
-| `active` | `false` | Play on becoming true; reset false before replay |
-| `replayKey` | `0` | Change this number to replay an icon |
-| `speed` | `1` | Playback rate for all icons; `.5` is half speed |
-| `progress` | absent | Pause a study at a normalized frame from `0` to `1`; omit to return to interaction |
-| `title` | absent | Accessible image name; otherwise decorative |
+| `size` | `24` | Width and height; number or CSS-compatible string |
+| `texture` | `dither` | `dither`, `solid` or `outline` |
+| `animate` | `true` | Enable interaction-triggered motion |
+| `active` | `false` | Play when this becomes true; reset false before a later trigger |
+| `replayKey` | `0` | Change the value to request another playback |
+| `speed` | `1` | Positive playback rate; `0.5` is half speed |
+| `progress` | — | Pause at a normalized frame from `0` to `1`; omit to resume interaction |
+| `title` | — | Name a meaningful SVG image; otherwise it is decorative |
 
-`DitherIcon` also accepts a `name` for runtime selection. Invalid names throw a descriptive error. `definitions` and `IconArtwork` support building custom catalogs. Use `di-trigger` on a parent button to animate on the whole target's hover and keyboard focus. Touch users can tap a `di-trigger` button, or explicitly trigger with `active`.
+For runtime selection, use `DitherIcon` with a valid `name` from [icons.json](icons.json). Invalid names throw a descriptive error. See the [complete React guide](public/docs/react.md) for examples.
 
-Motion obeys `prefers-reduced-motion: reduce`. No looping animation, timers, filters, generated noise, or layout animation. All performances finish after pointer/focus leaves, ignore retriggers while playing, and cancel on unmount, motion-off, or reduced-motion changes. CSS-only SVG hover playback cannot persist after the pointer leaves; use React for the full interaction contract. Caller-supplied `animate={false}` takes precedence over `active`. Do not use motion as the only indicator of a state change.
+### Motion and SVG behavior
 
-## Visual contract
+React uses the native Web Animations API. Each gesture returns to rest, completes after pointer departure, and cancels on unmount, motion-off or a reduced-motion preference change. `animate={false}` takes precedence over active playback.
 
-- Original vector contours in a 24 × 24 viewBox. Curves, consistent negative space, and optical proportions are independent of the texture grid.
-- An 8 × 8 Bayer threshold matrix samples directional shading into quarter-unit stipple marks. A subtle tonal base preserves the silhouette. No checkerboard fill or stepped contour.
-- `currentColor` throughout. The hosting interface supplies contrast.
-- Prefer solid / outline at 16–24px. Dither is clearest at 48px+. Contours remain smooth at every size.
-- Motion belongs to semantic parts: lids hinge, arrows lead, bells pivot, and signals pass through a chip. All 68 performances are individually authored, last 720–1600ms, and end at neutral. No catalog icon uses a generic motion preset.
-- Every new icon needs a name, category, motion explanation, and bounded original geometry in `src/shapes.ts`. The catalog offers eight curated primary colors, with separate light/dark values, and exports the selected color.
+Standalone SVGs contain the same tracks compiled to CSS, including reduced-motion rules. Inline the **complete SVG**, including its styles, masks and internal definitions, for hover playback. An `<img>` embedding is static. CSS hover playback ends when hover ends; use React when the gesture should finish after pointer departure. Keep internal IDs unique when combining exported SVGs in one document.
 
-## Checks
+ESM and TypeScript declarations are included. Named exports currently share the complete geometry catalog; per-icon bundle splitting is not implemented.
+
+## Documentation and AI context
+
+| Guide | Contents |
+| --- | --- |
+| [Introduction](public/docs/introduction.md) | First icon, materials and library behavior |
+| [Installation](public/docs/installation.md) | Local package, React environments and SVG use |
+| [React API](public/docs/react.md) | Props, named exports, dynamic selection and replay |
+| [Motion](public/docs/motion.md) | Semantic gestures, triggers and frame inspection |
+| [Accessibility](public/docs/accessibility.md) | Labels, keyboard interaction, state and reduced motion |
+| [SVG export](public/docs/svg.md) | Complete markup, styling and playback limitations |
+
+Give your coding agent [AI.md](AI.md) and [icons.json](icons.json). Together they describe the real exports, their meaning and the integration contract. For more context, use the [complete text guide](public/llms-full.txt), [material sheet](public/reference/textures.svg) and [labeled collection](public/reference/icons.svg).
+
+The local site also serves `/llms.txt` and an instruction builder at `/ai`. Download the files when working with a remote agent that cannot reach your local preview.
+
+## Development
 
 ```sh
-npm run typecheck
-npm test
-npm run build
-npm pack
+npm run typecheck     # TypeScript
+npm test              # Geometry, choreography, exports and documentation checks
+npm run build         # React package, downloadable tarball and public site
+npm run generate:docs # Regenerate guides, manifest and visual references
 ```
 
-`dist/` is the React package; `site-dist/` is the static catalog. The build automatically creates the package download in `public/` before building the catalog. See `docs/VALIDATION.md` for delivery checks.
+| Directory | Purpose |
+| --- | --- |
+| `src/` | Original artwork, React components and motion engine |
+| `src/motions/` | Individually authored icon timelines |
+| `demo/` | Gallery, icon pages, motion studio and documentation UI |
+| `demo/content/` | Shared source for web guides and generated Markdown |
+| `public/` | Agent context, static references and downloadable guides |
+| `docs/` | Design principles, individual reviews and browser evidence |
+| `tests/` | Geometry, motion, accessibility and export contracts |
 
-## License
+`dist/` contains the built React package; `site-dist/` contains the built public site. Build and pack regenerate the documentation from the real exports. Edit `demo/content/docs.ts` and `demo/content/agent.ts`, then regenerate instead of hand-editing generated files.
 
-MIT. Original icon geometry and implementation. The reference project's logo, branding, code, and icon paths are not part of this library.
+Static hosting needs a fallback from client-side routes to `index.html`. The included `public/_redirects` supplies it for compatible hosts; serve existing resource files normally. No hosted gallery or registry release is assumed by these instructions.
 
-## Individual motion studies
+## Contributing
 
-Open `/motion` and choose a family to inspect all 68 icons. **Platform / 08** opens Save Preferences, File Explorer, Expand View, and Sign Out; **Platform / 07** contains Tokenize, Embedding Lookup, Attention Focus, and Batch Sampling; **Platform / 06** contains Learning Rhythm, Gradient Check, Experiment Compare, and Training Step; **Platform / 05** contains Code Run, Test Suite, Milestone, and Concept Review; **Platform / 04** contains Sigma, Bug, Sliders, and Graduation Cap; **Platform / 03** contains Workspace, Gauge, Orbit, and Lifebuoy; **Platform / 02** contains Tensor, Network, Checkpoint, and Hint; **Platform / 01** contains Path, Flask, Target, and Retry. The Foundation family preserves Bell, Heart, Download, and Layers. Use **Half speed**, **Inspect timing**, and the keyboard-accessible scrubber to inspect the same timelines used in the components. These are preview gestures, not claims that a download or notification action occurred.
+Contributions are welcome. Start with [CONTRIBUTING.md](CONTRIBUTING.md) and the [motion principles](docs/MOTION-PRINCIPLES.md).
 
-- Bell: anchored shell swing, delayed clapper, asymmetric ringing cues.
-- Heart: compression, release, a brief highlight and four quiet escaping flecks.
-- Download: the arrow remains visible; the tray catches, rebounds, and settles. No symbol substitution.
-- Layers: independent planes compress, separate, hold, and return in sequence.
+For a new icon, begin with an actual interface action. Define its meaning, the silhouette that must remain readable, and the parts that cause each other to move. Refine one gesture before repeating an approach across the library. Include real browser evidence for visual or motion changes.
 
-`src/choreography.ts` collects the accepted foundation and the individually authored tracks in `src/motions/`. `src/CraftedArtwork.tsx`, `src/ExtendedArtwork.tsx`, `src/LearningArtwork.tsx`, `src/PlatformArtwork.tsx`, `src/PlatformNavigationArtwork.tsx`, `src/PlatformToolsArtwork.tsx`, `src/LearningWorkflowArtwork.tsx`, `src/LearningPracticeArtwork.tsx`, `src/DataFlowArtwork.tsx`, and `src/PlatformActionsArtwork.tsx` name the semantic parts. `src/useChoreography.ts` owns interaction lifecycle and scrubbing. See [motion review evidence](docs/MOTION-REVIEW.md) and [platform integration mapping](docs/PLATFORM-ICONS.md).
+[Report a bug or propose an icon](https://github.com/vijayksingh/dither-icons/issues).
 
-## Authoring and review
+## Credits and license
 
-Read [motion principles](docs/MOTION-PRINCIPLES.md), then the icon's [individual Interface Craft review](docs/MOTION-CATALOG.md). Every review includes semantic meaning, an identity boundary, a causal storyboard, exact keyframe times, and browser evidence. Reuse the interaction engine; author each performance independently.
+Created by [Vijay Singh](https://github.com/vijayksingh) / Unlocalhosted. The public browsing experience takes inspiration from [lucide-animated](https://lucide-animated.com/) and [transitions.dev](https://transitions.dev/). The icon geometry and implementation are original; reference branding, assets and source are not included.
 
-Platform / 05 uses semantic display names in the gallery and exported usage examples. Search also matches use-case keywords such as `execute`, `assertions`, `capability`, and `recall`; stable IDs and exports are `code-run` / `CodeRunIcon`, `test-suite` / `TestSuiteIcon`, `milestone` / `MilestoneIcon`, and `concept-review` / `ConceptReviewIcon`.
-
-Platform / 06 adds `LearningRhythmIcon`, `GradientCheckIcon`, `ExperimentCompareIcon`, and `TrainingStepIcon`. Their semantic labels appear in the catalog and their use-case keywords include `daily goal`, `finite difference`, `paired`, and `descent`.
-
-Platform / 07 adds `TokenizeIcon`, `EmbeddingLookupIcon`, `AttentionFocusIcon`, and `BatchSamplingIcon`. These four concept studies are retained at the user's request. Future batches must be selected from actual platform interface controls and navigation, with a concrete call site for each icon. See [platform selection policy](docs/PLATFORM-ICONS.md).
-
-Platform / 08 covers existing platform controls with `SavePreferencesIcon`, `FileExplorerIcon`, `ExpandViewIcon`, and `SignOutIcon`. Search recognizes `persist`, `sidebar`, `maximize`, and `logout`. Exact call sites and state-specific integration guidance are recorded in [PLATFORM-ICONS.md](docs/PLATFORM-ICONS.md).
+[MIT](LICENSE) — free to use, modify and distribute, including in commercial projects. Retain the license notice.
