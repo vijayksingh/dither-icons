@@ -7,8 +7,9 @@ import { useEffect, useRef, useState, type ReactNode } from 'react';
 // 2000ms: successful copy feedback returns to its resting label.
 export const TIMING = { dismiss: 160, enter: 280, copied: 2000 };
 
-export function Glyph({ name, size = 18 }: { name: 'arrow' | 'down' | 'copy' | 'check' | 'close' | 'search' | 'replay' | 'sun' | 'moon' | 'code' | 'chevron'; size?: number }) {
+export function Glyph({ name, size = 18 }: { name: 'arrow' | 'down' | 'copy' | 'check' | 'close' | 'search' | 'replay' | 'sun' | 'moon' | 'code' | 'chevron' | 'menu'; size?: number }) {
   const paths = {
+    menu: 'M5 7h14M5 12h14M5 17h14',
     arrow: 'M5 12h14M13 6l6 6-6 6', down: 'M12 4v12M7 11l5 5 5-5M5 19h14',
     copy: 'M9 9h11v11H9zM15 9V4H4v11h5', check: 'm5 12 4 4L19 6',
     close: 'm6 6 12 12M6 18 18 6', search: 'M21 21l-5-5M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0',
@@ -39,15 +40,16 @@ export function CopyButton({ value, label = 'Copy code', compact = false, onErro
   </button>;
 }
 
-export function Modal({ children, titleId, onClose, className = '' }: { children: ReactNode; titleId: string; onClose: () => void; className?: string }) {
+export function Modal({ children, titleId, onClose, className = '', autoFocusClose = true }: { children: ReactNode; titleId: string; onClose: () => void; className?: string; autoFocusClose?: boolean }) {
   const ref = useRef<HTMLDialogElement>(null);
   const timer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const [closing, setClosing] = useState(false);
   const backdropDown = useRef(false);
+  const [opener] = useState(() => document.activeElement as HTMLElement | null);
   useEffect(() => {
     const previousOverflow = document.body.style.overflow;
-    const opener = document.activeElement as HTMLElement | null;
     ref.current?.showModal(); document.body.style.overflow = 'hidden';
+    ref.current?.querySelector<HTMLElement>(autoFocusClose ? '.modal-close' : '[data-dialog-autofocus]')?.focus({ preventScroll: true });
     return () => { clearTimeout(timer.current); document.body.style.overflow = previousOverflow; opener?.focus({ preventScroll: true }); };
   }, []);
   function close() {
@@ -55,8 +57,8 @@ export function Modal({ children, titleId, onClose, className = '' }: { children
     setClosing(true);
     timer.current = setTimeout(onClose, matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : TIMING.dismiss);
   }
-  return <dialog ref={ref} aria-labelledby={titleId} className={`modal ${className}`} data-closing={closing} onCancel={event => { event.preventDefault(); close(); }} onPointerDown={event => { backdropDown.current = event.target === event.currentTarget; }} onClick={event => { if (backdropDown.current && event.target === event.currentTarget) close(); }}>
-    <button className="icon-button modal-close" onClick={close} aria-label="Close dialog" autoFocus><Glyph name="close" /></button>
+  return <dialog ref={ref} aria-labelledby={titleId} className={`modal ${className}`} data-closing={closing} onCancel={event => { event.preventDefault(); close(); }} onKeyDown={event => { if (event.key === 'Escape') { event.preventDefault(); event.stopPropagation(); close(); } }} onPointerDown={event => { backdropDown.current = event.target === event.currentTarget; }} onClick={event => { if (backdropDown.current && event.target === event.currentTarget) close(); }}>
+    <button className="icon-button modal-close" onClick={close} aria-label="Close dialog" autoFocus={autoFocusClose}><Glyph name="close" /></button>
     <div className="modal-surface">
       {children}
     </div>

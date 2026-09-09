@@ -8,7 +8,9 @@
   "files": [
     "dist",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "AI.md",
+    "icons.json"
   ],
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -21,10 +23,11 @@
   },
   "scripts": {
     "dev": "vite --host 127.0.0.1 --port 4192",
-    "build": "tsup src/index.tsx --format esm --dts --external react --clean && node scripts/package-gallery.mjs && vite build",
+    "build": "npm run generate:docs && tsup src/index.tsx --format esm --dts --external react --clean && node scripts/package-gallery.mjs && vite build",
     "typecheck": "tsc --noEmit",
     "test": "tsx --test tests/*.test.tsx",
-    "prepack": "tsup src/index.tsx --format esm --dts --external react --clean"
+    "prepack": "npm run generate:docs && tsup src/index.tsx --format esm --dts --external react --clean",
+    "generate:docs": "tsx scripts/generate-docs.tsx"
   },
   "peerDependencies": {
     "react": ">=18"

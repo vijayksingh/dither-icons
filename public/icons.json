@@ -1,0 +1,1349 @@
+{
+  "schemaVersion": 1,
+  "package": "@unlocalhosted/dither-icons",
+  "version": "0.1.0",
+  "count": 68,
+  "license": "MIT",
+  "installation": {
+    "publishedToNpm": false,
+    "command": "npm install ./unlocalhosted-dither-icons-0.1.0.tgz",
+    "peerDependencies": {
+      "react": ">=18"
+    }
+  },
+  "textures": [
+    "dither",
+    "solid",
+    "outline"
+  ],
+  "sizing": {
+    "viewBox": "0 0 24 24",
+    "default": 24,
+    "ditherRecommendedMinimum": 48,
+    "compactRecommendation": "solid or outline"
+  },
+  "icons": [
+    {
+      "name": "bell",
+      "component": "BellIcon",
+      "label": "Bell",
+      "category": "Interface",
+      "description": "The bell swings from its crown.",
+      "keywords": [],
+      "page": "/icons/bell",
+      "motion": {
+        "caption": "A little weight. A lingering ring.",
+        "durationMs": 940,
+        "stages": [
+          "Anticipate",
+          "Strike",
+          "Resonate"
+        ]
+      }
+    },
+    {
+      "name": "heart",
+      "component": "HeartIcon",
+      "label": "Heart",
+      "category": "Interface",
+      "description": "A double beat, then back to rest.",
+      "keywords": [],
+      "page": "/icons/heart",
+      "motion": {
+        "caption": "Gather, open, let a little joy escape.",
+        "durationMs": 820,
+        "stages": [
+          "Gather",
+          "Bloom",
+          "Exhale"
+        ]
+      }
+    },
+    {
+      "name": "sparkles",
+      "component": "SparklesIcon",
+      "label": "Sparkles",
+      "category": "Interface",
+      "description": "Two stars brighten in sequence.",
+      "keywords": [],
+      "page": "/icons/sparkles",
+      "motion": {
+        "caption": "One glint opens. A smaller star answers.",
+        "durationMs": 1180,
+        "stages": [
+          "Gather",
+          "Glint",
+          "Echo"
+        ]
+      }
+    },
+    {
+      "name": "search",
+      "component": "SearchIcon",
+      "label": "Search",
+      "category": "Interface",
+      "description": "The lens leans in to inspect.",
+      "keywords": [],
+      "page": "/icons/search",
+      "motion": {
+        "caption": "The whole lens leans in for a closer look.",
+        "durationMs": 1180,
+        "stages": [
+          "Attend",
+          "Inspect",
+          "Return"
+        ]
+      }
+    },
+    {
+      "name": "home",
+      "component": "HomeIcon",
+      "label": "Home",
+      "category": "Interface",
+      "description": "The doorway rises to welcome you.",
+      "keywords": [],
+      "page": "/icons/home",
+      "motion": {
+        "caption": "A familiar doorway opens to welcome you.",
+        "durationMs": 1220,
+        "stages": [
+          "Welcome",
+          "Reveal",
+          "Rest"
+        ]
+      }
+    },
+    {
+      "name": "settings",
+      "component": "SettingsIcon",
+      "label": "Settings",
+      "category": "Interface",
+      "description": "A measured quarter turn.",
+      "keywords": [],
+      "page": "/icons/settings",
+      "motion": {
+        "caption": "A measured adjustment finds its detent.",
+        "durationMs": 1080,
+        "stages": [
+          "Take up",
+          "Click",
+          "Release"
+        ]
+      }
+    },
+    {
+      "name": "check",
+      "component": "CheckIcon",
+      "label": "Check",
+      "category": "Interface",
+      "description": "A confirmation lands into place.",
+      "keywords": [],
+      "page": "/icons/check",
+      "motion": {
+        "caption": "The vertex seats. The long arm affirms.",
+        "durationMs": 900,
+        "stages": [
+          "Seat",
+          "Affirm",
+          "Rest"
+        ]
+      }
+    },
+    {
+      "name": "close",
+      "component": "CloseIcon",
+      "label": "Close",
+      "category": "Interface",
+      "description": "Two diagonals give a short emphasis.",
+      "keywords": [],
+      "page": "/icons/close",
+      "motion": {
+        "caption": "Two diagonals close around one meeting point.",
+        "durationMs": 720,
+        "stages": [
+          "Gather",
+          "Meet",
+          "Release"
+        ]
+      }
+    },
+    {
+      "name": "plus",
+      "component": "PlusIcon",
+      "label": "Plus",
+      "category": "Interface",
+      "description": "The cross expands once.",
+      "keywords": [],
+      "page": "/icons/plus",
+      "motion": {
+        "caption": "Make room across, then make room above.",
+        "durationMs": 840,
+        "stages": [
+          "Across",
+          "Extend",
+          "Rest"
+        ]
+      }
+    },
+    {
+      "name": "arrow-right",
+      "component": "ArrowRightIcon",
+      "label": "Arrow Right",
+      "category": "Navigation",
+      "description": "Forward intent follows the arrow.",
+      "keywords": [],
+      "page": "/icons/arrow-right",
+      "motion": {
+        "caption": "The head leads. The tail holds its place.",
+        "durationMs": 900,
+        "stages": [
+          "Draw back",
+          "Extend",
+          "Resolve"
+        ]
+      }
+    },
+    {
+      "name": "arrow-up",
+      "component": "ArrowUpIcon",
+      "label": "Arrow Up",
+      "category": "Navigation",
+      "description": "An upward nudge.",
+      "keywords": [],
+      "page": "/icons/arrow-up",
+      "motion": {
+        "caption": "Rise first. Let the weight follow.",
+        "durationMs": 1120,
+        "stages": [
+          "Gather",
+          "Lift",
+          "Float home"
+        ]
+      }
+    },
+    {
+      "name": "external-link",
+      "component": "ExternalLinkIcon",
+      "label": "External Link",
+      "category": "Navigation",
+      "description": "The arrow leaves the frame.",
+      "keywords": [],
+      "page": "/icons/external-link",
+      "motion": {
+        "caption": "Reach beyond the frame. Keep the source.",
+        "durationMs": 1120,
+        "stages": [
+          "Reach out",
+          "Follow through",
+          "Return"
+        ]
+      }
+    },
+    {
+      "name": "download",
+      "component": "DownloadIcon",
+      "label": "Download",
+      "category": "Files",
+      "description": "The arrow drops into a steady tray.",
+      "keywords": [],
+      "page": "/icons/download",
+      "motion": {
+        "caption": "The arrow leads. The tray catches.",
+        "durationMs": 1120,
+        "stages": [
+          "Lift",
+          "Receive",
+          "Settle"
+        ]
+      }
+    },
+    {
+      "name": "upload",
+      "component": "UploadIcon",
+      "label": "Upload",
+      "category": "Files",
+      "description": "The arrow lifts out of the tray.",
+      "keywords": [],
+      "page": "/icons/upload",
+      "motion": {
+        "caption": "Gather in the tray. Release into the open.",
+        "durationMs": 1180,
+        "stages": [
+          "Gather",
+          "Release",
+          "Ease home"
+        ]
+      }
+    },
+    {
+      "name": "folder",
+      "component": "FolderIcon",
+      "label": "Folder",
+      "category": "Files",
+      "description": "A folder lifts to reveal its contents.",
+      "keywords": [],
+      "page": "/icons/folder",
+      "motion": {
+        "caption": "Make room. Let the contents catch the light.",
+        "durationMs": 1320,
+        "stages": [
+          "Open",
+          "Reveal",
+          "Tuck away"
+        ]
+      }
+    },
+    {
+      "name": "file",
+      "component": "FileIcon",
+      "label": "File",
+      "category": "Files",
+      "description": "The page rises gently.",
+      "keywords": [],
+      "page": "/icons/file",
+      "motion": {
+        "caption": "A held crease. Light follows the curl.",
+        "durationMs": 1160,
+        "stages": [
+          "Gather",
+          "Curl",
+          "Lay flat"
+        ]
+      }
+    },
+    {
+      "name": "copy",
+      "component": "CopyIcon",
+      "label": "Copy",
+      "category": "Files",
+      "description": "The front sheet separates from its twin.",
+      "keywords": [],
+      "page": "/icons/copy",
+      "motion": {
+        "caption": "An impression. A twin. Its own place.",
+        "durationMs": 1190,
+        "stages": [
+          "Register",
+          "Separate",
+          "Nest"
+        ]
+      }
+    },
+    {
+      "name": "trash",
+      "component": "TrashIcon",
+      "label": "Trash",
+      "category": "Files",
+      "description": "The lid lifts while the bin stays put.",
+      "keywords": [],
+      "page": "/icons/trash",
+      "motion": {
+        "caption": "A little weight. A close you can feel.",
+        "durationMs": 1250,
+        "stages": [
+          "Lift",
+          "Contact",
+          "Dissipate"
+        ]
+      }
+    },
+    {
+      "name": "mail",
+      "component": "MailIcon",
+      "label": "Mail",
+      "category": "Communication",
+      "description": "The flap opens briefly.",
+      "keywords": [],
+      "page": "/icons/mail",
+      "motion": {
+        "caption": "A letter revealed. Carefully tucked away.",
+        "durationMs": 1360,
+        "stages": [
+          "Unfold",
+          "Reveal",
+          "Tuck away"
+        ]
+      }
+    },
+    {
+      "name": "message",
+      "component": "MessageIcon",
+      "label": "Message",
+      "category": "Communication",
+      "description": "A message arrives into the bubble.",
+      "keywords": [],
+      "page": "/icons/message",
+      "motion": {
+        "caption": "A thought gathers. A little response.",
+        "durationMs": 1180,
+        "stages": [
+          "Gather",
+          "Answer",
+          "Resolve"
+        ]
+      }
+    },
+    {
+      "name": "send",
+      "component": "SendIcon",
+      "label": "Send",
+      "category": "Communication",
+      "description": "A paper plane takes a short flight.",
+      "keywords": [],
+      "page": "/icons/send",
+      "motion": {
+        "caption": "A folded wing. A small rush of air.",
+        "durationMs": 1220,
+        "stages": [
+          "Gather",
+          "Launch",
+          "Glide home"
+        ]
+      }
+    },
+    {
+      "name": "user",
+      "component": "UserIcon",
+      "label": "User",
+      "category": "Interface",
+      "description": "A small greeting from the avatar.",
+      "keywords": [],
+      "page": "/icons/user",
+      "motion": {
+        "caption": "A small nod, softly answered by the shoulders.",
+        "durationMs": 1120,
+        "stages": [
+          "Notice",
+          "Acknowledge",
+          "Ease"
+        ]
+      }
+    },
+    {
+      "name": "lock",
+      "component": "LockIcon",
+      "label": "Lock",
+      "category": "Interface",
+      "description": "The shackle lifts from its body.",
+      "keywords": [],
+      "page": "/icons/lock",
+      "motion": {
+        "caption": "The shackle takes tension. The lock holds.",
+        "durationMs": 1060,
+        "stages": [
+          "Test",
+          "Hold",
+          "Seat"
+        ]
+      }
+    },
+    {
+      "name": "eye",
+      "component": "EyeIcon",
+      "label": "Eye",
+      "category": "Interface",
+      "description": "The pupil takes a quick look.",
+      "keywords": [],
+      "page": "/icons/eye",
+      "motion": {
+        "caption": "A glance finds its subject, then returns.",
+        "durationMs": 1400,
+        "stages": [
+          "Notice",
+          "Follow",
+          "Center"
+        ]
+      }
+    },
+    {
+      "name": "play",
+      "component": "PlayIcon",
+      "label": "Play",
+      "category": "Media",
+      "description": "A playhead moves forward.",
+      "keywords": [],
+      "page": "/icons/play",
+      "motion": {
+        "caption": "The first impulse. Then momentum.",
+        "durationMs": 970,
+        "stages": [
+          "Gather",
+          "Release",
+          "Coast"
+        ]
+      }
+    },
+    {
+      "name": "pause",
+      "component": "PauseIcon",
+      "label": "Pause",
+      "category": "Media",
+      "description": "Playback settles into pause.",
+      "keywords": [],
+      "page": "/icons/pause",
+      "motion": {
+        "caption": "Two soft stops. Then stillness.",
+        "durationMs": 1040,
+        "stages": [
+          "Take up",
+          "Seat",
+          "Hold"
+        ]
+      }
+    },
+    {
+      "name": "volume",
+      "component": "VolumeIcon",
+      "label": "Volume",
+      "category": "Media",
+      "description": "Sound travels outward from the speaker.",
+      "keywords": [],
+      "page": "/icons/volume",
+      "motion": {
+        "caption": "A pulse at the source. A widening echo.",
+        "durationMs": 1280,
+        "stages": [
+          "Source",
+          "Propagate",
+          "Dissipate"
+        ]
+      }
+    },
+    {
+      "name": "sun",
+      "component": "SunIcon",
+      "label": "Sun",
+      "category": "Interface",
+      "description": "A little turn of daylight.",
+      "keywords": [],
+      "page": "/icons/sun",
+      "motion": {
+        "caption": "The center warms. The rays answer.",
+        "durationMs": 1160,
+        "stages": [
+          "Warm",
+          "Radiate",
+          "Rest"
+        ]
+      }
+    },
+    {
+      "name": "moon",
+      "component": "MoonIcon",
+      "label": "Moon",
+      "category": "Interface",
+      "description": "A quiet tilt toward night.",
+      "keywords": [],
+      "page": "/icons/moon",
+      "motion": {
+        "caption": "A quiet crescent catches the last light.",
+        "durationMs": 1300,
+        "stages": [
+          "Incline",
+          "Catch light",
+          "Still"
+        ]
+      }
+    },
+    {
+      "name": "code",
+      "component": "CodeIcon",
+      "label": "Code",
+      "category": "Development",
+      "description": "The brackets open a little space.",
+      "keywords": [],
+      "page": "/icons/code",
+      "motion": {
+        "caption": "Make room. Set the expression.",
+        "durationMs": 1160,
+        "stages": [
+          "Open",
+          "Trace",
+          "Align"
+        ]
+      }
+    },
+    {
+      "name": "terminal",
+      "component": "TerminalIcon",
+      "label": "Terminal",
+      "category": "Development",
+      "description": "A cursor blinks once at the prompt.",
+      "keywords": [],
+      "page": "/icons/terminal",
+      "motion": {
+        "caption": "A prompt invites the cursor into readiness.",
+        "durationMs": 1160,
+        "stages": [
+          "Prompt",
+          "Respond",
+          "Ready"
+        ]
+      }
+    },
+    {
+      "name": "layers",
+      "component": "LayersIcon",
+      "label": "Layers",
+      "category": "Development",
+      "description": "Stacked planes separate, then settle.",
+      "keywords": [],
+      "page": "/icons/layers",
+      "motion": {
+        "caption": "Make room, reveal the depth, fit back together.",
+        "durationMs": 1120,
+        "stages": [
+          "Gather",
+          "Separate",
+          "Nest"
+        ]
+      }
+    },
+    {
+      "name": "cpu",
+      "component": "CpuIcon",
+      "label": "Cpu",
+      "category": "Development",
+      "description": "A signal lights up the central die.",
+      "keywords": [],
+      "page": "/icons/cpu",
+      "motion": {
+        "caption": "An input reaches the die. An output answers.",
+        "durationMs": 1280,
+        "stages": [
+          "Receive",
+          "Process",
+          "Respond"
+        ]
+      }
+    },
+    {
+      "name": "chart",
+      "component": "ChartIcon",
+      "label": "Chart",
+      "category": "Development",
+      "description": "Bars grow from a shared baseline.",
+      "keywords": [],
+      "page": "/icons/chart",
+      "motion": {
+        "caption": "Each bar answers from the same baseline.",
+        "durationMs": 1260,
+        "stages": [
+          "Compare",
+          "Emphasize",
+          "Resolve"
+        ]
+      }
+    },
+    {
+      "name": "book",
+      "component": "BookIcon",
+      "label": "Book",
+      "category": "Files",
+      "description": "A page opens for reading.",
+      "keywords": [],
+      "page": "/icons/book",
+      "motion": {
+        "caption": "One page turns. A soft landing.",
+        "durationMs": 1360,
+        "stages": [
+          "Lift",
+          "Turn",
+          "Land"
+        ]
+      }
+    },
+    {
+      "name": "bolt",
+      "component": "BoltIcon",
+      "label": "Bolt",
+      "category": "Interface",
+      "description": "One quick flash of energy.",
+      "keywords": [],
+      "page": "/icons/bolt",
+      "motion": {
+        "caption": "Energy travels through the bend to the point.",
+        "durationMs": 780,
+        "stages": [
+          "Charge",
+          "Conduct",
+          "Discharge"
+        ]
+      }
+    },
+    {
+      "name": "path",
+      "component": "PathIcon",
+      "label": "Path",
+      "category": "Learning",
+      "description": "Follow a connected sequence of milestones.",
+      "keywords": [],
+      "page": "/icons/path",
+      "motion": {
+        "caption": "One milestone hands the way to the next.",
+        "durationMs": 1380,
+        "stages": [
+          "Depart",
+          "Connect",
+          "Arrive"
+        ]
+      }
+    },
+    {
+      "name": "flask",
+      "component": "FlaskIcon",
+      "label": "Flask",
+      "category": "Learning",
+      "description": "A contained experiment stirs and responds.",
+      "keywords": [],
+      "page": "/icons/flask",
+      "motion": {
+        "caption": "Stir a little. See what answers.",
+        "durationMs": 1400,
+        "stages": [
+          "Stir",
+          "React",
+          "Settle"
+        ]
+      }
+    },
+    {
+      "name": "target",
+      "component": "TargetIcon",
+      "label": "Target",
+      "category": "Learning",
+      "description": "Focus an objective at a precise center.",
+      "keywords": [],
+      "page": "/icons/target",
+      "motion": {
+        "caption": "Draw back. Find the center.",
+        "durationMs": 1260,
+        "stages": [
+          "Aim",
+          "Seat",
+          "Resolve"
+        ]
+      }
+    },
+    {
+      "name": "retry",
+      "component": "RetryIcon",
+      "label": "Retry",
+      "category": "Learning",
+      "description": "Wind back to make another attempt.",
+      "keywords": [],
+      "page": "/icons/retry",
+      "motion": {
+        "caption": "Wind back. Catch. Ready again.",
+        "durationMs": 1280,
+        "stages": [
+          "Rewind",
+          "Catch",
+          "Ready"
+        ]
+      }
+    },
+    {
+      "name": "tensor",
+      "component": "TensorIcon",
+      "label": "Tensor",
+      "category": "Learning",
+      "description": "Inspect one solid slice of a multidimensional array.",
+      "keywords": [],
+      "page": "/icons/tensor",
+      "motion": {
+        "caption": "One slice. Its cell order stays intact.",
+        "durationMs": 1400,
+        "stages": [
+          "Select",
+          "Extract",
+          "Rejoin"
+        ]
+      }
+    },
+    {
+      "name": "network",
+      "component": "NetworkIcon",
+      "label": "Network",
+      "category": "Learning",
+      "description": "Combine connected inputs into an output.",
+      "keywords": [],
+      "page": "/icons/network",
+      "motion": {
+        "caption": "Two inputs meet. One output answers.",
+        "durationMs": 1380,
+        "stages": [
+          "Receive",
+          "Combine",
+          "Transmit"
+        ]
+      }
+    },
+    {
+      "name": "checkpoint",
+      "component": "CheckpointIcon",
+      "label": "Checkpoint",
+      "category": "Learning",
+      "description": "Preserve an exact Workspace state.",
+      "keywords": [],
+      "page": "/icons/checkpoint",
+      "motion": {
+        "caption": "A state arrives. Its place is kept.",
+        "durationMs": 1320,
+        "stages": [
+          "Receive",
+          "Register",
+          "Hold"
+        ]
+      }
+    },
+    {
+      "name": "hint",
+      "component": "HintIcon",
+      "label": "Hint",
+      "category": "Learning",
+      "description": "A small nudge illuminates an idea.",
+      "keywords": [],
+      "page": "/icons/hint",
+      "motion": {
+        "caption": "A little light from within.",
+        "durationMs": 1260,
+        "stages": [
+          "Conduct",
+          "Illuminate",
+          "Ease"
+        ]
+      }
+    },
+    {
+      "name": "workspace",
+      "component": "WorkspaceIcon",
+      "label": "Workspace",
+      "category": "Development",
+      "description": "An organized surface for your growing codebase.",
+      "keywords": [],
+      "page": "/icons/workspace",
+      "motion": {
+        "caption": "Make room. Keep your place.",
+        "durationMs": 1360,
+        "stages": [
+          "Open",
+          "Arrange",
+          "Return"
+        ]
+      }
+    },
+    {
+      "name": "gauge",
+      "component": "GaugeIcon",
+      "label": "Gauge",
+      "category": "Interface",
+      "description": "Take a reading against a stable scale.",
+      "keywords": [],
+      "page": "/icons/gauge",
+      "motion": {
+        "caption": "A measured move. A precise reading.",
+        "durationMs": 1280,
+        "stages": [
+          "Calibrate",
+          "Read",
+          "Hold"
+        ]
+      }
+    },
+    {
+      "name": "orbit",
+      "component": "OrbitIcon",
+      "label": "Orbit",
+      "category": "Learning",
+      "description": "Explore a relationship around a stable center.",
+      "keywords": [],
+      "page": "/icons/orbit",
+      "motion": {
+        "caption": "Around the idea. Back in context.",
+        "durationMs": 1560,
+        "stages": [
+          "Depart",
+          "Pass",
+          "Return"
+        ]
+      }
+    },
+    {
+      "name": "lifebuoy",
+      "component": "LifebuoyIcon",
+      "label": "Lifebuoy",
+      "category": "Interface",
+      "description": "Support that yields and holds.",
+      "keywords": [],
+      "page": "/icons/lifebuoy",
+      "motion": {
+        "caption": "Takes the weight. Keeps you afloat.",
+        "durationMs": 1460,
+        "stages": [
+          "Meet",
+          "Support",
+          "Settle"
+        ]
+      }
+    },
+    {
+      "name": "sigma",
+      "component": "SigmaIcon",
+      "label": "Sigma",
+      "category": "Learning",
+      "description": "Collect terms into one sum.",
+      "keywords": [],
+      "page": "/icons/sigma",
+      "motion": {
+        "caption": "Many terms. One considered result.",
+        "durationMs": 1520,
+        "stages": [
+          "Gather",
+          "Combine",
+          "Release"
+        ]
+      }
+    },
+    {
+      "name": "bug",
+      "component": "BugIcon",
+      "label": "Bug",
+      "category": "Development",
+      "description": "Locate the fault without losing its context.",
+      "keywords": [],
+      "page": "/icons/bug",
+      "motion": {
+        "caption": "Follow the trace. Find the fault.",
+        "durationMs": 1320,
+        "stages": [
+          "Feel",
+          "Expose",
+          "Locate"
+        ]
+      }
+    },
+    {
+      "name": "sliders",
+      "component": "SlidersIcon",
+      "label": "Sliders",
+      "category": "Interface",
+      "description": "Adjust one variable against a stable reference.",
+      "keywords": [],
+      "page": "/icons/sliders",
+      "motion": {
+        "caption": "One variable. A satisfying detent.",
+        "durationMs": 1380,
+        "stages": [
+          "Adjust",
+          "Register",
+          "Hold"
+        ]
+      }
+    },
+    {
+      "name": "graduation-cap",
+      "component": "GraduationCapIcon",
+      "label": "Graduation Cap",
+      "category": "Learning",
+      "description": "An invitation to explore a learning path.",
+      "keywords": [],
+      "page": "/icons/graduation-cap",
+      "motion": {
+        "caption": "A small tip. A little possibility.",
+        "durationMs": 1440,
+        "stages": [
+          "Acknowledge",
+          "Catch",
+          "Settle"
+        ]
+      }
+    },
+    {
+      "name": "code-run",
+      "component": "CodeRunIcon",
+      "label": "Code Run",
+      "category": "Development",
+      "description": "Execute learner code in the Browser Runtime.",
+      "keywords": [
+        "execute",
+        "execution",
+        "source",
+        "runtime",
+        "launch"
+      ],
+      "page": "/icons/code-run",
+      "motion": {
+        "caption": "From written intent to a running idea.",
+        "durationMs": 1360,
+        "stages": [
+          "Read",
+          "Launch",
+          "Coast"
+        ]
+      }
+    },
+    {
+      "name": "test-suite",
+      "component": "TestSuiteIcon",
+      "label": "Test Suite",
+      "category": "Development",
+      "description": "Inspect independent test cases in a shared fixture.",
+      "keywords": [
+        "tests",
+        "visible tests",
+        "cases",
+        "assertions",
+        "compare",
+        "samples"
+      ],
+      "page": "/icons/test-suite",
+      "motion": {
+        "caption": "Every case gets its own observation.",
+        "durationMs": 1460,
+        "stages": [
+          "Sample",
+          "Seat",
+          "Compare"
+        ]
+      }
+    },
+    {
+      "name": "milestone",
+      "component": "MilestoneIcon",
+      "label": "Milestone",
+      "category": "Learning",
+      "description": "Orient toward a capability checkpoint in a Path.",
+      "keywords": [
+        "capability",
+        "checkpoint",
+        "path",
+        "flag",
+        "goal"
+      ],
+      "page": "/icons/milestone",
+      "motion": {
+        "caption": "A capability worth orienting toward.",
+        "durationMs": 1420,
+        "stages": [
+          "Anchor",
+          "Unfurl",
+          "Hold"
+        ]
+      }
+    },
+    {
+      "name": "concept-review",
+      "component": "ConceptReviewIcon",
+      "label": "Concept Review",
+      "category": "Learning",
+      "description": "Revisit an earlier idea while preserving its context.",
+      "keywords": [
+        "recall",
+        "revisit",
+        "reflection",
+        "review view",
+        "memory",
+        "cards"
+      ],
+      "page": "/icons/concept-review",
+      "motion": {
+        "caption": "Revisit the idea. Keep the context.",
+        "durationMs": 1480,
+        "stages": [
+          "Open",
+          "Recall",
+          "Nest"
+        ]
+      }
+    },
+    {
+      "name": "learning-rhythm",
+      "component": "LearningRhythmIcon",
+      "label": "Learning Rhythm",
+      "category": "Learning",
+      "description": "Keep a measured learning cadence.",
+      "keywords": [
+        "daily goal",
+        "cadence",
+        "metronome",
+        "time",
+        "schedule"
+      ],
+      "page": "/icons/learning-rhythm",
+      "motion": {
+        "caption": "A little cadence. Room to keep going.",
+        "durationMs": 1460,
+        "stages": [
+          "Pick up",
+          "Beat",
+          "Rest"
+        ]
+      }
+    },
+    {
+      "name": "gradient-check",
+      "component": "GradientCheckIcon",
+      "label": "Gradient Check",
+      "category": "Learning",
+      "description": "Inspect a derivative using two neighboring samples.",
+      "keywords": [
+        "centered audit",
+        "derivative",
+        "finite difference",
+        "epsilon",
+        "samples"
+      ],
+      "page": "/icons/gradient-check",
+      "motion": {
+        "caption": "Two nearby samples. One closer look.",
+        "durationMs": 1500,
+        "stages": [
+          "Sample",
+          "Narrow",
+          "Inspect"
+        ]
+      }
+    },
+    {
+      "name": "experiment-compare",
+      "component": "ExperimentCompareIcon",
+      "label": "Experiment Compare",
+      "category": "Learning",
+      "description": "Inspect distinct experiments against one reference.",
+      "keywords": [
+        "optimizer",
+        "comparison",
+        "paired",
+        "plots",
+        "evidence"
+      ],
+      "page": "/icons/experiment-compare",
+      "motion": {
+        "caption": "Same reference. Different evidence.",
+        "durationMs": 1520,
+        "stages": [
+          "Separate",
+          "Scan",
+          "Compare"
+        ]
+      }
+    },
+    {
+      "name": "training-step",
+      "component": "TrainingStepIcon",
+      "label": "Training Step",
+      "category": "Learning",
+      "description": "Advance one bounded optimizer update.",
+      "keywords": [
+        "optimizer",
+        "descent",
+        "parameter",
+        "loss",
+        "update"
+      ],
+      "page": "/icons/training-step",
+      "motion": {
+        "caption": "Read the slope. Take one considered step.",
+        "durationMs": 1500,
+        "stages": [
+          "Read",
+          "Step",
+          "Inspect"
+        ]
+      }
+    },
+    {
+      "name": "tokenize",
+      "component": "TokenizeIcon",
+      "label": "Tokenize",
+      "category": "Learning",
+      "description": "Separate text into ordered subword tokens.",
+      "keywords": [
+        "tokenizer",
+        "subword",
+        "text",
+        "encode",
+        "segmentation"
+      ],
+      "page": "/icons/tokenize",
+      "motion": {
+        "caption": "Find the boundaries. Keep the order.",
+        "durationMs": 1420,
+        "stages": [
+          "Read",
+          "Split",
+          "Index"
+        ]
+      }
+    },
+    {
+      "name": "embedding-lookup",
+      "component": "EmbeddingLookupIcon",
+      "label": "Embedding Lookup",
+      "category": "Learning",
+      "description": "Read a vector by token ID without changing the table.",
+      "keywords": [
+        "embedding table",
+        "vector",
+        "token id",
+        "row",
+        "dictionary"
+      ],
+      "page": "/icons/embedding-lookup",
+      "motion": {
+        "caption": "Address one row. Read its vector.",
+        "durationMs": 1520,
+        "stages": [
+          "Address",
+          "Select",
+          "Read"
+        ]
+      }
+    },
+    {
+      "name": "attention-focus",
+      "component": "AttentionFocusIcon",
+      "label": "Attention Focus",
+      "category": "Learning",
+      "description": "Inspect query-key relations while retaining every contributor.",
+      "keywords": [
+        "query",
+        "key",
+        "soft lookup",
+        "weights",
+        "relation"
+      ],
+      "page": "/icons/attention-focus",
+      "motion": {
+        "caption": "Compare every key. Focus the relation.",
+        "durationMs": 1460,
+        "stages": [
+          "Query",
+          "Compare",
+          "Attend"
+        ]
+      }
+    },
+    {
+      "name": "batch-sampling",
+      "component": "BatchSamplingIcon",
+      "label": "Batch Sampling",
+      "category": "Learning",
+      "description": "Copy a subset of records while retaining the dataset.",
+      "keywords": [
+        "mini batch",
+        "minibatch",
+        "dataset",
+        "subset",
+        "sample selection"
+      ],
+      "page": "/icons/batch-sampling",
+      "motion": {
+        "caption": "Take a subset. Keep the source.",
+        "durationMs": 1540,
+        "stages": [
+          "Mark",
+          "Collect",
+          "Hold"
+        ]
+      }
+    },
+    {
+      "name": "save-preferences",
+      "component": "SavePreferencesIcon",
+      "label": "Save Preferences",
+      "category": "Interface",
+      "description": "Store deliberately edited preferences.",
+      "keywords": [
+        "save",
+        "settings",
+        "persist",
+        "disk",
+        "profile"
+      ],
+      "page": "/icons/save-preferences",
+      "motion": {
+        "caption": "Write with intent. Settle into place.",
+        "durationMs": 1380,
+        "stages": [
+          "Open",
+          "Write",
+          "Seat"
+        ]
+      }
+    },
+    {
+      "name": "file-explorer",
+      "component": "FileExplorerIcon",
+      "label": "File Explorer",
+      "category": "Development",
+      "description": "Reveal the file tree while retaining the active file.",
+      "keywords": [
+        "sidebar",
+        "panel",
+        "files",
+        "editor",
+        "show explorer"
+      ],
+      "page": "/icons/file-explorer",
+      "motion": {
+        "caption": "Make room. Keep your place.",
+        "durationMs": 1460,
+        "stages": [
+          "Reveal",
+          "Arrange",
+          "Settle"
+        ]
+      }
+    },
+    {
+      "name": "expand-view",
+      "component": "ExpandViewIcon",
+      "label": "Expand View",
+      "category": "Interface",
+      "description": "Make room around the current visualizer.",
+      "keywords": [
+        "expand",
+        "maximize",
+        "fullscreen",
+        "visualizer",
+        "enlarge"
+      ],
+      "page": "/icons/expand-view",
+      "motion": {
+        "caption": "More room. The same point of focus.",
+        "durationMs": 1440,
+        "stages": [
+          "Gather",
+          "Expand",
+          "Breathe"
+        ]
+      }
+    },
+    {
+      "name": "sign-out",
+      "component": "SignOutIcon",
+      "label": "Sign Out",
+      "category": "Interface",
+      "description": "Leave the authenticated account session.",
+      "keywords": [
+        "logout",
+        "log out",
+        "account",
+        "session",
+        "exit"
+      ],
+      "page": "/icons/sign-out",
+      "motion": {
+        "caption": "Open the way. Leave deliberately.",
+        "durationMs": 1540,
+        "stages": [
+          "Open",
+          "Leave",
+          "Release"
+        ]
+      }
+    }
+  ]
+}

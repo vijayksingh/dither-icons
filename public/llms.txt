@@ -1,0 +1,27 @@
+# Dither Icons
+
+> 68 original SVG icons with fine ordered dither and individually authored semantic motion. React 18+, MIT.
+
+## Start here
+
+- [Complete integration guide](/llms-full.txt): API, examples, behavior and valid exports.
+- [Agent contract](/AI.md): concise instructions for integrating the library.
+- [Icon manifest](/icons.json): schema version 1; exact names, exports, keywords and motion metadata.
+
+## Documentation
+
+- [A good place to start.](/docs/introduction.md): A small library with a particular point of view. Here’s how to make it part of yours.
+- [In your project in minutes.](/docs/installation.md): A local package for React. A standalone SVG for everywhere else.
+- [React, without ceremony.](/docs/react.md): Named components, ordinary SVG props, and a few deliberate controls for motion.
+- [Motion with a meaning.](/docs/motion.md): A short action, a clear response, and an exact return to rest.
+- [A little delight. For everyone.](/docs/accessibility.md): The interaction should still make sense with a keyboard, a screen reader, or no motion at all.
+- [Take the drawing with you.](/docs/svg.md): Transparent, scalable, and ready for places where React isn’t part of the picture.
+
+## Visual references
+
+- [Material comparison](/reference/textures.svg)
+- [All icons with export names](/reference/icons.svg)
+
+## Installation status
+
+Version 0.1.0. Local .tgz package only; not published to the npm registry.

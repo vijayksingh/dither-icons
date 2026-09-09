@@ -1,4 +1,5 @@
 import { definitions, type Texture } from '../src';
+import packageInfo from '../package.json';
 
 export const palettes = [
   { name: 'Iris', dark: '#bea5f5', light: '#7048b4' },
@@ -16,8 +17,8 @@ const featured = ['download', 'bell', 'layers', 'heart', 'send', 'code-run', 'sa
 export const collection = [...featured.map(name => definitions.find(icon => icon.name === name)!), ...definitions.filter(icon => !featured.includes(icon.name))];
 export const labelFor = (name: string) => definitions.find(icon => icon.name === name)?.label ?? name.split('-').map(word => word[0].toUpperCase() + word.slice(1)).join(' ');
 export const componentName = (name: string) => name.split('-').map(word => word[0].toUpperCase() + word.slice(1)).join('') + 'Icon';
-export const packageUrl = '/unlocalhosted-dither-icons-0.1.0.tgz';
-export const installCommand = 'npm install ./unlocalhosted-dither-icons-0.1.0.tgz';
+export const packageUrl = `/unlocalhosted-dither-icons-${packageInfo.version}.tgz`;
+export const installCommand = `npm install .${packageUrl}`;
 
 export function filterIcons(query: string, category: string) {
   const words = query.trim().toLowerCase().split(/\s+/);

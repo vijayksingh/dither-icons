@@ -11,7 +11,22 @@ npm install
 npm run dev
 ```
 
-Open http://127.0.0.1:4192. Hover or tap a card preview to play its gesture; select its name to open the inspector. Copy React directly from a card, or customize and export React/SVG in the inspector. Search by name or use case with Cmd/Ctrl-K, choose a texture and palette, and expand the complete collection. The motion studio remains at `/#motion-studies`. See the [homepage craft review](docs/site-reviews/homepage.md).
+Open http://127.0.0.1:4192. Hover or tap a card preview to play its gesture; select its name to open its shareable icon page. Copy React directly from a card, or customize and export React/SVG on that page. Search by name or use case with Cmd/Ctrl-K, choose a texture and palette, and expand the complete collection. The motion studio lives at `/motion`; the old `/#motion-studies` link still works. See the [homepage craft review](docs/site-reviews/homepage.md).
+
+## Public pages and agent context
+
+- `/icons/:name`: individual previews, frame inspection, React source and SVG downloads for every icon.
+- `/motion`: the complete set of original motion studies.
+- `/docs`: introduction, installation, React API, motion, accessibility and SVG guides.
+- `/ai`: an instruction composer with real component names, accessible examples and visual references.
+- `/llms.txt`, `/llms-full.txt`, `/AI.md`, `/icons.json`: agent-readable context and the complete machine-readable catalog.
+- `/reference/textures.svg`, `/reference/icons.svg`: actual rendered artwork, labeled for visual comparison.
+
+Cmd/Ctrl-K searches pages and icons; `/` focuses the collection filter. Back restores the collection filter, scroll position and focused icon. Theme, material and palette stay consistent between pages.
+
+`npm run generate:docs` creates Markdown, agent guides, the manifest and visual sheets from the real exports and shared page content. The production build and `npm pack` regenerate them automatically. Edit `demo/content/docs.ts` and `demo/content/agent.ts`, then regenerate; do not hand-edit generated outputs. `AI.md` and `icons.json` also ship inside the package.
+
+The site uses client-side routes. `public/_redirects` supplies an SPA fallback for compatible static hosts; configure an equivalent fallback to `index.html` on other hosts, while serving existing resource files normally. See the [secondary-page review](docs/site-reviews/secondary-pages.md).
 
 ## Use the library
 
@@ -78,7 +93,7 @@ MIT. Original icon geometry and implementation. The reference project's logo, br
 
 ## Individual motion studies
 
-Open `/#motion-studies` and choose a family to inspect all 68 icons. **Platform / 08** opens Save Preferences, File Explorer, Expand View, and Sign Out; **Platform / 07** contains Tokenize, Embedding Lookup, Attention Focus, and Batch Sampling; **Platform / 06** contains Learning Rhythm, Gradient Check, Experiment Compare, and Training Step; **Platform / 05** contains Code Run, Test Suite, Milestone, and Concept Review; **Platform / 04** contains Sigma, Bug, Sliders, and Graduation Cap; **Platform / 03** contains Workspace, Gauge, Orbit, and Lifebuoy; **Platform / 02** contains Tensor, Network, Checkpoint, and Hint; **Platform / 01** contains Path, Flask, Target, and Retry. The Foundation family preserves Bell, Heart, Download, and Layers. Use **Half speed**, **Inspect timing**, and the keyboard-accessible scrubber to inspect the same timelines used in the components. These are preview gestures, not claims that a download or notification action occurred.
+Open `/motion` and choose a family to inspect all 68 icons. **Platform / 08** opens Save Preferences, File Explorer, Expand View, and Sign Out; **Platform / 07** contains Tokenize, Embedding Lookup, Attention Focus, and Batch Sampling; **Platform / 06** contains Learning Rhythm, Gradient Check, Experiment Compare, and Training Step; **Platform / 05** contains Code Run, Test Suite, Milestone, and Concept Review; **Platform / 04** contains Sigma, Bug, Sliders, and Graduation Cap; **Platform / 03** contains Workspace, Gauge, Orbit, and Lifebuoy; **Platform / 02** contains Tensor, Network, Checkpoint, and Hint; **Platform / 01** contains Path, Flask, Target, and Retry. The Foundation family preserves Bell, Heart, Download, and Layers. Use **Half speed**, **Inspect timing**, and the keyboard-accessible scrubber to inspect the same timelines used in the components. These are preview gestures, not claims that a download or notification action occurred.
 
 - Bell: anchored shell swing, delayed clapper, asymmetric ringing cues.
 - Heart: compression, release, a brief highlight and four quiet escaping flecks.
