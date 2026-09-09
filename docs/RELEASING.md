@@ -27,6 +27,18 @@ Only after npm passes does deployment upload the prepared website to Cloudflare 
 
 For the first release only, bootstrap npm with the artifact from the exact tagged source, then configure its trusted publisher and rerun the release. The publish job can accept an existing version only when its integrity matches the build exactly. If they differ, investigate and issue a new version; do not weaken the check.
 
+A successful email login is not proof of permission to publish. If publication returns a 2FA requirement, inspect whether a security key/passkey is actually registered; an account's `auth-and-writes` policy alone is insufficient evidence. Have the owner complete device authentication and save recovery codes privately. Keep CLI login sessions alive during browser verification, check the CLI completion result, and do not start overlapping login attempts or reuse expired codes.
+
+Once the package exists, the trusted publisher can also be configured through the official CLI:
+
+```sh
+npx --yes npm@12.0.2 trust github @unlocalhosted/dither-icons \
+  --repository vijayksingh/dither-icons --file release.yml --allow-publish --yes
+npx --yes npm@12.0.2 trust list @unlocalhosted/dither-icons --json
+```
+
+Complete the owner's security-key prompt if requested. These commands configure trust; only a subsequent successful OIDC publication proves the release path works.
+
 ## Failure and recovery
 
 Use `gh run view <run-id> --log-failed` to identify the failed job. Fix missing external configuration and use `gh run rerun <run-id> --failed` when the tag and artifacts remain correct. npm publication is immutable: if publish succeeded but deployment failed, the retry verifies the existing package and resumes deployment without another publish.
