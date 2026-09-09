@@ -11,7 +11,7 @@ npm install
 npm run dev
 ```
 
-Open http://127.0.0.1:4192. Search and filter the collection, compare textures, replay animations, copy React usage or SVG, and download standalone SVGs.
+Open http://127.0.0.1:4192. Hover or tap a card preview to play its gesture; select its name to open the inspector. Copy React directly from a card, or customize and export React/SVG in the inspector. Search by name or use case with Cmd/Ctrl-K, choose a texture and palette, and expand the complete collection. The motion studio remains at `/#motion-studies`. See the [homepage craft review](docs/site-reviews/homepage.md).
 
 ## Use the library
 
