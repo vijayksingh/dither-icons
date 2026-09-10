@@ -2,7 +2,7 @@ import {useId} from 'react';
 import type {Draw} from './ExtendedArtwork';
 import {SEARCH_ART,SEARCH_GEOMETRY} from './motions/search';
 import {HOME_ART} from './motions/home';
-import {SETTINGS_ART,SETTINGS_GEOMETRY} from './motions/settings';
+import {SETTINGS_ART} from './motions/settings';
 import {USER_ART} from './motions/user';
 
 type Props={name:string;draw:Draw;texture:'dither'|'solid'|'outline'};
@@ -31,19 +31,11 @@ export function EverydayArtwork({name,draw,texture}:Props){
   </g>
   <g data-part="home-door"><g opacity=".72">{texture==='outline'?line(HOME_ART.door,.8):draw(HOME_ART.door)}</g>{accent('door-edge',HOME_ART.seam,.45)}<circle cx="13.4" cy="17.5" r=".23" opacity=".75"/></g>
  </>;
- if(name==='settings')return <>
-  <defs><clipPath id={`${id}-contact`}><circle cx="12" cy="12" r={SETTINGS_GEOMETRY.hole-.25}/></clipPath></defs>
-  <g data-part="settings-gear">
+ if(name==='settings')return <g data-part="settings-gear">
    {texture==='outline'?line(SETTINGS_ART.gear,1.05):draw(SETTINGS_ART.gear)}
-   <path d={SETTINGS_ART.tab}/>
-   {accent('gear-index',SETTINGS_ART.index,.6)}
-  </g>
-  <g data-part="spring-pawl">{line(SETTINGS_ART.pawl,.65)}</g>
-  <g clipPath={`url(#${id}-contact)`}>
-   {accent('detent-light',SETTINGS_ART.contact,.7)}
-   <g data-part="detent-echo" opacity="0"><circle cx="12" cy="9.05" r=".95" fill="none" stroke="currentColor" strokeWidth=".4"/></g>
-  </g>
- </>;
+   {accent('tooth-light',SETTINGS_ART.rim,.65)}
+   {accent('rim-ticks',SETTINGS_ART.ticks,.5)}
+ </g>;
  if(name==='user')return <>
   <g data-part="profile-shoulders">{texture==='outline'?line(USER_ART.shoulders,1.4):draw(USER_ART.shoulders)}{accent('shoulder-light',USER_ART.shoulder,.5)}</g>
   <g data-part="profile-head">{texture==='outline'?line(USER_ART.head,1.4):draw(USER_ART.head)}{accent('cheek-light',USER_ART.cheek,.55)}</g>

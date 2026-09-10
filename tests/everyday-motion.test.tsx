@@ -38,17 +38,23 @@ test('home preserves both hinge endpoints and keeps the moving knockout on the e
  assert.ok(home.tracks.find(t=>t.part==='welcome-spill')!.frames.filter(f=>f.at<=HOME_TIMING.threshold).every(f=>f.opacity===0));
 });
 
-test('settings tab reaches the drawn spring contact before the pawl and echoes respond',()=>{
- const [px,py]=SETTINGS_ART.tab.match(/L([\d.]+) ([\d.]+)/)!.slice(1).map(Number);
+test('settings leaves the aperture empty and its rim response follows the stopped adjustment',()=>{
  const gear=settings.tracks.find(t=>t.part==='settings-gear')!;
- const angle=Number(gear.frames.find(f=>f.at===SETTINGS_TIMING.contact)!.transform!.match(/rotate\(([-\d.]+)deg\)/)![1])*Math.PI/180;
- const x=12+(px-12)*Math.cos(angle)-(py-12)*Math.sin(angle),y=12+(px-12)*Math.sin(angle)+(py-12)*Math.cos(angle);
- assert.ok(Math.hypot(x-12,y-9.05)<.00002,'tab and spring share a geometric contact, not just timing');
- assert.match(SETTINGS_ART.pawl,/12 9\.05Q/,'the spring passes through the contact');
- const pawl=settings.tracks.find(t=>t.part==='spring-pawl')!;
- assert.equal(pawl.origin,'12px 9.05px','compression leaves the contact fixed');
- assert.equal(gear.frames.find(f=>f.at===SETTINGS_TIMING.contact)!.transform,gear.frames.find(f=>f.at===SETTINGS_TIMING.hold)!.transform);
- for(const part of ['detent-light','detent-echo','gear-index'])assert.ok(settings.tracks.find(t=>t.part===part)!.frames.filter(f=>f.at<=SETTINGS_TIMING.contact).every(f=>f.opacity===0));
+ assert.equal(gear.frames.find(f=>f.at===SETTINGS_TIMING.register)!.transform,gear.frames.find(f=>f.at===SETTINGS_TIMING.hold)!.transform);
+ for(const part of ['tooth-light','rim-ticks'])assert.ok(settings.tracks.find(t=>t.part===part)!.frames.filter(f=>f.at<=SETTINGS_TIMING.register).every(f=>f.opacity===0));
+ // Every decorative segment is on or outside the outer tooth, not in the aperture.
+ for(const path of [SETTINGS_ART.rim,SETTINGS_ART.ticks]){
+  for(const [,ax,ay,bx,by] of path.matchAll(/M([\d.]+) ([\d.]+)L([\d.]+) ([\d.]+)/g)){
+   const x=Number(ax)-12,y=Number(ay)-12,dx=Number(bx)-Number(ax),dy=Number(by)-Number(ay);
+   const t=Math.max(0,Math.min(1,-(x*dx+y*dy)/(dx*dx+dy*dy)));
+   assert.ok(Math.hypot(x+t*dx,y+t*dy)>8.2);
+  }
+ }
+ for(const texture of ['dither','solid','outline'] as const){
+  const svg=renderToStaticMarkup(<DitherIcon name="settings" texture={texture}/>);
+  const parts=[...svg.matchAll(/<g data-part="([^"]+)"/g)].map(m=>m[1]);
+  assert.deepEqual(parts,['settings-gear','tooth-light','rim-ticks'],'no inserted mechanism inside the gear');
+ }
 });
 
 test('user retains neck clearance and a fixed base through the nod; greeting follows the reversal',()=>{

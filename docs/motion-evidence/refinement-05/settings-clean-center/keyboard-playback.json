@@ -1,0 +1,317 @@
+[
+  {
+    "elapsed": 0,
+    "parts": [
+      {
+        "opacity": "1",
+        "part": "settings-gear",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "opacity": "0",
+        "part": "tooth-light",
+        "transform": "matrix(0.4, 0, 0, 1, 0, 0)"
+      },
+      {
+        "opacity": "0",
+        "part": "rim-ticks",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      }
+    ],
+    "playing": true
+  },
+  {
+    "elapsed": 77.5,
+    "parts": [
+      {
+        "opacity": "1",
+        "part": "settings-gear",
+        "transform": "matrix(0.999152, -0.0411666, 0.0411666, 0.999152, 0, 0)"
+      },
+      {
+        "opacity": "0",
+        "part": "tooth-light",
+        "transform": "matrix(0.4, 0, 0, 1, 0, 0)"
+      },
+      {
+        "opacity": "0",
+        "part": "rim-ticks",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      }
+    ],
+    "playing": true
+  },
+  {
+    "elapsed": 176.90000000596046,
+    "parts": [
+      {
+        "opacity": "1",
+        "part": "settings-gear",
+        "transform": "matrix(0.988631, 0.15036, -0.15036, 0.988631, 0, 0)"
+      },
+      {
+        "opacity": "0",
+        "part": "tooth-light",
+        "transform": "matrix(0.4, 0, 0, 1, 0, 0)"
+      },
+      {
+        "opacity": "0",
+        "part": "rim-ticks",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      }
+    ],
+    "playing": true
+  },
+  {
+    "elapsed": 276.90000000596046,
+    "parts": [
+      {
+        "opacity": "1",
+        "part": "settings-gear",
+        "transform": "matrix(0.940094, 0.340916, -0.340916, 0.940094, 0, 0)"
+      },
+      {
+        "opacity": "0",
+        "part": "tooth-light",
+        "transform": "matrix(0.4, 0, 0, 1, 0, 0)"
+      },
+      {
+        "opacity": "0",
+        "part": "rim-ticks",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      }
+    ],
+    "playing": true
+  },
+  {
+    "elapsed": 376.90000000596046,
+    "parts": [
+      {
+        "opacity": "1",
+        "part": "settings-gear",
+        "transform": "matrix(0.924942, 0.380108, -0.380108, 0.924942, 0, 0)"
+      },
+      {
+        "opacity": "0",
+        "part": "tooth-light",
+        "transform": "matrix(0.4, 0, 0, 1, 0, 0)"
+      },
+      {
+        "opacity": "0",
+        "part": "rim-ticks",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      }
+    ],
+    "playing": true
+  },
+  {
+    "elapsed": 476.90000000596046,
+    "parts": [
+      {
+        "opacity": "1",
+        "part": "settings-gear",
+        "transform": "matrix(0.92388, 0.382683, -0.382683, 0.92388, 0, 0)"
+      },
+      {
+        "opacity": "0.799142",
+        "part": "tooth-light",
+        "transform": "matrix(0.9641, 0, 0, 1, 0, 0)"
+      },
+      {
+        "opacity": "0",
+        "part": "rim-ticks",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      }
+    ],
+    "playing": true
+  },
+  {
+    "elapsed": 577.0999999940395,
+    "parts": [
+      {
+        "opacity": "1",
+        "part": "settings-gear",
+        "transform": "matrix(0.92388, 0.382683, -0.382683, 0.92388, 0, 0)"
+      },
+      {
+        "opacity": "0.423794",
+        "part": "tooth-light",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "opacity": "0.59737",
+        "part": "rim-ticks",
+        "transform": "matrix(1, 0, 0, 1, 0, -0.124291)"
+      }
+    ],
+    "playing": true
+  },
+  {
+    "elapsed": 678.8000000119209,
+    "parts": [
+      {
+        "opacity": "1",
+        "part": "settings-gear",
+        "transform": "matrix(0.92388, 0.382683, -0.382683, 0.92388, 0, 0)"
+      },
+      {
+        "opacity": "0.127029",
+        "part": "tooth-light",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "opacity": "0.392417",
+        "part": "rim-ticks",
+        "transform": "matrix(1, 0, 0, 1, 0, -0.218884)"
+      }
+    ],
+    "playing": true
+  },
+  {
+    "elapsed": 777.3000000119209,
+    "parts": [
+      {
+        "opacity": "1",
+        "part": "settings-gear",
+        "transform": "matrix(0.929601, 0.368568, -0.368568, 0.929601, 0, 0)"
+      },
+      {
+        "opacity": "0",
+        "part": "tooth-light",
+        "transform": "matrix(0.947652, 0, 0, 1, 0, 0)"
+      },
+      {
+        "opacity": "0.189495",
+        "part": "rim-ticks",
+        "transform": "matrix(1, 0, 0, 1, 0, -0.312541)"
+      }
+    ],
+    "playing": true
+  },
+  {
+    "elapsed": 877.4000000059605,
+    "parts": [
+      {
+        "opacity": "1",
+        "part": "settings-gear",
+        "transform": "matrix(0.971685, 0.23628, -0.23628, 0.971685, 0, 0)"
+      },
+      {
+        "opacity": "0",
+        "part": "tooth-light",
+        "transform": "matrix(0.855345, 0, 0, 1, 0, 0)"
+      },
+      {
+        "opacity": "0",
+        "part": "rim-ticks",
+        "transform": "matrix(1, 0, 0, 1, 0, -0.394632)"
+      }
+    ],
+    "playing": true
+  },
+  {
+    "elapsed": 977.3000000119208,
+    "parts": [
+      {
+        "opacity": "1",
+        "part": "settings-gear",
+        "transform": "matrix(0.996683, 0.0813828, -0.0813828, 0.996683, 0, 0)"
+      },
+      {
+        "opacity": "0",
+        "part": "tooth-light",
+        "transform": "matrix(0.763129, 0, 0, 1, 0, 0)"
+      },
+      {
+        "opacity": "0",
+        "part": "rim-ticks",
+        "transform": "matrix(1, 0, 0, 1, 0, -0.314712)"
+      }
+    ],
+    "playing": true
+  },
+  {
+    "elapsed": 1076.9000000059605,
+    "parts": [
+      {
+        "opacity": "1",
+        "part": "settings-gear",
+        "transform": "matrix(0.999865, 0.0164182, -0.0164182, 0.999865, 0, 0)"
+      },
+      {
+        "opacity": "0",
+        "part": "tooth-light",
+        "transform": "matrix(0.670822, 0, 0, 1, 0, 0)"
+      },
+      {
+        "opacity": "0",
+        "part": "rim-ticks",
+        "transform": "matrix(1, 0, 0, 1, 0, -0.234712)"
+      }
+    ],
+    "playing": true
+  },
+  {
+    "elapsed": 1177.199999988079,
+    "parts": [
+      {
+        "opacity": "1",
+        "part": "settings-gear",
+        "transform": "matrix(1, 1.37411e-05, -1.37411e-05, 1, 0, 0)"
+      },
+      {
+        "opacity": "0",
+        "part": "tooth-light",
+        "transform": "matrix(0.578422, 0, 0, 1, 0, 0)"
+      },
+      {
+        "opacity": "0",
+        "part": "rim-ticks",
+        "transform": "matrix(1, 0, 0, 1, 0, -0.154632)"
+      }
+    ],
+    "playing": true
+  },
+  {
+    "elapsed": 1278.5,
+    "parts": [
+      {
+        "opacity": "1",
+        "part": "settings-gear",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "opacity": "0",
+        "part": "tooth-light",
+        "transform": "matrix(0.486206, 0, 0, 1, 0, 0)"
+      },
+      {
+        "opacity": "0",
+        "part": "rim-ticks",
+        "transform": "matrix(1, 0, 0, 1, 0, -0.074712)"
+      }
+    ],
+    "playing": true
+  },
+  {
+    "elapsed": 1378.199999988079,
+    "parts": [
+      {
+        "opacity": "1",
+        "part": "settings-gear",
+        "transform": "none"
+      },
+      {
+        "opacity": "0",
+        "part": "tooth-light",
+        "transform": "none"
+      },
+      {
+        "opacity": "0",
+        "part": "rim-ticks",
+        "transform": "none"
+      }
+    ],
+    "playing": false
+  }
+]

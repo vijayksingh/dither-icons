@@ -353,3 +353,11 @@ References are in [refinement-05](motion-evidence/refinement-05/).
 - Package ESM/declarations and the production gallery build passed; 77 share pages and their OG assets were regenerated. Library exports and package API names are unchanged.
 - Updated each icon's review, motion catalog, motion rules, machine-readable manifests, agent reference text, static contact sheet and affected OG images. The catalog now records **56 refined / 12 awaiting focused refinement**.
 - This is a local refinement batch for review. No npm version, Git tag or production deployment was changed. Standalone CSS still stops on hover departure; React retains the stronger completion contract.
+
+## Settings center correction — 2026-09-10
+
+User review rejected the arc inside Settings. Removed the spring bow, tab, internal index and aperture echo. Preserved the eight-tooth gear and measured turn; a short tooth highlight and two exterior ticks provide the localized payoff. MOT-01/03/08/16: negative space and recognition take precedence over literal machinery.
+
+Verified in the live Motion studio: rest and 40% response across dither, solid and outline; keyboard replay completes after Tab departure and returns to rest; reduced-motion replay has no transforms and both accents remain hidden. Reviewed the regenerated standalone SVG at 112/48px dither and 24px solid/outline. Ten targeted motion tests and TypeScript passed. Production build passed.
+
+Fresh [evidence](motion-evidence/refinement-05/settings-clean-center/) supersedes Settings in the original refinement-05 screenshots and mechanical-contact test. The size/export board and public generated assets now use the clean center. Other icons and the shared playback engine are unchanged. No publication or version change.
