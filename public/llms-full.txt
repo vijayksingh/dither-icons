@@ -325,7 +325,7 @@ CSS hover animation ends when hover ends. A standalone SVG does not expose React
 | message | MessageIcon | A thought gathers. A little response. |
 | send | SendIcon | A folded wing. A small rush of air. |
 | user | UserIcon | A small nod. A warm acknowledgment. |
-| lock | LockIcon | Take a little tension. Hold securely. |
+| lock | LockIcon | Give it a shake. It stays locked. |
 | unlock | UnlockIcon | Release the free end. Leave the way open. |
 | eye | EyeIcon | A glance finds its subject, then returns. |
 | play | PlayIcon | The first impulse. Then momentum. |

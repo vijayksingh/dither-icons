@@ -1,0 +1,122 @@
+[
+  {
+    "percent": 0,
+    "pose": [
+      {
+        "opacity": "1",
+        "part": "lock-shackle",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "opacity": "0",
+        "part": "lock-seats",
+        "transform": "none"
+      },
+      {
+        "opacity": "0",
+        "part": "lock-response",
+        "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+      }
+    ]
+  },
+  {
+    "percent": 17,
+    "pose": [
+      {
+        "opacity": "1",
+        "part": "lock-shackle",
+        "transform": "matrix(1, 0, 0, 1, 0.719475, -0.25)"
+      },
+      {
+        "opacity": "0",
+        "part": "lock-seats",
+        "transform": "none"
+      },
+      {
+        "opacity": "0",
+        "part": "lock-response",
+        "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+      }
+    ]
+  },
+  {
+    "percent": 23,
+    "pose": [
+      {
+        "opacity": "1",
+        "part": "lock-shackle",
+        "transform": "matrix(1, 0, 0, 1, -0.613076, -0.25)"
+      },
+      {
+        "opacity": "0",
+        "part": "lock-seats",
+        "transform": "none"
+      },
+      {
+        "opacity": "0",
+        "part": "lock-response",
+        "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+      }
+    ]
+  },
+  {
+    "percent": 42,
+    "pose": [
+      {
+        "opacity": "1",
+        "part": "lock-shackle",
+        "transform": "matrix(1, 0, 0, 1, 0, -0.25)"
+      },
+      {
+        "opacity": "0.072",
+        "part": "lock-seats",
+        "transform": "none"
+      },
+      {
+        "opacity": "0",
+        "part": "lock-response",
+        "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+      }
+    ]
+  },
+  {
+    "percent": 51,
+    "pose": [
+      {
+        "opacity": "1",
+        "part": "lock-shackle",
+        "transform": "matrix(1, 0, 0, 1, 0, -0.25)"
+      },
+      {
+        "opacity": "0.749189",
+        "part": "lock-seats",
+        "transform": "none"
+      },
+      {
+        "opacity": "0.698133",
+        "part": "lock-response",
+        "transform": "matrix(1.00019, 0, 0, 1, 0, 0)"
+      }
+    ]
+  },
+  {
+    "percent": 100,
+    "pose": [
+      {
+        "opacity": "1",
+        "part": "lock-shackle",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "opacity": "0",
+        "part": "lock-seats",
+        "transform": "none"
+      },
+      {
+        "opacity": "0",
+        "part": "lock-response",
+        "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+      }
+    ]
+  }
+]

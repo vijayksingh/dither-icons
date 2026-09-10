@@ -1,0 +1,21 @@
+{
+  "animations": 0,
+  "parts": [
+    {
+      "opacity": "1",
+      "part": "lock-shackle",
+      "transform": "none"
+    },
+    {
+      "opacity": "0",
+      "part": "lock-seats",
+      "transform": "none"
+    },
+    {
+      "opacity": "0",
+      "part": "lock-response",
+      "transform": "none"
+    }
+  ],
+  "reduced": true
+}

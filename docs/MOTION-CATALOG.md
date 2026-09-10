@@ -32,7 +32,7 @@ The four accepted foundation performances remain intact. The remaining icons use
 | [close](icon-reviews/close.md) | dismiss a surface with a cross-out gesture | Mark / Cross / Resolve | 820ms |
 | [plus](icon-reviews/plus.md) | insert an added stroke into a receiving crossbar | Insert / Receive / Extend | 1080ms |
 | [user](icon-reviews/user.md) | represent a person or profile | Notice / Acknowledge / Ease | 1180ms |
-| [lock](icon-reviews/lock.md) | indicate protected access that holds under tension | Test / Hold / Release | 1240ms |
+| [lock](icon-reviews/lock.md) | test a closed mechanism that resists opening | Test / Resist / Hold | 1080ms |
 | [unlock](icon-reviews/unlock.md) | indicate open access with a clear free shackle end | Release / Clear / Stay open | 1200ms |
 | [eye](icon-reviews/eye.md) | attend to or inspect a visible region | Notice / Follow / Center | 1400ms |
 | [sparkles](icon-reviews/sparkles.md) | a small moment of discovery or emphasis | Gather / Glint / Echo | 1180ms |
@@ -149,3 +149,7 @@ The user requested retaining and committing these four, then corrected the selec
 ### Semantic correction and Unlock state — 2026-09-10
 
 The user rejected Close and Plus as semantically weak. Close now marks two fixed diagonals in sequence and finishes at the crossing-out tip. Plus inserts its upright into a waiting crossbar; the response travels from their registration to the bar ends. **Unlock** is new: its shackle starts visibly open, pivots farther around one seated foot, and settles open. Lock and Check retain their prior tracks. Actions and access now presents **Close, Plus, Lock, Unlock**; Check remains under Action controls. Current [reviews](icon-reviews/unlock.md) and [evidence](motion-evidence/refinement-06-rework/) supersede the old Close/Plus performances. This is implementation and rendered-review status, not a claim of user acceptance or npm publication.
+
+### Lock resistance correction — 2026-09-10
+
+On user request, Lock now gives a short, diminishing rigid shackle rattle against a fixed housing, stops firmly, then holds. Both feet remain inserted; the shoulder response follows the stop. It replaces the earlier crown stretch and uses **Test / Resist / Hold**, 1080ms. [Review](icon-reviews/lock.md) and [current evidence](motion-evidence/lock-resistance/). Unlock, Close, Plus and all other performances are unchanged.

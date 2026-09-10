@@ -70,7 +70,7 @@ export const definitions = [
  def('message','Communication','A message arrives into the bubble.',p([[2,3],[22,3],[22,17],[10,17],[4,22],[4,17],[2,17]]),part([...rect(6,8,2,2),...rect(11,8,2,2),...rect(16,8,2,2)],'blink')),
  def('send','Communication','A paper plane takes a short flight.',p([[2,10],[22,2],[14,22],[10,14]],'rise')),
  def('user','Interface','A small greeting from the avatar.',o(12,7,5,'ring'),p([[3,22],[3,18],[7,14],[17,14],[21,18],[21,22]])),
- def('lock','Interface','The closed shackle holds under tension.',l([[6,10],[6,5],[9,2],[14,2],[17,5],[17,10]],'rise'),p([[4,10],[20,10],[20,22],[4,22]])),
+ def('lock','Interface','The shackle rattles against a fixed housing and stays locked.',l([[6,10],[6,5],[9,2],[14,2],[17,5],[17,10]],'rise'),p([[4,10],[20,10],[20,22],[4,22]])),
  {...def('unlock','Interface','An open shackle clears its free end while its right foot stays seated.',{...vector(LOCK_ART.shackle),transform:UNLOCK_REST_TRANSFORM},vector(LOCK_ART.body+LOCK_ART.keyhole)),label:'Unlock',keywords:['unlocked','open lock','access','permissions','editable']},
  def('eye','Interface','The pupil takes a quick look.',l([[2,11],[7,6],[16,6],[21,11],[16,16],[7,16],[2,11]]),r(10,9,4,5,'slide')),
  def('play','Media','A playhead moves forward.',p([[6,3],[22,12],[6,21]],'slide')),

@@ -424,16 +424,16 @@
       "component": "LockIcon",
       "label": "Lock",
       "category": "Interface",
-      "description": "The closed shackle holds under tension.",
+      "description": "The shackle rattles against a fixed housing and stays locked.",
       "keywords": [],
       "page": "/icons/lock",
       "motion": {
-        "caption": "Take a little tension. Hold securely.",
-        "durationMs": 1240,
+        "caption": "Give it a shake. It stays locked.",
+        "durationMs": 1080,
         "stages": [
           "Test",
-          "Hold",
-          "Release"
+          "Resist",
+          "Hold"
         ]
       }
     },

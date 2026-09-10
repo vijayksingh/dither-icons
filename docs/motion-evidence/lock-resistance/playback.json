@@ -1,0 +1,2397 @@
+[
+  {
+    "speed": "1",
+    "samples": [
+      {
+        "elapsed": 2.800000011920929,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 36.400000005960464,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.0938002)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 69.60000002384186,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.220254)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 102.7000000178814,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.248823)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 135.90000000596046,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0.144932, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 169.40000000596046,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0.626358, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 202.60000002384183,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0.54066, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 236,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, -0.510195, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 269.30000001192093,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, -0.337631, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 302.90000000596046,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0.385046, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 336,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0.0641434, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 369.7000000178814,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, -0.224185, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 403.10000002384186,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0.09109, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 435.90000000596046,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0.0302212, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 469.5,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.25)"
+          },
+          {
+            "opacity": "0.33236",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 503,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.25)"
+          },
+          {
+            "opacity": "0.886438",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.0638655",
+            "part": "lock-response",
+            "transform": "matrix(0.954562, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 536.2000000178814,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.25)"
+          },
+          {
+            "opacity": "0.796168",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.488956",
+            "part": "lock-response",
+            "transform": "matrix(0.984925, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 569.9000000059605,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.25)"
+          },
+          {
+            "opacity": "0.706168",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.660991",
+            "part": "lock-response",
+            "transform": "matrix(1.0039, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 603,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.25)"
+          },
+          {
+            "opacity": "0.616168",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.583291",
+            "part": "lock-response",
+            "transform": "matrix(1.01167, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 636.4000000059605,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.25)"
+          },
+          {
+            "opacity": "0.525897",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.505358",
+            "part": "lock-response",
+            "transform": "matrix(1.01946, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 669.6000000238419,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.25)"
+          },
+          {
+            "opacity": "0.435897",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.427658",
+            "part": "lock-response",
+            "transform": "matrix(1.02723, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 702,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.241572)"
+          },
+          {
+            "opacity": "0.355016",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.352058",
+            "part": "lock-response",
+            "transform": "matrix(1.03479, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 736,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.152075)"
+          },
+          {
+            "opacity": "0.276428",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.274125",
+            "part": "lock-response",
+            "transform": "matrix(1.04259, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 769.7000000178814,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.0529989)"
+          },
+          {
+            "opacity": "0.195958",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.194325",
+            "part": "lock-response",
+            "transform": "matrix(1.05057, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 802.7000000178814,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.0147297)"
+          },
+          {
+            "opacity": "0.117605",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.116625",
+            "part": "lock-response",
+            "transform": "matrix(1.05834, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 836.5,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.00135704)"
+          },
+          {
+            "opacity": "0.0392518",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.0389247",
+            "part": "lock-response",
+            "transform": "matrix(1.06611, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 875,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(1.06143, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 919.5,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(1.03524, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 952.3000000119208,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(1.01818, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 986.2000000178814,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(1.00044, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1019.600000023842,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.983017, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1052.7000000178814,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.965747, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1086.300000011921,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "none"
+          }
+        ]
+      },
+      {
+        "elapsed": 1119.4000000059605,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "none"
+          }
+        ]
+      },
+      {
+        "elapsed": 1152.600000023842,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "none"
+          }
+        ]
+      },
+      {
+        "elapsed": 1185.7000000178814,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "none"
+          }
+        ]
+      },
+      {
+        "elapsed": 1219.300000011921,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "none"
+          }
+        ]
+      },
+      {
+        "elapsed": 1252.800000011921,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "none"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "speed": "0.5",
+    "samples": [
+      {
+        "elapsed": 0.7000000178813934,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.00353633)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 33.900000005960464,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.0465413)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 67.2000000178814,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.142152)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 100.5,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.202786)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 133.5,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.232069)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 167.2000000178814,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.245823)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 200.5,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.24997)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 233.9000000059605,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0.0625541, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 267.2000000178814,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0.268145, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 300.7000000178814,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0.525652, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 333.90000000596046,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0.692433, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 367.5,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0.684452, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 400.5,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0.298411, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 434.10000002384186,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, -0.301527, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 467.5,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, -0.611346, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 500.800000011921,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, -0.510148, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 534.2000000178814,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, -0.109065, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 567.2000000178814,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0.291232, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 600.8000000119209,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0.395027, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 634.2000000178814,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0.219984, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 666.8000000119209,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, -0.0795443, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 700.8000000119209,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, -0.238838, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 733.4000000059605,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, -0.163246, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 766.8000000119209,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0.0338232, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 800.1000000238419,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0.0989723, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 834.3000000119209,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0.0590771, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 866.7000000178814,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0.00811076, -0.25)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 900.8000000119208,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.25)"
+          },
+          {
+            "opacity": "0.16666",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 933.7000000178814,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.25)"
+          },
+          {
+            "opacity": "0.49666",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 967.4000000059604,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.25)"
+          },
+          {
+            "opacity": "0.83266",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1001,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.25)"
+          },
+          {
+            "opacity": "0.863965",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.169693",
+            "part": "lock-response",
+            "transform": "matrix(0.962121, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1034,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.25)"
+          },
+          {
+            "opacity": "0.819641",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.37842",
+            "part": "lock-response",
+            "transform": "matrix(0.97703, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1067.300000011921,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.25)"
+          },
+          {
+            "opacity": "0.773965",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.593511",
+            "part": "lock-response",
+            "transform": "matrix(0.992394, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1100.4000000059605,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.25)"
+          },
+          {
+            "opacity": "0.7291",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.68079",
+            "part": "lock-response",
+            "transform": "matrix(1.00192, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1133.9000000059605,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.25)"
+          },
+          {
+            "opacity": "0.6841",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.64194",
+            "part": "lock-response",
+            "transform": "matrix(1.00581, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1167.5,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.25)"
+          },
+          {
+            "opacity": "0.63883",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.602856",
+            "part": "lock-response",
+            "transform": "matrix(1.00971, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1200.800000011921,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.25)"
+          },
+          {
+            "opacity": "0.59383",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.564006",
+            "part": "lock-response",
+            "transform": "matrix(1.0136, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1233.9000000059605,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.25)"
+          },
+          {
+            "opacity": "0.548695",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.52504",
+            "part": "lock-response",
+            "transform": "matrix(1.0175, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1266.5,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.25)"
+          },
+          {
+            "opacity": "0.504911",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.48724",
+            "part": "lock-response",
+            "transform": "matrix(1.02128, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1304.7000000178814,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.25)"
+          },
+          {
+            "opacity": "0.455992",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.445006",
+            "part": "lock-response",
+            "transform": "matrix(1.0255, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1350.9000000059605,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.249792)"
+          },
+          {
+            "opacity": "0.392158",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.38889",
+            "part": "lock-response",
+            "transform": "matrix(1.03111, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1383.300000011921,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.241097)"
+          },
+          {
+            "opacity": "0.353922",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.350973",
+            "part": "lock-response",
+            "transform": "matrix(1.0349, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1417.4000000059605,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.209379)"
+          },
+          {
+            "opacity": "0.313687",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.311073",
+            "part": "lock-response",
+            "transform": "matrix(1.03889, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1451,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.148811)"
+          },
+          {
+            "opacity": "0.274511",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.272223",
+            "part": "lock-response",
+            "transform": "matrix(1.04278, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1483.9000000059605,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.0908216)"
+          },
+          {
+            "opacity": "0.235334",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.233373",
+            "part": "lock-response",
+            "transform": "matrix(1.04666, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1517.300000011921,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.0530607)"
+          },
+          {
+            "opacity": "0.19604",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.194406",
+            "part": "lock-response",
+            "transform": "matrix(1.05056, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1550.800000011921,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.0294972)"
+          },
+          {
+            "opacity": "0.156864",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.155556",
+            "part": "lock-response",
+            "transform": "matrix(1.05444, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1584,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.0147537)"
+          },
+          {
+            "opacity": "0.117687",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.116706",
+            "part": "lock-response",
+            "transform": "matrix(1.05833, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1617.4000000059605,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.00593365)"
+          },
+          {
+            "opacity": "0.0785106",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.0778563",
+            "part": "lock-response",
+            "transform": "matrix(1.06221, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1650.9000000059605,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.0013545)"
+          },
+          {
+            "opacity": "0.0392165",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.0388897",
+            "part": "lock-response",
+            "transform": "matrix(1.06611, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1684.2000000178814,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.30218e-09)"
+          },
+          {
+            "opacity": "4e-05",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "3.96667e-05",
+            "part": "lock-response",
+            "transform": "matrix(1.07, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1717.4000000059605,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(1.06132, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1750.5,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(1.05261, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1784,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(1.04392, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1817.4000000059605,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(1.03523, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1850.800000011921,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(1.02652, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1884.2000000178816,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(1.01781, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1917.4000000059605,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(1.00915, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1950.7000000178816,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(1.00043, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 1984.100000023842,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.991722, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 2017.2000000178816,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.983035, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 2050.9000000059605,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.974348, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 2084.7000000178814,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.965661, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 2117.100000023842,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "matrix(0.956948, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "playing": "true"
+      },
+      {
+        "elapsed": 2151.100000023842,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "none"
+          }
+        ]
+      },
+      {
+        "elapsed": 2183.800000011921,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "none"
+          }
+        ]
+      },
+      {
+        "elapsed": 2217.2000000178814,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "none"
+          }
+        ]
+      },
+      {
+        "elapsed": 2250,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "none"
+          }
+        ]
+      },
+      {
+        "elapsed": 2284.2000000178814,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "none"
+          }
+        ]
+      },
+      {
+        "elapsed": 2317.4000000059605,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "none"
+          }
+        ]
+      },
+      {
+        "elapsed": 2350.800000011921,
+        "focus": "Play unlock study",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "lock-shackle",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-seats",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "lock-response",
+            "transform": "none"
+          }
+        ]
+      }
+    ]
+  }
+]

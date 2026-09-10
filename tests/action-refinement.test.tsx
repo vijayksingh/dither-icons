@@ -69,19 +69,32 @@ test('UnlockIcon is open at rest and keeps a clear free end throughout its motio
  assert.ok(svg.includes(`transform="${UNLOCK_REST_TRANSFORM}"`),'open pose is SVG geometry, not a runtime-only transform');
 });
 
-test('lock keeps the drawn shackle feet anchored beneath the fixed housing',()=>{
+test('lock rattles rigidly while both drawn feet stay captured by the fixed housing',()=>{
  const [,left,feet]=LOCK_ART.shackleLine.match(/^M([\d.]+) ([\d.]+)/)!;
- const [,bodyY]=LOCK_ART.body.match(/^M[\d.]+ ([\d.]+)/)!;
+ const [,flatLeft,bodyTop,flatWidth,radius]=LOCK_ART.body.match(/^M([\d.]+) ([\d.]+)h([\d.]+)a([\d.]+)/)!;
  const shackle=track(lock,'lock-shackle');
  assert.equal(shackle.origin,`12px ${feet}px`);
- assert.ok(Number(feet)>Number(bodyY),'feet stay behind the receiving housing');
- for(const frame of shackle.frames){
-  assert.match(frame.transform!,/^scaleY\([\d.]+\)$/);
-  const scale=Number(frame.transform!.match(/[\d.]+/)![0]);
-  for(const x of [Number(left),24-Number(left)])assert.deepEqual([x,Number(feet)+(Number(feet)-Number(feet))*scale],[x,Number(feet)]);
+ const shifts=shackle.frames.map(frame=>{
+  assert.match(frame.transform!,/^translate\([-\d.]+px, [-\d.]+px\)$/,'metal moves rigidly, with no stretch or tilt');
+  const [dx,dy]=frame.transform!.match(/-?[\d.]+/g)!.map(Number);
+  // Include the full two-unit foot width and the housing's rounded shoulders.
+  for(const center of [Number(left),24-Number(left)])for(const edge of [-1,1]){
+   const x=center+edge+dx;
+   const beyond=Math.max(Number(flatLeft)-x,x-Number(flatLeft)-Number(flatWidth),0);
+   assert.ok(beyond<Number(radius));
+   const top=Number(bodyTop)+Number(radius)-Math.sqrt(Number(radius)**2-beyond**2);
+   assert.ok(Number(feet)+dy>top+.4,'both feet remain visibly inserted at every reversal');
+  }
+  return {at:frame.at,dx,dy};
+ });
+ const reversals=shifts.filter(f=>f.dx!==0);
+ assert.ok(reversals.length>=4,'a short rattle, not a single directional nudge');
+ for(let i=1;i<reversals.length;i++){
+  assert.ok(reversals[i].dx*reversals[i-1].dx<0,'direction alternates');
+  assert.ok(Math.abs(reversals[i].dx)<Math.abs(reversals[i-1].dx),'resistance dissipates travel');
  }
- assert.equal(shackle.frames.find(f=>f.at===LOCK_TIMING.tension)!.transform,shackle.frames.find(f=>f.at===LOCK_TIMING.hold)!.transform);
- hiddenThrough(lock,'lock-seats',LOCK_TIMING.tension);
+ assert.equal(shackle.frames.find(f=>f.at===LOCK_TIMING.stop)!.transform,shackle.frames.find(f=>f.at===LOCK_TIMING.hold)!.transform,'a firm stop is followed by sustained stillness');
+ hiddenThrough(lock,'lock-seats',LOCK_TIMING.stop);
  hiddenThrough(lock,'lock-response',LOCK_TIMING.light);
 });
 

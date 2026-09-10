@@ -1,43 +1,37 @@
-# Lock: Interface Craft refinement 06
+# Lock: resistance shake refinement
 
 ## Context
-**Indicate protected access that holds.** The platform has a LockKeyhole in `components/auth/AuthEntryPage.tsx:50` and read-only lock indicators in `components/lab/SplitEditor.tsx:108`. This preview cannot claim authentication or unlock anything.
+**Indicate access that remains locked.** The user asked for a shake to emphasize that it cannot be opened. AuthEntryPage and SplitEditor's read-only indicators remain the relevant platform contexts; the host controls actual permissions.
 
 ## First Impressions
-The earlier shackle took tension but its receiving body was a sharp, heavy rectangle. The shoulder light lacked a clearly visible exterior response. Protection needs a stable housing and a sustained hold, not an opening animation.
+The prior upward tension was too polite to communicate refusal. Stretching the crown also softened the impression of a rigid mechanism. Keep the accepted drawing, but replace stretch with a short rattle that runs out of travel against the fixed housing.
 
 ## Visual Design
-A round-crowned shackle enters a housing with 2.2-unit corner radii. The keyhole stays unchanged. A fixed housing mask removes the hidden portion of the shackle, preventing double ink in dither. Outline uses a 1.8-unit shackle and a 1.3-unit housing stroke; its compact keyhole is filled for legibility. Two shoulder glints sit on the receiving top edge, followed by fine exterior resistance marks.
+The rounded housing and keyhole stay planted. The entire shackle translates as one rigid piece; no skew, stretch or tilt. A .25-unit upward tug leaves both full-width feet beneath the housing's rounded shoulders. Sideways travel peaks at .72 units and rapidly diminishes. The existing housing mask preserves insertion in dither, solid and outline. The same shoulder glints and exterior marks answer the final arrest.
 
 ## Interface Design
-The shackle scales only vertically about its drawn foot line at y=11.3. Both feet remain fixed behind the body while its crown rises under 5.5% tension. At 360ms the tension holds; shoulder glints peak at 430ms and exterior marks at 500ms. Release begins after 610ms, with a small seating compression and a slow final rest. The body and keyhole never move.
+Tug at 110ms, first right stop at 185ms, opposite stop at 245ms, then three shorter reversals at 305/360/405ms. Center firmly at 450ms. Shoulder light peaks at 495ms and exterior response at 550ms. Hold the stopped pose through 680ms before lowering the tiny tug. Return to the original closed pose at 850ms; end at 1080ms. That deliberate stillness makes resistance the conclusion.
 
 ## Consistency & Conventions
-MOT-01/03/05/06/07/08/09/10/11/12/13/14/15/16. Preserve closed-lock identity throughout; response follows resistance at actual attachment points. An unchanged host state never becomes a fabricated unlock or permission grant.
+MOT-01/03/04/05/06/07/08/09/10/11/12/13/14/15/16. This shake has a specific physical relationship: the shackle tests its retained travel, while the body refuses to yield. It does not bounce the whole icon or imply an unlock, actual security guarantee, or access change. Native playback and standalone SVG share the timeline; CSS hover still stops on pointer departure.
 
 ## User Context
-The emotional quality is reassurance through stability. The maintained hold matters more than distance traveled. At 24px the open space under the crown and the recognizable keyhole remain clear, including without motion.
+A brief refusal should be clear without feeling angry or distracting. The rattle occupies 340ms after the initial tug and ends decisively. Reduced motion retains the complete closed glyph. [Unlock](unlock.md) keeps its separate open resting state and unchanged motion.
 
 ## Top Opportunities
-1. Keep the entire foot line seated beneath a fixed housing.
-2. Refine the housing and keyhole for compact reading.
-3. Answer tension at both receiving shoulders, then release quietly.
+1. Show resistance through constrained rigid travel instead of elastic stretching.
+2. Keep both shackle feet captured behind a motionless housing throughout.
+3. Follow the rattle with a firm stop, localized response and sustained stillness.
 
 ## Encoded storyboard and rendered review
-[lock.ts](../../src/motions/lock.ts), **1240ms**, **Test / Hold / Release**.
+[lock.ts](../../src/motions/lock.ts), **1080ms**, **Test / Resist / Hold**.
 
 ```text
-0       120        360 430 500       610       780       1000   1240
-rest -- gather --- tension--light--echo--hold--seat ----- home --- rest
-feet + body + keyhole: fixed ---------------------------------- fixed
+0     110  185 245 305 360 405 450 495 550      680     850     1080
+rest--tug--right-left--right-left--right-stop--response--hold--home--rest
+housing + keyhole: fixed; shackle feet remain inserted throughout
 ```
 
-Reviewed 10% preparation, 28% approach to tension, 40/45% shoulder response, 62% seating and 100% rest. Browser views show no opening or detached feet in dither, solid or outline. Tests derive the anchor from the drawn shackle foot and compare it with the housing top. Actual/half-speed, keyboard departure and reduced motion passed.
+[Evidence](../motion-evidence/lock-resistance/) supersedes the tension-only performance. At the inspected 17% and 23% extremes, both feet remain visibly beneath the housing and the crown keeps its original proportions. At 42% it is centered and stopped; the delayed response is visible at 51%. Start/end part poses match exactly. Live actual/half-speed replay completes after keyboard departure. Material switches preserve the inspected transform. Geometry tests check the drawn feet's full width against the rounded housing, alternating diminishing travel and the post-rattle hold.
 
-![Lock is fourth, the shoulders answer the hold](../motion-evidence/refinement-06/dither-45.png)
-
-[Rest](../motion-evidence/refinement-06/pose-0.png) · [Small sizes](../motion-evidence/refinement-06/size-and-export.png) · [Batch validation](../VALIDATION.md#focused-refinement-06--2026-09-10)
-
-## Paired open state — 2026-09-10
-
-[Unlock](unlock.md) now shares this housing and shackle geometry, with a static open pose and its own timeline. Lock's held-tension performance is unchanged. The Motion studio shows both together in Actions and access. The host selects the appropriate icon from real state; hovering Lock never unlocks it. Current paired-state [browser evidence](../motion-evidence/refinement-06-rework/) supplements the original four-icon pass.
+![Lock resists and then holds closed](../motion-evidence/lock-resistance/pose-51.png)
