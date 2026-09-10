@@ -1,0 +1,455 @@
+[
+  {
+    "texture": "dither",
+    "parts": [
+      {
+        "name": "search",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "18.8px 18.8px",
+            "part": "magnifier",
+            "transform": "matrix(0.987688, -0.156434, 0.156434, 0.987688, -0.5, -0.3)"
+          },
+          {
+            "opacity": "0.165714",
+            "origin": "9.8px 9.8px",
+            "part": "glass-reflection",
+            "transform": "matrix(1, 0, 0, 1, -0.685714, 0)"
+          },
+          {
+            "opacity": "0.767143",
+            "origin": "9.8px 9.8px",
+            "part": "focus-brackets",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.662857",
+            "origin": "9.8px 9.8px",
+            "part": "lens-rim",
+            "transform": "matrix(0.999102, 0.0423739, -0.0423739, 0.999102, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "home",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "9.65px 14.1px",
+            "part": "home-door-occlusion",
+            "transform": "matrix(0.24, -0.158384, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.28",
+            "origin": "12px 21px",
+            "part": "welcome-spill",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.3024",
+            "origin": "12px 21px",
+            "part": "interior-light",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.65",
+            "origin": "12px 21px",
+            "part": "threshold-light",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "9.65px 14.1px",
+            "part": "home-door",
+            "transform": "matrix(0.24, -0.158384, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.556",
+            "origin": "9.65px 14.1px",
+            "part": "door-edge",
+            "transform": "none"
+          }
+        ]
+      },
+      {
+        "name": "settings",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 12px",
+            "part": "settings-gear",
+            "transform": "matrix(0.92388, 0.382683, -0.382683, 0.92388, 0, 0)"
+          },
+          {
+            "opacity": "0.439412",
+            "origin": "12px 12px",
+            "part": "gear-index",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 9.05px",
+            "part": "spring-pawl",
+            "transform": "matrix(1.0244, 0, 0, 0.920709, 0, 0)"
+          },
+          {
+            "opacity": "0.634706",
+            "origin": "12px 9.05px",
+            "part": "detent-light",
+            "transform": "matrix(1.00471, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.641875",
+            "origin": "12px 9.05px",
+            "part": "detent-echo",
+            "transform": "matrix(1.00875, 0, 0, 1.00875, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "user",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 21.2px",
+            "part": "profile-shoulders",
+            "transform": "matrix(1.01794, 0, 0, 1.03489, 0, 0)"
+          },
+          {
+            "opacity": "0.260909",
+            "origin": "12px 21.2px",
+            "part": "shoulder-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 11.35px",
+            "part": "profile-head",
+            "transform": "matrix(0.99956, 0.0353339, -0.0335437, 0.948917, 0.122453, 0.362699)"
+          },
+          {
+            "opacity": "0.521818",
+            "origin": "12px 7.3px",
+            "part": "cheek-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "origin": "18px 6px",
+            "part": "greeting-0",
+            "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "18px 6px",
+            "part": "greeting-1",
+            "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "texture": "solid",
+    "parts": [
+      {
+        "name": "search",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "18.8px 18.8px",
+            "part": "magnifier",
+            "transform": "matrix(0.987688, -0.156434, 0.156434, 0.987688, -0.5, -0.3)"
+          },
+          {
+            "opacity": "0.165714",
+            "origin": "9.8px 9.8px",
+            "part": "glass-reflection",
+            "transform": "matrix(1, 0, 0, 1, -0.685714, 0)"
+          },
+          {
+            "opacity": "0.767143",
+            "origin": "9.8px 9.8px",
+            "part": "focus-brackets",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.662857",
+            "origin": "9.8px 9.8px",
+            "part": "lens-rim",
+            "transform": "matrix(0.999102, 0.0423739, -0.0423739, 0.999102, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "home",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "9.65px 14.1px",
+            "part": "home-door-occlusion",
+            "transform": "matrix(0.24, -0.158384, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.28",
+            "origin": "12px 21px",
+            "part": "welcome-spill",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.3024",
+            "origin": "12px 21px",
+            "part": "interior-light",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.65",
+            "origin": "12px 21px",
+            "part": "threshold-light",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "9.65px 14.1px",
+            "part": "home-door",
+            "transform": "matrix(0.24, -0.158384, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.556",
+            "origin": "9.65px 14.1px",
+            "part": "door-edge",
+            "transform": "none"
+          }
+        ]
+      },
+      {
+        "name": "settings",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 12px",
+            "part": "settings-gear",
+            "transform": "matrix(0.92388, 0.382683, -0.382683, 0.92388, 0, 0)"
+          },
+          {
+            "opacity": "0.439412",
+            "origin": "12px 12px",
+            "part": "gear-index",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 9.05px",
+            "part": "spring-pawl",
+            "transform": "matrix(1.0244, 0, 0, 0.920709, 0, 0)"
+          },
+          {
+            "opacity": "0.634706",
+            "origin": "12px 9.05px",
+            "part": "detent-light",
+            "transform": "matrix(1.00471, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.641875",
+            "origin": "12px 9.05px",
+            "part": "detent-echo",
+            "transform": "matrix(1.00875, 0, 0, 1.00875, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "user",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 21.2px",
+            "part": "profile-shoulders",
+            "transform": "matrix(1.01794, 0, 0, 1.03489, 0, 0)"
+          },
+          {
+            "opacity": "0.260909",
+            "origin": "12px 21.2px",
+            "part": "shoulder-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 11.35px",
+            "part": "profile-head",
+            "transform": "matrix(0.99956, 0.0353339, -0.0335437, 0.948917, 0.122453, 0.362699)"
+          },
+          {
+            "opacity": "0.521818",
+            "origin": "12px 7.3px",
+            "part": "cheek-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "origin": "18px 6px",
+            "part": "greeting-0",
+            "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "18px 6px",
+            "part": "greeting-1",
+            "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "texture": "outline",
+    "parts": [
+      {
+        "name": "search",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "18.8px 18.8px",
+            "part": "magnifier",
+            "transform": "matrix(0.987688, -0.156434, 0.156434, 0.987688, -0.5, -0.3)"
+          },
+          {
+            "opacity": "0.165714",
+            "origin": "9.8px 9.8px",
+            "part": "glass-reflection",
+            "transform": "matrix(1, 0, 0, 1, -0.685714, 0)"
+          },
+          {
+            "opacity": "0.767143",
+            "origin": "9.8px 9.8px",
+            "part": "focus-brackets",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.662857",
+            "origin": "9.8px 9.8px",
+            "part": "lens-rim",
+            "transform": "matrix(0.999102, 0.0423739, -0.0423739, 0.999102, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "home",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "9.65px 14.1px",
+            "part": "home-door-occlusion",
+            "transform": "matrix(0.24, -0.158384, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.28",
+            "origin": "12px 21px",
+            "part": "welcome-spill",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.3024",
+            "origin": "12px 21px",
+            "part": "interior-light",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.65",
+            "origin": "12px 21px",
+            "part": "threshold-light",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "origin": "9.65px 14.1px",
+            "part": "home-door",
+            "transform": "matrix(0.24, -0.158384, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.556",
+            "origin": "9.65px 14.1px",
+            "part": "door-edge",
+            "transform": "none"
+          }
+        ]
+      },
+      {
+        "name": "settings",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 12px",
+            "part": "settings-gear",
+            "transform": "matrix(0.92388, 0.382683, -0.382683, 0.92388, 0, 0)"
+          },
+          {
+            "opacity": "0.439412",
+            "origin": "12px 12px",
+            "part": "gear-index",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 9.05px",
+            "part": "spring-pawl",
+            "transform": "matrix(1.0244, 0, 0, 0.920709, 0, 0)"
+          },
+          {
+            "opacity": "0.634706",
+            "origin": "12px 9.05px",
+            "part": "detent-light",
+            "transform": "matrix(1.00471, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.641875",
+            "origin": "12px 9.05px",
+            "part": "detent-echo",
+            "transform": "matrix(1.00875, 0, 0, 1.00875, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "user",
+        "parts": [
+          {
+            "opacity": "1",
+            "origin": "12px 21.2px",
+            "part": "profile-shoulders",
+            "transform": "matrix(1.01794, 0, 0, 1.03489, 0, 0)"
+          },
+          {
+            "opacity": "0.260909",
+            "origin": "12px 21.2px",
+            "part": "shoulder-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "origin": "12px 11.35px",
+            "part": "profile-head",
+            "transform": "matrix(0.99956, 0.0353339, -0.0335437, 0.948917, 0.122453, 0.362699)"
+          },
+          {
+            "opacity": "0.521818",
+            "origin": "12px 7.3px",
+            "part": "cheek-light",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "origin": "18px 6px",
+            "part": "greeting-0",
+            "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "origin": "18px 6px",
+            "part": "greeting-1",
+            "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+          }
+        ]
+      }
+    ]
+  }
+]

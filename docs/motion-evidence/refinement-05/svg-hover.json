@@ -1,0 +1,47 @@
+[
+  {
+    "animations": [
+      "di-search-magnifier",
+      "di-search-glass-reflection",
+      "di-search-focus-brackets",
+      "di-search-lens-rim"
+    ],
+    "hover": true,
+    "name": "search"
+  },
+  {
+    "animations": [
+      "di-home-home-door-occlusion",
+      "di-home-welcome-spill",
+      "di-home-interior-light",
+      "di-home-threshold-light",
+      "di-home-home-door",
+      "di-home-door-edge"
+    ],
+    "hover": true,
+    "name": "home"
+  },
+  {
+    "animations": [
+      "di-settings-settings-gear",
+      "di-settings-gear-index",
+      "di-settings-spring-pawl",
+      "di-settings-detent-light",
+      "di-settings-detent-echo"
+    ],
+    "hover": true,
+    "name": "settings"
+  },
+  {
+    "animations": [
+      "di-user-profile-shoulders",
+      "di-user-shoulder-light",
+      "di-user-profile-head",
+      "di-user-cheek-light",
+      "di-user-greeting-0",
+      "di-user-greeting-1"
+    ],
+    "hover": true,
+    "name": "user"
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "reduced": [
+    {
+      "animatedParts": 0,
+      "name": "search",
+      "playing": false,
+      "visibleAccents": 0
+    },
+    {
+      "animatedParts": 0,
+      "name": "home",
+      "playing": false,
+      "visibleAccents": 0
+    },
+    {
+      "animatedParts": 0,
+      "name": "settings",
+      "playing": false,
+      "visibleAccents": 0
+    },
+    {
+      "animatedParts": 0,
+      "name": "user",
+      "playing": false,
+      "visibleAccents": 0
+    }
+  ],
+  "reducedReplay": 0,
+  "motionOff": {
+    "replayDisabled": true,
+    "disabledStudies": 4,
+    "playing": 0
+  }
+}

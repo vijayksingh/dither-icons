@@ -12,13 +12,9 @@ export function ExtendedArtwork({name,draw,texture}:{name:string;draw:Draw;textu
   case 'terminal':return <>{shape(0)}<g data-part="prompt">{shape(1)}</g><g data-part="cursor">{shape(2)}</g>{accent('line-light',stroke('M11.5 10.5h5.5',.55))}</>;
   case 'cpu':return <>{shape(0)}{accent('input',stroke('M2.5 8H7l2.5 2.5',.75))}<g data-part="die">{shape(1)}{accent('die-light',stroke('M10 13v-3h3',.7))}</g>{accent('output',stroke('M14.5 13.5L17 16h4.5',.75))}</>;
   case 'chart':return <>{shape(0)}<g data-part="bar-small">{shape(1)}{accent('cap-small',stroke('M6.4 12.5h2.2',.7))}</g><g data-part="bar-medium">{shape(2)}{accent('cap-medium',stroke('M12.4 7.5h2.2',.7))}</g><g data-part="bar-tall">{shape(3)}{accent('cap-tall',stroke('M18.4 3.5h2.2',.7))}</g></>;
-  case 'search':return <g data-part="magnifier">{shape(0)}{shape(1)}{accent('lens-light',stroke('M5.2 10.5a5.3 5.3 0 0 1 5.3-5.3',.7))}</g>;
-  case 'home':return <>{shape(0)}{accent('interior-light',draw('M10.5 15.5h3V21h-3Z'))}<g data-part="door">{shape(1)}</g></>;
-  case 'settings':return <><g data-part="gear">{shape(0)}</g>{accent('detent',stroke('M12 8.5v1.6',.75))}</>;
   case 'check':return <g data-part="check">{shape(0)}{accent('affirm-light',stroke('M10 15l1.4-1.4',.85))}</g>;
   case 'close':return <><g data-part="diagonal-down">{draw('M5.3 4 20 18.7 18.7 20 4 5.3Z')}</g><g data-part="diagonal-up">{draw('M18.7 4 20 5.3 5.3 20 4 18.7Z')}</g></>;
   case 'plus':return <><g data-part="horizontal">{draw('M3 11h18v2H3Z')}</g><g data-part="vertical">{draw('M11 3h2v18h-2Z')}</g>{accent('tip-light',stroke('M20.5 11.5v1M11.5 3.5h1',.5))}</>;
-  case 'user':return <><g data-part="shoulders">{shape(1)}</g><g data-part="head">{shape(0)}</g></>;
   case 'lock':return <><g data-part="shackle">{shape(0)}</g>{shape(1)}{accent('seat-light',stroke('M6.5 10h1M16.5 10h1',.7))}{accent('body-light',stroke('M7 13h2',.6))}</>;
   case 'eye':return <><defs><clipPath id={apertureId}><path d="M3.7 12Q12 1.8 20.3 12Q12 22.2 3.7 12Z"/></clipPath></defs>{shape(0)}<g clipPath={`url(#${apertureId})`}><g data-part="pupil">{shape(1)}{accent('attention-light',stroke('M10.3 10.3a2.4 2.4 0 0 1 2-1',.55))}</g></g></>;
   case 'sparkles':return <><g data-part="star">{shape(0)}{accent('star-light',stroke('M12 8v8',.55))}</g><g data-part="satellite">{shape(1)}</g></>;

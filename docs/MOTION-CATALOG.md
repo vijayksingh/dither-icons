@@ -25,13 +25,13 @@ The four accepted foundation performances remain intact. The remaining icons use
 | [terminal](icon-reviews/terminal.md) | a command prompt ready for input | Prompt / Respond / Ready | 1160ms |
 | [cpu](icon-reviews/cpu.md) | receive a signal, process it, emit a response | Receive / Process / Respond | 1280ms |
 | [chart](icon-reviews/chart.md) | compare ordered quantities against a shared baseline | Compare / Emphasize / Resolve | 1260ms |
-| [search](icon-reviews/search.md) | inspect or locate something | Attend / Inspect / Return | 1180ms |
-| [home](icon-reviews/home.md) | return to a familiar entry point | Welcome / Reveal / Rest | 1220ms |
-| [settings](icon-reviews/settings.md) | make a measured adjustment | Take up / Click / Release | 1080ms |
+| [search](icon-reviews/search.md) | inspect or locate something | Attend / Focus / Return | 1320ms |
+| [home](icon-reviews/home.md) | return to a familiar entry point | Open / Welcome / Close | 1400ms |
+| [settings](icon-reviews/settings.md) | make a measured adjustment | Adjust / Register / Release | 1360ms |
 | [check](icon-reviews/check.md) | affirm a valid or completed state | Seat / Affirm / Rest | 900ms |
 | [close](icon-reviews/close.md) | bring a boundary or surface to an end | Gather / Meet / Release | 720ms |
 | [plus](icon-reviews/plus.md) | add or expand from a shared center | Across / Extend / Rest | 840ms |
-| [user](icon-reviews/user.md) | represent a person or profile | Notice / Acknowledge / Ease | 1120ms |
+| [user](icon-reviews/user.md) | represent a person or profile | Notice / Acknowledge / Ease | 1180ms |
 | [lock](icon-reviews/lock.md) | indicate protected access that holds under tension | Test / Hold / Seat | 1060ms |
 | [eye](icon-reviews/eye.md) | attend to or inspect a visible region | Notice / Follow / Center | 1400ms |
 | [sparkles](icon-reviews/sparkles.md) | a small moment of discovery or emphasis | Gather / Glint / Echo | 1180ms |
@@ -133,4 +133,10 @@ The user requested retaining and committing these four, then corrected the selec
 
 ## Platform / 08
 
-The default group contains **Save Preferences, File Explorer, Expand View, Sign Out**, selected from existing functional controls in Settings and the Lab/Problem workbenches. Writing precedes shutter closure; opening space keeps file-tree endpoints connected; expansion preserves the subject; the exit arrow waits for the doorway. Each has an individual Interface Craft critique, named export and [browser references](motion-evidence/platform-08/). The previous sixty-four timelines and the runtime remain unchanged.
+**Save Preferences, File Explorer, Expand View, Sign Out** were selected from existing functional controls in Settings and the Lab/Problem workbenches. Writing precedes shutter closure; opening space keeps file-tree endpoints connected; expansion preserves the subject; the exit arrow waits for the doorway. Each has an individual Interface Craft critique, named export and [browser references](motion-evidence/platform-08/). The previous sixty-four timelines and the runtime remain unchanged.
+
+## Focused refinement 05 — Everyday essentials
+
+**Search, Home, Settings, User** now have the focused four-icon pass. The studio defaults to **Everyday essentials**, using the public semantic category names rather than the earlier numbered review labels. Search resolves focus inside its rigid lens; Home reveals a threshold behind a hinged leaf; Settings seats a tab against a real spring contact; User pairs a shallow nod with a delayed greeting. Each has a separate timing/configuration module and a rewritten Interface Craft critique with [native browser evidence](motion-evidence/refinement-05/).
+
+**Status: 56 refined, 12 awaiting the focused pass.** Pending: **Check, Close, Plus, Lock, Eye, Sparkles, Sun, Moon, Terminal, CPU, Chart, Bolt**. Those twelve retain their earlier authored semantic motions. Do not call them unanimated, and do not treat their broad-rollout reports as evidence of the later focused refinement. All other 64 timelines retain their existing performances.

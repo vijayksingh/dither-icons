@@ -1,45 +1,38 @@
-# settings: Interface Craft review
+# Settings: Interface Craft refinement 05
 
 ## Context
-An SVG action icon in a reusable developer library. Its semantic meaning is **make a measured adjustment**. It appears in routine controls where recognition matters more than spectacle.
+**Make a measured adjustment.** Settings appears in the command palette and `app/src/routes/settings.tsx:103`. The preview must neither certify persistence nor suggest an ongoing loading operation.
 
 ## First Impressions
-A full quarter-turn reset looks like a spinner, not a considered adjustment.
+The previous gear turned and flashed a rotating tick, but nothing visibly received the adjustment. The six-tooth contour was heavy. Its response had timing without a mechanical relationship.
 
 ## Visual Design
-**Identity boundary** — Gear teeth and central opening stay legible. Stable dither follows the contour. Color inherits the selected palette; accents use the same ink and stay below the primary silhouette in visual weight. Typography and card framing belong to the shared inspector, not the glyph.
+Eight softly filleted teeth surround an open center. A small inner tab belongs to the gear; a short spring bow provides a fixed receiving contact. An early implementation used an L-shaped pawl, which read as clock hands in the browser. The final bow removes that competing symbol. Local light stays inside the aperture, and the gear index stays on the rotating surface.
 
 ## Interface Design
-The missed opportunity is to express **make a measured adjustment** through a causal gesture. Gear moves to a small detent, inner index reacts, then releases back with restrained damping. The inspector exposes replay and timing only when requested; the icon itself adds no controls or labels.
+The gear takes up resistance by four degrees, advances to 22.5 degrees and stops. The tab reaches the spring at exactly (12, 9.05). The spring then compresses around that contact, leaving the meeting point fixed. A small contact echo follows the flex. The gear holds while the spring relaxes; all accents clear before the preview restores its initial setting.
 
 ## Consistency & Conventions
-Retain the conventional glyph. Use the shared hover, focus, click, reduced-motion, and completion contracts. MOT-01, MOT-02, MOT-03, MOT-04, MOT-05, MOT-08, MOT-09, MOT-10, MOT-11, MOT-12, MOT-14, MOT-15 apply.
+MOT-01/02/03/04/05/06/07/08/09/10/11/12/13/14/15/16. Geometry and timing live together; transforms/opacity only. Platform UI-2/4 and MOTION-6/7 retain conventional Settings identity, still feedback for frequent use and reduced-motion behavior.
 
 ## User Context
-No infinite rotation or suggestion that a setting has changed. Recognizability must survive a brief glance and the still-motion variant.
+The teeth and aperture remain legible at rest and 24px. This is a finite preview of adjustment, not a save confirmation. No full spin, random oscillation or recurring clock is introduced.
 
 ## Top Opportunities
-1. Gear moves to a small detent, inner index reacts, then releases back with restrained damping.
-2. Gear teeth and central opening stay legible.
-3. No infinite rotation or suggestion that a setting has changed.
+1. Turn toward a real receiver rather than a floating tick.
+2. Let contact precede compression and the localized response.
+3. Refine tooth shoulders and remove the clock-like inner drawing.
 
 ## Encoded storyboard and review
+[settings.ts](../../src/motions/settings.ts) owns the source. Duration **1360ms**; stages **Adjust / Register / Release**.
 
-**Duration:** 1080ms. **Sequence:** Take up / Click / Release.
+- 120ms: resistance; 410ms: exact tab/spring contact.
+- 470ms: spring flex and local light; 540ms: echo.
+- 710ms: hold ends; 860ms: all accents clear.
+- 1170ms: original alignment; 1360ms: exact rest.
 
-Timing source: [controls.ts](../../src/motions/controls.ts). Geometry binds each named track in `CraftedArtwork.tsx` or `ExtendedArtwork.tsx`. Times below are milliseconds from the same clock; transform values, pivots and easing live in that source.
+Native 28% shows the approach, 35% the contact response, 40% the dispersing echo, and 70% the return. The gear remains fixed during spring flex. The geometry test transforms the actual drawn tab vertex to the spring endpoint with error below .00002 viewBox units. All textures preserved their inspected pose. Both playback speeds and keyboard departure completed.
 
-| Named part | Keyframe times (ms) |
-| --- | --- |
-| `gear` | 0, 130, 380, 460, 670, 940, 1080 |
-| `detent` | 0, 310, 450, 660, 940, 1080 |
+![Settings is third, contact response](../motion-evidence/refinement-05/pose-35.png)
 
-**Rendered review:** The gear reaches a small detent and holds briefly. Its index responds after the adjustment; teeth and central opening remain readable without a spinner loop.
-
-Reviewed at preparation (20%), action (40%), recovery (70%) and neutral endpoint (100%), with actual playback and per-part endpoint inspection in the live gallery. These samples establish the reviewed poses; they do not replace the full timeline or the shared lifecycle checks in [VALIDATION.md](../VALIDATION.md).
-
-**Visual reference:** icon 3 from the left in this family.
-
-![settings: action pose at 40%, position 3](../motion-evidence/rollout/places.png)
-
-[Preparation image](../motion-evidence/rollout/places-prepare.png) · [Recovery image](../motion-evidence/rollout/places-recover.png)
+[Rest](../motion-evidence/refinement-05/pose-0.png) · [Outline](../motion-evidence/refinement-05/outline-40.png) · [Recovery](../motion-evidence/refinement-05/pose-70.png) · [Shared validation](../VALIDATION.md#focused-refinement-05--2026-09-10)

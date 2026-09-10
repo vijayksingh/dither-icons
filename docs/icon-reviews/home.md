@@ -1,45 +1,38 @@
-# home: Interface Craft review
+# Home: Interface Craft refinement 05
 
 ## Context
-An SVG action icon in a reusable developer library. Its semantic meaning is **return to a familiar entry point**. It appears in routine controls where recognition matters more than spectacle.
+**Return to a familiar entry point.** `PlatformCommandPalette.tsx:82–88` maps its House icon to “Go home.” The glyph may welcome a visitor; navigation still belongs to the actual control.
 
 ## First Impressions
-Raising a solid doorway block reads as a loading bar.
+The previous doorway narrowed, but the interior light occupied the same strip as its moving leaf. The receiving threshold had no distinct response, so opening and returning looked almost equally empty.
 
 ## Visual Design
-**Identity boundary** — House contour stays fixed. Stable dither follows the contour. Color inherits the selected palette; accents use the same ink and stay below the primary silhouette in visual weight. Typography and card framing belong to the shared inspector, not the glyph.
+A fixed pitched roof and two continuous walls frame a wider doorway. The leaf has a quieter material, a small handle and deliberate jamb clearance. At rest, the house remains recognizable. A short floor plane appears only as light reaches the sill. Outline uses one house contour rather than tracing both sides of a thick filled wall.
 
 ## Interface Design
-The missed opportunity is to express **return to a familiar entry point** through a causal gesture. Keep the roof and walls still; door opens on its hinge, reveals a small interior light, and closes. The inspector exposes replay and timing only when requested; the icon itself adds no controls or labels.
+A short hinge preparation precedes opening. The entire left edge stays at x=9.65; scale and skew act perpendicular to that hinge. The leaf's full knockout uses identical frames and easing so interior light cannot show through it. The sill answers first, then light spreads onto the doorstep. Light clears before the leaf closes; the roof never moves.
 
 ## Consistency & Conventions
-Retain the conventional glyph. Use the shared hover, focus, click, reduced-motion, and completion contracts. MOT-01, MOT-02, MOT-03, MOT-04, MOT-05, MOT-08, MOT-09, MOT-10, MOT-11, MOT-12, MOT-14, MOT-15 apply.
+MOT-01/02/03/04/05/07/08/09/10/11/12/13/14/15/16. Existing React completion and standalone CSS export remain shared. Keep native navigation labels and targets under UI-4, A11Y-2 and MOTION-6/7 when integrated into the platform.
 
 ## User Context
-A welcoming gesture, not a navigation animation that relocates the page. Recognizability must survive a brief glance and the still-motion variant.
+The moving door stays subordinate to the familiar house. It does not depict a session ending, unlock protected content, or relocate the actual page. Frequent navigation can use its still version.
 
 ## Top Opportunities
-1. Keep the roof and walls still; door opens on its hinge, reveals a small interior light, and closes.
-2. House contour stays fixed.
-3. A welcoming gesture, not a navigation animation that relocates the page.
+1. Make opening reveal real space behind an occluding leaf.
+2. Give that opening a visible threshold response and a short, restrained spill.
+3. Preserve both hinge endpoints, including the bottom attachment during skew.
 
 ## Encoded storyboard and review
+[home.ts](../../src/motions/home.ts) owns the source. Duration **1400ms**; stages **Open / Welcome / Close**.
 
-**Duration:** 1220ms. **Sequence:** Welcome / Reveal / Rest.
+- 120ms: hinge takes up pressure; 420ms: leaf open.
+- 480ms: sill light; 560ms: doorstep light peaks.
+- 730ms: hold ends; 890ms: light gone.
+- 1200ms: leaf closed; 1400ms: exact rest.
 
-Timing source: [controls.ts](../../src/motions/controls.ts). Geometry binds each named track in `CraftedArtwork.tsx` or `ExtendedArtwork.tsx`. Times below are milliseconds from the same clock; transform values, pivots and easing live in that source.
+The 35% browser frame shows the revealed sill; 40% shows light spreading onto the floor. At 70%, light is gone and the leaf is returning. Light Cobalt solid separates the leaf, opening and floor. Outline retains the same occlusion and hinge. Tests verify both hinge endpoints and exact leaf/knockout clocks. Actual/half-speed and keyboard-departure playback completed.
 
-| Named part | Keyframe times (ms) |
-| --- | --- |
-| `door` | 0, 150, 440, 710, 1040, 1220 |
-| `interior-light` | 0, 260, 530, 780, 1080, 1220 |
+![Home is second, threshold response](../motion-evidence/refinement-05/pose-40.png)
 
-**Rendered review:** The roof and walls stay fixed while the door opens from its left edge. The interior light is quieter than the door and clears as it closes.
-
-Reviewed at preparation (20%), action (40%), recovery (70%) and neutral endpoint (100%), with actual playback and per-part endpoint inspection in the live gallery. These samples establish the reviewed poses; they do not replace the full timeline or the shared lifecycle checks in [VALIDATION.md](../VALIDATION.md).
-
-**Visual reference:** icon 2 from the left in this family.
-
-![home: action pose at 40%, position 2](../motion-evidence/rollout/places.png)
-
-[Preparation image](../motion-evidence/rollout/places-prepare.png) · [Recovery image](../motion-evidence/rollout/places-recover.png)
+[Rest](../motion-evidence/refinement-05/pose-0.png) · [Light solid](../motion-evidence/refinement-05/light-cobalt-solid.png) · [Recovery](../motion-evidence/refinement-05/pose-70.png) · [Shared validation](../VALIDATION.md#focused-refinement-05--2026-09-10)

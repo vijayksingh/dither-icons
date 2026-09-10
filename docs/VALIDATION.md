@@ -323,3 +323,33 @@ Added **Save Preferences, File Explorer, Expand View, Sign Out**, each selected 
 - TypeScript and **61 tests passed**. Five new tests cover semantic exports and mask isolation, real shutter-channel contact and write/closure ordering, continuous explorer branch/node/divider relationships, rigid paired expansion around fixed content, and full exit hinge attachment with matched occlusion and closure ordering. Existing checks exercise all 68 timelines / 204 material variants, exact endpoints and shared CSS export timing.
 - ESM, declarations, gallery and downloadable package built. Built-module smoke rendered the four new exports in all three materials against 68 definitions and timelines. Library: **289.23KB**; gallery: **586.69kB / 178.82kB gzip**. The existing Vite warning for the gallery's single chunk above 500kB remains. Per-icon splitting is outside this artwork batch.
 - `git diff --check` passed. No platform call-site integration, publication, deployment or push. React's peer contract and the standalone CSS hover-departure limitation are unchanged; no fresh React 18 consumer install was repeated. Unrelated CraftingAttention work was preserved.
+
+## Focused refinement 05 — 2026-09-10
+
+Scope: **Search, Home, Settings, User**. Individual Interface Craft critiques and storyboards were applied under MOT-01–16. The Motion studio groups these four under **Everyday essentials** and opens that group by default. No platform call sites or shared animation lifecycle changed. The other 64 performances retain their tracks.
+
+### Drawing and causal relationships
+
+- Search: one continuous filled outer contour, an intact lens/handle connection, and aperture-clipped optical response after the rigid tool arrives. Reduced the first draft's four brackets and two reflections to two brackets and one faint reflection.
+- Home: both hinge endpoints stay fixed; the door and full knockout share exact transform/easing clocks. The actual sill receives light before the doorstep fan appears.
+- Settings: eight filleted teeth and a rotating tab that meets a receiving spring at (12, 9.05). Spring compression leaves the contact fixed. Replaced an early L-shaped receiver that looked like clock hands with a short bow.
+- User: shallow oval foreshortening makes a nod readable; the shoulder base stays grounded. The delayed greeting follows the head's reversal. The geometric test conservatively includes ellipse rotation, scale, translation and outline thickness when checking neck clearance.
+
+### Browser evidence
+
+References are in [refinement-05](motion-evidence/refinement-05/).
+
+- Nine native poses: 0%, 10%, 28%, 35%, 40%, 48%, 70%, 85%, 100%. `poses.json` records named-part transforms, origins and opacity. The complete 0% and 100% records are identical.
+- `actual-and-half-speed.json` records all four playing at both speeds and finishing with zero playing instances. `keyboard-playback.json` records every gesture continuing after keyboard focus departed and then finishing. Repeated input during an active gesture did not restart it; Home was already running from the preceding focus traversal.
+- Dither, solid and outline inspected at 40%; `material-continuity.json` proves all part transforms/origins/opacities are identical after each material replacement. Light Cobalt solid and dark Iris references are included.
+- [Size and export board](motion-evidence/refinement-05/size-and-export.svg): real standalone SVGs inspected at 112px/48px dither and 24px solid/outline. `svg-hover.json` records each export's real CSS animation names while hovering its painted contour. Native SVG coordinates were used because the automation DOM wrapper does not expose `getScreenCTM`. No React runtime or JavaScript is embedded in the board. Regenerate it with the adjacent `render-reference.tsx` script.
+- Reduced motion canceled an inspected action frame: every part had transform/animation `none`, every transient accent was hidden, and replay started zero icons. Motion-off disabled all four study targets and replay. `stillness.json` records both checks. Temporary emulation was removed.
+- Responsive layout measured **390px client and scroll widths**, with two **172px** study columns fully inside the viewport. Existing browser zoom required a 312px viewport override to obtain 390 CSS pixels. `responsive.json` records the measured bounds; the override was reset. Narrow screenshot coordinates were unreliable, so no unusable screenshot is retained and this is layout/keyboard evidence, not physical-device touch verification.
+- React studio console returned no application errors. Default, active, focus-visible, material, theme, disabled and reduced-motion states were checked. Loading, data-error and empty states are not part of these static icon studies.
+
+### Checks and delivery
+
+- **78 tests passed**, including five new semantic geometry/causality checks and all 68 timelines across 204 material variants. TypeScript passed.
+- Package ESM/declarations and the production gallery build passed; 77 share pages and their OG assets were regenerated. Library exports and package API names are unchanged.
+- Updated each icon's review, motion catalog, motion rules, machine-readable manifests, agent reference text, static contact sheet and affected OG images. The catalog now records **56 refined / 12 awaiting focused refinement**.
+- This is a local refinement batch for review. No npm version, Git tag or production deployment was changed. Standalone CSS still stops on hover departure; React retains the stronger completion contract.

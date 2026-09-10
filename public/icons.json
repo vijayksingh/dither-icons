@@ -86,11 +86,11 @@
       "keywords": [],
       "page": "/icons/search",
       "motion": {
-        "caption": "The whole lens leans in for a closer look.",
-        "durationMs": 1180,
+        "caption": "Lean closer. Let the focus resolve.",
+        "durationMs": 1320,
         "stages": [
           "Attend",
-          "Inspect",
+          "Focus",
           "Return"
         ]
       }
@@ -104,12 +104,12 @@
       "keywords": [],
       "page": "/icons/home",
       "motion": {
-        "caption": "A familiar doorway opens to welcome you.",
-        "durationMs": 1220,
+        "caption": "A familiar door. A little light to greet you.",
+        "durationMs": 1400,
         "stages": [
+          "Open",
           "Welcome",
-          "Reveal",
-          "Rest"
+          "Close"
         ]
       }
     },
@@ -122,11 +122,11 @@
       "keywords": [],
       "page": "/icons/settings",
       "motion": {
-        "caption": "A measured adjustment finds its detent.",
-        "durationMs": 1080,
+        "caption": "A measured turn. A precise little click.",
+        "durationMs": 1360,
         "stages": [
-          "Take up",
-          "Click",
+          "Adjust",
+          "Register",
           "Release"
         ]
       }
@@ -410,8 +410,8 @@
       "keywords": [],
       "page": "/icons/user",
       "motion": {
-        "caption": "A small nod, softly answered by the shoulders.",
-        "durationMs": 1120,
+        "caption": "A small nod. A warm acknowledgment.",
+        "durationMs": 1180,
         "stages": [
           "Notice",
           "Acknowledge",

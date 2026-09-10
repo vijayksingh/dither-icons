@@ -1,0 +1,31 @@
+{
+  "clientWidth": 390,
+  "scrollWidth": 390,
+  "studies": [
+    {
+      "right": 190,
+      "width": 172.001953125,
+      "x": 17.998046875
+    },
+    {
+      "right": 372.001953125,
+      "width": 172.001953125,
+      "x": 200
+    },
+    {
+      "right": 190,
+      "width": 172.001953125,
+      "x": 17.998046875
+    },
+    {
+      "right": 372.001953125,
+      "width": 172.001953125,
+      "x": 200
+    }
+  ],
+  "viewportOverride": {
+    "width": 312,
+    "height": 675
+  },
+  "note": "Existing browser zoom maps this override to 390 CSS pixels; layout and keyboard checks only."
+}

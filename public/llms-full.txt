@@ -306,9 +306,9 @@ CSS hover animation ends when hover ends. A standalone SVG does not expose React
 | bell | BellIcon | A little weight. A lingering ring. |
 | heart | HeartIcon | Gather, open, let a little joy escape. |
 | sparkles | SparklesIcon | One glint opens. A smaller star answers. |
-| search | SearchIcon | The whole lens leans in for a closer look. |
-| home | HomeIcon | A familiar doorway opens to welcome you. |
-| settings | SettingsIcon | A measured adjustment finds its detent. |
+| search | SearchIcon | Lean closer. Let the focus resolve. |
+| home | HomeIcon | A familiar door. A little light to greet you. |
+| settings | SettingsIcon | A measured turn. A precise little click. |
 | check | CheckIcon | The vertex seats. The long arm affirms. |
 | close | CloseIcon | Two diagonals close around one meeting point. |
 | plus | PlusIcon | Make room across, then make room above. |
@@ -324,7 +324,7 @@ CSS hover animation ends when hover ends. A standalone SVG does not expose React
 | mail | MailIcon | A letter revealed. Carefully tucked away. |
 | message | MessageIcon | A thought gathers. A little response. |
 | send | SendIcon | A folded wing. A small rush of air. |
-| user | UserIcon | A small nod, softly answered by the shoulders. |
+| user | UserIcon | A small nod. A warm acknowledgment. |
 | lock | LockIcon | The shackle takes tension. The lock holds. |
 | eye | EyeIcon | A glance finds its subject, then returns. |
 | play | PlayIcon | The first impulse. Then momentum. |
