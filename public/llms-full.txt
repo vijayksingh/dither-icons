@@ -309,9 +309,9 @@ CSS hover animation ends when hover ends. A standalone SVG does not expose React
 | search | SearchIcon | Lean closer. Let the focus resolve. |
 | home | HomeIcon | A familiar door. A little light to greet you. |
 | settings | SettingsIcon | A measured turn. A precise little click. |
-| check | CheckIcon | The vertex seats. The long arm affirms. |
-| close | CloseIcon | Two diagonals close around one meeting point. |
-| plus | PlusIcon | Make room across, then make room above. |
+| check | CheckIcon | Seat the stroke. Let the tip affirm. |
+| close | CloseIcon | Draw inward. Meet at the crossing. |
+| plus | PlusIcon | A little more room. In both directions. |
 | arrow-right | ArrowRightIcon | The head leads. The tail holds its place. |
 | arrow-up | ArrowUpIcon | Rise first. Let the weight follow. |
 | external-link | ExternalLinkIcon | Reach beyond the frame. Keep the source. |
@@ -325,7 +325,7 @@ CSS hover animation ends when hover ends. A standalone SVG does not expose React
 | message | MessageIcon | A thought gathers. A little response. |
 | send | SendIcon | A folded wing. A small rush of air. |
 | user | UserIcon | A small nod. A warm acknowledgment. |
-| lock | LockIcon | The shackle takes tension. The lock holds. |
+| lock | LockIcon | Take a little tension. Hold securely. |
 | eye | EyeIcon | A glance finds its subject, then returns. |
 | play | PlayIcon | The first impulse. Then momentum. |
 | pause | PauseIcon | Two soft stops. Then stillness. |

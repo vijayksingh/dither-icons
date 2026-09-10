@@ -1,0 +1,877 @@
+{
+  "check": [
+    {
+      "elapsed": 0,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "check-stroke",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "check-trace",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "check-tip",
+          "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 106.5,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "check-stroke",
+          "transform": "matrix(0.997587, -0.0694273, 0.0694273, 0.997587, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "check-trace",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "check-tip",
+          "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 206.39999997615817,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "check-stroke",
+          "transform": "matrix(0.99998, -0.00639062, 0.00639062, 0.99998, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "check-trace",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "check-tip",
+          "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 305.39999997615814,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "check-stroke",
+          "transform": "matrix(1, -3.30132e-05, 3.30132e-05, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "check-trace",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "check-tip",
+          "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 406.5,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "check-stroke",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0.85",
+          "part": "check-trace",
+          "transform": "matrix(1, 0, 0, 1, 1.85046, -1.85046)"
+        },
+        {
+          "opacity": "0",
+          "part": "check-tip",
+          "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 505.39999997615814,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "check-stroke",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0.85",
+          "part": "check-trace",
+          "transform": "matrix(1, 0, 0, 1, 5.52542, -5.52542)"
+        },
+        {
+          "opacity": "0",
+          "part": "check-tip",
+          "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 606.2999999821186,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "check-stroke",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0.70975",
+          "part": "check-trace",
+          "transform": "matrix(1, 0, 0, 1, 8.9, -8.9)"
+        },
+        {
+          "opacity": "0.132",
+          "part": "check-tip",
+          "transform": "matrix(0.7495, 0, 0, 0.7495, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 705.3999999761581,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "check-stroke",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "check-trace",
+          "transform": "matrix(1, 0, 0, 1, 7.83634, -7.83634)"
+        },
+        {
+          "opacity": "0.569412",
+          "part": "check-tip",
+          "transform": "matrix(1.10088, 0, 0, 1.10088, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 806.5,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "check-stroke",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "check-trace",
+          "transform": "matrix(1, 0, 0, 1, 5.64607, -5.64607)"
+        },
+        {
+          "opacity": "0.0945882",
+          "part": "check-tip",
+          "transform": "matrix(1.30862, 0, 0, 1.30862, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 906.7999999821186,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "check-stroke",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "check-trace",
+          "transform": "matrix(1, 0, 0, 1, 3.47317, -3.47317)"
+        },
+        {
+          "opacity": "0",
+          "part": "check-tip",
+          "transform": "matrix(1.13333, 0, 0, 1.13333, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 1006.7999999821186,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "check-stroke",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "check-trace",
+          "transform": "matrix(1, 0, 0, 1, 1.30244, -1.30244)"
+        },
+        {
+          "opacity": "0",
+          "part": "check-tip",
+          "transform": "matrix(0.8625, 0, 0, 0.8625, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 1073.5,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "check-stroke",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "part": "check-trace",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "part": "check-tip",
+          "transform": "none"
+        }
+      ],
+      "playing": false
+    }
+  ],
+  "close": [
+    {
+      "elapsed": 0,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "close-occlusion",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "part": "close-down",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "part": "close-up",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "cross-response",
+          "transform": "matrix(0.7, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 107.19999998807909,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "close-occlusion",
+          "transform": "matrix(1.00664, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "part": "close-down",
+          "transform": "matrix(1.03398, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "part": "close-up",
+          "transform": "matrix(1.00664, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "cross-response",
+          "transform": "matrix(0.7, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 208.0999999940395,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "close-occlusion",
+          "transform": "matrix(0.961798, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "part": "close-down",
+          "transform": "matrix(0.92542, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "part": "close-up",
+          "transform": "matrix(0.961798, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "cross-response",
+          "transform": "matrix(0.7, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 307.19999998807907,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "close-occlusion",
+          "transform": "matrix(0.920002, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "part": "close-down",
+          "transform": "matrix(0.92, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "part": "close-up",
+          "transform": "matrix(0.920002, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "cross-response",
+          "transform": "matrix(0.7, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 407.699999988079,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "close-occlusion",
+          "transform": "matrix(0.92, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "part": "close-down",
+          "transform": "matrix(0.92, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "part": "close-up",
+          "transform": "matrix(0.92, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0.569202",
+          "part": "cross-response",
+          "transform": "matrix(1.04671, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 508.300000011921,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "close-occlusion",
+          "transform": "matrix(0.951039, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "part": "close-down",
+          "transform": "matrix(0.951039, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "part": "close-up",
+          "transform": "matrix(0.951039, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0.18931",
+          "part": "cross-response",
+          "transform": "matrix(1.18239, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 607.5999999940395,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "close-occlusion",
+          "transform": "matrix(0.994613, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "part": "close-down",
+          "transform": "matrix(0.994613, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "part": "close-up",
+          "transform": "matrix(0.994613, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "cross-response",
+          "transform": "matrix(1.15694, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 707.0999999940395,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "close-occlusion",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "part": "close-down",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "part": "close-up",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "cross-response",
+          "transform": "matrix(0.967474, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 807.3000000119209,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "close-occlusion",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "part": "close-down",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "part": "close-up",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "cross-response",
+          "transform": "matrix(0.77744, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 875.1999999880791,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "close-occlusion",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "part": "close-down",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "part": "close-up",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "part": "cross-response",
+          "transform": "none"
+        }
+      ],
+      "playing": false
+    }
+  ],
+  "plus": [
+    {
+      "elapsed": 0,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "plus-occlusion",
+          "transform": "matrix(1.0011, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "part": "plus-across",
+          "transform": "matrix(1.0011, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "part": "plus-above",
+          "transform": "matrix(1.0011, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "across-tips",
+          "transform": "matrix(1, 0, 0, 0.527451, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "above-tips",
+          "transform": "matrix(1, 0, 0, 0.591176, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 104.7000000178814,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "plus-occlusion",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "part": "plus-across",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "part": "plus-above",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "across-tips",
+          "transform": "matrix(1, 0, 0, 0.45896, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "above-tips",
+          "transform": "matrix(1, 0, 0, 0.48844, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 204.80000001192093,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "plus-occlusion",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "part": "plus-across",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "1",
+          "part": "plus-above",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "across-tips",
+          "transform": "matrix(1, 0, 0, 0.400019, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "above-tips",
+          "transform": "matrix(1, 0, 0, 0.400028, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 238.30000001192093,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "plus-occlusion",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "part": "plus-across",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "part": "plus-above",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "part": "across-tips",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "part": "above-tips",
+          "transform": "none"
+        }
+      ],
+      "playing": false
+    }
+  ],
+  "lock": [
+    {
+      "elapsed": 0,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "lock-shackle",
+          "transform": "matrix(1, 0, 0, 1.0426, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "lock-seats",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "part": "lock-response",
+          "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 114.90000000596046,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "lock-shackle",
+          "transform": "matrix(1, 0, 0, 1.055, 0, 0)"
+        },
+        {
+          "opacity": "0.0805114",
+          "part": "lock-seats",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "part": "lock-response",
+          "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 215.30000001192093,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "lock-shackle",
+          "transform": "matrix(1, 0, 0, 1.055, 0, 0)"
+        },
+        {
+          "opacity": "0.808595",
+          "part": "lock-seats",
+          "transform": "none"
+        },
+        {
+          "opacity": "0.36562",
+          "part": "lock-response",
+          "transform": "matrix(0.976116, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 315.69999998807907,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "lock-shackle",
+          "transform": "matrix(1, 0, 0, 1.055, 0, 0)"
+        },
+        {
+          "opacity": "0.558345",
+          "part": "lock-seats",
+          "transform": "none"
+        },
+        {
+          "opacity": "0.533345",
+          "part": "lock-response",
+          "transform": "matrix(1.01667, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 415.40000000596046,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "lock-shackle",
+          "transform": "matrix(1, 0, 0, 1.0262, 0, 0)"
+        },
+        {
+          "opacity": "0.300012",
+          "part": "lock-seats",
+          "transform": "none"
+        },
+        {
+          "opacity": "0.283345",
+          "part": "lock-response",
+          "transform": "matrix(1.04167, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 515.6999999880791,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "lock-shackle",
+          "transform": "matrix(1, 0, 0, 0.992215, 0, 0)"
+        },
+        {
+          "opacity": "0.0353065",
+          "part": "lock-seats",
+          "transform": "none"
+        },
+        {
+          "opacity": "0.033345",
+          "part": "lock-response",
+          "transform": "matrix(1.06667, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 615.6999999880791,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "lock-shackle",
+          "transform": "matrix(1, 0, 0, 0.996808, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "lock-seats",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "part": "lock-response",
+          "transform": "matrix(1.04739, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 715.5999999940395,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "lock-shackle",
+          "transform": "matrix(1, 0, 0, 0.999891, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "lock-seats",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "part": "lock-response",
+          "transform": "matrix(1.02131, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 815.5999999940395,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "lock-shackle",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "lock-seats",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "part": "lock-response",
+          "transform": "matrix(0.995219, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 914.8000000119208,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "lock-shackle",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "opacity": "0",
+          "part": "lock-seats",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "part": "lock-response",
+          "transform": "matrix(0.969262, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "playing": true
+    },
+    {
+      "elapsed": 1015.6999999880792,
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "lock-shackle",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "part": "lock-seats",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "part": "lock-response",
+          "transform": "none"
+        }
+      ],
+      "playing": false
+    }
+  ]
+}

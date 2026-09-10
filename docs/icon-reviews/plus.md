@@ -1,46 +1,39 @@
-# plus: Interface Craft review
+# Plus: Interface Craft refinement 06
 
 ## Context
-An SVG action icon in a reusable developer library. Its semantic meaning is **add or expand from a shared center**. It appears in routine controls where recognition matters more than spectacle.
+**Add or make room.** The platform uses Plus for Start a discussion in `routes/discussions.$unitId.tsx:46` and Add in `components/lab/CustomUnitTestsPanel.tsx:125`. The library preview does not create an item.
 
 ## First Impressions
-A generic pop does not respect the orthogonal arms.
+The earlier square-ended arms overlapped at their crossing. A single tip-light track followed both axes, blurring the order of their arrivals. Overshoot and recoil felt generic.
 
 ## Visual Design
-**Identity boundary** — The arms remain joined at a stable center. Stable dither follows the contour. Color inherits the selected palette; accents use the same ink and stay below the primary silhouette in visual weight. Typography and card framing belong to the shared inspector, not the glyph.
+Rounded 2.2-unit bands share a fixed orthogonal center. A matched vertical knockout removes duplicate grain and outline strokes. Four small endpoint marks belong to two independent pairs. They appear outside the maximum arm extents; no central ornament or rotation is introduced. At 24px, the same 1.8-unit outline centerlines remain legible.
 
 ## Interface Design
-The missed opportunity is to express **add or expand from a shared center** through a causal gesture. Horizontal arm makes room first, vertical arm follows, tips catch a brief emphasis, then return. The inspector exposes replay and timing only when requested; the icon itself adds no controls or labels.
+The horizontal arm opens first, reaching 110% at 300ms. Its endpoint marks peak at 365ms. The vertical arm arrives later at 430ms, with its own response at 495ms. Both hold at the added extent through 590ms and ease home without recoil. The stable intersection explains expansion; the stagger distinguishes two additions to the space.
 
 ## Consistency & Conventions
-Retain the conventional glyph. Use the shared hover, focus, click, reduced-motion, and completion contracts. MOT-01, MOT-02, MOT-03, MOT-04, MOT-05, MOT-08, MOT-09, MOT-10, MOT-11, MOT-12, MOT-14, MOT-15 apply.
+MOT-01/03/05/06/07/08/09/10/11/12/13/14/15/16. Each endpoint response waits for its carrier. The upper arm and knockout share all frames and easing, preserving the crossing between authored poses. Host controls own expansion and creation state.
 
 ## User Context
-Do not become a close mark or suggest a value increment. Recognizability must survive a brief glance and the still-motion variant.
+The gesture should suggest available space while keeping Plus unmistakable. It never turns into Close. At small size, exterior marks are subordinate to the four arms; the static icon is complete without them.
 
 ## Top Opportunities
-1. Horizontal arm makes room first, vertical arm follows, tips catch a brief emphasis, then return.
-2. The arms remain joined at a stable center.
-3. Do not become a close mark or suggest a value increment.
+1. Give each axis its own arrival and response.
+2. Keep the crossing clean in all materials.
+3. Return smoothly without springing the entire icon.
 
-## Encoded storyboard and review
+## Encoded storyboard and rendered review
+[plus.ts](../../src/motions/plus.ts), **1100ms**, **Across / Open / Ease**.
 
-**Duration:** 840ms. **Sequence:** Across / Extend / Rest.
+```text
+0       110 190     300 365     430 495      590      760     930 1100
+rest -- gather ---- across--echo--above--echo--hold -- clear -- home--rest
+center: fixed ------------------------------------------------ fixed
+```
 
-Timing source: [controls.ts](../../src/motions/controls.ts). Geometry binds each named track in `CraftedArtwork.tsx` or `ExtendedArtwork.tsx`. Times below are milliseconds from the same clock; transform values, pivots and easing live in that source.
+Reviewed 10% preparation, 28% horizontal arrival, 40/45% vertical arrival and response, 62/75% recovery and exact rest. The light-surface capture shows the separate endpoint responses. Tests verify each response follows its own arrival and the vertical knockout matches every frame. Material switching, both speeds, keyboard departure and reduced motion passed.
 
-| Named part | Keyframe times (ms) |
-| --- | --- |
-| `horizontal` | 0, 100, 290, 490, 690, 840 |
-| `vertical` | 0, 90, 180, 390, 550, 750, 840 |
-| `tip-light` | 0, 200, 420, 660, 840 |
+![Plus is third, paired endpoint responses](../motion-evidence/refinement-06/light-cobalt-45.png)
 
-**Rendered review:** The horizontal arm makes room before the vertical one. Both remain orthogonal and joined at the same center; the tip accent clears before rest.
-
-Reviewed at preparation (20%), action (40%), recovery (70%) and neutral endpoint (100%), with actual playback and per-part endpoint inspection in the live gallery. These samples establish the reviewed poses; they do not replace the full timeline or the shared lifecycle checks in [VALIDATION.md](../VALIDATION.md).
-
-**Visual reference:** icon 3 from the left in this family.
-
-![plus: action pose at 40%, position 3](../motion-evidence/rollout/actions.png)
-
-[Preparation image](../motion-evidence/rollout/actions-prepare.png) · [Recovery image](../motion-evidence/rollout/actions-recover.png)
+[Rest](../motion-evidence/refinement-06/pose-0.png) · [Small sizes](../motion-evidence/refinement-06/size-and-export.png) · [Batch validation](../VALIDATION.md#focused-refinement-06--2026-09-10)

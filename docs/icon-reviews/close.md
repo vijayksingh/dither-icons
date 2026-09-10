@@ -1,45 +1,39 @@
-# close: Interface Craft review
+# Close: Interface Craft refinement 06
 
 ## Context
-An SVG action icon in a reusable developer library. Its semantic meaning is **bring a boundary or surface to an end**. It appears in routine controls where recognition matters more than spectacle.
+**Dismiss the current surface.** The platform's Focus Coach uses X in `features/focus-coach/FocusCoachRail.tsx:694`. A frequent utility action calls for a brief, conclusive gesture.
 
 ## First Impressions
-A whole-icon pulse does not express the cross brace.
+The previous diagonals rotated and scaled independently, changing their crossing angle. Sharp polygon ends and overlapping dither made the center heavier. There was no localized finish after the second arm arrived.
 
 ## Visual Design
-**Identity boundary** — The X never rotates into a plus. Stable dither follows the contour. Color inherits the selected palette; accents use the same ink and stay below the primary silhouette in visual weight. Typography and card framing belong to the shared inspector, not the glyph.
+Two rounded 2.2-unit bands cross at fixed 45-degree angles. A browser pass increased their length to match the optical weight of the neighboring glyphs. Outline uses 1.8-unit centerlines. The upper brace masks the lower one with identical geometry and timing, keeping one layer of ink at the crossing. The only accent is a pair of fine lateral marks in the open spaces beside the intersection.
 
 ## Interface Design
-The missed opportunity is to express **bring a boundary or surface to an end** through a causal gesture. Two diagonals tighten toward their shared intersection with a small stagger, then release. The inspector exposes replay and timing only when requested; the icon itself adds no controls or labels.
+Each brace gathers then shortens along its own axis about (12, 12). The first registers at 240ms, the second at 300ms. The lateral response waits for both and peaks at 365ms. The compressed cross holds briefly, then releases into its original proportions. The angles never change, so it cannot turn into Plus.
 
 ## Consistency & Conventions
-Retain the conventional glyph. Use the shared hover, focus, click, reduced-motion, and completion contracts. MOT-01, MOT-02, MOT-03, MOT-04, MOT-05, MOT-08, MOT-09, MOT-10, MOT-11, MOT-12, MOT-14, MOT-15 apply.
+MOT-01/03/05/06/07/08/09/10/11/12/13/14/15/16. The shared center is an anchor, not an added mechanical part. Paired tracks keep the moving knockout attached in React and CSS exports. Dismissal itself belongs to the host.
 
 ## User Context
-Restrained and quick; closing is a routine action. Recognizability must survive a brief glance and the still-motion variant.
+Close should feel decisive without demanding attention. Its 840ms gesture is the shortest of this set; the contraction and response happen in the first half. All useful shape remains visible when motion is disabled.
 
 ## Top Opportunities
-1. Two diagonals tighten toward their shared intersection with a small stagger, then release.
-2. The X never rotates into a plus.
-3. Restrained and quick; closing is a routine action.
+1. Preserve fixed diagonal angles and shorten along the braces.
+2. Remove doubled ink at their crossing.
+3. Place the response after the second registration, then clear it quickly.
 
-## Encoded storyboard and review
+## Encoded storyboard and rendered review
+[close.ts](../../src/motions/close.ts), **840ms**, **Gather / Meet / Release**.
 
-**Duration:** 720ms. **Sequence:** Gather / Meet / Release.
+```text
+0       90 130       240 300   365 420       550     680     840
+rest -- gather ----- first--meet--answer--release -- clear--home--rest
+center: fixed ------------------------------------------------ fixed
+```
 
-Timing source: [controls.ts](../../src/motions/controls.ts). Geometry binds each named track in `CraftedArtwork.tsx` or `ExtendedArtwork.tsx`. Times below are milliseconds from the same clock; transform values, pivots and easing live in that source.
+Reviewed 10% preparation, 28% first registration, 40/45% crossing response, 75% recovery and 100% rest. Browser material changes retained exact per-part transforms. Targeted tests verify that visible and knockout clocks match and both braces retain their center and angle. Actual/half-speed, keyboard departure and reduced motion passed.
 
-| Named part | Keyframe times (ms) |
-| --- | --- |
-| `diagonal-down` | 0, 110, 290, 410, 590, 720 |
-| `diagonal-up` | 0, 150, 330, 450, 630, 720 |
+![Close is second, response in outline](../motion-evidence/refinement-06/outline-45.png)
 
-**Rendered review:** The diagonals tighten around one shared center with a slight stagger. It remains an X in the preparation, action, and recovery poses.
-
-Reviewed at preparation (20%), action (40%), recovery (70%) and neutral endpoint (100%), with actual playback and per-part endpoint inspection in the live gallery. These samples establish the reviewed poses; they do not replace the full timeline or the shared lifecycle checks in [VALIDATION.md](../VALIDATION.md).
-
-**Visual reference:** icon 2 from the left in this family.
-
-![close: action pose at 40%, position 2](../motion-evidence/rollout/actions.png)
-
-[Preparation image](../motion-evidence/rollout/actions-prepare.png) · [Recovery image](../motion-evidence/rollout/actions-recover.png)
+[Rest](../motion-evidence/refinement-06/pose-0.png) · [Small sizes](../motion-evidence/refinement-06/size-and-export.png) · [Batch validation](../VALIDATION.md#focused-refinement-06--2026-09-10)

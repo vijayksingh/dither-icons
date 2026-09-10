@@ -1,0 +1,101 @@
+[
+  {
+    "name": "check",
+    "parts": [
+      {
+        "opacity": "1",
+        "part": "check-stroke",
+        "transform": "none"
+      },
+      {
+        "opacity": "0",
+        "part": "check-trace",
+        "transform": "none"
+      },
+      {
+        "opacity": "0",
+        "part": "check-tip",
+        "transform": "none"
+      }
+    ],
+    "playing": false
+  },
+  {
+    "name": "close",
+    "parts": [
+      {
+        "opacity": "1",
+        "part": "close-occlusion",
+        "transform": "none"
+      },
+      {
+        "opacity": "1",
+        "part": "close-down",
+        "transform": "none"
+      },
+      {
+        "opacity": "1",
+        "part": "close-up",
+        "transform": "none"
+      },
+      {
+        "opacity": "0",
+        "part": "cross-response",
+        "transform": "none"
+      }
+    ],
+    "playing": false
+  },
+  {
+    "name": "plus",
+    "parts": [
+      {
+        "opacity": "1",
+        "part": "plus-occlusion",
+        "transform": "none"
+      },
+      {
+        "opacity": "1",
+        "part": "plus-across",
+        "transform": "none"
+      },
+      {
+        "opacity": "1",
+        "part": "plus-above",
+        "transform": "none"
+      },
+      {
+        "opacity": "0",
+        "part": "across-tips",
+        "transform": "none"
+      },
+      {
+        "opacity": "0",
+        "part": "above-tips",
+        "transform": "none"
+      }
+    ],
+    "playing": false
+  },
+  {
+    "name": "lock",
+    "parts": [
+      {
+        "opacity": "1",
+        "part": "lock-shackle",
+        "transform": "none"
+      },
+      {
+        "opacity": "0",
+        "part": "lock-seats",
+        "transform": "none"
+      },
+      {
+        "opacity": "0",
+        "part": "lock-response",
+        "transform": "none"
+      }
+    ],
+    "playing": false
+  }
+]

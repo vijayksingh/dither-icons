@@ -1,0 +1,3854 @@
+{
+  "1": [
+    {
+      "elapsed": 0,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(0.999951, -0.00994528, 0.00994528, 0.999951, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "matrix(0.988295, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "matrix(0.932313, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "matrix(0.988295, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "matrix(0.7, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(0.965132, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1.04398, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(0.965132, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.4, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.4, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 1.00403, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-response",
+              "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 77,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(1, -0.000608314, 0.000608314, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "matrix(0.922714, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "matrix(0.92, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "matrix(0.922714, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "matrix(0.7, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1.02182, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1.0975, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1.02182, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.4, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.4, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 1.04692, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-response",
+              "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 177,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.85",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 0.62007, -0.62007)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "matrix(0.92, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "matrix(0.92, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "matrix(0.92, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.693488",
+              "part": "cross-response",
+              "transform": "matrix(1.00233, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1.09381, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1.1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1.09381, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.744263",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.997705, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.4, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 1.055, 0, 0)"
+            },
+            {
+              "opacity": "0.0864129",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-response",
+              "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 277,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.85",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 4.3284, -4.3284)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "matrix(0.928194, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "matrix(0.928194, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "matrix(0.928194, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.31511",
+              "part": "cross-response",
+              "transform": "matrix(1.13746, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1.1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1.1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1.1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.41093",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.864372, 0, 0)"
+            },
+            {
+              "opacity": "0.423704",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.738963, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 1.055, 0, 0)"
+            },
+            {
+              "opacity": "0.808197",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0.36721",
+              "part": "lock-response",
+              "transform": "matrix(0.976229, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 377.09999999403954,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.85",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 8.03674, -8.03674)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "matrix(0.987635, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "matrix(0.987635, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "matrix(0.987635, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "matrix(1.21829, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1.1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1.1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1.1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.0775967",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.731039, 0, 0)"
+            },
+            {
+              "opacity": "0.547016",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.918806, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 1.055, 0, 0)"
+            },
+            {
+              "opacity": "0.558197",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0.533198",
+              "part": "lock-response",
+              "transform": "matrix(1.01668, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 477.09999999403954,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 8.5392, -8.5392)"
+            },
+            {
+              "opacity": "0.721784",
+              "part": "check-tip",
+              "transform": "matrix(1.03422, 0, 0, 1.03422, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "matrix(0.999885, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "matrix(0.999885, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "matrix(0.999885, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "matrix(1.02882, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1.08184, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1.08184, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1.08184, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.654929, 0, 0)"
+            },
+            {
+              "opacity": "0.26428",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.805712, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 1.02624, 0, 0)"
+            },
+            {
+              "opacity": "0.300121",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0.283448",
+              "part": "lock-response",
+              "transform": "matrix(1.04166, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 577,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 6.36847, -6.36847)"
+            },
+            {
+              "opacity": "0.251195",
+              "part": "check-tip",
+              "transform": "matrix(1.2401, 0, 0, 1.2401, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "matrix(0.839167, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1.0201, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1.0201, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1.0201, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.596105, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.694158, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 0.992216, 0, 0)"
+            },
+            {
+              "opacity": "0.035415",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0.0334475",
+              "part": "lock-response",
+              "transform": "matrix(1.06666, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 677.0999999940395,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 4.19774, -4.19774)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "matrix(1.22373, 0, 0, 1.22373, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1.00212, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1.00212, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1.00212, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.537282, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.605923, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 0.996805, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-response",
+              "transform": "matrix(1.0474, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 777,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 2.02701, -2.02701)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "matrix(0.952901, 0, 0, 0.952901, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.478458, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.517687, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 0.999891, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-response",
+              "transform": "matrix(1.02132, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 877.3999999761581,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.419576, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.429364, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-response",
+              "transform": "matrix(0.995203, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 977.0999999940396,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-response",
+              "transform": "matrix(0.969116, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 1077.399999976158,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-response",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        }
+      ]
+    }
+  ],
+  "0.5": [
+    {
+      "elapsed": 0,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(0.997649, -0.0685374, 0.0685374, 0.997649, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "matrix(1.00007, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "matrix(1.03498, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "matrix(1.00007, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "matrix(0.7, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(0.965613, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.4, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.4, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 0.985555, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-response",
+              "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 76.59999999403954,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(0.999242, -0.0389176, 0.0389176, 0.999242, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "matrix(1.0349, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "matrix(0.996212, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "matrix(1.0349, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "matrix(0.7, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(0.987922, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(0.970577, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(0.987922, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.4, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.4, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 0.985506, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-response",
+              "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 176.40000000596046,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(0.99995, -0.00999019, 0.00999019, 0.99995, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "matrix(0.988607, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "matrix(0.932405, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "matrix(0.988607, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "matrix(0.7, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(0.965139, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1.04372, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(0.965139, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.4, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.4, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 1.0039, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-response",
+              "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 276.30000001192093,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(0.999997, -0.00239298, 0.00239298, 0.999997, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "matrix(0.93374, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "matrix(0.920135, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "matrix(0.93374, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "matrix(0.7, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(0.978727, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1.08775, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(0.978727, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.4, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.4, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 1.03652, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-response",
+              "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 376.59999999403954,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(1, -0.000210161, 0.000210161, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "matrix(0.920622, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "matrix(0.92, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "matrix(0.920622, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "matrix(0.7, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1.04472, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1.09942, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1.04472, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.4, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.4, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 1.04999, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-response",
+              "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 483.2000000178814,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.495104",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "matrix(0.92, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "matrix(0.92, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "matrix(0.92, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.358605",
+              "part": "cross-response",
+              "transform": "matrix(0.853688, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1.08294, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1.1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1.08294, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.384219",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.707375, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.4, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 1.05451, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-response",
+              "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 577.7000000178814,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.85",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 1.23669, -1.23669)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "matrix(0.92, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "matrix(0.92, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "matrix(0.92, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.630571",
+              "part": "cross-response",
+              "transform": "matrix(1.0248, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1.09686, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1.1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1.09686, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.688837",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.975535, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.4, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 1.055, 0, 0)"
+            },
+            {
+              "opacity": "0.300201",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-response",
+              "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 676.7000000178814,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.85",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 3.089, -3.089)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "matrix(0.920484, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "matrix(0.920484, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "matrix(0.920484, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.441571",
+              "part": "cross-response",
+              "transform": "matrix(1.0923, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1.1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1.1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1.1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.522337",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.908935, 0, 0)"
+            },
+            {
+              "opacity": "0.0380654",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.430452, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 1.055, 0, 0)"
+            },
+            {
+              "opacity": "0.891752",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0.03299",
+              "part": "lock-response",
+              "transform": "matrix(0.952356, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 775.5999999940395,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.85",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 4.92648, -4.92648)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "matrix(0.937376, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "matrix(0.937376, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "matrix(0.937376, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.254085",
+              "part": "cross-response",
+              "transform": "matrix(1.15926, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1.1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1.1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1.1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.35717",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.842868, 0, 0)"
+            },
+            {
+              "opacity": "0.609796",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.887837, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 1.055, 0, 0)"
+            },
+            {
+              "opacity": "0.767878",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0.52849",
+              "part": "lock-response",
+              "transform": "matrix(0.987749, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 877.7000000178814,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.85",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 6.79919, -6.79919)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "matrix(0.974476, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "matrix(0.974476, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "matrix(0.974476, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.0630038",
+              "part": "cross-response",
+              "transform": "matrix(1.2275, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1.1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1.1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1.1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.188837",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.775535, 0, 0)"
+            },
+            {
+              "opacity": "0.641465",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.956586, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 1.055, 0, 0)"
+            },
+            {
+              "opacity": "0.641627",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0.616628",
+              "part": "lock-response",
+              "transform": "matrix(1.00834, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 978.2000000178814,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.85",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 8.6515, -8.6515)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "matrix(0.991728, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "matrix(0.991728, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "matrix(0.991728, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "matrix(1.18685, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1.1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1.1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1.1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.0223367",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.708935, 0, 0)"
+            },
+            {
+              "opacity": "0.500097",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.900039, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 1.055, 0, 0)"
+            },
+            {
+              "opacity": "0.516752",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0.491753",
+              "part": "lock-response",
+              "transform": "matrix(1.02082, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 1076.0999999940395,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0.242264",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 8.9, -8.9)"
+            },
+            {
+              "opacity": "0.571987",
+              "part": "check-tip",
+              "transform": "matrix(0.914495, 0, 0, 0.914495, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "matrix(0.998406, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "matrix(0.998406, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "matrix(0.998406, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "matrix(1.09278, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1.09561, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1.09561, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1.09561, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.674765, 0, 0)"
+            },
+            {
+              "opacity": "0.35972",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.843888, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 1.05178, 0, 0)"
+            },
+            {
+              "opacity": "0.389385",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0.367752",
+              "part": "lock-response",
+              "transform": "matrix(1.03322, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 1177,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 8.17608, -8.17608)"
+            },
+            {
+              "opacity": "0.643064",
+              "part": "check-tip",
+              "transform": "matrix(1.06866, 0, 0, 1.06866, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "matrix(0.997097, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1.07014, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1.07014, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1.07014, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.645089, 0, 0)"
+            },
+            {
+              "opacity": "0.216937",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.786775, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 1.01259, 0, 0)"
+            },
+            {
+              "opacity": "0.255841",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0.241627",
+              "part": "lock-response",
+              "transform": "matrix(1.04584, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 1276,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 7.09723, -7.09723)"
+            },
+            {
+              "opacity": "0.409181",
+              "part": "check-tip",
+              "transform": "matrix(1.17098, 0, 0, 1.17098, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "matrix(0.902838, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1.03462, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1.03462, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1.03462, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.615854, 0, 0)"
+            },
+            {
+              "opacity": "0.0762764",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.730511, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 0.995212, 0, 0)"
+            },
+            {
+              "opacity": "0.124282",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0.117377",
+              "part": "lock-response",
+              "transform": "matrix(1.05826, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 1376.5,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 6.00644, -6.00644)"
+            },
+            {
+              "opacity": "0.172711",
+              "part": "check-tip",
+              "transform": "matrix(1.27444, 0, 0, 1.27444, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "matrix(0.807536, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1.01507, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1.01507, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1.01507, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.586295, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.679442, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 0.992004, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-response",
+              "transform": "matrix(1.06914, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 1477,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 4.92107, -4.92107)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "matrix(1.31398, 0, 0, 1.31398, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "matrix(0.712709, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1.00546, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1.00546, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1.00546, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.556883, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.635324, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 0.993748, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-response",
+              "transform": "matrix(1.0561, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 1576.5,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 3.8357, -3.8357)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "matrix(1.17857, 0, 0, 1.17857, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1.0011, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1.0011, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1.0011, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.527471, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.591207, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 0.997874, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-response",
+              "transform": "matrix(1.04305, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 1676.7000000178814,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 2.75034, -2.75034)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "matrix(1.04315, 0, 0, 1.04315, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.498059, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.547089, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 0.999494, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-response",
+              "transform": "matrix(1.03001, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 1776.5,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 1.66389, -1.66389)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "matrix(0.907596, 0, 0, 0.907596, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.468618, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.502927, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 0.999975, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-response",
+              "transform": "matrix(1.01695, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 1876.5999999940395,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "matrix(1, 0, 0, 1, 0.578522, -0.578522)"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "matrix(0.77218, 0, 0, 0.77218, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.439206, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.45881, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-response",
+              "transform": "matrix(1.00391, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 1976.5,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "matrix(1, 0, 0, 0.409795, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "matrix(1, 0, 0, 0.414692, 0, 0)"
+            }
+          ],
+          "playing": true
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-response",
+              "transform": "matrix(0.990865, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 2076.300000011921,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-response",
+              "transform": "matrix(0.9779, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 2178.5,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-response",
+              "transform": "matrix(0.964896, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 2277.2000000178814,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-response",
+              "transform": "matrix(0.951748, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "playing": true
+        }
+      ]
+    },
+    {
+      "elapsed": 2308.800000011921,
+      "icons": [
+        {
+          "name": "check",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "check-stroke",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "check-trace",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "check-tip",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "close",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "close-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-down",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "close-up",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "cross-response",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "plus",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "plus-occlusion",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-across",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "plus-above",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "across-tips",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "above-tips",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        },
+        {
+          "name": "lock",
+          "parts": [
+            {
+              "opacity": "1",
+              "part": "lock-shackle",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-seats",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "lock-response",
+              "transform": "none"
+            }
+          ],
+          "playing": false
+        }
+      ]
+    }
+  ]
+}

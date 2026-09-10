@@ -1,0 +1,23 @@
+{
+  "category": "Actions and access",
+  "scrollWidth": 390,
+  "studies": [
+    {
+      "width": 172,
+      "x": 18
+    },
+    {
+      "width": 172,
+      "x": 200
+    },
+    {
+      "width": 172,
+      "x": 18
+    },
+    {
+      "width": 172,
+      "x": 200
+    }
+  ],
+  "width": 390
+}

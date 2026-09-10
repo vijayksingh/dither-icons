@@ -1,0 +1,82 @@
+{
+  "check": {
+    "hover": true,
+    "parts": [
+      {
+        "animation": "di-check-check-stroke",
+        "part": "check-stroke"
+      },
+      {
+        "animation": "di-check-check-trace",
+        "part": "check-trace"
+      },
+      {
+        "animation": "di-check-check-tip",
+        "part": "check-tip"
+      }
+    ]
+  },
+  "close": {
+    "hover": true,
+    "parts": [
+      {
+        "animation": "di-close-close-occlusion",
+        "part": "close-occlusion"
+      },
+      {
+        "animation": "di-close-close-down",
+        "part": "close-down"
+      },
+      {
+        "animation": "di-close-close-up",
+        "part": "close-up"
+      },
+      {
+        "animation": "di-close-cross-response",
+        "part": "cross-response"
+      }
+    ]
+  },
+  "plus": {
+    "hover": true,
+    "parts": [
+      {
+        "animation": "di-plus-plus-occlusion",
+        "part": "plus-occlusion"
+      },
+      {
+        "animation": "di-plus-plus-across",
+        "part": "plus-across"
+      },
+      {
+        "animation": "di-plus-plus-above",
+        "part": "plus-above"
+      },
+      {
+        "animation": "di-plus-across-tips",
+        "part": "across-tips"
+      },
+      {
+        "animation": "di-plus-above-tips",
+        "part": "above-tips"
+      }
+    ]
+  },
+  "lock": {
+    "hover": true,
+    "parts": [
+      {
+        "animation": "di-lock-lock-shackle",
+        "part": "lock-shackle"
+      },
+      {
+        "animation": "di-lock-lock-seats",
+        "part": "lock-seats"
+      },
+      {
+        "animation": "di-lock-lock-response",
+        "part": "lock-response"
+      }
+    ]
+  }
+}

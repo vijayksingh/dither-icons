@@ -361,3 +361,20 @@ User review rejected the arc inside Settings. Removed the spring bow, tab, inter
 Verified in the live Motion studio: rest and 40% response across dither, solid and outline; keyboard replay completes after Tab departure and returns to rest; reduced-motion replay has no transforms and both accents remain hidden. Reviewed the regenerated standalone SVG at 112/48px dither and 24px solid/outline. Ten targeted motion tests and TypeScript passed. Production build passed.
 
 Fresh [evidence](motion-evidence/refinement-05/settings-clean-center/) supersedes Settings in the original refinement-05 screenshots and mechanical-contact test. The size/export board and public generated assets now use the clean center. Other icons and the shared playback engine are unchanged. No publication or version change.
+
+## Focused refinement 06 — 2026-09-10
+
+Scope: **Check, Close, Plus, Lock**, selected from the twelve icons awaiting the focused refinement. All four have separate Interface Craft critiques, geometry and timing modules. The Motion studio opens **Actions and access**. Existing semantic names and React exports remain stable. Other 64 timelines, the shared lifecycle and platform call sites are unchanged.
+
+- **Check:** fixed drawn vertex, one rounded ribbon, light constrained to the ascending centerline, and tip rays after exact arrival.
+- **Close:** rounded diagonal bands preserve their angles; each contracts along its own axis. The shared crossing has a matched upper-arm knockout. Two lateral marks respond after the second brace registers.
+- **Plus:** clean orthogonal crossing and staggered axial expansion. Each axis receives its own delayed endpoint response; recovery has no recoil.
+- **Lock:** rounded fixed housing, clear keyhole and a closed shackle whose entire foot line stays fixed. Shoulder light and exterior resistance marks follow the held tension.
+
+MOT-01/03/05/07/08/16 govern identity, anchors, carrier relationships and localized climaxes. MOT-09/10/11/12 preserve shared input and stillness contracts. MOT-14 leaves confirmation, dismissal, creation and access state with the host. MOT-15 reports are individual, not renamed copies of earlier motion.
+
+Rendered verification: inspected 0/10/28/40/50/62/75/100% poses; actual and half-speed native playback; keyboard Enter followed by Tab departure; exact inspected-pose continuity in dither/solid/outline; light Cobalt and dark Iris; system reduced motion and cancellation via Motion off. Motion off disabled all four study controls, removed all running animations and hid accents. All four JavaScript-free SVG exports activated their complete CSS tracks on hover. Reviewed drawings at 112/48px dither and 24px solid/outline. At an emulated 390 CSS-pixel width, the layout used two 172px study columns with no horizontal overflow. The screenshot surface scaled the narrow viewport, so compact drawing acceptance comes from the actual-size SVG board rather than that capture. No physical touch-device claim.
+
+**Checks:** 14 targeted tests passed, covering all 68 timeline bindings, 204 texture variants, exact restoration, CSS export parity, plus the four new geometric/causal regressions and the previous everyday batch. TypeScript and production build passed. The build regenerated manifests, agent reference text, icon reference SVG, the affected icon social images and the AI-page social image. No package version or production deployment changed.
+
+[Browser evidence and limits](motion-evidence/refinement-06/) · [Motion catalog](MOTION-CATALOG.md#focused-refinement-06--actions-and-access)

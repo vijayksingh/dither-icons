@@ -1,46 +1,39 @@
-# lock: Interface Craft review
+# Lock: Interface Craft refinement 06
 
 ## Context
-An SVG action icon in a reusable developer library. Its semantic meaning is **indicate protected access that holds under tension**. It appears in routine controls where recognition matters more than spectacle.
+**Indicate protected access that holds.** The platform has a LockKeyhole in `components/auth/AuthEntryPage.tsx:50` and read-only lock indicators in `components/lab/SplitEditor.tsx:108`. This preview cannot claim authentication or unlock anything.
 
 ## First Impressions
-A shackle translating away from the body can stop looking attached.
+The earlier shackle took tension but its receiving body was a sharp, heavy rectangle. The shoulder light lacked a clearly visible exterior response. Protection needs a stable housing and a sustained hold, not an opening animation.
 
 ## Visual Design
-**Identity boundary** — Both shackle feet stay seated in the fixed body. Stable dither follows the contour. Color inherits the selected palette; accents use the same ink and stay below the primary silhouette in visual weight. Typography and card framing belong to the shared inspector, not the glyph.
+A round-crowned shackle enters a housing with 2.2-unit corner radii. The keyhole stays unchanged. A fixed housing mask removes the hidden portion of the shackle, preventing double ink in dither. Outline uses a 1.8-unit shackle and a 1.3-unit housing stroke; its compact keyhole is filled for legibility. Two shoulder glints sit on the receiving top edge, followed by fine exterior resistance marks.
 
 ## Interface Design
-The missed opportunity is to express **indicate protected access that holds under tension** through a causal gesture. Body anchors; the shackle takes slight tension with both feet seated, the shoulders catch light, and tension releases. The inspector exposes replay and timing only when requested; the icon itself adds no controls or labels.
+The shackle scales only vertically about its drawn foot line at y=11.3. Both feet remain fixed behind the body while its crown rises under 5.5% tension. At 360ms the tension holds; shoulder glints peak at 430ms and exterior marks at 500ms. Release begins after 610ms, with a small seating compression and a slow final rest. The body and keyhole never move.
 
 ## Consistency & Conventions
-Retain the conventional glyph. Use the shared hover, focus, click, reduced-motion, and completion contracts. MOT-01, MOT-02, MOT-03, MOT-04, MOT-05, MOT-08, MOT-09, MOT-10, MOT-11, MOT-12, MOT-14, MOT-15 apply.
+MOT-01/03/05/06/07/08/09/10/11/12/13/14/15/16. Preserve closed-lock identity throughout; response follows resistance at actual attachment points. An unchanged host state never becomes a fabricated unlock or permission grant.
 
 ## User Context
-Opening would change lock into unlock. Keep it closed, without a keyhole transformation or permission claim. Recognizability must survive a brief glance and the still-motion variant.
+The emotional quality is reassurance through stability. The maintained hold matters more than distance traveled. At 24px the open space under the crown and the recognizable keyhole remain clear, including without motion.
 
 ## Top Opportunities
-1. Body anchors; the shackle takes slight tension with both feet seated, the shoulders catch light, and tension releases.
-2. Both shackle feet stay seated in the fixed body.
-3. Opening would change lock into unlock. Keep it closed, without a keyhole transformation or permission claim.
+1. Keep the entire foot line seated beneath a fixed housing.
+2. Refine the housing and keyhole for compact reading.
+3. Answer tension at both receiving shoulders, then release quietly.
 
-## Encoded storyboard and review
+## Encoded storyboard and rendered review
+[lock.ts](../../src/motions/lock.ts), **1240ms**, **Test / Hold / Release**.
 
-**Duration:** 1060ms. **Sequence:** Test / Hold / Seat.
+```text
+0       120        360 430 500       610       780       1000   1240
+rest -- gather --- tension--light--echo--hold--seat ----- home --- rest
+feet + body + keyhole: fixed ---------------------------------- fixed
+```
 
-Timing source: [presence.ts](../../src/motions/presence.ts). Geometry binds each named track in `CraftedArtwork.tsx` or `ExtendedArtwork.tsx`. Times below are milliseconds from the same clock; transform values, pivots and easing live in that source.
+Reviewed 10% preparation, 28% approach to tension, 40/45% shoulder response, 62% seating and 100% rest. Browser views show no opening or detached feet in dither, solid or outline. Tests derive the anchor from the drawn shackle foot and compare it with the housing top. Actual/half-speed, keyboard departure and reduced motion passed.
 
-| Named part | Keyframe times (ms) |
-| --- | --- |
-| `shackle` | 0, 130, 350, 580, 820, 1060 |
-| `seat-light` | 0, 250, 450, 680, 920, 1060 |
-| `body-light` | 0, 410, 620, 870, 1060 |
+![Lock is fourth, the shoulders answer the hold](../motion-evidence/refinement-06/dither-45.png)
 
-**Rendered review:** Semantic review rejected an opening shackle because it would mean unlock. Both feet remain seated as the shackle takes tension; the keyhole and body remain unchanged.
-
-Reviewed at preparation (20%), action (40%), recovery (70%) and neutral endpoint (100%), with actual playback and per-part endpoint inspection in the live gallery. These samples establish the reviewed poses; they do not replace the full timeline or the shared lifecycle checks in [VALIDATION.md](../VALIDATION.md).
-
-**Visual reference:** icon 2 from the left in this family.
-
-![lock: action pose at 40%, position 2](../motion-evidence/rollout/presence.png)
-
-[Preparation image](../motion-evidence/rollout/presence-prepare.png) · [Recovery image](../motion-evidence/rollout/presence-recover.png)
+[Rest](../motion-evidence/refinement-06/pose-0.png) · [Small sizes](../motion-evidence/refinement-06/size-and-export.png) · [Batch validation](../VALIDATION.md#focused-refinement-06--2026-09-10)

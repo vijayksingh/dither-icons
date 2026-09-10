@@ -140,12 +140,12 @@
       "keywords": [],
       "page": "/icons/check",
       "motion": {
-        "caption": "The vertex seats. The long arm affirms.",
-        "durationMs": 900,
+        "caption": "Seat the stroke. Let the tip affirm.",
+        "durationMs": 1060,
         "stages": [
           "Seat",
-          "Affirm",
-          "Rest"
+          "Trace",
+          "Affirm"
         ]
       }
     },
@@ -158,8 +158,8 @@
       "keywords": [],
       "page": "/icons/close",
       "motion": {
-        "caption": "Two diagonals close around one meeting point.",
-        "durationMs": 720,
+        "caption": "Draw inward. Meet at the crossing.",
+        "durationMs": 840,
         "stages": [
           "Gather",
           "Meet",
@@ -176,12 +176,12 @@
       "keywords": [],
       "page": "/icons/plus",
       "motion": {
-        "caption": "Make room across, then make room above.",
-        "durationMs": 840,
+        "caption": "A little more room. In both directions.",
+        "durationMs": 1100,
         "stages": [
           "Across",
-          "Extend",
-          "Rest"
+          "Open",
+          "Ease"
         ]
       }
     },
@@ -428,12 +428,12 @@
       "keywords": [],
       "page": "/icons/lock",
       "motion": {
-        "caption": "The shackle takes tension. The lock holds.",
-        "durationMs": 1060,
+        "caption": "Take a little tension. Hold securely.",
+        "durationMs": 1240,
         "stages": [
           "Test",
           "Hold",
-          "Seat"
+          "Release"
         ]
       }
     },

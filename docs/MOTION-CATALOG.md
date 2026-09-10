@@ -28,11 +28,11 @@ The four accepted foundation performances remain intact. The remaining icons use
 | [search](icon-reviews/search.md) | inspect or locate something | Attend / Focus / Return | 1320ms |
 | [home](icon-reviews/home.md) | return to a familiar entry point | Open / Welcome / Close | 1400ms |
 | [settings](icon-reviews/settings.md) | make a measured adjustment | Adjust / Register / Release | 1360ms |
-| [check](icon-reviews/check.md) | affirm a valid or completed state | Seat / Affirm / Rest | 900ms |
-| [close](icon-reviews/close.md) | bring a boundary or surface to an end | Gather / Meet / Release | 720ms |
-| [plus](icon-reviews/plus.md) | add or expand from a shared center | Across / Extend / Rest | 840ms |
+| [check](icon-reviews/check.md) | affirm a valid or completed state | Seat / Trace / Affirm | 1060ms |
+| [close](icon-reviews/close.md) | bring a boundary or surface to an end | Gather / Meet / Release | 840ms |
+| [plus](icon-reviews/plus.md) | add or expand from a shared center | Across / Open / Ease | 1100ms |
 | [user](icon-reviews/user.md) | represent a person or profile | Notice / Acknowledge / Ease | 1180ms |
-| [lock](icon-reviews/lock.md) | indicate protected access that holds under tension | Test / Hold / Seat | 1060ms |
+| [lock](icon-reviews/lock.md) | indicate protected access that holds under tension | Test / Hold / Release | 1240ms |
 | [eye](icon-reviews/eye.md) | attend to or inspect a visible region | Notice / Follow / Center | 1400ms |
 | [sparkles](icon-reviews/sparkles.md) | a small moment of discovery or emphasis | Gather / Glint / Echo | 1180ms |
 | [sun](icon-reviews/sun.md) | daylight or a light appearance | Warm / Radiate / Rest | 1160ms |
@@ -137,6 +137,10 @@ The user requested retaining and committing these four, then corrected the selec
 
 ## Focused refinement 05 — Everyday essentials
 
-**Search, Home, Settings, User** now have the focused four-icon pass. The studio defaults to **Everyday essentials**, using the public semantic category names rather than the earlier numbered review labels. Search resolves focus inside its rigid lens; Home reveals a threshold behind a hinged leaf; Settings registers a measured turn with a restrained rim response and a clean open center; User pairs a shallow nod with a delayed greeting. Each has a separate timing/configuration module and a rewritten Interface Craft critique with [native browser evidence](motion-evidence/refinement-05/).
+**Search, Home, Settings, User** now have the focused four-icon pass. The studio groups those four under **Everyday essentials**, using the public semantic category names rather than the earlier numbered review labels. Search resolves focus inside its rigid lens; Home reveals a threshold behind a hinged leaf; Settings registers a measured turn with a restrained rim response and a clean open center; User pairs a shallow nod with a delayed greeting. Each has a separate timing/configuration module and a rewritten Interface Craft critique with [native browser evidence](motion-evidence/refinement-05/).
 
-**Status: 56 refined, 12 awaiting the focused pass.** Pending: **Check, Close, Plus, Lock, Eye, Sparkles, Sun, Moon, Terminal, CPU, Chart, Bolt**. Those twelve retain their earlier authored semantic motions. Do not call them unanimated, and do not treat their broad-rollout reports as evidence of the later focused refinement. All other 64 timelines retain their existing performances.
+## Focused refinement 06 — Actions and access
+
+**Check, Close, Plus, Lock** now have the focused four-icon pass. The studio defaults to **Actions and access**. Check traces its ascending stroke before a tip response; Close tightens along fixed diagonals; Plus opens its axes in sequence with individual endpoint responses; Lock holds tension above a fixed housing. Rounded contours, clean crossings and closed-lock identity preserve compact reading. Each has an individual Interface Craft critique, a separate timing source and [browser evidence](motion-evidence/refinement-06/). The previous 64 performances retain their tracks.
+
+**Status: 60 refined, 8 awaiting the focused pass.** Pending: **Eye, Sparkles, Sun, Moon, Terminal, CPU, Chart, Bolt**. These eight retain their earlier authored semantic motions. Do not call them unanimated or treat the broad-rollout reports as evidence of the later focused pass. “Refined” records the completed implementation and rendered review, not user acceptance of every new iteration.

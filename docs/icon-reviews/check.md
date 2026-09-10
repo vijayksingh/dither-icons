@@ -1,45 +1,39 @@
-# check: Interface Craft review
+# Check: Interface Craft refinement 06
 
 ## Context
-An SVG action icon in a reusable developer library. Its semantic meaning is **affirm a valid or completed state**. It appears in routine controls where recognition matters more than spectacle.
+**Affirm a completed or valid state.** The platform uses Check in `components/ui/StatefulButton.tsx:68`. This library gesture is a preview; only the host's result may select the success state.
 
 ## First Impressions
-A falling checkmark treats confirmation as an object dropped from above.
+The earlier check combined translation, scale and rotation; its vertex drifted while the light ran approximately across the drawing. It felt like a small bounce rather than a deliberate finishing stroke.
 
 ## Visual Design
-**Identity boundary** — Entire check remains visible throughout. Stable dither follows the contour. Color inherits the selected palette; accents use the same ink and stay below the primary silhouette in visual weight. Typography and card framing belong to the shared inspector, not the glyph.
+One connected ribbon has rounded terminal caps and a rounded outer vertex. The ascending arm is longer, preserving the familiar asymmetric silhouette. Outline uses the same centerline at 1.8 units. A .7-unit highlight lies on the ascending centerline; two .6-unit rays sit beyond its tip. Accents inherit the selected ink. No badge, enclosing ring or replacement check is added.
 
 ## Interface Design
-The missed opportunity is to express **affirm a valid or completed state** through a causal gesture. Seat the vertex briefly, then run a small highlight up the long ascending arm. The inspector exposes replay and timing only when requested; the icon itself adds no controls or labels.
+The drawn low vertex (9.2, 17.2) stays fixed. A four-degree preparation returns to neutral before light traverses the long arm. The leading endpoint reaches the actual tip (19.8, 6.6) at 590ms; the finishing rays peak 60ms later. The glyph already rests while the response dissipates. That order gives affirmation a readable completion point.
 
 ## Consistency & Conventions
-Retain the conventional glyph. Use the shared hover, focus, click, reduced-motion, and completion contracts. MOT-01, MOT-02, MOT-03, MOT-04, MOT-05, MOT-08, MOT-09, MOT-10, MOT-11, MOT-12, MOT-14, MOT-15 apply.
+MOT-01/03/05/06/07/08/10/11/12/13/14/15/16. Keep the entire check visible, put light on its carrier, finish after input departure and retain the host's state authority. No platform control was changed.
 
 ## User Context
-The icon preview is not evidence of app-level success. Recognizability must survive a brief glance and the still-motion variant.
+Confirmation should feel assured and quick. In solid and outline, the same-color surface trace naturally merges with the main stroke; the exterior tip response remains visible. At 24px, recognition depends on the check itself.
 
 ## Top Opportunities
-1. Seat the vertex briefly, then run a small highlight up the long ascending arm.
-2. Entire check remains visible throughout.
-3. The icon preview is not evidence of app-level success.
+1. Anchor the actual vertex instead of translating the whole glyph.
+2. Carry light along the real stroke, with arrival before the payoff.
+3. Preserve a quiet, exact ending without elastic wobble.
 
-## Encoded storyboard and review
+## Encoded storyboard and rendered review
+[check.ts](../../src/motions/check.ts), **1060ms**, **Seat / Trace / Affirm**.
 
-**Duration:** 900ms. **Sequence:** Seat / Affirm / Rest.
+```text
+0       110          310  350            590 650       820       1060
+rest -- lean -------- seat--trace ------- tip--rays --- clear ---- rest
+vertex: fixed ------------------------------------------------ fixed
+```
 
-Timing source: [controls.ts](../../src/motions/controls.ts). Geometry binds each named track in `CraftedArtwork.tsx` or `ExtendedArtwork.tsx`. Times below are milliseconds from the same clock; transform values, pivots and easing live in that source.
+Reviewed preparation at 10%, traveling light at 40%, tip response at 62%, and neutral ending at 100%, plus actual/half-speed and keyboard-departure playback. The geometry test checks both trace endpoints against the drawn long arm and verifies exact tip arrival. All textures retain the inspected pose. Reduced motion stays still.
 
-| Named part | Keyframe times (ms) |
-| --- | --- |
-| `check` | 0, 130, 340, 530, 740, 900 |
-| `affirm-light` | 0, 180, 360, 620, 900 |
+![Check is first, tip response at 62%](../motion-evidence/refinement-06/pose-62.png)
 
-**Rendered review:** The whole check stays visible as the vertex seats. The small emphasis travels along the ascending arm and vanishes without substituting another state.
-
-Reviewed at preparation (20%), action (40%), recovery (70%) and neutral endpoint (100%), with actual playback and per-part endpoint inspection in the live gallery. These samples establish the reviewed poses; they do not replace the full timeline or the shared lifecycle checks in [VALIDATION.md](../VALIDATION.md).
-
-**Visual reference:** icon 1 from the left in this family.
-
-![check: action pose at 40%, position 1](../motion-evidence/rollout/actions.png)
-
-[Preparation image](../motion-evidence/rollout/actions-prepare.png) · [Recovery image](../motion-evidence/rollout/actions-recover.png)
+[Rest](../motion-evidence/refinement-06/pose-0.png) · [Small sizes](../motion-evidence/refinement-06/size-and-export.png) · [Batch validation](../VALIDATION.md#focused-refinement-06--2026-09-10)
