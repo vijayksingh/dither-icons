@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "package": "@unlocalhosted/dither-icons",
   "version": "0.1.2",
-  "count": 68,
+  "count": 69,
   "license": "MIT",
   "installation": {
     "publishedToNpm": true,
@@ -154,16 +154,16 @@
       "component": "CloseIcon",
       "label": "Close",
       "category": "Interface",
-      "description": "Two diagonals give a short emphasis.",
+      "description": "Two deliberate diagonal strokes cross out.",
       "keywords": [],
       "page": "/icons/close",
       "motion": {
-        "caption": "Draw inward. Meet at the crossing.",
-        "durationMs": 840,
+        "caption": "One stroke. Cross it out.",
+        "durationMs": 820,
         "stages": [
-          "Gather",
-          "Meet",
-          "Release"
+          "Mark",
+          "Cross",
+          "Resolve"
         ]
       }
     },
@@ -172,16 +172,16 @@
       "component": "PlusIcon",
       "label": "Plus",
       "category": "Interface",
-      "description": "The cross expands once.",
+      "description": "The upright registers; the crossbar responds.",
       "keywords": [],
       "page": "/icons/plus",
       "motion": {
-        "caption": "A little more room. In both directions.",
-        "durationMs": 1100,
+        "caption": "Add the upright. Let the crossbar answer.",
+        "durationMs": 1080,
         "stages": [
-          "Across",
-          "Open",
-          "Ease"
+          "Insert",
+          "Receive",
+          "Extend"
         ]
       }
     },
@@ -424,7 +424,7 @@
       "component": "LockIcon",
       "label": "Lock",
       "category": "Interface",
-      "description": "The shackle lifts from its body.",
+      "description": "The closed shackle holds under tension.",
       "keywords": [],
       "page": "/icons/lock",
       "motion": {
@@ -434,6 +434,30 @@
           "Test",
           "Hold",
           "Release"
+        ]
+      }
+    },
+    {
+      "name": "unlock",
+      "component": "UnlockIcon",
+      "label": "Unlock",
+      "category": "Interface",
+      "description": "An open shackle clears its free end while its right foot stays seated.",
+      "keywords": [
+        "unlocked",
+        "open lock",
+        "access",
+        "permissions",
+        "editable"
+      ],
+      "page": "/icons/unlock",
+      "motion": {
+        "caption": "Release the free end. Leave the way open.",
+        "durationMs": 1200,
+        "stages": [
+          "Release",
+          "Clear",
+          "Stay open"
         ]
       }
     },

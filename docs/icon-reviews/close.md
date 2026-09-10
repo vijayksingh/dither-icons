@@ -1,39 +1,37 @@
-# Close: Interface Craft refinement 06
+# Close: semantic correction after refinement 06
 
 ## Context
-**Dismiss the current surface.** The platform's Focus Coach uses X in `features/focus-coach/FocusCoachRail.tsx:694`. A frequent utility action calls for a brief, conclusive gesture.
+**Dismiss the current surface.** Focus Coach uses X in `features/focus-coach/FocusCoachRail.tsx:694`. Keep the familiar X visible throughout; the host performs dismissal.
 
 ## First Impressions
-The previous diagonals rotated and scaled independently, changing their crossing angle. Sharp polygon ends and overlapping dither made the center heavier. There was no localized finish after the second arm arrived.
+The user rejected the previous contraction. Although the fixed angles preserved identity, shrinking both braces read as a generic pulse rather than closing or cancelling. The earlier refinement-06 screenshots are historical, not evidence for this replacement.
 
 ## Visual Design
-Two rounded 2.2-unit bands cross at fixed 45-degree angles. A browser pass increased their length to match the optical weight of the neighboring glyphs. Outline uses 1.8-unit centerlines. The upper brace masks the lower one with identical geometry and timing, keeping one layer of ink at the crossing. The only accent is a pair of fine lateral marks in the open spaces beside the intersection.
+Retain the rounded 2.2-unit bands, fixed ±45° directions and clean single-ink crossing. Translate each complete stroke along its own axis. Moving upper artwork and its knockout share every frame. A small edge light travels with each stroke; two fine finishing marks appear beyond the second stroke's leading tip.
 
 ## Interface Design
-Each brace gathers then shortens along its own axis about (12, 12). The first registers at 240ms, the second at 300ms. The lateral response waits for both and peaks at 365ms. The compressed cross holds briefly, then releases into its original proportions. The angles never change, so it cannot turn into Plus.
+The first diagonal gathers at 90ms and marks at 230ms. The opposing stroke starts later, crosses at 370ms, then receives its tip finish at 430ms. The slight axial travel suggests two crossing-out strokes without making an incomplete X. The finish clears at 630ms; all geometry is home by 560ms and the clock ends at 820ms.
 
 ## Consistency & Conventions
-MOT-01/03/05/06/07/08/09/10/11/12/13/14/15/16. The shared center is an anchor, not an added mechanical part. Paired tracks keep the moving knockout attached in React and CSS exports. Dismissal itself belongs to the host.
+MOT-01/03/05/07/08/09/10/11/12/13/14/15/16. Fixed angles preserve identity; the crossing remains clean during translation. This is a finite cross-out gesture, not a rotation into Plus or a simulated successful dismissal.
 
 ## User Context
-Close should feel decisive without demanding attention. Its 840ms gesture is the shortest of this set; the contraction and response happen in the first half. All useful shape remains visible when motion is disabled.
+A short, decisive acknowledgment for a frequent action. The complete silhouette survives every intermediate pose, reduced motion and static SVG export. No shrinking, central ornament or persistent effect.
 
 ## Top Opportunities
-1. Preserve fixed diagonal angles and shorten along the braces.
-2. Remove doubled ink at their crossing.
-3. Place the response after the second registration, then clear it quickly.
+1. Replace generic contraction with ordered diagonal travel.
+2. Put the finish at the final stroke's leading end.
+3. Preserve a quiet, exact neutral and clean crossing at compact sizes.
 
 ## Encoded storyboard and rendered review
-[close.ts](../../src/motions/close.ts), **840ms**, **Gather / Meet / Release**.
+[close.ts](../../src/motions/close.ts), **820ms**, **Mark / Cross / Resolve**.
 
 ```text
-0       90 130       240 300   365 420       550     680     840
-rest -- gather ----- first--meet--answer--release -- clear--home--rest
-center: fixed ------------------------------------------------ fixed
+0      90      170   230     330 370 430      560 630       820
+rest -- gather -- second -- mark -- cross--finish -- home--clear--rest
+angles: fixed; full strokes remain visible throughout
 ```
 
-Reviewed 10% preparation, 28% first registration, 40/45% crossing response, 75% recovery and 100% rest. Browser material changes retained exact per-part transforms. Targeted tests verify that visible and knockout clocks match and both braces retain their center and angle. Actual/half-speed, keyboard departure and reduced motion passed.
+[Current evidence](../motion-evidence/refinement-06-rework/): eight inspected poses, both speeds, keyboard departure, three materials at the same 50% frame, reduced motion and compact SVG exports. Tests verify the moving knockout clock and finish-after-cross ordering. This replaces the rejected contraction; user acceptance of the replacement remains open.
 
-![Close is second, response in outline](../motion-evidence/refinement-06/outline-45.png)
-
-[Rest](../motion-evidence/refinement-06/pose-0.png) · [Small sizes](../motion-evidence/refinement-06/size-and-export.png) · [Batch validation](../VALIDATION.md#focused-refinement-06--2026-09-10)
+![Close, Plus, Lock and Unlock at 60 percent](../motion-evidence/refinement-06-rework/pose-60.png)

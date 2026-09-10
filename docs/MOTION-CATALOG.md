@@ -29,10 +29,11 @@ The four accepted foundation performances remain intact. The remaining icons use
 | [home](icon-reviews/home.md) | return to a familiar entry point | Open / Welcome / Close | 1400ms |
 | [settings](icon-reviews/settings.md) | make a measured adjustment | Adjust / Register / Release | 1360ms |
 | [check](icon-reviews/check.md) | affirm a valid or completed state | Seat / Trace / Affirm | 1060ms |
-| [close](icon-reviews/close.md) | bring a boundary or surface to an end | Gather / Meet / Release | 840ms |
-| [plus](icon-reviews/plus.md) | add or expand from a shared center | Across / Open / Ease | 1100ms |
+| [close](icon-reviews/close.md) | dismiss a surface with a cross-out gesture | Mark / Cross / Resolve | 820ms |
+| [plus](icon-reviews/plus.md) | insert an added stroke into a receiving crossbar | Insert / Receive / Extend | 1080ms |
 | [user](icon-reviews/user.md) | represent a person or profile | Notice / Acknowledge / Ease | 1180ms |
 | [lock](icon-reviews/lock.md) | indicate protected access that holds under tension | Test / Hold / Release | 1240ms |
+| [unlock](icon-reviews/unlock.md) | indicate open access with a clear free shackle end | Release / Clear / Stay open | 1200ms |
 | [eye](icon-reviews/eye.md) | attend to or inspect a visible region | Notice / Follow / Center | 1400ms |
 | [sparkles](icon-reviews/sparkles.md) | a small moment of discovery or emphasis | Gather / Glint / Echo | 1180ms |
 | [sun](icon-reviews/sun.md) | daylight or a light appearance | Warm / Radiate / Rest | 1160ms |
@@ -141,6 +142,10 @@ The user requested retaining and committing these four, then corrected the selec
 
 ## Focused refinement 06 — Actions and access
 
-**Check, Close, Plus, Lock** now have the focused four-icon pass. The studio defaults to **Actions and access**. Check traces its ascending stroke before a tip response; Close tightens along fixed diagonals; Plus opens its axes in sequence with individual endpoint responses; Lock holds tension above a fixed housing. Rounded contours, clean crossings and closed-lock identity preserve compact reading. Each has an individual Interface Craft critique, a separate timing source and [browser evidence](motion-evidence/refinement-06/). The previous 64 performances retain their tracks.
+**Check, Close, Plus, Lock** received the focused four-icon pass (the original Close/Plus gestures below were subsequently rejected and replaced). The studio defaults to **Actions and access**. Check traces its ascending stroke before a tip response; Close tightens along fixed diagonals; Plus opens its axes in sequence with individual endpoint responses; Lock holds tension above a fixed housing. Rounded contours, clean crossings and closed-lock identity preserve compact reading. Each has an individual Interface Craft critique, a separate timing source and [browser evidence](motion-evidence/refinement-06/). The previous 64 performances retain their tracks.
 
-**Status: 60 refined, 8 awaiting the focused pass.** Pending: **Eye, Sparkles, Sun, Moon, Terminal, CPU, Chart, Bolt**. These eight retain their earlier authored semantic motions. Do not call them unanimated or treat the broad-rollout reports as evidence of the later focused pass. “Refined” records the completed implementation and rendered review, not user acceptance of every new iteration.
+**Status: 61 refined of 69, 8 awaiting the focused pass.** Pending: **Eye, Sparkles, Sun, Moon, Terminal, CPU, Chart, Bolt**. These eight retain their earlier authored semantic motions. Do not call them unanimated or treat the broad-rollout reports as evidence of the later focused pass. “Refined” records the completed implementation and rendered review, not user acceptance of every new iteration.
+
+### Semantic correction and Unlock state — 2026-09-10
+
+The user rejected Close and Plus as semantically weak. Close now marks two fixed diagonals in sequence and finishes at the crossing-out tip. Plus inserts its upright into a waiting crossbar; the response travels from their registration to the bar ends. **Unlock** is new: its shackle starts visibly open, pivots farther around one seated foot, and settles open. Lock and Check retain their prior tracks. Actions and access now presents **Close, Plus, Lock, Unlock**; Check remains under Action controls. Current [reviews](icon-reviews/unlock.md) and [evidence](motion-evidence/refinement-06-rework/) supersede the old Close/Plus performances. This is implementation and rendered-review status, not a claim of user acceptance or npm publication.

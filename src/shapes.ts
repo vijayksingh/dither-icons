@@ -1,3 +1,5 @@
+import {LOCK_ART} from './motions/lock';
+import {UNLOCK_REST_TRANSFORM} from './motions/unlock';
 import {SAVE_ART} from './motions/save-preferences';
 import {EXPLORER_ART} from './motions/file-explorer';
 import {EXPAND_ART} from './motions/expand-view';
@@ -53,8 +55,8 @@ export const definitions = [
  def('home','Interface','The doorway rises to welcome you.',p([[2,11],[12,2],[22,11],[20,11],[20,21],[4,21],[4,11]]),r(10,14,4,7,'rise')),
  def('settings','Interface','A measured quarter turn.',part([...ring(12,12,7),...rect(10,2,4,4),...rect(10,18,4,4),...rect(2,10,4,4),...rect(18,10,4,4),...rect(4,4,3,3),...rect(17,17,3,3),...rect(17,4,3,3),...rect(4,17,3,3)],'turn')),
  def('check','Interface','A confirmation lands into place.',l([[4,12],[9,17],[19,6]],'draw')),
- def('close','Interface','Two diagonals give a short emphasis.',part([...line([[5,5],[18,18]]),...line([[18,5],[5,18]])],'pulse')),
- def('plus','Interface','The cross expands once.',part([...rect(10,3,4,18),...rect(3,10,18,4)],'pulse')),
+ def('close','Interface','Two deliberate diagonal strokes cross out.',part([...line([[5,5],[18,18]]),...line([[18,5],[5,18]])],'pulse')),
+ def('plus','Interface','The upright registers; the crossbar responds.',part([...rect(10,3,4,18),...rect(3,10,18,4)],'pulse')),
  def('arrow-right','Navigation','Forward intent follows the arrow.',part([...rect(3,10,14,4),...poly([[13,3],[22,12],[13,21]])],'slide')),
  def('arrow-up','Navigation','An upward nudge.',part([...rect(10,7,4,14),...poly([[3,11],[12,2],[21,11]])],'rise')),
  def('external-link','Navigation','The arrow leaves the frame.',l([[11,4],[3,4],[3,20],[19,20],[19,12]]),part([...line([[11,11],[20,2]]),...line([[13,2],[20,2],[20,9]])],'rise')),
@@ -68,7 +70,8 @@ export const definitions = [
  def('message','Communication','A message arrives into the bubble.',p([[2,3],[22,3],[22,17],[10,17],[4,22],[4,17],[2,17]]),part([...rect(6,8,2,2),...rect(11,8,2,2),...rect(16,8,2,2)],'blink')),
  def('send','Communication','A paper plane takes a short flight.',p([[2,10],[22,2],[14,22],[10,14]],'rise')),
  def('user','Interface','A small greeting from the avatar.',o(12,7,5,'ring'),p([[3,22],[3,18],[7,14],[17,14],[21,18],[21,22]])),
- def('lock','Interface','The shackle lifts from its body.',l([[6,10],[6,5],[9,2],[14,2],[17,5],[17,10]],'rise'),p([[4,10],[20,10],[20,22],[4,22]])),
+ def('lock','Interface','The closed shackle holds under tension.',l([[6,10],[6,5],[9,2],[14,2],[17,5],[17,10]],'rise'),p([[4,10],[20,10],[20,22],[4,22]])),
+ {...def('unlock','Interface','An open shackle clears its free end while its right foot stays seated.',{...vector(LOCK_ART.shackle),transform:UNLOCK_REST_TRANSFORM},vector(LOCK_ART.body+LOCK_ART.keyhole)),label:'Unlock',keywords:['unlocked','open lock','access','permissions','editable']},
  def('eye','Interface','The pupil takes a quick look.',l([[2,11],[7,6],[16,6],[21,11],[16,16],[7,16],[2,11]]),r(10,9,4,5,'slide')),
  def('play','Media','A playhead moves forward.',p([[6,3],[22,12],[6,21]],'slide')),
  def('pause','Media','Playback settles into pause.',part([...rect(5,3,5,18),...rect(14,3,5,18)],'pulse')),

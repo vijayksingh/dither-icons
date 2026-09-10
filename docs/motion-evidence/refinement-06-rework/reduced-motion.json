@@ -1,0 +1,116 @@
+{
+  "animations": 0,
+  "icons": [
+    {
+      "name": "close",
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "close-occlusion",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "part": "close-down",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "part": "mark-edge",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "part": "close-up",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "part": "cross-edge",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "part": "cross-finish",
+          "transform": "none"
+        }
+      ]
+    },
+    {
+      "name": "plus",
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "plus-occlusion",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "part": "plus-across",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "part": "plus-wave-right",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "part": "plus-wave-left",
+          "transform": "none"
+        },
+        {
+          "opacity": "1",
+          "part": "plus-above",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "part": "addition-finish",
+          "transform": "none"
+        }
+      ]
+    },
+    {
+      "name": "lock",
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "lock-shackle",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "part": "lock-seats",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "part": "lock-response",
+          "transform": "none"
+        }
+      ]
+    },
+    {
+      "name": "unlock",
+      "parts": [
+        {
+          "opacity": "1",
+          "part": "unlock-shackle",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "part": "unlock-end",
+          "transform": "none"
+        },
+        {
+          "opacity": "0",
+          "part": "unlock-gap",
+          "transform": "none"
+        }
+      ]
+    }
+  ],
+  "reduced": true
+}

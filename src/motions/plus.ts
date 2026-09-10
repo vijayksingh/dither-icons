@@ -1,31 +1,32 @@
 import {actor,light,motion,pose} from './authoring';
 
-/* PLUS / make room from a stable center
- *    0ms  rounded arms share one uninterrupted crossing
- *  110ms  horizontal arm gathers; vertical stays readable
- *  300ms  horizontal opens; its endpoints register
- *  365ms  horizontal tip marks answer
- *  430ms  vertical completes the added space
- *  495ms  vertical tip marks answer that later arrival
- *  590ms  both extents hold, then ease home without recoil
- *  760ms  exterior accents clear
- *  930ms  original proportions restored
- * 1100ms  exact rest
- * MOT-03/05/07/08/16: two axes, two ordered arrivals, one center.
+/* PLUS / add the upright; let the crossbar receive it
+ *    0ms  complete plus, both arms present
+ *  130ms  upright lifts along its own axis; crossbar waits
+ *  300ms  crossbar begins to yield to the approaching upright
+ *  340ms  upright registers; both centers share the small press
+ *  420ms  both settle vertically; response travels along the crossbar
+ *  600ms  the response reaches its two ends
+ *  655ms  a brief outward finish acknowledges the addition
+ *  810ms  accents clear; original crossbar length returns
+ * 1080ms  exact neutral
+ * MOT-01/03/05/08/16: insert, receive, propagate. Never become minus.
  */
-export const PLUS_TIMING={rest:0,gather:110,follow:190,across:300,acrossEcho:365,above:430,aboveEcho:495,hold:590,clear:760,home:930,settle:1100};
+export const PLUS_TIMING={rest:0,lift:130,receive:300,register:340,flow:420,arrive:600,finish:655,home:810,settle:1080};
 export const PLUS_ART={
  bar:'M4.6 10.9H19.4a1.1 1.1 0 0 1 0 2.2H4.6a1.1 1.1 0 0 1 0-2.2Z',
  centerline:'M4.6 12H19.4',
- tips:'M1.75 11.45v1.1M22.25 11.45v1.1',
+ wave:'M12 12h1.2',
+ tips:'M1.9 11.7l-.65.3.65.3M22.1 11.7l.65.3-.65.3',
 };
-const ARM={origin:'12px 12px',rest:'scaleX(1)',gather:'scaleX(.965)',open:'scaleX(1.1)'};
+const UPRIGHT={origin:'12px 12px',rest:'translateX(0px)',lift:'translateX(-1.8px)',press:'translateX(.25px)'};
+const CROSSBAR={origin:'12px 12px',rest:'translateY(0px) scaleX(1)',press:'translateY(.25px) scaleX(1.04)',spread:'translateY(0px) scaleX(1.04)'};
 const T=PLUS_TIMING;
-const vertical=[pose(T.rest,ARM.rest),pose(T.gather,ARM.rest),pose(T.follow,ARM.gather),pose(T.above,ARM.open),pose(T.hold,ARM.open),pose(T.home,ARM.rest),pose(T.settle,ARM.rest)];
-export const plus=motion(T.settle,'A little more room. In both directions.',['Across','Open','Ease'],[
- actor('plus-across',ARM.origin,[pose(T.rest,ARM.rest),pose(T.gather,ARM.gather),pose(T.across,ARM.open),pose(T.hold,ARM.open),pose(T.home,ARM.rest),pose(T.settle,ARM.rest)]),
- actor('plus-above',ARM.origin,vertical),
- actor('plus-occlusion',ARM.origin,vertical),
- actor('across-tips',ARM.origin,[light(T.rest,0,'scaleY(.4)'),light(T.across,0,'scaleY(.4)'),light(T.acrossEcho,.75,'scaleY(1)'),light(T.hold,0,'scaleY(.7)'),light(T.settle,0,'scaleY(.4)')]),
- actor('above-tips',ARM.origin,[light(T.rest,0,'scaleY(.4)'),light(T.above,0,'scaleY(.4)'),light(T.aboveEcho,.75,'scaleY(1)'),light(T.clear,0,'scaleY(.7)'),light(T.settle,0,'scaleY(.4)')]),
+const vertical=[pose(T.rest,UPRIGHT.rest),pose(T.lift,UPRIGHT.lift,'cubic-bezier(.5,0,.8,.4)'),pose(T.register,UPRIGHT.press),pose(T.flow,UPRIGHT.rest),pose(T.settle,UPRIGHT.rest)];
+export const plus=motion(T.settle,'Add the upright. Let the crossbar answer.',['Insert','Receive','Extend'],[
+ actor('plus-across',CROSSBAR.origin,[pose(T.rest,CROSSBAR.rest),pose(T.receive,CROSSBAR.rest),pose(T.register,CROSSBAR.press),pose(T.flow,CROSSBAR.spread),pose(T.arrive,CROSSBAR.spread),pose(T.home,CROSSBAR.rest),pose(T.settle,CROSSBAR.rest)]),
+ actor('plus-above',UPRIGHT.origin,vertical),
+ actor('plus-occlusion',UPRIGHT.origin,vertical),
+ ...['left','right'].map(side=>actor(`plus-wave-${side}`,CROSSBAR.origin,[light(T.rest,0,'translateX(0px)'),light(T.register,0,'translateX(0px)'),light(T.flow,.8,'translateX(0px)'),light(T.arrive,.8,'translateX(6.2px)'),light(T.finish,0,'translateX(6.2px)'),light(T.settle,0,'translateX(0px)')])),
+ actor('addition-finish',CROSSBAR.origin,[light(T.rest,0,'scaleX(.97)'),light(T.arrive,0,'scaleX(.97)'),light(T.finish,.75,'scaleX(1)'),light(T.home,0,'scaleX(1.04)'),light(T.settle,0,'scaleX(.97)')]),
 ]);

@@ -2,7 +2,7 @@
 
 **A little grain. A lot of character.**
 
-68 original animated SVG icons for React. Clean vector contours, fine ordered dither, and a small gesture that belongs to each icon: a bell rings, a tray catches, a lid opens.
+69 original animated SVG icons for React. Clean vector contours, fine ordered dither, and a small gesture that belongs to each icon: a bell rings, a tray catches, a lid opens.
 
 [Get started](#get-started) · [Documentation](public/docs/introduction.md) · [For AI agents](AI.md) · [Contributing](CONTRIBUTING.md) · [MIT license](LICENSE)
 
@@ -19,9 +19,9 @@
 - **Context for your agent.** An exact export manifest, integration guide and labeled visual references ship alongside the code.
 
 <details>
-<summary>See all 68 icons</summary>
+<summary>See all 69 icons</summary>
 
-![All 68 Dither Icons, labeled with their React component exports.](public/reference/icons.svg)
+![All 69 Dither Icons, labeled with their React component exports.](public/reference/icons.svg)
 
 Browse the [machine-readable collection](icons.json) or the [individual motion catalog](docs/MOTION-CATALOG.md).
 
@@ -74,6 +74,19 @@ export function DownloadButton({ onDownload }: { onDownload: () => void }) {
 ```
 
 `di-trigger` lets the whole control's hover, focus or tap trigger the icon. The visible text names this button; use `aria-label` for an icon-only control. Your application owns the action, loading state and result. The gesture never substitutes for confirmation that an operation succeeded.
+
+### Lock and Unlock
+
+`UnlockIcon` is new on this branch and **not included in npm 0.1.2**; it will ship with the next tagged release. Both icons share a housing, but their resting states stay distinct with motion disabled. Select them from your application's real state:
+
+```tsx
+import { LockIcon, UnlockIcon } from '@unlocalhosted/dither-icons';
+
+export function AccessState({ locked }: { locked: boolean }) {
+  const Icon = locked ? LockIcon : UnlockIcon;
+  return <Icon size={24} texture="outline" title={locked ? 'Locked' : 'Unlocked'} />;
+}
+```
 
 ### Choose a material
 
@@ -165,7 +178,7 @@ Created by [Vijay Singh](https://github.com/vijayksingh) / Unlocalhosted. Find m
 
 ## Social previews
 
-The production build generates 1200 × 630 PNG previews and crawler-readable HTML for the home page, guides, motion studio, AI page, and all 68 icons. Share an icon URL to show that icon in the preview. Open Graph and Twitter card metadata are present in the initial HTML; crawlers do not need JavaScript.
+The production build generates 1200 × 630 PNG previews and crawler-readable HTML for the home page, guides, motion studio, AI page, and all 69 icons. Share an icon URL to show that icon in the preview. Open Graph and Twitter card metadata are present in the initial HTML; crawlers do not need JavaScript.
 
 The canonical origin defaults to `https://dithered.dev`. To build for another origin:
 

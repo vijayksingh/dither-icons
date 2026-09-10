@@ -36,7 +36,7 @@ A small library with a particular point of view. Here’s how to make it part of
 
 ## Fine grain. Real geometry.
 
-Dither Icons is a collection of 68 original SVG icons for React. Smooth vector contours carry a fine ordered texture. Each icon has its own short, meaningful gesture: a bell rings, a tray catches, a lid opens.
+Dither Icons is a collection of 69 original SVG icons for React. Smooth vector contours carry a fine ordered texture. Each icon has its own short, meaningful gesture: a bell rings, a tray catches, a lid opens.
 
 ![The same Download icon in dither, solid and outline textures.](/reference/textures.svg)
 
@@ -310,8 +310,8 @@ CSS hover animation ends when hover ends. A standalone SVG does not expose React
 | home | HomeIcon | A familiar door. A little light to greet you. |
 | settings | SettingsIcon | A measured turn. A precise little click. |
 | check | CheckIcon | Seat the stroke. Let the tip affirm. |
-| close | CloseIcon | Draw inward. Meet at the crossing. |
-| plus | PlusIcon | A little more room. In both directions. |
+| close | CloseIcon | One stroke. Cross it out. |
+| plus | PlusIcon | Add the upright. Let the crossbar answer. |
 | arrow-right | ArrowRightIcon | The head leads. The tail holds its place. |
 | arrow-up | ArrowUpIcon | Rise first. Let the weight follow. |
 | external-link | ExternalLinkIcon | Reach beyond the frame. Keep the source. |
@@ -326,6 +326,7 @@ CSS hover animation ends when hover ends. A standalone SVG does not expose React
 | send | SendIcon | A folded wing. A small rush of air. |
 | user | UserIcon | A small nod. A warm acknowledgment. |
 | lock | LockIcon | Take a little tension. Hold securely. |
+| unlock | UnlockIcon | Release the free end. Leave the way open. |
 | eye | EyeIcon | A glance finds its subject, then returns. |
 | play | PlayIcon | The first impulse. Then momentum. |
 | pause | PauseIcon | Two soft stops. Then stillness. |
@@ -376,4 +377,4 @@ CSS hover animation ends when hover ends. A standalone SVG does not expose React
 
 ![Three textures](/reference/textures.svg)
 
-![All 68 labeled icons](/reference/icons.svg)
+![All 69 labeled icons](/reference/icons.svg)

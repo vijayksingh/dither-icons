@@ -37,3 +37,7 @@ Reviewed 10% preparation, 28% approach to tension, 40/45% shoulder response, 62%
 ![Lock is fourth, the shoulders answer the hold](../motion-evidence/refinement-06/dither-45.png)
 
 [Rest](../motion-evidence/refinement-06/pose-0.png) · [Small sizes](../motion-evidence/refinement-06/size-and-export.png) · [Batch validation](../VALIDATION.md#focused-refinement-06--2026-09-10)
+
+## Paired open state — 2026-09-10
+
+[Unlock](unlock.md) now shares this housing and shackle geometry, with a static open pose and its own timeline. Lock's held-tension performance is unchanged. The Motion studio shows both together in Actions and access. The host selects the appropriate icon from real state; hovering Lock never unlocks it. Current paired-state [browser evidence](../motion-evidence/refinement-06-rework/) supplements the original four-icon pass.

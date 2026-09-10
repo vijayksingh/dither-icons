@@ -1,0 +1,98 @@
+[
+  {
+    "name": "close",
+    "run": {
+      "result": {
+        "type": "object",
+        "value": [
+          {
+            "elapsed": 13.5,
+            "focused": "Play plus study",
+            "playing": "true"
+          },
+          {
+            "elapsed": 713.9000000059605,
+            "focused": "Play plus study",
+            "playing": "true"
+          },
+          {
+            "elapsed": 1413.5999999940395,
+            "focused": "Play plus study"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "plus",
+    "run": {
+      "result": {
+        "type": "object",
+        "value": [
+          {
+            "elapsed": 16.599999994039536,
+            "focused": "Play lock study",
+            "playing": "true"
+          },
+          {
+            "elapsed": 716.4000000059605,
+            "focused": "Play lock study",
+            "playing": "true"
+          },
+          {
+            "elapsed": 1416.2999999821186,
+            "focused": "Play lock study"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "lock",
+    "run": {
+      "result": {
+        "type": "object",
+        "value": [
+          {
+            "elapsed": 15.599999994039536,
+            "focused": "Play unlock study",
+            "playing": "true"
+          },
+          {
+            "elapsed": 716.1999999880791,
+            "focused": "Play unlock study",
+            "playing": "true"
+          },
+          {
+            "elapsed": 1414.9000000059605,
+            "focused": "Play unlock study"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "unlock",
+    "run": {
+      "result": {
+        "type": "object",
+        "value": [
+          {
+            "elapsed": 14.200000017881392,
+            "focused": null,
+            "playing": "true"
+          },
+          {
+            "elapsed": 714.2000000178814,
+            "focused": null,
+            "playing": "true"
+          },
+          {
+            "elapsed": 1414.9000000059605,
+            "focused": null
+          }
+        ]
+      }
+    }
+  }
+]

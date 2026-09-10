@@ -23,7 +23,7 @@ const Accent=({part,children}:{part:string;children:ReactNode})=><g data-part={p
 
 export function CraftedArtwork({name,draw,texture}:Props){
  if(!studies[name])return null;
- if(['check','close','plus','lock'].includes(name))return <ActionArtwork name={name} draw={draw} texture={texture}/>;
+ if(['check','close','plus','lock','unlock'].includes(name))return <ActionArtwork name={name} draw={draw} texture={texture}/>;
  if(['search','home','settings','user'].includes(name))return <EverydayArtwork name={name} draw={draw} texture={texture}/>;
  if(['save-preferences','file-explorer','expand-view','sign-out'].includes(name))return <PlatformActionsArtwork name={name} draw={draw} texture={texture}/>;
  if(['tokenize','embedding-lookup','attention-focus','batch-sampling'].includes(name))return <DataFlowArtwork name={name} draw={draw} texture={texture}/>;

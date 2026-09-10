@@ -1,0 +1,922 @@
+[
+  {
+    "icons": [
+      {
+        "name": "close",
+        "parts": [
+          {
+            "name": "close-occlusion",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "close-down",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "mark-edge",
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "name": "close-up",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "cross-edge",
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "name": "cross-finish",
+            "opacity": "0",
+            "transform": "matrix(0.65, 0, 0, 0.65, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "plus",
+        "parts": [
+          {
+            "name": "plus-occlusion",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "plus-across",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "plus-wave-right",
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "plus-wave-left",
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "plus-above",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "addition-finish",
+            "opacity": "0",
+            "transform": "matrix(0.97, 0, 0, 1, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "lock",
+        "parts": [
+          {
+            "name": "lock-shackle",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "lock-seats",
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "name": "lock-response",
+            "opacity": "0",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "unlock",
+        "parts": [
+          {
+            "name": "unlock-shackle",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "unlock-end",
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "name": "unlock-gap",
+            "opacity": "0",
+            "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+          }
+        ]
+      }
+    ],
+    "percent": "0"
+  },
+  {
+    "icons": [
+      {
+        "name": "close",
+        "parts": [
+          {
+            "name": "close-occlusion",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -0.765985, 0)"
+          },
+          {
+            "name": "close-down",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0.277672, 0)"
+          },
+          {
+            "name": "mark-edge",
+            "opacity": "0.129643",
+            "transform": "none"
+          },
+          {
+            "name": "close-up",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -0.765985, 0)"
+          },
+          {
+            "name": "cross-edge",
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "name": "cross-finish",
+            "opacity": "0",
+            "transform": "matrix(0.65, 0, 0, 0.65, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "plus",
+        "parts": [
+          {
+            "name": "plus-occlusion",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -1.77285, 0)"
+          },
+          {
+            "name": "plus-across",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "plus-wave-right",
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "plus-wave-left",
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "plus-above",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -1.77285, 0)"
+          },
+          {
+            "name": "addition-finish",
+            "opacity": "0",
+            "transform": "matrix(0.97, 0, 0, 1, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "lock",
+        "parts": [
+          {
+            "name": "lock-shackle",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1.00598, 0, 0)"
+          },
+          {
+            "name": "lock-seats",
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "name": "lock-response",
+            "opacity": "0",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "unlock",
+        "parts": [
+          {
+            "name": "unlock-shackle",
+            "opacity": "1",
+            "transform": "matrix(0.995887, 0.0906063, -0.0906063, 0.995887, 0, 0)"
+          },
+          {
+            "name": "unlock-end",
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "name": "unlock-gap",
+            "opacity": "0",
+            "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+          }
+        ]
+      }
+    ],
+    "percent": "15"
+  },
+  {
+    "icons": [
+      {
+        "name": "close",
+        "parts": [
+          {
+            "name": "close-occlusion",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0.676185, 0)"
+          },
+          {
+            "name": "close-down",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0.969087, 0)"
+          },
+          {
+            "name": "mark-edge",
+            "opacity": "0.462",
+            "transform": "none"
+          },
+          {
+            "name": "close-up",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0.676185, 0)"
+          },
+          {
+            "name": "cross-edge",
+            "opacity": "0.323",
+            "transform": "none"
+          },
+          {
+            "name": "cross-finish",
+            "opacity": "0",
+            "transform": "matrix(0.65, 0, 0, 0.65, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "plus",
+        "parts": [
+          {
+            "name": "plus-occlusion",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -0.172869, 0)"
+          },
+          {
+            "name": "plus-across",
+            "opacity": "1",
+            "transform": "matrix(1.03504, 0, 0, 1, 0, 0.218992)"
+          },
+          {
+            "name": "plus-wave-right",
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "plus-wave-left",
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "plus-above",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -0.172869, 0)"
+          },
+          {
+            "name": "addition-finish",
+            "opacity": "0",
+            "transform": "matrix(0.97, 0, 0, 1, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "lock",
+        "parts": [
+          {
+            "name": "lock-shackle",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1.055, 0, 0)"
+          },
+          {
+            "name": "lock-seats",
+            "opacity": "0.154286",
+            "transform": "none"
+          },
+          {
+            "name": "lock-response",
+            "opacity": "0",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "unlock",
+        "parts": [
+          {
+            "name": "unlock-shackle",
+            "opacity": "1",
+            "transform": "matrix(0.984862, 0.17334, -0.17334, 0.984862, 0, 0)"
+          },
+          {
+            "name": "unlock-end",
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "name": "unlock-gap",
+            "opacity": "0",
+            "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+          }
+        ]
+      }
+    ],
+    "percent": "30"
+  },
+  {
+    "icons": [
+      {
+        "name": "close",
+        "parts": [
+          {
+            "name": "close-occlusion",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 1.02516, 0)"
+          },
+          {
+            "name": "close-down",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0.000222154, 0)"
+          },
+          {
+            "name": "mark-edge",
+            "opacity": "0.011",
+            "transform": "none"
+          },
+          {
+            "name": "close-up",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 1.02516, 0)"
+          },
+          {
+            "name": "cross-edge",
+            "opacity": "0.6715",
+            "transform": "none"
+          },
+          {
+            "name": "cross-finish",
+            "opacity": "0",
+            "transform": "matrix(0.65, 0, 0, 0.65, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "plus",
+        "parts": [
+          {
+            "name": "plus-occlusion",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "plus-across",
+            "opacity": "1",
+            "transform": "matrix(1.04, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "plus-wave-right",
+            "opacity": "0.8",
+            "transform": "matrix(1, 0, 0, 1, 0.413333, 0)"
+          },
+          {
+            "name": "plus-wave-left",
+            "opacity": "0.8",
+            "transform": "matrix(1, 0, 0, 1, 0.413333, 0)"
+          },
+          {
+            "name": "plus-above",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "addition-finish",
+            "opacity": "0",
+            "transform": "matrix(0.97, 0, 0, 1, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "lock",
+        "parts": [
+          {
+            "name": "lock-shackle",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1.055, 0, 0)"
+          },
+          {
+            "name": "lock-seats",
+            "opacity": "0.735",
+            "transform": "none"
+          },
+          {
+            "name": "lock-response",
+            "opacity": "0.66",
+            "transform": "matrix(0.997143, 0, 0, 1, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "unlock",
+        "parts": [
+          {
+            "name": "unlock-shackle",
+            "opacity": "1",
+            "transform": "matrix(0.984808, 0.173648, -0.173648, 0.984808, 0, 0)"
+          },
+          {
+            "name": "unlock-end",
+            "opacity": "0.688095",
+            "transform": "none"
+          },
+          {
+            "name": "unlock-gap",
+            "opacity": "0.4",
+            "transform": "matrix(0.871429, 0, 0, 0.871429, 0, 0)"
+          }
+        ]
+      }
+    ],
+    "percent": "40"
+  },
+  {
+    "icons": [
+      {
+        "name": "close",
+        "parts": [
+          {
+            "name": "close-occlusion",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0.889793, 0)"
+          },
+          {
+            "name": "close-down",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "mark-edge",
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "name": "close-up",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0.889793, 0)"
+          },
+          {
+            "name": "cross-edge",
+            "opacity": "0.671053",
+            "transform": "none"
+          },
+          {
+            "name": "cross-finish",
+            "opacity": "0.5",
+            "transform": "matrix(0.883333, 0, 0, 0.883333, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "plus",
+        "parts": [
+          {
+            "name": "plus-occlusion",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "plus-across",
+            "opacity": "1",
+            "transform": "matrix(1.04, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "plus-wave-right",
+            "opacity": "0.8",
+            "transform": "matrix(1, 0, 0, 1, 4.13333, 0)"
+          },
+          {
+            "name": "plus-wave-left",
+            "opacity": "0.8",
+            "transform": "matrix(1, 0, 0, 1, 4.13333, 0)"
+          },
+          {
+            "name": "plus-above",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "addition-finish",
+            "opacity": "0",
+            "transform": "matrix(0.97, 0, 0, 1, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "lock",
+        "parts": [
+          {
+            "name": "lock-shackle",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1.05449, 0, 0)"
+          },
+          {
+            "name": "lock-seats",
+            "opacity": "0.423529",
+            "transform": "none"
+          },
+          {
+            "name": "lock-response",
+            "opacity": "0.4",
+            "transform": "matrix(1.03, 0, 0, 1, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "unlock",
+        "parts": [
+          {
+            "name": "unlock-shackle",
+            "opacity": "1",
+            "transform": "matrix(0.984808, 0.173648, -0.173648, 0.984808, 0, 0)"
+          },
+          {
+            "name": "unlock-end",
+            "opacity": "0.202381",
+            "transform": "none"
+          },
+          {
+            "name": "unlock-gap",
+            "opacity": "0.25",
+            "transform": "matrix(1.09643, 0, 0, 1.09643, 0, 0)"
+          }
+        ]
+      }
+    ],
+    "percent": "50"
+  },
+  {
+    "icons": [
+      {
+        "name": "close",
+        "parts": [
+          {
+            "name": "close-occlusion",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0.0987847, 0)"
+          },
+          {
+            "name": "close-down",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "mark-edge",
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "name": "close-up",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0.0987847, 0)"
+          },
+          {
+            "name": "cross-edge",
+            "opacity": "0.304211",
+            "transform": "none"
+          },
+          {
+            "name": "cross-finish",
+            "opacity": "0.5175",
+            "transform": "matrix(1.0775, 0, 0, 1.0775, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "plus",
+        "parts": [
+          {
+            "name": "plus-occlusion",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "plus-across",
+            "opacity": "1",
+            "transform": "matrix(1.03247, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "plus-wave-right",
+            "opacity": "0.101818",
+            "transform": "matrix(1, 0, 0, 1, 6.2, 0)"
+          },
+          {
+            "name": "plus-wave-left",
+            "opacity": "0.101818",
+            "transform": "matrix(1, 0, 0, 1, 6.2, 0)"
+          },
+          {
+            "name": "plus-above",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "addition-finish",
+            "opacity": "0.654545",
+            "transform": "matrix(0.996182, 0, 0, 1, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "lock",
+        "parts": [
+          {
+            "name": "lock-shackle",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 0.993767, 0, 0)"
+          },
+          {
+            "name": "lock-seats",
+            "opacity": "0.0952941",
+            "transform": "none"
+          },
+          {
+            "name": "lock-response",
+            "opacity": "0.09",
+            "transform": "matrix(1.061, 0, 0, 1, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "unlock",
+        "parts": [
+          {
+            "name": "unlock-shackle",
+            "opacity": "1",
+            "transform": "matrix(0.989158, 0.146853, -0.146853, 0.989158, 0, 0)"
+          },
+          {
+            "name": "unlock-end",
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "name": "unlock-gap",
+            "opacity": "0",
+            "transform": "matrix(1.09273, 0, 0, 1.09273, 0, 0)"
+          }
+        ]
+      }
+    ],
+    "percent": "60"
+  },
+  {
+    "icons": [
+      {
+        "name": "close",
+        "parts": [
+          {
+            "name": "close-occlusion",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "close-down",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "mark-edge",
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "name": "close-up",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "cross-edge",
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "name": "cross-finish",
+            "opacity": "0.05625",
+            "transform": "matrix(1.23125, 0, 0, 1.23125, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "plus",
+        "parts": [
+          {
+            "name": "plus-occlusion",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "plus-across",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "plus-wave-right",
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 3.93882, 0)"
+          },
+          {
+            "name": "plus-wave-left",
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 3.93882, 0)"
+          },
+          {
+            "name": "plus-above",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "addition-finish",
+            "opacity": "0",
+            "transform": "matrix(1.04, 0, 0, 1, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "lock",
+        "parts": [
+          {
+            "name": "lock-shackle",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 0.999433, 0, 0)"
+          },
+          {
+            "name": "lock-seats",
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "name": "lock-response",
+            "opacity": "0",
+            "transform": "matrix(1.03087, 0, 0, 1, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "unlock",
+        "parts": [
+          {
+            "name": "unlock-shackle",
+            "opacity": "1",
+            "transform": "matrix(0.999978, 0.00661632, -0.00661632, 0.999978, 0, 0)"
+          },
+          {
+            "name": "unlock-end",
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "name": "unlock-gap",
+            "opacity": "0",
+            "transform": "matrix(0.945455, 0, 0, 0.945455, 0, 0)"
+          }
+        ]
+      }
+    ],
+    "percent": "75"
+  },
+  {
+    "icons": [
+      {
+        "name": "close",
+        "parts": [
+          {
+            "name": "close-occlusion",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "close-down",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "mark-edge",
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "name": "close-up",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "cross-edge",
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "name": "cross-finish",
+            "opacity": "0",
+            "transform": "matrix(0.65, 0, 0, 0.65, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "plus",
+        "parts": [
+          {
+            "name": "plus-occlusion",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "plus-across",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "plus-wave-right",
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "plus-wave-left",
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "plus-above",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "addition-finish",
+            "opacity": "0",
+            "transform": "matrix(0.97, 0, 0, 1, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "lock",
+        "parts": [
+          {
+            "name": "lock-shackle",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "lock-seats",
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "name": "lock-response",
+            "opacity": "0",
+            "transform": "matrix(0.95, 0, 0, 1, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "unlock",
+        "parts": [
+          {
+            "name": "unlock-shackle",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "name": "unlock-end",
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "name": "unlock-gap",
+            "opacity": "0",
+            "transform": "matrix(0.7, 0, 0, 0.7, 0, 0)"
+          }
+        ]
+      }
+    ],
+    "percent": "100"
+  }
+]

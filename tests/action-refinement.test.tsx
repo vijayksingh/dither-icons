@@ -2,7 +2,8 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import React from 'react';
 import {renderToStaticMarkup} from 'react-dom/server';
-import {DitherIcon} from '../src';
+import {DitherIcon,UnlockIcon} from '../src';
+import {unlock,UNLOCK_GEOMETRY,UNLOCK_REST_TRANSFORM,UNLOCK_TIMING} from '../src/motions/unlock';
 import {check,CHECK_ART,CHECK_TIMING} from '../src/motions/check';
 import {close,CLOSE_TIMING} from '../src/motions/close';
 import {plus,PLUS_TIMING} from '../src/motions/plus';
@@ -32,22 +33,40 @@ test('check trace stays on the drawn ascending stroke and reaches its tip before
  hiddenThrough(check,'check-tip',CHECK_TIMING.arrive);
 });
 
-test('crossings retain matching moving knockouts and constant symbol angles',()=>{
+test('crossings keep their knockout on the moving stroke clock; finishes wait for their own cause',()=>{
  for(const [study,visible,knockout] of [[close,'close-up','close-occlusion'],[plus,'plus-above','plus-occlusion']] as const){
   assert.deepEqual(track(study,visible).frames,track(study,knockout).frames);
   assert.equal(track(study,visible).origin,track(study,knockout).origin);
-  for(const part of study===close?['close-up','close-down']:['plus-above','plus-across']){
-   assert.equal(track(study,part).origin,'12px 12px');
-   for(const frame of track(study,part).frames){
-    assert.match(frame.transform!,/^scaleX\([\d.]+\)$/,'no rotation or detached center');
-    assert.ok(Number(frame.transform!.match(/[\d.]+/)![0])>=.9);
-   }
-  }
+  for(const frame of track(study,visible).frames)assert.match(frame.transform!,/^translateX\([-\d.]+px\)$/,'stroke slides on its existing axis; it does not rotate into another symbol');
  }
- hiddenThrough(close,'cross-response',CLOSE_TIMING.meet);
- hiddenThrough(plus,'across-tips',PLUS_TIMING.across);
- hiddenThrough(plus,'above-tips',PLUS_TIMING.above);
- assert.ok(PLUS_TIMING.acrossEcho<PLUS_TIMING.above,'first axis responds before the second arrives');
+ hiddenThrough(close,'cross-finish',CLOSE_TIMING.cross);
+ assert.ok(CLOSE_TIMING.mark<CLOSE_TIMING.cross);
+ for(const part of ['plus-wave-left','plus-wave-right'])hiddenThrough(plus,part,PLUS_TIMING.register);
+ hiddenThrough(plus,'addition-finish',PLUS_TIMING.arrive);
+ const receiver=track(plus,'plus-across');
+ assert.equal(receiver.frames.find(f=>f.at===PLUS_TIMING.receive)!.transform,receiver.frames[0].transform,'crossbar waits for the approaching stroke');
+ for(const at of [PLUS_TIMING.register,PLUS_TIMING.flow]){
+  const stemY=Number(track(plus,'plus-above').frames.find(f=>f.at===at)!.transform!.match(/-?[\d.]+/)![0]);
+  const barY=Number(receiver.frames.find(f=>f.at===at)!.transform!.match(/-?[\d.]+/)![0]);
+  assert.equal(stemY,barY,'after registration both strokes share the same vertical press and release');
+ }
+});
+
+test('UnlockIcon is open at rest and keeps a clear free end throughout its motion',()=>{
+ assert.equal(UNLOCK_REST_TRANSFORM,'rotate(18 16.4 11.3)');
+ const {pivot,free,restAngle}=UNLOCK_GEOMETRY;
+ for(const frame of track(unlock,'unlock-shackle').frames){
+  const angle=(restAngle+Number(frame.transform!.match(/-?[\d.]+/)![0]))*Math.PI/180;
+  const freeY=pivot[1]+(free[0]-pivot[0])*Math.sin(angle);
+  // Include the full shackle thickness: even its lower edge clears the housing.
+  assert.ok(freeY+Math.sin(angle)<10.3-1,'a real gap remains above the housing');
+ }
+ assert.equal(track(unlock,'unlock-shackle').origin,`${pivot[0]}px ${pivot[1]}px`);
+ hiddenThrough(unlock,'unlock-end',UNLOCK_TIMING.release);
+ hiddenThrough(unlock,'unlock-gap',UNLOCK_TIMING.light);
+ const svg=renderToStaticMarkup(<UnlockIcon texture="solid"/>);
+ assert.match(svg,/data-icon="unlock"/);
+ assert.ok(svg.includes(`transform="${UNLOCK_REST_TRANSFORM}"`),'open pose is SVG geometry, not a runtime-only transform');
 });
 
 test('lock keeps the drawn shackle feet anchored beneath the fixed housing',()=>{
@@ -68,7 +87,7 @@ test('lock keeps the drawn shackle feet anchored beneath the fixed housing',()=>
 
 test('multiple action instances preserve isolated, resolvable artwork masks in all materials',()=>{
  for(const texture of ['dither','solid','outline'] as const){
-  const svg=renderToStaticMarkup(<>{['check','close','plus','lock','close','plus','lock'].map((name,i)=><DitherIcon key={i} name={name} texture={texture}/>)}</>);
+  const svg=renderToStaticMarkup(<>{['check','close','plus','lock','unlock','close','plus','unlock'].map((name,i)=><DitherIcon key={i} name={name} texture={texture}/>)}</>);
   const ids=[...svg.matchAll(/<mask id="([^"]+)"/g)].map(m=>m[1]);
   assert.equal(ids.length,new Set(ids).size);
   for(const [,id] of svg.matchAll(/mask="url\(#([^)]+)\)"/g))assert.ok(ids.includes(id));

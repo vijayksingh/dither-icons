@@ -1,0 +1,98 @@
+[
+  {
+    "name": "close",
+    "animations": [
+      {
+        "name": "di-close-close-occlusion",
+        "state": "running"
+      },
+      {
+        "name": "di-close-close-down",
+        "state": "running"
+      },
+      {
+        "name": "di-close-mark-edge",
+        "state": "running"
+      },
+      {
+        "name": "di-close-close-up",
+        "state": "running"
+      },
+      {
+        "name": "di-close-cross-edge",
+        "state": "running"
+      },
+      {
+        "name": "di-close-cross-finish",
+        "state": "running"
+      }
+    ],
+    "hovered": true
+  },
+  {
+    "name": "plus",
+    "animations": [
+      {
+        "name": "di-plus-plus-occlusion",
+        "state": "running"
+      },
+      {
+        "name": "di-plus-plus-across",
+        "state": "running"
+      },
+      {
+        "name": "di-plus-plus-wave-right",
+        "state": "running"
+      },
+      {
+        "name": "di-plus-plus-wave-left",
+        "state": "running"
+      },
+      {
+        "name": "di-plus-plus-above",
+        "state": "running"
+      },
+      {
+        "name": "di-plus-addition-finish",
+        "state": "running"
+      }
+    ],
+    "hovered": true
+  },
+  {
+    "name": "lock",
+    "animations": [
+      {
+        "name": "di-lock-lock-shackle",
+        "state": "running"
+      },
+      {
+        "name": "di-lock-lock-seats",
+        "state": "running"
+      },
+      {
+        "name": "di-lock-lock-response",
+        "state": "running"
+      }
+    ],
+    "hovered": true
+  },
+  {
+    "name": "unlock",
+    "animations": [
+      {
+        "name": "di-unlock-unlock-shackle",
+        "state": "running"
+      },
+      {
+        "name": "di-unlock-unlock-end",
+        "state": "running"
+      },
+      {
+        "name": "di-unlock-unlock-gap",
+        "state": "running"
+      }
+    ],
+    "hovered": true
+  }
+]

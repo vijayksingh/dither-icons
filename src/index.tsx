@@ -79,6 +79,7 @@ export const MessageIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(
 export const SendIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function SendIcon(props,ref){return <DitherIcon {...props} name="send" ref={ref}/>;});
 export const UserIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function UserIcon(props,ref){return <DitherIcon {...props} name="user" ref={ref}/>;});
 export const LockIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function LockIcon(props,ref){return <DitherIcon {...props} name="lock" ref={ref}/>;});
+export const UnlockIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function UnlockIcon(props,ref){return <DitherIcon {...props} name="unlock" ref={ref}/>;});
 export const EyeIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function EyeIcon(props,ref){return <DitherIcon {...props} name="eye" ref={ref}/>;});
 export const PlayIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function PlayIcon(props,ref){return <DitherIcon {...props} name="play" ref={ref}/>;});
 export const PauseIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function PauseIcon(props,ref){return <DitherIcon {...props} name="pause" ref={ref}/>;});

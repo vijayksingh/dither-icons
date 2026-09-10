@@ -13,3 +13,5 @@
 Regenerate the SVG board with `npx tsx docs/motion-evidence/refinement-06/render-reference.tsx`. Standalone CSS hover playback stops on pointer departure; React supplies completion after departure. See [individual reviews](../../MOTION-CATALOG.md#focused-refinement-06--actions-and-access) and [validation](../../VALIDATION.md#focused-refinement-06--2026-09-10).
 
 `motion-off.json` records cancellation during replay: disabled study controls, zero animations, original transforms and hidden accents. `responsive.json` records the emulated 390 CSS-pixel layout: two 172px columns with no horizontal overflow. The narrow screenshot output was scaled by the browser surface; actual-size drawing review uses the SVG board above.
+
+**Superseded after user feedback:** Close's contraction and Plus's expansion were rejected. Their current replacements and the new Unlock state are documented in [refinement-06-rework](../refinement-06-rework/). Check and Lock retain the performances recorded here.

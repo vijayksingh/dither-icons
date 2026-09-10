@@ -4,7 +4,7 @@ A small library with a particular point of view. Here’s how to make it part of
 
 ## Fine grain. Real geometry.
 
-Dither Icons is a collection of 68 original SVG icons for React. Smooth vector contours carry a fine ordered texture. Each icon has its own short, meaningful gesture: a bell rings, a tray catches, a lid opens.
+Dither Icons is a collection of 69 original SVG icons for React. Smooth vector contours carry a fine ordered texture. Each icon has its own short, meaningful gesture: a bell rings, a tray catches, a lid opens.
 
 ![The same Download icon in dither, solid and outline textures.](/reference/textures.svg)
 
