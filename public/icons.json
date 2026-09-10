@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "package": "@unlocalhosted/dither-icons",
   "version": "0.1.2",
-  "count": 69,
+  "count": 73,
   "license": "MIT",
   "installation": {
     "publishedToNpm": true,
@@ -1366,6 +1366,104 @@
           "Open",
           "Leave",
           "Release"
+        ]
+      }
+    },
+    {
+      "name": "arrow-left",
+      "component": "ArrowLeftIcon",
+      "label": "Back",
+      "category": "Navigation",
+      "description": "Return to the preceding page or containing workspace.",
+      "keywords": [
+        "back",
+        "previous",
+        "return",
+        "arrow left",
+        "dashboard"
+      ],
+      "page": "/icons/arrow-left",
+      "motion": {
+        "caption": "Return to where you came from.",
+        "durationMs": 1140,
+        "stages": [
+          "Recall",
+          "Return",
+          "Arrive"
+        ]
+      }
+    },
+    {
+      "name": "history",
+      "component": "HistoryIcon",
+      "label": "History",
+      "category": "Navigation",
+      "description": "Revisit earlier activity or saved workspace versions.",
+      "keywords": [
+        "past",
+        "activity",
+        "recent",
+        "clock",
+        "versions",
+        "checkpoints"
+      ],
+      "page": "/icons/history",
+      "motion": {
+        "caption": "Turn back the clock. Find an earlier moment.",
+        "durationMs": 1460,
+        "stages": [
+          "Rewind",
+          "Recall",
+          "Hold"
+        ]
+      }
+    },
+    {
+      "name": "panel-left-close",
+      "component": "PanelLeftCloseIcon",
+      "label": "Collapse Panel",
+      "category": "Interface",
+      "description": "Hide the left drawer while retaining the active workspace.",
+      "keywords": [
+        "hide file explorer",
+        "close sidebar",
+        "drawer",
+        "collapse",
+        "editor"
+      ],
+      "page": "/icons/panel-left-close",
+      "motion": {
+        "caption": "Tuck the drawer away. Keep your workspace.",
+        "durationMs": 1460,
+        "stages": [
+          "Withdraw",
+          "Close",
+          "Latch"
+        ]
+      }
+    },
+    {
+      "name": "zoom-out",
+      "component": "ZoomOutIcon",
+      "label": "Zoom Out",
+      "category": "Navigation",
+      "description": "Reduce magnification to reveal the surrounding map.",
+      "keywords": [
+        "map",
+        "zoom",
+        "magnification",
+        "minus",
+        "context",
+        "atlas"
+      ],
+      "page": "/icons/zoom-out",
+      "motion": {
+        "caption": "Step back. See what surrounds it.",
+        "durationMs": 1380,
+        "stages": [
+          "Frame",
+          "Recede",
+          "Reveal"
         ]
       }
     }

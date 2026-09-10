@@ -1,3 +1,7 @@
+import {BACK_ART} from './motions/arrow-left';
+import {HISTORY_ART} from './motions/history';
+import {PANEL_CLOSE_ART} from './motions/panel-left-close';
+import {ZOOM_OUT_ART} from './motions/zoom-out';
 import {TERMINAL_ART} from './motions/terminal';
 import {CPU_ART} from './motions/cpu';
 import {CHART_ART} from './motions/chart';
@@ -124,6 +128,10 @@ export const definitions = [
  {...def('file-explorer','Development','Reveal the file tree while retaining the active file.',vector(EXPLORER_ART.frame)),label:'File Explorer',keywords:['sidebar','panel','files','editor','show explorer']},
  {...def('expand-view','Interface','Make room around the current visualizer.',vector(EXPAND_ART.corner)),label:'Expand View',keywords:['expand','maximize','fullscreen','visualizer','enlarge']},
  {...def('sign-out','Interface','Leave the authenticated account session.',vector(EXIT_ART.frame),vector(EXIT_ART.arrow)),label:'Sign Out',keywords:['logout','log out','account','session','exit']},
+ {...def('arrow-left','Navigation','Return to the preceding page or containing workspace.',{...vector(BACK_ART.arrow),stroke:true}),label:'Back',keywords:['back','previous','return','arrow left','dashboard']},
+ {...def('history','Navigation','Revisit earlier activity or saved workspace versions.',{...vector(HISTORY_ART.ring),stroke:true},{...vector(HISTORY_ART.head),stroke:true},{...vector(HISTORY_ART.minute),stroke:true},{...vector(HISTORY_ART.hour),stroke:true}),label:'History',keywords:['past','activity','recent','clock','versions','checkpoints']},
+ {...def('panel-left-close','Interface','Hide the left drawer while retaining the active workspace.',vector(PANEL_CLOSE_ART.frame),vector(PANEL_CLOSE_ART.panel)),label:'Collapse Panel',keywords:['hide file explorer','close sidebar','drawer','collapse','editor']},
+ {...def('zoom-out','Navigation','Reduce magnification to reveal the surrounding map.',vector(ZOOM_OUT_ART.body),{...vector(ZOOM_OUT_ART.minus),stroke:true}),label:'Zoom Out',keywords:['map','zoom','magnification','minus','context','atlas']},
 ] as const;
 export type IconName = typeof definitions[number]['name'];
 

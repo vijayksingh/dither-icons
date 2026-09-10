@@ -144,3 +144,11 @@ export const SavePreferencesIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'
 export const FileExplorerIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function FileExplorerIcon(props,ref){return <DitherIcon {...props} name="file-explorer" ref={ref}/>;});
 export const ExpandViewIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function ExpandViewIcon(props,ref){return <DitherIcon {...props} name="expand-view" ref={ref}/>;});
 export const SignOutIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function SignOutIcon(props,ref){return <DitherIcon {...props} name="sign-out" ref={ref}/>;});
+
+export const ArrowLeftIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function ArrowLeftIcon(props,ref){return <DitherIcon {...props} name="arrow-left" ref={ref}/>;});
+
+export const HistoryIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function HistoryIcon(props,ref){return <DitherIcon {...props} name="history" ref={ref}/>;});
+
+export const PanelLeftCloseIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function PanelLeftCloseIcon(props,ref){return <DitherIcon {...props} name="panel-left-close" ref={ref}/>;});
+
+export const ZoomOutIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function ZoomOutIcon(props,ref){return <DitherIcon {...props} name="zoom-out" ref={ref}/>;});

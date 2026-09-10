@@ -144,7 +144,7 @@ The user requested retaining and committing these four, then corrected the selec
 
 **Check, Close, Plus, Lock** received the focused four-icon pass (the original Close/Plus gestures below were subsequently rejected and replaced). The studio defaults to **Actions and access**. Check traces its ascending stroke before a tip response; Close tightens along fixed diagonals; Plus opens its axes in sequence with individual endpoint responses; Lock holds tension above a fixed housing. Rounded contours, clean crossings and closed-lock identity preserve compact reading. Each has an individual Interface Craft critique, a separate timing source and [browser evidence](motion-evidence/refinement-06/). The previous 64 performances retain their tracks.
 
-**Status: 69 refined of 69.** The final Terminal, CPU, Chart and Bolt revision was accepted after a concept-level correction. No existing icon remains pending the focused pass. Future additions still require their own critique and rendered review.
+**Status: 73 implemented and individually reviewed.** The original 69 completed the focused pass. The four Platform / 09 additions have rendered evidence and await user judgment; none is included in npm 0.1.2.
 
 ### Semantic correction and Unlock state — 2026-09-10
 
@@ -165,3 +165,14 @@ User review preferred a blink, a wider field of sparkles, and a stronger Moon pe
 ## Focused refinement 08 — Development and energy
 
 **Terminal, CPU, Chart, Bolt** finish the original catalog. User rejected a first draft as shallow; the accepted replacement changes the primary stories: command submission and response, a clocked register, measurement from a shared baseline, and a tension/strike/discharge arc. Their individual reviews replace the broad-rollout records. [Native evidence](motion-evidence/refinement-08/README.md). User approved the revised performances and asked for the next four; new selections must come from actual missing platform controls.
+
+## Platform batch 09 — Navigation and workspace
+
+| Icon / individual review | Meaning | Sequence | Duration |
+| --- | --- | --- | --- |
+| [Back](icon-reviews/arrow-left.md) | Return to the previous or containing destination | Recall / Return / Arrive | 1140ms |
+| [History](icon-reviews/history.md) | Revisit earlier activity and saved versions | Rewind / Recall / Hold | 1460ms |
+| [Collapse Panel](icon-reviews/panel-left-close.md) | Hide a drawer while retaining its workspace | Withdraw / Close / Latch | 1460ms |
+| [Zoom Out](icon-reviews/zoom-out.md) | Reduce magnification and reveal surrounding context | Frame / Recede / Reveal | 1380ms |
+
+Chosen from real platform affordances, as recorded in [PLATFORM-ICONS.md](PLATFORM-ICONS.md#platform--09--navigation-and-workspace). The studio opens this set. Each has an individual Interface Craft critique, original semantic timeline and [native browser evidence](motion-evidence/platform-09/README.md). Earlier 69 performances remain unchanged. These new exports await user judgment and the next tagged release.

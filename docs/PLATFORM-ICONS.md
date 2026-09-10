@@ -122,3 +122,16 @@ No call sites changed. These gestures do not perform tokenization, return numeri
 Source inspected 2026-09-09 before selection. Every candidate maps to an existing functional control, not a lesson topic. The Bookmark affordance was excluded from this batch because its inspected button had no action handler.
 
 Apply UI-2/4, COLOR-2/5, A11Y-2/4 and MOTION-1/4/6/7. Retain native targets, accessible labels and state. SaveActionButton owns pending/success/error; this animation never certifies persistence. Use File Explorer for Show and preserve a truthful Hide treatment. Keep Expand's desktop eligibility and disabled explanation. Sign Out belongs only to the authenticated action; keep Sign in distinct. Prefer still solid/outline at compact, frequently used controls; full gestures suit larger infrequent entry points. No platform call sites changed in this library batch.
+
+## Platform / 09 — navigation and workspace
+
+Source inspected 2026-09-10 before selection. These are additions to the separate icon library; no platform call sites changed.
+
+| Semantic name / export | Existing platform need | Observed source |
+| --- | --- | --- |
+| Back / `ArrowLeftIcon` | Return from Workspace or Discussions to Dashboard | `app/src/routes/workspace.tsx:61`; `app/src/routes/discussions.$unitId.tsx:42` |
+| History / `HistoryIcon` | Activity history and saved Workspace versions | `app/src/routes/dashboard.tsx:511`; `app/src/routes/workspace.tsx:91` |
+| Collapse Panel / `PanelLeftCloseIcon` | Hide file explorer | `app/src/routes/lab.$slug.tsx:1669–1678`; existing conditional PanelLeftClose |
+| Zoom Out / `ZoomOutIcon` | Reduce curriculum-map magnification | `app/src/routes/paths.universe.tsx:448`; `ca-map-zoom`, detail 0.86 |
+
+Collapse Panel complements the existing File Explorer opening gesture. History does not restore a Checkpoint; Back does not mutate routing; Zoom Out does not dispatch map events. Native controls retain those effects and their actual accessible labels/state. Apply UI-2/4, COLOR-2/5, A11Y-2/4 and MOTION-1/4/6/7. Use semantic currentColor, labeled targets and still compact solid/outline for frequently repeated actions. The detailed gestures are available at larger entry points. All four exports are unreleased relative to npm 0.1.2.
