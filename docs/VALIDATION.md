@@ -429,3 +429,7 @@ Added Back / ArrowLeftIcon, History / HistoryIcon, Collapse Panel / PanelLeftClo
 [Native evidence](motion-evidence/platform-09/README.md) covers seven inspected poses, full half-speed playback, actual-speed keyboard completion after departure, exact neutral return, identical material poses, light/dark palettes, disabled/reduced motion, compact SVGs, real CSS hover, and 390px layout without horizontal overflow. Console is clean. **21 targeted tests, TypeScript and production build passed**, including all 73 timeline / 219 material bindings and five new geometric/semantic regressions.
 
 Generated manifests, AI references, labeled contact sheet, docs and 82 social/crawler entries are current. README identifies these exports as unreleased relative to npm 0.1.2. Existing 69 performances remain unchanged. No version bump, push, tag or deployment; the new four await user feedback.
+
+## Release preparation — 2026-09-10
+
+The full release suite caught duplicate membership introduced by the focused review groups. Removed duplicate entries from the legacy development, action, account and appearance groups; Code and Check retain distinct Development and Confirmation groups. All 73 icons now occur exactly once in the public selector. The existing coverage assertion remains unchanged. MOT-15 retains the individual reviews; no icon drawing or performance changed.
