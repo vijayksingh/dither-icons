@@ -48,7 +48,7 @@ const SECOND={origin:'14.5px 7.5px',from:'rotate(0deg)',to:'rotate(-71deg)',ink:
 const NODE={receive:1.1,relax:1.025};
 const HALO={origin:'19px 5px',ink:.8,start:'scale(.8)',peak:'scale(1)',end:'scale(1.16)'};
 const EASE={receive:'cubic-bezier(.18,.8,.3,1)',relax:'cubic-bezier(.3,0,.35,1)'};
-export const path=motion(TIMING.settle,'One milestone hands the way to the next.',['Depart','Connect','Arrive'],[
+export const path=motion(TIMING.settle,'A signal follows the path from node to node.',['Depart','Connect','Arrive'],[
  actor('source-light','5px 19px',[light(TIMING.rest,0),light(TIMING.sourceStart,0),light(TIMING.sourcePeak,.8),light(TIMING.sourceOut,0),light(TIMING.settle,0)]),
  actor('route-first',FIRST.origin,[light(TIMING.rest,0,FIRST.from),light(TIMING.depart,0,FIRST.from),light(TIMING.firstLight,FIRST.ink,'rotate(23deg)'),light(TIMING.middleArrival,FIRST.ink,FIRST.to),light(TIMING.firstOut,0,FIRST.to),light(TIMING.settle,0,FIRST.from)]),
  actor('middle-node','12px 12px',[pose(TIMING.rest,'scale(1)'),pose(TIMING.middleArrival,'scale(1)',EASE.receive),pose(TIMING.middlePeak,`scale(${NODE.receive})`,EASE.relax),pose(TIMING.middleRelax,`scale(${NODE.relax})`),pose(TIMING.middleRest,'scale(1)'),pose(TIMING.settle,'scale(1)')]),

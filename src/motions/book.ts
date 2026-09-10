@@ -59,7 +59,7 @@ const page=actor('turning-page',PAGE.origin,[
  {...light(TIMING.compress,PAGE.ink,PAGE.compress),easing:EASE.settle},
  {...light(TIMING.rebound,PAGE.ink,PAGE.rebound),easing:EASE.settle},light(TIMING.bedRest,PAGE.ink,PAGE.land),
  light(TIMING.fade,0,PAGE.land),light(TIMING.reset,0,PAGE.rest),light(TIMING.settle,0,PAGE.rest)]);
-export const book=motion(TIMING.settle,'One page turns. A soft landing.',['Lift','Turn','Land'],[
+export const book=motion(TIMING.settle,'The page turns around its binding and lands.',['Lift','Turn','Land'],[
  page,{...page,part:'page-occlusion'},
  actor('left-bed',BED.origin,[pose(TIMING.rest,BED.rest),pose(TIMING.land,BED.rest,EASE.contact),
   pose(TIMING.compress,BED.compress,EASE.settle),pose(TIMING.rebound,BED.rebound,EASE.settle),

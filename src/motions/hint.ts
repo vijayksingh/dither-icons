@@ -42,7 +42,7 @@ const STEM={origin:'12px 15.9px',ink:.92};
 const FILAMENT={origin:'12px 12.85px',ink:.94};
 const GLOW={origin:'12px 9.4px',ink:.22};
 const RAYS=[{part:'idea-top',origin:'12px 1.8px',start:TIMING.topStart,peak:TIMING.topPeak,ink:.88},{part:'idea-left',origin:'3.8px 6.3px',start:TIMING.sideStart,peak:TIMING.sidePeak,ink:.7},{part:'idea-right',origin:'20.2px 6.3px',start:TIMING.sideStart,peak:TIMING.sidePeak,ink:.7}];
-export const hint=motion(TIMING.settle,'A little light from within.',['Conduct','Illuminate','Ease'],[
+export const hint=motion(TIMING.settle,'The filament lights before the surrounding rays appear.',['Conduct','Illuminate','Ease'],[
  actor('stem-light',STEM.origin,[light(TIMING.rest,0,'scaleY(.15)'),light(TIMING.stemStart,0,'scaleY(.15)'),light(TIMING.stemPeak,STEM.ink,'scaleY(1)'),light(TIMING.stemOut,0,'scaleY(1)'),light(TIMING.settle,0,'scaleY(.15)')]),
  actor('filament-light',FILAMENT.origin,[light(TIMING.rest,0,'scale(.2)'),light(TIMING.filamentStart,0,'scale(.2)'),light(TIMING.filamentPeak,FILAMENT.ink,'scale(1)'),light(TIMING.filamentOut,0,'scale(1)'),light(TIMING.settle,0,'scale(.2)')]),
  actor('illumination',GLOW.origin,[light(TIMING.rest,0,'scale(.75)'),light(TIMING.filamentStart,0,'scale(.75)'),light(TIMING.glowPeak,GLOW.ink,'scale(1)'),light(TIMING.glowOut,0,'scale(1.02)'),light(TIMING.settle,0,'scale(.75)')]),

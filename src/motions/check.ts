@@ -20,7 +20,7 @@ export const CHECK_ART={
 const CHECK={origin:'9.2px 17.2px',rest:'rotate(0deg)',gather:'rotate(-4deg)'};
 const TRACE={origin:CHECK.origin,rest:'translate(0px,0px)',tip:'translate(8.9px,-8.9px)'};
 const T=CHECK_TIMING;
-export const check=motion(T.settle,'Seat the stroke. Let the tip affirm.',['Seat','Trace','Affirm'],[
+export const check=motion(T.settle,'The checkmark traces upward and finishes at its tip.',['Seat','Trace','Affirm'],[
  actor('check-stroke',CHECK.origin,[pose(T.rest,CHECK.rest),pose(T.gather,CHECK.gather,'cubic-bezier(.18,.75,.25,1)'),pose(T.seat,CHECK.rest),pose(T.settle,CHECK.rest)]),
  actor('check-trace',TRACE.origin,[light(T.rest,0,TRACE.rest),light(T.seat,0,TRACE.rest),light(T.trace,.85,TRACE.rest),{...light(T.arrive,.85,TRACE.tip),easing:'linear'},light(T.echo,0,TRACE.tip),light(T.settle,0,TRACE.rest)]),
  actor('check-tip','19.8px 6.6px',[light(T.rest,0,'scale(.7)'),light(T.arrive,0,'scale(.7)'),light(T.echo,.8,'scale(1)'),light(T.clear,0,'scale(1.35)'),light(T.settle,0,'scale(.7)')]),

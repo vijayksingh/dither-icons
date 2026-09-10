@@ -24,7 +24,7 @@ export const SUN_ART={
 const T=SUN_TIMING,G=SUN_GEOMETRY;
 // A round-ended ray's inner edge is closer than its centerline endpoint.
 export const SUN_WAVE_REACH=(12-G.rayInner-G.halfWidth)/G.waveRadius;
-export const sun=motion(T.settle,'Light leaves the core. The rays answer.',['Warm','Reach','Radiate'],[
+export const sun=motion(T.settle,'Light spreads from the center to the rays.',['Warm','Reach','Radiate'],[
  actor('sun-wave','12px 12px',[light(T.rest,0,'scale(1)'),light(T.emit,0,'scale(1)'),light(T.warm,.6,'scale(1.05)'),light(T.reach,.38,`scale(${SUN_WAVE_REACH})`),light(T.follow,0,`scale(${SUN_WAVE_REACH})`),light(T.settle,0,'scale(1)')]),
  ...Array.from({length:8},(_,i)=>{
   const diagonal=i%2===1,start=diagonal?T.follow:T.reach,arrive=diagonal?T.diagonal:T.cardinal,travel=diagonal?G.diagonalTravel:G.cardinalTravel;

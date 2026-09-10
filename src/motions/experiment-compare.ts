@@ -33,7 +33,7 @@ export const COMPARE_ART={
 const PANE={origins:['6.85px 12px','17.15px 12px'],offsets:[-.35,.35]};
 const CURSOR={origin:'0px 0px',samples:36,ink:.85};
 const scanFrames=(side:number,kind:'cursor'|'point')=>Array.from({length:CURSOR.samples+1},(_,i)=>{const t=i/CURSOR.samples,[x,y]=comparePoint(side,t);return {...light(TIMING.scan+(TIMING.arrive-TIMING.scan)*t,kind==='cursor'?.26:CURSOR.ink,`translate(${x}px,${kind==='cursor'?0:y}px)`),easing:'linear'};});
-export const experimentCompare=motion(TIMING.settle,'Same reference. Different evidence.',['Separate','Scan','Compare'],[
+export const experimentCompare=motion(TIMING.settle,'Two panes scan from a shared reference line.',['Separate','Scan','Compare'],[
  ...[0,1].flatMap(i=>[
   actor(`compare-pane-${i}`,PANE.origins[i],[pose(TIMING.rest,'translateX(0px)'),pose(TIMING.prepare,'translateX(0px)'),pose(TIMING.open,`translateX(${PANE.offsets[i]}px)`),pose(TIMING.clear,`translateX(${PANE.offsets[i]}px)`),pose(TIMING.home,'translateX(0px)'),pose(TIMING.settle,'translateX(0px)')]),
   ...(['cursor','point'] as const).map(kind=>{const p=comparePoint(i,0),q=comparePoint(i,1),rest=`translate(${p[0]}px,${kind==='cursor'?0:p[1]}px)`,end=`translate(${q[0]}px,${kind==='cursor'?0:q[1]}px)`;return actor(`compare-${kind}-${i}`,CURSOR.origin,[light(TIMING.rest,0,rest),light(TIMING.open,0,rest),...scanFrames(i,kind),light(TIMING.answer,kind==='cursor'?.26:.85,end),light(TIMING.clear,0,end),light(TIMING.settle,0,rest)]);}),

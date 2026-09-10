@@ -49,7 +49,7 @@ const beats=[
  {part:'dot-right',x:17,gather:TIMING.rightGather,peak:TIMING.rightPeak,seat:TIMING.rightSeat,rest:TIMING.rightRest,last:true},
 ];
 const REST='translateY(0px) scale(1)';
-export const message=motion(TIMING.settle,'A thought gathers. A little response.',['Gather','Answer','Resolve'],[
+export const message=motion(TIMING.settle,'The message bubble expands before a reply appears.',['Gather','Answer','Resolve'],[
  ...beats.map(b=>actor(b.part,`${b.x}px ${MESSAGE_ART.dotY}px`,[
  pose(TIMING.rest,REST,EASE.gather),pose(b.gather,`translateY(.15px) scale(${DOT.gather})`,EASE.lift),
  pose(b.peak,`translateY(${b.last?DOT.lastLift:DOT.lift}px) scale(${b.last?DOT.lastPeak:DOT.peak})`,EASE.land),

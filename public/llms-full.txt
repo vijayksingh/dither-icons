@@ -30,19 +30,19 @@ Standalone SVG includes compiled CSS tracks and internal texture definitions. In
 
 Verify the imported name exists in icons.json. Check the actual rendered size, label, focus ring, keyboard activation, disabled/loading state, color contrast and reduced motion. Inspect real state changes separately from icon feedback. Named exports currently share the complete geometry catalog; do not claim per-icon bundle splitting.
 
-# A good place to start.
+# Using Dither Icons
 
-A small library with a particular point of view. Here’s how to make it part of yours.
+Install an icon, choose a material, and configure playback.
 
-## Fine grain. Real geometry.
+## The library
 
-Dither Icons is a collection of 73 original SVG icons for React. Smooth vector contours carry a fine ordered texture. Each icon has its own short, meaningful gesture: a bell rings, a tray catches, a lid opens.
+Dither Icons includes 73 original SVG icons with individual animations. Each drawing comes in dither, solid, and outline. The dither texture sits inside the vector shape and moves with it.
 
 ![The same Download icon in dither, solid and outline textures.](/reference/textures.svg)
 
-One drawing. Three ways to belong in your interface.
+The Download icon in dither, solid, and outline.
 
-## Your first little detail.
+## Add your first icon
 
 Install the package, import a named component, and add it to a real button. The icon inherits your text color and needs no separate stylesheet.
 
@@ -56,15 +56,15 @@ import { DownloadIcon } from '@unlocalhosted/dither-icons';
 
 Interactive example available on the public documentation page. Use the accompanying React snippet to reproduce it.
 
-## Choose the right material.
+## Choose a material
 
-- Dither: expressive detail at 48px and above. A fine tonal field sits inside a smooth silhouette.
-- Solid: the clearest reading for compact controls, usually 16–24px.
-- Outline: a lighter presence in dense navigation and toolbars.
+- Dither: a fine dot pattern within the vector shape. Best at 48px and above.
+- Solid: filled shapes for compact controls, usually 16–24px.
+- Outline: stroked shapes for navigation and toolbars.
 
-The texture changes the material, not the drawing or meaning. Color and contrast belong to your interface; the SVG uses currentColor.
+All three materials use the same geometry. Icons inherit currentColor; check contrast against your background.
 
-## Small surface. Considered behavior.
+## What the package includes
 
 - React 18+ is the only peer dependency. ESM and TypeScript declarations are included.
 - Hover, focus and tap play once. A gesture finishes after the pointer leaves.
@@ -73,11 +73,11 @@ The texture changes the material, not the drawing or meaning. Color and contrast
 
 > Install the React package from npm. Named exports share the complete geometry catalog; per-icon bundle splitting is not implemented.
 
-# In your project in minutes.
+# Install Dither Icons
 
-A React package from npm. A standalone SVG for everywhere else.
+Use the React package or download individual SVGs from the catalog.
 
-## 01. Take the package.
+## 1. Install the package
 
 Install the package from npm using your package manager.
 
@@ -87,7 +87,7 @@ npm install @unlocalhosted/dither-icons
 
 > React 18 or newer is the only peer dependency.
 
-## 02. Add an icon.
+## 2. Add an icon
 
 ```tsx
 import { DownloadIcon } from '@unlocalhosted/dither-icons';
@@ -99,7 +99,7 @@ import { DownloadIcon } from '@unlocalhosted/dither-icons';
 
 Add di-trigger to the parent button to make its entire hit area respond. Keep your real onClick action on that button. Playing a preview does not perform a download or change application state.
 
-## 03. Match your environment.
+## Framework support
 
 | Environment | Integration |
 | --- | --- |
@@ -108,7 +108,7 @@ Add di-trigger to the parent button to make its entire hit area respond. Keep yo
 | Plain HTML / other frameworks | Open an icon page and download its standalone SVG. Inline the markup for hover animation. |
 | Image elements | Use a downloaded SVG in an <img> for its static appearance. Image embedding does not expose its internal hover targets. |
 
-## Working on the library itself?
+## Local development
 
 ```sh
 npm install
@@ -123,11 +123,11 @@ npm pack
 
 The development catalog runs on port 4192. The build creates the React package in dist and the public site in site-dist. AI.md and icons.json are included in the package; the website also serves the full guides and visual references.
 
-# React, without ceremony.
+# React API
 
-Named components, ordinary SVG props, and a few deliberate controls for motion.
+Component imports, SVG props, and playback controls.
 
-## Start with a named component.
+## Import a component
 
 ```tsx
 import { BellIcon } from '@unlocalhosted/dither-icons';
@@ -139,7 +139,7 @@ import { BellIcon } from '@unlocalhosted/dither-icons';
 
 Every component forwards its SVG ref and accepts standard SVG attributes, including className, style, color and event handlers. Keep the accessible name and click action on the surrounding control.
 
-## The complete prop surface.
+## Props
 
 | Prop | Default | Behavior |
 | --- | --- | --- |
@@ -152,7 +152,7 @@ Every component forwards its SVG ref and accepts standard SVG attributes, includ
 | progress | undefined | A normalized frame from 0 to 1. Omit to restore interaction. |
 | title | undefined | Accessible image name. Without a title the icon is decorative. |
 
-## Selecting an icon at runtime.
+## Select an icon at runtime
 
 ```tsx
 import { DitherIcon, definitions } from '@unlocalhosted/dither-icons';
@@ -167,7 +167,7 @@ const name = definitions.some(icon => icon.name === requestedName)
 
 DitherIcon defaults to sparkles when name is omitted. An unknown name throws an error. Validate names from external data against definitions or the icon manifest before rendering.
 
-## Replay on your own terms.
+## Trigger a replay
 
 ```tsx
 import { useState } from 'react';
@@ -178,7 +178,7 @@ export function ReplayExample() {
   return (
     <button onClick={() => setReplay(value => value + 1)}>
       <SparklesIcon size={48} replayKey={replay} />
-      Replay the gesture
+      Replay animation
     </button>
   );
 }
@@ -188,20 +188,20 @@ Interactive example available on the public documentation page. Use the accompan
 
 Use replayKey for event-driven playback. The gesture is still bounded, respects reduced motion, and ignores extra requests while already running.
 
-# Motion with a meaning.
+# Animation controls
 
-A short action, a clear response, and an exact return to rest.
+Configure triggers, inspect frames, and handle reduced motion.
 
-## A gesture, not a loop.
+## Playback behavior
 
-Each icon starts with an object and a verb. The Download arrow leads and its tray catches. The Bell shell swings and its clapper follows. All gestures preserve their identifying silhouette through the payoff.
+Each icon plays a short animation and returns to its starting pose. In Download, the arrow lands before the tray responds. In Bell, the clapper follows the swinging shell.
 
 - React playback uses native Web Animations. Tracks change transform and opacity.
 - Pointer entry, keyboard focus and a click or tap can trigger playback.
 - Leaving the target lets the gesture finish. Repeated input during playback is ignored.
 - Unmounting, animate={false}, or a reduced-motion preference cancels the running tracks.
 
-## Let the whole control respond.
+## Trigger from the parent button
 
 ```tsx
 import { SavePreferencesIcon } from '@unlocalhosted/dither-icons';
@@ -218,7 +218,7 @@ import { SavePreferencesIcon } from '@unlocalhosted/dither-icons';
 
 > saving and savePreferences belong to your application. The icon supplies visual feedback, never proof that the operation succeeded. Keep loading, error and success states in the control’s text and semantics.
 
-## Look closely before tuning.
+## Inspect a frame
 
 Every icon page includes half-speed playback and a frame inspector. Pass progress={0.5} to hold the middle frame, then remove progress to restore hover and focus interaction. Changing material keeps the inspected frame aligned with the replacement artwork.
 
@@ -229,15 +229,15 @@ Every icon page includes half-speed playback and a frame inspector. Pass progres
 <DownloadIcon size={96} />
 ```
 
-## React and SVG share the drawing.
+## React and standalone SVG
 
-Standalone SVG includes CSS compiled from the same tracks. CSS-only hover stops when the pointer leaves; React preserves the complete gesture. Choose React for the richer interaction lifecycle and inline SVG when portability matters more.
+Standalone SVG includes CSS compiled from the same tracks. CSS-only hover stops when the pointer leaves; React preserves the complete gesture. Use React when playback should finish after the pointer leaves. Use inline SVG for CSS hover animation without React.
 
-# A little delight. For everyone.
+# Accessibility
 
-The interaction should still make sense with a keyboard, a screen reader, or no motion at all.
+Label controls, support keyboard input, and respect reduced-motion preferences.
 
-## Name the action, not the artwork.
+## Label the control
 
 ```tsx
 <button className="di-trigger" aria-label="Open notifications">
@@ -252,7 +252,7 @@ The interaction should still make sense with a keyboard, a screen reader, or no 
 
 Icons are aria-hidden by default. Label an icon-only button with aria-label, or give the button visible text. Avoid naming the same control twice through both the button and its decorative icon.
 
-## When the icon is the content.
+## Label a standalone image
 
 ```tsx
 <NetworkIcon
@@ -264,7 +264,7 @@ Icons are aria-hidden by default. Label an icon-only button with aria-label, or 
 
 title supplies an accessible SVG image name and role. Use this for an illustration that carries meaning on its own, rather than for an icon already explained by adjacent text.
 
-## Stillness is a complete experience.
+## Reduced motion
 
 prefers-reduced-motion: reduce is respected automatically by both the React runtime and the standalone CSS. Active motion is cancelled when that preference changes. You can also set animate={false} for any icon, independent of the system setting.
 
@@ -273,11 +273,11 @@ prefers-reduced-motion: reduce is respected automatically by both the React runt
 - Never communicate a result through motion alone.
 - At small sizes, prefer solid or outline and check contrast against the actual surface.
 
-# Take the drawing with you.
+# Export SVGs
 
-Transparent, scalable, and ready for places where React isn’t part of the picture.
+Download icons with your selected material, color, size, and motion setting.
 
-## Choose. Customize. Download.
+## Download an icon
 
 Open any icon page. Choose a material, color and export size, then use Download SVG. The SVG tab shows the exact source you receive, including its internal definitions and motion styles.
 
@@ -285,7 +285,7 @@ Open any icon page. Choose a material, color and export size, then use Download 
 
 All three materials retain the same vector contour.
 
-## Inline for interaction. Image for stillness.
+## Embed the SVG
 
 ```html
 <img src="/download-dither.svg" width="48" height="48" alt="" />
@@ -295,7 +295,7 @@ Inline the complete SVG markup to expose its hover targets. Keep style, defs, ma
 
 > The SVG has a transparent background. Its exported color is the selected palette value; change the SVG color attribute to inherit currentColor from the host when appropriate. An <img> cannot inherit the surrounding document’s currentColor.
 
-## Know the lifecycle difference.
+## Playback differences
 
 CSS hover animation ends when hover ends. A standalone SVG does not expose React props such as replayKey or progress. Use the React component when keyboard replay, controlled inspection and finishing after pointer departure matter.
 
@@ -303,79 +303,79 @@ CSS hover animation ends when hover ends. A standalone SVG does not expose React
 
 | Stable name | React export | Meaning |
 | --- | --- | --- |
-| bell | BellIcon | A little weight. A lingering ring. |
-| heart | HeartIcon | Gather, open, let a little joy escape. |
-| sparkles | SparklesIcon | One flare. Little sparks all around. |
-| search | SearchIcon | Lean closer. Let the focus resolve. |
-| home | HomeIcon | A familiar door. A little light to greet you. |
-| settings | SettingsIcon | A measured turn. A precise little click. |
-| check | CheckIcon | Seat the stroke. Let the tip affirm. |
+| bell | BellIcon | The shell swings; the clapper follows. |
+| heart | HeartIcon | The heart expands and releases small sparks. |
+| sparkles | SparklesIcon | The central stars brighten as smaller sparks appear around them. |
+| search | SearchIcon | The lens tilts as its focus mark aligns. |
+| home | HomeIcon | The door opens to reveal the threshold. |
+| settings | SettingsIcon | The gear turns and settles at the next position. |
+| check | CheckIcon | The checkmark traces upward and finishes at its tip. |
 | close | CloseIcon | One stroke. Cross it out. |
-| plus | PlusIcon | Add the upright. Let the crossbar answer. |
+| plus | PlusIcon | The vertical stroke joins the crossbar at its center. |
 | arrow-right | ArrowRightIcon | The head leads. The tail holds its place. |
-| arrow-up | ArrowUpIcon | Rise first. Let the weight follow. |
-| external-link | ExternalLinkIcon | Reach beyond the frame. Keep the source. |
+| arrow-up | ArrowUpIcon | The arrowhead rises before the shaft follows. |
+| external-link | ExternalLinkIcon | The arrow extends beyond an anchored frame. |
 | download | DownloadIcon | The arrow leads. The tray catches. |
-| upload | UploadIcon | Gather in the tray. Release into the open. |
-| folder | FolderIcon | Make room. Let the contents catch the light. |
+| upload | UploadIcon | The arrow lifts out of the tray. |
+| folder | FolderIcon | The folder opens to reveal the pages inside. |
 | file | FileIcon | A held crease. Light follows the curl. |
-| copy | CopyIcon | An impression. A twin. Its own place. |
-| trash | TrashIcon | A little weight. A close you can feel. |
-| mail | MailIcon | A letter revealed. Carefully tucked away. |
-| message | MessageIcon | A thought gathers. A little response. |
-| send | SendIcon | A folded wing. A small rush of air. |
-| user | UserIcon | A small nod. A warm acknowledgment. |
+| copy | CopyIcon | A second sheet separates from the original. |
+| trash | TrashIcon | The lid lifts, drops, and settles on the bin. |
+| mail | MailIcon | The flap opens, the letter rises, then both close. |
+| message | MessageIcon | The message bubble expands before a reply appears. |
+| send | SendIcon | The paper plane flexes before taking flight. |
+| user | UserIcon | The head nods, followed by a greeting mark. |
 | lock | LockIcon | Give it a shake. It stays locked. |
-| unlock | UnlockIcon | Release the free end. Leave the way open. |
-| eye | EyeIcon | Close softly. Open with a little light. |
-| play | PlayIcon | The first impulse. Then momentum. |
-| pause | PauseIcon | Two soft stops. Then stillness. |
+| unlock | UnlockIcon | The open shackle pivots farther out and stays open. |
+| eye | EyeIcon | The eye closes fully, then opens with a catchlight. |
+| play | PlayIcon | The play arrow leans back before moving forward. |
+| pause | PauseIcon | Both bars stop at the same baseline and hold. |
 | volume | VolumeIcon | A pulse at the source. A widening echo. |
-| sun | SunIcon | Light leaves the core. The rays answer. |
-| moon | MoonIcon | A crescent rises. A falling star finds its place. |
-| code | CodeIcon | Make room. Set the expression. |
-| terminal | TerminalIcon | Type a command. Return. Hear back. |
-| layers | LayersIcon | Make room, reveal the depth, fit back together. |
+| sun | SunIcon | Light spreads from the center to the rays. |
+| moon | MoonIcon | The crescent rises, followed by a falling star. |
+| code | CodeIcon | The brackets open around the code expression. |
+| terminal | TerminalIcon | A command is typed and submitted; a response follows. |
+| layers | LayersIcon | The layers separate and return to their stack. |
 | cpu | CpuIcon | Load the register. Clock it. Send the result. |
-| chart | ChartIcon | One baseline. Three heights. The difference is clear. |
-| book | BookIcon | One page turns. A soft landing. |
-| bolt | BoltIcon | Hold the charge. Break the tension. |
-| path | PathIcon | One milestone hands the way to the next. |
-| flask | FlaskIcon | Stir a little. See what answers. |
+| chart | ChartIcon | A scan compares three bars against a shared baseline. |
+| book | BookIcon | The page turns around its binding and lands. |
+| bolt | BoltIcon | The bolt gathers charge, strikes, and discharges. |
+| path | PathIcon | A signal follows the path from node to node. |
+| flask | FlaskIcon | The liquid swirls before bubbles rise. |
 | target | TargetIcon | Draw back. Find the center. |
-| retry | RetryIcon | Wind back. Catch. Ready again. |
+| retry | RetryIcon | The arrow rewinds and returns to its starting position. |
 | tensor | TensorIcon | One slice. Its cell order stays intact. |
 | network | NetworkIcon | Two inputs meet. One output answers. |
-| checkpoint | CheckpointIcon | A state arrives. Its place is kept. |
-| hint | HintIcon | A little light from within. |
-| workspace | WorkspaceIcon | Make room. Keep your place. |
-| gauge | GaugeIcon | A measured move. A precise reading. |
-| orbit | OrbitIcon | Around the idea. Back in context. |
-| lifebuoy | LifebuoyIcon | Takes the weight. Keeps you afloat. |
-| sigma | SigmaIcon | Many terms. One considered result. |
+| checkpoint | CheckpointIcon | The state marker seats before its retainer closes. |
+| hint | HintIcon | The filament lights before the surrounding rays appear. |
+| workspace | WorkspaceIcon | The panel opens and its contents move into place. |
+| gauge | GaugeIcon | The needle moves to a tick and holds. |
+| orbit | OrbitIcon | The satellite travels around a fixed center. |
+| lifebuoy | LifebuoyIcon | The ring meets its support before the ripple spreads. |
+| sigma | SigmaIcon | Terms gather at the operator before a result leaves. |
 | bug | BugIcon | Follow the trace. Find the fault. |
-| sliders | SlidersIcon | One variable. A satisfying detent. |
-| graduation-cap | GraduationCapIcon | A small tip. A little possibility. |
-| code-run | CodeRunIcon | From written intent to a running idea. |
-| test-suite | TestSuiteIcon | Every case gets its own observation. |
-| milestone | MilestoneIcon | A capability worth orienting toward. |
-| concept-review | ConceptReviewIcon | Revisit the idea. Keep the context. |
-| learning-rhythm | LearningRhythmIcon | A little cadence. Room to keep going. |
-| gradient-check | GradientCheckIcon | Two nearby samples. One closer look. |
-| experiment-compare | ExperimentCompareIcon | Same reference. Different evidence. |
-| training-step | TrainingStepIcon | Read the slope. Take one considered step. |
+| sliders | SlidersIcon | The slider moves along its rail and locks into position. |
+| graduation-cap | GraduationCapIcon | The cap tips, then the tassel swings. |
+| code-run | CodeRunIcon | A scan of the code releases the run arrow. |
+| test-suite | TestSuiteIcon | Each test case receives a separate result marker. |
+| milestone | MilestoneIcon | The flag unfurls above a fixed marker. |
+| concept-review | ConceptReviewIcon | The page opens as the review arrow circles back. |
+| learning-rhythm | LearningRhythmIcon | A pulse marks each beat, followed by a rest. |
+| gradient-check | GradientCheckIcon | Two probes sample either side of the center. |
+| experiment-compare | ExperimentCompareIcon | Two panes scan from a shared reference line. |
+| training-step | TrainingStepIcon | A slope reading is followed by one update step. |
 | tokenize | TokenizeIcon | Find the boundaries. Keep the order. |
 | embedding-lookup | EmbeddingLookupIcon | Address one row. Read its vector. |
 | attention-focus | AttentionFocusIcon | Compare every key. Focus the relation. |
 | batch-sampling | BatchSamplingIcon | Take a subset. Keep the source. |
-| save-preferences | SavePreferencesIcon | Write with intent. Settle into place. |
-| file-explorer | FileExplorerIcon | Make room. Keep your place. |
-| expand-view | ExpandViewIcon | More room. The same point of focus. |
-| sign-out | SignOutIcon | Open the way. Leave deliberately. |
+| save-preferences | SavePreferencesIcon | The write indicator finishes before the shutter closes. |
+| file-explorer | FileExplorerIcon | The panel opens and its contents move into place. |
+| expand-view | ExpandViewIcon | The frame expands around a fixed center. |
+| sign-out | SignOutIcon | The door opens before the arrow exits. |
 | arrow-left | ArrowLeftIcon | Return to where you came from. |
-| history | HistoryIcon | Turn back the clock. Find an earlier moment. |
-| panel-left-close | PanelLeftCloseIcon | Tuck the drawer away. Keep your workspace. |
-| zoom-out | ZoomOutIcon | Step back. See what surrounds it. |
+| history | HistoryIcon | The clock hands rewind inside the history arrow. |
+| panel-left-close | PanelLeftCloseIcon | The side panel closes while the workspace stays visible. |
+| zoom-out | ZoomOutIcon | The center shrinks to reveal the surrounding area. |
 
 ## Visual references
 

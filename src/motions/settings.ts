@@ -28,7 +28,7 @@ export const SETTINGS_ART={
 const GEAR={origin:'12px 12px',rest:'rotate(0deg)',gather:'rotate(-4deg)',seat:'rotate(22.5deg)'};
 const EASE={gather:'cubic-bezier(.4,0,.6,1)',turn:'cubic-bezier(.2,.65,.3,1)',return:'cubic-bezier(.4,0,.3,1)'};
 const T=SETTINGS_TIMING;
-export const settings=motion(T.settle,'A measured turn. A precise little click.',['Adjust','Register','Release'],[
+export const settings=motion(T.settle,'The gear turns and settles at the next position.',['Adjust','Register','Release'],[
  actor('settings-gear',GEAR.origin,[pose(T.rest,GEAR.rest,EASE.gather),pose(T.gather,GEAR.gather,EASE.turn),pose(T.register,GEAR.seat),pose(T.hold,GEAR.seat,EASE.return),pose(T.home,GEAR.rest),pose(T.settle,GEAR.rest)]),
  actor('tooth-light','12px 3.8px',[light(T.rest,0,'scaleX(.4)'),light(T.register,0,'scaleX(.4)'),light(T.glint,.85,'scaleX(1)'),light(T.echo,.5,'scaleX(1)'),light(T.hold,0,'scaleX(1)'),light(T.settle,0,'scaleX(.4)')]),
  actor('rim-ticks',GEAR.origin,[light(T.rest,0,'translateY(0px)'),light(T.glint,0,'translateY(0px)'),light(T.echo,.65,'translateY(-.1px)'),light(T.clear,0,'translateY(-.4px)'),light(T.settle,0,'translateY(0px)')]),

@@ -1,8 +1,8 @@
-# Take the drawing with you.
+# Export SVGs
 
-Transparent, scalable, and ready for places where React isn’t part of the picture.
+Download icons with your selected material, color, size, and motion setting.
 
-## Choose. Customize. Download.
+## Download an icon
 
 Open any icon page. Choose a material, color and export size, then use Download SVG. The SVG tab shows the exact source you receive, including its internal definitions and motion styles.
 
@@ -10,7 +10,7 @@ Open any icon page. Choose a material, color and export size, then use Download 
 
 All three materials retain the same vector contour.
 
-## Inline for interaction. Image for stillness.
+## Embed the SVG
 
 ```html
 <img src="/download-dither.svg" width="48" height="48" alt="" />
@@ -20,6 +20,6 @@ Inline the complete SVG markup to expose its hover targets. Keep style, defs, ma
 
 > The SVG has a transparent background. Its exported color is the selected palette value; change the SVG color attribute to inherit currentColor from the host when appropriate. An <img> cannot inherit the surrounding document’s currentColor.
 
-## Know the lifecycle difference.
+## Playback differences
 
 CSS hover animation ends when hover ends. A standalone SVG does not expose React props such as replayKey or progress. Use the React component when keyboard replay, controlled inspection and finishing after pointer departure matter.

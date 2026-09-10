@@ -51,7 +51,7 @@ const orbitFrames=[pose(TIMING.rest,SATELLITE.rest),pose(TIMING.depart,SATELLITE
   const scale=n(1+depth*(depth>0?SATELLITE.frontScale:SATELLITE.rearScale));
   return pose(TIMING.depart+(TIMING.home-TIMING.depart)*t,i===ORBIT_GEOMETRY.samples-1?SATELLITE.rest:`translate(${n(x-start[0])}px,${n(y-start[1])}px) scale(${scale})`,'linear');
  }),pose(TIMING.settle,SATELLITE.rest)];
-export const orbit=motion(TIMING.settle,'Around the idea. Back in context.',['Depart','Pass','Return'],[
+export const orbit=motion(TIMING.settle,'The satellite travels around a fixed center.',['Depart','Pass','Return'],[
  ...['satellite-front','satellite-rear','satellite-occlusion'].map(part=>actor(part,SATELLITE.origin,orbitFrames)),
  actor('orbital-wake',WAKE.origin,[light(TIMING.rest,0,WAKE.rest),light(TIMING.approach,0,WAKE.rest),light(TIMING.wake,WAKE.ink,WAKE.rest),light(TIMING.lightOut,0,WAKE.rest),light(TIMING.settle,0,WAKE.rest)]),
  actor('orbital-surface',SURFACE.origin,[light(TIMING.rest,0,SURFACE.small),light(TIMING.pass,0,SURFACE.small),light(TIMING.surface,SURFACE.ink,SURFACE.full),light(TIMING.lightOut,0,SURFACE.full),light(TIMING.settle,0,SURFACE.small)]),

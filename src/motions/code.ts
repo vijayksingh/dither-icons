@@ -47,7 +47,7 @@ const TICK={ink:.84};
 const EASE={gather:'cubic-bezier(.4,0,.7,1)',open:'cubic-bezier(.2,.8,.32,1)',
  close:'cubic-bezier(.45,0,.25,1)',settle:'cubic-bezier(.22,0,.3,1)'};
 const pair=[{side:'left',sign:-1,x:6,tickX:1.9},{side:'right',sign:1,x:18,tickX:22.1}];
-export const code=motion(TIMING.settle,'Make room. Set the expression.',['Open','Trace','Align'],[
+export const code=motion(TIMING.settle,'The brackets open around the code expression.',['Open','Trace','Align'],[
  ...pair.flatMap(b=>[
  actor(`bracket-${b.side}`,`${b.x}px 12px`,[
  pose(TIMING.rest,'translateX(0px)',EASE.gather),pose(TIMING.gather,`translateX(${b.sign*PAIR.gather}px)`,EASE.open),

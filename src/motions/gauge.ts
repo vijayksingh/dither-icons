@@ -37,7 +37,7 @@ const NEEDLE={origin:'12px 14.5px',rest:'rotate(0deg)',gather:'rotate(-24deg)',o
 const TICK={origin:p(7.4,300).split(' ').map(v=>v+'px').join(' '),small:'scale(.55)',full:'scale(1)',ink:1};
 const ECHO={origin:NEEDLE.origin,small:'scale(.96)',full:'scale(1)',out:'scale(1.018)',ink:.84};
 const EASE={gather:'cubic-bezier(.4,0,.6,1)',read:'cubic-bezier(.2,.75,.25,1)',settle:'cubic-bezier(.25,0,.3,1)'};
-export const gauge=motion(TIMING.settle,'A measured move. A precise reading.',['Calibrate','Read','Hold'],[
+export const gauge=motion(TIMING.settle,'The needle moves to a tick and holds.',['Calibrate','Read','Hold'],[
  actor('needle',NEEDLE.origin,[pose(TIMING.rest,NEEDLE.rest,EASE.gather),pose(TIMING.gather,NEEDLE.gather,EASE.read),pose(TIMING.overshoot,NEEDLE.over,EASE.settle),pose(TIMING.seat,NEEDLE.rest,EASE.settle),pose(TIMING.residual,NEEDLE.residual,EASE.settle),pose(TIMING.home,NEEDLE.rest),pose(TIMING.settle,NEEDLE.rest)]),
  actor('reading-tick',TICK.origin,[light(TIMING.rest,0,TICK.small),light(TIMING.overshoot,0,TICK.small),light(TIMING.seat,TICK.ink,TICK.full),light(TIMING.lightOut,0,TICK.full),light(TIMING.settle,0,TICK.small)]),
  actor('reading-echo',ECHO.origin,[light(TIMING.rest,0,ECHO.small),light(TIMING.seat,0,ECHO.small),light(TIMING.echo,ECHO.ink,ECHO.full),light(TIMING.lightOut,0,ECHO.out),light(TIMING.settle,0,ECHO.small)]),

@@ -35,7 +35,7 @@ export const CHECKPOINT_ART={
 const STATE={origin:'12px 12px',rest:'translateY(0px)',gather:'translateY(-.7px)'};
 const RING={origin:STATE.origin,compress:.97,relax:1.016};
 const EASE={gather:'cubic-bezier(.4,0,.7,1)',arrive:'cubic-bezier(.5,0,.75,.6)',contact:'cubic-bezier(.18,.8,.3,1)',settle:'cubic-bezier(.3,0,.3,1)'};
-const checkpointMotion=motion(TIMING.settle,'A state arrives. Its place is kept.',['Receive','Register','Hold'],[
+const checkpointMotion=motion(TIMING.settle,'The state marker seats before its retainer closes.',['Receive','Register','Hold'],[
  actor('saved-state',STATE.origin,[pose(TIMING.rest,STATE.rest,EASE.gather),pose(TIMING.gather,STATE.gather,EASE.arrive),pose(TIMING.contact,STATE.rest),pose(TIMING.settle,STATE.rest)]),
  actor('retaining-ring',RING.origin,[pose(TIMING.rest,'scale(1)'),pose(TIMING.contact,'scale(1)',EASE.contact),pose(TIMING.compress,`scale(${RING.compress})`,EASE.settle),pose(TIMING.relax,`scale(${RING.relax})`,EASE.settle),pose(TIMING.ringRest,'scale(1)'),pose(TIMING.settle,'scale(1)')]),
  actor('capture-signal','12px 2.5px',[light(TIMING.rest,0,'translateY(0px)'),light(TIMING.signalStart,0,'translateY(0px)'),light(TIMING.signalPeak,.92,'translateY(1.5px)'),light(TIMING.contact,.92,'translateY(2.8px)'),light(TIMING.signalOut,0,'translateY(2.8px)'),light(TIMING.settle,0,'translateY(0px)')]),

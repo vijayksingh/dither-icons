@@ -34,7 +34,7 @@ export const EXIT_ART={
 export const EXIT_DOOR={origin:'5.2px 12px',rest:'matrix(1,0,0,1,0,0)',pickup:'matrix(.96,.012,0,1,0,0)',open:'matrix(.58,.13,0,1,0,0)'};
 const ARROW={origin:'10.1px 12px',rest:'translateX(0px)',pickup:'translateX(-.2px)',exit:'translateX(2.1px)'};
 const doorFrames=[pose(TIMING.rest,EXIT_DOOR.rest),pose(TIMING.prepare,EXIT_DOOR.pickup),pose(TIMING.open,EXIT_DOOR.open),pose(TIMING.arrowHome,EXIT_DOOR.open),pose(TIMING.close,EXIT_DOOR.rest),pose(TIMING.settle,EXIT_DOOR.rest)];
-export const signOut=motion(TIMING.settle,'Open the way. Leave deliberately.',['Open','Leave','Release'],[
+export const signOut=motion(TIMING.settle,'The door opens before the arrow exits.',['Open','Leave','Release'],[
  ...['exit-leaf','exit-occlusion'].map(part=>actor(part,EXIT_DOOR.origin,doorFrames)),
  actor('exit-arrow',ARROW.origin,[pose(TIMING.rest,ARROW.rest),pose(TIMING.prepare,ARROW.pickup),pose(TIMING.open,ARROW.pickup),pose(TIMING.depart,ARROW.exit),pose(TIMING.clear,ARROW.exit),pose(TIMING.arrowHome,ARROW.rest),pose(TIMING.settle,ARROW.rest)]),
  ...['exit-witness-upper','exit-witness-lower'].map(part=>actor(part,'11.6px 12px',[light(TIMING.rest,0,'scale(.65)'),light(TIMING.depart,0,'scale(.65)'),light(TIMING.answer,.75,'scale(1)'),light(TIMING.clear,0,'scale(1.12)'),light(TIMING.settle,0,'scale(.65)')])),

@@ -45,7 +45,7 @@ const mark=(axis:'X'|'Y')=>{
     light(TIMING.rest,0,start),light(TIMING.targetStart,0,start),light(TIMING.targetGlint,TARGET.ink,`translate${axis}(0px) scale(1)`),
     light(TIMING.targetOut,0,`translate${axis}(${TARGET.travel}px) scale(1)`),light(TIMING.settle,0,start)]);
 };
-export const copy=motion(TIMING.settle,'An impression. A twin. Its own place.',['Register','Separate','Nest'],[
+export const copy=motion(TIMING.settle,'A second sheet separates from the original.',['Register','Separate','Nest'],[
   duplicate,{...duplicate,part:'duplicate-occlusion'},
   actor('source-glint',SOURCE.origin,[light(TIMING.rest,0,'scale(.7)'),light(TIMING.sourceStart,0,'scale(.7)'),
     light(TIMING.sourceGlint,SOURCE.ink,'scale(1)'),light(TIMING.sourceOut,0,'scale(1)'),light(TIMING.settle,0,'scale(.7)')]),

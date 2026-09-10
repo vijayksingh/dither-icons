@@ -24,7 +24,7 @@ export const SPARKLES_FIELD=[
  {part:'spark-west',x:2.6,y:10.9,radius:1.1},
 ];
 export const SPARKLES_ART={main:sparklePath(...G.main as [number,number],G.mainRadius),satellite:sparklePath(...G.satellite as [number,number],G.satelliteRadius),companion:sparklePath(...G.companion as [number,number],G.companionRadius)};
-export const sparkles=motion(T.settle,'One flare. Little sparks all around.',['Gather','Illuminate','Twinkle'],[
+export const sparkles=motion(T.settle,'The central stars brighten as smaller sparks appear around them.',['Gather','Illuminate','Twinkle'],[
  actor('spark-main','12px 12px',[pose(T.rest,'scale(1)'),pose(T.gather,'scale(.87)',ease.settle),pose(T.flare,'scale(1.08)'),pose(T.reply,'scale(1.025)'),pose(T.home,'scale(1)'),pose(T.settle,'scale(1)')]),
  ...[{part:'spark-satellite',point:G.satellite,peak:T.satellite},{part:'spark-companion',point:G.companion,peak:T.reply}].map(({part,point,peak})=>actor(part,point.map(n=>`${n}px`).join(' '),[pose(T.rest,'scale(1)'),pose(T.flare,'scale(1)',ease.settle),pose(peak,'scale(1.16)'),pose(T.home,'scale(1)'),pose(T.settle,'scale(1)')])),
  ...SPARKLES_FIELD.map(({part,x,y},i)=>{const peak=T.first+i*T.stagger;return actor(part,`${x}px ${y}px`,[light(T.rest,0,'scale(.3)'),light(peak-100,0,'scale(.3)'),light(peak,1,'scale(1.1)'),{...light(peak+T.linger,.9,'scale(1)'),easing:ease.smooth},light(peak+T.fade,0,'scale(.45)'),light(T.settle,0,'scale(.3)')]);}),

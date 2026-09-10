@@ -15,7 +15,7 @@ export const PANEL_CLOSE_GEOMETRY={left:4.4,top:5.1,width:4.8,height:13.8,divide
 const T=PANEL_CLOSE_TIMING,G=PANEL_CLOSE_GEOMETRY;
 export const PANEL_CLOSE_ART={frame:EXPLORER_ART.frame,frameLine:EXPLORER_ART.frameLine,panel:'M4.4 5.1h4.8v13.8H4.4Z',divider:'M9.2 5.1v13.8',rows:'M5.8 8h1.6M5.8 11h1.6M5.8 14h1.6',arrow:'M15.2 9.3 12.5 12l2.7 2.7M12.5 12h5.4',latch:'M4.95 5.55h1.2M4.95 18.45h1.2'};
 const drawer=[pose(T.rest,'translateX(0px)'),pose(T.withdraw,'translateX(0px)',ease.settle),pose(T.close,`translateX(${G.travel}px)`),pose(T.clear,`translateX(${G.travel}px)`),pose(T.home,'translateX(0px)'),pose(T.settle,'translateX(0px)')];
-export const panelLeftClose=motion(T.settle,'Tuck the drawer away. Keep your workspace.',['Withdraw','Close','Latch'],[
+export const panelLeftClose=motion(T.settle,'The side panel closes while the workspace stays visible.',['Withdraw','Close','Latch'],[
  actor('panel-drawer','0px 0px',drawer),
  actor('panel-divider','0px 0px',drawer),
  actor('panel-arrow','12.5px 12px',[pose(T.rest,'translateX(0px)'),pose(T.lead,'translateX(-.6px)',ease.settle),pose(T.close,`translateX(${G.arrowTravel}px)`),pose(T.hold,`translateX(${G.arrowTravel}px)`),pose(T.home,'translateX(0px)'),pose(T.settle,'translateX(0px)')]),

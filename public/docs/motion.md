@@ -1,17 +1,17 @@
-# Motion with a meaning.
+# Animation controls
 
-A short action, a clear response, and an exact return to rest.
+Configure triggers, inspect frames, and handle reduced motion.
 
-## A gesture, not a loop.
+## Playback behavior
 
-Each icon starts with an object and a verb. The Download arrow leads and its tray catches. The Bell shell swings and its clapper follows. All gestures preserve their identifying silhouette through the payoff.
+Each icon plays a short animation and returns to its starting pose. In Download, the arrow lands before the tray responds. In Bell, the clapper follows the swinging shell.
 
 - React playback uses native Web Animations. Tracks change transform and opacity.
 - Pointer entry, keyboard focus and a click or tap can trigger playback.
 - Leaving the target lets the gesture finish. Repeated input during playback is ignored.
 - Unmounting, animate={false}, or a reduced-motion preference cancels the running tracks.
 
-## Let the whole control respond.
+## Trigger from the parent button
 
 ```tsx
 import { SavePreferencesIcon } from '@unlocalhosted/dither-icons';
@@ -28,7 +28,7 @@ import { SavePreferencesIcon } from '@unlocalhosted/dither-icons';
 
 > saving and savePreferences belong to your application. The icon supplies visual feedback, never proof that the operation succeeded. Keep loading, error and success states in the control’s text and semantics.
 
-## Look closely before tuning.
+## Inspect a frame
 
 Every icon page includes half-speed playback and a frame inspector. Pass progress={0.5} to hold the middle frame, then remove progress to restore hover and focus interaction. Changing material keeps the inspected frame aligned with the replacement artwork.
 
@@ -39,6 +39,6 @@ Every icon page includes half-speed playback and a frame inspector. Pass progres
 <DownloadIcon size={96} />
 ```
 
-## React and SVG share the drawing.
+## React and standalone SVG
 
-Standalone SVG includes CSS compiled from the same tracks. CSS-only hover stops when the pointer leaves; React preserves the complete gesture. Choose React for the richer interaction lifecycle and inline SVG when portability matters more.
+Standalone SVG includes CSS compiled from the same tracks. CSS-only hover stops when the pointer leaves; React preserves the complete gesture. Use React when playback should finish after the pointer leaves. Use inline SVG for CSS hover animation without React.

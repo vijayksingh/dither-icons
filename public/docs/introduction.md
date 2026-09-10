@@ -1,16 +1,16 @@
-# A good place to start.
+# Using Dither Icons
 
-A small library with a particular point of view. Here’s how to make it part of yours.
+Install an icon, choose a material, and configure playback.
 
-## Fine grain. Real geometry.
+## The library
 
-Dither Icons is a collection of 73 original SVG icons for React. Smooth vector contours carry a fine ordered texture. Each icon has its own short, meaningful gesture: a bell rings, a tray catches, a lid opens.
+Dither Icons includes 73 original SVG icons with individual animations. Each drawing comes in dither, solid, and outline. The dither texture sits inside the vector shape and moves with it.
 
 ![The same Download icon in dither, solid and outline textures.](/reference/textures.svg)
 
-One drawing. Three ways to belong in your interface.
+The Download icon in dither, solid, and outline.
 
-## Your first little detail.
+## Add your first icon
 
 Install the package, import a named component, and add it to a real button. The icon inherits your text color and needs no separate stylesheet.
 
@@ -24,15 +24,15 @@ import { DownloadIcon } from '@unlocalhosted/dither-icons';
 
 Interactive example available on the public documentation page. Use the accompanying React snippet to reproduce it.
 
-## Choose the right material.
+## Choose a material
 
-- Dither: expressive detail at 48px and above. A fine tonal field sits inside a smooth silhouette.
-- Solid: the clearest reading for compact controls, usually 16–24px.
-- Outline: a lighter presence in dense navigation and toolbars.
+- Dither: a fine dot pattern within the vector shape. Best at 48px and above.
+- Solid: filled shapes for compact controls, usually 16–24px.
+- Outline: stroked shapes for navigation and toolbars.
 
-The texture changes the material, not the drawing or meaning. Color and contrast belong to your interface; the SVG uses currentColor.
+All three materials use the same geometry. Icons inherit currentColor; check contrast against your background.
 
-## Small surface. Considered behavior.
+## What the package includes
 
 - React 18+ is the only peer dependency. ESM and TypeScript declarations are included.
 - Hover, focus and tap play once. A gesture finishes after the pointer leaves.

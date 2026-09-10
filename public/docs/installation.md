@@ -1,8 +1,8 @@
-# In your project in minutes.
+# Install Dither Icons
 
-A React package from npm. A standalone SVG for everywhere else.
+Use the React package or download individual SVGs from the catalog.
 
-## 01. Take the package.
+## 1. Install the package
 
 Install the package from npm using your package manager.
 
@@ -12,7 +12,7 @@ npm install @unlocalhosted/dither-icons
 
 > React 18 or newer is the only peer dependency.
 
-## 02. Add an icon.
+## 2. Add an icon
 
 ```tsx
 import { DownloadIcon } from '@unlocalhosted/dither-icons';
@@ -24,7 +24,7 @@ import { DownloadIcon } from '@unlocalhosted/dither-icons';
 
 Add di-trigger to the parent button to make its entire hit area respond. Keep your real onClick action on that button. Playing a preview does not perform a download or change application state.
 
-## 03. Match your environment.
+## Framework support
 
 | Environment | Integration |
 | --- | --- |
@@ -33,7 +33,7 @@ Add di-trigger to the parent button to make its entire hit area respond. Keep yo
 | Plain HTML / other frameworks | Open an icon page and download its standalone SVG. Inline the markup for hover animation. |
 | Image elements | Use a downloaded SVG in an <img> for its static appearance. Image embedding does not expose its internal hover targets. |
 
-## Working on the library itself?
+## Local development
 
 ```sh
 npm install

@@ -29,7 +29,7 @@ export const EYE_ART={
 const T=EYE_TIMING,G=EYE_GEOMETRY;
 // Lids and aperture share the very same frames. Iris is outside these transforms.
 export const EYE_BLINK=[pose(T.rest,'scaleY(1)'),pose(T.widen,`scaleY(${G.widen})`,ease.accelerate),pose(T.close,'scaleY(0)'),pose(T.hold,'scaleY(0)',ease.settle),pose(T.open,`scaleY(${G.open})`),pose(T.home,'scaleY(1)'),pose(T.settle,'scaleY(1)')];
-export const eye=motion(T.settle,'Close softly. Open with a little light.',['Close','Open','Awaken'],[
+export const eye=motion(T.settle,'The eye closes fully, then opens with a catchlight.',['Close','Open','Awaken'],[
  actor('eye-lids','12px 12px',EYE_BLINK),
  actor('eye-aperture','12px 12px',EYE_BLINK),
  actor('eye-crease','12px 12px',[light(T.rest,0),light(T.widen,0),light(T.close,1),light(T.hold,1),light(T.reveal,0),light(T.settle,0)]),

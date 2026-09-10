@@ -41,7 +41,7 @@ const RIPPLE={travel:.9,fall:.25,ink:.76,small:'scaleX(.55)',full:'scaleX(1)'};
 const ECHO={travel:.45,fall:.1,ink:.36};
 const SIDES=[{side:'left',sign:-1,origin:'6.4px 20.1px',echoOrigin:'7.2px 22px'},{side:'right',sign:1,origin:'17.6px 20.1px',echoOrigin:'16.8px 22px'}];
 const EASE={lift:'cubic-bezier(.4,0,.6,1)',fall:'cubic-bezier(.5,0,.65,.7)',resist:'cubic-bezier(.16,.8,.3,1)',settle:'cubic-bezier(.3,0,.3,1)'};
-export const lifebuoy=motion(TIMING.settle,'Takes the weight. Keeps you afloat.',['Meet','Support','Settle'],[
+export const lifebuoy=motion(TIMING.settle,'The ring meets its support before the ripple spreads.',['Meet','Support','Settle'],[
  actor('buoy',BODY.origin,[pose(TIMING.rest,BODY.rest,EASE.lift),pose(TIMING.gather,BODY.gather,EASE.fall),pose(TIMING.contact,BODY.contact,EASE.resist),pose(TIMING.resist,BODY.resist,EASE.resist),pose(TIMING.rise,BODY.rise,EASE.settle),pose(TIMING.home,BODY.rest),pose(TIMING.settle,BODY.rest)]),
  actor('buoy-contact',CONTACT.origin,[light(TIMING.rest,0,CONTACT.small),light(TIMING.contact,0,CONTACT.small),light(TIMING.resist,CONTACT.ink,CONTACT.full),light(TIMING.lightOut,0,CONTACT.full),light(TIMING.settle,0,CONTACT.small)]),
  ...SIDES.flatMap(s=>[

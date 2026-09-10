@@ -18,7 +18,7 @@ export function DirectoryLayout({ children, icons = false }: { children: ReactNo
     }
   }, [route.path]);
   return <div className="directory-layout">
-    <label className="mobile-page-picker"><span>On this page</span><select aria-label="Browse pages" value={route.path} onChange={event => navigate(event.target.value)}>
+    <label className="mobile-page-picker"><span>Browse pages</span><select aria-label="Browse pages" value={route.path} onChange={event => navigate(event.target.value)}>
       <optgroup label="Guides">{docs.map(doc => <option key={doc.slug} value={docPath(doc.slug)}>{docLabel(doc)}</option>)}<option value="/ai">For AI agents</option><option value="/motion">Motion studio</option></optgroup>
       {icons && <optgroup label="Icons">{collection.map(icon => <option key={icon.name} value={`/icons/${icon.name}`}>{labelFor(icon.name)}</option>)}</optgroup>}
     </select><Glyph name="chevron" size={16} /></label>
@@ -29,7 +29,7 @@ export function DirectoryLayout({ children, icons = false }: { children: ReactNo
         <div className="sidebar-section-heading"><span className="sidebar-heading">The collection</span><small>{collection.length}</small></div>
         <label className="sidebar-search"><Glyph name="search" size={13} /><input aria-label="Filter icon navigation" placeholder="Find an icon…" value={query} onChange={event => setQuery(event.target.value)} /></label>
         <nav className="icon-directory">{filterIcons(query, 'All icons').map(icon => <Link href={`/icons/${icon.name}`} key={icon.name} aria-current={route.path === `/icons/${icon.name}` ? 'page' : undefined}><span>{labelFor(icon.name)}</span></Link>)}{filterIcons(query, 'All icons').length === 0 && <p className="sidebar-empty">No matching icons.</p>}</nav>
-      </> : <div className="sidebar-note"><DitherIcon name="book" size={34} animate={false} /><p>Prefer to read with your agent?</p><a href="/llms-full.txt">Plain-text guide<Glyph name="arrow" size={13} /></a></div>}
+      </> : <div className="sidebar-note"><DitherIcon name="book" size={34} animate={false} /><p>Docs for coding agents</p><a href="/llms-full.txt">Plain-text guide<Glyph name="arrow" size={13} /></a></div>}
     </aside>
     <div className="directory-content">{children}</div>
   </div>;
@@ -56,7 +56,7 @@ export function MaterialControls({ compact = false }: { compact?: boolean }) {
     <label className="motion-toggle"><input type="checkbox" aria-label="Icon motion" checked={motion} onChange={event => setMotion(event.target.checked)} /><span className="switch-track"><span /></span><span>Motion {motion ? 'on' : 'off'}</span></label>
   </div>;
 }
-export function PageHeading({ eyebrow, title, description, children }: { eyebrow: ReactNode; title: string; description: string; children?: ReactNode }) {
-  return <div className="page-heading"><div className="page-eyebrow">{eyebrow}</div><div className="page-title-row"><h1 data-page-heading tabIndex={-1}>{title}</h1>{children}</div><p>{description}</p></div>;
+export function PageHeading({ eyebrow, title, description, children }: { eyebrow?: ReactNode; title: string; description: string; children?: ReactNode }) {
+  return <div className="page-heading">{eyebrow && <div className="page-eyebrow">{eyebrow}</div>}<div className="page-title-row"><h1 data-page-heading tabIndex={-1}>{title}</h1>{children}</div><p>{description}</p></div>;
 }
 export function NextGuide({ href, label }: { href: string; label: string }) { return <Link className="next-guide" href={href}><span><small>Up next</small><strong>{label}</strong></span><Glyph name="arrow" /></Link>; }

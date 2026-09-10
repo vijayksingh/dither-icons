@@ -45,7 +45,7 @@ const tick=(side:'left'|'right')=>{
     light(TIMING.rest,0,start),light(TIMING.contact,0,start),light(TIMING.ticks,IMPACT.ink,peak),
     light(TIMING.lightOut,0,end),light(TIMING.settle,0,start)]);
 };
-export const trash=motion(TIMING.settle,'A little weight. A close you can feel.',['Lift','Contact','Dissipate'],[
+export const trash=motion(TIMING.settle,'The lid lifts, drops, and settles on the bin.',['Lift','Contact','Dissipate'],[
   actor('lid',LID.origin,[pose(TIMING.rest,LID.rest,EASE.brace),pose(TIMING.brace,LID.brace,EASE.open),
     pose(TIMING.open,LID.open),pose(TIMING.read,LID.open,EASE.fall),
     pose(TIMING.contact,lidAtRim(1),EASE.contact),pose(TIMING.impact,lidAtRim(TRASH_CONTACT.compression),EASE.rebound),

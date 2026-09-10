@@ -42,7 +42,7 @@ const CAP={origin:'12px 16px',rest:'translateY(0px) rotate(0deg)',gather:'transl
 const CORD={origin:'20px 9.4px',rest:'rotate(0deg)',gather:'rotate(-2deg)',lag:'rotate(11deg)',hold:'rotate(6deg)',catch:'rotate(-7deg)',rebound:'rotate(2.8deg)',quiet:'rotate(-.65deg)'};
 const TUFT={origin:'20px 16.3px',rest:'rotate(0deg)',lag:'rotate(5deg)',catch:'rotate(-8deg)',rebound:'rotate(3.5deg)'};
 const LIGHT={origin:'12px 8.6px',ink:.65};
-export const graduationCap=motion(TIMING.settle,'A small tip. A little possibility.',['Acknowledge','Catch','Settle'],[
+export const graduationCap=motion(TIMING.settle,'The cap tips, then the tassel swings.',['Acknowledge','Catch','Settle'],[
  actor('academic-cap',CAP.origin,[pose(TIMING.rest,CAP.rest),pose(TIMING.gather,CAP.gather),pose(TIMING.tip,CAP.tip),pose(TIMING.hold,CAP.tip),pose(TIMING.home,CAP.rest),pose(TIMING.settle,CAP.rest)]),
  actor('tassel-cord',CORD.origin,[pose(TIMING.rest,CORD.rest),pose(TIMING.gather,CORD.gather),pose(TIMING.lag,CORD.lag),pose(TIMING.hold,CORD.hold),pose(TIMING.catch,CORD.catch),pose(TIMING.rebound,CORD.rebound),pose(TIMING.quiet,CORD.quiet),pose(TIMING.settle,CORD.rest)]),
  actor('tassel-tuft',TUFT.origin,[pose(TIMING.rest,TUFT.rest),pose(TIMING.gather,TUFT.rest),pose(TIMING.lag,TUFT.lag),pose(TIMING.hold,TUFT.rest),pose(TIMING.echo,TUFT.catch),pose(TIMING.rebound,TUFT.rebound),pose(TIMING.quiet,TUFT.rest),pose(TIMING.settle,TUFT.rest)]),

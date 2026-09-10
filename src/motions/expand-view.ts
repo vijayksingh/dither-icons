@@ -30,7 +30,7 @@ export const EXPAND_ART={
 };
 const FRAME={origin:'12px 12px',pickup:-.3,extended:1.9,seated:1.6};
 const poses=[{at:TIMING.rest,r:0},{at:TIMING.prepare,r:FRAME.pickup},{at:TIMING.extend,r:FRAME.extended},{at:TIMING.seat,r:FRAME.seated},{at:TIMING.clear,r:FRAME.seated},{at:TIMING.home,r:0},{at:TIMING.settle,r:0}];
-export const expandView=motion(TIMING.settle,'More room. The same point of focus.',['Gather','Expand','Breathe'],[
+export const expandView=motion(TIMING.settle,'The frame expands around a fixed center.',['Gather','Expand','Breathe'],[
  ...EXPAND_CORNERS.flatMap((c,i)=>[
   actor(`expand-corner-${i}`,FRAME.origin,poses.map(p=>pose(p.at,`translate(${c.x*p.r}px,${c.y*p.r}px)`))),
   actor(`expand-echo-${i}`,`${c.x<0?6:18}px ${c.y<0?6:18}px`,[light(TIMING.rest,0,'scale(.85)'),light(TIMING.seat,0,'scale(.85)'),light(i%2===0?TIMING.first:TIMING.second,.65,'scale(1)'),light(TIMING.clear,0,'scale(1.04)'),light(TIMING.settle,0,'scale(.85)')]),

@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.2 — 2026-09-10
+
+- Rewrote the homepage, motion studio, icon pages, docs, and AI page with direct descriptions and action labels.
+- Replaced promotional icon captions with descriptions of the visible animation. All 73 timelines, durations, and stage names are unchanged.
+- Updated the README, generated agent docs, metadata, and social previews to match.
+- Fixed singular search counts, mobile text joining at hidden line breaks, and the missing-page title.
+- Added `docs/COPY-GUIDE.md` for future contributors and agents.
+
 ## 0.2.1 — 2026-09-10
 
 - Fixed **Download React package** in the installation guide to download the versioned archive from dithered.dev. The npm links still open the registry listing.

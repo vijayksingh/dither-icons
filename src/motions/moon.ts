@@ -28,7 +28,7 @@ export const MOON_ART={
 };
 const T=MOON_TIMING;
 export const MOON_FLIGHT={start:'translate(2.1px,-3px)',end:'translate(0px,0px)'};
-export const moon=motion(T.settle,'A crescent rises. A falling star finds its place.',['Rise','Catch a star','Rest'],[
+export const moon=motion(T.settle,'The crescent rises, followed by a falling star.',['Rise','Catch a star','Rest'],[
  actor('moon-crescent',`${G.outer[0]}px ${G.outer[1]}px`,[pose(T.rest,'translateY(0px) rotate(0deg)'),pose(T.gather,'translateY(.2px) rotate(2deg)',ease.settle),pose(T.rise,'translateY(-.65px) rotate(-9deg)'),pose(T.hold,'translateY(-.65px) rotate(-9deg)'),pose(T.settle,'translateY(0px) rotate(0deg)')]),
  actor('moon-flight',`${G.star[0]}px ${G.star[1]}px`,[pose(T.rest,MOON_FLIGHT.start),pose(T.rise,MOON_FLIGHT.start),pose(T.arrive,MOON_FLIGHT.end),pose(T.clear,MOON_FLIGHT.end),pose(T.settle,MOON_FLIGHT.start)]),
  actor('moon-star',`${G.star[0]}px ${G.star[1]}px`,[light(T.rest,0,'scale(.35)'),light(T.rise,0,'scale(.35)'),light(T.appear,.65,'scale(.6)'),light(T.arrive,.85,'scale(.85)'),light(T.twinkle,1,'scale(1.12)'),light(T.hold,.8,'scale(1)'),light(T.clear,0,'scale(.7)'),light(T.settle,0,'scale(.35)')]),

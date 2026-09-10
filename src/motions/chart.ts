@@ -23,7 +23,7 @@ export const CHART_ART={
  caps:G.bars.map(({x,width,top})=>`M${x-.45} ${top-.45}h${width+.9}`),
 };
 const level=(i:number)=>`translateY(${CHART_POINTS[i][1]-G.baseline}px)`;
-export const chart=motion(T.settle,'One baseline. Three heights. The difference is clear.',['Measure','Compare','Resolve'],[
+export const chart=motion(T.settle,'A scan compares three bars against a shared baseline.',['Measure','Compare','Resolve'],[
  actor('chart-ruler-position','0px 0px',[pose(T.rest,'translateY(0px)'),pose(T.unfold,'translateY(0px)',ease.smooth),pose(T.first,level(0)),pose(T.firstHold,level(0)),pose(T.second,level(1)),pose(T.secondHold,level(1)),pose(T.third,level(2)),pose(T.clear,level(2)),pose(T.settle,'translateY(0px)')]),
  actor('chart-ruler',`${G.rulerStart}px ${G.baseline}px`,[light(T.rest,0,'scaleX(0)'),light(T.unfold,.6,'scaleX(1)'),light(T.third,.6,'scaleX(1)'),light(T.resolve,.8,'scaleX(1)'),light(T.hold,.8,'scaleX(1)'),light(T.clear,0,'scaleX(0)'),light(T.settle,0,'scaleX(0)')]),
  ...[T.first,T.second,T.third].map((time,i)=>actor(`chart-mark-${i}`,`${G.rulerStart}px ${CHART_POINTS[i][1]}px`,[light(T.rest,0,'scaleX(.25)'),light(time,0,'scaleX(.25)'),light(time+90,.9,'scaleX(1)'),light(T.hold,.9,'scaleX(1)'),light(T.clear,0,'scaleX(1)'),light(T.settle,0,'scaleX(.25)')])),

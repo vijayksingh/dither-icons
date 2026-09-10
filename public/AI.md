@@ -36,11 +36,11 @@ Verify the imported name exists in icons.json. Check the actual rendered size, l
 npm install @unlocalhosted/dither-icons
 ```
 
-# React, without ceremony.
+# React API
 
-Named components, ordinary SVG props, and a few deliberate controls for motion.
+Component imports, SVG props, and playback controls.
 
-## Start with a named component.
+## Import a component
 
 ```tsx
 import { BellIcon } from '@unlocalhosted/dither-icons';
@@ -52,7 +52,7 @@ import { BellIcon } from '@unlocalhosted/dither-icons';
 
 Every component forwards its SVG ref and accepts standard SVG attributes, including className, style, color and event handlers. Keep the accessible name and click action on the surrounding control.
 
-## The complete prop surface.
+## Props
 
 | Prop | Default | Behavior |
 | --- | --- | --- |
@@ -65,7 +65,7 @@ Every component forwards its SVG ref and accepts standard SVG attributes, includ
 | progress | undefined | A normalized frame from 0 to 1. Omit to restore interaction. |
 | title | undefined | Accessible image name. Without a title the icon is decorative. |
 
-## Selecting an icon at runtime.
+## Select an icon at runtime
 
 ```tsx
 import { DitherIcon, definitions } from '@unlocalhosted/dither-icons';
@@ -80,7 +80,7 @@ const name = definitions.some(icon => icon.name === requestedName)
 
 DitherIcon defaults to sparkles when name is omitted. An unknown name throws an error. Validate names from external data against definitions or the icon manifest before rendering.
 
-## Replay on your own terms.
+## Trigger a replay
 
 ```tsx
 import { useState } from 'react';
@@ -91,7 +91,7 @@ export function ReplayExample() {
   return (
     <button onClick={() => setReplay(value => value + 1)}>
       <SparklesIcon size={48} replayKey={replay} />
-      Replay the gesture
+      Replay animation
     </button>
   );
 }

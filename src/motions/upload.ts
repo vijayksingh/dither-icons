@@ -39,7 +39,7 @@ const lipBeats = [
   {at:TIMING.settle, angle:0, ease:EASING.settle},
 ];
 export const upload = motion(TIMING.settle,
-  'Gather in the tray. Release into the open.', ['Gather','Release','Ease home'], [
+  'The arrow lifts out of the tray.', ['Gather','Release','Ease home'], [
     actor('head','0px 0px',beats.map(b=>pose(b.at,`translateY(${b.head}px)`,b.ease))),
     actor('stem',`${UPLOAD_STEM.x}px ${UPLOAD_STEM.foot}px`,beats.map(b=>pose(b.at,
       `translateY(${b.foot}px) scaleY(${1+(b.foot-b.head)/(UPLOAD_STEM.foot-UPLOAD_STEM.joint)})`,b.ease))),

@@ -27,7 +27,7 @@ const LIGHT={origin:'12px 21px',small:'scale(.55,.3)',full:'scale(1,1)',fade:'sc
 const EASE={takeUp:'cubic-bezier(.4,0,.6,1)',open:'cubic-bezier(.22,.8,.25,1)',close:'cubic-bezier(.4,0,.25,1)'};
 const T=HOME_TIMING;
 const doorFrames=()=>[pose(T.rest,DOOR.rest,EASE.takeUp),pose(T.gather,DOOR.gather,EASE.open),pose(T.open,DOOR.open),pose(T.hold,DOOR.open,EASE.close),pose(T.close,DOOR.rest),pose(T.settle,DOOR.rest)];
-export const home=motion(T.settle,'A familiar door. A little light to greet you.',['Open','Welcome','Close'],[
+export const home=motion(T.settle,'The door opens to reveal the threshold.',['Open','Welcome','Close'],[
  ...['home-door','home-door-occlusion'].map(part=>actor(part,DOOR.origin,doorFrames())),
  actor('interior-light',LIGHT.origin,[light(T.rest,0,'scaleY(.65)'),light(T.gather,0,'scaleY(.65)'),light(T.open,.18,'scaleY(1)'),light(T.threshold,.36,'scaleY(1)'),light(T.hold,.18,'scaleY(1)'),light(T.clear,0,'scaleY(1)'),light(T.settle,0,'scaleY(.65)')]),
  actor('threshold-light',LIGHT.origin,[light(T.rest,0,'scaleX(.3)'),light(T.open,0,'scaleX(.3)'),light(T.threshold,.9,'scaleX(1)'),light(T.spill,.65,'scaleX(1)'),light(T.hold,.25,'scaleX(1)'),light(T.clear,0,'scaleX(1)'),light(T.settle,0,'scaleX(.3)')]),

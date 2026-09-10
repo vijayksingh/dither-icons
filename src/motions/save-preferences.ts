@@ -33,7 +33,7 @@ export const SAVE_ART={
 };
 export const SAVE_SHUTTER={right:14.5,stopFace:14.5,origin:'8.5px 7px',rest:'translateX(0px)',pickup:'translateX(-.18px)',open:'translateX(-1.1px)'};
 const WITNESS={rest:'scale(.65)',open:'scale(1)',clear:'scale(1.12)'};
-export const savePreferences=motion(TIMING.settle,'Write with intent. Settle into place.',['Open','Write','Seat'],[
+export const savePreferences=motion(TIMING.settle,'The write indicator finishes before the shutter closes.',['Open','Write','Seat'],[
  actor('save-shutter',SAVE_SHUTTER.origin,[pose(TIMING.rest,SAVE_SHUTTER.rest),pose(TIMING.prepare,SAVE_SHUTTER.pickup),pose(TIMING.open,SAVE_SHUTTER.open),pose(TIMING.second,SAVE_SHUTTER.open),pose(TIMING.close,SAVE_SHUTTER.rest),pose(TIMING.settle,SAVE_SHUTTER.rest)]),
  ...[TIMING.first,TIMING.second].map((at,i)=>actor(`save-write-${i}`,`9.5px ${i===0?14.25:16.45}px`,[light(TIMING.rest,0,'scaleX(.1)'),light(TIMING.open,0,'scaleX(.1)'),light(at,.85,'scaleX(1)'),light(TIMING.close,.3,'scaleX(1)'),light(TIMING.clear,0,'scaleX(1)'),light(TIMING.settle,0,'scaleX(.1)')])),
  actor('save-stop','15px 7px',[light(TIMING.rest,0,'scaleY(.4)'),light(TIMING.close,0,'scaleY(.4)'),light(TIMING.answer,.9,'scaleY(1)'),light(TIMING.clear,0,'scaleY(1)'),light(TIMING.settle,0,'scaleY(.4)')]),

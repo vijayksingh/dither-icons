@@ -25,7 +25,7 @@ const TOOL={origin:'18.8px 18.8px',rest:'translate(0px,0px) rotate(0deg)',gather
 const OPTICS={origin:'9.8px 9.8px',wide:'scale(1.5)',focused:'scale(1)',clear:'scale(1.08)',ink:.85};
 const EASE={takeUp:'cubic-bezier(.4,0,.6,1)',reach:'cubic-bezier(.2,.85,.3,1)',return:'cubic-bezier(.4,0,.25,1)'};
 const T=SEARCH_TIMING;
-export const search=motion(T.settle,'Lean closer. Let the focus resolve.',['Attend','Focus','Return'],[
+export const search=motion(T.settle,'The lens tilts as its focus mark aligns.',['Attend','Focus','Return'],[
  actor('magnifier',TOOL.origin,[pose(T.rest,TOOL.rest,EASE.takeUp),pose(T.gather,TOOL.gather,EASE.reach),pose(T.arrive,TOOL.inspect),pose(T.hold,TOOL.inspect,EASE.return),pose(T.home,TOOL.rest),pose(T.settle,TOOL.rest)]),
  actor('focus-brackets',OPTICS.origin,[light(T.rest,0,OPTICS.wide),light(T.arrive,0,OPTICS.wide),light(T.focus,OPTICS.ink,OPTICS.focused),light(T.glint,.75,OPTICS.focused),light(T.hold,.3,OPTICS.focused),light(T.clear,0,OPTICS.clear),light(T.settle,0,OPTICS.wide)]),
  actor('glass-reflection',OPTICS.origin,[light(T.rest,0,'translateX(-4px)'),light(T.focus,0,'translateX(-4px)'),light(T.glint,.2,'translateX(0px)'),light(T.hold,0,'translateX(4px)'),light(T.settle,0,'translateX(-4px)')]),

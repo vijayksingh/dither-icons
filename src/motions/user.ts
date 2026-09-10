@@ -24,7 +24,7 @@ const HEAD={origin:'12px 11.35px',rest:'translate(0px,0px) rotate(0deg) scale(1,
 const SHOULDERS={origin:'12px 21.2px',rest:'scale(1,1)',breath:'scale(1.018,1.035)'};
 const EASE={notice:'cubic-bezier(.4,0,.6,1)',nod:'cubic-bezier(.3,.1,.3,1)',rise:'cubic-bezier(.22,.8,.3,1)'};
 const T=USER_TIMING;
-export const user=motion(T.settle,'A small nod. A warm acknowledgment.',['Notice','Acknowledge','Ease'],[
+export const user=motion(T.settle,'The head nods, followed by a greeting mark.',['Notice','Acknowledge','Ease'],[
  actor('profile-head',HEAD.origin,[pose(T.rest,HEAD.rest,EASE.notice),pose(T.notice,HEAD.notice,EASE.nod),pose(T.nod,HEAD.nod,EASE.rise),pose(T.rise,HEAD.rise,EASE.rise),pose(T.upright,HEAD.rest),pose(T.settle,HEAD.rest)]),
  actor('profile-shoulders',SHOULDERS.origin,[pose(T.rest,SHOULDERS.rest),pose(T.notice,SHOULDERS.rest),pose(T.rise,SHOULDERS.breath),pose(T.upright,'scale(1.006,1.01)'),pose(T.clear,SHOULDERS.rest),pose(T.settle,SHOULDERS.rest)]),
  actor('cheek-light','12px 7.3px',[light(T.rest,0),light(T.nod,0),light(T.rise,.7),light(T.greet,.55),light(T.upright,0),light(T.settle,0)]),

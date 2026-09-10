@@ -32,7 +32,7 @@ const EASE={settle:'cubic-bezier(.22,1,.36,1)',accelerate:'cubic-bezier(.55,0,.8
 const track=(part:string,origin:string,frames:Frame[]):Track=>({part,origin,frames});
 export const studies:Record<string,Study>={
  ...navigationTools,...learningWorkflow,...learningPractice,...dataFlow,...platformActions,...platformTools,...navigation,...files,...learning,...platformNavigation,...communication,...media,...development,...controls,...presence,...atmosphere,
- bell:{duration:940,caption:'A little weight. A lingering ring.',stages:['Anticipate','Strike','Resonate'],tracks:[
+ bell:{duration:940,caption:'The shell swings; the clapper follows.',stages:['Anticipate','Strike','Resonate'],tracks:[
   track('shell','12px 5px',[
    {at:0,transform:'rotate(0deg)',easing:EASE.smooth},{at:100,transform:'rotate(-7deg)',easing:EASE.accelerate},
    {at:230,transform:'rotate(18deg)',easing:EASE.smooth},{at:400,transform:'rotate(-12deg)',easing:EASE.smooth},
@@ -43,7 +43,7 @@ export const studies:Record<string,Study>={
   track('ring-right','18px 9px',[{at:0,opacity:0,transform:'translateX(-1px) scale(.85)'},{at:210,opacity:0,transform:'translateX(-1px) scale(.85)'},{at:310,opacity:.85,transform:'translateX(0px) scale(1)'},{at:570,opacity:0,transform:'translateX(1.2px) scale(1.08)'},{at:940,opacity:0}]),
   track('ring-left','6px 9px',[{at:0,opacity:0,transform:'translateX(1px) scale(.85)'},{at:380,opacity:0,transform:'translateX(1px) scale(.85)'},{at:490,opacity:.6,transform:'translateX(0px) scale(1)'},{at:740,opacity:0,transform:'translateX(-1px) scale(1.08)'},{at:940,opacity:0}]),
  ]},
- heart:{duration:820,caption:'Gather, open, let a little joy escape.',stages:['Gather','Bloom','Exhale'],tracks:[
+ heart:{duration:820,caption:'The heart expands and releases small sparks.',stages:['Gather','Bloom','Exhale'],tracks:[
   track('heart','12px 13px',[{at:0,transform:'scale(1,1)',easing:EASE.smooth},{at:130,transform:'scale(.88,.93)',easing:EASE.settle},{at:310,transform:'scale(1.13,1.07)',easing:EASE.smooth},{at:470,transform:'scale(.985,1.025)',easing:EASE.smooth},{at:640,transform:'scale(1.02,.995)'},{at:820,transform:'scale(1,1)'}]),
   track('heart-light','12px 13px',[{at:0,opacity:0},{at:130,opacity:0},{at:280,opacity:.55},{at:560,opacity:0},{at:820,opacity:0}]),
   ...[[-1,-1],[1,-1],[-1,.5],[1,.5]].map(([x,y],i)=>track(`fleck-${i}`,'12px 12px',[
@@ -68,7 +68,7 @@ export const studies:Record<string,Study>={
    {at:690,opacity:.25,transform:'scaleX(1)'},{at:860,opacity:0,transform:'scaleX(1)'},{at:1120,opacity:0}]),
   ...[-1,1].map((x,i)=>track(`catch-${i}`,'12px 20px',[{at:0,opacity:0,transform:'translateX(0px)'},{at:410,opacity:0,transform:'translateX(0px)'},{at:480,opacity:.6,transform:`translateX(${x*.5}px)`},{at:700,opacity:0,transform:`translateX(${x*1.2}px)`},{at:1120,opacity:0}]))
  ]},
- layers:{duration:1120,caption:'Make room, reveal the depth, fit back together.',stages:['Gather','Separate','Nest'],tracks:[
+ layers:{duration:1120,caption:'The layers separate and return to their stack.',stages:['Gather','Separate','Nest'],tracks:[
   track('plane-bottom','12px 16px',[{at:0,transform:'translateY(0px)'},{at:120,transform:'translateY(-.65px)',easing:EASE.settle},{at:380,transform:'translateY(2.3px)'},{at:610,transform:'translateY(2.3px)',easing:EASE.smooth},{at:850,transform:'translateY(-.3px)'},{at:1010,transform:'translateY(0px)'},{at:1120,transform:'translateY(0px)'}]),
   track('plane-middle','12px 12px',[{at:0,transform:'translate(0px,0px)'},{at:170,transform:'translate(0px,0px)',easing:EASE.settle},{at:430,transform:'translate(1px,-.3px)'},{at:650,transform:'translate(1px,-.3px)',easing:EASE.smooth},{at:920,transform:'translate(-.2px,.3px)'},{at:1070,transform:'translate(0px,0px)'},{at:1120,transform:'translate(0px,0px)'}]),
   track('plane-top','12px 8px',[{at:0,transform:'translateY(0px)'},{at:120,transform:'translateY(.8px)',easing:EASE.settle},{at:400,transform:'translateY(-3px)'},{at:620,transform:'translateY(-3px)',easing:EASE.smooth},{at:930,transform:'translateY(.5px)'},{at:1120,transform:'translateY(0px)'}]),

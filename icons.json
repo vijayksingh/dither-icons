@@ -32,7 +32,7 @@
       "keywords": [],
       "page": "/icons/bell",
       "motion": {
-        "caption": "A little weight. A lingering ring.",
+        "caption": "The shell swings; the clapper follows.",
         "durationMs": 940,
         "stages": [
           "Anticipate",
@@ -50,7 +50,7 @@
       "keywords": [],
       "page": "/icons/heart",
       "motion": {
-        "caption": "Gather, open, let a little joy escape.",
+        "caption": "The heart expands and releases small sparks.",
         "durationMs": 820,
         "stages": [
           "Gather",
@@ -68,7 +68,7 @@
       "keywords": [],
       "page": "/icons/sparkles",
       "motion": {
-        "caption": "One flare. Little sparks all around.",
+        "caption": "The central stars brighten as smaller sparks appear around them.",
         "durationMs": 1260,
         "stages": [
           "Gather",
@@ -86,7 +86,7 @@
       "keywords": [],
       "page": "/icons/search",
       "motion": {
-        "caption": "Lean closer. Let the focus resolve.",
+        "caption": "The lens tilts as its focus mark aligns.",
         "durationMs": 1320,
         "stages": [
           "Attend",
@@ -104,7 +104,7 @@
       "keywords": [],
       "page": "/icons/home",
       "motion": {
-        "caption": "A familiar door. A little light to greet you.",
+        "caption": "The door opens to reveal the threshold.",
         "durationMs": 1400,
         "stages": [
           "Open",
@@ -122,7 +122,7 @@
       "keywords": [],
       "page": "/icons/settings",
       "motion": {
-        "caption": "A measured turn. A precise little click.",
+        "caption": "The gear turns and settles at the next position.",
         "durationMs": 1360,
         "stages": [
           "Adjust",
@@ -140,7 +140,7 @@
       "keywords": [],
       "page": "/icons/check",
       "motion": {
-        "caption": "Seat the stroke. Let the tip affirm.",
+        "caption": "The checkmark traces upward and finishes at its tip.",
         "durationMs": 1060,
         "stages": [
           "Seat",
@@ -176,7 +176,7 @@
       "keywords": [],
       "page": "/icons/plus",
       "motion": {
-        "caption": "Add the upright. Let the crossbar answer.",
+        "caption": "The vertical stroke joins the crossbar at its center.",
         "durationMs": 1080,
         "stages": [
           "Insert",
@@ -212,7 +212,7 @@
       "keywords": [],
       "page": "/icons/arrow-up",
       "motion": {
-        "caption": "Rise first. Let the weight follow.",
+        "caption": "The arrowhead rises before the shaft follows.",
         "durationMs": 1120,
         "stages": [
           "Gather",
@@ -230,7 +230,7 @@
       "keywords": [],
       "page": "/icons/external-link",
       "motion": {
-        "caption": "Reach beyond the frame. Keep the source.",
+        "caption": "The arrow extends beyond an anchored frame.",
         "durationMs": 1120,
         "stages": [
           "Reach out",
@@ -266,7 +266,7 @@
       "keywords": [],
       "page": "/icons/upload",
       "motion": {
-        "caption": "Gather in the tray. Release into the open.",
+        "caption": "The arrow lifts out of the tray.",
         "durationMs": 1180,
         "stages": [
           "Gather",
@@ -284,7 +284,7 @@
       "keywords": [],
       "page": "/icons/folder",
       "motion": {
-        "caption": "Make room. Let the contents catch the light.",
+        "caption": "The folder opens to reveal the pages inside.",
         "durationMs": 1320,
         "stages": [
           "Open",
@@ -320,7 +320,7 @@
       "keywords": [],
       "page": "/icons/copy",
       "motion": {
-        "caption": "An impression. A twin. Its own place.",
+        "caption": "A second sheet separates from the original.",
         "durationMs": 1190,
         "stages": [
           "Register",
@@ -338,7 +338,7 @@
       "keywords": [],
       "page": "/icons/trash",
       "motion": {
-        "caption": "A little weight. A close you can feel.",
+        "caption": "The lid lifts, drops, and settles on the bin.",
         "durationMs": 1250,
         "stages": [
           "Lift",
@@ -356,7 +356,7 @@
       "keywords": [],
       "page": "/icons/mail",
       "motion": {
-        "caption": "A letter revealed. Carefully tucked away.",
+        "caption": "The flap opens, the letter rises, then both close.",
         "durationMs": 1360,
         "stages": [
           "Unfold",
@@ -374,7 +374,7 @@
       "keywords": [],
       "page": "/icons/message",
       "motion": {
-        "caption": "A thought gathers. A little response.",
+        "caption": "The message bubble expands before a reply appears.",
         "durationMs": 1180,
         "stages": [
           "Gather",
@@ -392,7 +392,7 @@
       "keywords": [],
       "page": "/icons/send",
       "motion": {
-        "caption": "A folded wing. A small rush of air.",
+        "caption": "The paper plane flexes before taking flight.",
         "durationMs": 1220,
         "stages": [
           "Gather",
@@ -410,7 +410,7 @@
       "keywords": [],
       "page": "/icons/user",
       "motion": {
-        "caption": "A small nod. A warm acknowledgment.",
+        "caption": "The head nods, followed by a greeting mark.",
         "durationMs": 1180,
         "stages": [
           "Notice",
@@ -452,7 +452,7 @@
       ],
       "page": "/icons/unlock",
       "motion": {
-        "caption": "Release the free end. Leave the way open.",
+        "caption": "The open shackle pivots farther out and stays open.",
         "durationMs": 1200,
         "stages": [
           "Release",
@@ -470,7 +470,7 @@
       "keywords": [],
       "page": "/icons/eye",
       "motion": {
-        "caption": "Close softly. Open with a little light.",
+        "caption": "The eye closes fully, then opens with a catchlight.",
         "durationMs": 1120,
         "stages": [
           "Close",
@@ -488,7 +488,7 @@
       "keywords": [],
       "page": "/icons/play",
       "motion": {
-        "caption": "The first impulse. Then momentum.",
+        "caption": "The play arrow leans back before moving forward.",
         "durationMs": 970,
         "stages": [
           "Gather",
@@ -506,7 +506,7 @@
       "keywords": [],
       "page": "/icons/pause",
       "motion": {
-        "caption": "Two soft stops. Then stillness.",
+        "caption": "Both bars stop at the same baseline and hold.",
         "durationMs": 1040,
         "stages": [
           "Take up",
@@ -542,7 +542,7 @@
       "keywords": [],
       "page": "/icons/sun",
       "motion": {
-        "caption": "Light leaves the core. The rays answer.",
+        "caption": "Light spreads from the center to the rays.",
         "durationMs": 1160,
         "stages": [
           "Warm",
@@ -560,7 +560,7 @@
       "keywords": [],
       "page": "/icons/moon",
       "motion": {
-        "caption": "A crescent rises. A falling star finds its place.",
+        "caption": "The crescent rises, followed by a falling star.",
         "durationMs": 1580,
         "stages": [
           "Rise",
@@ -578,7 +578,7 @@
       "keywords": [],
       "page": "/icons/code",
       "motion": {
-        "caption": "Make room. Set the expression.",
+        "caption": "The brackets open around the code expression.",
         "durationMs": 1160,
         "stages": [
           "Open",
@@ -596,7 +596,7 @@
       "keywords": [],
       "page": "/icons/terminal",
       "motion": {
-        "caption": "Type a command. Return. Hear back.",
+        "caption": "A command is typed and submitted; a response follows.",
         "durationMs": 1560,
         "stages": [
           "Type",
@@ -614,7 +614,7 @@
       "keywords": [],
       "page": "/icons/layers",
       "motion": {
-        "caption": "Make room, reveal the depth, fit back together.",
+        "caption": "The layers separate and return to their stack.",
         "durationMs": 1120,
         "stages": [
           "Gather",
@@ -650,7 +650,7 @@
       "keywords": [],
       "page": "/icons/chart",
       "motion": {
-        "caption": "One baseline. Three heights. The difference is clear.",
+        "caption": "A scan compares three bars against a shared baseline.",
         "durationMs": 1690,
         "stages": [
           "Measure",
@@ -668,7 +668,7 @@
       "keywords": [],
       "page": "/icons/book",
       "motion": {
-        "caption": "One page turns. A soft landing.",
+        "caption": "The page turns around its binding and lands.",
         "durationMs": 1360,
         "stages": [
           "Lift",
@@ -686,7 +686,7 @@
       "keywords": [],
       "page": "/icons/bolt",
       "motion": {
-        "caption": "Hold the charge. Break the tension.",
+        "caption": "The bolt gathers charge, strikes, and discharges.",
         "durationMs": 1160,
         "stages": [
           "Gather",
@@ -704,7 +704,7 @@
       "keywords": [],
       "page": "/icons/path",
       "motion": {
-        "caption": "One milestone hands the way to the next.",
+        "caption": "A signal follows the path from node to node.",
         "durationMs": 1380,
         "stages": [
           "Depart",
@@ -722,7 +722,7 @@
       "keywords": [],
       "page": "/icons/flask",
       "motion": {
-        "caption": "Stir a little. See what answers.",
+        "caption": "The liquid swirls before bubbles rise.",
         "durationMs": 1400,
         "stages": [
           "Stir",
@@ -758,7 +758,7 @@
       "keywords": [],
       "page": "/icons/retry",
       "motion": {
-        "caption": "Wind back. Catch. Ready again.",
+        "caption": "The arrow rewinds and returns to its starting position.",
         "durationMs": 1280,
         "stages": [
           "Rewind",
@@ -812,7 +812,7 @@
       "keywords": [],
       "page": "/icons/checkpoint",
       "motion": {
-        "caption": "A state arrives. Its place is kept.",
+        "caption": "The state marker seats before its retainer closes.",
         "durationMs": 1320,
         "stages": [
           "Receive",
@@ -830,7 +830,7 @@
       "keywords": [],
       "page": "/icons/hint",
       "motion": {
-        "caption": "A little light from within.",
+        "caption": "The filament lights before the surrounding rays appear.",
         "durationMs": 1260,
         "stages": [
           "Conduct",
@@ -848,7 +848,7 @@
       "keywords": [],
       "page": "/icons/workspace",
       "motion": {
-        "caption": "Make room. Keep your place.",
+        "caption": "The panel opens and its contents move into place.",
         "durationMs": 1360,
         "stages": [
           "Open",
@@ -866,7 +866,7 @@
       "keywords": [],
       "page": "/icons/gauge",
       "motion": {
-        "caption": "A measured move. A precise reading.",
+        "caption": "The needle moves to a tick and holds.",
         "durationMs": 1280,
         "stages": [
           "Calibrate",
@@ -884,7 +884,7 @@
       "keywords": [],
       "page": "/icons/orbit",
       "motion": {
-        "caption": "Around the idea. Back in context.",
+        "caption": "The satellite travels around a fixed center.",
         "durationMs": 1560,
         "stages": [
           "Depart",
@@ -902,7 +902,7 @@
       "keywords": [],
       "page": "/icons/lifebuoy",
       "motion": {
-        "caption": "Takes the weight. Keeps you afloat.",
+        "caption": "The ring meets its support before the ripple spreads.",
         "durationMs": 1460,
         "stages": [
           "Meet",
@@ -920,7 +920,7 @@
       "keywords": [],
       "page": "/icons/sigma",
       "motion": {
-        "caption": "Many terms. One considered result.",
+        "caption": "Terms gather at the operator before a result leaves.",
         "durationMs": 1520,
         "stages": [
           "Gather",
@@ -956,7 +956,7 @@
       "keywords": [],
       "page": "/icons/sliders",
       "motion": {
-        "caption": "One variable. A satisfying detent.",
+        "caption": "The slider moves along its rail and locks into position.",
         "durationMs": 1380,
         "stages": [
           "Adjust",
@@ -974,7 +974,7 @@
       "keywords": [],
       "page": "/icons/graduation-cap",
       "motion": {
-        "caption": "A small tip. A little possibility.",
+        "caption": "The cap tips, then the tassel swings.",
         "durationMs": 1440,
         "stages": [
           "Acknowledge",
@@ -998,7 +998,7 @@
       ],
       "page": "/icons/code-run",
       "motion": {
-        "caption": "From written intent to a running idea.",
+        "caption": "A scan of the code releases the run arrow.",
         "durationMs": 1360,
         "stages": [
           "Read",
@@ -1023,7 +1023,7 @@
       ],
       "page": "/icons/test-suite",
       "motion": {
-        "caption": "Every case gets its own observation.",
+        "caption": "Each test case receives a separate result marker.",
         "durationMs": 1460,
         "stages": [
           "Sample",
@@ -1047,7 +1047,7 @@
       ],
       "page": "/icons/milestone",
       "motion": {
-        "caption": "A capability worth orienting toward.",
+        "caption": "The flag unfurls above a fixed marker.",
         "durationMs": 1420,
         "stages": [
           "Anchor",
@@ -1072,7 +1072,7 @@
       ],
       "page": "/icons/concept-review",
       "motion": {
-        "caption": "Revisit the idea. Keep the context.",
+        "caption": "The page opens as the review arrow circles back.",
         "durationMs": 1480,
         "stages": [
           "Open",
@@ -1096,7 +1096,7 @@
       ],
       "page": "/icons/learning-rhythm",
       "motion": {
-        "caption": "A little cadence. Room to keep going.",
+        "caption": "A pulse marks each beat, followed by a rest.",
         "durationMs": 1460,
         "stages": [
           "Pick up",
@@ -1120,7 +1120,7 @@
       ],
       "page": "/icons/gradient-check",
       "motion": {
-        "caption": "Two nearby samples. One closer look.",
+        "caption": "Two probes sample either side of the center.",
         "durationMs": 1500,
         "stages": [
           "Sample",
@@ -1144,7 +1144,7 @@
       ],
       "page": "/icons/experiment-compare",
       "motion": {
-        "caption": "Same reference. Different evidence.",
+        "caption": "Two panes scan from a shared reference line.",
         "durationMs": 1520,
         "stages": [
           "Separate",
@@ -1168,7 +1168,7 @@
       ],
       "page": "/icons/training-step",
       "motion": {
-        "caption": "Read the slope. Take one considered step.",
+        "caption": "A slope reading is followed by one update step.",
         "durationMs": 1500,
         "stages": [
           "Read",
@@ -1288,7 +1288,7 @@
       ],
       "page": "/icons/save-preferences",
       "motion": {
-        "caption": "Write with intent. Settle into place.",
+        "caption": "The write indicator finishes before the shutter closes.",
         "durationMs": 1380,
         "stages": [
           "Open",
@@ -1312,7 +1312,7 @@
       ],
       "page": "/icons/file-explorer",
       "motion": {
-        "caption": "Make room. Keep your place.",
+        "caption": "The panel opens and its contents move into place.",
         "durationMs": 1460,
         "stages": [
           "Reveal",
@@ -1336,7 +1336,7 @@
       ],
       "page": "/icons/expand-view",
       "motion": {
-        "caption": "More room. The same point of focus.",
+        "caption": "The frame expands around a fixed center.",
         "durationMs": 1440,
         "stages": [
           "Gather",
@@ -1360,7 +1360,7 @@
       ],
       "page": "/icons/sign-out",
       "motion": {
-        "caption": "Open the way. Leave deliberately.",
+        "caption": "The door opens before the arrow exits.",
         "durationMs": 1540,
         "stages": [
           "Open",
@@ -1409,7 +1409,7 @@
       ],
       "page": "/icons/history",
       "motion": {
-        "caption": "Turn back the clock. Find an earlier moment.",
+        "caption": "The clock hands rewind inside the history arrow.",
         "durationMs": 1460,
         "stages": [
           "Rewind",
@@ -1433,7 +1433,7 @@
       ],
       "page": "/icons/panel-left-close",
       "motion": {
-        "caption": "Tuck the drawer away. Keep your workspace.",
+        "caption": "The side panel closes while the workspace stays visible.",
         "durationMs": 1460,
         "stages": [
           "Withdraw",
@@ -1458,7 +1458,7 @@
       ],
       "page": "/icons/zoom-out",
       "motion": {
-        "caption": "Step back. See what surrounds it.",
+        "caption": "The center shrinks to reveal the surrounding area.",
         "durationMs": 1380,
         "stages": [
           "Frame",

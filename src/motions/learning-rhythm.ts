@@ -34,7 +34,7 @@ export const RHYTHM_ART={
 };
 const ARM={origin:'12px 17.8px',rest:'rotate(0deg)',pickup:'rotate(-4deg)',beat:'rotate(28deg)',recovery:'rotate(1.5deg)'};
 const GLINT={origin:'12px 9.8px',rest:'scaleX(.5)',peak:'scaleX(1)'};
-export const learningRhythm=motion(TIMING.settle,'A little cadence. Room to keep going.',['Pick up','Beat','Rest'],[
+export const learningRhythm=motion(TIMING.settle,'A pulse marks each beat, followed by a rest.',['Pick up','Beat','Rest'],[
  actor('rhythm-arm',ARM.origin,[pose(TIMING.rest,ARM.rest),pose(TIMING.pickup,ARM.pickup,ease.smooth),pose(TIMING.beat,ARM.beat,ease.smooth),pose(TIMING.return,ARM.rest),pose(TIMING.recover,ARM.recovery),pose(TIMING.home,ARM.rest),pose(TIMING.settle,ARM.rest)]),
  actor('rhythm-glint',GLINT.origin,[light(TIMING.rest,0,GLINT.rest),light(TIMING.beat,0,GLINT.rest),light(TIMING.answer,.95,GLINT.peak),light(TIMING.clear,0,GLINT.peak),light(TIMING.settle,0,GLINT.rest)]),
  ...['rhythm-beat-upper','rhythm-beat-lower'].map(part=>actor(part,'18px 8px',[light(TIMING.rest,0,'translateX(-.2px)'),light(TIMING.beat,0,'translateX(-.2px)'),light(TIMING.answer,.75,'translateX(0px)'),light(TIMING.clear,0,'translateX(.5px)'),light(TIMING.settle,0,'translateX(-.2px)')])),

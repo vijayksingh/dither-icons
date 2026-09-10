@@ -58,7 +58,7 @@ const flap=actor('flap',FLAP.origin,[pose(TIMING.rest,'scaleY(1)',EASE.gather),p
 const letter=actor('letter',LETTER.origin,[pose(TIMING.rest,'translateY(0px)'),pose(TIMING.letterStart,'translateY(0px)',EASE.reveal),
  pose(TIMING.reveal,`translateY(${LETTER.rise}px)`),pose(TIMING.tuck,`translateY(${LETTER.rise}px)`,EASE.tuck),
  pose(TIMING.letterHome,'translateY(0px)'),pose(TIMING.settle,'translateY(0px)')]);
-export const mail=motion(TIMING.settle,'A letter revealed. Carefully tucked away.',['Unfold','Reveal','Tuck away'],[
+export const mail=motion(TIMING.settle,'The flap opens, the letter rises, then both close.',['Unfold','Reveal','Tuck away'],[
  flap,letter,{...flap,part:'flap-occlusion'},{...letter,part:'letter-occlusion'},{...letter,part:'letter-rear-occlusion'},
  actor('letter-edge',EDGE.origin,[light(TIMING.rest,0,'scaleX(.25)'),light(TIMING.edgeStart,0,'scaleX(.25)'),
  light(TIMING.reveal,EDGE.ink,'scaleX(1)'),light(TIMING.raysOut,0,'scaleX(1)'),light(TIMING.settle,0,'scaleX(.25)')]),

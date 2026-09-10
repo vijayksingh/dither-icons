@@ -28,7 +28,7 @@ const beats = [
   {at:TIMING.settle, head:0, tail:0, ease:EASING.settle},
 ];
 export const externalLink = motion(TIMING.settle,
-  'Reach beyond the frame. Keep the source.', ['Reach out','Follow through','Return'], [
+  'The arrow extends beyond an anchored frame.', ['Reach out','Follow through','Return'], [
     actor('corner','0px 0px',beats.map(b=>pose(b.at,`translate(${b.head}px,${-b.head}px)`,b.ease))),
     // The diagonal shaft is authored horizontally inside a fixed -45deg coordinate frame.
     actor('shaft','3px 12px',beats.map(b=>pose(b.at,

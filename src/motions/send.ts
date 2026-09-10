@@ -47,7 +47,7 @@ const WAKE={nearInk:.9,farInk:.68,start:'translate(.15px,-.15px) scale(.35)',pea
 const EASE={gather:'cubic-bezier(.4,0,.7,1)',lead:'cubic-bezier(.16,.75,.3,.95)',
  coast:'cubic-bezier(.2,.25,.35,1)',return:'cubic-bezier(.45,0,.23,1)',settle:'cubic-bezier(.2,0,.25,1)'};
 const fold=(scale:number)=>`rotate(${SEND_HINGE.angle}deg) scaleY(${scale}) rotate(${-SEND_HINGE.angle}deg)`;
-export const send=motion(TIMING.settle,'A folded wing. A small rush of air.',['Gather','Launch','Glide home'],[
+export const send=motion(TIMING.settle,'The paper plane flexes before taking flight.',['Gather','Launch','Glide home'],[
  actor('plane',PLANE.origin,[pose(TIMING.rest,PLANE.rest,EASE.gather),pose(TIMING.gather,PLANE.gather,EASE.lead),
  pose(TIMING.lead,PLANE.lead,EASE.coast),pose(TIMING.coast,PLANE.coast,EASE.return),pose(TIMING.home,PLANE.home,EASE.settle),pose(TIMING.settle,PLANE.rest)]),
  actor('lower-wing',`${SEND_HINGE.x}px ${SEND_HINGE.y}px`,[pose(TIMING.rest,fold(1),EASE.gather),

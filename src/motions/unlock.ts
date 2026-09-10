@@ -21,7 +21,7 @@ export const UNLOCK_ART={...LOCK_ART,freeEnd:'M6.95 11.3h1.3',gap:gapRay(-.35)+g
 const SHACKLE={origin:'16.4px 11.3px',rest:'rotate(0deg)',gather:'rotate(-1deg)',open:'rotate(10deg)',staticTransform:'rotate(18 16.4 11.3)'};
 export const UNLOCK_REST_TRANSFORM=SHACKLE.staticTransform;
 const T=UNLOCK_TIMING;
-export const unlock=motion(T.settle,'Release the free end. Leave the way open.',['Release','Clear','Stay open'],[
+export const unlock=motion(T.settle,'The open shackle pivots farther out and stays open.',['Release','Clear','Stay open'],[
  actor('unlock-shackle',SHACKLE.origin,[pose(T.rest,SHACKLE.rest),pose(T.gather,SHACKLE.gather,'cubic-bezier(.2,.65,.3,1)'),pose(T.release,SHACKLE.open),pose(T.hold,SHACKLE.open),pose(T.home,SHACKLE.rest),pose(T.settle,SHACKLE.rest)]),
  actor('unlock-end','7.6px 11.3px',[light(T.rest,0),light(T.release,0),light(T.light,.85),light(T.hold,0),light(T.settle,0)]),
  actor('unlock-gap',`${free[0]}px ${free[1]}px`,[light(T.rest,0,'scale(.7)'),light(T.light,0,'scale(.7)'),light(T.echo,.7,'scale(1)'),light(T.hold,0,'scale(1.15)'),light(T.settle,0,'scale(.7)')]),

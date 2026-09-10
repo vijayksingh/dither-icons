@@ -24,7 +24,7 @@ export const BOLT_ART={
 };
 const point=(i:number)=>`translate(${BOLT_POINTS[i][0]}px,${BOLT_POINTS[i][1]}px)`;
 const chargeFrames=[light(T.rest,0,point(0)),light(T.gather,1,point(0)),light(T.elbow,1,point(1)),light(T.hold,1,point(2)),light(T.strike,1,point(3)),light(T.discharge,0,point(3)),light(T.settle,0,point(0))];
-export const bolt=motion(T.settle,'Hold the charge. Break the tension.',['Gather','Strike','Discharge'],[
+export const bolt=motion(T.settle,'The bolt gathers charge, strikes, and discharges.',['Gather','Strike','Discharge'],[
  actor('bolt-body',G.source.map(n=>`${n}px`).join(' '),[pose(T.rest,'scaleY(1)',ease.smooth),pose(T.gather,`scaleY(${G.gatherScale})`),pose(T.hold,`scaleY(${G.gatherScale})`,ease.accelerate),pose(T.strike,`scaleY(${G.strikeScale})`),pose(T.release,`scaleY(${G.strikeScale})`,ease.settle),pose(T.recover,'scaleY(.985)'),pose(T.clear,'scaleY(1.004)'),pose(T.settle,'scaleY(1)')]),
  actor('bolt-charge','0px 0px',chargeFrames),
  actor('bolt-aperture','0px 0px',chargeFrames),

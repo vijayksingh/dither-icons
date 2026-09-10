@@ -37,7 +37,7 @@ const segment=(from:number,to:number,start:number,end:number)=>Array.from({lengt
 export const GRADIENT_POSES=[...segment(6,6.25,TIMING.rest,TIMING.pickup),...segment(6.25,2.5,TIMING.pickup,TIMING.inspect).slice(1),{at:TIMING.clear,span:2.5},...segment(2.5,6,TIMING.clear,TIMING.home).slice(1),{at:TIMING.settle,span:6}];
 const PROBE={origin:'0px 0px',sides:[-1,1] as const};
 const CHORD={origin:'12px 13.56px'};
-export const gradientCheck=motion(TIMING.settle,'Two nearby samples. One closer look.',['Sample','Narrow','Inspect'],[
+export const gradientCheck=motion(TIMING.settle,'Two probes sample either side of the center.',['Sample','Narrow','Inspect'],[
  ...PROBE.sides.flatMap((side,i)=>['probe','knockout'].map(kind=>actor(`gradient-${kind}-${i}`,PROBE.origin,GRADIENT_POSES.map(({at,span})=>{const p=gradientPose(span,side),rest=gradientPose(6,side);return pose(at,`translate(${p.x-rest.x}px,${p.y-rest.y}px)`,'linear');})))),
  actor('gradient-chord',CHORD.origin,GRADIENT_POSES.map(({at,span})=>pose(at,gradientChord(span),'linear'))),
  actor('gradient-center','12px 15px',[light(TIMING.rest,0,'scale(.65)'),light(TIMING.inspect,0,'scale(.65)'),light(TIMING.answer,.9,'scale(1)'),light(TIMING.clear,0,'scale(1.3)'),light(TIMING.settle,0,'scale(.65)')]),

@@ -33,7 +33,7 @@ const segment=(start:number,end:number,from:number,to:number)=>Array.from({lengt
 export const STEP_POSES=[{at:TIMING.rest,t:STEP_GEOMETRY.start},...segment(TIMING.depart,TIMING.arrive,STEP_GEOMETRY.start,STEP_GEOMETRY.end),{at:TIMING.clear,t:STEP_GEOMETRY.end},...segment(TIMING.clear,TIMING.home,STEP_GEOMETRY.end,STEP_GEOMETRY.start).slice(1),{at:TIMING.settle,t:STEP_GEOMETRY.start}];
 const POINT={origin:'0px 0px'};
 const [startX,startY]=stepPoint(STEP_GEOMETRY.start),[endX,endY]=stepPoint(STEP_GEOMETRY.end);
-export const trainingStep=motion(TIMING.settle,'Read the slope. Take one considered step.',['Read','Step','Inspect'],[
+export const trainingStep=motion(TIMING.settle,'A slope reading is followed by one update step.',['Read','Step','Inspect'],[
  ...['training-point','training-knockout'].map(part=>actor(part,POINT.origin,STEP_POSES.map(f=>{const [x,y]=stepPoint(f.t);return pose(f.at,`translate(${x-startX}px,${y-startY}px)`,'linear');}))),
  actor('training-read',`${startX}px ${startY}px`,[light(TIMING.rest,0,'scaleX(.4)'),light(TIMING.read,.9,'scaleX(1)'),light(TIMING.depart,0,'scaleX(1)'),light(TIMING.settle,0,'scaleX(.4)')]),
  actor('training-origin',`${startX}px ${startY}px`,[light(TIMING.rest,0),light(TIMING.depart,0),light(TIMING.arrive,.4),light(TIMING.clear,.4),light(TIMING.home,0),light(TIMING.settle,0)]),

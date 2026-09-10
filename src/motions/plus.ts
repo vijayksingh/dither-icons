@@ -23,7 +23,7 @@ const UPRIGHT={origin:'12px 12px',rest:'translateX(0px)',lift:'translateX(-1.8px
 const CROSSBAR={origin:'12px 12px',rest:'translateY(0px) scaleX(1)',press:'translateY(.25px) scaleX(1.04)',spread:'translateY(0px) scaleX(1.04)'};
 const T=PLUS_TIMING;
 const vertical=[pose(T.rest,UPRIGHT.rest),pose(T.lift,UPRIGHT.lift,'cubic-bezier(.5,0,.8,.4)'),pose(T.register,UPRIGHT.press),pose(T.flow,UPRIGHT.rest),pose(T.settle,UPRIGHT.rest)];
-export const plus=motion(T.settle,'Add the upright. Let the crossbar answer.',['Insert','Receive','Extend'],[
+export const plus=motion(T.settle,'The vertical stroke joins the crossbar at its center.',['Insert','Receive','Extend'],[
  actor('plus-across',CROSSBAR.origin,[pose(T.rest,CROSSBAR.rest),pose(T.receive,CROSSBAR.rest),pose(T.register,CROSSBAR.press),pose(T.flow,CROSSBAR.spread),pose(T.arrive,CROSSBAR.spread),pose(T.home,CROSSBAR.rest),pose(T.settle,CROSSBAR.rest)]),
  actor('plus-above',UPRIGHT.origin,vertical),
  actor('plus-occlusion',UPRIGHT.origin,vertical),

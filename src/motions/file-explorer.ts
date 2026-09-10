@@ -30,7 +30,7 @@ export const EXPLORER_ART={
 };
 const LAYOUT={origin:'0px 0px',rest:'translateX(0px)',pickup:'translateX(.18px)',open:`translateX(${EXPLORER_GEOMETRY.travel}px)`};
 const positions=[{at:TIMING.rest,dx:0},{at:TIMING.prepare,dx:.18},{at:TIMING.open,dx:EXPLORER_GEOMETRY.travel},{at:TIMING.clear,dx:EXPLORER_GEOMETRY.travel},{at:TIMING.home,dx:0},{at:TIMING.settle,dx:0}];
-export const fileExplorer=motion(TIMING.settle,'Make room. Keep your place.',['Reveal','Arrange','Settle'],[
+export const fileExplorer=motion(TIMING.settle,'The panel opens and its contents move into place.',['Reveal','Arrange','Settle'],[
  ...['explorer-divider','explorer-code','explorer-nodes'].map(part=>actor(part,LAYOUT.origin,positions.map(p=>pose(p.at,`translateX(${p.dx}px)`)))),
  ...EXPLORER_GEOMETRY.rows.map((y,i)=>actor(`explorer-branch-${i}`,`${EXPLORER_GEOMETRY.branchStart}px ${y}px`,positions.map(p=>pose(p.at,`scaleX(${1+p.dx/(EXPLORER_GEOMETRY.branchEnd-EXPLORER_GEOMETRY.branchStart)})`)))),
  actor('explorer-active','7.3px 13.8px',[light(TIMING.rest,0,'scale(.65)'),light(TIMING.open,0,'scale(.65)'),light(TIMING.select,.85,'scale(1)'),light(TIMING.clear,0,'scale(1)'),light(TIMING.settle,0,'scale(.65)')]),

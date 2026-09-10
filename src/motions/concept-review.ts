@@ -43,7 +43,7 @@ export const reviewPoint=(t:number)=>t<=.45
 const CARD={origin:'19px 19.5px',rest:'translateX(0px) rotate(0deg)',open:'translateX(1.1px) rotate(3deg)'};
 const TRACE={origin:'6.6px 17.6px',samples:48,ink:.85};
 const signalFrames=Array.from({length:TRACE.samples+1},(_,i)=>{const t=i/TRACE.samples,[x,y]=reviewPoint(t);return {...light(TIMING.depart+(TIMING.arrive-TIMING.depart)*t,TRACE.ink,`translate(${x-6.6}px,${y-17.6}px)`),easing:'linear'};});
-export const conceptReview=motion(TIMING.settle,'Revisit the idea. Keep the context.',['Open','Recall','Nest'],[
+export const conceptReview=motion(TIMING.settle,'The page opens as the review arrow circles back.',['Open','Recall','Nest'],[
  ...['review-card','review-occlusion'].map(part=>actor(part,CARD.origin,[pose(TIMING.rest,CARD.rest),pose(TIMING.prepare,CARD.rest),pose(TIMING.open,CARD.open),pose(TIMING.read,CARD.open),pose(TIMING.clear,CARD.open),pose(TIMING.home,CARD.rest),pose(TIMING.settle,CARD.rest)])),
  actor('recall-trace',TRACE.origin,[light(TIMING.rest,0,'translate(0px,0px)'),light(TIMING.open,0,'translate(0px,0px)'),...signalFrames,light(TIMING.read,0,'translate(1.5px,-10.1px)'),light(TIMING.settle,0,'translate(0px,0px)')]),
  actor('recall-line','8.55px 7.5px',[light(TIMING.rest,0,'scaleX(.2)'),light(TIMING.arrive,0,'scaleX(.2)'),light(TIMING.read,.95,'scaleX(1)'),light(TIMING.clear,0,'scaleX(1)'),light(TIMING.settle,0,'scaleX(.2)')]),

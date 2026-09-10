@@ -33,7 +33,7 @@ export const MILESTONE_ART={
 const ROOT={origin:'9.5px 8.5px',gather:'skewY(2deg) scaleX(.99)',pull:'skewY(-5deg) scaleX(1.035)',return:'skewY(1.5deg) scaleX(.995)'};
 const FREE={origin:'14px 9px',gather:'skewY(-3deg) scaleX(.96)',pull:'skewY(9deg) scaleX(1.055)',return:'skewY(-3.2deg) scaleX(.985)'};
 const REST='skewY(0deg) scaleX(1)';
-export const milestone=motion(TIMING.settle,'A capability worth orienting toward.',['Anchor','Unfurl','Hold'],[
+export const milestone=motion(TIMING.settle,'The flag unfurls above a fixed marker.',['Anchor','Unfurl','Hold'],[
  actor('flag-root',ROOT.origin,[pose(TIMING.rest,REST),pose(TIMING.gather,ROOT.gather),pose(TIMING.rootPull,ROOT.pull),pose(TIMING.freePull,ROOT.pull),pose(TIMING.returnFold,ROOT.return),pose(TIMING.quiet,REST),pose(TIMING.settle,REST)]),
  actor('flag-free',FREE.origin,[pose(TIMING.rest,REST),pose(TIMING.gather,FREE.gather),pose(TIMING.rootPull,REST),pose(TIMING.freePull,FREE.pull),pose(TIMING.returnFold,FREE.return),pose(TIMING.quiet,REST),pose(TIMING.settle,REST)]),
  actor('flag-edge','19.35px 8.8px',[light(TIMING.rest,0,'scaleY(.45)'),light(TIMING.freePull,0,'scaleY(.45)'),light(TIMING.crest,.85,'scaleY(1)'),light(TIMING.returnFold,0,'scaleY(1)'),light(TIMING.settle,0,'scaleY(.45)')]),

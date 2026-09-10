@@ -1,5 +1,9 @@
 # Dither Icons
 
+## Site copy
+
+Read `docs/COPY-GUIDE.md` before writing public copy, icon captions, or sharing metadata. Describe the product and visible animation; avoid claims about soul, character, humanity, or how the visitor should feel. Regenerate downloadable docs and sharing images from their sources.
+
 ## Releases and production
 
 Read `docs/RELEASING.md` and `docs/DEPLOYMENT.md` before publishing, tagging, or changing CI/CD. Production is `https://dithered.dev`; npm is `@unlocalhosted/dither-icons`; GitHub is `vijayksingh/dither-icons`. Stable `vX.Y.Z` tags release both npm and the website from the same checked artifact. Main pushes run CI only.

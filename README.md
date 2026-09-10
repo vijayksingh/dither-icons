@@ -1,20 +1,20 @@
 # Dither Icons
 
-**A little grain. A lot of character.**
+**Dithered, animated SVG icons for React.**
 
-73 original animated SVG icons for React. Clean vector contours, fine ordered dither, and a small gesture that belongs to each icon: a bell rings, a tray catches, a lid opens.
+73 original icons in dither, solid, and outline. Each has its own animation: a bell swings, a download arrow lands, a lock resists a shake. Use the React components or export individual SVGs.
 
 [Get started](#get-started) · [Documentation](public/docs/introduction.md) · [For AI agents](AI.md) · [Contributing](CONTRIBUTING.md) · [MIT license](LICENSE)
 
 ![The Download icon in dither, solid and outline. One drawing, three materials.](public/reference/textures.svg)
 
-## Made for the little details
+## Features
 
 - **Three materials.** Dither, solid and outline share the same original geometry in a 24 × 24 viewBox.
 - **Individual motion.** Every icon has an authored gesture. Semantic parts move together; the grain stays attached to its surface.
-- **Real interactions.** Hover, keyboard focus and tap play once. React playback finishes after you leave and ignores overlapping triggers.
+- **Playback.** Hover, keyboard focus and tap play once. React playback finishes after you leave and ignores overlapping triggers.
 - **Accessible by default.** Reduced motion is respected. Decorative icons stay out of the accessibility tree; meaningful images can have a title.
-- **Your interface, your color.** Icons inherit `currentColor`. The gallery includes eight curated palettes with light and dark variants.
+- **Color.** Icons inherit `currentColor`. The gallery includes eight palettes with light and dark variants.
 - **React or SVG.** Typed components, forwarded SVG refs and standalone SVG export. No separate stylesheet or animation dependency.
 - **Context for your agent.** An exact export manifest, integration guide and labeled visual references ship alongside the code.
 

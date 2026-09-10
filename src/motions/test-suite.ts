@@ -35,7 +35,7 @@ export const SUITE_ART={
 };
 const SPECIMEN={lift:-.5,rebound:-.32,ease:'cubic-bezier(.55,0,.8,.5)'};
 const RESPONSE={ink:.9,small:'scale(.45,1)',full:'scale(1,1)'};
-export const testSuite=motion(TIMING.settle,'Every case gets its own observation.',['Sample','Seat','Compare'],[
+export const testSuite=motion(TIMING.settle,'Each test case receives a separate result marker.',['Sample','Seat','Compare'],[
  ...SUITE_CASES.flatMap((c,i)=>{
   const offset=i*TIMING.caseStagger,drop=SUITE_GEOMETRY.seat-c.startY;
   return [

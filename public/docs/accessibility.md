@@ -1,8 +1,8 @@
-# A little delight. For everyone.
+# Accessibility
 
-The interaction should still make sense with a keyboard, a screen reader, or no motion at all.
+Label controls, support keyboard input, and respect reduced-motion preferences.
 
-## Name the action, not the artwork.
+## Label the control
 
 ```tsx
 <button className="di-trigger" aria-label="Open notifications">
@@ -17,7 +17,7 @@ The interaction should still make sense with a keyboard, a screen reader, or no 
 
 Icons are aria-hidden by default. Label an icon-only button with aria-label, or give the button visible text. Avoid naming the same control twice through both the button and its decorative icon.
 
-## When the icon is the content.
+## Label a standalone image
 
 ```tsx
 <NetworkIcon
@@ -29,7 +29,7 @@ Icons are aria-hidden by default. Label an icon-only button with aria-label, or 
 
 title supplies an accessible SVG image name and role. Use this for an illustration that carries meaning on its own, rather than for an icon already explained by adjacent text.
 
-## Stillness is a complete experience.
+## Reduced motion
 
 prefers-reduced-motion: reduce is respected automatically by both the React runtime and the standalone CSS. Active motion is cancelled when that preference changes. You can also set animate={false} for any icon, independent of the system setting.
 

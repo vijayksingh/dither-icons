@@ -28,7 +28,7 @@ const beats = [
   {at:TIMING.settle, head:0, foot:0, ease:EASING.settle},
 ];
 export const arrowUp = motion(TIMING.settle,
-  'Rise first. Let the weight follow.', ['Gather','Lift','Float home'], [
+  'The arrowhead rises before the shaft follows.', ['Gather','Lift','Float home'], [
     actor('head','0px 0px',beats.map(b=>pose(b.at,`translateY(${b.head}px)`,b.ease))),
     actor('stem',`${UP_STEM.x}px ${UP_STEM.foot}px`,beats.map(b=>pose(b.at,
       `translateY(${b.foot}px) scaleY(${1+(b.foot-b.head)/(UP_STEM.foot-UP_STEM.joint)})`,b.ease))),

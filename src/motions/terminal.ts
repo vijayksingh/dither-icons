@@ -27,7 +27,7 @@ export const TERMINAL_ART={
 };
 const T=TERMINAL_TIMING,G=TERMINAL_GEOMETRY;
 const cursor=(x:number,y=0)=>`translate(${x}px,${y}px)`;
-export const terminal=motion(T.settle,'Type a command. Return. Hear back.',['Type','Submit','Respond'],[
+export const terminal=motion(T.settle,'A command is typed and submitted; a response follows.',['Type','Submit','Respond'],[
  actor('terminal-history','0px 0px',[pose(T.rest,'translateY(0px)'),pose(T.submit,'translateY(0px)',ease.settle),pose(T.newline,`translateY(-${G.historyRise}px)`),pose(T.clear,`translateY(-${G.historyRise}px)`),pose(T.settle,'translateY(0px)')]),
  actor('terminal-cursor','12.5px 15.1px',[pose(T.rest,cursor(0)),pose(T.firstMove,cursor(G.cell)),pose(T.first,cursor(G.cell)),pose(T.secondMove,cursor(G.cell*2)),pose(T.submit,cursor(G.cell*2),ease.settle),pose(T.newline,cursor(G.responseX-G.cursorX,G.responseY-G.cursorY),'linear'),pose(T.reply,cursor(G.responseX-G.cursorX+G.responseLength,G.responseY-G.cursorY)),pose(T.clear,cursor(G.responseX-G.cursorX+G.responseLength,G.responseY-G.cursorY)),pose(T.settle,cursor(0))]),
  ...[{part:'terminal-first',begin:T.firstMove,typed:T.first},{part:'terminal-second',begin:T.secondMove,typed:T.second}].map(({part,begin,typed})=>actor(part,'0px 0px',[light(T.rest,0),light(begin,0),light(typed,1),light(T.hold,1),light(T.clear,0),light(T.settle,0)])),

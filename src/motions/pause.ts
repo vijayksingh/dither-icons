@@ -52,7 +52,7 @@ export const PAUSE_STOPS=[
  {side:'right',x:PAUSE_GEOMETRY.rightX,start:TIMING.rightStart,gather:TIMING.rightGather,contact:TIMING.rightContact,
  compress:TIMING.rightCompress,seat:TIMING.rightSeatCrest,tick:TIMING.rightTickCrest,rebound:TIMING.rightRebound,rest:TIMING.rightRest,out:TIMING.rightLightOut,sign:1},
 ];
-export const pause=motion(TIMING.settle,'Two soft stops. Then stillness.',['Take up','Seat','Hold'],PAUSE_STOPS.flatMap(b=>[
+export const pause=motion(TIMING.settle,'Both bars stop at the same baseline and hold.',['Take up','Seat','Hold'],PAUSE_STOPS.flatMap(b=>[
  actor(`bar-${b.side}`,`${b.x}px ${PAUSE_GEOMETRY.bottom}px`,[
  pose(TIMING.rest,BAR.rest,EASE.gather),...(b.start?[pose(b.start,BAR.rest,EASE.gather)]:[]),
  pose(b.gather,BAR.gather,EASE.fall),pose(b.contact,BAR.rest,EASE.contact),pose(b.compress,BAR.compress,EASE.recover),

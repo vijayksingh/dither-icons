@@ -39,7 +39,7 @@ const LIQUID={origin:'12px 17px',gather:-5,roll:5.5,recover:-2.4,relax:.7};
 const BUBBLE={origin:'12px 14.8px',start:'translate(0px,0px) scale(.3)',emerge:'translate(.25px,-.35px) scale(.8)',rise:'translate(-.2px,-2.4px) scale(1)',release:'translate(-.2px,-2.6px) scale(1.3)',ink:.9};
 const FIZZ={origin:'11.8px 12.2px',ink:.84};
 const EASE={gather:'cubic-bezier(.4,0,.6,1)',roll:'cubic-bezier(.2,.7,.35,1)',settle:'cubic-bezier(.3,0,.3,1)'};
-export const flask=motion(TIMING.settle,'Stir a little. See what answers.',['Stir','React','Settle'],[
+export const flask=motion(TIMING.settle,'The liquid swirls before bubbles rise.',['Stir','React','Settle'],[
  actor('liquid',LIQUID.origin,[pose(TIMING.rest,'rotate(0deg)',EASE.gather),pose(TIMING.gather,`rotate(${LIQUID.gather}deg)`,EASE.roll),pose(TIMING.roll,`rotate(${LIQUID.roll}deg)`,EASE.roll),pose(TIMING.release,`rotate(${LIQUID.recover}deg)`,EASE.settle),pose(TIMING.relax,`rotate(${LIQUID.relax}deg)`,EASE.settle),pose(TIMING.liquidRest,'rotate(0deg)'),pose(TIMING.settle,'rotate(0deg)')]),
  actor('bubble',BUBBLE.origin,[light(TIMING.rest,0,BUBBLE.start),light(TIMING.bubbleStart,0,BUBBLE.start),light(TIMING.bubbleVisible,BUBBLE.ink,BUBBLE.emerge),light(TIMING.rise,BUBBLE.ink,BUBBLE.rise),light(TIMING.release,0,BUBBLE.release),light(TIMING.settle,0,BUBBLE.start)]),
  actor('reaction-fizz',FIZZ.origin,[light(TIMING.rest,0,'scale(.5)'),light(TIMING.rise,0,'scale(.5)'),light(TIMING.pop,FIZZ.ink,'scale(1)'),light(TIMING.fizzOut,0,'translateY(-.35px) scale(1.2)'),light(TIMING.settle,0,'scale(.5)')]),

@@ -38,7 +38,7 @@ export const CODE_RUN_ART={
 const SOURCE={starts:[TIMING.firstOn,TIMING.secondOn,TIMING.thirdOn],origin:'5.5px 10px',small:'scaleX(.3)',full:'scaleX(1)',ink:.85};
 const LAUNCH={origin:'12.6px 15.5px',rest:'translateX(0px)',gather:'translateX(-.35px)',release:'translateX(.75px)',ease:'cubic-bezier(.18,.75,.25,1)'};
 const LAUNCH_FRAMES=[pose(TIMING.rest,LAUNCH.rest),pose(TIMING.third,LAUNCH.rest),pose(TIMING.gather,LAUNCH.gather,LAUNCH.ease),pose(TIMING.launch,LAUNCH.release),pose(TIMING.crest,LAUNCH.release),pose(TIMING.home,LAUNCH.rest),pose(TIMING.settle,LAUNCH.rest)];
-export const codeRun=motion(TIMING.settle,'From written intent to a running idea.',['Read','Launch','Coast'],[
+export const codeRun=motion(TIMING.settle,'A scan of the code releases the run arrow.',['Read','Launch','Coast'],[
  ...[TIMING.first,TIMING.second,TIMING.third].map((at,i)=>actor(`source-charge-${i}`,SOURCE.origin,[light(TIMING.rest,0,SOURCE.small),light(SOURCE.starts[i],0,SOURCE.small),light(at,SOURCE.ink,SOURCE.full),light(TIMING.gather,.3,SOURCE.full),light(TIMING.launch,0,SOURCE.full),light(TIMING.settle,0,SOURCE.small)])),
  ...['run-launch','run-occlusion'].map(part=>actor(part,LAUNCH.origin,LAUNCH_FRAMES)),
  actor('run-edge','20px 15.5px',[light(TIMING.rest,0,'scale(.8)'),light(TIMING.launch,0,'scale(.8)'),light(TIMING.crest,.9,'scale(1)'),light(TIMING.clear,0,'scale(1)'),light(TIMING.settle,0,'scale(.8)')]),

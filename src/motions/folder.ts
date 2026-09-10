@@ -50,7 +50,7 @@ const front=actor('front-paper',FRONT.origin,[
   pose(TIMING.frontRise,`translateY(${FRONT.rise}px) rotate(${FRONT.angle}deg)`),
   pose(TIMING.frontReturn,`translateY(${FRONT.rise}px) rotate(${FRONT.angle}deg)`,EASE.close),
   pose(TIMING.frontTuck,'translateY(0px) rotate(0deg)'),pose(TIMING.settle,'translateY(0px) rotate(0deg)')]);
-export const folder=motion(TIMING.settle,'Make room. Let the contents catch the light.',['Open','Reveal','Tuck away'],[
+export const folder=motion(TIMING.settle,'The folder opens to reveal the pages inside.',['Open','Reveal','Tuck away'],[
   cover,rear,front,
   {...cover,part:'cover-occlusion'},{...rear,part:'rear-occlusion'},{...front,part:'front-occlusion'},
   actor('paper-edge',EDGE.origin,[light(TIMING.rest,0,'scaleX(.2)'),light(TIMING.edgeStart,0,'scaleX(.2)'),

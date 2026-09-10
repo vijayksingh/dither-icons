@@ -4,11 +4,11 @@ import { labelFor } from '../model';
 export type SharePage = { path: string; title: string; description: string; heading: string[]; image: string; icons: string[] };
 export const defaultSiteUrl = 'https://dithered.dev';
 export const sharePages: SharePage[] = [
-  { path: '/', title: 'Dither Icons — A little grain. A lot of character.', description: `${definitions.length} original animated SVG icons for React. Fine dither, clean contours, and meaningful motion. Free and MIT licensed.`, heading: ['A little grain.', 'A lot of character.'], image: 'home', icons: ['download','bell','heart','layers'] },
-  { path: '/motion', title: 'Motion Studio — Dither Icons', description: 'Explore individually authored icon gestures. Replay, compare materials, and inspect every frame.', heading: ['Every gesture', 'has a reason.'], image: 'motion', icons: ['bell','download','layers','send'] },
-  { path: '/ai', title: 'AI Integration Guide — Dither Icons', description: 'Exact icon names, accessible React examples, visual references, and integration instructions for your coding agent.', heading: ['Good icons.', 'Clear instructions.'], image: 'ai', icons: ['code','sparkles','file','check'] },
+  { path: '/', title: 'Dither Icons — Animated SVG icons', description: `${definitions.length} original animated SVG icons for React. Dither, solid, and outline materials. Download SVGs or install the MIT-licensed package.`, heading: ['Dithered icons.', 'In motion.'], image: 'home', icons: ['download','bell','heart','layers'] },
+  { path: '/motion', title: 'Motion Studio — Dither Icons', description: 'Explore individually authored icon gestures. Replay, compare materials, and inspect every frame.', heading: ['See how each', 'icon moves.'], image: 'motion', icons: ['bell','download','layers','send'] },
+  { path: '/ai', title: 'AI Integration Guide — Dither Icons', description: 'Exact icon names, accessible React examples, visual references, and integration instructions for your coding agent.', heading: ['Icon docs for', 'coding agents.'], image: 'ai', icons: ['code','sparkles','file','check'] },
   ...docs.map(doc => ({ path: docPath(doc.slug), title: `${docLabel(doc)} — Dither Icons`, description: doc.description, heading: [docLabel(doc), 'Dither Icons'], image: `docs-${doc.slug || 'introduction'}`, icons: ['book','code','download','layers'] })),
-  ...definitions.map(icon => ({ path: `/icons/${icon.name}`, title: `${labelFor(icon.name)} Icon — Dither Icons`, description: `${labelFor(icon.name)}: ${icon.description}. Original animated SVG for React, in dither, solid and outline.`, heading: [labelFor(icon.name), 'Made to move.'], image: `icon-${icon.name}`, icons: [icon.name] })),
+  ...definitions.map(icon => ({ path: `/icons/${icon.name}`, title: `${labelFor(icon.name)} Icon — Dither Icons`, description: `${labelFor(icon.name)}: ${icon.description}. Original animated SVG for React, in dither, solid and outline.`, heading: [labelFor(icon.name), 'Animated SVG icon'], image: `icon-${icon.name}`, icons: [icon.name] })),
 ];
 export function siteOrigin(value = defaultSiteUrl) {
   const url = new URL(value);

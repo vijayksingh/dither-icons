@@ -41,7 +41,7 @@ const LINES=[
 const EDGE={origin:'20px 14px',small:'scaleY(.2)',full:'scaleY(1)',ink:.84};
 const CARET={origin:'17.75px 17px',small:'scaleY(.3)',full:'scaleY(1)',ink:.92};
 const EASE={gather:'cubic-bezier(.4,0,.6,1)',open:'cubic-bezier(.2,.8,.3,1)',close:'cubic-bezier(.4,0,.25,1)'};
-export const workspace=motion(TIMING.settle,'Make room. Keep your place.',['Open','Arrange','Return'],[
+export const workspace=motion(TIMING.settle,'The panel opens and its contents move into place.',['Open','Arrange','Return'],[
  actor('divider',DIVIDER.origin,[pose(TIMING.rest,DIVIDER.rest,EASE.gather),pose(TIMING.gather,DIVIDER.gather,EASE.open),pose(TIMING.open,DIVIDER.open),pose(TIMING.hold,DIVIDER.open,EASE.close),pose(TIMING.home,DIVIDER.rest),pose(TIMING.settle,DIVIDER.rest)]),
  actor('source',SOURCE.origin,[pose(TIMING.rest,SOURCE.rest),pose(TIMING.gather,SOURCE.rest,EASE.open),pose(TIMING.open,SOURCE.open),pose(TIMING.hold,SOURCE.open,EASE.close),pose(TIMING.home,SOURCE.rest),pose(TIMING.settle,SOURCE.rest)]),
  ...LINES.map(l=>actor(l.part,l.origin,[pose(TIMING.rest,'scaleX(1)'),pose(TIMING.open,'scaleX(1)',EASE.open),pose(l.peak,l.open),pose(TIMING.hold,l.open,EASE.close),pose(TIMING.home,'scaleX(1)'),pose(TIMING.settle,'scaleX(1)')])),
