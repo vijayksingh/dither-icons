@@ -433,3 +433,5 @@ Generated manifests, AI references, labeled contact sheet, docs and 82 social/cr
 ## Release preparation — 2026-09-10
 
 The full release suite caught duplicate membership introduced by the focused review groups. Removed duplicate entries from the legacy development, action, account and appearance groups; Code and Check retain distinct Development and Confirmation groups. All 73 icons now occur exactly once in the public selector. The existing coverage assertion remains unchanged. MOT-15 retains the individual reviews; no icon drawing or performance changed.
+
+Prepared 0.2.0 with the five compatible new exports and the completed refinement pass. TypeScript, all **97 tests**, the production build, seven-file package allowlist, and a clean tarball consumer passed. The consumer renders all 73 icons and compiles the public declarations. Generated manifests, AI references and 82 sharing pages/images match this release. CI, npm publication and the normal-DNS production browser checks are separate release gates; their immutable record is the tagged GitHub Release workflow.

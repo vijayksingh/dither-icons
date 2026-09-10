@@ -24,4 +24,4 @@
 
 ## Installation status
 
-Version 0.1.2. Install with `npm install @unlocalhosted/dither-icons`.
+Version 0.2.0. Install with `npm install @unlocalhosted/dither-icons`.

@@ -144,7 +144,7 @@ The user requested retaining and committing these four, then corrected the selec
 
 **Check, Close, Plus, Lock** received the focused four-icon pass (the original Close/Plus gestures below were subsequently rejected and replaced). The studio defaults to **Actions and access**. Check traces its ascending stroke before a tip response; Close tightens along fixed diagonals; Plus opens its axes in sequence with individual endpoint responses; Lock holds tension above a fixed housing. Rounded contours, clean crossings and closed-lock identity preserve compact reading. Each has an individual Interface Craft critique, a separate timing source and [browser evidence](motion-evidence/refinement-06/). The previous 64 performances retain their tracks.
 
-**Status: 73 implemented and individually reviewed.** The original 69 completed the focused pass. The four Platform / 09 additions have rendered evidence and await user judgment; none is included in npm 0.1.2.
+**Current status: 73 implemented and individually reviewed; no icons remain in the refinement queue.** The original catalog and four Platform / 09 additions have individual critiques and rendered evidence. The user requested publication on 2026-09-10; all 73 are included in the 0.2.0 release. Sections below preserve the sequence of earlier reviews and corrections.
 
 ### Semantic correction and Unlock state — 2026-09-10
 
@@ -160,7 +160,7 @@ On user request, Lock now gives a short, diminishing rigid shackle rattle agains
 
 ### Eye, Sparkles and Moon correction — 2026-09-10
 
-User review preferred a blink, a wider field of sparkles, and a stronger Moon performance; **Sun is approved and unchanged**. Eye now closes its aperture over a stationary round iris, holds a bowed crease, then reopens before its catchlight. Sparkles keeps three permanent stars and wakes four overlapping glints around them. Moon rises before a short falling-star passage and arrival twinkle. Individual critiques above were rewritten around these final gestures. [Current rendered evidence](motion-evidence/refinement-07-rework/). Counts remain **65 refined / 4 pending**; the three replacements await user judgment.
+User review preferred a blink, a wider field of sparkles, and a stronger Moon performance; **Sun is approved and unchanged**. Eye now closes its aperture over a stationary round iris, holds a bowed crease, then reopens before its catchlight. Sparkles keeps three permanent stars and wakes four overlapping glints around them. Moon rises before a short falling-star passage and arrival twinkle. Individual critiques above were rewritten around these final gestures. [Current rendered evidence](motion-evidence/refinement-07-rework/). At this stage there were **65 refined / 4 pending**; the user subsequently approved these replacements and the next pass completed the original catalog.
 
 ## Focused refinement 08 — Development and energy
 
@@ -175,4 +175,4 @@ User review preferred a blink, a wider field of sparkles, and a stronger Moon pe
 | [Collapse Panel](icon-reviews/panel-left-close.md) | Hide a drawer while retaining its workspace | Withdraw / Close / Latch | 1460ms |
 | [Zoom Out](icon-reviews/zoom-out.md) | Reduce magnification and reveal surrounding context | Frame / Recede / Reveal | 1380ms |
 
-Chosen from real platform affordances, as recorded in [PLATFORM-ICONS.md](PLATFORM-ICONS.md#platform--09--navigation-and-workspace). The studio opens this set. Each has an individual Interface Craft critique, original semantic timeline and [native browser evidence](motion-evidence/platform-09/README.md). Earlier 69 performances remain unchanged. These new exports await user judgment and the next tagged release.
+Chosen from real platform affordances, as recorded in [PLATFORM-ICONS.md](PLATFORM-ICONS.md#platform--09--navigation-and-workspace). The studio opens this set. Each has an individual Interface Craft critique, original semantic timeline and [native browser evidence](motion-evidence/platform-09/README.md). Earlier 69 performances remain unchanged. These four exports are included in 0.2.0 following the user's publication request.

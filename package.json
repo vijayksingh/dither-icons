@@ -1,6 +1,6 @@
 {
   "name": "@unlocalhosted/dither-icons",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Original dithered, animated SVG icons for React",
   "type": "module",
   "license": "MIT",

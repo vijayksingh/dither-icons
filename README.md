@@ -75,13 +75,13 @@ export function DownloadButton({ onDownload }: { onDownload: () => void }) {
 
 `di-trigger` lets the whole control's hover, focus or tap trigger the icon. The visible text names this button; use `aria-label` for an icon-only control. Your application owns the action, loading state and result. The gesture never substitutes for confirmation that an operation succeeded.
 
-### Unreleased navigation additions
+### Navigation and workspace
 
-`ArrowLeftIcon` (Back), `HistoryIcon`, `PanelLeftCloseIcon` (Collapse Panel), and `ZoomOutIcon` are available from this checkout and will ship with the next tagged release. They are **not included in npm 0.1.2**. Their motions express navigation intent; the host owns routing, explorer state, history selection, and map magnification.
+`ArrowLeftIcon` (Back), `HistoryIcon`, `PanelLeftCloseIcon` (Collapse Panel), and `ZoomOutIcon` are available in **0.2.0 and later**. Their motions express navigation intent; the host owns routing, explorer state, history selection, and map magnification.
 
 ### Lock and Unlock
 
-`UnlockIcon` is new on this branch and **not included in npm 0.1.2**; it will ship with the next tagged release. Both icons share a housing, but their resting states stay distinct with motion disabled. Select them from your application's real state:
+`UnlockIcon` is available in **0.2.0 and later**. Both icons share a housing, but their resting states stay distinct with motion disabled. Select them from your application's real state:
 
 ```tsx
 import { LockIcon, UnlockIcon } from '@unlocalhosted/dither-icons';
