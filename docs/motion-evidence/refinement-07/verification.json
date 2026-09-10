@@ -1,0 +1,6 @@
+{
+  "neutralMatches": true,
+  "materialsMatch": true,
+  "irisBoundaryChecks": 512,
+  "irisOutside": 0
+}

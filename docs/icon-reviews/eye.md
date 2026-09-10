@@ -1,45 +1,35 @@
-# eye: Interface Craft review
+# Eye: Interface Craft refinement 07
 
 ## Context
-An SVG action icon in a reusable developer library. Its semantic meaning is **attend to or inspect a visible region**. It appears in routine controls where recognition matters more than spectacle.
+**Visibility and inspection.** Eye represents an available view or a deliberate look. It is suitable for preview and visibility controls; this pass does not add a new platform control. A library glance must not hide content or claim that inspection succeeded.
 
 ## First Impressions
-A moving pupil without an aperture constraint can drift outside its eye.
+The old pupil looked left and then right without resolving on a subject. Its heavy nested outline and full circular pupil gave little focal hierarchy. The focus event needed to come after the gaze arrived.
 
 ## Visual Design
-**Identity boundary** — Eye outline remains stable and pupil stays inside the aperture. Stable dither follows the contour. Color inherits the selected palette; accents use the same ink and stay below the primary silhouette in visual weight. Typography and card framing belong to the shared inspector, not the glyph.
+Two joined cubic lids frame one fixed aperture. Dither/solid use a filled band and an iris with a small negative catchlight; outline uses a single 1.65-unit lid contour and a ring with a compact pupil. The full moving iris stays clipped by the aperture. No eyelid closes, no reticle is added.
 
 ## Interface Design
-The missed opportunity is to express **attend to or inspect a visible region** through a causal gesture. Pupil looks left, follows right, and centers; a pupil highlight follows attention. The inspector exposes replay and timing only when requested; the icon itself adds no controls or labels.
+A .45-unit preparatory glance precedes a 1.15-unit gaze to the right at 380ms. The iris then contracts to 88% at 490ms. Two fine marks at the right corner acknowledge attention at 555ms. The subject is held until 720ms; the marks clear before the iris centers and relaxes. Fixed lids give the gaze a stable reference.
 
 ## Consistency & Conventions
-Retain the conventional glyph. Use the shared hover, focus, click, reduced-motion, and completion contracts. MOT-01, MOT-02, MOT-03, MOT-04, MOT-05, MOT-08, MOT-09, MOT-10, MOT-11, MOT-12, MOT-14, MOT-15 apply.
+MOT-01/02/03/04/05/06/07/08/09/10/11/12/13/14/15/16. Use the existing native playback, shared CSS timeline and frame inspector. Each icon has its own geometry and timing module. Reduced motion and motion-off retain the complete static symbol. Standalone CSS hover stops on departure; React completes the gesture.
 
 ## User Context
-No rapid blink or eye strain-inducing jitter. Recognizability must survive a brief glance and the still-motion variant.
+A quick recognition cue, followed by enough stillness to feel intentional. At 24px, use solid/outline; the gaze does not depend on the tiny corner accents. Actual visibility belongs to the host.
 
 ## Top Opportunities
-1. Pupil looks left, follows right, and centers; a pupil highlight follows attention.
-2. Eye outline remains stable and pupil stays inside the aperture.
-3. No rapid blink or eye strain-inducing jitter.
+1. Let the gaze arrive before focus changes.
+2. Keep the iris inside a fixed aperture and remove doubled outlines.
+3. Use a small corner response, then hold attention.
 
-## Encoded storyboard and review
+## Encoded storyboard and rendered review
+[eye.ts](../../src/motions/eye.ts), **1300ms**, **Find / Focus / Acknowledge**.
 
-**Duration:** 1400ms. **Sequence:** Notice / Follow / Center.
+```text
+0 — 150 notice — 380 arrive — 490 focus — 555 answer — 720 hold — 900 clear — 1120 home — 1300 rest
+```
 
-Timing source: [presence.ts](../../src/motions/presence.ts). Geometry binds each named track in `CraftedArtwork.tsx` or `ExtendedArtwork.tsx`. Times below are milliseconds from the same clock; transform values, pivots and easing live in that source.
+[Current browser evidence](../motion-evidence/refinement-07/) records inspected poses, actual/half-speed playback, keyboard completion, material continuity, reduced motion and compact exports. These supersede the broad-rollout references for this icon. Implementation review does not claim user acceptance or a production release.
 
-| Named part | Keyframe times (ms) |
-| --- | --- |
-| `pupil` | 0, 230, 440, 720, 920, 1220, 1400 |
-| `attention-light` | 0, 490, 730, 1000, 1260, 1400 |
-
-**Rendered review:** The pupil looks left, follows right, and centers inside a fixed aperture. A scoped clip prevents escape; the outline never blinks away.
-
-Reviewed at preparation (20%), action (40%), recovery (70%) and neutral endpoint (100%), with actual playback and per-part endpoint inspection in the live gallery. These samples establish the reviewed poses; they do not replace the full timeline or the shared lifecycle checks in [VALIDATION.md](../VALIDATION.md).
-
-**Visual reference:** icon 3 from the left in this family.
-
-![eye: action pose at 40%, position 3](../motion-evidence/rollout/presence.png)
-
-[Preparation image](../motion-evidence/rollout/presence-prepare.png) · [Recovery image](../motion-evidence/rollout/presence-recover.png)
+![Eye, Sparkles, Sun and Moon during their response](../motion-evidence/refinement-07/pose-55.png)

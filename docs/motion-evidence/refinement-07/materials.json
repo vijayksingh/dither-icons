@@ -1,0 +1,377 @@
+[
+  {
+    "material": "dither",
+    "parts": [
+      {
+        "name": "eye",
+        "parts": [
+          {
+            "name": "eye-gaze",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 1.15, 0)"
+          },
+          {
+            "name": "eye-iris",
+            "opacity": "1",
+            "transform": "matrix(0.88, 0, 0, 0.88, 0, 0)"
+          },
+          {
+            "name": "eye-answer",
+            "opacity": "0.402174",
+            "transform": "matrix(1.05565, 0, 0, 1.05565, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "sparkles",
+        "parts": [
+          {
+            "name": "spark-main",
+            "opacity": "1",
+            "transform": "matrix(1.01275, 0, 0, 1.00425, 0, 0)"
+          },
+          {
+            "name": "spark-satellite",
+            "opacity": "1",
+            "transform": "matrix(1.03025, 0, 0, 1.03025, 0, 0)"
+          },
+          {
+            "name": "spark-tips",
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1.01017, 0, 0)"
+          },
+          {
+            "name": "spark-echo",
+            "opacity": "0.540909",
+            "transform": "matrix(1.0223, 0, 0, 1.0223, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "sun",
+        "parts": [
+          {
+            "name": "sun-wave",
+            "opacity": "0",
+            "transform": "matrix(1.36172, 0, 0, 1.36172, 0, 0)"
+          },
+          {
+            "name": "sun-ray-0",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.55)"
+          },
+          {
+            "name": "sun-ray-1",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.4)"
+          },
+          {
+            "name": "sun-ray-2",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.55)"
+          },
+          {
+            "name": "sun-ray-3",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.4)"
+          },
+          {
+            "name": "sun-ray-4",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.55)"
+          },
+          {
+            "name": "sun-ray-5",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.4)"
+          },
+          {
+            "name": "sun-ray-6",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.55)"
+          },
+          {
+            "name": "sun-ray-7",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.4)"
+          },
+          {
+            "name": "sun-tips",
+            "opacity": "0.628923",
+            "transform": "none"
+          }
+        ]
+      },
+      {
+        "name": "moon",
+        "parts": [
+          {
+            "name": "moon-crescent",
+            "opacity": "1",
+            "transform": "matrix(0.996195, -0.0871557, 0.0871557, 0.996195, 0, 0)"
+          },
+          {
+            "name": "moon-rim",
+            "opacity": "0.407105",
+            "transform": "matrix(0.681998, -0.731354, 0.731354, 0.681998, 0, 0)"
+          },
+          {
+            "name": "moon-glint",
+            "opacity": "0.847703",
+            "transform": "matrix(0.999189, 0, 0, 0.999189, 0, 0)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "material": "solid",
+    "parts": [
+      {
+        "name": "eye",
+        "parts": [
+          {
+            "name": "eye-gaze",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 1.15, 0)"
+          },
+          {
+            "name": "eye-iris",
+            "opacity": "1",
+            "transform": "matrix(0.88, 0, 0, 0.88, 0, 0)"
+          },
+          {
+            "name": "eye-answer",
+            "opacity": "0.402174",
+            "transform": "matrix(1.05565, 0, 0, 1.05565, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "sparkles",
+        "parts": [
+          {
+            "name": "spark-main",
+            "opacity": "1",
+            "transform": "matrix(1.01275, 0, 0, 1.00425, 0, 0)"
+          },
+          {
+            "name": "spark-satellite",
+            "opacity": "1",
+            "transform": "matrix(1.03025, 0, 0, 1.03025, 0, 0)"
+          },
+          {
+            "name": "spark-tips",
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1.01017, 0, 0)"
+          },
+          {
+            "name": "spark-echo",
+            "opacity": "0.540909",
+            "transform": "matrix(1.0223, 0, 0, 1.0223, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "sun",
+        "parts": [
+          {
+            "name": "sun-wave",
+            "opacity": "0",
+            "transform": "matrix(1.36172, 0, 0, 1.36172, 0, 0)"
+          },
+          {
+            "name": "sun-ray-0",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.55)"
+          },
+          {
+            "name": "sun-ray-1",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.4)"
+          },
+          {
+            "name": "sun-ray-2",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.55)"
+          },
+          {
+            "name": "sun-ray-3",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.4)"
+          },
+          {
+            "name": "sun-ray-4",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.55)"
+          },
+          {
+            "name": "sun-ray-5",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.4)"
+          },
+          {
+            "name": "sun-ray-6",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.55)"
+          },
+          {
+            "name": "sun-ray-7",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.4)"
+          },
+          {
+            "name": "sun-tips",
+            "opacity": "0.628923",
+            "transform": "none"
+          }
+        ]
+      },
+      {
+        "name": "moon",
+        "parts": [
+          {
+            "name": "moon-crescent",
+            "opacity": "1",
+            "transform": "matrix(0.996195, -0.0871557, 0.0871557, 0.996195, 0, 0)"
+          },
+          {
+            "name": "moon-rim",
+            "opacity": "0.407105",
+            "transform": "matrix(0.681998, -0.731354, 0.731354, 0.681998, 0, 0)"
+          },
+          {
+            "name": "moon-glint",
+            "opacity": "0.847703",
+            "transform": "matrix(0.999189, 0, 0, 0.999189, 0, 0)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "material": "outline",
+    "parts": [
+      {
+        "name": "eye",
+        "parts": [
+          {
+            "name": "eye-gaze",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 1.15, 0)"
+          },
+          {
+            "name": "eye-iris",
+            "opacity": "1",
+            "transform": "matrix(0.88, 0, 0, 0.88, 0, 0)"
+          },
+          {
+            "name": "eye-answer",
+            "opacity": "0.402174",
+            "transform": "matrix(1.05565, 0, 0, 1.05565, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "sparkles",
+        "parts": [
+          {
+            "name": "spark-main",
+            "opacity": "1",
+            "transform": "matrix(1.01275, 0, 0, 1.00425, 0, 0)"
+          },
+          {
+            "name": "spark-satellite",
+            "opacity": "1",
+            "transform": "matrix(1.03025, 0, 0, 1.03025, 0, 0)"
+          },
+          {
+            "name": "spark-tips",
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1.01017, 0, 0)"
+          },
+          {
+            "name": "spark-echo",
+            "opacity": "0.540909",
+            "transform": "matrix(1.0223, 0, 0, 1.0223, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "sun",
+        "parts": [
+          {
+            "name": "sun-wave",
+            "opacity": "0",
+            "transform": "matrix(1.36172, 0, 0, 1.36172, 0, 0)"
+          },
+          {
+            "name": "sun-ray-0",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.55)"
+          },
+          {
+            "name": "sun-ray-1",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.4)"
+          },
+          {
+            "name": "sun-ray-2",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.55)"
+          },
+          {
+            "name": "sun-ray-3",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.4)"
+          },
+          {
+            "name": "sun-ray-4",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.55)"
+          },
+          {
+            "name": "sun-ray-5",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.4)"
+          },
+          {
+            "name": "sun-ray-6",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.55)"
+          },
+          {
+            "name": "sun-ray-7",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.4)"
+          },
+          {
+            "name": "sun-tips",
+            "opacity": "0.628923",
+            "transform": "none"
+          }
+        ]
+      },
+      {
+        "name": "moon",
+        "parts": [
+          {
+            "name": "moon-crescent",
+            "opacity": "1",
+            "transform": "matrix(0.996195, -0.0871557, 0.0871557, 0.996195, 0, 0)"
+          },
+          {
+            "name": "moon-rim",
+            "opacity": "0.407105",
+            "transform": "matrix(0.681998, -0.731354, 0.731354, 0.681998, 0, 0)"
+          },
+          {
+            "name": "moon-glint",
+            "opacity": "0.847703",
+            "transform": "matrix(0.999189, 0, 0, 0.999189, 0, 0)"
+          }
+        ]
+      }
+    ]
+  }
+]

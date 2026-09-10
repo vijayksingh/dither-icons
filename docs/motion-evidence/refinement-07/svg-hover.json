@@ -1,0 +1,46 @@
+[
+  {
+    "animations": [
+      "di-eye-eye-gaze",
+      "di-eye-eye-iris",
+      "di-eye-eye-answer"
+    ],
+    "hover": true,
+    "name": "eye"
+  },
+  {
+    "animations": [
+      "di-sparkles-spark-main",
+      "di-sparkles-spark-satellite",
+      "di-sparkles-spark-tips",
+      "di-sparkles-spark-echo"
+    ],
+    "hover": true,
+    "name": "sparkles"
+  },
+  {
+    "animations": [
+      "di-sun-sun-wave",
+      "di-sun-sun-ray-0",
+      "di-sun-sun-ray-1",
+      "di-sun-sun-ray-2",
+      "di-sun-sun-ray-3",
+      "di-sun-sun-ray-4",
+      "di-sun-sun-ray-5",
+      "di-sun-sun-ray-6",
+      "di-sun-sun-ray-7",
+      "di-sun-sun-tips"
+    ],
+    "hover": true,
+    "name": "sun"
+  },
+  {
+    "animations": [
+      "di-moon-moon-crescent",
+      "di-moon-moon-rim",
+      "di-moon-moon-glint"
+    ],
+    "hover": true,
+    "name": "moon"
+  }
+]

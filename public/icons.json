@@ -68,11 +68,11 @@
       "keywords": [],
       "page": "/icons/sparkles",
       "motion": {
-        "caption": "One glint opens. A smaller star answers.",
-        "durationMs": 1180,
+        "caption": "One bright glint. A smaller reply.",
+        "durationMs": 1220,
         "stages": [
           "Gather",
-          "Glint",
+          "Flare",
           "Echo"
         ]
       }
@@ -466,16 +466,16 @@
       "component": "EyeIcon",
       "label": "Eye",
       "category": "Interface",
-      "description": "The pupil takes a quick look.",
+      "description": "The iris finds a subject and focuses.",
       "keywords": [],
       "page": "/icons/eye",
       "motion": {
-        "caption": "A glance finds its subject, then returns.",
-        "durationMs": 1400,
+        "caption": "Find a subject. Hold its gaze.",
+        "durationMs": 1300,
         "stages": [
-          "Notice",
-          "Follow",
-          "Center"
+          "Find",
+          "Focus",
+          "Acknowledge"
         ]
       }
     },
@@ -538,16 +538,16 @@
       "component": "SunIcon",
       "label": "Sun",
       "category": "Interface",
-      "description": "A little turn of daylight.",
+      "description": "Light leaves the center before the rays extend.",
       "keywords": [],
       "page": "/icons/sun",
       "motion": {
-        "caption": "The center warms. The rays answer.",
+        "caption": "Light leaves the core. The rays answer.",
         "durationMs": 1160,
         "stages": [
           "Warm",
-          "Radiate",
-          "Rest"
+          "Reach",
+          "Radiate"
         ]
       }
     },
@@ -556,15 +556,15 @@
       "component": "MoonIcon",
       "label": "Moon",
       "category": "Interface",
-      "description": "A quiet tilt toward night.",
+      "description": "A crescent settles before catching the last light.",
       "keywords": [],
       "page": "/icons/moon",
       "motion": {
-        "caption": "A quiet crescent catches the last light.",
-        "durationMs": 1300,
+        "caption": "Settle into night. Catch the last light.",
+        "durationMs": 1420,
         "stages": [
           "Incline",
-          "Catch light",
+          "Catch",
           "Still"
         ]
       }

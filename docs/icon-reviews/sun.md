@@ -1,46 +1,35 @@
-# sun: Interface Craft review
+# Sun: Interface Craft refinement 07
 
 ## Context
-An SVG action icon in a reusable developer library. Its semantic meaning is **daylight or a light appearance**. It appears in routine controls where recognition matters more than spectacle.
+**Light appearance.** Sun indicates daylight or a light appearance. The platform ModeToggle.tsx:29/35 pairs it with Moon. The host chooses the actual theme; hovering a Sun preview does not change it.
 
 ## First Impressions
-Spinning the entire sun resembles a busy indicator.
+Square bars and diamond blocks made the earlier rays feel coarse. The two rotating ray groups read like a small busy indicator, and the tiny internal arc did not explain where their movement came from.
 
 ## Visual Design
-**Identity boundary** — Disc and rays remain a sun at every frame. Stable dither follows the contour. Color inherits the selected palette; accents use the same ink and stay below the primary silhouette in visual weight. Typography and card framing belong to the shared inspector, not the glyph.
+A fixed radius-4.4 disc is surrounded by eight identical round-ended capsules, with 1.65-unit width. Static 45-degree rotations establish the radial frame; each animated ray translates only along its own radius. A thin finite wave crosses the empty space around the disc. Four short tangential endpoint marks finish the cardinal response.
 
 ## Interface Design
-The missed opportunity is to express **daylight or a light appearance** through a causal gesture. Core anchors; rays extend slightly and answer around it with a warm rim accent. The inspector exposes replay and timing only when requested; the icon itself adds no controls or labels.
+The wave emerges at 150ms, brightens at 250ms and reaches the actual rounded inner edge of the rays at 430ms. Cardinal rays then travel .55 units outward by 540ms; diagonals follow and travel .4 units by 620ms. The tip response peaks at 605ms. Rays hold briefly before returning. The disc never rotates or breathes.
 
 ## Consistency & Conventions
-Retain the conventional glyph. Use the shared hover, focus, click, reduced-motion, and completion contracts. MOT-01, MOT-02, MOT-03, MOT-04, MOT-05, MOT-08, MOT-09, MOT-10, MOT-11, MOT-12, MOT-14, MOT-15 apply.
+MOT-01/02/03/04/05/06/07/08/09/10/11/12/13/14/15/16. Use the existing native playback, shared CSS timeline and frame inspector. Each icon has its own geometry and timing module. Reduced motion and motion-off retain the complete static symbol. Standalone CSS hover stops on departure; React completes the gesture.
 
 ## User Context
-One soft expansion, not a repeated breathing loop. Recognizability must survive a brief glance and the still-motion variant.
+Daylight should feel open and even. The wave is a single event; the sun remains complete with motion off. The capsule contours work at 24px, and the maximum outer edge stays inside the viewBox.
 
 ## Top Opportunities
-1. Core anchors; rays extend slightly and answer around it with a warm rim accent.
-2. Disc and rays remain a sun at every frame.
-3. One soft expansion, not a repeated breathing loop.
+1. Replace blocky rays with consistent capsules.
+2. Show propagation from a visible source before the rays move.
+3. Keep all motion radial and bound the outer ends.
 
-## Encoded storyboard and review
+## Encoded storyboard and rendered review
+[sun.ts](../../src/motions/sun.ts), **1160ms**, **Warm / Reach / Radiate**.
 
-**Duration:** 1160ms. **Sequence:** Warm / Radiate / Rest.
+```text
+0 — 150 emit — 250 warm — 430 reach — 485 follow — 540 cardinal — 605 tips — 620 diagonal — 750 hold — 930 clear — 1160 rest
+```
 
-Timing source: [atmosphere.ts](../../src/motions/atmosphere.ts). Geometry binds each named track in `CraftedArtwork.tsx` or `ExtendedArtwork.tsx`. Times below are milliseconds from the same clock; transform values, pivots and easing live in that source.
+[Current browser evidence](../motion-evidence/refinement-07/) records inspected poses, actual/half-speed playback, keyboard completion, material continuity, reduced motion and compact exports. These supersede the broad-rollout references for this icon. Implementation review does not claim user acceptance or a production release.
 
-| Named part | Keyframe times (ms) |
-| --- | --- |
-| `rays-cardinal` | 0, 140, 410, 610, 900, 1160 |
-| `rays-diagonal` | 0, 120, 260, 520, 730, 1020, 1160 |
-| `warmth` | 0, 120, 350, 700, 980, 1160 |
-
-**Rendered review:** The disc stays anchored. Cardinal rays answer before diagonal rays, then both settle without a full spin or a busy-indicator reading.
-
-Reviewed at preparation (20%), action (40%), recovery (70%) and neutral endpoint (100%), with actual playback and per-part endpoint inspection in the live gallery. These samples establish the reviewed poses; they do not replace the full timeline or the shared lifecycle checks in [VALIDATION.md](../VALIDATION.md).
-
-**Visual reference:** icon 2 from the left in this family.
-
-![sun: action pose at 40%, position 2](../motion-evidence/rollout/light.png)
-
-[Preparation image](../motion-evidence/rollout/light-prepare.png) · [Recovery image](../motion-evidence/rollout/light-recover.png)
+![Eye, Sparkles, Sun and Moon during their response](../motion-evidence/refinement-07/pose-55.png)

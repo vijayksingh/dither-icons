@@ -34,10 +34,10 @@ The four accepted foundation performances remain intact. The remaining icons use
 | [user](icon-reviews/user.md) | represent a person or profile | Notice / Acknowledge / Ease | 1180ms |
 | [lock](icon-reviews/lock.md) | test a closed mechanism that resists opening | Test / Resist / Hold | 1080ms |
 | [unlock](icon-reviews/unlock.md) | indicate open access with a clear free shackle end | Release / Clear / Stay open | 1200ms |
-| [eye](icon-reviews/eye.md) | attend to or inspect a visible region | Notice / Follow / Center | 1400ms |
-| [sparkles](icon-reviews/sparkles.md) | a small moment of discovery or emphasis | Gather / Glint / Echo | 1180ms |
-| [sun](icon-reviews/sun.md) | daylight or a light appearance | Warm / Radiate / Rest | 1160ms |
-| [moon](icon-reviews/moon.md) | nighttime or a dark appearance | Incline / Catch light / Still | 1300ms |
+| [eye](icon-reviews/eye.md) | attend to or inspect a visible region | Find / Focus / Acknowledge | 1300ms |
+| [sparkles](icon-reviews/sparkles.md) | a small moment of discovery or emphasis | Gather / Flare / Echo | 1220ms |
+| [sun](icon-reviews/sun.md) | daylight or a light appearance | Warm / Reach / Radiate | 1160ms |
+| [moon](icon-reviews/moon.md) | nighttime or a dark appearance | Incline / Catch / Still | 1420ms |
 | [bolt](icon-reviews/bolt.md) | a short transfer of energy | Charge / Conduct / Discharge | 780ms |
 | [bell](icon-reviews/bell.md) | draw attention through a mechanical ring | Anticipate / Strike / Resonate | 940ms |
 | [heart](icon-reviews/heart.md) | express affection through a brief release of energy | Gather / Bloom / Exhale | 820ms |
@@ -144,7 +144,7 @@ The user requested retaining and committing these four, then corrected the selec
 
 **Check, Close, Plus, Lock** received the focused four-icon pass (the original Close/Plus gestures below were subsequently rejected and replaced). The studio defaults to **Actions and access**. Check traces its ascending stroke before a tip response; Close tightens along fixed diagonals; Plus opens its axes in sequence with individual endpoint responses; Lock holds tension above a fixed housing. Rounded contours, clean crossings and closed-lock identity preserve compact reading. Each has an individual Interface Craft critique, a separate timing source and [browser evidence](motion-evidence/refinement-06/). The previous 64 performances retain their tracks.
 
-**Status: 61 refined of 69, 8 awaiting the focused pass.** Pending: **Eye, Sparkles, Sun, Moon, Terminal, CPU, Chart, Bolt**. These eight retain their earlier authored semantic motions. Do not call them unanimated or treat the broad-rollout reports as evidence of the later focused pass. “Refined” records the completed implementation and rendered review, not user acceptance of every new iteration.
+**Status: 65 refined of 69, 4 awaiting the focused pass.** Pending: **Terminal, CPU, Chart, Bolt**. These four retain their earlier authored semantic motions. Do not call them unanimated or treat the broad-rollout reports as evidence of the later focused pass. “Refined” records the completed implementation and rendered review, not user acceptance of every new iteration.
 
 ### Semantic correction and Unlock state — 2026-09-10
 
@@ -153,3 +153,7 @@ The user rejected Close and Plus as semantically weak. Close now marks two fixed
 ### Lock resistance correction — 2026-09-10
 
 On user request, Lock now gives a short, diminishing rigid shackle rattle against a fixed housing, stops firmly, then holds. Both feet remain inserted; the shoulder response follows the stop. It replaces the earlier crown stretch and uses **Test / Resist / Hold**, 1080ms. [Review](icon-reviews/lock.md) and [current evidence](motion-evidence/lock-resistance/). Unlock, Close, Plus and all other performances are unchanged.
+
+## Focused refinement 07 — visibility and appearance
+
+**Eye, Sparkles, Sun, Moon** now have individual contour and motion refinements. The studio defaults to **Visibility and appearance**. Eye arrives before focusing; Sparkles passes a flare from a dominant star to a smaller reply; Sun sends a wave from a fixed core to round-ended radial rays; Moon settles before rim light reaches a small glint in its opening. Each has its own [Interface Craft review](icon-reviews/eye.md), timeline and [browser references](motion-evidence/refinement-07/). All other 65 performances retain their tracks. Refined status records implementation and rendered review, not automatic user acceptance.

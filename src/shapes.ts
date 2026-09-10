@@ -1,3 +1,6 @@
+import {EYE_ART} from './motions/eye';
+import {SPARKLES_ART} from './motions/sparkles';
+import {MOON_ART} from './motions/moon';
 import {LOCK_ART} from './motions/lock';
 import {UNLOCK_REST_TRANSFORM} from './motions/unlock';
 import {SAVE_ART} from './motions/save-preferences';
@@ -72,12 +75,12 @@ export const definitions = [
  def('user','Interface','A small greeting from the avatar.',o(12,7,5,'ring'),p([[3,22],[3,18],[7,14],[17,14],[21,18],[21,22]])),
  def('lock','Interface','The shackle rattles against a fixed housing and stays locked.',l([[6,10],[6,5],[9,2],[14,2],[17,5],[17,10]],'rise'),p([[4,10],[20,10],[20,22],[4,22]])),
  {...def('unlock','Interface','An open shackle clears its free end while its right foot stays seated.',{...vector(LOCK_ART.shackle),transform:UNLOCK_REST_TRANSFORM},vector(LOCK_ART.body+LOCK_ART.keyhole)),label:'Unlock',keywords:['unlocked','open lock','access','permissions','editable']},
- def('eye','Interface','The pupil takes a quick look.',l([[2,11],[7,6],[16,6],[21,11],[16,16],[7,16],[2,11]]),r(10,9,4,5,'slide')),
+ def('eye','Interface','The iris finds a subject and focuses.',l([[2,11],[7,6],[16,6],[21,11],[16,16],[7,16],[2,11]]),r(10,9,4,5,'slide')),
  def('play','Media','A playhead moves forward.',p([[6,3],[22,12],[6,21]],'slide')),
  def('pause','Media','Playback settles into pause.',part([...rect(5,3,5,18),...rect(14,3,5,18)],'pulse')),
  def('volume','Media','Sound travels outward from the speaker.',p([[2,9],[7,9],[13,3],[13,21],[7,15],[2,15]]),l([[17,6],[20,9],[20,14],[17,17]],'blink')),
- def('sun','Interface','A little turn of daylight.',part([...ring(12,12,5),...rect(11,1,2,3),...rect(11,20,2,3),...rect(1,11,3,2),...rect(20,11,3,2),...rect(3,3,3,3),...rect(18,18,3,3),...rect(18,3,3,3),...rect(3,18,3,3)],'turn')),
- def('moon','Interface','A quiet tilt toward night.',p([[13,2],[7,4],[3,9],[3,16],[7,21],[14,22],[20,18],[22,13],[17,15],[12,13],[9,9],[10,5]],'ring')),
+ def('sun','Interface','Light leaves the center before the rays extend.',part([...ring(12,12,5),...rect(11,1,2,3),...rect(11,20,2,3),...rect(1,11,3,2),...rect(20,11,3,2),...rect(3,3,3,3),...rect(18,18,3,3),...rect(18,3,3,3),...rect(3,18,3,3)],'turn')),
+ def('moon','Interface','A crescent settles before catching the last light.',p([[13,2],[7,4],[3,9],[3,16],[7,21],[14,22],[20,18],[22,13],[17,15],[12,13],[9,9],[10,5]],'ring')),
  def('code','Development','The brackets open a little space.',l([[7,5],[2,11],[7,17]],'rise'),l([[16,5],[21,11],[16,17]],'fall'),l([[14,3],[10,20]])),
  def('terminal','Development','A cursor blinks once at the prompt.',l([[2,3],[21,3],[21,21],[2,21],[2,3]]),l([[5,8],[8,11],[5,14]]),r(12,14,6,2,'blink')),
  def('layers','Development','Stacked planes separate, then settle.',p([[2,15],[12,21],[22,15],[12,9]]),p([[2,11],[12,17],[22,11],[12,5]],'rise'),p([[2,7],[12,13],[22,7],[12,1]],'rise')),
@@ -124,7 +127,7 @@ export type IconName = typeof definitions[number]['name'];
 const vectors:Record<string,string[]>={
  bell:['M5.5 17.5c1.5-1.7 1.5-3.5 1.5-7.5a5 5 0 0 1 10 0c0 4 0 5.8 1.5 7.5Z','M10 20h4a2 2 0 0 1-4 0Z'],
  heart:['M12 20.5C9.4 18.4 3 13.8 3 8.4A4.6 4.6 0 0 1 12 7a4.6 4.6 0 0 1 9 1.4c0 5.4-6.4 10-9 12.1Z'],
- sparkles:['M12 2.5C13.2 8.8 15.2 10.8 21.5 12C15.2 13.2 13.2 15.2 12 21.5C10.8 15.2 8.8 13.2 2.5 12C8.8 10.8 10.8 8.8 12 2.5Z','M20 2l.65 1.35L22 4l-1.35.65L20 6l-.65-1.35L18 4l1.35-.65Z'],
+ sparkles:[SPARKLES_ART.main,SPARKLES_ART.satellite],
  search:['M10.5 3.5a7 7 0 1 0 0 14a7 7 0 1 0 0-14Zm0 2a5 5 0 1 1 0 10a5 5 0 1 1 0-10Z','M14.25 15.75l1.5-1.5 5.75 5.75a1.06 1.06 0 0 1-1.5 1.5Z'],
  home:['M3 10.2 11 3.4a1.5 1.5 0 0 1 2 0l8 6.8v9.3a1.5 1.5 0 0 1-1.5 1.5H15v-7H9v7H4.5A1.5 1.5 0 0 1 3 19.5Z','M10.5 15.5h3V21h-3Z'],
  settings:['M9 2h6l.7 3.1 2.2 1.3L21 5.5l3 5.2-2.4 2.2v2.6L24 18l-3 5-3.1-.9-2.2 1.3L15 26H9l-.7-2.6-2.2-1.3L3 23l-3-5 2.4-2.5v-2.6L0 10.7l3-5.2 3.1.9 2.2-1.3ZM12 9a5 5 0 1 0 0 10a5 5 0 1 0 0-10'],
@@ -145,12 +148,12 @@ const vectors:Record<string,string[]>={
  send:['M2.5 10.3 21 2.5a.5.5 0 0 1 .5.5l-7.8 18.5a.5.5 0 0 1-.9 0L9.5 14l7-7-8 6-6-1.8a.5.5 0 0 1 0-.9Z'],
  user:['M12 2a5 5 0 1 0 0 10a5 5 0 1 0 0-10Z','M3 22v-2c0-8 18-8 18 0v2Z'],
  lock:['M6 10V7a6 6 0 0 1 12 0v3h-2V7a4 4 0 0 0-8 0v3Z','M5 10h14a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V11a1 1 0 0 1 1-1Zm7 4a1.5 1.5 0 0 0-1 2.6V19h2v-2.4a1.5 1.5 0 0 0-1-2.6Z'],
- eye:['M1 12Q12-2 23 12Q12 26 1 12Zm2.7 0Q12 1.8 20.3 12Q12 22.2 3.7 12Z','M12 8a4 4 0 1 0 0 8a4 4 0 1 0 0-8Z'],
+ eye:[EYE_ART.outline+EYE_ART.aperture,EYE_ART.iris+EYE_ART.catchlight],
  play:['M6 4a1 1 0 0 1 1.5-.9l14 8a1 1 0 0 1 0 1.8l-14 8A1 1 0 0 1 6 20Z'],
  pause:['M5 4a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1ZM14 4a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1Z'],
  volume:['M2 9h5l6-5v16l-6-5H2Z','M17 6a8 8 0 0 1 0 12l-1.2-1.6a6 6 0 0 0 0-8.8ZM15.5 9a4 4 0 0 1 0 6l-1.2-1.6a2 2 0 0 0 0-2.8Z'],
  sun:['M12 7a5 5 0 1 0 0 10a5 5 0 1 0 0-10ZM11 1h2v3h-2ZM11 20h2v3h-2ZM1 11h3v2H1ZM20 11h3v2h-3ZM3.5 5l1.5-1.5L7 5.5 5.5 7ZM17 18.5l1.5-1.5 2 2-1.5 1.5ZM17 5.5l2-2L20.5 5l-2 2ZM3.5 19l2-2L7 18.5l-2 2Z'],
- moon:['M14 2A10 10 0 1 0 22 14A9 9 0 0 1 14 2Z'],
+ moon:[MOON_ART.crescent],
  code:['M7.5 5 2 12l5.5 7 1.5-1.3L4.6 12 9 6.3Z','M16.5 5 22 12l-5.5 7-1.5-1.3 4.4-5.7L15 6.3Z','M13 3h2l-4 18H9Z'],
  terminal:['M4 3h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm0 2v14h16V5Z','M6 8l4 4-4 4-1.4-1.4L7.2 12 4.6 9.4Z','M12 15h6v2h-6Z'],
  layers:['M2 15l10 5 10-5v2l-10 5-10-5Z','M2 11l10 5 10-5v2l-10 5-10-5Z','M2 7l10-5 10 5-10 5Z'],

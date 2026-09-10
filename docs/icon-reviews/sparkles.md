@@ -1,46 +1,35 @@
-# sparkles: Interface Craft review
+# Sparkles: Interface Craft refinement 07
 
 ## Context
-An SVG action icon in a reusable developer library. Its semantic meaning is **a small moment of discovery or emphasis**. It appears in routine controls where recognition matters more than spectacle.
+**Emphasis and discovery.** Sparkles is a moment of emphasis or discovery. The platform uses it in paths.universe.tsx:318 and profile badges in u.$handle.tsx:343/546. It must not impersonate loading, an AI result or an achievement.
 
 ## First Impressions
-A simultaneous pulse lacks a focal hierarchy.
+The original main star filled the cell and the satellite was barely legible. Both rotated and scaled, giving the pair a generic wobble. Their exchange needed clearer hierarchy and a finish belonging to each event.
 
 ## Visual Design
-**Identity boundary** — The main star remains dominant. Stable dither follows the contour. Color inherits the selected palette; accents use the same ink and stay below the primary silhouette in visual weight. Typography and card framing belong to the shared inspector, not the glyph.
+A concave four-point main star at (9.8,13.2), radius 8.1, leaves space for the radius-2.7 satellite at (19.1,4.9). The main star stays over twice the satellite radius at every authored extreme. Both retain their axes. Browser review reduced the satellite outline to 1.05 units so its small interior stays open beside the main star’s 1.4-unit contour. Fine vertical tip marks belong to the main flare; two small diagonal marks belong to the satellite reply.
 
 ## Interface Design
-The missed opportunity is to express **a small moment of discovery or emphasis** through a causal gesture. Main four-point mark gathers and opens; smaller satellite answers later with a restrained glint. The inspector exposes replay and timing only when requested; the icon itself adds no controls or labels.
+Gather at 120ms; the main star stretches vertically at 310ms. Its tip response peaks at 370ms. As the main relaxes across at 410ms, the satellite gathers and then catches the glint at 555ms. Its exterior reply peaks at 625ms. Both stars remain present and return to their exact proportions without tumbling.
 
 ## Consistency & Conventions
-Retain the conventional glyph. Use the shared hover, focus, click, reduced-motion, and completion contracts. MOT-01, MOT-02, MOT-03, MOT-04, MOT-05, MOT-08, MOT-09, MOT-10, MOT-11, MOT-12, MOT-14, MOT-15 apply.
+MOT-01/02/03/04/05/06/07/08/09/10/11/12/13/14/15/16. Use the existing native playback, shared CSS timeline and frame inspector. Each icon has its own geometry and timing module. Reduced motion and motion-off retain the complete static symbol. Standalone CSS hover stops on departure; React completes the gesture.
 
 ## User Context
-Avoid a particle shower or loading shimmer. Recognizability must survive a brief glance and the still-motion variant.
+One bright emphasis with a clear secondary reply. No particle shower, spinner, repeated shimmer or persistence after the gesture. The quieter satellite remains readable at compact size.
 
 ## Top Opportunities
-1. Main four-point mark gathers and opens; smaller satellite answers later with a restrained glint.
-2. The main star remains dominant.
-3. Avoid a particle shower or loading shimmer.
+1. Separate the two centers and give the satellite a readable size.
+2. Exchange a vertical flare for a delayed smaller reply.
+3. Keep tips and echoes tied to their own arrivals.
 
-## Encoded storyboard and review
+## Encoded storyboard and rendered review
+[sparkles.ts](../../src/motions/sparkles.ts), **1220ms**, **Gather / Flare / Echo**.
 
-**Duration:** 1180ms. **Sequence:** Gather / Glint / Echo.
+```text
+0 — 120 gather — 310 flare — 370 tips — 410 pass — 555 catch — 625 echo — 790 clear — 980 home — 1220 rest
+```
 
-Timing source: [atmosphere.ts](../../src/motions/atmosphere.ts). Geometry binds each named track in `CraftedArtwork.tsx` or `ExtendedArtwork.tsx`. Times below are milliseconds from the same clock; transform values, pivots and easing live in that source.
+[Current browser evidence](../motion-evidence/refinement-07/) records inspected poses, actual/half-speed playback, keyboard completion, material continuity, reduced motion and compact exports. These supersede the broad-rollout references for this icon. Implementation review does not claim user acceptance or a production release.
 
-| Named part | Keyframe times (ms) |
-| --- | --- |
-| `star` | 0, 150, 390, 600, 850, 1180 |
-| `satellite` | 0, 220, 520, 740, 1000, 1180 |
-| `star-light` | 0, 180, 390, 650, 1180 |
-
-**Rendered review:** The main star gathers and opens before the satellite responds. Both stars remain present, and the central glint is subordinate to the silhouette.
-
-Reviewed at preparation (20%), action (40%), recovery (70%) and neutral endpoint (100%), with actual playback and per-part endpoint inspection in the live gallery. These samples establish the reviewed poses; they do not replace the full timeline or the shared lifecycle checks in [VALIDATION.md](../VALIDATION.md).
-
-**Visual reference:** icon 1 from the left in this family.
-
-![sparkles: action pose at 40%, position 1](../motion-evidence/rollout/light.png)
-
-[Preparation image](../motion-evidence/rollout/light-prepare.png) · [Recovery image](../motion-evidence/rollout/light-recover.png)
+![Eye, Sparkles, Sun and Moon during their response](../motion-evidence/refinement-07/pose-55.png)

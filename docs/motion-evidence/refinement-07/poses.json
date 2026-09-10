@@ -1,0 +1,1018 @@
+[
+  {
+    "percent": 0,
+    "icons": [
+      {
+        "name": "eye",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "eye-gaze",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "eye-iris",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "eye-answer",
+            "transform": "matrix(0.8, 0, 0, 0.8, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "sparkles",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "spark-main",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "spark-satellite",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "spark-tips",
+            "transform": "matrix(1, 0, 0, 0.94, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "spark-echo",
+            "transform": "matrix(0.86, 0, 0, 0.86, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "sun",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "sun-wave",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-2",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-3",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-4",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-5",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-6",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-7",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "sun-tips",
+            "transform": "none"
+          }
+        ]
+      },
+      {
+        "name": "moon",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "moon-crescent",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "moon-rim",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "moon-glint",
+            "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+          }
+        ]
+      }
+    ],
+    "irisBoundarySamples": 64,
+    "irisOutside": 0
+  },
+  {
+    "percent": 12,
+    "icons": [
+      {
+        "name": "eye",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "eye-gaze",
+            "transform": "matrix(1, 0, 0, 1, -0.44761, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "eye-iris",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "eye-answer",
+            "transform": "matrix(0.8, 0, 0, 0.8, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "sparkles",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "spark-main",
+            "transform": "matrix(0.904401, 0, 0, 0.947426, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "spark-satellite",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "spark-tips",
+            "transform": "matrix(1, 0, 0, 0.94, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "spark-echo",
+            "transform": "matrix(0.86, 0, 0, 0.86, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "sun",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "sun-wave",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-2",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-3",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-4",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-5",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-6",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-7",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "sun-tips",
+            "transform": "none"
+          }
+        ]
+      },
+      {
+        "name": "moon",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "moon-crescent",
+            "transform": "matrix(0.999917, 0.0128484, -0.0128484, 0.999917, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "moon-rim",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "moon-glint",
+            "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+          }
+        ]
+      }
+    ],
+    "irisBoundarySamples": 64,
+    "irisOutside": 0
+  },
+  {
+    "percent": 30,
+    "icons": [
+      {
+        "name": "eye",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "eye-gaze",
+            "transform": "matrix(1, 0, 0, 1, 1.15, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "eye-iris",
+            "transform": "matrix(0.99749, 0, 0, 0.99749, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "eye-answer",
+            "transform": "matrix(0.8, 0, 0, 0.8, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "sparkles",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "spark-main",
+            "transform": "matrix(1.04348, 0, 0, 1.0164, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "spark-satellite",
+            "transform": "matrix(0.882205, 0, 0, 0.882205, 0, 0)"
+          },
+          {
+            "opacity": "0.746667",
+            "part": "spark-tips",
+            "transform": "matrix(1, 0, 0, 0.996, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "spark-echo",
+            "transform": "matrix(0.86, 0, 0, 0.86, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "sun",
+        "parts": [
+          {
+            "opacity": "0.480222",
+            "part": "sun-wave",
+            "transform": "matrix(1.27744, 0, 0, 1.27744, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-2",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-3",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-4",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-5",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-6",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-7",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "sun-tips",
+            "transform": "none"
+          }
+        ]
+      },
+      {
+        "name": "moon",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "moon-crescent",
+            "transform": "matrix(0.996223, -0.0868313, 0.0868313, 0.996223, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "moon-rim",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "moon-glint",
+            "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+          }
+        ]
+      }
+    ],
+    "irisBoundarySamples": 64,
+    "irisOutside": 0
+  },
+  {
+    "percent": 45,
+    "icons": [
+      {
+        "name": "eye",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "eye-gaze",
+            "transform": "matrix(1, 0, 0, 1, 1.15, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "eye-iris",
+            "transform": "matrix(0.88, 0, 0, 0.88, 0, 0)"
+          },
+          {
+            "opacity": "0.684783",
+            "part": "eye-answer",
+            "transform": "matrix(1.01043, 0, 0, 1.01043, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "sparkles",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "spark-main",
+            "transform": "matrix(1.035, 0, 0, 1.01167, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "spark-satellite",
+            "transform": "matrix(1.14973, 0, 0, 1.14973, 0, 0)"
+          },
+          {
+            "opacity": "0.0259459",
+            "part": "spark-tips",
+            "transform": "matrix(1, 0, 0, 1.02419, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "spark-echo",
+            "transform": "matrix(0.86, 0, 0, 0.86, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "sun",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "sun-wave",
+            "transform": "matrix(1.4421, 0, 0, 1.4421, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-0",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.541202)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.118936)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-2",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.541202)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-3",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.118936)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-4",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.541202)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-5",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.118936)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-6",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.541202)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-7",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.118936)"
+          },
+          {
+            "opacity": "0",
+            "part": "sun-tips",
+            "transform": "none"
+          }
+        ]
+      },
+      {
+        "name": "moon",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "moon-crescent",
+            "transform": "matrix(0.996195, -0.0871557, 0.0871557, 0.996195, 0, 0)"
+          },
+          {
+            "opacity": "0.65",
+            "part": "moon-rim",
+            "transform": "matrix(0.870898, -0.491464, 0.491464, 0.870898, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "moon-glint",
+            "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+          }
+        ]
+      }
+    ],
+    "irisBoundarySamples": 64,
+    "irisOutside": 0
+  },
+  {
+    "percent": 55,
+    "icons": [
+      {
+        "name": "eye",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "eye-gaze",
+            "transform": "matrix(1, 0, 0, 1, 1.15, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "eye-iris",
+            "transform": "matrix(0.88, 0, 0, 0.88, 0, 0)"
+          },
+          {
+            "opacity": "0.402174",
+            "part": "eye-answer",
+            "transform": "matrix(1.05565, 0, 0, 1.05565, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "sparkles",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "spark-main",
+            "transform": "matrix(1.01275, 0, 0, 1.00425, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "spark-satellite",
+            "transform": "matrix(1.03025, 0, 0, 1.03025, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "spark-tips",
+            "transform": "matrix(1, 0, 0, 1.01017, 0, 0)"
+          },
+          {
+            "opacity": "0.540909",
+            "part": "spark-echo",
+            "transform": "matrix(1.0223, 0, 0, 1.0223, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "sun",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "sun-wave",
+            "transform": "matrix(1.36172, 0, 0, 1.36172, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-0",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.55)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.4)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-2",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.55)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-3",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.4)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-4",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.55)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-5",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.4)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-6",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.55)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-7",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.4)"
+          },
+          {
+            "opacity": "0.628923",
+            "part": "sun-tips",
+            "transform": "none"
+          }
+        ]
+      },
+      {
+        "name": "moon",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "moon-crescent",
+            "transform": "matrix(0.996195, -0.0871557, 0.0871557, 0.996195, 0, 0)"
+          },
+          {
+            "opacity": "0.407105",
+            "part": "moon-rim",
+            "transform": "matrix(0.681998, -0.731354, 0.731354, 0.681998, 0, 0)"
+          },
+          {
+            "opacity": "0.847703",
+            "part": "moon-glint",
+            "transform": "matrix(0.999189, 0, 0, 0.999189, 0, 0)"
+          }
+        ]
+      }
+    ],
+    "irisBoundarySamples": 64,
+    "irisOutside": 0
+  },
+  {
+    "percent": 65,
+    "icons": [
+      {
+        "name": "eye",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "eye-gaze",
+            "transform": "matrix(1, 0, 0, 1, 0.688356, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "eye-iris",
+            "transform": "matrix(0.928172, 0, 0, 0.928172, 0, 0)"
+          },
+          {
+            "opacity": "0.119565",
+            "part": "eye-answer",
+            "transform": "matrix(1.10087, 0, 0, 1.10087, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "sparkles",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "spark-main",
+            "transform": "matrix(1.00343, 0, 0, 1.00114, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "spark-satellite",
+            "transform": "matrix(1.00351, 0, 0, 1.00351, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "spark-tips",
+            "transform": "matrix(1, 0, 0, 0.994579, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "spark-echo",
+            "transform": "matrix(1.07847, 0, 0, 1.07847, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "sun",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "sun-wave",
+            "transform": "matrix(1.28134, 0, 0, 1.28134, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-0",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.549409)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-1",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.39957)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-2",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.549409)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-3",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.39957)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-4",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.549409)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-5",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.39957)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-6",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.549409)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-7",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.39957)"
+          },
+          {
+            "opacity": "0.379077",
+            "part": "sun-tips",
+            "transform": "none"
+          }
+        ]
+      },
+      {
+        "name": "moon",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "moon-crescent",
+            "transform": "matrix(0.996229, -0.086768, 0.086768, 0.996229, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "moon-rim",
+            "transform": "matrix(0.708079, -0.706133, 0.706133, 0.708079, 0, 0)"
+          },
+          {
+            "opacity": "0.521486",
+            "part": "moon-glint",
+            "transform": "matrix(0.884054, 0, 0, 0.884054, 0, 0)"
+          }
+        ]
+      }
+    ],
+    "irisBoundarySamples": 64,
+    "irisOutside": 0
+  },
+  {
+    "percent": 80,
+    "icons": [
+      {
+        "name": "eye",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "eye-gaze",
+            "transform": "matrix(1, 0, 0, 1, 0.0284424, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "eye-iris",
+            "transform": "matrix(0.997032, 0, 0, 0.997032, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "eye-answer",
+            "transform": "matrix(1.008, 0, 0, 1.008, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "sparkles",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "spark-main",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "spark-satellite",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "spark-tips",
+            "transform": "matrix(1, 0, 0, 0.971188, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "spark-echo",
+            "transform": "matrix(0.984837, 0, 0, 0.984837, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "sun",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "sun-wave",
+            "transform": "matrix(1.16076, 0, 0, 1.16076, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-0",
+            "transform": "matrix(1, 0, 0, 1, 0, -3.56684e-05)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-1",
+            "transform": "matrix(1, 0, 0, 1, 0, -2.59407e-05)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-2",
+            "transform": "matrix(1, 0, 0, 1, 0, -3.56684e-05)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-3",
+            "transform": "matrix(1, 0, 0, 1, 0, -2.59407e-05)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-4",
+            "transform": "matrix(1, 0, 0, 1, 0, -3.56684e-05)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-5",
+            "transform": "matrix(1, 0, 0, 1, 0, -2.59407e-05)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-6",
+            "transform": "matrix(1, 0, 0, 1, 0, -3.56684e-05)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-7",
+            "transform": "matrix(1, 0, 0, 1, 0, -2.59407e-05)"
+          },
+          {
+            "opacity": "0.00430769",
+            "part": "sun-tips",
+            "transform": "none"
+          }
+        ]
+      },
+      {
+        "name": "moon",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "moon-crescent",
+            "transform": "matrix(0.999681, -0.0252709, 0.0252709, 0.999681, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "moon-rim",
+            "transform": "matrix(0.90131, -0.433175, 0.433175, 0.90131, 0, 0)"
+          },
+          {
+            "opacity": "0.0321622",
+            "part": "moon-glint",
+            "transform": "matrix(0.711351, 0, 0, 0.711351, 0, 0)"
+          }
+        ]
+      }
+    ],
+    "irisBoundarySamples": 64,
+    "irisOutside": 0
+  },
+  {
+    "percent": 100,
+    "icons": [
+      {
+        "name": "eye",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "eye-gaze",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "eye-iris",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "eye-answer",
+            "transform": "matrix(0.8, 0, 0, 0.8, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "sparkles",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "spark-main",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "spark-satellite",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "spark-tips",
+            "transform": "matrix(1, 0, 0, 0.94, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "spark-echo",
+            "transform": "matrix(0.86, 0, 0, 0.86, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "sun",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "sun-wave",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-2",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-3",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-4",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-5",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-6",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "sun-ray-7",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "sun-tips",
+            "transform": "none"
+          }
+        ]
+      },
+      {
+        "name": "moon",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "moon-crescent",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "moon-rim",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "moon-glint",
+            "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+          }
+        ]
+      }
+    ],
+    "irisBoundarySamples": 64,
+    "irisOutside": 0
+  }
+]
