@@ -305,7 +305,7 @@ CSS hover animation ends when hover ends. A standalone SVG does not expose React
 | --- | --- | --- |
 | bell | BellIcon | A little weight. A lingering ring. |
 | heart | HeartIcon | Gather, open, let a little joy escape. |
-| sparkles | SparklesIcon | One bright glint. A smaller reply. |
+| sparkles | SparklesIcon | One flare. Little sparks all around. |
 | search | SearchIcon | Lean closer. Let the focus resolve. |
 | home | HomeIcon | A familiar door. A little light to greet you. |
 | settings | SettingsIcon | A measured turn. A precise little click. |
@@ -327,12 +327,12 @@ CSS hover animation ends when hover ends. A standalone SVG does not expose React
 | user | UserIcon | A small nod. A warm acknowledgment. |
 | lock | LockIcon | Give it a shake. It stays locked. |
 | unlock | UnlockIcon | Release the free end. Leave the way open. |
-| eye | EyeIcon | Find a subject. Hold its gaze. |
+| eye | EyeIcon | Close softly. Open with a little light. |
 | play | PlayIcon | The first impulse. Then momentum. |
 | pause | PauseIcon | Two soft stops. Then stillness. |
 | volume | VolumeIcon | A pulse at the source. A widening echo. |
 | sun | SunIcon | Light leaves the core. The rays answer. |
-| moon | MoonIcon | Settle into night. Catch the last light. |
+| moon | MoonIcon | A crescent rises. A falling star finds its place. |
 | code | CodeIcon | Make room. Set the expression. |
 | terminal | TerminalIcon | A prompt invites the cursor into readiness. |
 | layers | LayersIcon | Make room, reveal the depth, fit back together. |

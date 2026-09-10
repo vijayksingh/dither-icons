@@ -1,0 +1,36 @@
+[
+  {
+    "animations": [
+      "di-eye-eye-aperture",
+      "di-eye-eye-lids",
+      "di-eye-eye-light",
+      "di-eye-eye-crease"
+    ],
+    "hover": true,
+    "name": "eye"
+  },
+  {
+    "animations": [
+      "di-sparkles-spark-main",
+      "di-sparkles-spark-satellite",
+      "di-sparkles-spark-companion",
+      "di-sparkles-spark-northwest",
+      "di-sparkles-spark-east",
+      "di-sparkles-spark-south",
+      "di-sparkles-spark-west"
+    ],
+    "hover": true,
+    "name": "sparkles"
+  },
+  {
+    "animations": [
+      "di-moon-moon-crescent",
+      "di-moon-moon-flight",
+      "di-moon-moon-tail",
+      "di-moon-moon-star",
+      "di-moon-moon-distant"
+    ],
+    "hover": true,
+    "name": "moon"
+  }
+]

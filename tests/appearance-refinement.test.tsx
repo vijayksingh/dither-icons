@@ -3,8 +3,8 @@ import assert from 'node:assert/strict';
 import React from 'react';
 import {renderToStaticMarkup} from 'react-dom/server';
 import {DitherIcon} from '../src';
-import {eye,EYE_TIMING,EYE_IRIS,EYE_ART} from '../src/motions/eye';
-import {sparkles,SPARKLES_TIMING,SPARKLES_GEOMETRY} from '../src/motions/sparkles';
+import {eye,EYE_TIMING,EYE_ART} from '../src/motions/eye';
+import {sparkles,SPARKLES_TIMING,SPARKLES_GEOMETRY,SPARKLES_FIELD} from '../src/motions/sparkles';
 import {sun,SUN_ART,SUN_TIMING} from '../src/motions/sun';
 import {moon,MOON_ART,MOON_GEOMETRY,MOON_JOINTS,MOON_TIMING} from '../src/motions/moon';
 import type {Study} from '../src/choreography';
@@ -12,29 +12,40 @@ const track=(s:Study,part:string)=>s.tracks.find(t=>t.part===part)!;
 const hiddenThrough=(s:Study,part:string,time:number)=>assert.ok(track(s,part).frames.filter(f=>f.at<=time).every(f=>f.opacity===0));
 const numbers=(s:string)=>s.match(/-?\d*\.?\d+/g)!.map(Number);
 
-test('Eye separates finding, focus and acknowledgment while clipping the complete moving iris',()=>{
- const iris=track(eye,'eye-iris'),gaze=track(eye,'eye-gaze');
- assert.ok(iris.frames.filter(f=>f.at<=EYE_TIMING.arrive).every(f=>f.transform==='scale(1)'),'focus waits until the gaze arrives');
- assert.equal(gaze.frames.find(f=>f.at===EYE_TIMING.arrive)!.transform,gaze.frames.find(f=>f.at===EYE_TIMING.hold)!.transform,'subject is held rather than scanned past');
- hiddenThrough(eye,'eye-answer',EYE_TIMING.focus);
- assert.ok(EYE_IRIS.focused>.8&&EYE_IRIS.focused<1);
+test('Eye closes its aperture over an untransformed iris, holds shut and reopens before its light',()=>{
+ const lids=track(eye,'eye-lids'),aperture=track(eye,'eye-aperture');
+ assert.deepEqual(lids, {...aperture,part:'eye-lids'},'lids and iris clipping use identical origins, transforms and easing');
+ assert.equal(lids.frames.find(f=>f.at===EYE_TIMING.close)!.transform,'scaleY(0)');
+ assert.equal(lids.frames.find(f=>f.at===EYE_TIMING.hold)!.transform,'scaleY(0)');
+ assert.ok(EYE_TIMING.hold-EYE_TIMING.close>=60,'closed lid is a readable beat');
+ assert.ok(EYE_TIMING.open-EYE_TIMING.hold>EYE_TIMING.close-EYE_TIMING.widen,'reopening takes longer than closure');
+ hiddenThrough(eye,'eye-light',EYE_TIMING.open);
+ assert.ok(eye.tracks.every(t=>!t.part.includes('iris')),'no transform flattens the iris');
  for(const texture of ['dither','solid','outline'] as const){
   const svg=renderToStaticMarkup(<DitherIcon name="eye" texture={texture}/>);
+  assert.match(svg,/<clipPath id="[^"]+"><path data-part="eye-aperture"/,'clipPath uses a valid direct shape child, never a group');
   assert.ok(svg.includes(`d="${EYE_ART.aperture}"`));
-  assert.match(svg,/<g clip-path="url\(#[^)]+\)"><g data-part="eye-gaze"><g data-part="eye-iris">/,'iris and its focus stay under the same fixed aperture');
+  assert.match(svg,/<g clip-path="url\(#[^)]+\)"><(?:g>|circle)/,'untransformed iris is clipped independently from the lids');
  }
 });
 
-test('Sparkles keeps two fixed centers and a dominant star; each echo waits for its own arrival',()=>{
+test('Sparkles fills all four surrounding directions with staggered glints while retaining three main stars',()=>{
+ const G=SPARKLES_GEOMETRY;
  const main=track(sparkles,'spark-main'),satellite=track(sparkles,'spark-satellite');
- assert.equal(main.origin,SPARKLES_GEOMETRY.main.map(n=>n+'px').join(' '));
- assert.equal(satellite.origin,SPARKLES_GEOMETRY.satellite.map(n=>n+'px').join(' '));
  const sizes=(t:typeof main)=>t.frames.flatMap(f=>numbers(f.transform!));
- assert.ok(Math.min(...sizes(main))*SPARKLES_GEOMETRY.mainRadius>Math.max(...sizes(satellite))*SPARKLES_GEOMETRY.satelliteRadius*2,'secondary can never compete with the main star');
- for(const t of [main,satellite])assert.ok(t.frames.every(f=>f.transform!.startsWith('scale(')),'star axes never tumble');
- assert.ok(SPARKLES_TIMING.catch>SPARKLES_TIMING.flash);
- hiddenThrough(sparkles,'spark-tips',SPARKLES_TIMING.flare);
- hiddenThrough(sparkles,'spark-echo',SPARKLES_TIMING.catch);
+ assert.ok(Math.min(...sizes(main))*G.mainRadius>Math.max(...sizes(satellite))*G.satelliteRadius*1.8);
+ assert.ok(SPARKLES_FIELD.some(p=>p.x<4)&&SPARKLES_FIELD.some(p=>p.x>20)&&SPARKLES_FIELD.some(p=>p.y<5)&&SPARKLES_FIELD.some(p=>p.y>20),'glints surround the central star on every side');
+ const peaks=SPARKLES_FIELD.map(({part,x,y,radius})=>{
+  const t=track(sparkles,part),peak=t.frames.find(f=>f.opacity===1)!;
+  assert.ok(t.frames.every(f=>f.transform!.startsWith('scale(')),'glints bloom in place without particle flight');
+  assert.ok(x-radius*1.1>0&&x+radius*1.1<24&&y-radius*1.1>0&&y+radius*1.1<24);
+  assert.ok(Math.hypot(x-12,y-12)>G.mainRadius*1.08+radius*1.1,'outer glints clear the dominant star');
+  return peak.at;
+ });
+ assert.ok(peaks.every((p,i)=>i===0?p>SPARKLES_TIMING.flare:p>peaks[i-1]),'the peripheral field follows the central flare in order');
+ assert.ok(peaks[0]+SPARKLES_TIMING.fade>peaks.at(-1)!,'the glints overlap as a field');
+ const svg=renderToStaticMarkup(<DitherIcon name="sparkles"/>);
+ for(const part of ['spark-main','spark-satellite','spark-companion'])assert.ok(svg.includes(`data-part="${part}">`),'three permanent stars remain visible');
 });
 
 test('Sun propagation reaches the drawn ray before it moves; all eight rays remain radial and in bounds',()=>{
@@ -59,18 +70,24 @@ test('Sun propagation reaches the drawn ray before it moves; all eight rays rema
  hiddenThrough(sun,'sun-tips',SUN_TIMING.cardinal);
 });
 
-test('Moon arcs join on both circles and the rim light follows the same cut circle',()=>{
+test('Moon arcs join exactly and its star arrives clear of the crescent before twinkling',()=>{
  const G=MOON_GEOMETRY;
  for(const point of Object.values(MOON_JOINTS)){
   assert.ok(Math.abs(Math.hypot(point[0]-G.outer[0],point[1]-G.outer[1])-G.radius)<1e-8);
   assert.ok(Math.abs(Math.hypot(point[0]-G.cut[0],point[1]-G.cut[1])-G.cutRadius)<1e-8);
  }
- const n=numbers(MOON_ART.trace),start=n.slice(0,2),end=n.slice(-2);
- for(const point of [start,end])assert.ok(Math.abs(Math.hypot(point[0]-G.cut[0],point[1]-G.cut[1])-G.cutRadius)<1e-8);
- assert.equal(track(moon,'moon-rim').origin,G.cut.map(n=>n+'px').join(' '));
- assert.ok(track(moon,'moon-rim').frames.every(f=>/^rotate\([-\d.]+deg\)$/.test(f.transform!)));
- hiddenThrough(moon,'moon-rim',MOON_TIMING.incline);
- hiddenThrough(moon,'moon-glint',MOON_TIMING.arrive);
+ const flight=track(moon,'moon-flight'),star=track(moon,'moon-star'),tail=track(moon,'moon-tail');
+ assert.equal(flight.frames.find(f=>f.at===MOON_TIMING.arrive)!.transform,'translate(0px,0px)');
+ assert.ok(star.frames.find(f=>f.opacity===1)!.at>MOON_TIMING.arrive);
+ assert.equal(tail.frames.find(f=>f.at===MOON_TIMING.arrive)!.opacity,0,'tail disappears as the star stops');
+ hiddenThrough(moon,'moon-distant',MOON_TIMING.arrive);
+ // Convert the arriving star to the raised crescent's local frame, then allow
+ // its full circumscribed radius plus the outline half-width inside the cut.
+ const angle=9*Math.PI/180,dx=G.star[0]-G.outer[0],dy=G.star[1]+.65-G.outer[1];
+ const local=[G.outer[0]+dx*Math.cos(angle)-dy*Math.sin(angle),G.outer[1]+dx*Math.sin(angle)+dy*Math.cos(angle)];
+ assert.ok(Math.hypot(local[0]-G.cut[0],local[1]-G.cut[1])+G.starRadius*1.12+.7<G.cutRadius,'twinkle clears the actual cut arc even in outline');
  const svg=renderToStaticMarkup(<DitherIcon name="moon" texture="solid"/>);
- assert.ok(svg.indexOf('data-part="moon-crescent"')<svg.indexOf('data-part="moon-rim"'));
+ assert.ok(svg.includes(`d="${MOON_ART.crescent}"`));
+ assert.match(svg,/<g data-part="moon-flight"><g data-part="moon-tail"/,'tail shares the star flight');
+ assert.ok(svg.indexOf('data-part="moon-flight"')<svg.indexOf('data-part="moon-star"'));
 });

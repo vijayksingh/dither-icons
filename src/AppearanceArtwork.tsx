@@ -1,7 +1,7 @@
 import {useId} from 'react';
 import type {Draw} from './ExtendedArtwork';
 import {EYE_ART} from './motions/eye';
-import {SPARKLES_ART} from './motions/sparkles';
+import {SPARKLES_ART,SPARKLES_FIELD,sparklePath} from './motions/sparkles';
 import {SUN_ART,SUN_GEOMETRY} from './motions/sun';
 import {MOON_ART} from './motions/moon';
 
@@ -12,18 +12,19 @@ const accent=(part:string,d:string,width=.6)=><g data-part={part} opacity="0">{s
 export function AppearanceArtwork({name,draw,texture}:Props){
  const aperture=useId().replace(/:/g,'')+'-aperture';
  if(name==='eye')return <>
-  <defs><clipPath id={aperture}><path d={EYE_ART.aperture}/></clipPath></defs>
-  {texture==='outline'?stroke(EYE_ART.centerline,1.65):draw(EYE_ART.outline+EYE_ART.aperture)}
-  <g clipPath={`url(#${aperture})`}><g data-part="eye-gaze"><g data-part="eye-iris">
+  <defs><clipPath id={aperture}><path data-part="eye-aperture" d={EYE_ART.aperture}/></clipPath></defs>
+  <g data-part="eye-lids">{texture==='outline'?stroke(EYE_ART.centerline,1.65):draw(EYE_ART.outline+EYE_ART.aperture)}</g>
+  <g clipPath={`url(#${aperture})`}>
    {texture==='outline'?<><circle cx="12" cy="12" r="2.7" fill="none" stroke="currentColor" strokeWidth="1.4"/><circle cx="12" cy="12" r=".9"/></>:draw(EYE_ART.iris+EYE_ART.catchlight)}
-  </g></g></g>
-  {accent('eye-answer',EYE_ART.answer,.55)}
+   {accent('eye-light',EYE_ART.light,.5)}
+  </g>
+  <g data-part="eye-crease" opacity="0">{texture==='outline'?stroke(EYE_ART.creaseLine,1.3):draw(EYE_ART.crease)}{stroke(EYE_ART.lashes,.65)}</g>
  </>;
  if(name==='sparkles')return <>
   <g data-part="spark-main">{draw(SPARKLES_ART.main)}</g>
   <g data-part="spark-satellite">{texture==='outline'?stroke(SPARKLES_ART.satellite,1.05):draw(SPARKLES_ART.satellite)}</g>
-  {accent('spark-tips',SPARKLES_ART.tips,.55)}
-  {accent('spark-echo',SPARKLES_ART.echo,.5)}
+  <g data-part="spark-companion">{texture==='outline'?stroke(SPARKLES_ART.companion,.9):draw(SPARKLES_ART.companion)}</g>
+  {SPARKLES_FIELD.map(({part,x,y,radius})=><g key={part} data-part={part} opacity="0"><path d={sparklePath(x,y,radius)}/></g>)}
  </>;
  if(name==='sun')return <>
   {draw(SUN_ART.disc)}
@@ -33,10 +34,13 @@ export function AppearanceArtwork({name,draw,texture}:Props){
   </g></g>)}
   <g data-part="sun-tips" opacity="0">{[0,90,180,270].map(angle=><g key={angle} transform={`rotate(${angle} 12 12)`}>{stroke(SUN_ART.tips,.45)}</g>)}</g>
  </>;
- if(name==='moon')return <g data-part="moon-crescent">
-  {draw(MOON_ART.crescent)}
-  {accent('moon-rim',MOON_ART.trace,.6)}
-  <g data-part="moon-glint" opacity="0"><path d={MOON_ART.glint}/></g>
- </g>;
+ if(name==='moon')return <>
+  <g data-part="moon-crescent">{draw(MOON_ART.crescent)}</g>
+  <g data-part="moon-flight">
+   {accent('moon-tail',MOON_ART.tail,.45)}
+   <g data-part="moon-star" opacity="0"><path d={MOON_ART.star}/></g>
+  </g>
+  <g data-part="moon-distant" opacity="0"><path d={MOON_ART.distant}/></g>
+ </>;
  return null;
 }

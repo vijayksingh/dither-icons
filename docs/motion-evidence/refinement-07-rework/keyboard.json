@@ -1,0 +1,32 @@
+[
+  {
+    "after": {
+      "animations": 0
+    },
+    "before": {
+      "focus": "Play sparkles study",
+      "playing": "true"
+    },
+    "name": "eye"
+  },
+  {
+    "after": {
+      "animations": 0
+    },
+    "before": {
+      "focus": "Play sun study",
+      "playing": "true"
+    },
+    "name": "sparkles"
+  },
+  {
+    "after": {
+      "animations": 0
+    },
+    "before": {
+      "focus": null,
+      "playing": "true"
+    },
+    "name": "moon"
+  }
+]

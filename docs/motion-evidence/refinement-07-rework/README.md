@@ -1,0 +1,16 @@
+# Eye, Sparkles and Moon — user-directed correction
+
+2026-09-10. User preferred blinking Eye, multiple surrounding Sparkles and a stronger Moon. **Sun approved and unchanged.** These references supersede refinement-07 for the three revised icons. Individual Interface Craft critiques and storyboards are in `docs/icon-reviews/`.
+
+- `pose-*.png` and `poses.json`: eight inspected poses at 0/16/25/36/44/54/70/100%. Eye closes fully at 25%; its lid and direct clip-path actor have identical computed transforms at every inspected pose. The iris retains its original geometry behind that aperture. The bowed crease reads as a closed eye. Start and end part records match exactly.
+- `dither-*.png`, `solid-*.png`, `outline-*.png`, `materials.json`: closed state at 25% and late response at 54%. Every named-part transform and opacity matches across all three materials at both positions. `light-cobalt-54.png` checks light theme; remaining captures use dark Iris.
+- `playback.json`: actual and half-speed native samples start with all four active and finish with all four idle. Sampling starts after the replay call returns, not at the exact authored zero. `half-speed.json` retains the verified slow run separately.
+- `keyboard.json`: each revised icon plays after Enter and continues after Tab departure, ending with zero animations. Focus may also trigger the next card. Repeated input during active playback does not restart it.
+- `reduced-motion.json`: zero animations, neutral transforms and hidden temporary effects after replay. Eye remains open. `motion-off.json`: all four study buttons disabled and no animations. Temporary media emulation was removed.
+- `size-and-export.svg` and `.png`: real standalone SVGs at 112/48px dither and 24px solid/outline. `svg-hover.json` records all 4/7/5 CSS tracks for Eye/Sparkles/Moon, including Eye's directly animated clip path. React completes after pointer departure; standalone CSS hover retains the documented stop-on-departure limitation.
+- `responsive.json`: 390px client/scroll width with two 172px columns. Browser zoom required a 312px viewport override; it was removed. No physical touch-device claim. `console.json` is empty.
+- Default, hover, focus-visible, active, departure, disabled, materials, light/dark, compact and reduced-motion states inspected. Static studies have no data loading, empty or error state.
+
+MOT-01 has one explicit, user-requested exception: Eye temporarily becomes a closed-eye crease, then reopens. MOT-03/05/07/08/16 retain causal relationships and the semantic finish; MOT-09–14 retain the playback, stillness and host-state contracts. Sparkles retains its three permanent stars while four overlapping glints appear around them. Moon's tail follows its star and contracts at arrival; the arrival twinkle fits inside the raised crescent's cut arc.
+
+TypeScript, production build and **20 targeted tests passed**. Tests cover synchronized blink clipping and stationary iris structure; peripheral sparkle distribution, timing, overlap and bounds; true crescent circle intersections and star clearance; unchanged Sun ray propagation; all 69 motion bindings and 207 material variants; exact restoration, accessibility, repeated-instance definitions and generated docs. Sun's motion source and generated image are unchanged. No release, tag, package version or push.

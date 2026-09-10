@@ -1,35 +1,35 @@
-# Moon: Interface Craft refinement 07
+# Moon — nightfall correction
 
 ## Context
-**Dark appearance.** Moon indicates nighttime or dark appearance in the same ModeToggle.tsx:29/44 pair. A crescent stays a crescent throughout; the host owns the theme.
+**Nightfall.** The user requested more refinement for Moon while approving Sun. Moon remains the dark-appearance symbol, with a distinct slower performance and no theme mutation.
 
 ## First Impressions
-The earlier crescent was broad and its generic rotation had little conclusion. A short internal highlight was not enough to make the quiet symbol feel considered. The new drawing needs clean horns and a clear negative space.
+The old rim highlight was difficult to see against the solid contour. Its tiny isolated glint did not give the crescent enough of a finish. A short, visible falling-star path makes the night scene easier to read across materials.
 
 ## Visual Design
-The crescent is the difference between two circular arcs: outer center (12,12), radius 9.3; cut center (15.8,8.2), radius 8.6. Both endpoints are calculated intersections, so the horns join exactly. The inner-rim light uses that same cut circle and inherits the crescent pose. A small four-point glint appears inside the opening after the rim light arrives.
+A slightly smaller crescent sits lower-left to leave a clear patch of sky. Outer center (10.8,13.2), radius 8.6; cut center (14.6,9.4), radius 8.05. Both horns use exact circle intersections. The main star settles at (18.1,7.6), with a quieter distant glint at (12.7,2.9). Its largest twinkle clears the raised crescent's actual inner arc, including outline thickness. There is no same-color rim effect to disappear into the drawing.
 
 ## Interface Design
-A one-degree preparation at 130ms gives way to a quiet five-degree incline by 450ms. The rim light begins after that settling, moving along the drawn inner arc from 520 to 710ms. The small glint answers at 780ms. The crescent holds until 900ms and returns slowly without elastic overshoot. All light clears before the ending.
+The crescent rises .65 units and inclines 9 degrees by 460ms. A small star appears above the opening and travels down-left in one continuous eased passage to 780ms. Its short trailing line shares that translation and contracts as the star stops. The arrival twinkle peaks at 860ms, accompanied by a smaller distant star. The crescent holds through 1010ms; stars fade by 1220ms, before exact neutral at 1580ms. One continuous flight avoids a midpoint stop.
+
+MOT-01 preserves the crescent. MOT-05 uses its settled pose as the reference for the arriving star. The star is a brief night-sky gesture; it does not become a persistent orbiting object.
 
 ## Consistency & Conventions
-MOT-01/02/03/04/05/06/07/08/09/10/11/12/13/14/15/16. Use the existing native playback, shared CSS timeline and frame inspector. Each icon has its own geometry and timing module. Reduced motion and motion-off retain the complete static symbol. Standalone CSS hover stops on departure; React completes the gesture.
+MOT-03/04/05/06/07/08/09/10/11/12/13/14/15/16: individual causal parts, attached material, one clock, exact return, reduced-motion stillness and a complete React gesture after departure. The existing inspector tunes the same production tracks. Standalone CSS hover stops on pointer departure. No host state changes or simulated success.
 
 ## User Context
-A slower, quieter payoff suited to night. The small glint is absent at rest and never becomes an orbiting object. The crescent negative space and exact horn joints survive solid, outline and dither.
+The slower rise and last falling light should feel quiet and complete. The silhouette works without stars at rest or with motion disabled. Keep this gentler than Sparkles' surrounding field.
 
 ## Top Opportunities
-1. Join both circular boundaries at their true intersections.
-2. Settle the crescent before its contained light begins.
-3. Use one small glint as the quiet finish, then fade it before recovery.
+1. Give the crescent and star separate readable space.
+2. Carry the tail with the star and remove it at arrival.
+3. Let the arrival twinkle finish before the slow return.
 
 ## Encoded storyboard and rendered review
-[moon.ts](../../src/motions/moon.ts), **1420ms**, **Incline / Catch / Still**.
+[moon.ts](../../src/motions/moon.ts), **1580ms**, **Rise / Catch a star / Rest**.
 
 ```text
-0 — 130 gather — 450 incline — 520 light — 710 arrive — 780 glint — 900 hold — 1150 clear — 1420 rest
+0 crescent — 130 prepare — 460 rise — 500 star appears — 780 arrives — 860 twinkles — 1010 hold — 1220 clear — 1580 rest
 ```
 
-[Current browser evidence](../motion-evidence/refinement-07/) records inspected poses, actual/half-speed playback, keyboard completion, material continuity, reduced motion and compact exports. These supersede the broad-rollout references for this icon. Implementation review does not claim user acceptance or a production release.
-
-![Eye, Sparkles, Sun and Moon during their response](../motion-evidence/refinement-07/pose-55.png)
+[Current browser evidence](../motion-evidence/refinement-07-rework/) supersedes the previous refinement for this icon. Implementation review is not user acceptance or a production release.

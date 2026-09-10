@@ -68,12 +68,12 @@
       "keywords": [],
       "page": "/icons/sparkles",
       "motion": {
-        "caption": "One bright glint. A smaller reply.",
-        "durationMs": 1220,
+        "caption": "One flare. Little sparks all around.",
+        "durationMs": 1260,
         "stages": [
           "Gather",
-          "Flare",
-          "Echo"
+          "Illuminate",
+          "Twinkle"
         ]
       }
     },
@@ -466,16 +466,16 @@
       "component": "EyeIcon",
       "label": "Eye",
       "category": "Interface",
-      "description": "The iris finds a subject and focuses.",
+      "description": "The eyelids blink over a steady iris, then reopen.",
       "keywords": [],
       "page": "/icons/eye",
       "motion": {
-        "caption": "Find a subject. Hold its gaze.",
-        "durationMs": 1300,
+        "caption": "Close softly. Open with a little light.",
+        "durationMs": 1120,
         "stages": [
-          "Find",
-          "Focus",
-          "Acknowledge"
+          "Close",
+          "Open",
+          "Awaken"
         ]
       }
     },
@@ -556,16 +556,16 @@
       "component": "MoonIcon",
       "label": "Moon",
       "category": "Interface",
-      "description": "A crescent settles before catching the last light.",
+      "description": "A crescent rises as a falling star settles into its opening.",
       "keywords": [],
       "page": "/icons/moon",
       "motion": {
-        "caption": "Settle into night. Catch the last light.",
-        "durationMs": 1420,
+        "caption": "A crescent rises. A falling star finds its place.",
+        "durationMs": 1580,
         "stages": [
-          "Incline",
-          "Catch",
-          "Still"
+          "Rise",
+          "Catch a star",
+          "Rest"
         ]
       }
     },

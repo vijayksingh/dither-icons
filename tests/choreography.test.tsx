@@ -11,7 +11,7 @@ test('every timeline binds to real SVG parts, covers the full clock, and animate
   const svg=renderToStaticMarkup(<DitherIcon name={name} texture={texture}/>);
   assert.equal(new Set(study.tracks.map(t=>t.part)).size,study.tracks.length);
   for(const track of study.tracks){
-   assert.equal([...svg.matchAll(new RegExp(`<g\\b[^>]*data-part="${track.part}"[^>]*>`, 'g'))].length,1,`${name}: ${track.part} binds exactly once`);
+   assert.equal([...svg.matchAll(new RegExp(`<(?:g|path)\\b[^>]*data-part="${track.part}"[^>]*>`, 'g'))].length,1,`${name}: ${track.part} binds exactly once`);
    const frames=keyframesFor(study,track);assert.equal(frames[0].offset,0);assert.equal(frames.at(-1)!.offset,1);
    for(let i=1;i<frames.length;i++)assert.ok(frames[i].offset!>frames[i-1].offset!,`${name}: ordered ${track.part}`);
    for(const frame of frames)assert.ok(Object.keys(frame).every(key=>['offset','transform','opacity','easing'].includes(key)));
@@ -35,7 +35,7 @@ test('every visible actor preserves opacity and returns without a snap; every ac
  for(const [name,study] of Object.entries(studies))for(const texture of ['dither','solid','outline'] as const){
   const svg=renderToStaticMarkup(<DitherIcon name={name} texture={texture}/>);
   for(const {part,frames} of study.tracks){
-   const tag=svg.match(new RegExp(`<g\\b[^>]*data-part="${part}"[^>]*>`))![0];
+   const tag=svg.match(new RegExp(`<(?:g|path)\\b[^>]*data-part="${part}"[^>]*>`))![0];
    const restOpacity=Number(tag.match(/opacity="([.\d]+)"/)?.[1]??1);
    if(restOpacity===0){assert.equal(frames[0].opacity,0,`${name}.${part} starts hidden`);assert.equal(frames.at(-1)!.opacity,0,`${name}.${part} ends hidden`);}
    else{

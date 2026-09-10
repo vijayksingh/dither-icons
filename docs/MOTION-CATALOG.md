@@ -34,10 +34,10 @@ The four accepted foundation performances remain intact. The remaining icons use
 | [user](icon-reviews/user.md) | represent a person or profile | Notice / Acknowledge / Ease | 1180ms |
 | [lock](icon-reviews/lock.md) | test a closed mechanism that resists opening | Test / Resist / Hold | 1080ms |
 | [unlock](icon-reviews/unlock.md) | indicate open access with a clear free shackle end | Release / Clear / Stay open | 1200ms |
-| [eye](icon-reviews/eye.md) | attend to or inspect a visible region | Find / Focus / Acknowledge | 1300ms |
-| [sparkles](icon-reviews/sparkles.md) | a small moment of discovery or emphasis | Gather / Flare / Echo | 1220ms |
+| [eye](icon-reviews/eye.md) | attend to or inspect a visible region | Close / Open / Awaken | 1120ms |
+| [sparkles](icon-reviews/sparkles.md) | a small moment of discovery or emphasis | Gather / Illuminate / Twinkle | 1260ms |
 | [sun](icon-reviews/sun.md) | daylight or a light appearance | Warm / Reach / Radiate | 1160ms |
-| [moon](icon-reviews/moon.md) | nighttime or a dark appearance | Incline / Catch / Still | 1420ms |
+| [moon](icon-reviews/moon.md) | nighttime or a dark appearance | Rise / Catch a star / Rest | 1580ms |
 | [bolt](icon-reviews/bolt.md) | a short transfer of energy | Charge / Conduct / Discharge | 780ms |
 | [bell](icon-reviews/bell.md) | draw attention through a mechanical ring | Anticipate / Strike / Resonate | 940ms |
 | [heart](icon-reviews/heart.md) | express affection through a brief release of energy | Gather / Bloom / Exhale | 820ms |
@@ -157,3 +157,7 @@ On user request, Lock now gives a short, diminishing rigid shackle rattle agains
 ## Focused refinement 07 — visibility and appearance
 
 **Eye, Sparkles, Sun, Moon** now have individual contour and motion refinements. The studio defaults to **Visibility and appearance**. Eye arrives before focusing; Sparkles passes a flare from a dominant star to a smaller reply; Sun sends a wave from a fixed core to round-ended radial rays; Moon settles before rim light reaches a small glint in its opening. Each has its own [Interface Craft review](icon-reviews/eye.md), timeline and [browser references](motion-evidence/refinement-07/). All other 65 performances retain their tracks. Refined status records implementation and rendered review, not automatic user acceptance.
+
+### Eye, Sparkles and Moon correction — 2026-09-10
+
+User review preferred a blink, a wider field of sparkles, and a stronger Moon performance; **Sun is approved and unchanged**. Eye now closes its aperture over a stationary round iris, holds a bowed crease, then reopens before its catchlight. Sparkles keeps three permanent stars and wakes four overlapping glints around them. Moon rises before a short falling-star passage and arrival twinkle. Individual critiques above were rewritten around these final gestures. [Current rendered evidence](motion-evidence/refinement-07-rework/). Counts remain **65 refined / 4 pending**; the three replacements await user judgment.
