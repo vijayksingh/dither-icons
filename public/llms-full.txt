@@ -334,12 +334,12 @@ CSS hover animation ends when hover ends. A standalone SVG does not expose React
 | sun | SunIcon | Light leaves the core. The rays answer. |
 | moon | MoonIcon | A crescent rises. A falling star finds its place. |
 | code | CodeIcon | Make room. Set the expression. |
-| terminal | TerminalIcon | A prompt invites the cursor into readiness. |
+| terminal | TerminalIcon | Type a command. Return. Hear back. |
 | layers | LayersIcon | Make room, reveal the depth, fit back together. |
-| cpu | CpuIcon | An input reaches the die. An output answers. |
-| chart | ChartIcon | Each bar answers from the same baseline. |
+| cpu | CpuIcon | Load the register. Clock it. Send the result. |
+| chart | ChartIcon | One baseline. Three heights. The difference is clear. |
 | book | BookIcon | One page turns. A soft landing. |
-| bolt | BoltIcon | Energy travels through the bend to the point. |
+| bolt | BoltIcon | Hold the charge. Break the tension. |
 | path | PathIcon | One milestone hands the way to the next. |
 | flask | FlaskIcon | Stir a little. See what answers. |
 | target | TargetIcon | Draw back. Find the center. |

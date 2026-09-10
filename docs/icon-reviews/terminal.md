@@ -1,46 +1,31 @@
 # terminal: Interface Craft review
 
 ## Context
-An SVG action icon in a reusable developer library. Its semantic meaning is **a command prompt ready for input**. It appears in routine controls where recognition matters more than spectacle.
+A command-line interface: enter a command, submit it, receive text, remain ready. Relevant to the platform terminal entry and developer tools.
 
 ## First Impressions
-A cursor blink alone offers little character and can repeat distractingly.
+The rejected version typed two marks and decorated the cursor. It never performed the defining terminal action: submitting a line. The revised line feed visibly changes the relationship between input and output.
 
 ## Visual Design
-**Identity boundary** — Keep the terminal frame, prompt, and cursor. Stable dither follows the contour. Color inherits the selected palette; accents use the same ink and stay below the primary silhouette in visual weight. Typography and card framing belong to the shared inspector, not the glyph.
+The rounded frame stays fixed. The prompt remains visible as it moves into history, with clear space below the inner top edge. Text uses the inherited ink; the two typed glyphs and thin return mark remain smaller than the chevron. No fabricated checkmark.
 
 ## Interface Design
-The missed opportunity is to express **a command prompt ready for input** through a causal gesture. Prompt leans into the line; a short line response follows; cursor compresses and resumes its steady state. The inspector exposes replay and timing only when requested; the icon itself adds no controls or labels.
+Typing holds for 100ms before submission. The history rises 2.8 units while the cursor returns to the beginning of a lower row. Response length and cursor displacement use one linear interpolation, so the text writes behind the cursor rather than appearing independently. Both rows clear before neutral recovery.
 
 ## Consistency & Conventions
-Retain the conventional glyph. Use the shared hover, focus, click, reduced-motion, and completion contracts. MOT-01, MOT-02, MOT-03, MOT-04, MOT-05, MOT-08, MOT-09, MOT-10, MOT-11, MOT-12, MOT-14, MOT-15 apply.
+MOT-01/03/04/05/07/08/15/16 govern identity, connected parts, timing and localized consequences. MOT-09/10/11/12 retain the shared replay, exact return, stillness and export contracts. MOT-14 reserves application state for the host.
 
 ## User Context
-This is readiness feedback, not simulated command execution. Recognizability must survive a brief glance and the still-motion variant.
+Keyboard and tap replay the same finite exchange. At compact sizes the line feed and cursor remain the gesture; the tiny literal glyphs are secondary. Motion does not execute commands or certify a result.
 
 ## Top Opportunities
-1. Prompt leans into the line; a short line response follows; cursor compresses and resumes its steady state.
-2. Keep the terminal frame, prompt, and cursor.
-3. This is readiness feedback, not simulated command execution.
+Make Return the turning point; physically connect the response to its cursor; leave a readable exchange before resetting.
 
 ## Encoded storyboard and review
+[Authored timeline](../../src/motions/terminal.ts). 1560ms: type at 180–420ms, hold until 520ms, carriage return at 690ms, response completes at 980ms, hold through 1120ms, clear by 1290ms, ready at 1560ms. Actors: terminal-history, terminal-cursor, terminal-first, terminal-second, terminal-return, terminal-response.
 
-**Duration:** 1160ms. **Sequence:** Prompt / Respond / Ready.
+Reviewed the complete live sequence at actual and half speed, eight inspected poses, and identical 58% part matrices across dither/solid/outline. Input and output are visibly connected; temporary marks clear before the final rest. Keyboard playback finishes after departure; reduced motion leaves no active tracks or visible accents. User accepted this concept-level revision on 2026-09-10 and requested the next batch.
 
-Timing source: [development.ts](../../src/motions/development.ts). Geometry binds each named track in `CraftedArtwork.tsx` or `ExtendedArtwork.tsx`. Times below are milliseconds from the same clock; transform values, pivots and easing live in that source.
+[Evidence and limits](../motion-evidence/refinement-08/README.md).
 
-| Named part | Keyframe times (ms) |
-| --- | --- |
-| `prompt` | 0, 130, 360, 520, 830, 1160 |
-| `cursor` | 0, 300, 440, 610, 820, 1030, 1160 |
-| `line-light` | 0, 280, 500, 740, 1160 |
-
-**Rendered review:** The terminal frame anchors the advancing prompt. The short response line precedes the cursor recovery; no fabricated command output appears.
-
-Reviewed at preparation (20%), action (40%), recovery (70%) and neutral endpoint (100%), with actual playback and per-part endpoint inspection in the live gallery. These samples establish the reviewed poses; they do not replace the full timeline or the shared lifecycle checks in [VALIDATION.md](../VALIDATION.md).
-
-**Visual reference:** icon 2 from the left in this family.
-
-![terminal: action pose at 40%, position 2](../motion-evidence/rollout/development.png)
-
-[Preparation image](../motion-evidence/rollout/development-prepare.png) · [Recovery image](../motion-evidence/rollout/development-recover.png)
+![Native half-speed sequence, Terminal / CPU / Chart / Bolt left to right](../motion-evidence/refinement-08/native-filmstrip.png)

@@ -1,47 +1,31 @@
 # cpu: Interface Craft review
 
 ## Context
-An SVG action icon in a reusable developer library. Its semantic meaning is **receive a signal, process it, emit a response**. It appears in routine controls where recognition matters more than spectacle.
+A processor receives inputs, changes a register, and emits a result. Use for compute/device affordances, not as an execution-success status.
 
 ## First Impressions
-Flashing the die alone discards the causal role of the pins.
+The rejected single traveler barely distinguished a CPU from any connected dot. The new die clocks four visible cells before it can transmit. This creates an intermediate processing state with a dependency on completed input.
 
 ## Visual Design
-**Identity boundary** — Chip outline and pins stay fixed. Stable dither follows the contour. Color inherits the selected palette; accents use the same ink and stay below the primary silhouette in visual weight. Typography and card framing belong to the shared inspector, not the glyph.
+Twelve lower-contrast pins and the rounded package stay fixed. Three faint orthogonal traces feed a four-cell die. Cells fit inside the core aperture with a half-unit gap. Signal dots follow actual trace corners; the output echo stays inside the viewBox.
 
 ## Interface Design
-The missed opportunity is to express **receive a signal, process it, emit a response** through a causal gesture. An input trace brightens, the central die responds, and the output side follows after a delay. The inspector exposes replay and timing only when requested; the icon itself adds no controls or labels.
+Three staggered lanes load the core. All inputs arrive before the first register activation. Cells clock in reading order, hold together, gather toward the output gate, then release one pulse through the middle right pin. Exterior ticks follow its arrival.
 
 ## Consistency & Conventions
-Retain the conventional glyph. Use the shared hover, focus, click, reduced-motion, and completion contracts. MOT-01, MOT-02, MOT-03, MOT-04, MOT-05, MOT-08, MOT-09, MOT-10, MOT-11, MOT-12, MOT-14, MOT-15 apply.
+MOT-01/03/04/05/07/08/15/16 govern identity, connected parts, timing and localized consequences. MOT-09/10/11/12 retain the shared replay, exact return, stillness and export contracts. MOT-14 reserves application state for the host.
 
 ## User Context
-Do not flash the whole package or invent processing progress. Recognizability must survive a brief glance and the still-motion variant.
+The fixed chip remains recognizable when effects disappear. At compact scale the center activation and left-to-right handoff carry the meaning; full register detail is intended for larger previews. No simulated hardware metric or success claim.
 
 ## Top Opportunities
-1. An input trace brightens, the central die responds, and the output side follows after a delay.
-2. Chip outline and pins stay fixed.
-3. Do not flash the whole package or invent processing progress.
+Expose the register operation; connect traces and travelers geometrically; emit only after the complete register is available.
 
 ## Encoded storyboard and review
+[Authored timeline](../../src/motions/cpu.ts). 1640ms: input begins at 120ms with 55ms stagger; final receipt at 500ms; cells clock at 560/635/710/785ms; loaded hold to 865ms; gather by 950ms; output reaches its pin at 1110ms; echo at 1180ms; clear by 1400ms. All core/package geometry is stationary.
 
-**Duration:** 1280ms. **Sequence:** Receive / Process / Respond.
+Reviewed the complete live sequence at actual and half speed, eight inspected poses, and identical 58% part matrices across dither/solid/outline. Input and output are visibly connected; temporary marks clear before the final rest. Keyboard playback finishes after departure; reduced motion leaves no active tracks or visible accents. User accepted this concept-level revision on 2026-09-10 and requested the next batch.
 
-Timing source: [development.ts](../../src/motions/development.ts). Geometry binds each named track in `CraftedArtwork.tsx` or `ExtendedArtwork.tsx`. Times below are milliseconds from the same clock; transform values, pivots and easing live in that source.
+[Evidence and limits](../motion-evidence/refinement-08/README.md).
 
-| Named part | Keyframe times (ms) |
-| --- | --- |
-| `input` | 0, 90, 260, 450, 580, 1280 |
-| `die` | 0, 250, 380, 540, 720, 940, 1280 |
-| `die-light` | 0, 310, 510, 740, 930, 1280 |
-| `output` | 0, 570, 800, 1020, 1190, 1280 |
-
-**Rendered review:** The input trace leads the die response and the output trace follows. A gap around the die preserves that relationship in solid mode; pins and package remain fixed.
-
-Reviewed at preparation (20%), action (40%), recovery (70%) and neutral endpoint (100%), with actual playback and per-part endpoint inspection in the live gallery. These samples establish the reviewed poses; they do not replace the full timeline or the shared lifecycle checks in [VALIDATION.md](../VALIDATION.md).
-
-**Visual reference:** icon 3 from the left in this family.
-
-![cpu: action pose at 40%, position 3](../motion-evidence/rollout/development.png)
-
-[Preparation image](../motion-evidence/rollout/development-prepare.png) · [Recovery image](../motion-evidence/rollout/development-recover.png)
+![Native half-speed sequence, Terminal / CPU / Chart / Bolt left to right](../motion-evidence/refinement-08/native-filmstrip.png)

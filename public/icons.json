@@ -592,16 +592,16 @@
       "component": "TerminalIcon",
       "label": "Terminal",
       "category": "Development",
-      "description": "A cursor blinks once at the prompt.",
+      "description": "A command submits, a response writes, and the prompt becomes ready again.",
       "keywords": [],
       "page": "/icons/terminal",
       "motion": {
-        "caption": "A prompt invites the cursor into readiness.",
-        "durationMs": 1160,
+        "caption": "Type a command. Return. Hear back.",
+        "durationMs": 1560,
         "stages": [
-          "Prompt",
-          "Respond",
-          "Ready"
+          "Type",
+          "Submit",
+          "Respond"
         ]
       }
     },
@@ -626,18 +626,18 @@
     {
       "name": "cpu",
       "component": "CpuIcon",
-      "label": "Cpu",
+      "label": "CPU",
       "category": "Development",
-      "description": "A signal lights up the central die.",
+      "description": "Inputs load a register before one result leaves the processor.",
       "keywords": [],
       "page": "/icons/cpu",
       "motion": {
-        "caption": "An input reaches the die. An output answers.",
-        "durationMs": 1280,
+        "caption": "Load the register. Clock it. Send the result.",
+        "durationMs": 1640,
         "stages": [
-          "Receive",
-          "Process",
-          "Respond"
+          "Load",
+          "Compute",
+          "Emit"
         ]
       }
     },
@@ -646,15 +646,15 @@
       "component": "ChartIcon",
       "label": "Chart",
       "category": "Development",
-      "description": "Bars grow from a shared baseline.",
+      "description": "A ruler measures three fixed heights from a shared baseline.",
       "keywords": [],
       "page": "/icons/chart",
       "motion": {
-        "caption": "Each bar answers from the same baseline.",
-        "durationMs": 1260,
+        "caption": "One baseline. Three heights. The difference is clear.",
+        "durationMs": 1690,
         "stages": [
+          "Measure",
           "Compare",
-          "Emphasize",
           "Resolve"
         ]
       }
@@ -682,15 +682,15 @@
       "component": "BoltIcon",
       "label": "Bolt",
       "category": "Interface",
-      "description": "One quick flash of energy.",
+      "description": "Potential gathers before a lightning strike releases a branching discharge.",
       "keywords": [],
       "page": "/icons/bolt",
       "motion": {
-        "caption": "Energy travels through the bend to the point.",
-        "durationMs": 780,
+        "caption": "Hold the charge. Break the tension.",
+        "durationMs": 1160,
         "stages": [
-          "Charge",
-          "Conduct",
+          "Gather",
+          "Strike",
           "Discharge"
         ]
       }

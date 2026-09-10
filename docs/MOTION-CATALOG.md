@@ -22,9 +22,9 @@ The four accepted foundation performances remain intact. The remaining icons use
 | [pause](icon-reviews/pause.md) | arrest motion and hold position | Take up / Seat / Hold | 1040ms |
 | [volume](icon-reviews/volume.md) | sound propagating away from a source | Source / Propagate / Dissipate | 1280ms |
 | [code](icon-reviews/code.md) | a bounded expression between delimiters | Open / Trace / Align | 1160ms |
-| [terminal](icon-reviews/terminal.md) | a command prompt ready for input | Prompt / Respond / Ready | 1160ms |
-| [cpu](icon-reviews/cpu.md) | receive a signal, process it, emit a response | Receive / Process / Respond | 1280ms |
-| [chart](icon-reviews/chart.md) | compare ordered quantities against a shared baseline | Compare / Emphasize / Resolve | 1260ms |
+| [terminal](icon-reviews/terminal.md) | submit input and receive a response | Type / Submit / Respond | 1560ms |
+| [cpu](icon-reviews/cpu.md) | load a register before emitting one result | Load / Compute / Emit | 1640ms |
+| [chart](icon-reviews/chart.md) | measure unchanged quantities from their baseline | Measure / Compare / Resolve | 1690ms |
 | [search](icon-reviews/search.md) | inspect or locate something | Attend / Focus / Return | 1320ms |
 | [home](icon-reviews/home.md) | return to a familiar entry point | Open / Welcome / Close | 1400ms |
 | [settings](icon-reviews/settings.md) | make a measured adjustment | Adjust / Register / Release | 1360ms |
@@ -38,7 +38,7 @@ The four accepted foundation performances remain intact. The remaining icons use
 | [sparkles](icon-reviews/sparkles.md) | a small moment of discovery or emphasis | Gather / Illuminate / Twinkle | 1260ms |
 | [sun](icon-reviews/sun.md) | daylight or a light appearance | Warm / Reach / Radiate | 1160ms |
 | [moon](icon-reviews/moon.md) | nighttime or a dark appearance | Rise / Catch a star / Rest | 1580ms |
-| [bolt](icon-reviews/bolt.md) | a short transfer of energy | Charge / Conduct / Discharge | 780ms |
+| [bolt](icon-reviews/bolt.md) | gather potential and release a branching strike | Gather / Strike / Discharge | 1160ms |
 | [bell](icon-reviews/bell.md) | draw attention through a mechanical ring | Anticipate / Strike / Resonate | 940ms |
 | [heart](icon-reviews/heart.md) | express affection through a brief release of energy | Gather / Bloom / Exhale | 820ms |
 | [download](icon-reviews/download.md) | receive an item into a destination | Lift / Receive / Settle | 1120ms |
@@ -144,7 +144,7 @@ The user requested retaining and committing these four, then corrected the selec
 
 **Check, Close, Plus, Lock** received the focused four-icon pass (the original Close/Plus gestures below were subsequently rejected and replaced). The studio defaults to **Actions and access**. Check traces its ascending stroke before a tip response; Close tightens along fixed diagonals; Plus opens its axes in sequence with individual endpoint responses; Lock holds tension above a fixed housing. Rounded contours, clean crossings and closed-lock identity preserve compact reading. Each has an individual Interface Craft critique, a separate timing source and [browser evidence](motion-evidence/refinement-06/). The previous 64 performances retain their tracks.
 
-**Status: 65 refined of 69, 4 awaiting the focused pass.** Pending: **Terminal, CPU, Chart, Bolt**. These four retain their earlier authored semantic motions. Do not call them unanimated or treat the broad-rollout reports as evidence of the later focused pass. “Refined” records the completed implementation and rendered review, not user acceptance of every new iteration.
+**Status: 69 refined of 69.** The final Terminal, CPU, Chart and Bolt revision was accepted after a concept-level correction. No existing icon remains pending the focused pass. Future additions still require their own critique and rendered review.
 
 ### Semantic correction and Unlock state — 2026-09-10
 
@@ -161,3 +161,7 @@ On user request, Lock now gives a short, diminishing rigid shackle rattle agains
 ### Eye, Sparkles and Moon correction — 2026-09-10
 
 User review preferred a blink, a wider field of sparkles, and a stronger Moon performance; **Sun is approved and unchanged**. Eye now closes its aperture over a stationary round iris, holds a bowed crease, then reopens before its catchlight. Sparkles keeps three permanent stars and wakes four overlapping glints around them. Moon rises before a short falling-star passage and arrival twinkle. Individual critiques above were rewritten around these final gestures. [Current rendered evidence](motion-evidence/refinement-07-rework/). Counts remain **65 refined / 4 pending**; the three replacements await user judgment.
+
+## Focused refinement 08 — Development and energy
+
+**Terminal, CPU, Chart, Bolt** finish the original catalog. User rejected a first draft as shallow; the accepted replacement changes the primary stories: command submission and response, a clocked register, measurement from a shared baseline, and a tension/strike/discharge arc. Their individual reviews replace the broad-rollout records. [Native evidence](motion-evidence/refinement-08/README.md). User approved the revised performances and asked for the next four; new selections must come from actual missing platform controls.

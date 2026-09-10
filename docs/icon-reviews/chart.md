@@ -1,49 +1,31 @@
 # chart: Interface Craft review
 
 ## Context
-An SVG action icon in a reusable developer library. Its semantic meaning is **compare ordered quantities against a shared baseline**. It appears in routine controls where recognition matters more than spectacle.
+Compare fixed quantities against one common baseline. Suitable for analytics, progress history, and summaries where the host supplies actual values.
 
 ## First Impressions
-Moving the chart as one block disconnects the bars from their reference.
+The rejected dot hopping between bars looked like a tour of three arbitrary points. A measuring line now begins at the baseline, reads each height, and leaves a matching axis tick. The motion explains comparison.
 
 ## Visual Design
-**Identity boundary** — Baseline is fixed and bar ordering is preserved. Stable dither follows the contour. Color inherits the selected palette; accents use the same ink and stay below the primary silhouette in visual weight. Typography and card framing belong to the shared inspector, not the glyph.
+All three bars retain their heights and order. A narrow measuring slit makes the ruler visible across solid or dithered bars. Foreground ruler and knockout share their position, opacity and horizontal reveal. The final chevron sits beyond the measured width; it is subordinate to the chart.
 
 ## Interface Design
-The missed opportunity is to express **compare ordered quantities against a shared baseline** through a causal gesture. Emphasize each bar from its baseline in left-to-right order; cap highlights follow and fade. The inspector exposes replay and timing only when requested; the icon itself adds no controls or labels.
+The line unfolds along the baseline, rises to each height and briefly dwells. Each height mark follows arrival and stays for the final comparison. The last measurement receives a right-edge register before the line retracts sideways. Hidden recovery cannot sweep back through the data.
 
 ## Consistency & Conventions
-Retain the conventional glyph. Use the shared hover, focus, click, reduced-motion, and completion contracts. MOT-01, MOT-02, MOT-03, MOT-04, MOT-05, MOT-08, MOT-09, MOT-10, MOT-11, MOT-12, MOT-14, MOT-15 apply.
+MOT-01/03/04/05/07/08/15/16 govern identity, connected parts, timing and localized consequences. MOT-09/10/11/12 retain the shared replay, exact return, stillness and export contracts. MOT-14 reserves application state for the host.
 
 ## User Context
-No new values or random heights. Recognizability must survive a brief glance and the still-motion variant.
+Native controls retain actual data and state. The icon never animates fabricated growth. Small-size recognition comes from the three bars and axes; detailed measurement accents are optional.
 
 ## Top Opportunities
-1. Emphasize each bar from its baseline in left-to-right order; cap highlights follow and fade.
-2. Baseline is fixed and bar ordering is preserved.
-3. No new values or random heights.
+Measure from the shared origin; retain earlier readings; make the final comparison legible without changing quantities.
 
 ## Encoded storyboard and review
+[Authored timeline](../../src/motions/chart.ts). 1690ms: unfold at 160ms; heights reached at 390/650/910ms; each mark follows by 90ms; final registration at 1020ms; hold to 1240ms; ruler retracts by 1450ms; neutral at 1690ms. Ruler and its mask use identical tracks.
 
-**Duration:** 1260ms. **Sequence:** Compare / Emphasize / Resolve.
+Reviewed the complete live sequence at actual and half speed, eight inspected poses, and identical 58% part matrices across dither/solid/outline. Input and output are visibly connected; temporary marks clear before the final rest. Keyboard playback finishes after departure; reduced motion leaves no active tracks or visible accents. User accepted this concept-level revision on 2026-09-10 and requested the next batch.
 
-Timing source: [development.ts](../../src/motions/development.ts). Geometry binds each named track in `CraftedArtwork.tsx` or `ExtendedArtwork.tsx`. Times below are milliseconds from the same clock; transform values, pivots and easing live in that source.
+[Evidence and limits](../motion-evidence/refinement-08/README.md).
 
-| Named part | Keyframe times (ms) |
-| --- | --- |
-| `bar-small` | 0, 110, 340, 510, 780, 1000, 1260 |
-| `bar-medium` | 0, 130, 260, 470, 640, 950, 1140, 1260 |
-| `bar-tall` | 0, 270, 400, 610, 780, 1080, 1260 |
-| `cap-small` | 0, 170, 370, 660, 1260 |
-| `cap-medium` | 0, 310, 510, 800, 1260 |
-| `cap-tall` | 0, 450, 650, 940, 1260 |
-
-**Rendered review:** Bars respond from a fixed base in left-to-right order. Short, medium, and tall ordering remains unchanged; the tallest bar retains top clearance.
-
-Reviewed at preparation (20%), action (40%), recovery (70%) and neutral endpoint (100%), with actual playback and per-part endpoint inspection in the live gallery. These samples establish the reviewed poses; they do not replace the full timeline or the shared lifecycle checks in [VALIDATION.md](../VALIDATION.md).
-
-**Visual reference:** icon 4 from the left in this family.
-
-![chart: action pose at 40%, position 4](../motion-evidence/rollout/development.png)
-
-[Preparation image](../motion-evidence/rollout/development-prepare.png) · [Recovery image](../motion-evidence/rollout/development-recover.png)
+![Native half-speed sequence, Terminal / CPU / Chart / Bolt left to right](../motion-evidence/refinement-08/native-filmstrip.png)

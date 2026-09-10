@@ -1,0 +1,5396 @@
+[
+  {
+    "at": 6,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.53333",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.304347",
+            "part": "terminal-response",
+            "transform": "matrix(0, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "matrix(1, 0, 0, 1, 2.65, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-return",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.224359)"
+          }
+        ],
+        "running": 6
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0.95",
+            "part": "cpu-input-0",
+            "transform": "matrix(1, 0, 0, 1, 6.60554, 8)"
+          },
+          {
+            "opacity": "0.95",
+            "part": "cpu-input-1",
+            "transform": "matrix(1, 0, 0, 1, 4.17637, 12)"
+          },
+          {
+            "opacity": "0.95",
+            "part": "cpu-input-2",
+            "transform": "matrix(1, 0, 0, 1, 1.74721, 16)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-0",
+            "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-1",
+            "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-2",
+            "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-3",
+            "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-output",
+            "transform": "matrix(1, 0, 0, 1, 15.2, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+          }
+        ],
+        "running": 9
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -2.74194)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "chart-ruler-mask",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -2.74194)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "chart-ruler",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-0",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-1",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-2",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-resolve",
+            "transform": "matrix(0.7, 0, 0, 0.7, -0.4, 0)"
+          }
+        ],
+        "running": 8
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "bolt-aperture",
+            "transform": "matrix(1, 0, 0, 1, 9.22383, 10.1476)"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "matrix(1, 0, 0, 0.91, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-charge",
+            "transform": "matrix(1, 0, 0, 1, 9.22383, 10.1476)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-0",
+            "transform": "matrix(0.15, 0, 0, 0.15, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-1",
+            "transform": "matrix(0.15, 0, 0, 0.15, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-2",
+            "transform": "matrix(0.15, 0, 0, 0.15, 0, 0)"
+          }
+        ],
+        "running": 6
+      }
+    ]
+  },
+  {
+    "at": 73,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.391217",
+            "part": "terminal-response",
+            "transform": "matrix(0, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "matrix(1, 0, 0, 1, 3.51345, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-return",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.288397)"
+          }
+        ],
+        "running": 6
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0.95",
+            "part": "cpu-input-0",
+            "transform": "matrix(1, 0, 0, 1, 6.9, 9.99777)"
+          },
+          {
+            "opacity": "0.95",
+            "part": "cpu-input-1",
+            "transform": "matrix(1, 0, 0, 1, 6.9, 12)"
+          },
+          {
+            "opacity": "0.95",
+            "part": "cpu-input-2",
+            "transform": "matrix(1, 0, 0, 1, 4.68871, 16)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-0",
+            "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-1",
+            "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-2",
+            "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-3",
+            "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-output",
+            "transform": "matrix(1, 0, 0, 1, 15.2, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+          }
+        ],
+        "running": 9
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -5.77996)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "chart-ruler-mask",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -5.77996)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "chart-ruler",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-0",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-1",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-2",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-resolve",
+            "transform": "matrix(0.7, 0, 0, 0.7, -0.4, 0)"
+          }
+        ],
+        "running": 8
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "bolt-aperture",
+            "transform": "matrix(1, 0, 0, 1, 13.443, 11.6)"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "matrix(1, 0, 0, 0.91, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-charge",
+            "transform": "matrix(1, 0, 0, 1, 13.443, 11.6)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-0",
+            "transform": "matrix(0.15, 0, 0, 0.15, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-1",
+            "transform": "matrix(0.15, 0, 0, 0.15, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-2",
+            "transform": "matrix(0.15, 0, 0, 0.15, 0, 0)"
+          }
+        ],
+        "running": 6
+      }
+    ]
+  },
+  {
+    "at": 139,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.237614",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.478217",
+            "part": "terminal-response",
+            "transform": "matrix(0, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "matrix(1, 0, 0, 1, 5.3, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-return",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.352532)"
+          }
+        ],
+        "running": 6
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0.95",
+            "part": "cpu-input-0",
+            "transform": "matrix(1, 0, 0, 1, 8.20804, 10.5)"
+          },
+          {
+            "opacity": "0.95",
+            "part": "cpu-input-1",
+            "transform": "matrix(1, 0, 0, 1, 6.9, 12)"
+          },
+          {
+            "opacity": "0.95",
+            "part": "cpu-input-2",
+            "transform": "matrix(1, 0, 0, 1, 6.9, 15.4456)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-0",
+            "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-1",
+            "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-2",
+            "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-3",
+            "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-output",
+            "transform": "matrix(1, 0, 0, 1, 15.2, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+          }
+        ],
+        "running": 9
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -6.51178)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "chart-ruler-mask",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -6.51178)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "chart-ruler",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-0",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-1",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-2",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-resolve",
+            "transform": "matrix(0.7, 0, 0, 0.7, -0.4, 0)"
+          }
+        ],
+        "running": 8
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "bolt-aperture",
+            "transform": "matrix(1, 0, 0, 1, 11.4914, 16.5554)"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "matrix(1, 0, 0, 0.95913, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-charge",
+            "transform": "matrix(1, 0, 0, 1, 11.4914, 16.5554)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-0",
+            "transform": "matrix(0.15, 0, 0, 0.15, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-1",
+            "transform": "matrix(0.15, 0, 0, 0.15, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-2",
+            "transform": "matrix(0.15, 0, 0, 0.15, 0, 0)"
+          }
+        ],
+        "running": 6
+      }
+    ]
+  },
+  {
+    "at": 205,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.564304",
+            "part": "terminal-response",
+            "transform": "matrix(0, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "matrix(1, 0, 0, 1, 5.3, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-return",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.415993)"
+          }
+        ],
+        "running": 6
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0.711757",
+            "part": "cpu-input-0",
+            "transform": "matrix(1, 0, 0, 1, 8.8, 10.5)"
+          },
+          {
+            "opacity": "0.95",
+            "part": "cpu-input-1",
+            "transform": "matrix(1, 0, 0, 1, 8.4867, 12)"
+          },
+          {
+            "opacity": "0.95",
+            "part": "cpu-input-2",
+            "transform": "matrix(1, 0, 0, 1, 7.09337, 13.5)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-0",
+            "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-1",
+            "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-2",
+            "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-3",
+            "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-output",
+            "transform": "matrix(1, 0, 0, 1, 15.2, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+          }
+        ],
+        "running": 9
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -6.55)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "chart-ruler-mask",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -6.55)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "chart-ruler",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.42633",
+            "part": "chart-mark-0",
+            "transform": "matrix(0.605275, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-1",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-2",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-resolve",
+            "transform": "matrix(0.7, 0, 0, 0.7, -0.4, 0)"
+          }
+        ],
+        "running": 8
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0.14734",
+            "part": "bolt-aperture",
+            "transform": "matrix(1, 0, 0, 1, 10.25, 18.6)"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "matrix(1, 0, 0, 1.045, 0, 0)"
+          },
+          {
+            "opacity": "0.14734",
+            "part": "bolt-charge",
+            "transform": "matrix(1, 0, 0, 1, 10.25, 18.6)"
+          },
+          {
+            "opacity": "0.810027",
+            "part": "bolt-discharge-0",
+            "transform": "matrix(0.874761, 0, 0, 0.874761, 0, 0)"
+          },
+          {
+            "opacity": "0.418761",
+            "part": "bolt-discharge-1",
+            "transform": "matrix(0.568761, 0, 0, 0.568761, 0, 0)"
+          },
+          {
+            "opacity": "0.099495",
+            "part": "bolt-discharge-2",
+            "transform": "matrix(0.262761, 0, 0, 0.262761, 0, 0)"
+          }
+        ],
+        "running": 6
+      }
+    ]
+  },
+  {
+    "at": 273,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.652217",
+            "part": "terminal-response",
+            "transform": "matrix(0, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "matrix(1, 0, 0, 1, 5.3, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-return",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.480801)"
+          }
+        ],
+        "running": 6
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0.33511",
+            "part": "cpu-input-0",
+            "transform": "matrix(1, 0, 0, 1, 8.8, 10.5)"
+          },
+          {
+            "opacity": "0.642463",
+            "part": "cpu-input-1",
+            "transform": "matrix(1, 0, 0, 1, 8.8, 12)"
+          },
+          {
+            "opacity": "0.949816",
+            "part": "cpu-input-2",
+            "transform": "matrix(1, 0, 0, 1, 8.8, 13.5)"
+          },
+          {
+            "opacity": "0.00055",
+            "part": "cpu-cell-0",
+            "transform": "matrix(0.40033, 0, 0, 0.40033, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-1",
+            "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-2",
+            "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-3",
+            "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-output",
+            "transform": "matrix(1, 0, 0, 1, 15.2, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+          }
+        ],
+        "running": 9
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -7.56902)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "chart-ruler-mask",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -7.56902)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "chart-ruler",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "chart-mark-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-1",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-2",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-resolve",
+            "transform": "matrix(0.7, 0, 0, 0.7, -0.4, 0)"
+          }
+        ],
+        "running": 8
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "matrix(1, 0, 0, 1, 10.4376, 17.5077)"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "matrix(1, 0, 0, 1.01743, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "matrix(1, 0, 0, 1, 10.4376, 17.5077)"
+          },
+          {
+            "opacity": "0.814211",
+            "part": "bolt-discharge-0",
+            "transform": "matrix(1.02573, 0, 0, 1.02573, 0, 0)"
+          },
+          {
+            "opacity": "0.768242",
+            "part": "bolt-discharge-1",
+            "transform": "matrix(1.01731, 0, 0, 1.01731, 0, 0)"
+          },
+          {
+            "opacity": "0.710298",
+            "part": "bolt-discharge-2",
+            "transform": "matrix(1.00953, 0, 0, 1.00953, 0, 0)"
+          }
+        ],
+        "running": 6
+      }
+    ]
+  },
+  {
+    "at": 339,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "matrix(1, 0, 0, 1, 0, -2.22707)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.738304",
+            "part": "terminal-response",
+            "transform": "matrix(0, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "matrix(1, 0, 0, 1, -3.05152, 1.11354)"
+          },
+          {
+            "opacity": "0.243704",
+            "part": "terminal-return",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.364609)"
+          }
+        ],
+        "running": 6
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "cpu-input-0",
+            "transform": "matrix(1, 0, 0, 1, 8.75978, 10.486)"
+          },
+          {
+            "opacity": "0.273639",
+            "part": "cpu-input-1",
+            "transform": "matrix(1, 0, 0, 1, 8.8, 12)"
+          },
+          {
+            "opacity": "0.580992",
+            "part": "cpu-input-2",
+            "transform": "matrix(1, 0, 0, 1, 8.8, 13.5)"
+          },
+          {
+            "opacity": "1",
+            "part": "cpu-cell-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-1",
+            "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-2",
+            "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-3",
+            "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-output",
+            "transform": "matrix(1, 0, 0, 1, 15.2, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+          }
+        ],
+        "running": 9
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -10.2464)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "chart-ruler-mask",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -10.2464)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "chart-ruler",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "chart-mark-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-1",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-2",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-resolve",
+            "transform": "matrix(0.7, 0, 0, 0.7, -0.4, 0)"
+          }
+        ],
+        "running": 8
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "matrix(1, 0, 0, 1, 10.6439, 16.3069)"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "matrix(1, 0, 0, 0.987206, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "matrix(1, 0, 0, 1, 10.6439, 16.3069)"
+          },
+          {
+            "opacity": "0.664925",
+            "part": "bolt-discharge-0",
+            "transform": "matrix(1.05401, 0, 0, 1.05401, 0, 0)"
+          },
+          {
+            "opacity": "0.639867",
+            "part": "bolt-discharge-1",
+            "transform": "matrix(1.0445, 0, 0, 1.0445, 0, 0)"
+          },
+          {
+            "opacity": "0.601267",
+            "part": "bolt-discharge-2",
+            "transform": "matrix(1.0357, 0, 0, 1.0357, 0, 0)"
+          }
+        ],
+        "running": 6
+      }
+    ]
+  },
+  {
+    "at": 405,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "matrix(1, 0, 0, 1, 0, -2.77554)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.825304",
+            "part": "terminal-response",
+            "transform": "matrix(0, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "matrix(1, 0, 0, 1, -5.10828, 1.38777)"
+          },
+          {
+            "opacity": "0.596822",
+            "part": "terminal-return",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.168432)"
+          }
+        ],
+        "running": 6
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "cpu-input-0",
+            "transform": "matrix(1, 0, 0, 1, 8.31511, 10.3316)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-1",
+            "transform": "matrix(1, 0, 0, 1, 8.67544, 12)"
+          },
+          {
+            "opacity": "0.208257",
+            "part": "cpu-input-2",
+            "transform": "matrix(1, 0, 0, 1, 8.8, 13.5)"
+          },
+          {
+            "opacity": "1",
+            "part": "cpu-cell-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.962217",
+            "part": "cpu-cell-1",
+            "transform": "matrix(0.97733, 0, 0, 0.97733, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-2",
+            "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-3",
+            "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-output",
+            "transform": "matrix(1, 0, 0, 1, 15.2, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+          }
+        ],
+        "running": 9
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -10.8321)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "chart-ruler-mask",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -10.8321)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "chart-ruler",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "chart-mark-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-1",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-2",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-resolve",
+            "transform": "matrix(0.7, 0, 0, 0.7, -0.4, 0)"
+          }
+        ],
+        "running": 8
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "matrix(1, 0, 0, 1, 10.8523, 15.0933)"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "matrix(1, 0, 0, 0.98501, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "matrix(1, 0, 0, 1, 10.8523, 15.0933)"
+          },
+          {
+            "opacity": "0.514056",
+            "part": "bolt-discharge-0",
+            "transform": "matrix(1.0826, 0, 0, 1.0826, 0, 0)"
+          },
+          {
+            "opacity": "0.51013",
+            "part": "bolt-discharge-1",
+            "transform": "matrix(1.07197, 0, 0, 1.07197, 0, 0)"
+          },
+          {
+            "opacity": "0.49108",
+            "part": "bolt-discharge-2",
+            "transform": "matrix(1.06214, 0, 0, 1.06214, 0, 0)"
+          }
+        ],
+        "running": 6
+      }
+    ]
+  },
+  {
+    "at": 473,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "matrix(1, 0, 0, 1, 0, -2.8)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.9",
+            "part": "terminal-response",
+            "transform": "matrix(0.0345966, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "matrix(1, 0, 0, 1, -4.91977, 1.4)"
+          },
+          {
+            "opacity": "0.868863",
+            "part": "terminal-return",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0138386)"
+          }
+        ],
+        "running": 6
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "cpu-input-0",
+            "transform": "matrix(1, 0, 0, 1, 7.86645, 10.1759)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-1",
+            "transform": "matrix(1, 0, 0, 1, 8.2027, 12)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-2",
+            "transform": "matrix(1, 0, 0, 1, 8.57707, 13.5774)"
+          },
+          {
+            "opacity": "1",
+            "part": "cpu-cell-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "cpu-cell-1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.833883",
+            "part": "cpu-cell-2",
+            "transform": "matrix(0.90033, 0, 0, 0.90033, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-3",
+            "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-output",
+            "transform": "matrix(1, 0, 0, 1, 15.2, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+          }
+        ],
+        "running": 9
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -10.85)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "chart-ruler-mask",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -10.85)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "chart-ruler",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "chart-mark-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.50033",
+            "part": "chart-mark-1",
+            "transform": "matrix(0.666942, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-2",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-resolve",
+            "transform": "matrix(0.7, 0, 0, 0.7, -0.4, 0)"
+          }
+        ],
+        "running": 8
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "matrix(1, 0, 0, 1, 11.0626, 13.8688)"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "matrix(1, 0, 0, 0.988977, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "matrix(1, 0, 0, 1, 11.0626, 13.8688)"
+          },
+          {
+            "opacity": "0.36183",
+            "part": "bolt-discharge-0",
+            "transform": "matrix(1.11144, 0, 0, 1.11144, 0, 0)"
+          },
+          {
+            "opacity": "0.379226",
+            "part": "bolt-discharge-1",
+            "transform": "matrix(1.09969, 0, 0, 1.09969, 0, 0)"
+          },
+          {
+            "opacity": "0.379901",
+            "part": "bolt-discharge-2",
+            "transform": "matrix(1.08882, 0, 0, 1.08882, 0, 0)"
+          }
+        ],
+        "running": 6
+      }
+    ]
+  },
+  {
+    "at": 539,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "matrix(1, 0, 0, 1, 0, -2.8)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.9",
+            "part": "terminal-response",
+            "transform": "matrix(0.264252, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "matrix(1, 0, 0, 1, -3.05956, 1.4)"
+          },
+          {
+            "opacity": "0.662173",
+            "part": "terminal-return",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.105701)"
+          }
+        ],
+        "running": 6
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "cpu-input-0",
+            "transform": "matrix(1, 0, 0, 1, 7.42245, 10.0217)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-1",
+            "transform": "matrix(1, 0, 0, 1, 7.73487, 12)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-2",
+            "transform": "matrix(1, 0, 0, 1, 8.08272, 13.7491)"
+          },
+          {
+            "opacity": "1",
+            "part": "cpu-cell-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "cpu-cell-1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "cpu-cell-2",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.693883",
+            "part": "cpu-cell-3",
+            "transform": "matrix(0.81633, 0, 0, 0.81633, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-output",
+            "transform": "matrix(1, 0, 0, 1, 15.2, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+          }
+        ],
+        "running": 9
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -12.2326)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "chart-ruler-mask",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -12.2326)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "chart-ruler",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "chart-mark-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "chart-mark-1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-2",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-resolve",
+            "transform": "matrix(0.7, 0, 0, 0.7, -0.4, 0)"
+          }
+        ],
+        "running": 8
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "matrix(1, 0, 0, 1, 11.2707, 12.6571)"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "matrix(1, 0, 0, 1.0009, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "matrix(1, 0, 0, 1, 11.2707, 12.6571)"
+          },
+          {
+            "opacity": "0.211187",
+            "part": "bolt-discharge-0",
+            "transform": "matrix(1.13999, 0, 0, 1.13999, 0, 0)"
+          },
+          {
+            "opacity": "0.249684",
+            "part": "bolt-discharge-1",
+            "transform": "matrix(1.12713, 0, 0, 1.12713, 0, 0)"
+          },
+          {
+            "opacity": "0.269879",
+            "part": "bolt-discharge-2",
+            "transform": "matrix(1.11523, 0, 0, 1.11523, 0, 0)"
+          }
+        ],
+        "running": 6
+      }
+    ]
+  },
+  {
+    "at": 606,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "matrix(1, 0, 0, 1, 0, -2.8)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.9",
+            "part": "terminal-response",
+            "transform": "matrix(0.494252, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "matrix(1, 0, 0, 1, -1.19656, 1.4)"
+          },
+          {
+            "opacity": "0.455173",
+            "part": "terminal-return",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.197701)"
+          }
+        ],
+        "running": 6
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "cpu-input-0",
+            "transform": "matrix(1, 0, 0, 1, 6.97778, 9.86729)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-1",
+            "transform": "matrix(1, 0, 0, 1, 7.26634, 12)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-2",
+            "transform": "matrix(1, 0, 0, 1, 7.58763, 13.921)"
+          },
+          {
+            "opacity": "1",
+            "part": "cpu-cell-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "cpu-cell-1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "cpu-cell-2",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "cpu-cell-3",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-output",
+            "transform": "matrix(1, 0, 0, 1, 15.2, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+          }
+        ],
+        "running": 9
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -14.6708)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "chart-ruler-mask",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -14.6708)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "chart-ruler",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "chart-mark-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "chart-mark-1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-2",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-resolve",
+            "transform": "matrix(0.7, 0, 0, 0.7, -0.4, 0)"
+          }
+        ],
+        "running": 8
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "matrix(1, 0, 0, 1, 11.4792, 11.4435)"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "matrix(1, 0, 0, 1.00382, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "matrix(1, 0, 0, 1, 11.4792, 11.4435)"
+          },
+          {
+            "opacity": "0.0603182",
+            "part": "bolt-discharge-0",
+            "transform": "matrix(1.16857, 0, 0, 1.16857, 0, 0)"
+          },
+          {
+            "opacity": "0.119947",
+            "part": "bolt-discharge-1",
+            "transform": "matrix(1.1546, 0, 0, 1.1546, 0, 0)"
+          },
+          {
+            "opacity": "0.159692",
+            "part": "bolt-discharge-2",
+            "transform": "matrix(1.14167, 0, 0, 1.14167, 0, 0)"
+          }
+        ],
+        "running": 6
+      }
+    ]
+  },
+  {
+    "at": 672,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "matrix(1, 0, 0, 1, 0, -2.8)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.9",
+            "part": "terminal-response",
+            "transform": "matrix(0.723562, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "matrix(1, 0, 0, 1, 0.660853, 1.4)"
+          },
+          {
+            "opacity": "0.248794",
+            "part": "terminal-return",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.289425)"
+          }
+        ],
+        "running": 6
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "cpu-input-0",
+            "transform": "matrix(1, 0, 0, 1, 6.53445, 9.71335)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-1",
+            "transform": "matrix(1, 0, 0, 1, 6.79922, 12)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-2",
+            "transform": "matrix(1, 0, 0, 1, 7.09402, 14.0924)"
+          },
+          {
+            "opacity": "0.91804",
+            "part": "cpu-cell-0",
+            "transform": "matrix(0.75412, 0, 0, 0.75412, 1.12695, 0.4098)"
+          },
+          {
+            "opacity": "0.91804",
+            "part": "cpu-cell-1",
+            "transform": "matrix(0.75412, 0, 0, 0.75412, 0.30735, 0.4098)"
+          },
+          {
+            "opacity": "0.91804",
+            "part": "cpu-cell-2",
+            "transform": "matrix(0.75412, 0, 0, 0.75412, 1.12695, -0.4098)"
+          },
+          {
+            "opacity": "0.91804",
+            "part": "cpu-cell-3",
+            "transform": "matrix(0.75412, 0, 0, 0.75412, 0.30735, -0.4098)"
+          },
+          {
+            "opacity": "0.4098",
+            "part": "cpu-output",
+            "transform": "matrix(1, 0, 0, 1, 15.2, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+          }
+        ],
+        "running": 9
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -15.144)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "chart-ruler-mask",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -15.144)"
+          },
+          {
+            "opacity": "0.6",
+            "part": "chart-ruler",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "chart-mark-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "chart-mark-1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-2",
+            "transform": "matrix(0.25, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-resolve",
+            "transform": "matrix(0.7, 0, 0, 0.7, -0.4, 0)"
+          }
+        ],
+        "running": 8
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "matrix(1, 0, 0, 1, 11.687, 10.2336)"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "matrix(1, 0, 0, 1.0038, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "matrix(1, 0, 0, 1, 11.687, 10.2336)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-0",
+            "transform": "matrix(1.04324, 0, 0, 1.04324, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-1",
+            "transform": "matrix(1.16122, 0, 0, 1.16122, 0, 0)"
+          },
+          {
+            "opacity": "0.0498354",
+            "part": "bolt-discharge-2",
+            "transform": "matrix(1.16804, 0, 0, 1.16804, 0, 0)"
+          }
+        ],
+        "running": 6
+      }
+    ]
+  },
+  {
+    "at": 739,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "matrix(1, 0, 0, 1, 0, -2.8)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.9",
+            "part": "terminal-response",
+            "transform": "matrix(0.952183, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "matrix(1, 0, 0, 1, 2.51268, 1.4)"
+          },
+          {
+            "opacity": "0.0430355",
+            "part": "terminal-return",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.380873)"
+          }
+        ],
+        "running": 6
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "cpu-input-0",
+            "transform": "matrix(1, 0, 0, 1, 6.09245, 9.55988)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-1",
+            "transform": "matrix(1, 0, 0, 1, 6.3335, 12)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-2",
+            "transform": "matrix(1, 0, 0, 1, 6.6019, 14.2632)"
+          },
+          {
+            "opacity": "0.719335",
+            "part": "cpu-cell-0",
+            "transform": "matrix(0.379834, 0, 0, 0.379834, 2.75, 1)"
+          },
+          {
+            "opacity": "0.719335",
+            "part": "cpu-cell-1",
+            "transform": "matrix(0.379834, 0, 0, 0.379834, 0.75, 1)"
+          },
+          {
+            "opacity": "0.719335",
+            "part": "cpu-cell-2",
+            "transform": "matrix(0.379834, 0, 0, 0.379834, 2.75, -1)"
+          },
+          {
+            "opacity": "0.719335",
+            "part": "cpu-cell-3",
+            "transform": "matrix(0.379834, 0, 0, 0.379834, 0.75, -1)"
+          },
+          {
+            "opacity": "1",
+            "part": "cpu-output",
+            "transform": "matrix(1, 0, 0, 1, 15.926, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+          }
+        ],
+        "running": 9
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -15.15)"
+          },
+          {
+            "opacity": "0.70206",
+            "part": "chart-ruler-mask",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -15.15)"
+          },
+          {
+            "opacity": "0.70206",
+            "part": "chart-ruler",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "chart-mark-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "chart-mark-1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.56133",
+            "part": "chart-mark-2",
+            "transform": "matrix(0.717775, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.45927",
+            "part": "chart-resolve",
+            "transform": "matrix(0.85309, 0, 0, 0.85309, -0.19588, 0)"
+          }
+        ],
+        "running": 8
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "matrix(1, 0, 0, 1, 11.8942, 9.0273)"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "matrix(1, 0, 0, 1.00196, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "matrix(1, 0, 0, 1, 11.8942, 9.0273)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-0",
+            "transform": "matrix(0.81561, 0, 0, 0.81561, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-1",
+            "transform": "matrix(0.903521, 0, 0, 0.903521, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-2",
+            "transform": "matrix(1.01819, 0, 0, 1.01819, 0, 0)"
+          }
+        ],
+        "running": 6
+      }
+    ]
+  },
+  {
+    "at": 806,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "matrix(1, 0, 0, 1, 0, -2.8)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.9",
+            "part": "terminal-response",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "matrix(1, 0, 0, 1, 2.9, 1.4)"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-return",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.363357)"
+          }
+        ],
+        "running": 6
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "cpu-input-0",
+            "transform": "matrix(1, 0, 0, 1, 5.64578, 9.40479)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-1",
+            "transform": "matrix(1, 0, 0, 1, 5.86287, 12)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-2",
+            "transform": "matrix(1, 0, 0, 1, 6.10458, 14.4359)"
+          },
+          {
+            "opacity": "0.384335",
+            "part": "cpu-cell-0",
+            "transform": "matrix(0.296084, 0, 0, 0.296084, 2.75, 1)"
+          },
+          {
+            "opacity": "0.384335",
+            "part": "cpu-cell-1",
+            "transform": "matrix(0.296084, 0, 0, 0.296084, 0.75, 1)"
+          },
+          {
+            "opacity": "0.384335",
+            "part": "cpu-cell-2",
+            "transform": "matrix(0.296084, 0, 0, 0.296084, 2.75, -1)"
+          },
+          {
+            "opacity": "0.384335",
+            "part": "cpu-cell-3",
+            "transform": "matrix(0.296084, 0, 0, 0.296084, 0.75, -1)"
+          },
+          {
+            "opacity": "1",
+            "part": "cpu-output",
+            "transform": "matrix(1, 0, 0, 1, 18.941, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+          }
+        ],
+        "running": 9
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -15.15)"
+          },
+          {
+            "opacity": "0.8",
+            "part": "chart-ruler-mask",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -15.15)"
+          },
+          {
+            "opacity": "0.8",
+            "part": "chart-ruler",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "chart-mark-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "chart-mark-1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "chart-mark-2",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.870152",
+            "part": "chart-resolve",
+            "transform": "matrix(1, 0, 0, 1, 0.0119391, 0)"
+          }
+        ],
+        "running": 8
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "matrix(1, 0, 0, 1, 12.1035, 7.80828)"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "matrix(1, 0, 0, 1.00057, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "matrix(1, 0, 0, 1, 12.1035, 7.80828)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-0",
+            "transform": "matrix(0.585577, 0, 0, 0.585577, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-1",
+            "transform": "matrix(0.643106, 0, 0, 0.643106, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-2",
+            "transform": "matrix(0.718144, 0, 0, 0.718144, 0, 0)"
+          }
+        ],
+        "running": 6
+      }
+    ]
+  },
+  {
+    "at": 873,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "matrix(1, 0, 0, 1, 0, -2.8)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.9",
+            "part": "terminal-response",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "matrix(1, 0, 0, 1, 2.9, 1.4)"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-return",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.317288)"
+          }
+        ],
+        "running": 6
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "cpu-input-0",
+            "transform": "matrix(1, 0, 0, 1, 5.20045, 9.25016)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-1",
+            "transform": "matrix(1, 0, 0, 1, 5.39364, 12)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-2",
+            "transform": "matrix(1, 0, 0, 1, 5.60874, 14.6081)"
+          },
+          {
+            "opacity": "0.050335",
+            "part": "cpu-cell-0",
+            "transform": "matrix(0.212584, 0, 0, 0.212584, 2.75, 1)"
+          },
+          {
+            "opacity": "0.050335",
+            "part": "cpu-cell-1",
+            "transform": "matrix(0.212584, 0, 0, 0.212584, 0.75, 1)"
+          },
+          {
+            "opacity": "0.050335",
+            "part": "cpu-cell-2",
+            "transform": "matrix(0.212584, 0, 0, 0.212584, 2.75, -1)"
+          },
+          {
+            "opacity": "0.050335",
+            "part": "cpu-cell-3",
+            "transform": "matrix(0.212584, 0, 0, 0.212584, 0.75, -1)"
+          },
+          {
+            "opacity": "1",
+            "part": "cpu-output",
+            "transform": "matrix(1, 0, 0, 1, 21.947, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)"
+          }
+        ],
+        "running": 9
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -15.15)"
+          },
+          {
+            "opacity": "0.8",
+            "part": "chart-ruler-mask",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -15.15)"
+          },
+          {
+            "opacity": "0.8",
+            "part": "chart-ruler",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "chart-mark-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "chart-mark-1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "chart-mark-2",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.718334",
+            "part": "chart-resolve",
+            "transform": "matrix(1, 0, 0, 1, 0.0726664, 0)"
+          }
+        ],
+        "running": 8
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "matrix(1, 0, 0, 1, 12.3123, 6.59289)"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "matrix(1, 0, 0, 1.0001, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "matrix(1, 0, 0, 1, 12.3123, 6.59289)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-0",
+            "transform": "matrix(0.35623, 0, 0, 0.35623, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-1",
+            "transform": "matrix(0.383468, 0, 0, 0.383468, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-2",
+            "transform": "matrix(0.418996, 0, 0, 0.418996, 0, 0)"
+          }
+        ],
+        "running": 6
+      }
+    ]
+  },
+  {
+    "at": 939,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "matrix(1, 0, 0, 1, 0, -2.8)"
+          },
+          {
+            "opacity": "0.726276",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.726276",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.653649",
+            "part": "terminal-response",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "matrix(1, 0, 0, 1, 2.9, 1.4)"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-return",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.271357)"
+          }
+        ],
+        "running": 6
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "cpu-input-0",
+            "transform": "matrix(1, 0, 0, 1, 4.75645, 9.09599)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-1",
+            "transform": "matrix(1, 0, 0, 1, 4.92582, 12)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-2",
+            "transform": "matrix(1, 0, 0, 1, 5.11439, 14.7797)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-0",
+            "transform": "matrix(0.221333, 0, 0, 0.221333, 2.45667, 0.893334)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-1",
+            "transform": "matrix(0.221333, 0, 0, 0.221333, 0.67, 0.893334)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-2",
+            "transform": "matrix(0.221333, 0, 0, 0.221333, 2.45667, -0.893334)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-3",
+            "transform": "matrix(0.221333, 0, 0, 0.221333, 0.67, -0.893334)"
+          },
+          {
+            "opacity": "0.192386",
+            "part": "cpu-output",
+            "transform": "matrix(1, 0, 0, 1, 22.4, 0)"
+          },
+          {
+            "opacity": "0.767234",
+            "part": "cpu-answer",
+            "transform": "matrix(0.923046, 0, 0, 0.923046, 0, 0)"
+          }
+        ],
+        "running": 9
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -15.15)"
+          },
+          {
+            "opacity": "0.8",
+            "part": "chart-ruler-mask",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -15.15)"
+          },
+          {
+            "opacity": "0.8",
+            "part": "chart-ruler",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "chart-mark-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "chart-mark-1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "chart-mark-2",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.56697",
+            "part": "chart-resolve",
+            "transform": "matrix(1, 0, 0, 1, 0.133212, 0)"
+          }
+        ],
+        "running": 8
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-2",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      }
+    ]
+  },
+  {
+    "at": 1005,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "matrix(1, 0, 0, 1, 0, -2.8)"
+          },
+          {
+            "opacity": "0.338629",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.338629",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0.304766",
+            "part": "terminal-response",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "matrix(1, 0, 0, 1, 2.9, 1.4)"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-return",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.225908)"
+          }
+        ],
+        "running": 6
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "cpu-input-0",
+            "transform": "matrix(1, 0, 0, 1, 4.31711, 8.94344)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-1",
+            "transform": "matrix(1, 0, 0, 1, 4.46291, 12)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-2",
+            "transform": "matrix(1, 0, 0, 1, 4.62524, 14.9496)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-0",
+            "transform": "matrix(0.246201, 0, 0, 0.246201, 2.11473, 0.768994)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-1",
+            "transform": "matrix(0.246201, 0, 0, 0.246201, 0.576746, 0.768994)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-2",
+            "transform": "matrix(0.246201, 0, 0, 0.246201, 2.11473, -0.768994)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-3",
+            "transform": "matrix(0.246201, 0, 0, 0.246201, 0.576746, -0.768994)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-output",
+            "transform": "matrix(1, 0, 0, 1, 21.5793, 0)"
+          },
+          {
+            "opacity": "0.723585",
+            "part": "cpu-answer",
+            "transform": "matrix(1.02383, 0, 0, 1.02383, 0, 0)"
+          }
+        ],
+        "running": 9
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -15.15)"
+          },
+          {
+            "opacity": "0.8",
+            "part": "chart-ruler-mask",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -15.15)"
+          },
+          {
+            "opacity": "0.8",
+            "part": "chart-ruler",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "chart-mark-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "chart-mark-1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.9",
+            "part": "chart-mark-2",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.417198",
+            "part": "chart-resolve",
+            "transform": "matrix(1, 0, 0, 1, 0.193121, 0)"
+          }
+        ],
+        "running": 8
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-2",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      }
+    ]
+  },
+  {
+    "at": 1072,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "matrix(1, 0, 0, 1, 0, -2.79317)"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-response",
+            "transform": "matrix(0.966915, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "matrix(1, 0, 0, 1, 2.89293, 1.39659)"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-return",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.180046)"
+          }
+        ],
+        "running": 6
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "cpu-input-0",
+            "transform": "matrix(1, 0, 0, 1, 3.87378, 8.78951)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-1",
+            "transform": "matrix(1, 0, 0, 1, 3.99579, 12)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-2",
+            "transform": "matrix(1, 0, 0, 1, 4.13163, 15.121)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-0",
+            "transform": "matrix(0.271295, 0, 0, 0.271295, 1.76969, 0.643523)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-1",
+            "transform": "matrix(0.271295, 0, 0, 0.271295, 0.482642, 0.643523)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-2",
+            "transform": "matrix(0.271295, 0, 0, 0.271295, 1.76969, -0.643523)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-3",
+            "transform": "matrix(0.271295, 0, 0, 0.271295, 0.482642, -0.643523)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-output",
+            "transform": "matrix(1, 0, 0, 1, 20.5384, 0)"
+          },
+          {
+            "opacity": "0.436426",
+            "part": "cpu-answer",
+            "transform": "matrix(1.05406, 0, 0, 1.05406, 0, 0)"
+          }
+        ],
+        "running": 9
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -15.15)"
+          },
+          {
+            "opacity": "0.575493",
+            "part": "chart-ruler-mask",
+            "transform": "matrix(0.719367, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -15.15)"
+          },
+          {
+            "opacity": "0.575493",
+            "part": "chart-ruler",
+            "transform": "matrix(0.719367, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.64743",
+            "part": "chart-mark-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.64743",
+            "part": "chart-mark-1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.64743",
+            "part": "chart-mark-2",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.287747",
+            "part": "chart-resolve",
+            "transform": "matrix(1, 0, 0, 1, 0.256127, 0)"
+          }
+        ],
+        "running": 8
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-2",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      }
+    ]
+  },
+  {
+    "at": 1139,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.89469)"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-response",
+            "transform": "matrix(0.716174, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "matrix(1, 0, 0, 1, 1.96236, 0.947347)"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-return",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.133357)"
+          }
+        ],
+        "running": 6
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "cpu-input-0",
+            "transform": "matrix(1, 0, 0, 1, 3.42245, 8.63279)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-1",
+            "transform": "matrix(1, 0, 0, 1, 3.52024, 12)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-2",
+            "transform": "matrix(1, 0, 0, 1, 3.62912, 15.2954)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-0",
+            "transform": "matrix(0.296843, 0, 0, 0.296843, 1.41841, 0.515787)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-1",
+            "transform": "matrix(0.296843, 0, 0, 0.296843, 0.38684, 0.515787)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-2",
+            "transform": "matrix(0.296843, 0, 0, 0.296843, 1.41841, -0.515787)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-3",
+            "transform": "matrix(0.296843, 0, 0, 0.296843, 0.38684, -0.515787)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-output",
+            "transform": "matrix(1, 0, 0, 1, 19.4788, 0)"
+          },
+          {
+            "opacity": "0.144085",
+            "part": "cpu-answer",
+            "transform": "matrix(1.08483, 0, 0, 1.08483, 0, 0)"
+          }
+        ],
+        "running": 9
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -15.15)"
+          },
+          {
+            "opacity": "0.317589",
+            "part": "chart-ruler-mask",
+            "transform": "matrix(0.396986, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -15.15)"
+          },
+          {
+            "opacity": "0.317589",
+            "part": "chart-ruler",
+            "transform": "matrix(0.396986, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.357287",
+            "part": "chart-mark-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.357287",
+            "part": "chart-mark-1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.357287",
+            "part": "chart-mark-2",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.158794",
+            "part": "chart-resolve",
+            "transform": "matrix(1, 0, 0, 1, 0.320603, 0)"
+          }
+        ],
+        "running": 8
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-2",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      }
+    ]
+  },
+  {
+    "at": 1205,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.533889)"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-response",
+            "transform": "matrix(0.471359, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "matrix(1, 0, 0, 1, 0.552956, 0.266944)"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-return",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0877703)"
+          }
+        ],
+        "running": 6
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "cpu-input-0",
+            "transform": "matrix(1, 0, 0, 1, 2.98178, 8.47978)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-1",
+            "transform": "matrix(1, 0, 0, 1, 3.05592, 12)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-2",
+            "transform": "matrix(1, 0, 0, 1, 3.13848, 15.4658)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-0",
+            "transform": "matrix(0.321786, 0, 0, 0.321786, 1.07544, 0.39107)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-1",
+            "transform": "matrix(0.321786, 0, 0, 0.321786, 0.293302, 0.39107)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-2",
+            "transform": "matrix(0.321786, 0, 0, 0.321786, 1.07544, -0.39107)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-3",
+            "transform": "matrix(0.321786, 0, 0, 0.321786, 0.293302, -0.39107)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-output",
+            "transform": "matrix(1, 0, 0, 1, 18.4442, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "matrix(1.03181, 0, 0, 1.03181, 0, 0)"
+          }
+        ],
+        "running": 9
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -15.15)"
+          },
+          {
+            "opacity": "0.065779",
+            "part": "chart-ruler-mask",
+            "transform": "matrix(0.0822238, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -15.15)"
+          },
+          {
+            "opacity": "0.065779",
+            "part": "chart-ruler",
+            "transform": "matrix(0.0822238, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.0740014",
+            "part": "chart-mark-0",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.0740014",
+            "part": "chart-mark-1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.0740014",
+            "part": "chart-mark-2",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0.0328895",
+            "part": "chart-resolve",
+            "transform": "matrix(1, 0, 0, 1, 0.383555, 0)"
+          }
+        ],
+        "running": 8
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-2",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      }
+    ]
+  },
+  {
+    "at": 1272,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.0892309)"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-response",
+            "transform": "matrix(0.224322, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "matrix(1, 0, 0, 1, 0.0924178, 0.0446155)"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-return",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0417703)"
+          }
+        ],
+        "running": 6
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "cpu-input-0",
+            "transform": "matrix(1, 0, 0, 1, 2.53711, 8.32539)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-1",
+            "transform": "matrix(1, 0, 0, 1, 2.5874, 12)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-2",
+            "transform": "matrix(1, 0, 0, 1, 2.64338, 15.6377)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-0",
+            "transform": "matrix(0.346956, 0, 0, 0.346956, 0.729357, 0.265221)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-1",
+            "transform": "matrix(0.346956, 0, 0, 0.346956, 0.198916, 0.265221)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-2",
+            "transform": "matrix(0.346956, 0, 0, 0.346956, 0.729357, -0.265221)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-3",
+            "transform": "matrix(0.346956, 0, 0, 0.346956, 0.198916, -0.265221)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-output",
+            "transform": "matrix(1, 0, 0, 1, 17.4002, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "matrix(0.892848, 0, 0, 0.892848, 0, 0)"
+          }
+        ],
+        "running": 9
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -12.9636)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-ruler-mask",
+            "transform": "matrix(0, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -12.9636)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-ruler",
+            "transform": "matrix(0, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-0",
+            "transform": "matrix(0.845522, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-1",
+            "transform": "matrix(0.845522, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-2",
+            "transform": "matrix(0.845522, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-resolve",
+            "transform": "matrix(0.938209, 0, 0, 0.938209, 0.235223, 0)"
+          }
+        ],
+        "running": 8
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-2",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      }
+    ]
+  },
+  {
+    "at": 1339,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-response",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-return",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "cpu-input-0",
+            "transform": "matrix(1, 0, 0, 1, 2.09045, 8.17029)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-1",
+            "transform": "matrix(1, 0, 0, 1, 2.11676, 12)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-2",
+            "transform": "matrix(1, 0, 0, 1, 2.14606, 15.8104)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-0",
+            "transform": "matrix(0.372239, 0, 0, 0.372239, 0.381716, 0.138806)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-1",
+            "transform": "matrix(0.372239, 0, 0, 0.372239, 0.104104, 0.138806)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-2",
+            "transform": "matrix(0.372239, 0, 0, 0.372239, 0.381716, -0.138806)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-3",
+            "transform": "matrix(0.372239, 0, 0, 0.372239, 0.104104, -0.138806)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-output",
+            "transform": "matrix(1, 0, 0, 1, 16.3515, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "matrix(0.753265, 0, 0, 0.753265, 0, 0)"
+          }
+        ],
+        "running": 9
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -3.6946)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-ruler-mask",
+            "transform": "matrix(0, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -3.6946)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-ruler",
+            "transform": "matrix(0, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-0",
+            "transform": "matrix(0.636147, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-1",
+            "transform": "matrix(0.636147, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-2",
+            "transform": "matrix(0.636147, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-resolve",
+            "transform": "matrix(0.854459, 0, 0, 0.854459, 0.01189, 0)"
+          }
+        ],
+        "running": 8
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-2",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      }
+    ]
+  },
+  {
+    "at": 1405,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-response",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-return",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "cpu-input-0",
+            "transform": "matrix(1, 0, 0, 1, 1.64845, 8.01682)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-1",
+            "transform": "matrix(1, 0, 0, 1, 1.65105, 12)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-2",
+            "transform": "matrix(1, 0, 0, 1, 1.65394, 15.9813)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-0",
+            "transform": "matrix(0.397258, 0, 0, 0.397258, 0.0377061, 0.0137113)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-1",
+            "transform": "matrix(0.397258, 0, 0, 0.397258, 0.0102835, 0.0137113)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-2",
+            "transform": "matrix(0.397258, 0, 0, 0.397258, 0.0377061, -0.0137113)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-3",
+            "transform": "matrix(0.397258, 0, 0, 0.397258, 0.0102835, -0.0137113)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-output",
+            "transform": "matrix(1, 0, 0, 1, 15.3137, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "matrix(0.61514, 0, 0, 0.61514, 0, 0)"
+          }
+        ],
+        "running": 9
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.554233)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-ruler-mask",
+            "transform": "matrix(0, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.554233)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-ruler",
+            "transform": "matrix(0, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-0",
+            "transform": "matrix(0.428959, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-1",
+            "transform": "matrix(0.428959, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-2",
+            "transform": "matrix(0.428959, 0, 0, 1, 0, 0)"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-resolve",
+            "transform": "matrix(0.771584, 0, 0, 0.771584, -0.20911, 0)"
+          }
+        ],
+        "running": 8
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-2",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      }
+    ]
+  },
+  {
+    "at": 1473,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-response",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-return",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "cpu-input-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-3",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-output",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-ruler-mask",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-ruler",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-resolve",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-2",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      }
+    ]
+  },
+  {
+    "at": 1539,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-response",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-return",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "cpu-input-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-3",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-output",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-ruler-mask",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-ruler",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-resolve",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-2",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      }
+    ]
+  },
+  {
+    "at": 1606,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-response",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-return",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "cpu-input-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-3",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-output",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-ruler-mask",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-ruler",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-resolve",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-2",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      }
+    ]
+  },
+  {
+    "at": 1672,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-response",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-return",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "cpu-input-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-3",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-output",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-ruler-mask",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-ruler",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-resolve",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-2",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      }
+    ]
+  },
+  {
+    "at": 1739,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-response",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-return",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "cpu-input-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-3",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-output",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-ruler-mask",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-ruler",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-resolve",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-2",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      }
+    ]
+  },
+  {
+    "at": 1806,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-response",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-return",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "cpu-input-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-3",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-output",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-ruler-mask",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-ruler",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-resolve",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-2",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      }
+    ]
+  },
+  {
+    "at": 1873,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-response",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-return",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "cpu-input-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-3",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-output",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-ruler-mask",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-ruler",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-resolve",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-2",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      }
+    ]
+  },
+  {
+    "at": 1939,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-response",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-return",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "cpu-input-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-3",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-output",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-ruler-mask",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-ruler",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-resolve",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-2",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      }
+    ]
+  },
+  {
+    "at": 2006,
+    "icons": [
+      {
+        "name": "terminal",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "terminal-history",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-first",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-second",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-response",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "terminal-cursor",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "terminal-return",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "cpu",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "cpu-input-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-input-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-cell-3",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-output",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "cpu-answer",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "chart",
+        "parts": [
+          {
+            "opacity": "1",
+            "part": "chart-ruler-mask-position",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-ruler-mask",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "chart-ruler-position",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-ruler",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-mark-2",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "chart-resolve",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      },
+      {
+        "name": "bolt",
+        "parts": [
+          {
+            "opacity": "0",
+            "part": "bolt-aperture",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "part": "bolt-body",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-charge",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-0",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-1",
+            "transform": "none"
+          },
+          {
+            "opacity": "0",
+            "part": "bolt-discharge-2",
+            "transform": "none"
+          }
+        ],
+        "running": 0
+      }
+    ]
+  }
+]

@@ -1,46 +1,31 @@
 # bolt: Interface Craft review
 
 ## Context
-An SVG action icon in a reusable developer library. Its semantic meaning is **a short transfer of energy**. It appears in routine controls where recognition matters more than spectacle.
+A brief release of electrical energy. The expressive action is a strike after potential builds, not a general attention shimmer.
 
 ## First Impressions
-Making the whole lightning bolt blink erases its shape and can resemble a fault.
+The rejected inner seam split the neutral silhouette into two narrow ribbons. Slow uniform conduction also removed any sense of release. The revision starts clean, holds tension, then extends sharply into a localized branching discharge.
 
 ## Visual Design
-**Identity boundary** — Bolt silhouette remains fully visible. Stable dither follows the contour. Color inherits the selected palette; accents use the same ink and stay below the primary silhouette in visual weight. Typography and card framing belong to the shared inspector, not the glyph.
+One original lightning contour remains intact. A temporary moving aperture exposes the charge in filled materials without a permanent seam. The lower point was shortened to leave real room for diagonal discharge branches. The source anchors the extension; material and charge share that frame.
 
 ## Interface Design
-The missed opportunity is to express **a short transfer of energy** through a causal gesture. Carry emphasis down the upper arm, through the bend, and into the lower point. The inspector exposes replay and timing only when requested; the icon itself adds no controls or labels.
+Potential gathers for 180ms, conducts through the elbow and holds until 310ms. The strike takes only 80ms. Body extension holds through the response peak; three fine branches emerge from the derived strike point with 18ms offsets, then linger in the surrounding frame as the body recovers.
 
 ## Consistency & Conventions
-Retain the conventional glyph. Use the shared hover, focus, click, reduced-motion, and completion contracts. MOT-01, MOT-02, MOT-03, MOT-04, MOT-05, MOT-08, MOT-09, MOT-10, MOT-11, MOT-12, MOT-14, MOT-15 apply.
+MOT-01/03/04/05/07/08/15/16 govern identity, connected parts, timing and localized consequences. MOT-09/10/11/12 retain the shared replay, exact return, stillness and export contracts. MOT-14 reserves application state for the host.
 
 ## User Context
-No flashing loop, large burst, or whole-screen glow. Recognizability must survive a brief glance and the still-motion variant.
+The lightning silhouette is the identity at rest and during the strike. A bounded source-anchored extension expresses the energy release under MOT-06; it is not a recurring bounce. No charge-level or performance claim.
 
 ## Top Opportunities
-1. Carry emphasis down the upper arm, through the bend, and into the lower point.
-2. Bolt silhouette remains fully visible.
-3. No flashing loop, large burst, or whole-screen glow.
+Keep the resting silhouette clean; contrast gathering with a fast strike; derive branches from the extended point and reserve space for them.
 
 ## Encoded storyboard and review
+[Authored timeline](../../src/motions/bolt.ts). 1160ms: gather at 180ms; elbow at 250ms; release starts at 310ms; strike reaches its point at 390ms; branches peak at 440/458/476ms; body holds until 480ms; recovery at 650ms; branches clear by 930ms; neutral at 1160ms.
 
-**Duration:** 780ms. **Sequence:** Charge / Conduct / Discharge.
+Reviewed the complete live sequence at actual and half speed, eight inspected poses, and identical 58% part matrices across dither/solid/outline. Input and output are visibly connected; temporary marks clear before the final rest. Keyboard playback finishes after departure; reduced motion leaves no active tracks or visible accents. User accepted this concept-level revision on 2026-09-10 and requested the next batch.
 
-Timing source: [atmosphere.ts](../../src/motions/atmosphere.ts). Geometry binds each named track in `CraftedArtwork.tsx` or `ExtendedArtwork.tsx`. Times below are milliseconds from the same clock; transform values, pivots and easing live in that source.
+[Evidence and limits](../motion-evidence/refinement-08/README.md).
 
-| Named part | Keyframe times (ms) |
-| --- | --- |
-| `charge` | 0, 100, 230, 350, 780 |
-| `conduct` | 0, 140, 290, 430, 550, 780 |
-| `discharge` | 0, 310, 450, 620, 780 |
-
-**Rendered review:** The contour stays completely still and visible while emphasis travels from the upper arm through the bend to the lower point. No whole-icon blinking.
-
-Reviewed at preparation (20%), action (40%), recovery (70%) and neutral endpoint (100%), with actual playback and per-part endpoint inspection in the live gallery. These samples establish the reviewed poses; they do not replace the full timeline or the shared lifecycle checks in [VALIDATION.md](../VALIDATION.md).
-
-**Visual reference:** icon 4 from the left in this family.
-
-![bolt: action pose at 40%, position 4](../motion-evidence/rollout/light.png)
-
-[Preparation image](../motion-evidence/rollout/light-prepare.png) · [Recovery image](../motion-evidence/rollout/light-recover.png)
+![Native half-speed sequence, Terminal / CPU / Chart / Bolt left to right](../motion-evidence/refinement-08/native-filmstrip.png)

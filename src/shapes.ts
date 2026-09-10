@@ -1,3 +1,7 @@
+import {TERMINAL_ART} from './motions/terminal';
+import {CPU_ART} from './motions/cpu';
+import {CHART_ART} from './motions/chart';
+import {BOLT_ART} from './motions/bolt';
 import {EYE_ART} from './motions/eye';
 import {SPARKLES_ART} from './motions/sparkles';
 import {MOON_ART} from './motions/moon';
@@ -82,12 +86,12 @@ export const definitions = [
  def('sun','Interface','Light leaves the center before the rays extend.',part([...ring(12,12,5),...rect(11,1,2,3),...rect(11,20,2,3),...rect(1,11,3,2),...rect(20,11,3,2),...rect(3,3,3,3),...rect(18,18,3,3),...rect(18,3,3,3),...rect(3,18,3,3)],'turn')),
  def('moon','Interface','A crescent rises as a falling star settles into its opening.',p([[13,2],[7,4],[3,9],[3,16],[7,21],[14,22],[20,18],[22,13],[17,15],[12,13],[9,9],[10,5]],'ring')),
  def('code','Development','The brackets open a little space.',l([[7,5],[2,11],[7,17]],'rise'),l([[16,5],[21,11],[16,17]],'fall'),l([[14,3],[10,20]])),
- def('terminal','Development','A cursor blinks once at the prompt.',l([[2,3],[21,3],[21,21],[2,21],[2,3]]),l([[5,8],[8,11],[5,14]]),r(12,14,6,2,'blink')),
+ def('terminal','Development','A command submits, a response writes, and the prompt becomes ready again.',l([[2,3],[21,3],[21,21],[2,21],[2,3]]),l([[5,8],[8,11],[5,14]]),r(12,14,6,2,'blink')),
  def('layers','Development','Stacked planes separate, then settle.',p([[2,15],[12,21],[22,15],[12,9]]),p([[2,11],[12,17],[22,11],[12,5]],'rise'),p([[2,7],[12,13],[22,7],[12,1]],'rise')),
- def('cpu','Development','A signal lights up the central die.',part([...rect(5,5,14,14),...rect(2,7,3,2),...rect(2,15,3,2),...rect(19,7,3,2),...rect(19,15,3,2),...rect(7,2,2,3),...rect(15,2,2,3),...rect(7,19,2,3),...rect(15,19,2,3)]),r(9,9,6,6,'blink')),
- def('chart','Development','Bars grow from a shared baseline.',l([[2,3],[2,21],[22,21]]),r(6,12,3,7,'rise'),r(12,7,3,12,'rise'),r(18,3,3,16,'rise')),
+ {...def('cpu','Development','Inputs load a register before one result leaves the processor.',part([...rect(5,5,14,14),...rect(2,7,3,2),...rect(2,15,3,2),...rect(19,7,3,2),...rect(19,15,3,2),...rect(7,2,2,3),...rect(15,2,2,3),...rect(7,19,2,3),...rect(15,19,2,3)]),r(9,9,6,6,'blink')),label:'CPU'},
+ def('chart','Development','A ruler measures three fixed heights from a shared baseline.',l([[2,3],[2,21],[22,21]]),r(6,12,3,7,'rise'),r(12,7,3,12,'rise'),r(18,3,3,16,'rise')),
  def('book','Files','A page opens for reading.',p([[2,3],[9,3],[12,6],[15,3],[22,3],[22,20],[15,20],[12,22],[9,20],[2,20]]),l([[12,6],[12,20]],'blink')),
- def('bolt','Interface','One quick flash of energy.',p([[13,1],[3,14],[10,14],[8,23],[22,9],[14,9],[17,1]],'blink')),
+ def('bolt','Interface','Potential gathers before a lightning strike releases a branching discharge.',p([[13,1],[3,14],[10,14],[8,23],[22,9],[14,9],[17,1]],'blink')),
  def('path','Learning','Follow a connected sequence of milestones.',vector(PATH_ART.first),vector(PATH_ART.second),vector(PATH_ART.node(5,19)),vector(PATH_ART.node(12,12)),vector(PATH_ART.node(19,5))),
  def('flask','Learning','A contained experiment stirs and responds.',vector(FLASK_ART.outer+FLASK_ART.inside)),
  def('target','Learning','Focus an objective at a precise center.',vector(TARGET_ART.outer),vector(TARGET_ART.inner),vector(TARGET_ART.dart)),
@@ -155,12 +159,12 @@ const vectors:Record<string,string[]>={
  sun:['M12 7a5 5 0 1 0 0 10a5 5 0 1 0 0-10ZM11 1h2v3h-2ZM11 20h2v3h-2ZM1 11h3v2H1ZM20 11h3v2h-3ZM3.5 5l1.5-1.5L7 5.5 5.5 7ZM17 18.5l1.5-1.5 2 2-1.5 1.5ZM17 5.5l2-2L20.5 5l-2 2ZM3.5 19l2-2L7 18.5l-2 2Z'],
  moon:[MOON_ART.crescent],
  code:['M7.5 5 2 12l5.5 7 1.5-1.3L4.6 12 9 6.3Z','M16.5 5 22 12l-5.5 7-1.5-1.3 4.4-5.7L15 6.3Z','M13 3h2l-4 18H9Z'],
- terminal:['M4 3h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm0 2v14h16V5Z','M6 8l4 4-4 4-1.4-1.4L7.2 12 4.6 9.4Z','M12 15h6v2h-6Z'],
+ terminal:[TERMINAL_ART.frame,TERMINAL_ART.prompt,TERMINAL_ART.cursor],
  layers:['M2 15l10 5 10-5v2l-10 5-10-5Z','M2 11l10 5 10-5v2l-10 5-10-5Z','M2 7l10-5 10 5-10 5Z'],
- cpu:['M5 5h14v14H5ZM8 8h8v8H8ZM2 7h3v2H2ZM2 15h3v2H2ZM19 7h3v2h-3ZM19 15h3v2h-3ZM7 2h2v3H7ZM15 2h2v3h-2ZM7 19h2v3H7ZM15 19h2v3h-2Z','M9 9h6v6H9Z'],
- chart:['M2 3h2v17h18v2H2Z','M6 12h3v6H6Z','M12 7h3v11h-3Z','M18 3h3v15h-3Z'],
+ cpu:[CPU_ART.package,CPU_ART.core],
+ chart:[CHART_ART.axis,...CHART_ART.bars],
  book:['M3 3h5q3 0 4 2q1-2 4-2h5v17h-5q-3 0-4 2q-1-2-4-2H3Z','M11.25 5h1.5v16h-1.5Z'],
- bolt:['M13 2 4 13h7l-1 9 10-13h-7l1-7Z']
+ bolt:[BOLT_ART.body],
 };
 for(const icon of definitions)icon.parts.forEach((part,i)=>{if(vectors[icon.name]?.[i]){part.path=vectors[icon.name][i];part.stroke=false;}});
 
