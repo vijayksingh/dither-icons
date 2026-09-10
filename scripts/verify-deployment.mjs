@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
 
 // Use the machine's normal DNS and TLS validation. A Pages preview URL or an
 // overridden resolver cannot prove that the public domain works for visitors.
@@ -16,12 +17,18 @@ async function get(path) {
 }
 
 try {
+  const release = await (await get('/release.json')).json();
   if (process.env.RELEASE_SHA) {
-    const release = await (await get('/release.json')).json();
     assert.equal(release.commit, process.env.RELEASE_SHA, 'Public site is serving another commit');
     if (process.env.RELEASE_VERSION) assert.equal(release.version, process.env.RELEASE_VERSION);
     console.log(`OK deployed revision: ${release.commit}`);
   }
+  const packagePath = `/${release.name.replace(/^@/, '').replace('/', '-')}-${release.version}.tgz`;
+  const packageBytes = Buffer.from(await (await get(packagePath)).arrayBuffer());
+  assert.equal(packageBytes.subarray(0, 2).toString('hex'), '1f8b', 'Package download is not a gzip archive');
+  assert.equal(`sha512-${createHash('sha512').update(packageBytes).digest('base64')}`, release.integrity,
+    'Website package download differs from the published release artifact');
+  console.log(`OK ${packagePath}: downloadable package matches release integrity`);
   for (const path of routes) {
     const response = await get(path);
     assert.match(response.headers.get('content-type') || '', /text\/html/);

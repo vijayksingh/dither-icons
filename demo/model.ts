@@ -19,6 +19,7 @@ export const labelFor = (name: string) => definitions.find(icon => icon.name ===
 export const componentName = (name: string) => name.split('-').map(word => word[0].toUpperCase() + word.slice(1)).join('') + 'Icon';
 export const packageVersion = packageInfo.version;
 export const packageUrl = `https://www.npmjs.com/package/${packageInfo.name}`;
+export const packageDownloadUrl = `/${packageInfo.name.replace(/^@/, '').replace('/', '-')}-${packageVersion}.tgz`;
 export const installCommand = `npm install ${packageInfo.name}`;
 
 export function filterIcons(query: string, category: string) {

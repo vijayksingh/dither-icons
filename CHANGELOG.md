@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.1 — 2026-09-10
+
+- Fixed **Download React package** in the installation guide to download the versioned archive from dithered.dev. The npm links still open the registry listing.
+- The production release check now verifies that the website's package download matches the release artifact's SHA-512 integrity.
+
 ## 0.2.0 — 2026-09-10
 
 The library contains 73 original icons with individually reviewed motion, in dither, solid, and outline materials. No existing exports or component props were removed or renamed.

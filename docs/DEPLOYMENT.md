@@ -28,7 +28,7 @@ The Cloudflare DNS zone needs a **proxied CNAME** from `@` (`dithered.dev`) to `
 
 Pages serves existing HTML routes and provides a native SPA fallback. Do not add a catch-all rewrite to `/index.html`: each generated route contains its own sharing metadata.
 
-Run `npm run verify:deployment` from the visitor machine using its normal DNS. This checks HTTPS, representative routes, canonical URLs, sharing images, JS/CSS responses, robots.txt, and sitemap.xml. A failed lookup must fail the release check; do not override DNS to turn it green. `SITE_URL` can select another deployment, but that result does not verify `dithered.dev`.
+Run `npm run verify:deployment` from the visitor machine using its normal DNS. This checks HTTPS, representative routes, canonical URLs, sharing images, JS/CSS responses, robots.txt, sitemap.xml, and the downloadable package against the release artifact's SHA-512 integrity. A failed lookup must fail the release check; do not override DNS to turn it green. `SITE_URL` can select another deployment, but that result does not verify `dithered.dev`.
 
 Then open **https://dithered.dev/** in a normal browser. Confirm the page renders, search filters icons, an icon detail page opens, navigation works, and the console has no application errors. Check the package download. A successful build, Pages preview, or server-side HTTP probe does not replace this browser check. Social services can cache earlier previews; use their refresh tools after deployment.
 
