@@ -6,6 +6,10 @@ import {DRAG_HANDLE_ART} from './motions/drag-handle';
 import {SKIP_BLOCK_ART} from './motions/skip-block';
 import {COLLAPSE_RAIL_ART} from './motions/collapse-rail';
 import {HEADPHONES_ART} from './motions/headphones';
+import {READING_PACE_ART} from './motions/reading-pace';
+import {READER_PATH_ART} from './motions/reader-path';
+import {PREVIOUS_WORD_ART} from './motions/previous-word';
+import {NEXT_WORD_ART} from './motions/next-word';
 import {BACK_ART} from './motions/arrow-left';
 import {HISTORY_ART} from './motions/history';
 import {PANEL_CLOSE_ART} from './motions/panel-left-close';
@@ -149,6 +153,10 @@ export const definitions = [
  {...def('skip-block','Navigation','Bypass the current article block during guided reading.',...[SKIP_BLOCK_ART.current,SKIP_BLOCK_ART.next,SKIP_BLOCK_ART.marker].map(strokeVector),vector(SKIP_BLOCK_ART.bypass)),label:'Skip Block',keywords:['cognimated','reader','skip','article block','chunk','guided reading','bypass']},
  {...def('collapse-rail','Interface','Collapse the reader control rail while retaining the reading surface.',...[COLLAPSE_RAIL_ART.cap,COLLAPSE_RAIL_ART.body,COLLAPSE_RAIL_ART.chevron,...COLLAPSE_RAIL_ART.controls,...COLLAPSE_RAIL_ART.lines].map(strokeVector)),label:'Collapse Rail',keywords:['cognimated','reader','collapse','hide controls','floating rail','toolbar','dock']},
  {...def('headphones','Media','Headphone audio output for listening to an article.',...[HEADPHONES_ART.arch,HEADPHONES_ART.left,HEADPHONES_ART.right,...HEADPHONES_ART.drivers].map(strokeVector)),label:'Headphones',keywords:['cognimated','reader','headphones','listening','audio output','mp3']},
+ {...def('reading-pace','Interface','Adjust reading pace in words per minute.',...[READING_PACE_ART.context,...READING_PACE_ART.words,READING_PACE_ART.rail,...READING_PACE_ART.detents,READING_PACE_ART.thumb].map(strokeVector)),label:'Reading Pace',keywords:['cognimated','reader','speed','wpm','words per minute','reading rate','pace control']},
+ {...def('reader-path','Interface','Choose the main prose path while retaining captions, references, symbols and asides.',...[READER_PATH_ART.spine,READER_PATH_ART.detour,READER_PATH_ART.tongue,...READER_PATH_ART.main,READER_PATH_ART.aside].map(strokeVector)),label:'Reader Path',keywords:['cognimated','reader','main path','skip detours','captions','references','symbols','asides','all details']},
+ {...def('previous-word','Navigation','Seek to the preceding readable word.',...[PREVIOUS_WORD_ART.context,...PREVIOUS_WORD_ART.words,PREVIOUS_WORD_ART.cursor,PREVIOUS_WORD_ART.arrow].map(strokeVector)),label:'Previous Word',keywords:['cognimated','reader','seek','previous word','one word backward','rewind text','reading position']},
+ {...def('next-word','Navigation','Seek to the next readable word.',...[NEXT_WORD_ART.context,...NEXT_WORD_ART.words,NEXT_WORD_ART.cursor,NEXT_WORD_ART.arrow].map(strokeVector)),label:'Next Word',keywords:['cognimated','reader','seek','next word','one word forward','advance text','reading position']},
 ] as const;
 export type IconName = typeof definitions[number]['name'];
 

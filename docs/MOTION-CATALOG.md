@@ -4,6 +4,17 @@ Every icon has an individual Interface Craft critique: semantic meaning, identit
 
 The four accepted foundation performances remain intact. The remaining icons use individually authored tracks, with no catalog icon using the legacy generic presets. Native React and standalone SVG share these timing definitions.
 
+## Cognimated reader / 03 — unreleased pace and navigation
+
+| Icon / individual review | Meaning and invariant | Sequence | Duration |
+| --- | --- | --- | --- |
+| [Reading Pace](icon-reviews/reading-pace.md) | Set a reading cadence against fixed text and rail detents; no gauge needle | Adjust / Register / Read | 980ms |
+| [Reader Path](icon-reviews/reader-path.md) | Select the main prose column while retaining a visible detour and aside | Route / Latch / Continue | 980ms |
+| [Previous Word](icon-reviews/previous-word.md) | Recall exactly one preceding word; text and left direction cue stay fixed | Release / Recall / Hold | 860ms |
+| [Next Word](icon-reviews/next-word.md) | Advance exactly one word; text and right direction cue stay fixed | Release / Step / Identify | 780ms |
+
+The studio opens **Cognimated pace and navigation**, bringing the catalog to 85. Earlier sets and performances remain available. Each has its own Interface Craft storyboard and source critique; the directional pair shares anatomy, not an aliased timeline. [Control mapping](PLATFORM-ICONS.md#cognimated-reader--03) records the current five-word Listen/Read integration mismatch. [Checks and limits](motion-evidence/cognimated-reader-03/README.md). User owns visual review; no platform integration or release is claimed.
+
 ## Cognimated reader / 02 — unreleased controls
 
 | Icon / individual review | Meaning and invariant | Sequence | Duration |
@@ -13,7 +24,7 @@ The four accepted foundation performances remain intact. The remaining icons use
 | [Collapse Rail](icon-reviews/collapse-rail.md) | Dock a right control rail into its tab; prose stays fixed | Lead / Retract / Dock | 1320ms |
 | [Headphones](icon-reviews/headphones.md) | Seat paired earcups before their drivers answer | Seat / Listen / Release | 1260ms |
 
-The studio now opens **Cognimated reader controls**, bringing the catalog to 81. The earlier **Cognimated reader** family remains selectable. The four individual source-level critiques record the user's first screenshot feedback and its corrections. [Checks and limits](motion-evidence/cognimated-reader-02/README.md); [control mapping](PLATFORM-ICONS.md#cognimated-reader--02). Corrected visual approval remains with the user; no integration or publication is claimed.
+The **Cognimated reader controls** set introduced icons 78–81 and remains selectable alongside the earlier **Cognimated reader** family. The four individual source-level critiques record the user's first screenshot feedback and its corrections. [Checks and limits](motion-evidence/cognimated-reader-02/README.md); [control mapping](PLATFORM-ICONS.md#cognimated-reader--02). Corrected visual approval remains with the user; no integration or publication is claimed.
 
 ## Cognimated reader / 01 — unreleased
 

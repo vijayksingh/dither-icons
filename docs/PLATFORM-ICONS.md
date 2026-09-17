@@ -171,3 +171,24 @@ Drag Handle is a ribbed movable grip rather than menu dots. Skip Block retains b
 The **Cognimated reader controls** studio set opens for feedback. User screenshot corrections center the first two compositions, join the skip-arrow contour, mask overlapping Outline joints and lighten Solid strokes. All four have independent [review records and checks](motion-evidence/cognimated-reader-02/README.md); corrected visual acceptance is pending.
 
 Retain native labels, focus, disabled state, `aria-expanded`, target sizes and truthful host actions. The library does not implement dragging, block selection, rail state or audio/download success. Prefer still compact Solid/Outline for repeated actions; dither suits larger previews. Reduced motion retains all static meaning. React completes triggered playback after departure; standalone CSS hover cannot. Integration remains a separate task.
+
+## Cognimated reader / 03
+
+Source inspected 2026-09-17 in the adjacent `web-absorb` checkout. Exactly four local additions. No platform edits, package version change, publication or deployment.
+
+| Export | Actual control | Observed source in web-absorb |
+| --- | --- | --- |
+| `ReadingPaceIcon` | Reading pace / WPM panel and range | `extension/content/reading-focus-timer.js:1033,1059–1060`; `.speed-toggle` and `.speed-range`; handlers at 1248–1250, `setWpm` at 1223 |
+| `ReaderPathIcon` | Main path switch; skip captions, references, symbols and asides | `extension/content/reading-focus-timer.js:1034,1247,2083–2088`; `guided-word-reader.js:19,101–107,302–310,413–423` |
+| `PreviousWordIcon` | Seek toward the preceding readable word | `extension/content/reading-focus-timer.js:1064,1244,2072,2107`; `.step-prev`; **one word only in Paced mode, five in Listen/Read** |
+| `NextWordIcon` | Seek toward the next readable word | `extension/content/reading-focus-timer.js:1066,1245,2073,2108`; `.step-next`; **one word only in Paced mode, five in Listen/Read** |
+
+Reading Pace uses a detented horizontal rate control under fixed words, not Gauge's calibrated needle or Learning Rhythm's pendulum. Reader Path uses a hinged route tongue and retained prose/aside, not CraftingAttention Path's sequence of milestone nodes. Previous/Next Word retain a three-word strip and fixed direction arrow while their selection shoe steps exactly one interval. They are not renamed ArrowLeft/ArrowRight performances.
+
+### Integration boundary discovered in the actual controls
+
+The requested one-word Listen/Read semantics do **not** match current behavior: click handlers use `mode === 'paced' ? 1 : 5`, and the accessibility labels explicitly become “Back five words” / “Forward five words.” These new icons implement the requested **single-word affordance** for future integration; do not claim that Listen/Read now seeks one word, or relabel the existing five-word buttons without changing behavior in a separately authorized platform task. `seekToIndex` also skips excluded word kinds in the chosen direction when Main path is on; one step means the adjacent readable word, not necessarily raw index ±1.
+
+The speed range is hidden/disabled in Read-aloud mode (`reading-focus-timer.js:2101–2103`); its parent button also opens mode/options. Keep the actual parent label truthful. Reader Path is an option glyph, not the checked-state indicator: retain the native `role="switch"`, `aria-checked`, on/off labels and visible host state. The preview never removes article content or grants recognized reading progress.
+
+Keep disabled boundaries, focus, native targets and real seek state. Prefer still Solid/Outline for repeated 16–24px actions; Dither suits larger previews. Reduced motion preserves complete static meaning. The shared React engine completes a gesture and ignores overlapping triggers; CSS-only SVG hover ends on departure and uses a focusable `.di-trigger` parent for keyboard activation. [Reviews and verification](motion-evidence/cognimated-reader-03/README.md). User visual approval remains pending.

@@ -8,6 +8,10 @@ import {DRAG_HANDLE_ART, DRAG_HANDLE_GEOMETRY, dragSeatArt} from './motions/drag
 import {SKIP_BLOCK_ART, SKIP_BLOCK_GEOMETRY} from './motions/skip-block';
 import {COLLAPSE_RAIL_ART, COLLAPSE_RAIL_GEOMETRY} from './motions/collapse-rail';
 import {HEADPHONES_ART, HEADPHONES_GEOMETRY} from './motions/headphones';
+import {READING_PACE_ART, READING_PACE_GEOMETRY} from './motions/reading-pace';
+import {READER_PATH_ART} from './motions/reader-path';
+import {PREVIOUS_WORD_ART} from './motions/previous-word';
+import {NEXT_WORD_ART} from './motions/next-word';
 import {READER_STYLE as INK, READER_OUTLINE as OUTLINE} from './motions/reader-style';
 import {READER_CONTROLS_STYLE as CONTROL} from './motions/reader-controls-style';
 
@@ -16,7 +20,7 @@ const accent = (part: string, children: ReactNode) => <g data-part={part} opacit
 
 export function ReaderArtwork({name, draw, texture}: {name: string; draw: Draw; texture: 'dither' | 'solid' | 'outline'}) {
   const id = useId().replace(/:/g, '') + '-reader';
-  const controls = ['drag-handle', 'skip-block', 'collapse-rail', 'headphones'].includes(name);
+  const controls = ['drag-handle', 'skip-block', 'collapse-rail', 'headphones', 'reading-pace', 'reader-path', 'previous-word', 'next-word'].includes(name);
   const contourWidth = (width: number) => controls && texture === 'solid' ? CONTROL.solidContour : width;
   let contourIndex = 0;
   // Both grain and transparent outline cores share their actor's coordinate frame.
@@ -36,6 +40,46 @@ export function ReaderArtwork({name, draw, texture}: {name: string; draw: Draw; 
     return <><defs><mask id={maskId} maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24"><path d={d} fill="none" stroke="white" strokeWidth={width} strokeLinecap="round" strokeLinejoin="round"/></mask></defs><g mask={`url(#${maskId})`}>{draw('M0 0h24v24H0Z')}</g></>;
   };
   const detail = (d: string) => line(d, controls ? (texture === 'outline' ? CONTROL.outlineResponse : CONTROL.response) : (texture === 'outline' ? OUTLINE.response : INK.response));
+  if (name === 'reading-pace') {
+    const A = READING_PACE_ART, G = READING_PACE_GEOMETRY;
+    const maskId = `${id}-pace-rail`;
+    return <>
+      <g opacity={INK.contextOpacity}>{A.words.map(d => <g key={d}>{ink(d, CONTROL.text, 'text')}</g>)}{ink(A.context, CONTROL.text, 'text')}</g>
+      <defs><mask id={maskId} maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+        <rect width="24" height="24" fill="white"/>
+        <g data-part="pace-thumb-cut"><path d={A.thumb} fill="black" stroke="black" strokeWidth={contourWidth(CONTROL.contour)} strokeLinejoin="round"/></g>
+      </mask></defs>
+      <g opacity={CONTROL.referenceOpacity} mask={`url(#${maskId})`}>{detail(A.rail)}{A.detents.map(d => <g key={d}>{detail(d)}</g>)}</g>
+      <g data-part="pace-thumb">{ink(A.thumb, CONTROL.contour)}</g>
+      {accent('pace-detent', detail(A.detentResponse))}
+      {G.wordStarts.map((x, i) => <g key={x}>{accent(`pace-word-${i}`, detail(A.underlines[i]))}</g>)}
+    </>;
+  }
+  if (name === 'reader-path') {
+    const A = READER_PATH_ART, maskId = `${id}-reader-route`;
+    return <>
+      <defs><mask id={maskId} maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+        <rect width="24" height="24" fill="white"/>
+        <g data-part="reader-route-cut"><path d={A.tongue} fill="none" stroke="black" strokeWidth={contourWidth(CONTROL.contour)} strokeLinecap="round"/></g>
+      </mask></defs>
+      <g mask={`url(#${maskId})`} opacity={INK.contextOpacity}>{ink(A.spine + A.detour, CONTROL.contour)}</g>
+      <g data-part="reader-route-gate">{ink(A.tongue, CONTROL.contour)}</g>
+      <g opacity={INK.contextOpacity}>{A.main.map(d => <g key={d}>{ink(d, CONTROL.text, 'text')}</g>)}</g>
+      <g opacity={CONTROL.referenceOpacity}>{ink(A.aside, CONTROL.text, 'text')}</g>
+      {accent('reader-route-junction', detail(A.junction))}
+      {accent('reader-route-prose', detail(A.response))}
+    </>;
+  }
+  if (name === 'previous-word' || name === 'next-word') {
+    const previous = name === 'previous-word', A = previous ? PREVIOUS_WORD_ART : NEXT_WORD_ART;
+    return <>
+      <g opacity={CONTROL.referenceOpacity}>{ink(A.context, CONTROL.text, 'text')}</g>
+      <g opacity={INK.contextOpacity}>{A.words.map(d => <g key={d}>{ink(d, CONTROL.text, 'text')}</g>)}</g>
+      <g data-part={`${name}-selector`}>{ink(A.cursor, CONTROL.contour)}</g>
+      {ink(A.arrow, CONTROL.contour)}
+      {accent(previous ? 'previous-word-recall' : 'next-word-identify', detail(A.response))}
+    </>;
+  }
   if (name === 'drag-handle') {
     const A = DRAG_HANDLE_ART, G = DRAG_HANDLE_GEOMETRY;
     const seat = dragSeatArt(contourWidth(G.contour), texture === 'outline' ? CONTROL.outlineResponse : CONTROL.response);

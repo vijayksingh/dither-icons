@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "package": "@unlocalhosted/dither-icons",
   "version": "0.2.3",
-  "count": 81,
+  "count": 85,
   "license": "MIT",
   "installation": {
     "publishedToNpm": true,
@@ -1669,6 +1669,112 @@
           "Seat",
           "Listen",
           "Release"
+        ]
+      }
+    },
+    {
+      "name": "reading-pace",
+      "component": "ReadingPaceIcon",
+      "label": "Reading Pace",
+      "category": "Interface",
+      "description": "Adjust reading pace in words per minute.",
+      "keywords": [
+        "cognimated",
+        "reader",
+        "speed",
+        "wpm",
+        "words per minute",
+        "reading rate",
+        "pace control"
+      ],
+      "page": "/icons/reading-pace",
+      "motion": {
+        "caption": "The pace thumb clicks into a detent; two words answer in sequence.",
+        "durationMs": 980,
+        "stages": [
+          "Adjust",
+          "Register",
+          "Read"
+        ]
+      }
+    },
+    {
+      "name": "reader-path",
+      "component": "ReaderPathIcon",
+      "label": "Reader Path",
+      "category": "Interface",
+      "description": "Choose the main prose path while retaining captions, references, symbols and asides.",
+      "keywords": [
+        "cognimated",
+        "reader",
+        "main path",
+        "skip detours",
+        "captions",
+        "references",
+        "symbols",
+        "asides",
+        "all details"
+      ],
+      "page": "/icons/reader-path",
+      "motion": {
+        "caption": "The gate selects the main column; the aside stays beside it.",
+        "durationMs": 980,
+        "stages": [
+          "Route",
+          "Latch",
+          "Continue"
+        ]
+      }
+    },
+    {
+      "name": "previous-word",
+      "component": "PreviousWordIcon",
+      "label": "Previous Word",
+      "category": "Navigation",
+      "description": "Seek to the preceding readable word.",
+      "keywords": [
+        "cognimated",
+        "reader",
+        "seek",
+        "previous word",
+        "one word backward",
+        "rewind text",
+        "reading position"
+      ],
+      "page": "/icons/previous-word",
+      "motion": {
+        "caption": "The selector lifts and steps back one word; that word is underlined.",
+        "durationMs": 860,
+        "stages": [
+          "Release",
+          "Recall",
+          "Hold"
+        ]
+      }
+    },
+    {
+      "name": "next-word",
+      "component": "NextWordIcon",
+      "label": "Next Word",
+      "category": "Navigation",
+      "description": "Seek to the next readable word.",
+      "keywords": [
+        "cognimated",
+        "reader",
+        "seek",
+        "next word",
+        "one word forward",
+        "advance text",
+        "reading position"
+      ],
+      "page": "/icons/next-word",
+      "motion": {
+        "caption": "The selector advances one word; its underline opens from the leading edge.",
+        "durationMs": 780,
+        "stages": [
+          "Release",
+          "Step",
+          "Identify"
         ]
       }
     }

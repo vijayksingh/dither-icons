@@ -4,7 +4,7 @@ Install an icon, choose a material, and configure playback.
 
 ## The library
 
-Dither Icons includes 81 original SVG icons with individual animations. Each drawing comes in dither, solid, and outline. The dither texture sits inside the vector shape and moves with it.
+Dither Icons includes 85 original SVG icons with individual animations. Each drawing comes in dither, solid, and outline. The dither texture sits inside the vector shape and moves with it.
 
 ![The same Download icon in dither, solid and outline textures.](/reference/textures.svg)
 
