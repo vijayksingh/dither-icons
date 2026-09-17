@@ -10,7 +10,7 @@ import {SETS} from '../demo/MotionStudies';
 import {filterIcons} from '../demo/model';
 import {sharePage, socialMetadata} from '../demo/content/social';
 import {READER_CONTROLS_STYLE as INK} from '../src/motions/reader-controls-style';
-import {dragHandle, dragTransform, DRAG_HANDLE_POSES as DP, DRAG_HANDLE_ART as DA, DRAG_HANDLE_GEOMETRY as D, DRAG_HANDLE_TIMING as DT} from '../src/motions/drag-handle';
+import {dragHandle, dragTransform, dragSeatArt, DRAG_HANDLE_EASE as DE, DRAG_HANDLE_POSES as DP, DRAG_HANDLE_ART as DA, DRAG_HANDLE_GEOMETRY as D, DRAG_HANDLE_TIMING as DT} from '../src/motions/drag-handle';
 import {skipBlock, SKIP_BLOCK_ART as SA, SKIP_BLOCK_GEOMETRY as S, SKIP_BLOCK_TIMING as ST} from '../src/motions/skip-block';
 import {collapseRail, COLLAPSE_RAIL_ART as CA, COLLAPSE_RAIL_GEOMETRY as C, COLLAPSE_RAIL_TIMING as CT} from '../src/motions/collapse-rail';
 import {headphones, HEADPHONES_ART as HA, HEADPHONES_GEOMETRY as H, HEADPHONES_TIMING as HT} from '../src/motions/headphones';
@@ -43,8 +43,8 @@ test('reader controls expose exactly four named additions, a separate studio fam
   }
 });
 
-test('Drag Handle loads its weight then snaps directly home with a smaller rebound', () => {
-  const grip = track(dragHandle, 'drag-grip'), contact = track(dragHandle, 'drag-contact');
+test('Drag Handle accelerates into real stops, transfers weight, then rebounds', () => {
+  const grip = track(dragHandle, 'drag-grip'), stop = track(dragHandle, 'drag-stop');
   assert.equal(grip.frames.find(f => f.at === DT.carry)!.transform, dragTransform(DP.carried));
   assert.equal(grip.origin, `${D.pivotX}px ${D.pivotY}px`);
   assert.equal(D.pivotY, D.ribY[0], 'the body hangs below the caught upper rib');
@@ -52,23 +52,47 @@ test('Drag Handle loads its weight then snaps directly home with a smaller rebou
   assert.equal(track(dragHandle, 'drag-grip-cut').origin, grip.origin);
   assert.equal(grip.frames.find(f => f.at === DT.grasp)!.transform, dragTransform(DP.rest), 'grasp precedes the body taking up load');
   assert.ok(DP.load.y > 0 && DP.lifted.y < 0);
-  assert.ok(DP.carried.angle > 0 && DP.snapped.angle < 0, 'weighted lean reverses on the snap');
-  assert.ok(DP.carried.x > 0 && DP.snapped.x < 0 && DP.rebound.x > 0, 'release crosses home once before a smaller rebound');
-  assert.ok(Math.abs(DP.rebound.angle) < Math.abs(DP.snapped.angle));
-  assert.ok(Math.abs(DP.rebound.x) < Math.abs(DP.snapped.x));
+  assert.ok(DP.carried.angle > 0 && DP.rebound.angle < 0, 'weighted lean reverses only after contact');
+  assert.equal(DP.snapped.x, 0, 'snap arrives between the stops');
+  assert.equal(DP.snapped.angle, 0, 'flat underside arrives parallel to the stops');
+  assert.ok(Math.abs(DP.recovered.angle) < Math.abs(DP.rebound.angle));
+  assert.ok(Math.abs(DP.recovered.x) < Math.abs(DP.rebound.x));
   assert.ok(DT.snap - DT.release <= 100, 'snap back must stay quick rather than a second slow drag');
   assert.ok(DT.carry - DT.grasp >= 2 * (DT.snap - DT.release), 'pull carries weight; return releases tension');
   assert.ok(DT.settle <= 700, 'complete gesture cannot return to the rejected slow 1580ms sequence');
   const releaseIndex = grip.frames.findIndex(f => f.at === DT.release);
   assert.equal(grip.frames[releaseIndex].transform, dragTransform(DP.carried));
   assert.equal(grip.frames[releaseIndex + 1].transform, dragTransform(DP.snapped), 'release goes straight home without an intermediate landing');
-  assert.ok(!dragHandle.tracks.some(t => /rib|registration/.test(t.part)), 'ribs do not drift and the reference stays still');
-  darkThrough(dragHandle, 'drag-contact', DT.grasp);
-  assert.ok(contact.frames.find(f => f.at === DT.snap)!.opacity! > contact.frames.find(f => f.at === DT.lift)!.opacity!, 'contact is tighter and darker than suspension');
-  assert.deepEqual(contact.frames.map(f => [f.at, f.easing]), grip.frames.map(f => [f.at, f.easing]), 'footprint shares the body clock and easing');
+  const downloadFall = track(library.studies.download, 'arrow').frames.find(f => f.at === 170)!;
+  assert.equal(grip.frames[releaseIndex].easing, downloadFall.easing, 'use Download acceleration, not a decelerating glide');
+  assert.equal(grip.frames[releaseIndex].easing, DE.snap);
+  assert.ok(!dragHandle.tracks.some(t => /rib|registration|top-guide/.test(t.part)), 'ribs remain rigid and upper guides stay fixed');
+  assert.ok(stop.frames.filter(f => f.at <= DT.snap).every(f => f.transform === 'translateY(0px)'), 'receiver cannot react before contact');
+  assert.equal(grip.frames.find(f => f.at === DT.snap)!.easing, stop.frames.find(f => f.at === DT.snap)!.easing, 'same easing maintains contact between keyframes');
+  assert.equal(stop.frames.find(f => f.at === DT.compress)!.transform, `translateY(${D.stopYield}px)`);
+  assert.equal(stop.frames.find(f => f.at === DT.rebound)!.transform, 'translateY(0px)');
+  darkThrough(dragHandle, 'drag-seat-light', DT.snap);
+  for (const part of ['drag-impact-0', 'drag-impact-1']) darkThrough(dragHandle, part, DT.compress);
+  assert.ok(DT.snap < DT.compress && DT.compress < DT.ticks && DT.ticks < DT.rebound, 'contact, receiving motion, exterior response, then rebound');
+  assert.ok(!dragHandle.tracks.some(t => t.part === 'drag-contact'), 'a floating shadow must not substitute for a receiver');
+  for (const texture of textures) {
+    const contour = texture === 'solid' ? INK.solidContour : D.contour;
+    const response = texture === 'outline' ? INK.outlineResponse : INK.response;
+    const seat = dragSeatArt(contour, response);
+    assert.ok(svgFor('drag-handle', texture).includes(`d="${seat.stop}"`), 'test the actual material-specific drawn receiving surface');
+    for (let i = 0; i <= 100; i++) {
+      const progress = i / 100;
+      const bottom = D.bottom + contour / 2 + DP.snapped.y + (DP.compressed.y - DP.snapped.y) * progress;
+      const surface = seat.y - response / 2 + D.stopYield * progress;
+      assert.ok(Math.abs(bottom - surface) < 1e-10, `${texture}: joined ink edges throughout compression`);
+    }
+    assert.ok(D.stopTipLeft >= D.left + D.radius && D.stopTipRight <= D.right - D.radius, 'both stops reach the flat underside, not empty space');
+  }
   const markup = svgFor('drag-handle');
   const gripStart = markup.indexOf('<g data-part="drag-grip"');
-  assert.ok(markup.indexOf(`d="${DA.registration}"`) < gripStart);
+  assert.ok(markup.indexOf(`d="${DA.topGuides}"`) < gripStart);
+  const stopStart = markup.indexOf('<g data-part="drag-stop"');
+  assert.ok(stopStart < markup.indexOf('<g data-part="drag-seat-light"') && markup.indexOf('<g data-part="drag-seat-light"') < gripStart, 'contact light inherits the receiving surface');
   for (const rib of DA.ribs) assert.ok(markup.indexOf(`d="${rib}"`) > gripStart, 'ribs rendered inside moving grip');
   assert.ok(markup.indexOf('<g data-part="drag-grasp"') > gripStart);
   // Sample actual composed transforms between every pose, including stroke

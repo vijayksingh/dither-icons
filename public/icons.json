@@ -1586,12 +1586,12 @@
       ],
       "page": "/icons/drag-handle",
       "motion": {
-        "caption": "The grip resists the pull, then snaps back with a short rebound.",
-        "durationMs": 650,
+        "caption": "The grip snaps back into its stops; both yield before the rebound.",
+        "durationMs": 700,
         "stages": [
-          "Grip",
           "Pull",
-          "Snap back"
+          "Catch",
+          "Rebound"
         ]
       }
     },

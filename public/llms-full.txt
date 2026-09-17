@@ -398,7 +398,7 @@ CSS hover animation ends when hover ends. A standalone SVG does not expose React
 | start-at-text | StartAtTextIcon | The caret selects a sentence; its first word is underlined. |
 | listen | ListenIcon | A line is read on the page; the two sound arcs answer outward. |
 | read-aloud | ReadAloudIcon | The microphone receives speech; the transcript below responds word by word. |
-| drag-handle | DragHandleIcon | The grip resists the pull, then snaps back with a short rebound. |
+| drag-handle | DragHandleIcon | The grip snaps back into its stops; both yield before the rebound. |
 | skip-block | SkipBlockIcon | The margin bracket bypasses one text block and settles beside the next. |
 | collapse-rail | CollapseRailIcon | The control rail retracts into its top tab while the reading lines stay still. |
 | headphones | HeadphonesIcon | The earcups seat inward; their drivers answer inside the fixed headband. |

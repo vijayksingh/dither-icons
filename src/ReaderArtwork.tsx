@@ -4,7 +4,7 @@ import {READING_FOCUS_ART, READING_FOCUS_GEOMETRY} from './motions/reading-focus
 import {START_AT_TEXT_ART, START_AT_TEXT_GEOMETRY} from './motions/start-at-text';
 import {LISTEN_ART, LISTEN_GEOMETRY} from './motions/listen';
 import {READ_ALOUD_ART, READ_ALOUD_GEOMETRY} from './motions/read-aloud';
-import {DRAG_HANDLE_ART, DRAG_HANDLE_GEOMETRY} from './motions/drag-handle';
+import {DRAG_HANDLE_ART, DRAG_HANDLE_GEOMETRY, dragSeatArt} from './motions/drag-handle';
 import {SKIP_BLOCK_ART, SKIP_BLOCK_GEOMETRY} from './motions/skip-block';
 import {COLLAPSE_RAIL_ART, COLLAPSE_RAIL_GEOMETRY} from './motions/collapse-rail';
 import {HEADPHONES_ART, HEADPHONES_GEOMETRY} from './motions/headphones';
@@ -38,14 +38,21 @@ export function ReaderArtwork({name, draw, texture}: {name: string; draw: Draw; 
   const detail = (d: string) => line(d, controls ? (texture === 'outline' ? CONTROL.outlineResponse : CONTROL.response) : (texture === 'outline' ? OUTLINE.response : INK.response));
   if (name === 'drag-handle') {
     const A = DRAG_HANDLE_ART, G = DRAG_HANDLE_GEOMETRY;
+    const seat = dragSeatArt(contourWidth(G.contour), texture === 'outline' ? CONTROL.outlineResponse : CONTROL.response);
     const referenceMaskId = `${id}-drag-reference-mask`;
     return <>
       <defs><mask id={referenceMaskId} maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
         <rect width="24" height="24" fill="white"/>
         <g data-part="drag-grip-cut"><path d={A.grip} fill="black" stroke="black" strokeWidth={contourWidth(G.contour)} strokeLinejoin="round"/></g>
       </mask></defs>
-      <g opacity={CONTROL.referenceOpacity} mask={`url(#${referenceMaskId})`}>{detail(A.registration)}</g>
-      {accent('drag-contact', <ellipse cx={G.shadowX} cy={G.shadowY} rx={G.shadowRadiusX} ry={G.shadowRadiusY}/>)}
+      <g mask={`url(#${referenceMaskId})`}>
+        <g opacity={CONTROL.referenceOpacity}>{detail(A.topGuides)}</g>
+        <g data-part="drag-stop">
+          <g opacity={CONTROL.referenceOpacity}>{detail(seat.stop)}</g>
+          {accent('drag-seat-light', detail(seat.seam))}
+          {seat.ticks.map((d, i) => <g key={i}>{accent(`drag-impact-${i}`, detail(d))}</g>)}
+        </g>
+      </g>
       <g data-part="drag-grip">
         {ink(A.grip, G.contour)}
         <g opacity={INK.contextOpacity}>{A.ribs.map(d => <g key={d}>{ink(d, INK.text, 'text')}</g>)}</g>
