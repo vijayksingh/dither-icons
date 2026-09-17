@@ -38,14 +38,19 @@ export function ReaderArtwork({name, draw, texture}: {name: string; draw: Draw; 
   const detail = (d: string) => line(d, controls ? (texture === 'outline' ? CONTROL.outlineResponse : CONTROL.response) : (texture === 'outline' ? OUTLINE.response : INK.response));
   if (name === 'drag-handle') {
     const A = DRAG_HANDLE_ART, G = DRAG_HANDLE_GEOMETRY;
+    const referenceMaskId = `${id}-drag-reference-mask`;
     return <>
-      <g opacity={CONTROL.referenceOpacity}>{detail(A.registration)}</g>
+      <defs><mask id={referenceMaskId} maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+        <rect width="24" height="24" fill="white"/>
+        <g data-part="drag-grip-cut"><path d={A.grip} fill="black" stroke="black" strokeWidth={contourWidth(G.contour)} strokeLinejoin="round"/></g>
+      </mask></defs>
+      <g opacity={CONTROL.referenceOpacity} mask={`url(#${referenceMaskId})`}>{detail(A.registration)}</g>
+      {accent('drag-contact', <ellipse cx={G.shadowX} cy={G.shadowY} rx={G.shadowRadiusX} ry={G.shadowRadiusY}/>)}
       <g data-part="drag-grip">
         {ink(A.grip, G.contour)}
         <g opacity={INK.contextOpacity}>{A.ribs.map(d => <g key={d}>{ink(d, INK.text, 'text')}</g>)}</g>
         {accent('drag-grasp', detail(A.grasp))}
       </g>
-      {accent('drag-destination', detail(A.destination))}
     </>;
   }
   if (name === 'skip-block') {

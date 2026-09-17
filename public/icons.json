@@ -1586,12 +1586,12 @@
       ],
       "page": "/icons/drag-handle",
       "motion": {
-        "caption": "The ribbed grip moves diagonally; a corner marks its new position.",
-        "durationMs": 1120,
+        "caption": "The grip lifts, leans behind the pull, then lands with a short weighted settle.",
+        "durationMs": 1580,
         "stages": [
-          "Grasp",
-          "Move",
-          "Place"
+          "Pick up",
+          "Drag",
+          "Release"
         ]
       }
     },

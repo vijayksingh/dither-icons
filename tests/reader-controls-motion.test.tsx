@@ -10,7 +10,7 @@ import {SETS} from '../demo/MotionStudies';
 import {filterIcons} from '../demo/model';
 import {sharePage, socialMetadata} from '../demo/content/social';
 import {READER_CONTROLS_STYLE as INK} from '../src/motions/reader-controls-style';
-import {dragHandle, DRAG_HANDLE_ART as DA, DRAG_HANDLE_GEOMETRY as D, DRAG_HANDLE_TIMING as DT} from '../src/motions/drag-handle';
+import {dragHandle, dragTransform, DRAG_HANDLE_POSES as DP, DRAG_HANDLE_ART as DA, DRAG_HANDLE_GEOMETRY as D, DRAG_HANDLE_TIMING as DT} from '../src/motions/drag-handle';
 import {skipBlock, SKIP_BLOCK_ART as SA, SKIP_BLOCK_GEOMETRY as S, SKIP_BLOCK_TIMING as ST} from '../src/motions/skip-block';
 import {collapseRail, COLLAPSE_RAIL_ART as CA, COLLAPSE_RAIL_GEOMETRY as C, COLLAPSE_RAIL_TIMING as CT} from '../src/motions/collapse-rail';
 import {headphones, HEADPHONES_ART as HA, HEADPHONES_GEOMETRY as H, HEADPHONES_TIMING as HT} from '../src/motions/headphones';
@@ -43,23 +43,45 @@ test('reader controls expose exactly four named additions, a separate studio fam
   }
 });
 
-test('Drag Handle carries its ribs as a rigid grip and responds only at the destination', () => {
-  assert.equal(track(dragHandle, 'drag-grip').frames.find(f => f.at === DT.carry)!.transform, `translate(${D.dx}px, ${D.dy}px)`);
+test('Drag Handle picks up a rigid body, trails the pull and dissipates release momentum', () => {
+  const grip = track(dragHandle, 'drag-grip'), contact = track(dragHandle, 'drag-contact');
+  assert.equal(grip.frames.find(f => f.at === DT.carry)!.transform, dragTransform(DP.carried));
+  assert.equal(grip.origin, `${D.pivotX}px ${D.pivotY}px`);
+  assert.equal(D.pivotY, D.ribY[0], 'the body hangs below the caught upper rib');
+  assert.deepEqual(track(dragHandle, 'drag-grip-cut').frames, grip.frames, 'reference occlusion follows the whole rigid body');
+  assert.equal(track(dragHandle, 'drag-grip-cut').origin, grip.origin);
+  assert.equal(grip.frames.find(f => f.at === DT.grasp)!.transform, dragTransform(DP.rest), 'grasp precedes the body taking up load');
+  assert.ok(DP.load.y > 0 && DP.lifted.y < 0);
+  assert.ok(DP.carried.angle > 0 && DP.braking.angle < 0, 'body trails acceleration and swings through deceleration');
+  assert.ok(DP.braking.x > DP.placed.x, 'release has bounded lateral overshoot');
+  assert.ok(DP.landed.angle < 0 && DP.rebound.angle > 0 && DP.placed.angle === 0);
+  assert.ok(Math.abs(DP.rebound.angle) < Math.abs(DP.landed.angle), 'landing dissipates rather than repeating a wiggle');
+  assert.ok(DP.returning.angle < 0, 'opposite pull reverses the inertial lean');
+  assert.ok(Math.abs(DP.homeRebound.angle) < Math.abs(DP.homeLand.angle));
   assert.ok(!dragHandle.tracks.some(t => /rib|registration/.test(t.part)), 'ribs do not drift and the reference stays still');
-  darkThrough(dragHandle, 'drag-destination', DT.carry);
-  assert.ok(DT.clear < DT.return);
+  darkThrough(dragHandle, 'drag-contact', DT.grasp);
+  assert.ok(contact.frames.find(f => f.at === DT.land)!.opacity! > contact.frames.find(f => f.at === DT.lift)!.opacity!, 'contact is tighter and darker than suspension');
+  assert.deepEqual(contact.frames.map(f => [f.at, f.easing]), grip.frames.map(f => [f.at, f.easing]), 'footprint shares the body clock and easing');
   const markup = svgFor('drag-handle');
   const gripStart = markup.indexOf('<g data-part="drag-grip"');
   assert.ok(markup.indexOf(`d="${DA.registration}"`) < gripStart);
   for (const rib of DA.ribs) assert.ok(markup.indexOf(`d="${rib}"`) > gripStart, 'ribs rendered inside moving grip');
   assert.ok(markup.indexOf('<g data-part="drag-grasp"') > gripStart);
-  // The rigid translated object, including stroke width, stays on the grain field.
-  for (let i = 0; i <= 100; i++) {
-    const f = i / 100;
-    assert.ok(D.left + D.dx * f - D.contour / 2 > 0);
-    assert.ok(D.right + D.dx * f + D.contour / 2 < 24);
-    assert.ok(D.top + D.dy * f - D.contour / 2 > 0);
-    assert.ok(D.bottom + D.dy * f + D.contour / 2 < 24);
+  // Sample actual composed transforms between every pose, including stroke
+  // caps. Every easing stays within its endpoints; test the complete sweep.
+  const parse = (value: string) => value.match(/-?\d+(?:\.\d+)?/g)!.map(Number);
+  for (let n = 1; n < grip.frames.length; n++) {
+    const a = parse(grip.frames[n - 1].transform!), b = parse(grip.frames[n].transform!);
+    for (let i = 0; i <= 100; i++) {
+      const [dx, dy, degrees] = a.map((v, j) => v + (b[j] - v) * i / 100);
+      const angle = degrees * Math.PI / 180;
+      for (const x of [D.left, D.right]) for (const y of [D.top, D.bottom]) {
+        const px = D.pivotX + dx + (x - D.pivotX) * Math.cos(angle) - (y - D.pivotY) * Math.sin(angle);
+        const py = D.pivotY + dy + (x - D.pivotX) * Math.sin(angle) + (y - D.pivotY) * Math.cos(angle);
+        assert.ok(px > D.contour / 2 && px < 24 - D.contour / 2);
+        assert.ok(py > D.contour / 2 && py < 24 - D.contour / 2);
+      }
+    }
   }
   assert.ok(D.ribStart > D.left + D.contour && D.ribEnd < D.right - D.contour);
 });
