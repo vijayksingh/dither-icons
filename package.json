@@ -1,6 +1,6 @@
 {
   "name": "@unlocalhosted/dither-icons",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Original dithered, animated SVG icons for React",
   "type": "module",
   "license": "MIT",
@@ -23,14 +23,15 @@
   },
   "scripts": {
     "dev": "vite --host 127.0.0.1 --port 4192",
-    "build": "npm run generate:docs && npm run generate:social && tsup src/index.tsx --format esm --dts --external react --clean && node scripts/package-gallery.mjs && vite build && tsx scripts/generate-share-pages.ts",
+    "build": "npm run generate:docs && npm run generate:registry && npm run generate:social && tsup src/index.tsx --format esm --dts --external react --clean && node scripts/package-gallery.mjs && vite build && tsx scripts/generate-share-pages.ts",
     "typecheck": "tsc --noEmit",
     "verify:deployment": "node scripts/verify-deployment.mjs",
     "verify:consumer": "node scripts/verify-consumer.mjs",
     "test": "tsx --test tests/*.test.tsx",
     "prepack": "npm run generate:docs && tsup src/index.tsx --format esm --dts --external react --clean",
     "generate:docs": "tsx scripts/generate-docs.tsx",
-    "generate:social": "tsx scripts/generate-social.tsx"
+    "generate:social": "tsx scripts/generate-social.tsx",
+    "generate:registry": "node scripts/build-registry.mjs"
   },
   "peerDependencies": {
     "react": ">=18"

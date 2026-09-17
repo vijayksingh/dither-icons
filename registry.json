@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "dither-icons",
+  "homepage": "https://dithered.dev",
+  "items": [
+    {
+      "name": "dither-icon",
+      "type": "registry:ui",
+      "title": "Dither Icon",
+      "description": "A client-safe adapter for the animated Dither Icons React library. Choose any valid icon name from icons.json and keep the host action and accessible label on the surrounding control.",
+      "dependencies": ["@unlocalhosted/dither-icons@^0.2.3"],
+      "files": [
+        {
+          "path": "registry/default/dither-icon.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    }
+  ]
+}

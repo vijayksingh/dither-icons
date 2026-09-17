@@ -62,6 +62,12 @@ export const docs: Doc[] = [
       { type: 'code', language: 'sh', title: 'From the library checkout · Node 22+', value: 'npm install\nnpm run dev\n\n# Package + public site\nnpm run build\n\n# Package only\nnpm pack' },
       { type: 'text', text: 'The development catalog runs on port 4192. The build creates the React package in dist and the public site in site-dist. AI.md and icons.json are included in the package; the website also serves the full guides and visual references.' },
     ] },
+    { id: 'shadcn-registry', title: 'Use with shadcn', blocks: [
+      { type: 'text', text: 'Install the Dither Icon adapter into a shadcn project. The registry adds @unlocalhosted/dither-icons as a dependency and places a client-safe DitherIcon export in your components/ui directory.' },
+      { type: 'code', language: 'sh', title: 'Terminal', value: 'npx shadcn@latest add https://dithered.dev/r/dither-icon.json' },
+      { type: 'code', language: 'tsx', title: 'Reader.tsx', value: `import { DitherIcon } from '@/components/ui/dither-icon';\n\n<button type="button" aria-label="Listen to article" className="di-trigger">\n  <DitherIcon name="listen" size={24} texture="solid" />\n</button>` },
+      { type: 'note', text: 'The adapter preserves the library’s React playback, reduced-motion behavior, and three materials. Use icons.json for valid names. Keep the real action, state, loading feedback, and accessible label on the host control.' },
+    ] },
   ] },
   { slug: 'react', title: 'React API', eyebrow: 'REACT API', description: 'Component imports, SVG props, and playback controls.', sections: [
     { id: 'named-components', title: 'Import a component', blocks: [

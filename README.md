@@ -58,6 +58,16 @@ Install the package from npm:
 npm install @unlocalhosted/dither-icons
 ```
 
+### Use with shadcn
+
+Add the client-safe adapter from the public registry:
+
+```sh
+npx shadcn@latest add https://dithered.dev/r/dither-icon.json
+```
+
+This adds `components/ui/dither-icon.tsx` and installs the library dependency. Use any valid `name` from [icons.json](icons.json), or install directly from the GitHub registry source with `npx shadcn@latest add vijayksingh/dither-icons/dither-icon`.
+
 Import a named component and put the action on a real control:
 
 ```tsx
