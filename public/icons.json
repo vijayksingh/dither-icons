@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "package": "@unlocalhosted/dither-icons",
   "version": "0.2.2",
-  "count": 73,
+  "count": 77,
   "license": "MIT",
   "installation": {
     "publishedToNpm": true,
@@ -1464,6 +1464,109 @@
           "Frame",
           "Recede",
           "Reveal"
+        ]
+      }
+    },
+    {
+      "name": "reading-focus",
+      "component": "ReadingFocusIcon",
+      "label": "Reading Focus",
+      "category": "Learning",
+      "description": "A timer engages before a reading window advances one line.",
+      "keywords": [
+        "cognimated",
+        "reader",
+        "guided reading",
+        "timer",
+        "focused reading",
+        "paced"
+      ],
+      "page": "/icons/reading-focus",
+      "motion": {
+        "caption": "The timer engages; a reading window advances one line.",
+        "durationMs": 1420,
+        "stages": [
+          "Engage",
+          "Advance",
+          "Attend"
+        ]
+      }
+    },
+    {
+      "name": "start-at-text",
+      "component": "StartAtTextIcon",
+      "label": "Start at Text",
+      "category": "Interface",
+      "description": "Choose the word or sentence where reading begins.",
+      "keywords": [
+        "cognimated",
+        "reader",
+        "starting word",
+        "starting sentence",
+        "choose start",
+        "caret",
+        "seek"
+      ],
+      "page": "/icons/start-at-text",
+      "motion": {
+        "caption": "The caret chooses a word; its starting line appears.",
+        "durationMs": 1280,
+        "stages": [
+          "Place",
+          "Identify",
+          "Hold"
+        ]
+      }
+    },
+    {
+      "name": "listen",
+      "component": "ListenIcon",
+      "label": "Listen",
+      "category": "Media",
+      "description": "Listen as a written phrase becomes spoken audio.",
+      "keywords": [
+        "cognimated",
+        "reader",
+        "listening",
+        "text to speech",
+        "tts",
+        "page speaks",
+        "audio"
+      ],
+      "page": "/icons/listen",
+      "motion": {
+        "caption": "A written phrase leads; sound travels out from the page.",
+        "durationMs": 1480,
+        "stages": [
+          "Read",
+          "Speak",
+          "Carry"
+        ]
+      }
+    },
+    {
+      "name": "read-aloud",
+      "component": "ReadAloudIcon",
+      "label": "Read Aloud",
+      "category": "Media",
+      "description": "Read text into a microphone for speech-guided reading.",
+      "keywords": [
+        "cognimated",
+        "reader",
+        "microphone",
+        "speech recognition",
+        "voice",
+        "read aloud",
+        "verified reading"
+      ],
+      "page": "/icons/read-aloud",
+      "motion": {
+        "caption": "The microphone receives speech; the text responds in order.",
+        "durationMs": 1540,
+        "stages": [
+          "Receive",
+          "Relate",
+          "Retain"
         ]
       }
     }

@@ -1,3 +1,7 @@
+import {READING_FOCUS_ART} from './motions/reading-focus';
+import {START_AT_TEXT_ART} from './motions/start-at-text';
+import {LISTEN_ART} from './motions/listen';
+import {READ_ALOUD_ART} from './motions/read-aloud';
 import {BACK_ART} from './motions/arrow-left';
 import {HISTORY_ART} from './motions/history';
 import {PANEL_CLOSE_ART} from './motions/panel-left-close';
@@ -58,6 +62,7 @@ const r=(x:number,y:number,w:number,h:number,motion?:Motion)=>({...part(rect(x,y
 const o=(x:number,y:number,rad:number,motion?:Motion)=>({...part(ring(x,y,rad),motion),path:`M${x-rad+1} ${y}a${rad-1} ${rad-1} 0 1 0 ${2*(rad-1)} 0a${rad-1} ${rad-1} 0 1 0 -${2*(rad-1)} 0`,stroke:true});
 const def=(name:string,category:string,description:string,...parts:Part[]):IconDefinition=>({name,category,description,parts});
 const vector=(path:string):Part=>({cells:[],path});
+const strokeVector=(path:string):Part=>({...vector(path),stroke:true});
 export const definitions = [
  def('bell','Interface','The bell swings from its crown.',p([[7,5],[10,3],[14,3],[17,5],[17,15],[20,18],[4,18],[7,15]],'ring'),r(10,20,4,2)),
  def('heart','Interface','A double beat, then back to rest.',p([[3,5],[9,5],[12,8],[15,5],[21,5],[22,7],[22,12],[12,22],[2,12],[2,7]],'pulse')),
@@ -132,6 +137,10 @@ export const definitions = [
  {...def('history','Navigation','Revisit earlier activity or saved workspace versions.',{...vector(HISTORY_ART.ring),stroke:true},{...vector(HISTORY_ART.head),stroke:true},{...vector(HISTORY_ART.minute),stroke:true},{...vector(HISTORY_ART.hour),stroke:true}),label:'History',keywords:['past','activity','recent','clock','versions','checkpoints']},
  {...def('panel-left-close','Interface','Hide the left drawer while retaining the active workspace.',vector(PANEL_CLOSE_ART.frame),vector(PANEL_CLOSE_ART.panel)),label:'Collapse Panel',keywords:['hide file explorer','close sidebar','drawer','collapse','editor']},
  {...def('zoom-out','Navigation','Reduce magnification to reveal the surrounding map.',vector(ZOOM_OUT_ART.body),{...vector(ZOOM_OUT_ART.minus),stroke:true}),label:'Zoom Out',keywords:['map','zoom','magnification','minus','context','atlas']},
+ {...def('reading-focus','Learning','A timer engages before a reading window advances one line.',...[READING_FOCUS_ART.case,READING_FOCUS_ART.stem,READING_FOCUS_ART.crown,READING_FOCUS_ART.shoulder,READING_FOCUS_ART.brackets,...READING_FOCUS_ART.lines].map(strokeVector)),label:'Reading Focus',keywords:['cognimated','reader','guided reading','timer','focused reading','paced']},
+ {...def('start-at-text','Interface','Choose the word or sentence where reading begins.',strokeVector(START_AT_TEXT_ART.context),strokeVector(START_AT_TEXT_ART.caret),...START_AT_TEXT_ART.words.map(strokeVector)),label:'Start at Text',keywords:['cognimated','reader','starting word','starting sentence','choose start','caret','seek']},
+ {...def('listen','Media','Listen as a written phrase becomes spoken audio.',strokeVector(LISTEN_ART.page),strokeVector(LISTEN_ART.near),strokeVector(LISTEN_ART.far),strokeVector(LISTEN_ART.context),...LISTEN_ART.words.map(strokeVector)),label:'Listen',keywords:['cognimated','reader','listening','text to speech','tts','page speaks','audio']},
+ {...def('read-aloud','Media','Read text into a microphone for speech-guided reading.',strokeVector(READ_ALOUD_ART.capsule),strokeVector(READ_ALOUD_ART.cradle),strokeVector(READ_ALOUD_ART.context),...READ_ALOUD_ART.words.map(strokeVector)),label:'Read Aloud',keywords:['cognimated','reader','microphone','speech recognition','voice','read aloud','verified reading']},
 ] as const;
 export type IconName = typeof definitions[number]['name'];
 

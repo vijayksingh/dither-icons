@@ -1,0 +1,119 @@
+{
+  "result": {
+    "type": "object",
+    "value": {
+      "icons": [
+        {
+          "animations": 0,
+          "name": "reading-focus",
+          "transforms": [
+            {
+              "opacity": "1",
+              "part": "reading-crown",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "reading-window",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "reading-line-response",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "reading-rim-response",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "animations": 0,
+          "name": "start-at-text",
+          "transforms": [
+            {
+              "opacity": "1",
+              "part": "start-caret",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "start-word-line",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "start-registration",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "animations": 0,
+          "name": "listen",
+          "transforms": [
+            {
+              "opacity": "0",
+              "part": "listen-word-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "listen-word-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "listen-near",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "part": "listen-far",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "listen-front",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "animations": 0,
+          "name": "read-aloud",
+          "transforms": [
+            {
+              "opacity": "1",
+              "part": "aloud-diaphragm",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "aloud-phrase-0",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "aloud-phrase-1",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "aloud-input",
+              "transform": "none"
+            },
+            {
+              "opacity": "0",
+              "part": "aloud-registration",
+              "transform": "none"
+            }
+          ]
+        }
+      ],
+      "reduced": true
+    }
+  }
+}

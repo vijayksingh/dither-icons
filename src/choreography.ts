@@ -1,3 +1,4 @@
+import {reader} from './motions/reader';
 import {navigationTools} from './motions/navigation-tools';
 import {platformActions} from './motions/platform-actions';
 import {dataFlow} from './motions/data-flow';
@@ -31,6 +32,7 @@ export type Study = { duration:number; caption:string; stages:string[]; tracks:T
 const EASE={settle:'cubic-bezier(.22,1,.36,1)',accelerate:'cubic-bezier(.55,0,.85,.45)',smooth:'cubic-bezier(.4,0,.2,1)'};
 const track=(part:string,origin:string,frames:Frame[]):Track=>({part,origin,frames});
 export const studies:Record<string,Study>={
+ ...reader,
  ...navigationTools,...learningWorkflow,...learningPractice,...dataFlow,...platformActions,...platformTools,...navigation,...files,...learning,...platformNavigation,...communication,...media,...development,...controls,...presence,...atmosphere,
  bell:{duration:940,caption:'The shell swings; the clapper follows.',stages:['Anticipate','Strike','Resonate'],tracks:[
   track('shell','12px 5px',[

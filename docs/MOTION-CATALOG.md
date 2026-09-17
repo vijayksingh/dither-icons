@@ -4,6 +4,19 @@ Every icon has an individual Interface Craft critique: semantic meaning, identit
 
 The four accepted foundation performances remain intact. The remaining icons use individually authored tracks, with no catalog icon using the legacy generic presets. Native React and standalone SVG share these timing definitions.
 
+## Cognimated reader / 01 — unreleased
+
+| Icon / individual review | Meaning and invariant | Sequence | Duration |
+| --- | --- | --- | --- |
+| [Reading Focus](icon-reviews/reading-focus.md) | Attend to text within a retained timer case; prose and case never move | Engage / Advance / Attend | 1420ms |
+| [Start at Text](icon-reviews/start-at-text.md) | Choose an entry word; I-beam and surrounding text remain visible | Place / Identify / Hold | 1280ms |
+| [Listen](icon-reviews/listen.md) | Page speaks; page contour and both sound arcs remain visible | Read / Speak / Carry | 1480ms |
+| [Read Aloud](icon-reviews/read-aloud.md) | Speech input relates to text; capsule, cradle and phrase remain visible | Receive / Relate / Retain | 1540ms |
+
+The studio opens **Cognimated reader**. These four extend the catalog to 77. [Source mapping](PLATFORM-ICONS.md#cognimated-reader--01) and [browser evidence](motion-evidence/cognimated-reader-01/README.md) accompany the individual reviews. Earlier 73 timelines and the playback engine remain unchanged. No platform integration or release is included.
+
+## Previously reviewed catalog
+
 | Icon / individual review | Semantic meaning | Sequence | Duration |
 | --- | --- | --- | --- |
 | [arrow-right](icon-reviews/arrow-right.md) | continue or advance horizontally | Draw back / Extend / Resolve | 900ms |
@@ -144,7 +157,7 @@ The user requested retaining and committing these four, then corrected the selec
 
 **Check, Close, Plus, Lock** received the focused four-icon pass (the original Close/Plus gestures below were subsequently rejected and replaced). The studio defaults to **Actions and access**. Check traces its ascending stroke before a tip response; Close tightens along fixed diagonals; Plus opens its axes in sequence with individual endpoint responses; Lock holds tension above a fixed housing. Rounded contours, clean crossings and closed-lock identity preserve compact reading. Each has an individual Interface Craft critique, a separate timing source and [browser evidence](motion-evidence/refinement-06/). The previous 64 performances retain their tracks.
 
-**Current status: 73 implemented and individually reviewed; no icons remain in the refinement queue.** The original catalog and four Platform / 09 additions have individual critiques and rendered evidence. The user requested publication on 2026-09-10; all 73 are included in the 0.2.0 release. Sections below preserve the sequence of earlier reviews and corrections.
+**Historical status before Cognimated reader: 73 implemented and individually reviewed; no icons remained in that refinement queue.** The original catalog and four Platform / 09 additions have individual critiques and rendered evidence. The user requested publication on 2026-09-10; all 73 are included in the 0.2.0 release. Sections below preserve the sequence of earlier reviews and corrections.
 
 ### Semantic correction and Unlock state — 2026-09-10
 

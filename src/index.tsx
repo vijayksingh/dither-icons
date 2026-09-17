@@ -152,3 +152,8 @@ export const HistoryIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(
 export const PanelLeftCloseIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function PanelLeftCloseIcon(props,ref){return <DitherIcon {...props} name="panel-left-close" ref={ref}/>;});
 
 export const ZoomOutIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function ZoomOutIcon(props,ref){return <DitherIcon {...props} name="zoom-out" ref={ref}/>;});
+
+export const ReadingFocusIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function ReadingFocusIcon(props,ref){return <DitherIcon {...props} name="reading-focus" ref={ref}/>;});
+export const StartAtTextIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function StartAtTextIcon(props,ref){return <DitherIcon {...props} name="start-at-text" ref={ref}/>;});
+export const ListenIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function ListenIcon(props,ref){return <DitherIcon {...props} name="listen" ref={ref}/>;});
+export const ReadAloudIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function ReadAloudIcon(props,ref){return <DitherIcon {...props} name="read-aloud" ref={ref}/>;});

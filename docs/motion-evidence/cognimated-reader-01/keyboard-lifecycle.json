@@ -1,0 +1,242 @@
+{
+  "lifecycle": [
+    {
+      "label": "Reading Focus",
+      "before": {
+        "result": {
+          "type": "object",
+          "value": [
+            {
+              "count": 4,
+              "name": "reading-focus",
+              "start": 126442.4219999928
+            }
+          ]
+        }
+      },
+      "after": {
+        "result": {
+          "type": "object",
+          "value": [
+            {
+              "count": 4,
+              "name": "reading-focus",
+              "start": 126442.4219999928
+            },
+            {
+              "count": 3,
+              "name": "start-at-text",
+              "start": 126525.7500000298
+            }
+          ]
+        }
+      },
+      "finished": {
+        "result": {
+          "type": "object",
+          "value": [
+            {
+              "animations": 0,
+              "name": "reading-focus",
+              "playing": false
+            },
+            {
+              "animations": 0,
+              "name": "start-at-text",
+              "playing": false
+            },
+            {
+              "animations": 0,
+              "name": "listen",
+              "playing": false
+            },
+            {
+              "animations": 0,
+              "name": "read-aloud",
+              "playing": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "Start at Text",
+      "before": {
+        "result": {
+          "type": "object",
+          "value": [
+            {
+              "count": 3,
+              "name": "start-at-text",
+              "start": 128009.073000052
+            }
+          ]
+        }
+      },
+      "after": {
+        "result": {
+          "type": "object",
+          "value": [
+            {
+              "count": 3,
+              "name": "start-at-text",
+              "start": 128009.073000052
+            },
+            {
+              "count": 5,
+              "name": "listen",
+              "start": 128092
+            }
+          ]
+        }
+      },
+      "finished": {
+        "result": {
+          "type": "object",
+          "value": [
+            {
+              "animations": 0,
+              "name": "reading-focus",
+              "playing": false
+            },
+            {
+              "animations": 0,
+              "name": "start-at-text",
+              "playing": false
+            },
+            {
+              "animations": 0,
+              "name": "listen",
+              "playing": false
+            },
+            {
+              "animations": 0,
+              "name": "read-aloud",
+              "playing": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "Listen",
+      "before": {
+        "result": {
+          "type": "object",
+          "value": [
+            {
+              "count": 5,
+              "name": "listen",
+              "start": 129609.1
+            }
+          ]
+        }
+      },
+      "after": {
+        "result": {
+          "type": "object",
+          "value": [
+            {
+              "count": 5,
+              "name": "listen",
+              "start": 129609.1
+            },
+            {
+              "count": 5,
+              "name": "read-aloud",
+              "start": null
+            }
+          ]
+        }
+      },
+      "finished": {
+        "result": {
+          "type": "object",
+          "value": [
+            {
+              "animations": 0,
+              "name": "reading-focus",
+              "playing": false
+            },
+            {
+              "animations": 0,
+              "name": "start-at-text",
+              "playing": false
+            },
+            {
+              "animations": 0,
+              "name": "listen",
+              "playing": false
+            },
+            {
+              "animations": 0,
+              "name": "read-aloud",
+              "playing": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "Read Aloud",
+      "before": {
+        "result": {
+          "type": "object",
+          "value": [
+            {
+              "count": 5,
+              "name": "read-aloud",
+              "start": 131259.05200000852
+            }
+          ]
+        }
+      },
+      "after": {
+        "result": {
+          "type": "object",
+          "value": [
+            {
+              "count": 5,
+              "name": "read-aloud",
+              "start": 131259.05200000852
+            }
+          ]
+        }
+      },
+      "finished": {
+        "result": {
+          "type": "object",
+          "value": [
+            {
+              "animations": 0,
+              "name": "reading-focus",
+              "playing": false
+            },
+            {
+              "animations": 0,
+              "name": "start-at-text",
+              "playing": false
+            },
+            {
+              "animations": 0,
+              "name": "listen",
+              "playing": false
+            },
+            {
+              "animations": 0,
+              "name": "read-aloud",
+              "playing": false
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "halfSpeed": {
+    "result": {
+      "description": "0",
+      "type": "number",
+      "value": 0
+    }
+  }
+}

@@ -1,6 +1,6 @@
 # Platform icon mapping
 
-These additions belong to the standalone Dither Icons library. They are ready for deliberate integration into CraftingAttention; this pass does not change platform call sites.
+These additions belong to the standalone Dither Icons library. Earlier batches target CraftingAttention; Cognimated reader batches target its reading controls. Each records its integration boundary below.
 
 ## Platform / 01
 
@@ -135,3 +135,20 @@ Source inspected 2026-09-10 before selection. These are additions to the separat
 | Zoom Out / `ZoomOutIcon` | Reduce curriculum-map magnification | `app/src/routes/paths.universe.tsx:448`; `ca-map-zoom`, detail 0.86 |
 
 Collapse Panel complements the existing File Explorer opening gesture. History does not restore a Checkpoint; Back does not mutate routing; Zoom Out does not dispatch map events. Native controls retain those effects and their actual accessible labels/state. Apply UI-2/4, COLOR-2/5, A11Y-2/4 and MOTION-1/4/6/7. Use semantic currentColor, labeled targets and still compact solid/outline for frequently repeated actions. The detailed gestures are available at larger entry points. All four exports are introduced in 0.2.0.
+
+## Cognimated reader / 01
+
+Source inspected 2026-09-17 in the adjacent `web-absorb` checkout. These four exports are **unreleased**, local library additions; no platform source was modified.
+
+| Export | Existing control | Concrete source in web-absorb |
+| --- | --- | --- |
+| `ReadingFocusIcon` | Start guided reading / Reading timer | `extension/content/reading-focus-timer.js:1020`; `.guide-toggle`, `_toggleGuide()` at line 1242 |
+| `StartAtTextIcon` | Choose guided reading starting word | `extension/content/reading-focus-timer.js:1032`; `.start-picker`, `_toggleStartPicker()` at line 1243 |
+| `ListenIcon` | Listen reading mode | `extension/content/reading-focus-timer.js:1047`; `data-reading-mode="listen"`, mode change listener at line 1252 |
+| `ReadAloudIcon` | Read aloud reading mode | `extension/content/reading-focus-timer.js:1048`; `data-reading-mode="read"`, mode change listener at line 1252 |
+
+Reading Focus uses a reading window inside a stopwatch, distinct from Learning Rhythm's weighted metronome and Gauge's calibrated needle. Start at Text places a caret among retained words. Listen sends sound out of a document, distinct from Volume's loudspeaker. Read Aloud combines microphone intake and subsequent text response; it never shares Listen's outward wave story.
+
+Keep native labels, pressed/disabled state, tap targets, and keyboard behavior. Still solid/outline is appropriate at 16–24px; dither is intended for 48px and above. The host remains authoritative for elapsed reading time, selected start, synthesized speech, microphone permission, STT availability and recognized reading progress. These finite gestures cannot certify a recognized word or grant progress; no success ticks or completed-state morphs appear. Reduced motion and `animate={false}` retain all identifying parts at rest. React finishes an initiated gesture after departure and ignores overlapping triggers. Standalone SVG exports carry identical tracks, but CSS hover playback ends on pointer departure; use a focusable parent `.di-trigger` for keyboard activation.
+
+Compare the **Cognimated reader** studio family and [individual review evidence](motion-evidence/cognimated-reader-01/README.md) before future call-site integration.

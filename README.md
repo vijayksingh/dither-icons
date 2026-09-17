@@ -2,7 +2,7 @@
 
 **Dithered, animated SVG icons for React.**
 
-73 original icons in dither, solid, and outline. Each has its own animation: a bell swings, a download arrow lands, a lock resists a shake. Use the React components or export individual SVGs.
+77 original icons in dither, solid, and outline. Each has its own animation: a bell swings, a download arrow lands, a lock resists a shake. Use the React components or export individual SVGs. The four Cognimated reader icons are unreleased additions in this checkout.
 
 [Get started](#get-started) · [Documentation](public/docs/introduction.md) · [For AI agents](AI.md) · [Contributing](CONTRIBUTING.md) · [MIT license](LICENSE)
 
@@ -19,9 +19,9 @@
 - **Context for your agent.** An exact export manifest, integration guide and labeled visual references ship alongside the code.
 
 <details>
-<summary>See all 73 icons</summary>
+<summary>See all 77 icons</summary>
 
-![All 73 Dither Icons, labeled with their React component exports.](public/reference/icons.svg)
+![All 77 Dither Icons, labeled with their React component exports.](public/reference/icons.svg)
 
 Browse the [machine-readable collection](icons.json) or the [individual motion catalog](docs/MOTION-CATALOG.md).
 
@@ -78,6 +78,10 @@ export function DownloadButton({ onDownload }: { onDownload: () => void }) {
 ### Navigation and workspace
 
 `ArrowLeftIcon` (Back), `HistoryIcon`, `PanelLeftCloseIcon` (Collapse Panel), and `ZoomOutIcon` are available in **0.2.0 and later**. Their motions express navigation intent; the host owns routing, explorer state, history selection, and map magnification.
+
+### Cognimated reader — unreleased
+
+`ReadingFocusIcon`, `StartAtTextIcon`, `ListenIcon`, and `ReadAloudIcon` are available in this source checkout and local builds. Inspect the **Cognimated reader** set in the motion studio. Reading Focus advances a window within a timer; Start at Text places a caret; Listen emits sound from a page; Read Aloud receives speech before text responds. The host retains timer state, seeking, audio playback, microphone permission, and recognition-backed progress. No Cognimated call sites are integrated by this batch. See [control mapping and review evidence](docs/PLATFORM-ICONS.md#cognimated-reader--01).
 
 ### Lock and Unlock
 
@@ -182,7 +186,7 @@ Created by [Vijay Singh](https://github.com/vijayksingh) / Unlocalhosted. Find m
 
 ## Social previews
 
-The production build generates 1200 × 630 PNG previews and crawler-readable HTML for the home page, guides, motion studio, AI page, and all 73 icons. Share an icon URL to show that icon in the preview. Open Graph and Twitter card metadata are present in the initial HTML; crawlers do not need JavaScript.
+The production build generates 1200 × 630 PNG previews and crawler-readable HTML for the home page, guides, motion studio, AI page, and all 77 icons. Share an icon URL after its release to show that icon in the preview. Open Graph and Twitter card metadata are present in the initial HTML; crawlers do not need JavaScript.
 
 The canonical origin defaults to `https://dithered.dev`. To build for another origin:
 
