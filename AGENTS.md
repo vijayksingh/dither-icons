@@ -24,6 +24,8 @@ For every icon, apply Interface Craft's Design Critique and Storyboard Animation
 
 ## Semantic quality and Astra prompting
 
+Read [`docs/ASTRA-HANDOFF.md`](docs/ASTRA-HANDOFF.md) before delegating high-complexity visual work. It defines the required two-phase concept gate and implementation gate. Never send Astra a name-only batch.
+
 Names are not briefs. Never send Astra only a list of icon names or action labels. Before implementation, write a semantic card for every icon:
 
 - **Verb and object:** what changes, and what physical or editorial object carries that change.
@@ -43,6 +45,6 @@ For Cognimated selection commands, preserve these distinctions:
 
 Use the same standard for reader-bar icons: tie motion to the reader object or control state, preserve the article/text invariant, and distinguish every icon from existing `Play`, `Arrow`, `Gauge`, `Path`, `Sparkles`, and `Volume` meanings. Inspect the actual adjacent `web-absorb` call site before selecting a batch; do not infer priority from catalog order.
 
-Astra's task prompt must include the semantic cards, the neighboring-icon comparison, the forbidden motifs, the actual source call sites, and an explicit instruction to challenge or redesign any icon whose first concept is generic decoration. Require individual storyboard/review records to explain the causal meaning, not merely repeat the label. Ask for a compact-size/static-frame self-check before commit; user visual review remains a separate gate and must never be claimed by the agent.
+Astra's task prompt must include the semantic cards, the neighboring-icon comparison, the forbidden motifs, the actual source call sites, and an explicit instruction to challenge or redesign any icon whose first concept is generic decoration. For complex visual work, use Phase A for a no-edit concept packet, then Phase B in the same Astra context for implementation. Require individual storyboard/review records to explain the causal meaning, not merely repeat the label. Ask for a compact-size/static-frame self-check before commit; user visual review remains a separate gate and must never be claimed by the agent.
 
 Cost controls: one Astra agent per coherent batch; finish the semantic design gate before implementation; run focused tests and one build only after the complete batch; do not spend a full build/test cycle on a rejected concept. If user feedback says a batch is shallow, stop the agent, do not append more icons, and re-author the current batch with new instruments. Preserve the rejected commit for traceability, then create one corrective commit.
