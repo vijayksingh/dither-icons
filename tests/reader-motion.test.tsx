@@ -2,6 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import React from 'react';
 import {renderToStaticMarkup} from 'react-dom/server';
+import {Resvg} from '@resvg/resvg-js';
 import * as library from '../src';
 import {styleForStudy} from '../src/choreography';
 import {filterIcons} from '../demo/model';
@@ -11,7 +12,7 @@ import {startAtText, START_AT_TEXT_GEOMETRY as S, START_AT_TEXT_TIMING as ST} fr
 import {listen, LISTEN_GEOMETRY as L, LISTEN_TIMING as LT} from '../src/motions/listen';
 import {readAloud, READ_ALOUD_GEOMETRY as R, READ_ALOUD_TIMING as RT} from '../src/motions/read-aloud';
 import type {Study} from '../src/choreography';
-import {READER_STYLE as INK} from '../src/motions/reader-style';
+import {READER_STYLE as INK, READER_OUTLINE as OUTLINE} from '../src/motions/reader-style';
 import {LISTEN_ART} from '../src/motions/listen';
 
 const names = ['reading-focus', 'start-at-text', 'listen', 'read-aloud'];
@@ -136,6 +137,32 @@ test('reader SVG exports share timing, static meaning, and unique masks across m
         assert.ok(css.includes(`di-${name}-${t.part}`));
         assert.equal(t.frames[0].transform, t.frames.at(-1)!.transform);
       }
+    }
+  }
+});
+
+test('Outline rasterizes as hollow transparent contours, not identical Solid or background overpaint', () => {
+  const samples = [
+    {name: 'reading-focus', core: [14, 5.5], edge: [14, 4.9]},
+    {name: 'start-at-text', core: [4, 6.5], edge: [3.4, 6.5]},
+    {name: 'listen', core: [18.5, 12], edge: [19.1, 12]},
+    {name: 'read-aloud', core: [9, 7], edge: [8.4, 7]},
+  ];
+  const raster = (name: string, texture: library.Texture, size: number) => new Resvg(
+    renderToStaticMarkup(<library.DitherIcon name={name} texture={texture} size={size} animate={false} style={{color: '#c09aff'}}/>),
+  ).render().pixels;
+  const alpha = (pixels: Buffer, point: number[]) => pixels[(Math.floor(point[1] * 8) * 192 + Math.floor(point[0] * 8)) * 4 + 3];
+  const mass = (pixels: Buffer) => pixels.reduce((sum, value, i) => sum + (i % 4 === 3 ? value : 0), 0);
+  assert.ok(INK.contour - 2 * OUTLINE.edge > 0, 'outline needs an open core');
+  for (const {name, core, edge} of samples) {
+    const solid = raster(name, 'solid', 192), outline = raster(name, 'outline', 192);
+    assert.ok(alpha(solid, core) > 240, `${name}: solid spine carries ink`);
+    assert.equal(alpha(outline, core), 0, `${name}: outline spine is actually transparent`);
+    assert.ok(alpha(outline, edge) > 240, `${name}: contour edge stays visible`);
+    for (const size of [16, 24, 48]) {
+      const solidPixels = raster(name, 'solid', size), outlinePixels = raster(name, 'outline', size);
+      assert.notDeepEqual(outlinePixels, solidPixels, `${name}/${size}: materials differ in rendered pixels`);
+      assert.ok(mass(outlinePixels) > 0 && mass(outlinePixels) < mass(solidPixels), `${name}/${size}: outline retains ink at a lighter weight`);
     }
   }
 });

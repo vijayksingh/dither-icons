@@ -15,6 +15,8 @@ The four accepted foundation performances remain intact. The remaining icons use
 
 The studio opens **Cognimated reader**. These four extend the catalog to 77. The 2026-09-17 composition revision replaces all four drawings and retimes their individual gestures. [Source mapping](PLATFORM-ICONS.md#cognimated-reader--01) and [revision checks](motion-evidence/cognimated-reader-refinement/README.md) accompany the reviews. Earlier [browser evidence](motion-evidence/cognimated-reader-01/README.md) depicts the rejected first drawings, not this revision. Earlier 73 timelines and the playback engine remain unchanged. User visual approval, platform integration and release remain separate.
 
+Reader material follow-up: [Outline now has transparent contour cores](motion-evidence/cognimated-reader-outline/README.md), finer text and unchanged actor/timeline bindings. Solid and dither retain the preceding composition revision.
+
 ## Previously reviewed catalog
 
 | Icon / individual review | Semantic meaning | Sequence | Duration |

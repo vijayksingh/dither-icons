@@ -9,6 +9,8 @@ The rejected drawing put a large microphone on the right and scattered short pro
 ## Visual Design
 The capsule centers at x=12, spans x=9–15 and y=3–11. A stationary 10-unit cradle and short stem end above the transcript; its first row spans x=5–19 at y=18, with a second row at 21.5. Contours are 1.5 units, text 1.25 and diaphragm/response details 1. The single diaphragm remains within the capsule even at its full response. All identifying contours remain visible in every frame.
 
+Outline correction: microphone capsule/cradle now use transparent cores and 0.5-unit boundary rails. Transcript strokes stay single-line at 0.9 units; diaphragm, input and word responses use 0.75. The capsule's outer footprint and aperture bounds remain intact while its wall gains a transparent center (MOT-01/05/07/12). Pixel checks verify transparency, visible edge and distinct materials at 16/24/48px. Receiving/word-response timing is unchanged; user optical approval remains pending.
+
 ## Interface Design
 Two small input marks approach from the left; the internal diaphragm receives, then relaxes. Only afterward do the two transcript words receive ordered underlines. Keep transcript and microphone fixed. No detached endpoint witness, checkmark, fake recognized word or success badge is introduced.
 

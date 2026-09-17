@@ -9,6 +9,8 @@ The rejected drawing had an isolated dot-like word, wide gaps and prose heavier 
 ## Visual Design
 Text starts at x=8 on y=6.5/12/17.5; the middle sentence has two substantial 4/4.5-unit words. The I-beam centers at x=4 with 2-unit caps and 4-unit height. Contour/caret is 1.5 units, prose 1.25 and response 1, all round-ended. Its entire sweep stays outside the text, preserving whitespace rather than passing over letters.
 
+Outline correction: I-beam stem/caps now have transparent cores and 0.5-unit boundary rails. Text stays single-line at 0.9 units; entry underline uses 0.75. This outlines the selection instrument without doubling every word. Outer caret extent and gutter remain unchanged (MOT-01/05/07/12), as do all actor names and timing. Pixel tests verify the transparent caret spine and distinct output at 16/24/48px. User optical approval remains pending.
+
 ## Interface Design
 Hold the first line briefly, place the caret beside the next sentence, then underline its first word. Retain the article text throughout. Clear the underline before returning the caret. No decorative backward pickup or detached registration tick remains.
 

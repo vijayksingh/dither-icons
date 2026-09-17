@@ -5,3 +5,12 @@ export const READER_STYLE = {
   response: 1,
   contextOpacity: .72,
 } as const;
+
+/** Outline keeps the same outer footprint, but opens the contour's core.
+ * Prose stays single-line: outlining the smaller letters would add visual noise.
+ */
+export const READER_OUTLINE = {
+  edge: .5,
+  text: .9,
+  response: .75,
+} as const;

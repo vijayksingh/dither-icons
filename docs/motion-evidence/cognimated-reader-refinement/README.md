@@ -1,5 +1,7 @@
 # Cognimated reader — composition revision, 2026-09-17
 
+Follow-up: [distinct Outline material](../cognimated-reader-outline/README.md) replaces the Solid/Outline equivalence described in this historical composition-revision record. Drawings and timelines otherwise remain intact.
+
 This revision implements the previously missed shape/composition/stroke feedback. It is not final visual acceptance. The user retains visual review; no new browser visual-review loop or screenshot capture was performed.
 
 ## Drawings replaced

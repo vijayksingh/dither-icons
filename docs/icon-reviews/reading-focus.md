@@ -9,6 +9,8 @@ The user's screenshot showed a heavy round stopwatch containing cramped brackets
 ## Visual Design
 The case occupies x=4–20, y=5.5–21 with 4-unit corners. A centered crown identifies a timer without a needle or diagonal shoulder. Text aligns at x=10 on three 3.5-unit baselines; the marker occupies a separate x=7 gutter. Shared reader tokens set contour/marker to 1.5, prose to 1.25 and transient underline to 1 unit. Round caps and joins stay consistent. These are design-grid units, not a universal stroke-width standard.
 
+Outline correction: case, crown, stem and margin marker now have transparent cores with 0.5-unit boundary rails inside the same 1.5-unit footprint. Prose uses a single 0.9-unit stroke; underline uses 0.75. The case spine is no longer painted as in Solid. MOT-01/05/07/12 retain silhouette, clearances, moving masks and shared tracks. Pixel tests verify transparent core, visible boundary and distinct output at 16/24/48px. Timing is unchanged; user optical approval and browser QA remain pending.
+
 ## Interface Design
 Press the crown, advance the marker one line, then underline that line. Keep the case and prose stationary. Clear the underline before returning the marker. Removing paired brackets and exterior rim sparks leaves the reading action as the primary event.
 
