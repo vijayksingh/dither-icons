@@ -21,7 +21,7 @@ const darkThrough = (study: Study, part: string, time: number) => assert.ok(trac
 
 test('reader batch exposes exactly four additions in catalog, search and named exports', () => {
   assert.deepEqual(SETS['Cognimated reader'], names);
-  assert.deepEqual(filterIcons('cognimated reader', 'All icons').map(d => d.name), [...names, ...SETS['Cognimated reader controls']]);
+  assert.deepEqual(filterIcons('cognimated reader', 'All icons').map(d => d.name), [...names, ...SETS['Cognimated reader controls'], ...SETS['Cognimated pace and navigation']]);
   for (const [name, Component] of [
     ['reading-focus', library.ReadingFocusIcon], ['start-at-text', library.StartAtTextIcon],
     ['listen', library.ListenIcon], ['read-aloud', library.ReadAloudIcon],
