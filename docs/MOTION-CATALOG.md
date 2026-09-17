@@ -8,12 +8,12 @@ The four accepted foundation performances remain intact. The remaining icons use
 
 | Icon / individual review | Meaning and invariant | Sequence | Duration |
 | --- | --- | --- | --- |
-| [Reading Focus](icon-reviews/reading-focus.md) | Attend to text within a retained timer case; prose and case never move | Engage / Advance / Attend | 1420ms |
-| [Start at Text](icon-reviews/start-at-text.md) | Choose an entry word; I-beam and surrounding text remain visible | Place / Identify / Hold | 1280ms |
-| [Listen](icon-reviews/listen.md) | Page speaks; page contour and both sound arcs remain visible | Read / Speak / Carry | 1480ms |
-| [Read Aloud](icon-reviews/read-aloud.md) | Speech input relates to text; capsule, cradle and phrase remain visible | Receive / Relate / Retain | 1540ms |
+| [Reading Focus](icon-reviews/reading-focus.md) | Advance a margin marker in a soft-square timer; prose and case stay fixed | Engage / Advance / Attend | 1240ms |
+| [Start at Text](icon-reviews/start-at-text.md) | Place a caret beside a sentence; its first word receives the entry cue | Place / Identify / Hold | 1120ms |
+| [Listen](icon-reviews/listen.md) | A rounded page speaks; source text and both sound arcs remain visible | Read / Speak / Carry | 1220ms |
+| [Read Aloud](icon-reviews/read-aloud.md) | Centered microphone receives before its transcript responds | Receive / Relate / Retain | 1340ms |
 
-The studio opens **Cognimated reader**. These four extend the catalog to 77. [Source mapping](PLATFORM-ICONS.md#cognimated-reader--01) and [browser evidence](motion-evidence/cognimated-reader-01/README.md) accompany the individual reviews. Earlier 73 timelines and the playback engine remain unchanged. No platform integration or release is included.
+The studio opens **Cognimated reader**. These four extend the catalog to 77. The 2026-09-17 composition revision replaces all four drawings and retimes their individual gestures. [Source mapping](PLATFORM-ICONS.md#cognimated-reader--01) and [revision checks](motion-evidence/cognimated-reader-refinement/README.md) accompany the reviews. Earlier [browser evidence](motion-evidence/cognimated-reader-01/README.md) depicts the rejected first drawings, not this revision. Earlier 73 timelines and the playback engine remain unchanged. User visual approval, platform integration and release remain separate.
 
 ## Previously reviewed catalog
 

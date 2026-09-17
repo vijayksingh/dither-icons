@@ -1,27 +1,27 @@
 # Read Aloud: Interface Craft review
 
 ## Context
-Cognimated's “Read aloud” mode (`web-absorb/extension/content/reading-focus-timer.js:1048`) relates microphone input to recognized article text. The microphone must remain distinct from Listen's page-to-audio output. Only real recognition may earn durable reading progress.
+Cognimated's Read Aloud mode relates microphone input to article text recognized by speech processing. Only real recognition earns durable progress. This is not Listen's synthesized audio output.
 
 ## First Impressions
-A fixed microphone receives an inward cue before text baselines answer. The direction is distinct from Listen. User feedback found the microphone and detached prose insufficiently composed; the current arrangement remains a draft for the user's review.
+The rejected drawing put a large microphone on the right and scattered short prose on the left. The revision centers the microphone above a two-line transcript, replacing two side-by-side symbols with one vertical composition. The wide stand and surplus grille bars are removed.
 
 ## Visual Design
-The microphone is centered at x=17.2, with a 4.8-unit-wide capsule, cradle and stand. Capsule/cradle strokes are 1.5 units; prose is 1.35; grille and response details are 0.65. An inner diaphragm expands within the capsule's actual aperture. The text occupies x=2.8–9.7 with large vertical gaps. That separation, the heavy right-hand microphone, and the text hierarchy are unresolved visual concerns. All identifying parts remain present without animation.
+The capsule centers at x=12, spans x=9–15 and y=3–11. A stationary 10-unit cradle and short stem end above the transcript; its first row spans x=5–19 at y=18, with a second row at 21.5. Contours are 1.5 units, text 1.25 and diaphragm/response details 1. The single diaphragm remains within the capsule even at its full response. All identifying contours remain visible in every frame.
 
 ## Interface Design
-Two inward marks approach the stationary capsule. Its diaphragm receives them, then relaxes. Only afterward do two word baselines respond in order; an endpoint witness follows the full phrase. The full printed text stays intact. No checkmark, fabricated recognized word, progress increment, permission state or completion badge appears.
+Two small input marks approach from the left; the internal diaphragm receives, then relaxes. Only afterward do the two transcript words receive ordered underlines. Keep transcript and microphone fixed. No detached endpoint witness, checkmark, fake recognized word or success badge is introduced.
 
 ## Consistency & Conventions
-MOT-01/02/03/05 preserve microphone identity, input semantics, causal order and fixed reference. MOT-06/07 keep motion local and grain attached. MOT-08/16 locate the phrase response after reception. MOT-09/10/11/12 retain single complete native performances, neutral return, stillness and shared CSS/WAAPI data. MOT-13/15 require an individual record; MOT-14 explicitly excludes recognition/progress claims. CSS-only hover ends on departure; React finishes playback.
+MOT-01/02/03/05 preserve microphone identity, receiving semantics, causal order and fixed transcript. MOT-06/07 keep local travel and attached grain. MOT-08/16 place word responses after reception. MOT-09/10/11/12 preserve finite playback, exact return, static reduced motion and shared export data. MOT-14 reserves recognition/progress for the platform. MOT-13/15: tests are not rendered visual approval. CSS hover ends on departure; React finishes playback.
 
 ## User Context
-The host owns microphone permission, connectivity, recognition confidence, paused state and actual progress. A labeled native button remains necessary. Reduced motion preserves the microphone and phrase; it does not remove a real status because no actual status is encoded by the gesture. Physical-device audio and call-site testing are outside this batch.
+Keep the native mode label and truthful permission/STT/paused states. Still mode retains the microphone plus transcript. Physical-device microphone behavior, compact toolbar legibility and user approval remain pending; this library revision adds no integration.
 
 ## Top Opportunities
-Compose microphone and prose as one clearer symbol; reduce incidental grille/text detail where compact rendering demands it; harmonize optical weight with Listen. These await user visual review under the latest instruction.
+Implemented: center the microphone, group prose beneath it, remove stand/grille clutter, harmonize strokes. Remaining: user assessment of the stacked transcript metaphor at small sizes.
 
 ## Encoded storyboard and review
-[Timing source](../../src/motions/read-aloud.ts). 1540ms: `aloud-input` approaches at 140ms; `aloud-diaphragm` peaks at 300ms and rests at 440ms; `aloud-phrase-0` responds at 580ms, `aloud-phrase-1` at 760ms, and `aloud-registration` at 830ms; responses clear at 1120ms. The diaphragm's local (17.2,10.6) origin keeps expansion centered and within its capsule.
+[Source](../../src/motions/read-aloud.ts): 1340ms. `aloud-input` approaches by 120ms; `aloud-diaphragm` at (12,7) receives at 260ms and rests at 380ms. `aloud-phrase-0/1` originate at each transcript baseline start (y=19.5), respond at 520/690ms, hold to 860ms and clear by 1020ms.
 
-[Prior browser evidence](../motion-evidence/cognimated-reader-01/README.md) records rest/preparation/action/recovery/rest, material rebinding at 770ms, duplicate Enter suppression and full recovery after focus departure. Reduced-motion replay left zero animations, identity opacity 1 and accents at 0. Those facts establish runtime behavior only; user composition concerns remain unresolved and no final compact-size review was completed.
+[Revision checks and limits](../motion-evidence/cognimated-reader-refinement/README.md). Tests cover capsule clearance, microphone/transcript centering and reception-before-text order. Old right-hand microphone screenshots do not depict this revision. No new browser visual review was performed; user owns that review.

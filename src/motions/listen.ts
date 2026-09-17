@@ -1,47 +1,52 @@
 import {actor, motion, pose, light, ease} from './authoring';
+import {READER_STYLE as INK} from './reader-style';
 
-/* LISTEN / written phrase becomes outward speech
- *    0ms  folded page and two sound arcs identify page-to-audio mode
- *  120ms  first word begins its source underline
- *  300ms  first word carries into the second
- *  450ms  phrase is ready; near arc begins responding
- *  570ms  near sound arc expands from the page edge
- *  730ms  farther arc answers; source phrase remains visible
- *  820ms  a fine front leaves the outer arc
- * 1080ms  source underline and front clear; arcs relax independently
- * 1480ms  exact page-and-sound rest; no actual audio starts
- * MOT-03/05/08/16: text is the source; propagation is the consequence.
+/* LISTEN / a line on the page becomes outward speech
+ *    0ms  broad, fold-free page and two sound arcs remain readable
+ *   80ms  begin the source-line underline
+ *  300ms  source line is read; near sound arc responds
+ *  440ms  near arc reaches its crest
+ *  470ms  farther arc begins, after the near arrival
+ *  640ms  farther arc crests while the source remains marked
+ *  820ms  source clears; sound contours relax separately
+ * 1220ms  exact original page and waves
+ * MOT-03/05/08/16: the page is the source, sound is the consequence.
  */
 export const LISTEN_TIMING = {
-  rest: 0, read: 120, first: 300, phrase: 450, near: 570,
-  farStart: 580, far: 730, front: 820, sourceHold: 850,
-  clear: 1080, nearRest: 1160, farRest: 1300, settle: 1480,
+  rest: 0,        // Complete static page-to-audio symbol.
+  read: 80,       // Begin marking the source line.
+  phrase: 300,    // The whole source line has been marked.
+  near: 440,      // Near-wave crest.
+  farStart: 470,  // Distance-ordered response.
+  far: 640,       // Far-wave crest.
+  sourceHold: 720,// Keep the source connected to the sound.
+  clear: 820,     // Source underline disappears.
+  nearRest: 960,  // Near wave returns first.
+  farRest: 1120,  // Far wave returns later.
+  settle: 1220,   // Exact rest.
 };
 export const LISTEN_GEOMETRY = {
-  pageWidth: 1.5, textWidth: 1.1, waveWidth: 1.5,
-  origin: '13.8px 12px', nearTravel: .45, farTravel: .65,
-  words: [{x: 5.8, width: 2.1}, {x: 9.3, width: 1.9}],
-  nearMaxX: 18, farMaxX: 21.5, frontMaxX: 22.4,
+  pageLeft: 3, pageRight: 14.5, pageTop: 4, pageBottom: 20, cornerRadius: 2,
+  pageWidth: INK.contour, textWidth: INK.text, waveWidth: INK.contour,
+  origin: '14.5px 12px', nearTravel: .35, farTravel: .5,
+  textX: 6, textEnd: 11.5, sourceY: 12, responseY: 13.5,
+  nearMaxX: 18.501, farMaxX: 21.75,
 };
+const G = LISTEN_GEOMETRY;
 export const LISTEN_ART = {
-  page: 'M13.8 8.1V20a1 1 0 0 1-1 1H4.2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5.3l4.3 5.1ZM9.5 3v4.1a1 1 0 0 0 1 1h3.3',
-  words: LISTEN_GEOMETRY.words.map(word => `M${word.x} 11.3h${word.width}`),
-  context: 'M5.8 15h5.4M5.8 17.8h3.4',
-  near: 'M16.5 8.7c2 1.8 2 4.8 0 6.6',
-  far: 'M19 5.6c3.33 3.5 3.33 9.3 0 12.8',
-  front: 'M21.8 9.8q1.2 2.2 0 4.4',
+  page: 'M5 4h7.5a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z',
+  context: `M${G.textX} 8.5H${G.textEnd}M${G.textX} 15.5H10`,
+  source: `M${G.textX} ${G.sourceY}H${G.textEnd}`,
+  underline: `M${G.textX} ${G.responseY}H${G.textEnd}`,
+  near: 'M17.25 9.5c1.667 1.25 1.667 3.75 0 5',
+  far: 'M20 7c2.333 2.5 2.333 7.5 0 10',
 };
-const G = LISTEN_GEOMETRY, T = LISTEN_TIMING;
+const T = LISTEN_TIMING;
 const NEAR = {rest: 'translateX(0px)', crest: `translateX(${G.nearTravel}px)`};
 const FAR = {rest: 'translateX(0px)', crest: `translateX(${G.farTravel}px)`};
-const FRONT = {start: 'translateX(-.25px)', end: 'translateX(.45px)', ink: .72};
-const WORD = {start: 'scaleX(.05)', full: 'scaleX(1)', ink: .85};
-export const listen = motion(T.settle, 'A written phrase leads; sound travels out from the page.', ['Read', 'Speak', 'Carry'], [
-  ...G.words.map((word, i) => actor(`listen-word-${i}`, `${word.x}px 12.65px`, [
-    light(T.rest, 0, WORD.start), light(i === 0 ? T.read : T.first, 0, WORD.start),
-    light(i === 0 ? T.first : T.phrase, WORD.ink, WORD.full), light(T.sourceHold, WORD.ink, WORD.full), light(T.clear, 0, WORD.full), light(T.settle, 0, WORD.start),
-  ])),
+const SOURCE = {origin: `${G.textX}px ${G.responseY}px`, start: 'scaleX(.12)', full: 'scaleX(1)', ink: .9};
+export const listen = motion(T.settle, 'A line is read on the page; the two sound arcs answer outward.', ['Read', 'Speak', 'Carry'], [
+  actor('listen-source', SOURCE.origin, [light(T.rest, 0, SOURCE.start), light(T.read, 0, SOURCE.start), light(T.phrase, SOURCE.ink, SOURCE.full), light(T.sourceHold, SOURCE.ink, SOURCE.full), light(T.clear, 0, SOURCE.full), light(T.settle, 0, SOURCE.start)]),
   actor('listen-near', G.origin, [pose(T.rest, NEAR.rest), pose(T.phrase, NEAR.rest, ease.settle), pose(T.near, NEAR.crest), pose(T.far, NEAR.crest), pose(T.nearRest, NEAR.rest), pose(T.settle, NEAR.rest)]),
-  actor('listen-far', G.origin, [pose(T.rest, FAR.rest), pose(T.farStart, FAR.rest, ease.settle), pose(T.far, FAR.crest), pose(T.front, FAR.crest), pose(T.farRest, FAR.rest), pose(T.settle, FAR.rest)]),
-  actor('listen-front', G.origin, [light(T.rest, 0, FRONT.start), light(T.far, 0, FRONT.start), light(T.front, FRONT.ink, FRONT.start), light(T.clear, 0, FRONT.end), light(T.settle, 0, FRONT.start)]),
+  actor('listen-far', G.origin, [pose(T.rest, FAR.rest), pose(T.farStart, FAR.rest, ease.settle), pose(T.far, FAR.crest), pose(T.sourceHold, FAR.crest), pose(T.farRest, FAR.rest), pose(T.settle, FAR.rest)]),
 ]);

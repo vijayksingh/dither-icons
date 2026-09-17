@@ -1,5 +1,7 @@
 # Cognimated reader / 01 — implementation evidence
 
+**Historical first-batch evidence only.** The subsequent [composition revision](../cognimated-reader-refinement/README.md) replaces all four drawings and timelines. Images, actor counts, timings and checks below describe the rejected first implementation at `bdc49b6`; they do not validate the revised visuals.
+
 Captured locally on 2026-09-17 in the Codex Chromium browser at `http://127.0.0.1:4192/motion`. These files record implementation checks performed before the user stopped extended visual review. The user found the shapes, composition and stroke hierarchy insufficiently refined and elected to perform further visual/feedback review themselves. **No visual acceptance is claimed.**
 
 ## Captures

@@ -1,27 +1,27 @@
 # Listen: Interface Craft review
 
 ## Context
-Cognimated's “Listen” mode (`web-absorb/extension/content/reading-focus-timer.js:1047`) speaks article text. A page is the source, unlike Volume's loudspeaker or Read Aloud's microphone input. Selecting this mode and starting playback remain platform actions.
+Cognimated's Listen mode speaks article text. The page is the source, unlike Volume's speaker and Read Aloud's microphone input. The host owns playback and voice availability.
 
 ## First Impressions
-The folded page and two persistent sound arcs identify text-to-speech at rest. The written phrase precedes outgoing sound during playback. User feedback rejected the overall batch's shape/composition quality; the tall narrow page, fold and wave proportions remain subject to that review.
+The rejected tall page, large fold and large sound field competed for space. The revision replaces the folded sheet with a broader, shorter rounded page and two smaller arcs centered on its middle text line. It removes the third transient wavefront.
 
 ## Visual Design
-Page and sound contours use 1.5-unit round strokes; text uses 1.1; transient underlines/front use 0.65. The page occupies x=3.2–13.8 and y=3–21. Wave contours remain separate and inside the viewBox at peak travel. The document, its fold and prose never disappear. Dither is clipped into each contour and moves with its group. Solid and outline share this line-based construction, as in the existing navigation family.
+The page occupies x=3–14.5, y=4–20 with 2-unit corners. Three text rows share x=6; the active source is centered at y=12. Sound arcs span y=9.5–14.5 and 7–17. Page and waves share 1.5-unit contours, text uses 1.25 and the temporary underline uses 1. The page/wave grouping fits inside the 24-unit viewBox throughout motion.
 
 ## Interface Design
-First underline one written word, then the next. Only after the phrase is ready does the near sound arc move. The farther arc responds later, followed by a fine exterior front. Keep the full source page and both arcs visible during independent recovery. No actual audio, download or playback status is simulated.
+Underline the retained source line first; the near arc then travels outward 0.35 units and the farther arc follows by 0.5 units. Keep the source marked during propagation. The arcs recover at different times, without disappearing or inflating the entire icon. The source underline and outward handoff provide the payoff.
 
 ## Consistency & Conventions
-MOT-01/02/03/05 preserve a speaking page and source-before-output order. MOT-06/07 limit contour travel and retain texture. MOT-08/16 keep the front subordinate and downstream of its cause. MOT-09/10/11/12 retain the common complete native gesture, exact return, reduced-motion and shared export tracks. MOT-13/15 govern this review; MOT-14 separates illustration from real speech playback. CSS-only hover cannot finish after pointer departure; React can.
+MOT-01/02/03/05 preserve the speaking-page metaphor and source-before-output sequence. MOT-06/07 preserve restrained motion and attached grain; MOT-08/16 keep feedback at its cause. MOT-09/10/11/12 retain complete native playback, neutral return, static reduced motion and shared CSS/WAAPI tracks. MOT-14 excludes actual audio/status claims. MOT-13/15 keep user visual acceptance separate. Standalone CSS hover cannot finish after pointer departure; React can.
 
 ## User Context
-Keep a labeled native mode button and its actual pressed/disabled state. Voice selection, availability and audio errors need real platform feedback. The static page/arcs remain recognizable with motion disabled. Compact readability and the user's composition approval remain open.
+Keep the native Listen label and actual pressed/disabled state. Voice settings and playback errors remain application feedback. Solid/outline retain this same line construction; dither adds contour-bound grain. Compact recognition and cross-browser behavior remain unreviewed for this revision.
 
 ## Top Opportunities
-Unify page/fold/wave proportions; assess optical center against Read Aloud; verify that the text-to-speech distinction survives toolbar size. No further visual changes were made after the user took over review.
+Implemented: remove the heavy fold, shorten and widen the page, reduce the sound field and redundant accent. Remaining: user assessment of optical balance beside the other three controls.
 
 ## Encoded storyboard and review
-[Timing source](../../src/motions/listen.ts). 1480ms: `listen-word-0` reads from 120–300ms; `listen-word-1` follows to 450ms; `listen-near` crests at 570ms, `listen-far` at 730ms, and `listen-front` at 820ms. Accents clear at 1080ms; waves return by 1160/1300ms; neutral at 1480ms. Waves use the page-edge origin (13.8,12); word reveals originate at their own baselines.
+[Source](../../src/motions/listen.ts): 1220ms. `listen-source` at (6,13.5) reads from 80–300ms. `listen-near` and `listen-far` use page-edge origin (14.5,12); near crests at 440ms, far begins at 470ms and crests at 640ms. Source holds to 720ms/clears by 820ms; near rests at 960ms, far at 1120ms.
 
-[Prior browser evidence](../motion-evidence/cognimated-reader-01/README.md) includes all six sampled phases, material changes retaining 740ms, keyboard replay/retrigger checks and reduced-motion cancellation. No wave clipping was observed at those inspected poses. These observations are not final visual approval, cross-browser/device proof, or Cognimated integration proof.
+[Revision checks and limits](../motion-evidence/cognimated-reader-refinement/README.md). Tests derive actual cubic contours from the artwork and sample wave separation across their shared height, including worst relative travel. Old folded-page screenshots are historical. No new browser visual review was performed, per user scope.

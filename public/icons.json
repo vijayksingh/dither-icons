@@ -1472,7 +1472,7 @@
       "component": "ReadingFocusIcon",
       "label": "Reading Focus",
       "category": "Learning",
-      "description": "A timer engages before a reading window advances one line.",
+      "description": "A timer engages before its reading marker advances one line.",
       "keywords": [
         "cognimated",
         "reader",
@@ -1483,8 +1483,8 @@
       ],
       "page": "/icons/reading-focus",
       "motion": {
-        "caption": "The timer engages; a reading window advances one line.",
-        "durationMs": 1420,
+        "caption": "The timer engages; its margin marker advances to the next line.",
+        "durationMs": 1240,
         "stages": [
           "Engage",
           "Advance",
@@ -1509,8 +1509,8 @@
       ],
       "page": "/icons/start-at-text",
       "motion": {
-        "caption": "The caret chooses a word; its starting line appears.",
-        "durationMs": 1280,
+        "caption": "The caret selects a sentence; its first word is underlined.",
+        "durationMs": 1120,
         "stages": [
           "Place",
           "Identify",
@@ -1535,8 +1535,8 @@
       ],
       "page": "/icons/listen",
       "motion": {
-        "caption": "A written phrase leads; sound travels out from the page.",
-        "durationMs": 1480,
+        "caption": "A line is read on the page; the two sound arcs answer outward.",
+        "durationMs": 1220,
         "stages": [
           "Read",
           "Speak",
@@ -1561,8 +1561,8 @@
       ],
       "page": "/icons/read-aloud",
       "motion": {
-        "caption": "The microphone receives speech; the text responds in order.",
-        "durationMs": 1540,
+        "caption": "The microphone receives speech; the transcript below responds word by word.",
+        "durationMs": 1340,
         "stages": [
           "Receive",
           "Relate",

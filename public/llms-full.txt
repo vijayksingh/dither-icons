@@ -376,10 +376,10 @@ CSS hover animation ends when hover ends. A standalone SVG does not expose React
 | history | HistoryIcon | The clock hands rewind inside the history arrow. |
 | panel-left-close | PanelLeftCloseIcon | The side panel closes while the workspace stays visible. |
 | zoom-out | ZoomOutIcon | The center shrinks to reveal the surrounding area. |
-| reading-focus | ReadingFocusIcon | The timer engages; a reading window advances one line. |
-| start-at-text | StartAtTextIcon | The caret chooses a word; its starting line appears. |
-| listen | ListenIcon | A written phrase leads; sound travels out from the page. |
-| read-aloud | ReadAloudIcon | The microphone receives speech; the text responds in order. |
+| reading-focus | ReadingFocusIcon | The timer engages; its margin marker advances to the next line. |
+| start-at-text | StartAtTextIcon | The caret selects a sentence; its first word is underlined. |
+| listen | ListenIcon | A line is read on the page; the two sound arcs answer outward. |
+| read-aloud | ReadAloudIcon | The microphone receives speech; the transcript below responds word by word. |
 
 ## Visual references
 

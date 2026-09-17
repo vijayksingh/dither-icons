@@ -11,6 +11,8 @@ import {startAtText, START_AT_TEXT_GEOMETRY as S, START_AT_TEXT_TIMING as ST} fr
 import {listen, LISTEN_GEOMETRY as L, LISTEN_TIMING as LT} from '../src/motions/listen';
 import {readAloud, READ_ALOUD_GEOMETRY as R, READ_ALOUD_TIMING as RT} from '../src/motions/read-aloud';
 import type {Study} from '../src/choreography';
+import {READER_STYLE as INK} from '../src/motions/reader-style';
+import {LISTEN_ART} from '../src/motions/listen';
 
 const names = ['reading-focus', 'start-at-text', 'listen', 'read-aloud'];
 const track = (study: Study, part: string) => study.tracks.find(t => t.part === part)!;
@@ -30,52 +32,94 @@ test('reader batch exposes exactly four additions in catalog, search and named e
   }
 });
 
-test('Reading Focus carries its window exactly one text line inside a stationary timer', () => {
+test('Reading Focus advances one margin-marker line inside its soft-square timer', () => {
   assert.ok(Math.abs(F.step - (F.lineY[1] - F.lineY[0])) < 1e-9);
   assert.ok(!readingFocus.tracks.some(t => /case|text|stem/.test(t.part)));
-  const frames = track(readingFocus, 'reading-window').frames;
+  const frames = track(readingFocus, 'reading-marker').frames;
   assert.equal(frames.find(f => f.at === FT.arrive)!.transform, `translateY(${F.step}px)`);
-  // Both bracket corners must clear the actual circular inner case, including strokes.
-  const innerRadius = F.radius - F.caseWidth / 2;
-  for (const offset of [0, F.step]) for (const x of [F.bracketLeft, F.bracketRight]) for (const y of [F.bracketTop, F.bracketBottom]) {
-    assert.ok(Math.hypot(x - F.center[0], y + offset - F.center[1]) + F.bracketWidth / 2 < innerRadius);
+  // Marker sweep clears the case's left wall below its rounded upper corner.
+  for (let i = 0; i <= 100; i++) {
+    const top = F.markerTop + F.step * i / 100 - F.markerWidth / 2;
+    const bottom = F.markerBottom + F.step * i / 100 + F.markerWidth / 2;
+    assert.ok(top > F.caseTop + F.caseWidth / 2 && bottom < F.caseBottom - F.caseWidth / 2);
+    assert.ok(F.markerX - F.markerWidth / 2 > F.caseLeft + F.caseWidth / 2);
+    if (top < F.caseTop + F.cornerRadius) {
+      const cx = F.caseLeft + F.cornerRadius, cy = F.caseTop + F.cornerRadius;
+      assert.ok(Math.hypot(F.markerX - F.markerWidth / 2 - cx, top - cy) < F.cornerRadius - F.caseWidth / 2);
+    }
   }
+  assert.ok(F.markerX + F.markerWidth / 2 < F.lineX - F.textWidth / 2);
   darkThrough(readingFocus, 'reading-line-response', FT.arrive);
-  darkThrough(readingFocus, 'reading-rim-response', FT.arrive);
   assert.notDeepEqual(readingFocus.tracks, library.studies['learning-rhythm'].tracks);
   assert.notDeepEqual(readingFocus.tracks, library.studies.gauge.tracks);
 });
 
-test('Start at Text seats the whole I-beam in the inter-word gap before revealing the entry word', () => {
+test('Start at Text aligns its I-beam to a sentence and preserves the full text gutter during travel', () => {
   const caretHalfExtent = S.capHalfWidth + S.caretWidth / 2;
-  assert.ok(S.destinationX - caretHalfExtent > S.words[0].end + S.textWidth / 2);
-  assert.ok(S.destinationX + caretHalfExtent < S.words[1].x - S.textWidth / 2);
-  assert.equal(track(startAtText, 'start-caret').frames.find(f => f.at === ST.place)!.transform, `translateX(${S.destinationX - S.caretX}px)`);
+  assert.ok(S.caretX + caretHalfExtent < S.lineX - S.textWidth / 2);
+  assert.equal((S.caretTop + S.caretBottom) / 2 + S.step, S.lineY[1]);
+  assert.equal(S.lineY[1] - S.lineY[0], S.lineY[2] - S.lineY[1]);
+  assert.ok(S.words.every(word => word.end - word.x >= 4), 'no isolated dot pretending to be a word');
+  assert.equal(track(startAtText, 'start-caret').frames.find(f => f.at === ST.place)!.transform, `translateY(${S.step}px)`);
   darkThrough(startAtText, 'start-word-line', ST.place);
-  darkThrough(startAtText, 'start-registration', ST.identify);
   assert.ok(ST.clear < ST.return, 'clear the chosen-word cue before returning the caret');
 });
 
 test('Listen emits sound only after text; its complete wave contours clear the viewBox', () => {
   assert.ok(track(listen, 'listen-near').frames.filter(f => f.at <= LT.phrase).every(f => f.transform === 'translateX(0px)'));
   assert.ok(track(listen, 'listen-far').frames.filter(f => f.at <= LT.farStart).every(f => f.transform === 'translateX(0px)'));
-  assert.ok(LT.near < LT.farStart && LT.far < LT.front);
+  assert.ok(LT.near < LT.farStart && LT.nearRest < LT.farRest);
   assert.ok(L.farMaxX + L.farTravel + L.waveWidth / 2 < 24);
-  assert.ok(L.frontMaxX + .45 + .65 / 2 < 24);
-  darkThrough(listen, 'listen-front', LT.far);
+  assert.ok(L.textX - L.textWidth / 2 > L.pageLeft + L.pageWidth / 2);
+  assert.ok(L.textEnd + L.textWidth / 2 < L.pageRight - L.pageWidth / 2);
+  darkThrough(listen, 'listen-source', LT.read);
   assert.ok(!listen.tracks.some(t => /page|cone/.test(t.part)));
 });
 
 test('Read Aloud receives input before responding at text and keeps the diaphragm inside the capsule', () => {
   darkThrough(readAloud, 'aloud-phrase-0', RT.relax);
   darkThrough(readAloud, 'aloud-phrase-1', RT.first);
-  darkThrough(readAloud, 'aloud-registration', RT.second);
   assert.ok(RT.receive < RT.relax && RT.relax < RT.first);
   const innerHalfWidth = (R.capsuleRight - R.capsuleLeft - R.micWidth) / 2;
-  const maxInkHalfWidth = R.diaphragmWidth * R.diaphragmPeak / 2 + .65 / 2;
+  const maxInkHalfWidth = R.diaphragmWidth * R.diaphragmPeak / 2 + INK.response / 2;
   assert.ok(maxInkHalfWidth < innerHalfWidth, 'even the expanded diaphragm caps clear the capsule');
   assert.ok(!readAloud.tracks.some(t => /capsule|cradle|check|success/.test(t.part)));
-  assert.ok(track(readAloud, 'aloud-input').frames.some(f => f.transform?.includes('translateX(-')));
+  assert.ok(track(readAloud, 'aloud-input').frames.some(f => f.transform === `translateX(${R.inputTravel}px)`));
+  assert.equal(R.micX, 12, 'microphone centered over the transcript, not detached to its right');
+  assert.equal((R.words[0].x + R.words[1].x + R.words[1].width) / 2, R.micX);
+  assert.ok(R.contextY - R.textWidth / 2 > R.responseY + INK.response / 2);
+});
+
+test('reader drawings use one explicit contour, prose and response hierarchy', () => {
+  assert.deepEqual([F.caseWidth, F.markerWidth, S.caretWidth, L.pageWidth, L.waveWidth, R.micWidth], Array(6).fill(INK.contour));
+  assert.deepEqual([F.textWidth, S.textWidth, L.textWidth, R.textWidth], Array(4).fill(INK.text));
+  assert.ok(INK.response < INK.text && INK.text < INK.contour);
+  for (const name of names) {
+    const svg = renderToStaticMarkup(<library.DitherIcon name={name} texture="solid"/>);
+    const widths = [...svg.matchAll(/stroke-width="([^"]+)"/g)].map(m => Number(m[1]));
+    assert.ok(widths.every(width => [INK.contour, INK.text, INK.response].includes(width as 1 | 1.25 | 1.5)));
+    assert.ok(!/reading-window|rim-response|start-registration|listen-front|aloud-registration/.test(svg));
+  }
+});
+
+test('Listen wave bounds come from the actual cubic artwork, with clearance at all heights', () => {
+  const curve = (path: string, t: number) => {
+    const [x, y, ax, ay, bx, by, dx, dy] = path.match(/-?\d+(?:\.\d+)?/g)!.map(Number);
+    const u = 1 - t;
+    return [x + 3 * u * u * t * ax + 3 * u * t * t * bx + t * t * t * dx,
+      y + 3 * u * u * t * ay + 3 * u * t * t * by + t * t * t * dy];
+  };
+  for (let i = 0; i <= 100; i++) {
+    const [x, y] = curve(LISTEN_ART.near, i / 100);
+    let lo = 0, hi = 1;
+    for (let n = 0; n < 40; n++) {
+      const mid = (lo + hi) / 2;
+      if (curve(LISTEN_ART.far, mid)[1] < y) lo = mid; else hi = mid;
+    }
+    const farX = curve(LISTEN_ART.far, (lo + hi) / 2)[0];
+    assert.ok(farX - (x + L.nearTravel) > L.waveWidth, 'wave strokes cannot meet, even at worst relative travel');
+    assert.ok(x <= L.nearMaxX && farX <= L.farMaxX);
+  }
 });
 
 test('reader SVG exports share timing, static meaning, and unique masks across materials and repeated instances', () => {
