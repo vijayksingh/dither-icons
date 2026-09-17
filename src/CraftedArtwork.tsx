@@ -26,7 +26,7 @@ const Accent=({part,children}:{part:string;children:ReactNode})=><g data-part={p
 
 export function CraftedArtwork({name,draw,texture}:Props){
  if(!studies[name])return null;
- if(['reading-focus','start-at-text','listen','read-aloud'].includes(name))return <ReaderArtwork name={name} draw={draw} texture={texture}/>;
+ if(['reading-focus','start-at-text','listen','read-aloud','drag-handle','skip-block','collapse-rail','headphones'].includes(name))return <ReaderArtwork name={name} draw={draw} texture={texture}/>;
  if(['arrow-left','history','panel-left-close','zoom-out'].includes(name))return <NavigationToolsArtwork name={name} draw={draw} texture={texture}/>;
  if(['eye','sparkles','sun','moon'].includes(name))return <AppearanceArtwork name={name} draw={draw} texture={texture}/>;
  if(['check','close','plus','lock','unlock'].includes(name))return <ActionArtwork name={name} draw={draw} texture={texture}/>;

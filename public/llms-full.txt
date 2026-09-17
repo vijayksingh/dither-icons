@@ -36,7 +36,7 @@ Install an icon, choose a material, and configure playback.
 
 ## The library
 
-Dither Icons includes 77 original SVG icons with individual animations. Each drawing comes in dither, solid, and outline. The dither texture sits inside the vector shape and moves with it.
+Dither Icons includes 81 original SVG icons with individual animations. Each drawing comes in dither, solid, and outline. The dither texture sits inside the vector shape and moves with it.
 
 ![The same Download icon in dither, solid and outline textures.](/reference/textures.svg)
 
@@ -398,9 +398,13 @@ CSS hover animation ends when hover ends. A standalone SVG does not expose React
 | start-at-text | StartAtTextIcon | The caret selects a sentence; its first word is underlined. |
 | listen | ListenIcon | A line is read on the page; the two sound arcs answer outward. |
 | read-aloud | ReadAloudIcon | The microphone receives speech; the transcript below responds word by word. |
+| drag-handle | DragHandleIcon | The ribbed grip moves diagonally; a corner marks its new position. |
+| skip-block | SkipBlockIcon | The margin bracket bypasses one text block and settles beside the next. |
+| collapse-rail | CollapseRailIcon | The control rail retracts into its top tab while the reading lines stay still. |
+| headphones | HeadphonesIcon | The earcups seat inward; their drivers answer inside the fixed headband. |
 
 ## Visual references
 
 ![Three textures](/reference/textures.svg)
 
-![All 77 labeled icons](/reference/icons.svg)
+![All 81 labeled icons](/reference/icons.svg)

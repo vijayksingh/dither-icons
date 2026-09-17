@@ -2,6 +2,10 @@ import {READING_FOCUS_ART} from './motions/reading-focus';
 import {START_AT_TEXT_ART} from './motions/start-at-text';
 import {LISTEN_ART} from './motions/listen';
 import {READ_ALOUD_ART} from './motions/read-aloud';
+import {DRAG_HANDLE_ART} from './motions/drag-handle';
+import {SKIP_BLOCK_ART} from './motions/skip-block';
+import {COLLAPSE_RAIL_ART} from './motions/collapse-rail';
+import {HEADPHONES_ART} from './motions/headphones';
 import {BACK_ART} from './motions/arrow-left';
 import {HISTORY_ART} from './motions/history';
 import {PANEL_CLOSE_ART} from './motions/panel-left-close';
@@ -141,6 +145,10 @@ export const definitions = [
  {...def('start-at-text','Interface','Choose the word or sentence where reading begins.',strokeVector(START_AT_TEXT_ART.context),strokeVector(START_AT_TEXT_ART.caret),...START_AT_TEXT_ART.words.map(strokeVector)),label:'Start at Text',keywords:['cognimated','reader','starting word','starting sentence','choose start','caret','seek']},
  {...def('listen','Media','Listen as a written phrase becomes spoken audio.',strokeVector(LISTEN_ART.page),strokeVector(LISTEN_ART.near),strokeVector(LISTEN_ART.far),strokeVector(LISTEN_ART.context),strokeVector(LISTEN_ART.source)),label:'Listen',keywords:['cognimated','reader','listening','text to speech','tts','page speaks','audio']},
  {...def('read-aloud','Media','Read text into a microphone for speech-guided reading.',strokeVector(READ_ALOUD_ART.capsule),strokeVector(READ_ALOUD_ART.cradle),strokeVector(READ_ALOUD_ART.context),...READ_ALOUD_ART.words.map(strokeVector)),label:'Read Aloud',keywords:['cognimated','reader','microphone','speech recognition','voice','read aloud','verified reading']},
+ {...def('drag-handle','Interface','Grip and reposition the reader control tray.',...[DRAG_HANDLE_ART.grip,DRAG_HANDLE_ART.registration,...DRAG_HANDLE_ART.ribs].map(strokeVector)),label:'Drag Handle',keywords:['cognimated','reader','grip','drag','reposition','move tray']},
+ {...def('skip-block','Navigation','Bypass the current article block during guided reading.',...[SKIP_BLOCK_ART.current,SKIP_BLOCK_ART.next,SKIP_BLOCK_ART.marker].map(strokeVector),vector(SKIP_BLOCK_ART.bypass)),label:'Skip Block',keywords:['cognimated','reader','skip','article block','chunk','guided reading','bypass']},
+ {...def('collapse-rail','Interface','Collapse the reader control rail while retaining the reading surface.',...[COLLAPSE_RAIL_ART.cap,COLLAPSE_RAIL_ART.body,COLLAPSE_RAIL_ART.chevron,...COLLAPSE_RAIL_ART.controls,...COLLAPSE_RAIL_ART.lines].map(strokeVector)),label:'Collapse Rail',keywords:['cognimated','reader','collapse','hide controls','floating rail','toolbar','dock']},
+ {...def('headphones','Media','Headphone audio output for listening to an article.',...[HEADPHONES_ART.arch,HEADPHONES_ART.left,HEADPHONES_ART.right,...HEADPHONES_ART.drivers].map(strokeVector)),label:'Headphones',keywords:['cognimated','reader','headphones','listening','audio output','mp3']},
 ] as const;
 export type IconName = typeof definitions[number]['name'];
 

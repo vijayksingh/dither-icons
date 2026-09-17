@@ -2,7 +2,7 @@
 
 **Dithered, animated SVG icons for React.**
 
-77 original icons in dither, solid, and outline. Each has its own animation: a bell swings, a download arrow lands, a lock resists a shake. Use the React components or export individual SVGs. The four Cognimated reader icons are unreleased additions in this checkout.
+81 original icons in dither, solid, and outline. Each has its own animation: a bell swings, a download arrow lands, a lock resists a shake. Use the React components or export individual SVGs. The latest four Cognimated reader-control icons are unreleased additions in this checkout.
 
 [Get started](#get-started) · [Documentation](public/docs/introduction.md) · [For AI agents](AI.md) · [Contributing](CONTRIBUTING.md) · [MIT license](LICENSE)
 
@@ -19,9 +19,9 @@
 - **Context for your agent.** An exact export manifest, integration guide and labeled visual references ship alongside the code.
 
 <details>
-<summary>See all 77 icons</summary>
+<summary>See all 81 icons</summary>
 
-![All 77 Dither Icons, labeled with their React component exports.](public/reference/icons.svg)
+![All 81 Dither Icons, labeled with their React component exports.](public/reference/icons.svg)
 
 Browse the [machine-readable collection](icons.json) or the [individual motion catalog](docs/MOTION-CATALOG.md).
 
@@ -88,6 +88,10 @@ export function DownloadButton({ onDownload }: { onDownload: () => void }) {
 ### Navigation and workspace
 
 `ArrowLeftIcon` (Back), `HistoryIcon`, `PanelLeftCloseIcon` (Collapse Panel), and `ZoomOutIcon` are available in **0.2.0 and later**. Their motions express navigation intent; the host owns routing, explorer state, history selection, and map magnification.
+
+### Cognimated reader controls — unreleased
+
+`DragHandleIcon`, `SkipBlockIcon`, `CollapseRailIcon`, and `HeadphonesIcon` are source additions for moving the control tray, skipping an article block, collapsing the rail and headphone audio output. Review the **Cognimated reader controls** set in the [local Motion studio](http://127.0.0.1:4192/motion#motion-studies-panel). Each has an individual animation and all three materials. See [control mapping](docs/PLATFORM-ICONS.md#cognimated-reader--02) and [checks/feedback status](docs/motion-evidence/cognimated-reader-02/README.md). User visual approval and Cognimated integration remain pending; these four are not available from the current published package.
 
 ### Cognimated reader — unreleased
 
@@ -196,7 +200,7 @@ Created by [Vijay Singh](https://github.com/vijayksingh) / Unlocalhosted. Find m
 
 ## Social previews
 
-The production build generates 1200 × 630 PNG previews and crawler-readable HTML for the home page, guides, motion studio, AI page, and all 77 icons. Share an icon URL after its release to show that icon in the preview. Open Graph and Twitter card metadata are present in the initial HTML; crawlers do not need JavaScript.
+The production build generates 1200 × 630 PNG previews and crawler-readable HTML for the home page, guides, motion studio, AI page, and all 81 icons. Share an icon URL after its release to show that icon in the preview. Open Graph and Twitter card metadata are present in the initial HTML; crawlers do not need JavaScript.
 
 The canonical origin defaults to `https://dithered.dev`. To build for another origin:
 

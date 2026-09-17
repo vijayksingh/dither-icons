@@ -157,3 +157,7 @@ export const ReadingFocusIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'nam
 export const StartAtTextIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function StartAtTextIcon(props,ref){return <DitherIcon {...props} name="start-at-text" ref={ref}/>;});
 export const ListenIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function ListenIcon(props,ref){return <DitherIcon {...props} name="listen" ref={ref}/>;});
 export const ReadAloudIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function ReadAloudIcon(props,ref){return <DitherIcon {...props} name="read-aloud" ref={ref}/>;});
+export const DragHandleIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function DragHandleIcon(props,ref){return <DitherIcon {...props} name="drag-handle" ref={ref}/>;});
+export const SkipBlockIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function SkipBlockIcon(props,ref){return <DitherIcon {...props} name="skip-block" ref={ref}/>;});
+export const CollapseRailIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function CollapseRailIcon(props,ref){return <DitherIcon {...props} name="collapse-rail" ref={ref}/>;});
+export const HeadphonesIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function HeadphonesIcon(props,ref){return <DitherIcon {...props} name="headphones" ref={ref}/>;});

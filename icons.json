@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "package": "@unlocalhosted/dither-icons",
   "version": "0.2.3",
-  "count": 77,
+  "count": 81,
   "license": "MIT",
   "installation": {
     "publishedToNpm": true,
@@ -1567,6 +1567,108 @@
           "Receive",
           "Relate",
           "Retain"
+        ]
+      }
+    },
+    {
+      "name": "drag-handle",
+      "component": "DragHandleIcon",
+      "label": "Drag Handle",
+      "category": "Interface",
+      "description": "Grip and reposition the reader control tray.",
+      "keywords": [
+        "cognimated",
+        "reader",
+        "grip",
+        "drag",
+        "reposition",
+        "move tray"
+      ],
+      "page": "/icons/drag-handle",
+      "motion": {
+        "caption": "The ribbed grip moves diagonally; a corner marks its new position.",
+        "durationMs": 1120,
+        "stages": [
+          "Grasp",
+          "Move",
+          "Place"
+        ]
+      }
+    },
+    {
+      "name": "skip-block",
+      "component": "SkipBlockIcon",
+      "label": "Skip Block",
+      "category": "Navigation",
+      "description": "Bypass the current article block during guided reading.",
+      "keywords": [
+        "cognimated",
+        "reader",
+        "skip",
+        "article block",
+        "chunk",
+        "guided reading",
+        "bypass"
+      ],
+      "page": "/icons/skip-block",
+      "motion": {
+        "caption": "The margin bracket bypasses one text block and settles beside the next.",
+        "durationMs": 1380,
+        "stages": [
+          "Withdraw",
+          "Bypass",
+          "Resume"
+        ]
+      }
+    },
+    {
+      "name": "collapse-rail",
+      "component": "CollapseRailIcon",
+      "label": "Collapse Rail",
+      "category": "Interface",
+      "description": "Collapse the reader control rail while retaining the reading surface.",
+      "keywords": [
+        "cognimated",
+        "reader",
+        "collapse",
+        "hide controls",
+        "floating rail",
+        "toolbar",
+        "dock"
+      ],
+      "page": "/icons/collapse-rail",
+      "motion": {
+        "caption": "The control rail retracts into its top tab while the reading lines stay still.",
+        "durationMs": 1320,
+        "stages": [
+          "Lead",
+          "Retract",
+          "Dock"
+        ]
+      }
+    },
+    {
+      "name": "headphones",
+      "component": "HeadphonesIcon",
+      "label": "Headphones",
+      "category": "Media",
+      "description": "Headphone audio output for listening to an article.",
+      "keywords": [
+        "cognimated",
+        "reader",
+        "headphones",
+        "listening",
+        "audio output",
+        "mp3"
+      ],
+      "page": "/icons/headphones",
+      "motion": {
+        "caption": "The earcups seat inward; their drivers answer inside the fixed headband.",
+        "durationMs": 1260,
+        "stages": [
+          "Seat",
+          "Listen",
+          "Release"
         ]
       }
     }

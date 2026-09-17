@@ -4,6 +4,17 @@ Every icon has an individual Interface Craft critique: semantic meaning, identit
 
 The four accepted foundation performances remain intact. The remaining icons use individually authored tracks, with no catalog icon using the legacy generic presets. Native React and standalone SVG share these timing definitions.
 
+## Cognimated reader / 02 — unreleased controls
+
+| Icon / individual review | Meaning and invariant | Sequence | Duration |
+| --- | --- | --- | --- |
+| [Drag Handle](icon-reviews/drag-handle.md) | Reposition a ribbed grip within fixed registration corners | Grasp / Move / Place | 1120ms |
+| [Skip Block](icon-reviews/skip-block.md) | Bypass a retained article chunk through its empty gutter | Withdraw / Bypass / Resume | 1380ms |
+| [Collapse Rail](icon-reviews/collapse-rail.md) | Dock a right control rail into its tab; prose stays fixed | Lead / Retract / Dock | 1320ms |
+| [Headphones](icon-reviews/headphones.md) | Seat paired earcups before their drivers answer | Seat / Listen / Release | 1260ms |
+
+The studio now opens **Cognimated reader controls**, bringing the catalog to 81. The earlier **Cognimated reader** family remains selectable. The four individual source-level critiques record the user's first screenshot feedback and its corrections. [Checks and limits](motion-evidence/cognimated-reader-02/README.md); [control mapping](PLATFORM-ICONS.md#cognimated-reader--02). Corrected visual approval remains with the user; no integration or publication is claimed.
+
 ## Cognimated reader / 01 — unreleased
 
 | Icon / individual review | Meaning and invariant | Sequence | Duration |
@@ -13,7 +24,7 @@ The four accepted foundation performances remain intact. The remaining icons use
 | [Listen](icon-reviews/listen.md) | A rounded page speaks; source text and both sound arcs remain visible | Read / Speak / Carry | 1220ms |
 | [Read Aloud](icon-reviews/read-aloud.md) | Centered microphone receives before its transcript responds | Receive / Relate / Retain | 1340ms |
 
-The studio opens **Cognimated reader**. These four extend the catalog to 77. The 2026-09-17 composition revision replaces all four drawings and retimes their individual gestures. [Source mapping](PLATFORM-ICONS.md#cognimated-reader--01) and [revision checks](motion-evidence/cognimated-reader-refinement/README.md) accompany the reviews. Earlier [browser evidence](motion-evidence/cognimated-reader-01/README.md) depicts the rejected first drawings, not this revision. Earlier 73 timelines and the playback engine remain unchanged. User visual approval, platform integration and release remain separate.
+The **Cognimated reader** set introduced icons 74–77. The 2026-09-17 composition revision replaces all four drawings and retimes their individual gestures. [Source mapping](PLATFORM-ICONS.md#cognimated-reader--01) and [revision checks](motion-evidence/cognimated-reader-refinement/README.md) accompany the reviews. Earlier [browser evidence](motion-evidence/cognimated-reader-01/README.md) depicts the rejected first drawings, not this revision. Earlier 73 timelines and the playback engine remain unchanged. User visual approval, platform integration and release remain separate.
 
 Reader material follow-up: [Outline now has transparent contour cores](motion-evidence/cognimated-reader-outline/README.md), finer text and unchanged actor/timeline bindings. Solid and dither retain the preceding composition revision.
 

@@ -154,3 +154,20 @@ Keep native labels, pressed/disabled state, tap targets, and keyboard behavior. 
 Outline now opens a transparent core in the primary 1.5-unit contours, leaving 0.5-unit boundary rails; prose stays single-line at 0.9 and responses use 0.75. Solid and dither are unchanged. Raster tests distinguish all four at 16/24/48px, but human recognition and contrast at compact sizes remain unapproved; fine Outline detail needs user review before toolbar integration.
 
 Compare the **Cognimated reader** studio family, [composition revision](motion-evidence/cognimated-reader-refinement/README.md) and [Outline checks](motion-evidence/cognimated-reader-outline/README.md) before future call-site integration. User visual approval is still required.
+
+## Cognimated reader / 02
+
+Source inspected 2026-09-17 in the adjacent `web-absorb` checkout. Exactly four library additions; no platform source modified, package version change or publication.
+
+| Export | Actual control | Observed source in web-absorb |
+| --- | --- | --- |
+| `DragHandleIcon` | Move or collapse reading controls; drag grip | `extension/content/reading-focus-timer.js:1016`, `GRIP_ICON` at line 319 |
+| `SkipBlockIcon` | Skip current block | `extension/content/reading-focus-timer.js:1035`, `SKIP_ICON` at line 326 |
+| `CollapseRailIcon` | Collapse reading controls | `pwa/src/ReadingListView.tsx:127`; extension `.drag-handle` also toggles the rail |
+| `HeadphonesIcon` | Headphone/audio output; existing Download MP3 affordance | `pwa/src/ReadingListView.tsx:124`, currently Lucide Headphones |
+
+Drag Handle is a ribbed movable grip rather than menu dots. Skip Block retains both chunks and bypasses the current block in the gutter, rather than moving to another page. Collapse Rail retracts a detached vertical right rail into a retained tab, distinct from Panel Left Close's workspace drawer. Headphones is the output device, distinct from Volume's speaker and Listen's speaking page.
+
+The **Cognimated reader controls** studio set opens for feedback. User screenshot corrections center the first two compositions, join the skip-arrow contour, mask overlapping Outline joints and lighten Solid strokes. All four have independent [review records and checks](motion-evidence/cognimated-reader-02/README.md); corrected visual acceptance is pending.
+
+Retain native labels, focus, disabled state, `aria-expanded`, target sizes and truthful host actions. The library does not implement dragging, block selection, rail state or audio/download success. Prefer still compact Solid/Outline for repeated actions; dither suits larger previews. Reduced motion retains all static meaning. React completes triggered playback after departure; standalone CSS hover cannot. Integration remains a separate task.
