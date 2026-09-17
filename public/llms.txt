@@ -1,6 +1,6 @@
 # Dither Icons
 
-> 85 original SVG icons with fine ordered dither and individually authored semantic motion. React 18+, MIT.
+> 89 original SVG icons with fine ordered dither and individually authored semantic motion. React 18+, MIT.
 
 ## Start here
 

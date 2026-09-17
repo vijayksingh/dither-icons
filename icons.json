@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "package": "@unlocalhosted/dither-icons",
   "version": "0.2.4",
-  "count": 85,
+  "count": 89,
   "license": "MIT",
   "installation": {
     "publishedToNpm": true,
@@ -1775,6 +1775,107 @@
           "Release",
           "Step",
           "Identify"
+        ]
+      }
+    },
+    {
+      "name": "simplify",
+      "component": "SimplifyIcon",
+      "label": "Simplify",
+      "category": "Interface",
+      "description": "Simplify selected text while retaining its source passage.",
+      "keywords": [
+        "cognimated",
+        "selection popover",
+        "simplify text",
+        "rewrite",
+        "plain language",
+        "selected text"
+      ],
+      "page": "/icons/simplify",
+      "motion": {
+        "caption": "The text lines gather before a clarity mark answers.",
+        "durationMs": 1020,
+        "stages": [
+          "Gather",
+          "Clarify",
+          "Resolve"
+        ]
+      }
+    },
+    {
+      "name": "tighten",
+      "component": "TightenIcon",
+      "label": "Tighten",
+      "category": "Interface",
+      "description": "Make selected text more concise without changing its scope.",
+      "keywords": [
+        "cognimated",
+        "selection popover",
+        "concise text",
+        "shorten",
+        "edit selection",
+        "selected text"
+      ],
+      "page": "/icons/tighten",
+      "motion": {
+        "caption": "The opposing clamps draw a text block into a concise shape.",
+        "durationMs": 980,
+        "stages": [
+          "Withdraw",
+          "Compress",
+          "Seat"
+        ]
+      }
+    },
+    {
+      "name": "vivid",
+      "component": "VividIcon",
+      "label": "Vivid",
+      "category": "Interface",
+      "description": "Make selected text more vivid while retaining the passage anchor.",
+      "keywords": [
+        "cognimated",
+        "selection popover",
+        "vivid text",
+        "rewrite",
+        "emphasis",
+        "selected text"
+      ],
+      "page": "/icons/vivid",
+      "motion": {
+        "caption": "A text-bound emphasis mark opens, then its plus accent answers.",
+        "durationMs": 980,
+        "stages": [
+          "Warm",
+          "Emphasize",
+          "Release"
+        ]
+      }
+    },
+    {
+      "name": "transform-scope",
+      "component": "TransformScopeIcon",
+      "label": "Transform Scope",
+      "category": "Interface",
+      "description": "Switch transformation scope between a selected passage and the whole article.",
+      "keywords": [
+        "cognimated",
+        "selection popover",
+        "whole article",
+        "selected passage",
+        "transform scope",
+        "page scope",
+        "selection scope"
+      ],
+      "page": "/icons/transform-scope",
+      "motion": {
+        "caption": "The page and passage frame hand off the active transform scope.",
+        "durationMs": 1040,
+        "stages": [
+          "Present",
+          "Switch",
+          "Settle"
         ]
       }
     }

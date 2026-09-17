@@ -36,7 +36,7 @@ Install an icon, choose a material, and configure playback.
 
 ## The library
 
-Dither Icons includes 85 original SVG icons with individual animations. Each drawing comes in dither, solid, and outline. The dither texture sits inside the vector shape and moves with it.
+Dither Icons includes 89 original SVG icons with individual animations. Each drawing comes in dither, solid, and outline. The dither texture sits inside the vector shape and moves with it.
 
 ![The same Download icon in dither, solid and outline textures.](/reference/textures.svg)
 
@@ -406,9 +406,13 @@ CSS hover animation ends when hover ends. A standalone SVG does not expose React
 | reader-path | ReaderPathIcon | The gate selects the main column; the aside stays beside it. |
 | previous-word | PreviousWordIcon | The selector lifts and steps back one word; that word is underlined. |
 | next-word | NextWordIcon | The selector advances one word; its underline opens from the leading edge. |
+| simplify | SimplifyIcon | The text lines gather before a clarity mark answers. |
+| tighten | TightenIcon | The opposing clamps draw a text block into a concise shape. |
+| vivid | VividIcon | A text-bound emphasis mark opens, then its plus accent answers. |
+| transform-scope | TransformScopeIcon | The page and passage frame hand off the active transform scope. |
 
 ## Visual references
 
 ![Three textures](/reference/textures.svg)
 
-![All 85 labeled icons](/reference/icons.svg)
+![All 89 labeled icons](/reference/icons.svg)

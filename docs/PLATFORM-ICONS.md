@@ -136,6 +136,21 @@ Source inspected 2026-09-10 before selection. These are additions to the separat
 
 Collapse Panel complements the existing File Explorer opening gesture. History does not restore a Checkpoint; Back does not mutate routing; Zoom Out does not dispatch map events. Native controls retain those effects and their actual accessible labels/state. Apply UI-2/4, COLOR-2/5, A11Y-2/4 and MOTION-1/4/6/7. Use semantic currentColor, labeled targets and still compact solid/outline for frequently repeated actions. The detailed gestures are available at larger entry points. All four exports are introduced in 0.2.0.
 
+## Cognimated selection / 01
+
+Source inspected 2026-09-18 in the adjacent `web-absorb` checkout. These four exports are **unreleased**, local library additions; no platform source was modified.
+
+| Export | Existing control | Concrete source in web-absorb |
+| --- | --- | --- |
+| `SimplifyIcon` | Simplify selected text | `extension/content/selection-transform-controller.js:85–89,567`; `data-mode="simplify"` calls `transform('simplify')` |
+| `TightenIcon` | Make selected text more concise | `extension/content/selection-transform-controller.js:91–95,568`; `data-mode="concise"` calls `transform('concise')` |
+| `VividIcon` | Make selected text more vivid | `extension/content/selection-transform-controller.js:97–101,569`; `data-mode="vivid"` calls `transform('vivid')` |
+| `TransformScopeIcon` | Switch selected-passage versus whole-article transform scope | `extension/content/selection-transform-controller.js:73–83,576,904–910,1142–1144`; `.scope` toggles the host's `selection` / `article` target set |
+
+Simplify keeps text as the anchor while its lower lines gather; Tighten uses opposing clamps rather than navigation arrows; Vivid is one text-bound focal mark rather than Sparkles' surrounding field; Transform Scope retains both a page and selected-passage frame so neither state is erased from the glyph. Existing Sparkles, Close, History, ArrowRight and Send remain unchanged.
+
+Keep the host's native labels, target sizes, selection ownership, disabled/loading state and `aria-pressed` behavior. The library does not apply rewrites, change scope, mutate article content or certify a successful result. Prefer still Solid/Outline at 16–24px; Dither is intended for larger references. Reduced motion keeps all command/scope silhouettes, and React/SVG share the same finite transform/opacity tracks. [Individual reviews and checks](motion-evidence/cognimated-selection-01/README.md).
+
 ## Cognimated reader / 01
 
 Source inspected 2026-09-17 in the adjacent `web-absorb` checkout. These four exports are **unreleased**, local library additions; no platform source was modified.

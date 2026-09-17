@@ -165,3 +165,7 @@ export const ReadingPaceIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name
 export const ReaderPathIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function ReaderPathIcon(props,ref){return <DitherIcon {...props} name="reader-path" ref={ref}/>;});
 export const PreviousWordIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function PreviousWordIcon(props,ref){return <DitherIcon {...props} name="previous-word" ref={ref}/>;});
 export const NextWordIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function NextWordIcon(props,ref){return <DitherIcon {...props} name="next-word" ref={ref}/>;});
+export const SimplifyIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function SimplifyIcon(props,ref){return <DitherIcon {...props} name="simplify" ref={ref}/>;});
+export const TightenIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function TightenIcon(props,ref){return <DitherIcon {...props} name="tighten" ref={ref}/>;});
+export const VividIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function VividIcon(props,ref){return <DitherIcon {...props} name="vivid" ref={ref}/>;});
+export const TransformScopeIcon=forwardRef<SVGSVGElement,Omit<DitherIconProps,'name'>>(function TransformScopeIcon(props,ref){return <DitherIcon {...props} name="transform-scope" ref={ref}/>;});

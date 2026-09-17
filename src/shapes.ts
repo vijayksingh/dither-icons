@@ -10,6 +10,10 @@ import {READING_PACE_ART} from './motions/reading-pace';
 import {READER_PATH_ART} from './motions/reader-path';
 import {PREVIOUS_WORD_ART} from './motions/previous-word';
 import {NEXT_WORD_ART} from './motions/next-word';
+import {SIMPLIFY_ART} from './motions/simplify';
+import {TIGHTEN_ART} from './motions/tighten';
+import {VIVID_ART} from './motions/vivid';
+import {TRANSFORM_SCOPE_ART} from './motions/transform-scope';
 import {BACK_ART} from './motions/arrow-left';
 import {HISTORY_ART} from './motions/history';
 import {PANEL_CLOSE_ART} from './motions/panel-left-close';
@@ -157,6 +161,10 @@ export const definitions = [
  {...def('reader-path','Interface','Choose the main prose path while retaining captions, references, symbols and asides.',...[READER_PATH_ART.spine,READER_PATH_ART.detour,READER_PATH_ART.tongue,...READER_PATH_ART.main,READER_PATH_ART.aside].map(strokeVector)),label:'Reader Path',keywords:['cognimated','reader','main path','skip detours','captions','references','symbols','asides','all details']},
  {...def('previous-word','Navigation','Seek to the preceding readable word.',...[PREVIOUS_WORD_ART.context,...PREVIOUS_WORD_ART.words,PREVIOUS_WORD_ART.cursor,PREVIOUS_WORD_ART.arrow].map(strokeVector)),label:'Previous Word',keywords:['cognimated','reader','seek','previous word','one word backward','rewind text','reading position']},
  {...def('next-word','Navigation','Seek to the next readable word.',...[NEXT_WORD_ART.context,...NEXT_WORD_ART.words,NEXT_WORD_ART.cursor,NEXT_WORD_ART.arrow].map(strokeVector)),label:'Next Word',keywords:['cognimated','reader','seek','next word','one word forward','advance text','reading position']},
+ {...def('simplify','Interface','Simplify selected text while retaining its source passage.',...[...SIMPLIFY_ART.lines, SIMPLIFY_ART.sparkle].map(strokeVector)),label:'Simplify',keywords:['cognimated','selection popover','simplify text','rewrite','plain language','selected text']},
+ {...def('tighten','Interface','Make selected text more concise without changing its scope.',...[...TIGHTEN_ART.text,...TIGHTEN_ART.left,...TIGHTEN_ART.right].map(strokeVector)),label:'Tighten',keywords:['cognimated','selection popover','concise text','shorten','edit selection','selected text']},
+ {...def('vivid','Interface','Make selected text more vivid while retaining the passage anchor.',...[...VIVID_ART.text,VIVID_ART.sparkle,VIVID_ART.plus].map(strokeVector)),label:'Vivid',keywords:['cognimated','selection popover','vivid text','rewrite','emphasis','selected text']},
+ {...def('transform-scope','Interface','Switch transformation scope between a selected passage and the whole article.',...[TRANSFORM_SCOPE_ART.page,TRANSFORM_SCOPE_ART.fold,...TRANSFORM_SCOPE_ART.pageLines,...TRANSFORM_SCOPE_ART.selection,...TRANSFORM_SCOPE_ART.selectionLines].map(strokeVector)),label:'Transform Scope',keywords:['cognimated','selection popover','whole article','selected passage','transform scope','page scope','selection scope']},
 ] as const;
 export type IconName = typeof definitions[number]['name'];
 

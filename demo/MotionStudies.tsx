@@ -5,6 +5,7 @@ export const SETS:Record<string,string[]>={'Navigation and workspace':['arrow-le
 SETS['Cognimated reader']=['reading-focus','start-at-text','listen','read-aloud'];
 SETS['Cognimated reader controls']=['drag-handle','skip-block','collapse-rail','headphones'];
 SETS['Cognimated pace and navigation']=['reading-pace','reader-path','previous-word','next-word'];
+SETS['Cognimated selection commands']=['simplify','tighten','vivid','transform-scope'];
 export function MotionStudies({texture,enabled}:{texture:Texture;enabled:boolean}){
  const [set,setSet]=useState('Cognimated pace and navigation');
  const ORDER=SETS[set].filter(name=>studies[name]);
