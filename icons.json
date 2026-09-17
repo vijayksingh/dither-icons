@@ -1586,12 +1586,12 @@
       ],
       "page": "/icons/drag-handle",
       "motion": {
-        "caption": "The grip lifts, leans behind the pull, then lands with a short weighted settle.",
-        "durationMs": 1580,
+        "caption": "The grip resists the pull, then snaps back with a short rebound.",
+        "durationMs": 650,
         "stages": [
-          "Pick up",
-          "Drag",
-          "Release"
+          "Grip",
+          "Pull",
+          "Snap back"
         ]
       }
     },

@@ -8,7 +8,7 @@ The four accepted foundation performances remain intact. The remaining icons use
 
 | Icon / individual review | Meaning and invariant | Sequence | Duration |
 | --- | --- | --- | --- |
-| [Drag Handle](icon-reviews/drag-handle.md) | Pick up a ribbed grip, trail the pull and release its weight into contact | Pick up / Drag / Release | 1580ms |
+| [Drag Handle](icon-reviews/drag-handle.md) | Pull against weight, then release tension in a direct snap home | Grip / Pull / Snap back | 650ms |
 | [Skip Block](icon-reviews/skip-block.md) | Bypass a retained article chunk through its empty gutter | Withdraw / Bypass / Resume | 1380ms |
 | [Collapse Rail](icon-reviews/collapse-rail.md) | Dock a right control rail into its tab; prose stays fixed | Lead / Retract / Dock | 1320ms |
 | [Headphones](icon-reviews/headphones.md) | Seat paired earcups before their drivers answer | Seat / Listen / Release | 1260ms |

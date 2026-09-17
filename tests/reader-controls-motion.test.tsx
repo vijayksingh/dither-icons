@@ -43,7 +43,7 @@ test('reader controls expose exactly four named additions, a separate studio fam
   }
 });
 
-test('Drag Handle picks up a rigid body, trails the pull and dissipates release momentum', () => {
+test('Drag Handle loads its weight then snaps directly home with a smaller rebound', () => {
   const grip = track(dragHandle, 'drag-grip'), contact = track(dragHandle, 'drag-contact');
   assert.equal(grip.frames.find(f => f.at === DT.carry)!.transform, dragTransform(DP.carried));
   assert.equal(grip.origin, `${D.pivotX}px ${D.pivotY}px`);
@@ -52,15 +52,19 @@ test('Drag Handle picks up a rigid body, trails the pull and dissipates release 
   assert.equal(track(dragHandle, 'drag-grip-cut').origin, grip.origin);
   assert.equal(grip.frames.find(f => f.at === DT.grasp)!.transform, dragTransform(DP.rest), 'grasp precedes the body taking up load');
   assert.ok(DP.load.y > 0 && DP.lifted.y < 0);
-  assert.ok(DP.carried.angle > 0 && DP.braking.angle < 0, 'body trails acceleration and swings through deceleration');
-  assert.ok(DP.braking.x > DP.placed.x, 'release has bounded lateral overshoot');
-  assert.ok(DP.landed.angle < 0 && DP.rebound.angle > 0 && DP.placed.angle === 0);
-  assert.ok(Math.abs(DP.rebound.angle) < Math.abs(DP.landed.angle), 'landing dissipates rather than repeating a wiggle');
-  assert.ok(DP.returning.angle < 0, 'opposite pull reverses the inertial lean');
-  assert.ok(Math.abs(DP.homeRebound.angle) < Math.abs(DP.homeLand.angle));
+  assert.ok(DP.carried.angle > 0 && DP.snapped.angle < 0, 'weighted lean reverses on the snap');
+  assert.ok(DP.carried.x > 0 && DP.snapped.x < 0 && DP.rebound.x > 0, 'release crosses home once before a smaller rebound');
+  assert.ok(Math.abs(DP.rebound.angle) < Math.abs(DP.snapped.angle));
+  assert.ok(Math.abs(DP.rebound.x) < Math.abs(DP.snapped.x));
+  assert.ok(DT.snap - DT.release <= 100, 'snap back must stay quick rather than a second slow drag');
+  assert.ok(DT.carry - DT.grasp >= 2 * (DT.snap - DT.release), 'pull carries weight; return releases tension');
+  assert.ok(DT.settle <= 700, 'complete gesture cannot return to the rejected slow 1580ms sequence');
+  const releaseIndex = grip.frames.findIndex(f => f.at === DT.release);
+  assert.equal(grip.frames[releaseIndex].transform, dragTransform(DP.carried));
+  assert.equal(grip.frames[releaseIndex + 1].transform, dragTransform(DP.snapped), 'release goes straight home without an intermediate landing');
   assert.ok(!dragHandle.tracks.some(t => /rib|registration/.test(t.part)), 'ribs do not drift and the reference stays still');
   darkThrough(dragHandle, 'drag-contact', DT.grasp);
-  assert.ok(contact.frames.find(f => f.at === DT.land)!.opacity! > contact.frames.find(f => f.at === DT.lift)!.opacity!, 'contact is tighter and darker than suspension');
+  assert.ok(contact.frames.find(f => f.at === DT.snap)!.opacity! > contact.frames.find(f => f.at === DT.lift)!.opacity!, 'contact is tighter and darker than suspension');
   assert.deepEqual(contact.frames.map(f => [f.at, f.easing]), grip.frames.map(f => [f.at, f.easing]), 'footprint shares the body clock and easing');
   const markup = svgFor('drag-handle');
   const gripStart = markup.indexOf('<g data-part="drag-grip"');
