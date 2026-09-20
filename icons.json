@@ -1783,23 +1783,23 @@
       "component": "SimplifyIcon",
       "label": "Simplify",
       "category": "Interface",
-      "description": "Simplify selected text while retaining its source passage.",
+      "description": "Simplify selected text by folding subordinate fragments into its main idea.",
       "keywords": [
         "cognimated",
         "selection popover",
         "simplify text",
-        "rewrite",
-        "plain language",
+        "reduce branches",
+        "main idea",
         "selected text"
       ],
       "page": "/icons/simplify",
       "motion": {
-        "caption": "The text lines gather before a clarity mark answers.",
-        "durationMs": 1020,
+        "caption": "Subordinate text folds into a stable reading spine.",
+        "durationMs": 1080,
         "stages": [
-          "Gather",
+          "Fold",
           "Clarify",
-          "Resolve"
+          "Hold"
         ]
       }
     },
@@ -1808,23 +1808,23 @@
       "component": "TightenIcon",
       "label": "Tighten",
       "category": "Interface",
-      "description": "Make selected text more concise without changing its scope.",
+      "description": "Make selected text shorter while preserving word order and baselines.",
       "keywords": [
         "cognimated",
         "selection popover",
         "concise text",
         "shorten",
-        "edit selection",
+        "word spacing",
         "selected text"
       ],
       "page": "/icons/tighten",
       "motion": {
-        "caption": "The opposing clamps draw a text block into a concise shape.",
-        "durationMs": 980,
+        "caption": "Ordered word units compress into a shorter text block.",
+        "durationMs": 1040,
         "stages": [
-          "Withdraw",
           "Compress",
-          "Seat"
+          "Seat",
+          "Release"
         ]
       }
     },
@@ -1833,22 +1833,22 @@
       "component": "VividIcon",
       "label": "Vivid",
       "category": "Interface",
-      "description": "Make selected text more vivid while retaining the passage anchor.",
+      "description": "Make selected text more vivid through a focus-word ink flourish.",
       "keywords": [
         "cognimated",
         "selection popover",
         "vivid text",
-        "rewrite",
-        "emphasis",
+        "expressive language",
+        "focus word",
         "selected text"
       ],
       "page": "/icons/vivid",
       "motion": {
-        "caption": "A text-bound emphasis mark opens, then its plus accent answers.",
-        "durationMs": 980,
+        "caption": "A focus word gains weight and grows one attached ink swash.",
+        "durationMs": 1040,
         "stages": [
-          "Warm",
-          "Emphasize",
+          "Focus",
+          "Express",
           "Release"
         ]
       }
@@ -1858,24 +1858,23 @@
       "component": "TransformScopeIcon",
       "label": "Transform Scope",
       "category": "Interface",
-      "description": "Switch transformation scope between a selected passage and the whole article.",
+      "description": "Expand a selected-passage frame to the whole article while retaining page content.",
       "keywords": [
         "cognimated",
         "selection popover",
         "whole article",
         "selected passage",
-        "transform scope",
-        "page scope",
-        "selection scope"
+        "expanding selection",
+        "transform scope"
       ],
       "page": "/icons/transform-scope",
       "motion": {
-        "caption": "The page and passage frame hand off the active transform scope.",
+        "caption": "The selected-passage lens corners travel to the page boundary and return.",
         "durationMs": 1040,
         "stages": [
-          "Present",
-          "Switch",
-          "Settle"
+          "Frame",
+          "Expand",
+          "Return"
         ]
       }
     }
