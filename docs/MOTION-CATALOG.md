@@ -4,16 +4,16 @@ Every icon has an individual Interface Craft critique: semantic meaning, identit
 
 The four accepted foundation performances remain intact. The remaining icons use individually authored tracks, with no catalog icon using the legacy generic presets. Native React and standalone SVG share these timing definitions.
 
-## Cognimated selection / 01 — unreleased core commands
+## Cognimated selection / 01 — corrective pass, unreleased core commands
 
 | Icon / individual review | Meaning and invariant | Sequence | Duration |
 | --- | --- | --- | --- |
-| [Simplify](icon-reviews/simplify.md) | Gather retained text lines before a single clarity mark responds | Gather / Clarify / Resolve | 1020ms |
-| [Tighten](icon-reviews/tighten.md) | Compress a retained text block between opposing clamps | Withdraw / Compress / Seat | 980ms |
-| [Vivid](icon-reviews/vivid.md) | Emphasize a fixed text passage with one focal mark and plus response | Warm / Emphasize / Release | 980ms |
-| [Transform Scope](icon-reviews/transform-scope.md) | Switch between page and selected-passage scope while retaining both meanings | Present / Switch / Settle | 1040ms |
+| [Simplify](icon-reviews/simplify.md) | Fold subordinate branches into one stable meaning spine | Fold / Clarify / Hold | 1080ms |
+| [Tighten](icon-reviews/tighten.md) | Compress ordered word units and whitespace between bounded edges | Compress / Seat / Release | 1040ms |
+| [Vivid](icon-reviews/vivid.md) | Grow one attached expressive ink flourish from a focus word | Focus / Express / Release | 1040ms |
+| [Transform Scope](icon-reviews/transform-scope.md) | Expand a selected-passage lens to the page boundary and return | Frame / Expand / Return | 1040ms |
 
-The studio opens **Cognimated selection commands**, bringing the catalog to 89. These controls map to the actual selection popover action and scope toggle in `web-absorb/extension/content/selection-transform-controller.js`; each has independent geometry and timing. Existing Sparkles, Close, History, ArrowRight and Send remain unchanged. [Source mapping](PLATFORM-ICONS.md#cognimated-selection--01), [checks and limits](motion-evidence/cognimated-selection-01/README.md). User owns visual review; no platform integration or release is claimed.
+The studio opens **Cognimated selection commands**, bringing the catalog to 89. This corrective pass keeps all four exports and stable names, but replaces label decoration with four source-grounded instruments: hierarchy folding, word-unit compression, attached expressive ink and a scope lens expanding to the retained page. Existing Sparkles, Close, History, ArrowRight and Send remain unchanged. [Source mapping](PLATFORM-ICONS.md#cognimated-selection--01), [checks and limits](motion-evidence/cognimated-selection-01/README.md). User owns visual review; no platform integration or release is claimed.
 
 ## Cognimated reader / 03 — unreleased pace and navigation
 
@@ -48,7 +48,7 @@ The **Cognimated reader controls** set introduced icons 78–81 and remains sele
 
 The **Cognimated reader** set introduced icons 74–77. The 2026-09-17 composition revision replaces all four drawings and retimes their individual gestures. [Source mapping](PLATFORM-ICONS.md#cognimated-reader--01) and [revision checks](motion-evidence/cognimated-reader-refinement/README.md) accompany the reviews. Earlier [browser evidence](motion-evidence/cognimated-reader-01/README.md) depicts the rejected first drawings, not this revision. Earlier 73 timelines and the playback engine remain unchanged. User visual approval, platform integration and release remain separate.
 
-Reader material follow-up: [Outline now has transparent contour cores](motion-evidence/cognimated-reader-outline/README.md), finer text and unchanged actor/timeline bindings. Solid and dither retain the preceding composition revision.
+Reader material follow-up: [Outline now has transparent contour cores](motion-evidence/cognimated-reader-outline/README.md) and actor/timeline bindings are unchanged. On 2026-09-19 the reader-control, pace/navigation and selection sets were corrected to the initial reader weights: 1.5 contour in every material, 1.25 text, 1 response and 0.5 Outline edges. Solid and dither retain the preceding composition revision.
 
 ## Previously reviewed catalog
 

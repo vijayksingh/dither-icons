@@ -7,17 +7,17 @@ import * as library from '../src';
 import {keyframesFor, styleForStudy, type Study} from '../src/choreography';
 import {SETS} from '../demo/MotionStudies';
 import {componentName, filterIcons} from '../demo/model';
-import {SIMPLIFY_ART as SA, SIMPLIFY_GEOMETRY as SG, SIMPLIFY_TIMING as ST, simplify} from '../src/motions/simplify';
-import {TIGHTEN_ART as TA, TIGHTEN_TIMING as TT, tighten} from '../src/motions/tighten';
-import {VIVID_ART as VA, VIVID_TIMING as VT, vivid} from '../src/motions/vivid';
-import {TRANSFORM_SCOPE_ART as XA, TRANSFORM_SCOPE_OPACITY as XO, TRANSFORM_SCOPE_TIMING as XT, transformScope} from '../src/motions/transform-scope';
+import {SIMPLIFY_ART as SA, SIMPLIFY_TIMING as ST, simplify} from '../src/motions/simplify';
+import {TIGHTEN_ART as TA, TIGHTEN_TIMING as TT, TIGHTEN_WORD_POSES as TP, tighten} from '../src/motions/tighten';
+import {VIVID_ART as VA, VIVID_GEOMETRY as VG, VIVID_TIMING as VT, vivid} from '../src/motions/vivid';
+import {TRANSFORM_SCOPE_ART as XA, TRANSFORM_SCOPE_CORNERS as XC, TRANSFORM_SCOPE_OPACITY as XO, TRANSFORM_SCOPE_TIMING as XT, transformScope} from '../src/motions/transform-scope';
 
 const names = ['simplify', 'tighten', 'vivid', 'transform-scope'];
 const textures = ['dither', 'solid', 'outline'] as const;
 const track = (study: Study, part: string) => study.tracks.find(t => t.part === part)!;
 const svg = (name: string, texture: library.Texture = 'solid') => renderToStaticMarkup(<library.DitherIcon name={name} texture={texture} size={48} animate={false}/>);
 
-test('selection commands expose four named exports, a dedicated studio family, and source meanings', () => {
+test('selection commands expose four stable exports, a dedicated studio family, and source meanings', () => {
   assert.deepEqual(SETS['Cognimated selection commands'], names);
   const entries = [
     ['simplify', library.SimplifyIcon, 'simplify text'], ['tighten', library.TightenIcon, 'concise text'],
@@ -35,42 +35,61 @@ test('selection commands expose four named exports, a dedicated studio family, a
   }
 });
 
-test('simplify gathers retained text before its clarity response', () => {
-  const lines = ['simplify-line-0', 'simplify-line-1', 'simplify-line-2'].map(part => track(simplify, part));
-  assert.ok(lines[2].frames.find(f => f.at === ST.gather)!.transform!.includes('-.72px'));
-  assert.ok(lines[2].frames.find(f => f.at === ST.gather)!.transform!.includes('scaleX(.8)'));
-  assert.ok(track(simplify, 'simplify-clarity').frames.filter(f => f.at <= ST.register).every(f => f.opacity === 0));
-  assert.equal(track(simplify, 'simplify-spark').origin, `${SG.sparkX}px ${SG.sparkY}px`);
-  assert.ok(ST.gather < ST.clarify && ST.clarify < ST.register && ST.register < ST.clear);
-  assert.ok(simplify.tracks.every(t => t.frames[0].transform === t.frames.at(-1)!.transform));
+test('simplify folds subordinate branches into a stable meaning spine', () => {
+  const upper = track(simplify, 'simplify-branch-upper'), lower = track(simplify, 'simplify-branch-lower');
+  assert.match(upper.frames.find(f => f.at === ST.upperFold)!.transform!, /rotate\(24deg\)/);
+  assert.match(lower.frames.find(f => f.at === ST.lowerFold)!.transform!, /rotate\(-24deg\)/);
+  assert.equal(track(simplify, 'simplify-spine').frames.find(f => f.at === ST.spineSettle)!.transform, 'scaleX(1.035)');
+  assert.equal(upper.origin, '6.2px 8px');
+  assert.equal(lower.origin, '6.2px 16px');
+  for (const d of [SA.spine, ...SA.main, ...SA.upper, ...SA.lower]) assert.ok(svg('simplify').includes(`d="${d}"`));
+  assert.ok(!simplify.tracks.some(t => /spark|clarity|underline/.test(t.part)));
+  assert.ok(ST.upperFold < ST.lowerFold && ST.lowerFold < ST.spineSettle && ST.spineSettle < ST.hold);
 });
 
-test('tighten uses opposing clamps around a retained text block', () => {
-  const left = track(tighten, 'tighten-left-clamp'), right = track(tighten, 'tighten-right-clamp');
-  assert.equal(left.frames.find(f => f.at === TT.squeeze)!.transform, 'translateX(1.18px)');
-  assert.equal(right.frames.find(f => f.at === TT.squeeze)!.transform, 'translateX(-1.18px)');
-  assert.equal(track(tighten, 'tighten-text').frames.find(f => f.at === TT.squeeze)!.transform, 'scaleX(.9)');
-  assert.ok(track(tighten, 'tighten-registration').frames.filter(f => f.at <= TT.seat).every(f => f.opacity === 0));
-  for (const d of [...TA.text, ...TA.left, ...TA.right]) assert.ok(svg('tighten').includes(`d="${d}"`));
-  assert.ok(TT.seat < TT.register && TT.register < TT.release);
+test('tighten compresses real ordered word units between bounded edges', () => {
+  assert.equal(TA.words.length, 8); assert.equal(TP.length, TA.words.length);
+  assert.equal(track(tighten, 'tighten-bound-left').frames.find(f => f.at === TT.compress)!.transform, 'translateX(.65px)');
+  assert.equal(track(tighten, 'tighten-bound-right').frames.find(f => f.at === TT.compress)!.transform, 'translateX(-1.9px)');
+  for (let i = 0; i < TA.words.length; i++) {
+    const compressed = track(tighten, `tighten-word-${i}`).frames.find(f => f.at === TT.compress)!;
+    assert.match(compressed.transform!, /scaleX\((?:\.7|\.8|\.82|\.88|\.9)/);
+    assert.match(compressed.transform!, /translate\([^,]+px,0px\)/, `word ${i} stays on its baseline`);
+    assert.equal(track(tighten, `tighten-word-${i}`).origin, [
+      '4px 8px', '7.1px 8px', '9.5px 8px', '13.5px 8px', '17px 8px', '4px 14px', '8.3px 14px', '11.4px 14px',
+    ][i]);
+  }
+  for (const d of [...TA.bounds, ...TA.words]) assert.ok(svg('tighten').includes(`d="${d}"`));
+  assert.ok(!tighten.tracks.some(t => /clamp|registration|underline|arrow/.test(t.part)));
+  assert.ok(TT.compress < TT.seat && TT.seat < TT.hold && TT.hold < TT.release);
 });
 
-test('vivid keeps one text-bound star and delays the plus response', () => {
-  assert.ok(track(vivid, 'vivid-highlight').frames.filter(f => f.at <= VT.flare).every(f => f.opacity === 0));
-  assert.ok(track(vivid, 'vivid-plus').frames.find(f => f.at === VT.plus)!.transform!.includes('1.06'));
-  assert.ok(svg('vivid').includes(`d="${VA.plus}"`));
-  assert.ok(!vivid.tracks.some(t => /satellite|companion|field/.test(t.part)));
-  assert.ok(VT.flare < VT.underline && VT.underline < VT.plus && VT.plus < VT.clear);
+test('vivid grows one attached ink flourish from the focus word', () => {
+  const focus = track(vivid, 'vivid-focus-word'), ink = track(vivid, 'vivid-ink-accent');
+  assert.equal(focus.frames.find(f => f.at === VT.focus)!.transform, 'translate(0px,-.3px) scale(1.06,1.5)');
+  assert.equal(ink.frames.find(f => f.at === VT.inkStart)!.opacity, 0);
+  assert.equal(ink.frames.find(f => f.at === VT.inkPeak)!.opacity, .92);
+  assert.equal(ink.origin, `${VG.inkX}px ${VG.inkY}px`);
+  assert.ok(VA.accent.startsWith(`M${VG.inkX} ${VG.inkY}`), 'the swash starts on the focus word end');
+  for (const d of [...VA.context, VA.focus, VA.accent]) assert.ok(svg('vivid').includes(`d="${d}"`));
+  assert.ok(!vivid.tracks.some(t => /spark|plus|underline|highlight/.test(t.part)));
+  assert.ok(VT.focus < VT.inkStart && VT.inkStart < VT.inkPeak && VT.inkPeak < VT.clear && VT.clear < VT.release);
 });
 
-test('transform scope preserves page and selection silhouettes while the handoff responds', () => {
-  assert.equal(track(transformScope, 'scope-page').frames[0].opacity, XO.page);
-  assert.equal(track(transformScope, 'scope-selection').frames[0].opacity, XO.selection);
-  assert.ok(track(transformScope, 'scope-transfer').frames.filter(f => f.at < XT.handoff).every(f => f.opacity === 0));
-  assert.ok(XT.handoff < XT.seat && XT.seat < XT.clear && XT.clear < XT.release);
-  for (const d of [XA.page, XA.fold, ...XA.pageLines, ...XA.selection, ...XA.selectionLines]) assert.ok(svg('transform-scope').includes(`d="${d}"`));
-  assert.equal(track(transformScope, 'scope-page').frames.at(-1)!.transform, 'scale(1)');
-  assert.equal(track(transformScope, 'scope-selection').frames.at(-1)!.transform, 'scale(1)');
+test('transform scope travels the selection lens corners to the retained page boundary', () => {
+  const n = (value: number) => Number(value.toFixed(2));
+  for (const {key, x, y, dx, dy} of XC) {
+    const corner = track(transformScope, `scope-corner-${key}`);
+    assert.equal(corner.origin, `${x}px ${y}px`);
+    assert.equal(corner.frames.find(f => f.at === XT.expand)!.transform, `translate(${n(dx * .96)}px,${n(dy * .96)}px) scale(1)`);
+    assert.equal(corner.frames.find(f => f.at === XT.seat)!.transform, `translate(${dx}px,${dy}px) scale(1.1)`);
+    assert.equal(corner.frames[0].transform, 'translate(0px,0px) scale(1)');
+    assert.equal(corner.frames.at(-1)!.transform, 'translate(0px,0px) scale(1)');
+  }
+  assert.match(svg('transform-scope'), new RegExp(`data-part="scope-lens"[^>]*opacity="${XO.lens}"`));
+  for (const d of [XA.page, XA.fold, ...XA.content, ...XA.selection]) assert.ok(svg('transform-scope').includes(`d="${d}"`));
+  assert.ok(!transformScope.tracks.some(t => /transfer|arrow|chevron/.test(t.part)));
+  assert.ok(XT.expand < XT.seat && XT.seat < XT.hold && XT.hold < XT.contract);
 });
 
 test('selection commands share finite React/SVG tracks, reduced motion, and valid material exports', () => {

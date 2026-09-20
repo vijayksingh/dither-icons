@@ -1,45 +1,43 @@
-import {actor, ease, light, motion, pose} from './authoring';
-import {sparklePath} from './sparkles';
+import {actor, ease, motion, pose} from './authoring';
 
 /* ANIMATION STORYBOARD / SIMPLIFY
- *    0ms  three source lines and one clarity mark hold their text-shaped silhouette
- *   90ms  the lower lines gather toward the first readable line
- *  300ms  the single clarity star opens after the text has simplified
- *  430ms  a short underline registers the clearer result
- *  650ms  the response clears while the text remains legible
- *  820ms  the compressed lines release toward their original spacing
- * 1020ms  exact neutral; no rewrite or completion state is claimed
- * MOT-01/02/03/04/05/07/08/10/11/12/14/15/16: text remains the anchor;
- * the clarity mark follows the semantic reduction, not a generic sparkle loop.
+ *    0ms  a dense hierarchy branches around one fixed readable spine
+ *   90ms  the upper subordinate fragment folds toward the spine
+ *  300ms  the lower subordinate fragment follows, preserving the spine
+ *  500ms  the main reading line settles open after both branches yield
+ *  700ms  the reduced hierarchy holds as one stable meaning
+ *  840ms  subordinate fragments unfold toward their source positions
+ * 1080ms  exact neutral; no star claims clarity and no text is erased
+ * MOT-01/02/03/04/05/06/07/10/11/12/14/15/16: reduce branching around
+ * a stable meaning spine; the instrument is hierarchy folding, not decoration.
  */
 export const SIMPLIFY_TIMING = {
-  rest: 0, gather: 90, clarify: 300, register: 430,
-  clear: 650, release: 820, settle: 1020,
+  rest: 0, prepare: 90, upperFold: 300, lowerFold: 410,
+  spineSettle: 500, hold: 700, release: 840, settle: 1080,
 };
-export const SIMPLIFY_GEOMETRY = {sparkX: 17, sparkY: 9.5, sparkRadius: 2.8};
-const G = SIMPLIFY_GEOMETRY;
+export const SIMPLIFY_GEOMETRY = {spineX: 6.2, upperHingeY: 8, lowerHingeY: 16};
 export const SIMPLIFY_ART = {
-  lines: ['M3 5.5h9.2', 'M3 9.5h7', 'M3 13.5h5'],
-  sparkle: sparklePath(G.sparkX, G.sparkY, G.sparkRadius),
-  clarity: 'M3.2 17.1h6.2',
+  spine: 'M6.2 3.5V20.5',
+  main: ['M9 7h10', 'M9 11h8.2', 'M9 15h9.2'],
+  upper: ['M6.2 8H3.3V5.2', 'M2.6 4h2.5', 'M2.6 6h1.7'],
+  lower: ['M6.2 16H3.3v2.8', 'M2.6 18h2.5', 'M2.6 20h1.7'],
 };
-const T = SIMPLIFY_TIMING;
-const LINE = [
-  {part: 'simplify-line-0', origin: '3px 5.5px', gather: 'translateY(-.05px) scaleX(.98)'},
-  {part: 'simplify-line-1', origin: '3px 9.5px', gather: 'translateY(-.38px) scaleX(.91)'},
-  {part: 'simplify-line-2', origin: '3px 13.5px', gather: 'translateY(-.72px) scaleX(.8)'},
-];
-export const simplify = motion(T.settle, 'The text lines gather before a clarity mark answers.', ['Gather', 'Clarify', 'Resolve'], [
-  ...LINE.map(({part, origin, gather}) => actor(part, origin, [
-    pose(T.rest, 'translate(0px, 0px)'), pose(T.gather, gather, ease.settle),
-    pose(T.clear, gather), pose(T.release, gather, ease.smooth), pose(T.settle, 'translate(0px, 0px)'),
-  ])),
-  actor('simplify-spark', `${G.sparkX}px ${G.sparkY}px`, [
-    pose(T.rest, 'scale(.88)'), pose(T.gather, 'scale(.88)'), pose(T.clarify, 'scale(1.08)', ease.settle),
-    pose(T.register, 'scale(1)'), pose(T.clear, 'scale(1)'), pose(T.settle, 'scale(.88)'),
+const T = SIMPLIFY_TIMING, G = SIMPLIFY_GEOMETRY;
+const BRANCH = {rest: 'translate(0px,0px) rotate(0deg)', upper: 'translate(.8px,.55px) rotate(24deg)', lower: 'translate(.8px,-.55px) rotate(-24deg)'};
+export const simplify = motion(T.settle, 'Subordinate text folds into a stable reading spine.', ['Fold', 'Clarify', 'Hold'], [
+  actor('simplify-branch-upper', `${G.spineX}px ${G.upperHingeY}px`, [
+    pose(T.rest, BRANCH.rest), pose(T.prepare, 'translate(-.15px,0px) rotate(2deg)', ease.accelerate),
+    pose(T.upperFold, BRANCH.upper, ease.settle), pose(T.hold, BRANCH.upper),
+    pose(T.release, 'translate(.2px,.1px) rotate(5deg)', ease.smooth), pose(T.settle, BRANCH.rest),
   ]),
-  actor('simplify-clarity', '3.2px 17.1px', [
-    light(T.rest, 0, 'scaleX(.15)'), light(T.register, 0, 'scaleX(.15)'),
-    light(T.register + 1, .82, 'scaleX(1)'), light(T.clear, 0, 'scaleX(1)'), light(T.settle, 0, 'scaleX(.15)'),
+  actor('simplify-branch-lower', `${G.spineX}px ${G.lowerHingeY}px`, [
+    pose(T.rest, BRANCH.rest), pose(T.upperFold, 'translate(-.15px,0px) rotate(0deg)'),
+    pose(T.lowerFold, BRANCH.lower, ease.settle), pose(T.hold, BRANCH.lower),
+    pose(T.release, 'translate(.2px,-.1px) rotate(-5deg)', ease.smooth), pose(T.settle, BRANCH.rest),
+  ]),
+  actor('simplify-spine', `${G.spineX}px 12px`, [
+    pose(T.rest, 'scaleX(1)'), pose(T.lowerFold, 'scaleX(1)'),
+    pose(T.spineSettle, 'scaleX(1.035)', ease.settle), pose(T.hold, 'scaleX(1.035)'),
+    pose(T.release, 'scaleX(1.01)', ease.smooth), pose(T.settle, 'scaleX(1)'),
   ]),
 ]);

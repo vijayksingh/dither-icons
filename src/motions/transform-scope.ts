@@ -1,46 +1,53 @@
-import {actor, light, motion} from './authoring';
+import {actor, ease, motion, pose} from './authoring';
 
 /* ANIMATION STORYBOARD / TRANSFORM SCOPE
- *    0ms  a whole-page outline and a selected-passage frame share one compact control
- *  120ms  the page yields slightly as the selection takes focus
- *  330ms  a bidirectional handoff crosses the narrow scope gap
- *  460ms  the selected passage seats; both scope meanings remain visible
- *  690ms  the handoff clears while the chosen scope holds briefly
- *  820ms  page and selection return to their neutral emphasis
- * 1040ms  exact neutral; the host still owns pressed state and target selection
- * MOT-01/02/03/04/05/07/08/10/11/12/14/15/16: scope is a relation
- * between page and passage, not a page icon or selection marquee alone.
+ *    0ms  a page boundary contains the same content as a smaller selected-passage lens
+ *  110ms  the lens corners gather at the selection frame
+ *  320ms  the four corners travel toward the page boundary
+ *  450ms  each corner seats on the page frame with a short local click
+ *  680ms  whole-article scope holds long enough to read
+ *  820ms  the corners contract back into the selected passage
+ * 1040ms  exact neutral; page and selection remain recognizable
+ * MOT-01/02/03/04/05/06/07/10/11/12/14/15/16: the boundary/lens
+ * is the scope instrument; no abstract arrow substitutes for target expansion.
  */
 export const TRANSFORM_SCOPE_TIMING = {
-  rest: 0, prepare: 120, handoff: 330, seat: 460,
-  clear: 690, release: 820, settle: 1040,
+  rest: 0, prepare: 110, expand: 320, seat: 450,
+  hold: 680, contract: 820, settle: 1040,
 };
-export const TRANSFORM_SCOPE_GEOMETRY = {pageX: 7.2, selectionX: 17.5};
-export const TRANSFORM_SCOPE_OPACITY = {page: .78, selection: .95};
+export const TRANSFORM_SCOPE_GEOMETRY = {
+  lensLeft: 5.4, lensTop: 6.6, lensRight: 18.2, lensBottom: 17,
+  pageLeft: 3.4, pageTop: 3.2, pageRight: 20.2, pageBottom: 20.8,
+};
+export const TRANSFORM_SCOPE_OPACITY = {lens: .9};
+/* Marks clear the text lines by 0.325-0.525 and the page frame by 0.5;
+ * the 2.4-unit dog-ear keeps the seated top-right mark off the fold. */
 export const TRANSFORM_SCOPE_ART = {
-  page: 'M3.2 3.3h5.2l2 2v15.4H3.2Z',
-  fold: 'M8.4 3.3v2h2',
-  pageLines: ['M5 9h3.5', 'M5 12h3.5', 'M5 15h2.5'],
-  selection: ['M15 7h-1.3v2.2', 'M18.7 7H20v2.2', 'M15 17h-1.3v-2.2', 'M18.7 17H20v-2.2'],
-  selectionLines: ['M15.2 11h4.1', 'M15.2 13.8h3.1'],
-  transfer: 'M11.2 9.4h1.6l-.8-.8M12.8 14.6h-1.6l.8.8',
+  page: 'M3.4 3.2h16.8v17.6H3.4Z',
+  fold: 'M17.8 3.2L20.2 5.6',
+  content: ['M7.2 8.5h9.2', 'M7.2 11.9h7.8', 'M7.2 15.3h5.8', 'M7.2 18.7h8.2'],
+  selection: ['M6.9 6.6H5.4V8.4', 'M16.7 6.6h1.5v1.8', 'M6.9 17H5.4v-1.8', 'M16.7 17h1.5V15.2'],
 };
-const T = TRANSFORM_SCOPE_TIMING;
-const G = TRANSFORM_SCOPE_GEOMETRY;
-export const transformScope = motion(T.settle, 'The page and passage frame hand off the active transform scope.', ['Present', 'Switch', 'Settle'], [
-  actor('scope-page', `${G.pageX}px 12px`, [
-    light(T.rest, TRANSFORM_SCOPE_OPACITY.page, 'scale(1)'), light(T.prepare, TRANSFORM_SCOPE_OPACITY.page, 'scale(1)'),
-    light(T.handoff, TRANSFORM_SCOPE_OPACITY.page, 'scale(.95)'), light(T.seat, TRANSFORM_SCOPE_OPACITY.page, 'scale(.95)'),
-    light(T.clear, TRANSFORM_SCOPE_OPACITY.page, 'scale(.98)'), light(T.release, TRANSFORM_SCOPE_OPACITY.page, 'scale(1)'), light(T.settle, TRANSFORM_SCOPE_OPACITY.page, 'scale(1)'),
-  ]),
-  actor('scope-selection', `${G.selectionX}px 12px`, [
-    light(T.rest, TRANSFORM_SCOPE_OPACITY.selection, 'scale(1)'), light(T.prepare, TRANSFORM_SCOPE_OPACITY.selection, 'scale(1.03)'),
-    light(T.handoff, TRANSFORM_SCOPE_OPACITY.selection, 'scale(1.05)'), light(T.seat, TRANSFORM_SCOPE_OPACITY.selection, 'scale(1.08)'),
-    light(T.clear, TRANSFORM_SCOPE_OPACITY.selection, 'scale(1.05)'), light(T.release, TRANSFORM_SCOPE_OPACITY.selection, 'scale(1)'), light(T.settle, TRANSFORM_SCOPE_OPACITY.selection, 'scale(1)'),
-  ]),
-  actor('scope-transfer', '12px 12px', [
-    light(T.rest, 0, 'translateX(-.6px) scale(.7)'), light(T.prepare, 0, 'translateX(-.6px) scale(.7)'),
-    light(T.handoff, .82, 'translateX(.45px) scale(1)'), light(T.seat, .86, 'translateX(0px) scale(1)'),
-    light(T.clear, 0, 'translateX(.6px) scale(.7)'), light(T.settle, 0, 'translateX(-.6px) scale(.7)'),
-  ]),
-]);
+const T = TRANSFORM_SCOPE_TIMING, G = TRANSFORM_SCOPE_GEOMETRY;
+const n = (value: number) => Number(value.toFixed(2));
+/* Constant-size corner marks travel to the page frame; scaling the marks
+ * themselves turned the lens into oversized brackets that overshot the page. */
+export const TRANSFORM_SCOPE_CORNERS = [
+  {key: 'tl', x: G.lensLeft, y: G.lensTop, dx: n(G.pageLeft - G.lensLeft), dy: n(G.pageTop - G.lensTop)},
+  {key: 'tr', x: G.lensRight, y: G.lensTop, dx: n(G.pageRight - G.lensRight), dy: n(G.pageTop - G.lensTop)},
+  {key: 'bl', x: G.lensLeft, y: G.lensBottom, dx: n(G.pageLeft - G.lensLeft), dy: n(G.pageBottom - G.lensBottom)},
+  {key: 'br', x: G.lensRight, y: G.lensBottom, dx: n(G.pageRight - G.lensRight), dy: n(G.pageBottom - G.lensBottom)},
+] as const;
+const corner = ({key, x, y, dx, dy}: typeof TRANSFORM_SCOPE_CORNERS[number]) => {
+  const travel = (scale: number) => `translate(${n(dx * scale)}px,${n(dy * scale)}px)`;
+  return actor(`scope-corner-${key}`, `${x}px ${y}px`, [
+    pose(T.rest, 'translate(0px,0px) scale(1)'),
+    pose(T.prepare, `${travel(-.04)} scale(.98)`, ease.accelerate),
+    pose(T.expand, `${travel(.96)} scale(1)`, ease.settle),
+    pose(T.seat, `${travel(1)} scale(1.1)`, ease.settle),
+    pose(T.hold, `${travel(1)} scale(1)`),
+    pose(T.contract, `${travel(-.03)} scale(1)`, ease.smooth),
+    pose(T.settle, 'translate(0px,0px) scale(1)'),
+  ]);
+};
+export const transformScope = motion(T.settle, 'The selected-passage lens corners travel to the page boundary and return.', ['Frame', 'Expand', 'Return'], TRANSFORM_SCOPE_CORNERS.map(corner));

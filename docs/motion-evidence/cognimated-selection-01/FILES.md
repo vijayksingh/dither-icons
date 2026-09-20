@@ -1,6 +1,6 @@
-# Cognimated selection / 01 changed files
+# Cognimated selection / 01 corrective-pass files
 
-Source, tests, reviews, source mapping, generated guides, gallery inputs and visual metadata for the local four-icon selection batch. Generated sharing assets will include the 89-icon catalog count.
+Source, tests, reviews, source mapping, generated guides, gallery inputs and visual metadata for corrective re-authoring of the existing four-icon selection set. No new exports. Generated sharing assets retain the 89-icon catalog count.
 
 - `demo/MotionStudies.tsx`
 - `docs/MOTION-CATALOG.md`

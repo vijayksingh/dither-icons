@@ -1,25 +1,52 @@
 # Simplify: Interface Craft review
 
 ## Context
-The selection-popover action simplifies selected text. It is the `data-mode="simplify"` control in `web-absorb/extension/content/selection-transform-controller.js:567`; the host owns selection, the rewrite request and the returned text.
+
+`SimplifyIcon` represents the `data-mode="simplify"` selection command in `web-absorb/extension/content/selection-transform-controller.js:567`. The host owns selection, rewrite dispatch and returned text; this icon only communicates reducing cognitive branching while preserving the main idea.
 
 ## First Impressions
-The source drawing is a short text stack followed by one clarity star. A star field would collide with Sparkles and would make the action look like discovery rather than text simplification. The library keeps the text as the primary instrument and makes the lower lines gather before the single mark answers.
+
+The previous star-and-lines treatment decorated the label. It did not show simplification. This revision makes a branching text structure do the work: subordinate fragments fold toward one stable meaning spine. The spine remains the visual reference, so the action reads as reduction of structure rather than discovery.
 
 ## Visual Design
-Three round-ended text lines at x=3 remain readable in every frame. Their lower lines shorten and rise by bounded amounts; they never disappear. The single star at (17, 9.5) stays attached to the text band. A short lower clarity line is subordinate and starts hidden. Solid uses the corrected 1.05 control contour; Outline uses transparent 0.35-unit edge rails rather than a background overpaint.
+
+The spine is a continuous vertical path at `x=6.2`. Three readable main lines sit to its right. Upper and lower subordinate fragments sit on separate hinge points and fold inward in sequence. No star, plus, underline or ambient effect competes with the text structure. The main lines remain visible through every frame; dither stays attached to each authored path.
 
 ## Interface Design
-Text prepares, the lower lines gather, the clarity star opens, and the underline registers only after the gathering has seated. The text is the stable reference. The response cannot imply that a rewrite was accepted or inserted; it is only a finite gesture study.
+
+The user sees one causal sentence: branches prepare, upper branch folds, lower branch folds, then the spine settles. The central meaning is never removed. The icon does not imply that a rewrite succeeded or that the host accepted a result.
 
 ## Consistency & Conventions
-MOT-01/02/03/05 keep the text silhouette and its relationship to the clarity mark. MOT-04/06 bound the gathering. MOT-07 binds dither to each contour. MOT-08/16 place the localized clarity response after the text action. MOT-09/10/11/12 provide finite playback, exact neutral return, reduced-motion stillness and shared React/SVG tracks. MOT-14 leaves transformation success to the host. MOT-15 records this meaning separately from Sparkles.
+
+MOT-01/05 preserve the spine and main text as stable identity. MOT-02/03 make each branch a subordinate actor with an ordered hinge relationship. MOT-04/06 bound folds to short rotations and a restrained spine settle. MOT-07 keeps material attached to each contour. MOT-08/16 place the localized spine response after the final fold without adding a generic payoff. MOT-09/10/11/12 provide finite playback, exact return, reduced-motion stillness and one shared React/SVG source. MOT-14 leaves transformation success to the host. MOT-15 distinguishes this hierarchy instrument from Sparkles, which remains an appearance/discovery field.
+
+## Storyboard
+
+```text
+  0ms  branching text waits around a fixed meaning spine
+ 90ms  upper and lower branches take tension at separate hinges
+300ms  upper branch folds inward; main spine stays readable
+410ms  lower branch folds inward behind the same spine
+500ms  spine settles with a restrained scale 1.0 -> 1.035 response
+700ms  reduced hierarchy holds briefly
+840ms  folded branches release toward authored rest
+1080ms all paths return exactly to neutral
+```
+
+## Named geometry and timing
+
+`SIMPLIFY_TIMING` names `prepare`, `upperFold`, `lowerFold`, `spineSettle`, `hold`, `release` and `settle`. `SIMPLIFY_GEOMETRY` names `spineX`, `upperHingeY` and `lowerHingeY`. `simplify-branch-upper`, `simplify-branch-lower` and `simplify-spine` have independent tracks and explicit transform origins. Tracks use transform only; no per-frame React state.
 
 ## User Context
-At 16–24px, Solid or Outline should be preferred for a repeated popover action; Dither is the larger reference material. Keyboard/touch target, disabled state, selection ownership and returned-text state remain external. Motion-off leaves the text and star intact.
+
+At 16–24px, Solid or Outline remains the compact choice; Dither is the larger reference material. Host labels, focus, disabled/loading state, selection ownership and result insertion remain external. Reduced motion retains spine, main lines and both branch groups without movement.
 
 ## Top Opportunities
-Keep the selected-text anchor visually dominant; make reduction visible through line gathering; keep one clarity mark instead of borrowing Sparkles' surrounding field.
+
+1. Keep the spine dominant so reduction never reads as deletion.
+2. Preserve staged upper-then-lower folding; simultaneous collapse would become generic shrinking.
+3. Inspect Outline at compact size for branch separation and dither-core clearance.
 
 ## Encoded storyboard and review
-[simplify.ts](../../src/motions/simplify.ts), 1020ms: gather 90, clarify 300, register 430, clear 650, release 820, rest 1020. Actors: `simplify-line-0/1/2`, `simplify-spark`, `simplify-clarity`. React and standalone SVG use the same tracks; reduced motion disables animation while preserving the first frame. Focused source/render checks are recorded in [selection batch evidence](../motion-evidence/cognimated-selection-01/README.md). Native browser replay and user optical review remain pending; no screenshot is claimed from source inspection.
+
+[simplify.ts](../../src/motions/simplify.ts) encodes the storyboard at 1080ms. Focused tests assert branch hinge rotations, origins, spine response, authored paths, banned decorative actors, finite tracks, reduced motion and exact return. Browser replay and user optical review remain pending; no approval is claimed.

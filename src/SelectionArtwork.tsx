@@ -3,7 +3,7 @@ import type {Draw} from './ExtendedArtwork';
 import {SIMPLIFY_ART} from './motions/simplify';
 import {TIGHTEN_ART} from './motions/tighten';
 import {VIVID_ART} from './motions/vivid';
-import {TRANSFORM_SCOPE_ART, TRANSFORM_SCOPE_OPACITY} from './motions/transform-scope';
+import {TRANSFORM_SCOPE_ART, TRANSFORM_SCOPE_CORNERS, TRANSFORM_SCOPE_OPACITY} from './motions/transform-scope';
 import {READER_STYLE as INK} from './motions/reader-style';
 import {READER_CONTROLS_STYLE as CONTROL} from './motions/reader-controls-style';
 
@@ -38,46 +38,48 @@ export function SelectionArtwork({name, draw, texture}: {name: string; draw: Dra
     </>;
   };
   const detail = (d: string) => line(d, texture === 'outline' ? CONTROL.outlineResponse : CONTROL.response);
-  const filled = (d: string) => texture === 'outline' ? line(d, CONTROL.outlineText) : draw(d);
 
   if (name === 'simplify') {
     const A = SIMPLIFY_ART;
     return <>
-      {A.lines.map((d, i) => <g key={d} data-part={`simplify-line-${i}`}>{ink(d, INK.text, 'text')}</g>)}
-      <g data-part="simplify-spark">{filled(A.sparkle)}</g>
-      {accent('simplify-clarity', detail(A.clarity))}
+      <g data-part="simplify-branch-upper">
+        {A.upper.map((d, i) => <g key={d}>{ink(d, i === 0 ? CONTROL.contour : INK.text, i === 0 ? 'contour' : 'text')}</g>)}
+      </g>
+      <g data-part="simplify-branch-lower">
+        {A.lower.map((d, i) => <g key={d}>{ink(d, i === 0 ? CONTROL.contour : INK.text, i === 0 ? 'contour' : 'text')}</g>)}
+      </g>
+      <g data-part="simplify-spine">
+        {ink(A.spine, CONTROL.contour)}
+        {A.main.map(d => <g key={d}>{ink(d, INK.text, 'text')}</g>)}
+      </g>
     </>;
   }
   if (name === 'tighten') {
     const A = TIGHTEN_ART;
     return <>
-      <g data-part="tighten-left-clamp">{A.left.map(d => <g key={d}>{ink(d, CONTROL.contour)}</g>)}</g>
-      <g data-part="tighten-right-clamp">{A.right.map(d => <g key={d}>{ink(d, CONTROL.contour)}</g>)}</g>
-      <g data-part="tighten-text">{A.text.map(d => <g key={d}>{ink(d, INK.text, 'text')}</g>)}</g>
-      {accent('tighten-registration', detail(A.registration))}
+      <g data-part="tighten-bound-left">{ink(A.bounds[0], CONTROL.contour)}</g>
+      <g data-part="tighten-bound-right">{ink(A.bounds[1], CONTROL.contour)}</g>
+      {A.words.map((d, i) => <g key={d} data-part={`tighten-word-${i}`}>{ink(d, INK.text, 'text')}</g>)}
     </>;
   }
   if (name === 'vivid') {
     const A = VIVID_ART;
     return <>
-      <g>{A.text.map(d => <g key={d}>{ink(d, INK.text, 'text')}</g>)}</g>
-      <g data-part="vivid-star">{filled(A.sparkle)}</g>
-      <g data-part="vivid-plus">{ink(A.plus, CONTROL.contour)}</g>
-      {accent('vivid-highlight', detail(A.highlight))}
+      <g data-part="vivid-context">{A.context.map(d => <g key={d}>{ink(d, INK.text, 'text')}</g>)}</g>
+      <g data-part="vivid-focus-word">{ink(A.focus, INK.text, 'text')}</g>
+      {accent('vivid-ink-accent', detail(A.accent))}
     </>;
   }
   if (name === 'transform-scope') {
     const A = TRANSFORM_SCOPE_ART;
     return <>
-      <g data-part="scope-page" opacity={TRANSFORM_SCOPE_OPACITY.page}>
+      <g data-part="scope-page">
         {ink(A.page, CONTROL.contour)}{ink(A.fold, CONTROL.contour)}
-        {A.pageLines.map(d => <g key={d}>{ink(d, INK.text, 'text')}</g>)}
+        {A.content.map(d => <g key={d}>{ink(d, INK.text, 'text')}</g>)}
       </g>
-      <g data-part="scope-selection" opacity={TRANSFORM_SCOPE_OPACITY.selection}>
-        {A.selection.map(d => <g key={d}>{ink(d, CONTROL.contour)}</g>)}
-        {A.selectionLines.map(d => <g key={d}>{ink(d, INK.text, 'text')}</g>)}
+      <g data-part="scope-lens" opacity={TRANSFORM_SCOPE_OPACITY.lens}>
+        {A.selection.map((d, i) => <g key={d} data-part={`scope-corner-${TRANSFORM_SCOPE_CORNERS[i].key}`}>{ink(d, CONTROL.contour)}</g>)}
       </g>
-      {accent('scope-transfer', detail(A.transfer))}
     </>;
   }
   return null;

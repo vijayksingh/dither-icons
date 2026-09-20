@@ -1,25 +1,51 @@
 # Transform Scope: Interface Craft review
 
 ## Context
-The selection-popover scope control switches transformation between the selected passage and the whole article. It is the `.scope` button in `web-absorb/extension/content/selection-transform-controller.js:576`, rendered by `_renderScope()` at line 904 and applied by `_selectedTransformTargets()` at line 1142. The host owns `aria-pressed`, labels and target collection.
+
+`TransformScopeIcon` represents the `.scope` control in `web-absorb/extension/content/selection-transform-controller.js:576`, rendered by `_renderScope()` at line 904 and applied by `_selectedTransformTargets()` at line 1142. The host owns `aria-pressed`, inverse labels and article-versus-selection target collection.
 
 ## First Impressions
-The source supplies a page glyph and a selection-corner glyph. A page-only icon would imply whole-article scope; a marquee-only icon would imply selection scope. The library places both meanings side by side with a restrained bidirectional handoff, so the control reads as a scope switch without relying on a hidden state.
+
+The previous side-by-side page/selection drawing explained two nouns but not the transition between scopes. This revision makes the selection boundary the actor. Page content remains retained while four constant-size lens corners travel from the passage frame to the page frame, then return. The motion communicates target extent without a generic bidirectional arrow.
 
 ## Visual Design
-The page outline and fold occupy the left anchor; page text remains inside it. Four selection corners and two selected-passage lines occupy the right anchor. A narrow center handoff stays subordinate. Both anchors are present at rest and throughout the gesture. Solid uses 1.05-unit contours and Outline uses transparent cores where appropriate; no page/selection edge is painted twice.
+
+One page frame with a 2.4-unit dog-ear and four content lines establish the article. Four constant-size selection corners form a lens around the passage; the rest lens keeps 0.325–0.525 clearance from the text lines and 0.5 from the page frame, so no mark crosses the content. At rest both page and selection meanings are recognizable; during expansion each corner travels to its page-frame corner, seats with a short local click and returns. The marks never scale, so the frame stays legible. Content does not vanish or swap.
 
 ## Interface Design
-The page yields slightly, selection takes focus, the bidirectional handoff crosses the gap, and the passage frame seats while the page remains visible. The handoff clears, emphasis releases, and both anchors return exactly. The icon never claims that the article scope changed or that a transform succeeded.
+
+The user sees a scope change as boundary expansion: frame, expand, seat, contract. No transfer arrow needs to explain it. The icon does not claim `aria-pressed` changed, a transform ran, or a rewrite result was inserted.
 
 ## Consistency & Conventions
-MOT-01/02/03/05 preserve both scope identities and their spatial relationship. MOT-04/06 keep the emphasis exchange restrained. MOT-07 keeps texture bound to page and selection contours. MOT-08/16 localize the handoff response between the actual anchors. MOT-09/10/11/12 cover finite shared playback, exact neutral return, reduced motion and transform/opacity-only tracks. MOT-14 leaves pressed state and target selection authoritative to the host. MOT-15 requires the two-scope meaning to remain individual.
+
+MOT-01/05 retain page, content and selection identities at rest. MOT-02/03 make the boundary/lens the primary actor while page content stays fixed. MOT-04/06 bound expansion and overshoot to one compact scale response. MOT-07 keeps dither attached to page and lens contours. MOT-08/16 localize the climax at the seated expanded boundary, not in a detached arrow. MOT-09/10/11/12 provide finite playback, exact return, reduced-motion stillness and shared React/SVG tracks. MOT-14 leaves pressed state and target selection to the host. MOT-15 distinguishes this scope instrument from PanelLeftCloseIcon and generic arrow pairs.
+
+## Storyboard
+
+```text
+  0ms  page, content and selected-passage lens wait together
+110ms lens corners gather at the selection frame; page remains fixed
+320ms the four corners travel toward the page frame
+450ms corners seat on the page frame with a short local click
+680ms expanded target extent holds; page content remains visible
+820ms corners contract toward the selected passage
+1040ms page, content and lens return exactly to neutral
+```
+
+## Named geometry and timing
+
+`TRANSFORM_SCOPE_TIMING` names `prepare`, `expand`, `seat`, `hold`, `contract` and `settle`. `TRANSFORM_SCOPE_GEOMETRY` names the rest lens rectangle and the page frame; `TRANSFORM_SCOPE_CORNERS` derives each corner's origin and travel, and `TRANSFORM_SCOPE_OPACITY` names the lens response. Four `scope-corner-*` tracks own the animation. Transform/opacity-only playback avoids per-frame React state.
 
 ## User Context
-Keep the real inverse accessible labels (“Transform the whole article” / “Transform only the selection”), pressed state, keyboard behavior and selection ownership. Still Solid/Outline is appropriate for a compact popover. Motion-off must still show both page and passage meanings.
+
+Host must preserve inverse accessible labels (“Transform the whole article” / “Transform only the selection”), pressed state, keyboard behavior and selection ownership. Still Solid or Outline suits the compact popover. Reduced motion retains page, content, folded corner and selection lens at rest.
 
 ## Top Opportunities
-Show both scopes at rest; make the handoff occur in the actual gap; never replace this relation with a renamed page or marquee icon.
+
+1. Keep page content visible through expansion; disappearing content would imply a different document.
+2. Preserve selection corners at rest so both target meanings survive without motion.
+3. Check the seated corner marks against the page frame and fold in Outline.
 
 ## Encoded storyboard and review
-[transform-scope.ts](../../src/motions/transform-scope.ts), 1040ms: prepare 120, handoff 330, seat 460, clear 690, release 820, rest 1040. Actors: `scope-page`, `scope-selection`, `scope-transfer`; page and selection share no animation preset. Focused source/render checks are recorded in [selection batch evidence](../motion-evidence/cognimated-selection-01/README.md). Native browser replay and user optical review remain pending; no screenshot is claimed from source inspection.
+
+[transform-scope.ts](../../src/motions/transform-scope.ts) encodes the storyboard at 1040ms. Focused tests assert corner origins, travel, seating and local click, authored page/content/selection paths, absence of transfer/arrow actors, finite tracks, reduced motion and exact return. Browser replay and user optical review remain pending; no approval is claimed.
