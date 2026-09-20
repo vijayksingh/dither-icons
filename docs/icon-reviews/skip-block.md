@@ -7,7 +7,7 @@ Skip the current article chunk in guided reading: `.skip-block`, “Skip current
 Source-level critique: two retained text chunks, a hooked bypass arrow and a margin bracket communicate chunk scope. The user flagged the first drawing's alignment/SVG defects. Its intersecting stem/head strokes have been replaced with one closed arrow contour; the bracket and text have more clearance.
 
 ## Visual Design
-Text spans x=12–21, with source baselines y=6/9 and receiving baselines y=16/19. The bracket at x=9.75 spans y=5.5–9.5, aligned around both source lines. The hooked arrow ends at the receiving block's center, y=17.5. Its closed contour has no duplicate head/stem join in Outline. Bracket contours use 1.05 Solid / 1.35 Dither or Outline; text is 0.9 (0.8 Outline).
+Text spans x=12–21, with source baselines y=6/9 and receiving baselines y=16/19. The bracket at x=9.75 spans y=5.5–9.5, aligned around both source lines. The hooked arrow ends at the receiving block's center, y=17.5. Its closed contour has no duplicate head/stem join in Outline. Bracket contours use 1.5 in every material; text is 1.25 (0.9 Outline).
 
 ## Interface Design
 Withdraw the bracket 0.5 into the empty gutter, pass the complete chunk by 10 units, then seat beside the receiving block. The receiving underline responds only after arrival. Clear it before reversing through the gutter. Both text chunks and the hooked arrow remain fixed; no text disappears and no skipped block earns reading credit.

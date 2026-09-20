@@ -7,7 +7,7 @@ Main path toggle skips captions, references, symbols and asides while retaining 
 Source critique: milestone nodes would import the wrong meaning. The drawing instead places a direct downward column next to a retained detour and indented aside. The route tongue chooses between those relationships; no generic traveling dot substitutes for the primary action. This is source-level critique, not user visual approval.
 
 ## Visual Design
-Main spine at x=5.5 spans y=3.5–20.5 with a downward direction cue. Detour loops through x=11.5; main text sits at x=15–21 above and below the aside. The five-unit route tongue pivots at the drawn junction (5.5,7). Corrected thin controls weights apply. Spine and branch use one contour/core mask so their junctions do not accumulate Outline lines. A second, moving knockout follows the tongue exactly to avoid double grain or a route showing through its core.
+Main spine at x=5.5 spans y=3.5–20.5 with a downward direction cue. Detour loops through x=11.5; main text sits at x=15–21 above and below the aside. The five-unit route tongue pivots at the drawn junction (5.5,7). Reader-batch material weights apply. Spine and branch use one contour/core mask so their junctions do not accumulate Outline lines. A second, moving knockout follows the tongue exactly to avoid double grain or a route showing through its core.
 
 ## Interface Design
 Take up four degrees, then turn the tongue 90 degrees into the main column. Its tip arrives at (5.5,12), exactly where downstream junction light starts. Main prose below the aside answers afterward. Neither detour nor aside moves or vanishes. Hold the selection, clear response, then reset the demonstration. The entire fixed main route stays readable at rest and throughout.

@@ -12,6 +12,7 @@ The user's first three screenshots identified alignment/SVG defects in the first
 - Replace the skip arrow's separate stem/head strokes with one closed contour; realign the margin bracket and text.
 - Occlude the rail body behind its retained top tab; occlude the headphone band behind moving cup silhouettes with identical tracks.
 - Reduce Solid contour width from 1.5 to 1.05; text from 1.25 to 0.9. Retain distinct, finer hollow Outline geometry.
+- 2026-09-19 correction: that lighter revision read as too thin next to the initial reader batch. Reader-control, pace/navigation and selection icons now use the initial reader weights (1.5 contour in every material, 1.25 text, 1 response, 0.5 Outline edges).
 
 Each icon has its own source-level Interface Craft critique and named storyboard. React/WAAPI and standalone SVG CSS use the same tracks. Transform/opacity are the only animated properties; no per-frame React state. Reduced motion and motion-off retain the complete static drawing. Temporary accents are not required for recognition.
 
@@ -24,7 +25,7 @@ npx tsx --test tests/reader-controls-motion.test.tsx tests/reader-motion.test.ts
 git diff --check
 ```
 
-Checks cover material/actor binding, neutral return, cause-before-response, grip alignment/bounds, block/gutter clearance, fixed rail clipping, headphone pivots and matched knockouts, transparent Outline joint pixels, lighter Solid weights, repeated SVG IDs, reduced-motion CSS, compact rasters, named exports, manifest/agent-guide agreement, social metadata and registry compatibility. The existing build regenerates guides, manifests, references, OG images and crawler HTML.
+Checks cover material/actor binding, neutral return, cause-before-response, grip alignment/bounds, block/gutter clearance, fixed rail clipping, headphone pivots and matched knockouts, transparent Outline joint pixels, Solid/Outline weight parity with the initial reader batch, repeated SVG IDs, reduced-motion CSS, compact rasters, named exports, manifest/agent-guide agreement, social metadata and registry compatibility. The existing build regenerates guides, manifests, references, OG images and crawler HTML.
 
 Results: typecheck passed; one complete build passed (81 manifest entries, 90 share images and HTML pages). The 35-case focused run passed 34 cases and exposed one test-only selector error: it matched a CSS attribute selector before the real SVG group. After restricting that assertion to the opening `<g>` tag, all nine cases in the affected file passed with `npx tsx --test tests/reader-controls-motion.test.tsx`; the other 26 cases were unchanged and had passed. No production code changed after the build. Raster tests avoid system-font discovery because these SVGs contain no text.
 

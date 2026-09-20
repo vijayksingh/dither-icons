@@ -7,7 +7,7 @@ Seek one readable word forward. Source: `web-absorb/extension/content/reading-fo
 Source critique: ArrowRight alone suggests navigation or continuation without a unit. The three retained words and stepping selection shoe make the unit explicit, while a stationary arrow keeps direction readable during every pose. Next Word has a shorter forward release and leading-edge response than Previous Word's recall. Visual approval remains with the user.
 
 ## Visual Design
-Use the pair's aligned text band, center word at x=12, next word at x=19, and selection shoe spanning x=9–15 at rest. The fixed right arrow at y=19 never drifts into the text. A seven-unit advance plus 0.35-unit bounded overshoot preserves outer clearance. Solid stays at the corrected 1.05 contour; Outline cores are true knockouts, not background-colored overpainting.
+Use the pair's aligned text band, center word at x=12, next word at x=19, and selection shoe spanning x=9–15 at rest. The fixed right arrow at y=19 never drifts into the text. A seven-unit advance plus 0.35-unit bounded overshoot preserves outer clearance. Solid stays at the reader-batch 1.5 contour; Outline cores are true knockouts, not background-colored overpainting.
 
 ## Interface Design
 Take up forward travel with a small counter-movement, release the current registration, advance one interval, and settle under the next word. Its underline opens from the leading edge only after seating. Keep the position briefly, clear the response, and return the preview selector. No word is removed, no arrow direction changes, and no application playback or recognition state is asserted.

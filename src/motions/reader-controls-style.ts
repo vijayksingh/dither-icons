@@ -1,5 +1,7 @@
-/** Reader-control weights, refined after the first user screenshots. */
+/** Reader-control weights, matched to the initial reader batch after the
+ * lighter revision read as too thin in Solid and Outline.
+ */
 export const READER_CONTROLS_STYLE = {
-  contour: 1.35, solidContour: 1.05, text: .9, outlineText: .8,
-  response: .75, outlineResponse: .6, outlineEdge: .35, referenceOpacity: .5,
+  contour: 1.5, solidContour: 1.5, text: 1.25, outlineText: .9,
+  response: 1, outlineResponse: .75, outlineEdge: .5, referenceOpacity: .5,
 } as const;

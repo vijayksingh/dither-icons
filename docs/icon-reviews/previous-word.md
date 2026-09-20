@@ -7,7 +7,7 @@ Seek one readable word backward. Source: `web-absorb/extension/content/reading-f
 Source critique: ArrowLeft means navigation and says nothing about seek granularity. Retained word segments, a selection shoe and a fixed left-pointing arrow make the unit and direction separate, visible facts. Previous Word uses a lifted recall and a longer target hold than Next Word. No user visual acceptance claimed.
 
 ## Visual Design
-Three words are centered at x=5/12/19, y=8 under a fixed context line. The selection shoe initially spans x=9–15, y=11–13.5, centered under the middle word. A connected left arrow stays at y=19. Seven units of selector travel reach exactly one word; a 0.3-unit overshoot stays inside the canvas. Shared thin controls material and true transparent Outline cores preserve the corrected composition bar.
+Three words are centered at x=5/12/19, y=8 under a fixed context line. The selection shoe initially spans x=9–15, y=11–13.5, centered under the middle word. A connected left arrow stays at y=19. Seven units of selector travel reach exactly one word; a 0.3-unit overshoot stays inside the canvas. Shared reader-batch material and true transparent Outline cores preserve the corrected composition bar.
 
 ## Interface Design
 Lift attention from the current word, rewind one interval, seat under the preceding word, then open its underline from the trailing edge toward the beginning. Hold briefly for recognition and clear the underline before resetting. Words and arrow never move. This is registration of attention, not a physical collision: the localized payoff belongs to the exact selected word, not decorative impact rays.

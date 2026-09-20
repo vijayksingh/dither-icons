@@ -7,7 +7,7 @@ Collapse the floating reader controls while retaining the article. The saved rea
 Source-level critique: four open reading lines remain beside a detached rail with an upward chevron. The user's Outline screenshot exposed crossed contours at the cap/body joint. A fixed cap occlusion mask now removes the hidden body ink; lighter materials address the heavy Solid screenshot.
 
 ## Visual Design
-Prose spans x=3–12; the rail spans x=16–21, down to y=20.5. Its top tab remains at y=3.5–8. Full-size controls translate −13.25 behind a fixed y=8 clip and the cap silhouette. Hollow contour cores remain transparent through the joint. Solid uses 1.05 contours, 0.9 text and 0.75 details. Dither/Outline use 1.35 outer contours with 0.35 Outline edges. The response sits below the dock at y=9.25.
+Prose spans x=3–12; the rail spans x=16–21, down to y=20.5. Its top tab remains at y=3.5–8. Full-size controls translate −13.25 behind a fixed y=8 clip and the cap silhouette. Hollow contour cores remain transparent through the joint. Every material uses 1.5 contours, 1.25 text and 1 details; Outline edges are 0.5. The response sits below the dock at y=9.25.
 
 ## Interface Design
 The chevron leads upward; the full-size rail retracts behind its top tab. Only after the trailing edge clears does the dock respond. Hold the retained tab, clear the response and restore the preview. Prose never moves or reflows. The mask and clip remain outside the moving body, so neither travels with the rail.

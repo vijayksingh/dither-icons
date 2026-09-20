@@ -10,6 +10,7 @@ import {SETS} from '../demo/MotionStudies';
 import {filterIcons} from '../demo/model';
 import {sharePage, socialMetadata} from '../demo/content/social';
 import {READER_CONTROLS_STYLE as INK} from '../src/motions/reader-controls-style';
+import {READER_STYLE as READER, READER_OUTLINE as OUTLINE} from '../src/motions/reader-style';
 import {dragHandle, dragTransform, dragSeatArt, DRAG_HANDLE_EASE as DE, DRAG_HANDLE_POSES as DP, DRAG_HANDLE_ART as DA, DRAG_HANDLE_GEOMETRY as D, DRAG_HANDLE_TIMING as DT} from '../src/motions/drag-handle';
 import {skipBlock, SKIP_BLOCK_ART as SA, SKIP_BLOCK_GEOMETRY as S, SKIP_BLOCK_TIMING as ST} from '../src/motions/skip-block';
 import {collapseRail, COLLAPSE_RAIL_ART as CA, COLLAPSE_RAIL_GEOMETRY as C, COLLAPSE_RAIL_TIMING as CT} from '../src/motions/collapse-rail';
@@ -233,7 +234,11 @@ test('screenshot regressions: centered grip, lighter solid bands and no outline 
   assert.equal((D.top + D.bottom) / 2, 12);
   assert.equal((D.ribStart + D.ribEnd) / 2, 12);
   assert.equal((DA.registration.match(/M/g) ?? []).length, 4, 'balanced registration corners');
-  assert.ok(INK.solidContour <= 1.1 && INK.text <= 1, 'solid bands and text lighter than rejected 1.5/1.25');
+  assert.deepEqual(
+    [INK.contour, INK.solidContour, INK.text, INK.outlineText, INK.response, INK.outlineResponse, INK.outlineEdge],
+    [READER.contour, READER.contour, READER.text, OUTLINE.text, READER.response, OUTLINE.response, OUTLINE.edge],
+    'material weights match the initial reader batch instead of the rejected thin revision',
+  );
   const alpha = (name: string, x: number, y: number) => {
     const pixels = new Resvg(svgFor(name, 'outline', 192), {font: {loadSystemFonts: false}}).render().pixels;
     return pixels[(Math.floor(y * 8) * 192 + Math.floor(x * 8)) * 4 + 3];

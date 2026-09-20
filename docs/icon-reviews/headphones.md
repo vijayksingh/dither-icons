@@ -7,7 +7,7 @@ Audio output/listening device. Cognimated uses Headphones for “Download MP3”
 Source-level critique: an open arch and two padded earcups identify a device before motion. The user's screenshot exposed band lines crossing the hollow cup contours. Matching animated cup knockouts now occlude the band before cups are painted; the revised material weights lighten Solid.
 
 ## Visual Design
-The arch spans x=4–20 and joins the cups at y=12. Each cup rotates inward 5 degrees around its drawn suspension point. Drivers remain within the cups and expand 1.22 vertically. Cushion marks inherit their cup's transform. Solid contours are 1.05 units; Dither/Outline retain a 1.35 footprint, with transparent 0.35-edge Outline. The arch knockout uses the complete receiving cup silhouette and the same material width.
+The arch spans x=4–20 and joins the cups at y=12. Each cup rotates inward 5 degrees around its drawn suspension point. Drivers remain within the cups and expand 1.22 vertically. Cushion marks inherit their cup's transform. Contours are 1.5 units in every material, with transparent 0.5-edge Outline. The arch knockout uses the complete receiving cup silhouette and the same material width.
 
 ## Interface Design
 Seat both cups against fixed suspension points; then the left and right drivers respond in a short stagger. Let drivers relax while the cups hold, clear cushion light and return the cups. The arch stays still. Each moving mask uses exactly its cup's transform origin, frames and easing, preventing outline intersections through the entire gesture. No audio, connected hardware or completed download is asserted.

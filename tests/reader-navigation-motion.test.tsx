@@ -14,6 +14,7 @@ import {PREVIOUS_WORD_ART as BA, PREVIOUS_WORD_TIMING as BT, PREVIOUS_WORD_POSES
 import {NEXT_WORD_ART as NA, NEXT_WORD_TIMING as NT, NEXT_WORD_POSES as NP, nextWord} from '../src/motions/next-word';
 import {WORD_SEEK_GEOMETRY as W} from '../src/motions/word-seek-geometry';
 import {READER_CONTROLS_STYLE as INK} from '../src/motions/reader-controls-style';
+import {READER_STYLE as READER, READER_OUTLINE as OUTLINE} from '../src/motions/reader-style';
 
 const names = ['reading-pace', 'reader-path', 'previous-word', 'next-word'];
 const textures = ['dither', 'solid', 'outline'] as const;
@@ -152,7 +153,11 @@ test('Outline cores stay transparent at resting and moving mechanical joints', (
   let pace = svg('reading-pace', 'outline', 192).replace(/<style>[\s\S]*?<\/style>/g, '');
   for (const part of ['pace-thumb', 'pace-thumb-cut']) pace = pace.replace(`data-part="${part}"`, `data-part="${part}" transform="translate(${P.step} 0)"`);
   assert.equal(alpha(pace, P.targetX, P.railY), 0, 'rail and detent cannot cross the moving thumb interior');
-  assert.ok(INK.solidContour <= 1.1 && INK.text <= 1);
+  assert.deepEqual(
+    [INK.contour, INK.solidContour, INK.text, INK.outlineText, INK.response, INK.outlineResponse, INK.outlineEdge],
+    [READER.contour, READER.contour, READER.text, OUTLINE.text, READER.response, OUTLINE.response, OUTLINE.edge],
+    'material weights match the initial reader batch instead of the rejected thin revision',
+  );
 });
 
 test('new timelines share React/SVG frames, neutral return, stillness and unique material IDs', () => {
