@@ -14,7 +14,14 @@ export const HISTORY_TIMING={rest:0,prepare:120,trace:180,rewind:490,reach:580,r
 export const HISTORY_GEOMETRY={center:[12,12],radius:8,start:145,end:-150,minuteRewind:-90,hourRatio:12};
 const G=HISTORY_GEOMETRY,T=HISTORY_TIMING;
 export const HISTORY_TIP=polar(12,12,G.radius,G.end);
-export const HISTORY_ART={ring:arcPath(12,12,G.radius,G.start,G.end),head:`M${HISTORY_TIP[0]-.59} ${HISTORY_TIP[1]-3.58}L${HISTORY_TIP.join(' ')}l3.39-1.28`,minute:'M12 12V7.6',hour:'M12 12l2.7 1.6',trace:arcPath(12,12,G.radius,86,104),reply:'M2.75 8.5l-.7.25M4.3 10.3l-.15.75'};
+/* The head vertex sits 1.1 units past the derived endpoint so the ±42° barbs
+ * cover the shaft's cap. On the endpoint, the ring's curvature fused the inner
+ * barb into the arc and the arrow read as a broken check.
+ */
+const HEAD={travel:120,offset:1.1,half:42,barb:3};
+const HEAD_VERTEX=[HISTORY_TIP[0]+HEAD.offset*Math.cos(HEAD.travel*Math.PI/180),HISTORY_TIP[1]+HEAD.offset*Math.sin(HEAD.travel*Math.PI/180)].map(v=>Number(v.toFixed(4)));
+const barb=(a:number)=>[HEAD_VERTEX[0]+HEAD.barb*Math.cos(a*Math.PI/180),HEAD_VERTEX[1]+HEAD.barb*Math.sin(a*Math.PI/180)].map(v=>Number(v.toFixed(4)));
+export const HISTORY_ART={ring:arcPath(12,12,G.radius,G.start,G.end),head:`M${barb(HEAD.travel-180-HEAD.half).join(' ')}L${HEAD_VERTEX.join(' ')}L${barb(HEAD.travel-180+HEAD.half).join(' ')}`,minute:'M12 12V7.6',hour:'M12 12l2.7 1.6',trace:arcPath(12,12,G.radius,86,104),reply:'M2.75 8.5l-.7.25M4.3 10.3l-.15.75'};
 const hands=[{at:T.rest,deg:0},{at:T.prepare,deg:7},{at:T.rewind,deg:G.minuteRewind},{at:T.hold,deg:G.minuteRewind},{at:T.home,deg:0},{at:T.settle,deg:0}];
 export const history=motion(T.settle,'The clock hands rewind inside the history arrow.',['Rewind','Recall','Hold'],[
  ...[{part:'history-minute',ratio:1},{part:'history-hour',ratio:G.hourRatio}].map(({part,ratio})=>actor(part,'12px 12px',hands.map(({at,deg})=>pose(at,`rotate(${deg/ratio}deg)`,at===T.prepare?ease.settle:ease.smooth)))),

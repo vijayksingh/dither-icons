@@ -21,9 +21,9 @@ export function NavigationToolsArtwork({name,draw,texture}:{name:string;draw:Dra
  </>;
  if(name==='history')return <>
   {ink(HISTORY_ART.ring,1.6)}{ink(HISTORY_ART.head,1.6)}
-  <g data-part="history-minute">{ink(HISTORY_ART.minute,1.45)}</g>
-  <g data-part="history-hour">{ink(HISTORY_ART.hour,1.45)}</g>
-  <circle cx="12" cy="12" r=".65"/>
+  <g data-part="history-minute">{ink(HISTORY_ART.minute,1.25)}</g>
+  <g data-part="history-hour">{ink(HISTORY_ART.hour,1.25)}</g>
+  <circle cx="12" cy="12" r="1.25"/>
   {accent('history-trace',line(HISTORY_ART.trace,.7))}
   {accent('history-recall',line(HISTORY_ART.reply,.55))}
  </>;

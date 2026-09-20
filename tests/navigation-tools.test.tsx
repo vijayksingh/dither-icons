@@ -26,7 +26,9 @@ test('History rewinds geared hands inside a stationary ring and finishes light a
  }
  assert.equal(value(minute.frames.find(f=>f.at===HISTORY_TIMING.rewind)!.transform!),-90);
  const endpoint=HISTORY_ART.ring.match(/([\d.]+) ([\d.]+)$/)!.slice(1).map(Number);assert.deepEqual(endpoint,HISTORY_TIP);
- assert.ok(HISTORY_ART.head.includes(`L${HISTORY_TIP.join(' ')}`),'arrow head is attached to the actual circle endpoint');
+ const vertex=HISTORY_ART.head.match(/L([\d.]+) ([\d.]+)L/)!.slice(1).map(Number);
+ const offset=Math.hypot(vertex[0]-HISTORY_TIP[0],vertex[1]-HISTORY_TIP[1]);
+ assert.ok(offset>1&&offset<1.2,'head vertex sits just past the endpoint so its barbs cover the shaft cap');
  assert.ok(!history.tracks.some(t=>t.part==='history-ring'));
  assert.ok(history.tracks.find(t=>t.part==='history-recall')!.frames.filter(f=>f.at<=HISTORY_TIMING.reach).every(f=>f.opacity===0));
 });

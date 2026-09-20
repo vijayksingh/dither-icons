@@ -7,7 +7,7 @@ Earlier activity and saved Workspace versions. Existing History icons appear in 
 The conventional clock inside a return ring provides a concrete action: move its hands backward to an earlier time. Spinning the entire ring would blur the difference between history and retry.
 
 ## Visual Design
-The ring and attached head remain fixed. Its endpoint is derived from the actual circular arc, and the head joins that point. Minute and hour hands share a round pivot and stay well inside the ring. The hierarchy is ring, hands, then the fine traveling light.
+The ring and attached head remain fixed. The head vertex sits 1.1 units past the endpoint derived from the actual circular arc, with barbs swept ±42° around the tangent so they cover the shaft's cap without fusing into the ring. Minute and hour hands radiate from a shared round pivot that covers their meeting point. The hierarchy is ring, hands, then the fine traveling light.
 
 ## Interface Design
 A small forward take-up precedes a quarter-turn rewind. The hour hand follows the minute hand at a 1:12 angular ratio with identical easing. The earlier time holds while the ring light reaches the arrowhead; a local catch follows arrival. The hands then return to the original time.
