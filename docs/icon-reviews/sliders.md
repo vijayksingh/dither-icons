@@ -50,3 +50,14 @@ Actual and half-speed playback reviewed. Eight poses return exactly. Dither/outl
 ![Sliders seated at the detent, 38%, third position](../motion-evidence/platform-04/pose-38.png)
 
 [Rest](../motion-evidence/platform-04/pose-0.png) · [Outline](../motion-evidence/platform-04/outline-48.png) · [Light solid](../motion-evidence/platform-04/light-solid-48.png)
+
+
+## Outline material correction — 2026-10-02
+
+**Invariant and critique:** Three separate rails retain three thumbs; only the middle control adjusts. Open thumb silhouettes and rail cores without changing the fill/thumb/knockout displacement relationship.
+
+**Material rule:** Reuse the reader's 0.5-unit Outline edges and transparent cores. Fine text and small semantic dots stay readable. Applicable: MOT-01, MOT-03, MOT-07, MOT-10, MOT-11, MOT-12, MOT-13 and MOT-15.
+
+**Storyboard retained:** Adjust / Register / Hold, 1380ms. Authored tracks remain: `slider-thumb`, `slider-occlusion`, `slider-fill`, `thumb-light`, `detent-upper`, `detent-lower`. This correction changes material, not the semantic action or timing.
+
+**Rendered review:** [Before/after and compact review](../outline-audit/README.md#correction-evidence) plus [actual 50% browser pose](../outline-audit/browser/pose-50.png). The six inspected poses are 0%, 10%, 35%, 50%, 75% and 100%; actor binding, material-switch pose preservation, keyboard completion and stillness checks are recorded with that evidence. User visual approval remains pending. Standalone SVG retains the authored CSS tracks; CSS hover still ends on departure while React finishes its gesture.

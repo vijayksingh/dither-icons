@@ -27,3 +27,14 @@ Keep one clear directional stroke; make the departure trace refer to the old loc
 Native playback shows a short deliberate return, with the old-location trace and destination marks appearing in order. The full arrow stays readable in every inspected pose and at 24px. Reviewed seven poses, actual-speed keyboard completion, native half-speed playback, three materials, light Cobalt/dark Iris, reduced motion, motion off, narrow layout and compact standalone SVGs. [Evidence and limits](../motion-evidence/platform-09/README.md). Implementation and rendered review are complete; user acceptance is pending.
 
 ![Browser sequence: Back, History, Collapse Panel and Zoom Out](../motion-evidence/platform-09/native-filmstrip.png)
+
+
+## Outline material correction — 2026-10-02
+
+**Invariant and critique:** The complete arrow always points toward the previous location. Remove the arrow stroke interior in its own moving coordinate frame; keep the receding trace subordinate.
+
+**Material rule:** Reuse the reader's 0.5-unit Outline edges and transparent cores. Fine text and small semantic dots stay readable. Applicable: MOT-01, MOT-03, MOT-07, MOT-10, MOT-11, MOT-12, MOT-13 and MOT-15.
+
+**Storyboard retained:** Recall / Return / Arrive, 1140ms. Authored tracks remain: `back-arrow`, `back-trace`, `back-arrival`. This correction changes material, not the semantic action or timing.
+
+**Rendered review:** [Before/after and compact review](../outline-audit/README.md#correction-evidence) plus [actual 50% browser pose](../outline-audit/browser/pose-50.png). The six inspected poses are 0%, 10%, 35%, 50%, 75% and 100%; actor binding, material-switch pose preservation, keyboard completion and stillness checks are recorded with that evidence. User visual approval remains pending. Standalone SVG retains the authored CSS tracks; CSS hover still ends on departure while React finishes its gesture.

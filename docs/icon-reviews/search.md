@@ -36,3 +36,14 @@ In the native browser, 28% catches the arriving tool, 35–40% resolves the brac
 ![Search is first, focus frame](../motion-evidence/refinement-05/pose-35.png)
 
 [Rest](../motion-evidence/refinement-05/pose-0.png) · [Recovery](../motion-evidence/refinement-05/pose-70.png) · [Outline](../motion-evidence/refinement-05/outline-40.png) · [Shared validation](../VALIDATION.md#focused-refinement-05--2026-09-10)
+
+
+## Outline material correction — 2026-10-02
+
+**Invariant and critique:** One rigid magnifier retains its lens aperture and attached handle. Outline both boundaries of the joined lens and handle body; the focus response stays inside the lens.
+
+**Material rule:** Reuse the reader's 0.5-unit Outline edges and transparent cores. Fine text and small semantic dots stay readable. Applicable: MOT-01, MOT-03, MOT-07, MOT-10, MOT-11, MOT-12, MOT-13 and MOT-15.
+
+**Storyboard retained:** Attend / Focus / Return, 1320ms. Authored tracks remain: `magnifier`, `focus-brackets`, `glass-reflection`, `lens-rim`. This correction changes material, not the semantic action or timing.
+
+**Rendered review:** [Before/after and compact review](../outline-audit/README.md#correction-evidence) plus [actual 50% browser pose](../outline-audit/browser/pose-50.png). The six inspected poses are 0%, 10%, 35%, 50%, 75% and 100%; actor binding, material-switch pose preservation, keyboard completion and stillness checks are recorded with that evidence. User visual approval remains pending. Standalone SVG retains the authored CSS tracks; CSS hover still ends on departure while React finishes its gesture.

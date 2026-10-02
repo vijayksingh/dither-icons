@@ -52,3 +52,14 @@ Every track starts at 0 and ends at 1380ms. Reviewed continuous actual/half spee
 ![Network output response, position 2, at 65%](../motion-evidence/platform-02/pose-65.png)
 
 [Input preparation](../motion-evidence/platform-02/pose-10.png) · [Convergence](../motion-evidence/platform-02/pose-36.png) · [Outline](../motion-evidence/platform-02/outline-45.png)
+
+
+## Outline material correction — 2026-10-02
+
+**Invariant and critique:** Two visible inputs feed a connected computation node and output. Open node and connection bands; retain both input receipts before the output response.
+
+**Material rule:** Reuse the reader's 0.5-unit Outline edges and transparent cores. Fine text and small semantic dots stay readable. Applicable: MOT-01, MOT-03, MOT-07, MOT-10, MOT-11, MOT-12, MOT-13 and MOT-15.
+
+**Storyboard retained:** Receive / Combine / Transmit, 1380ms. Authored tracks remain: `upper-signal`, `lower-signal`, `compute-node`, `output-signal`, `output-node`, `output-echo`, `compute-occlusion`, `output-occlusion`. This correction changes material, not the semantic action or timing.
+
+**Rendered review:** [Before/after and compact review](../outline-audit/README.md#correction-evidence) plus [actual 50% browser pose](../outline-audit/browser/pose-50.png). The six inspected poses are 0%, 10%, 35%, 50%, 75% and 100%; actor binding, material-switch pose preservation, keyboard completion and stillness checks are recorded with that evidence. User visual approval remains pending. Standalone SVG retains the authored CSS tracks; CSS hover still ends on departure while React finishes its gesture.

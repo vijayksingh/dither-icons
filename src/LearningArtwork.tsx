@@ -1,3 +1,4 @@
+import {MaterialCircle, MaterialPath} from './OutlineMaterial';
 import {useId} from 'react';
 import type {Draw} from './ExtendedArtwork';
 import {PATH_ART,PATH_GEOMETRY} from './motions/path';
@@ -6,8 +7,8 @@ import {TARGET_ART} from './motions/target';
 import {RETRY_ART} from './motions/retry';
 
 type Props={name:string;draw:Draw;texture:'dither'|'solid'|'outline'};
-const line=(d:string,width=.6)=><path d={d} fill="none" stroke="currentColor" strokeWidth={width} strokeLinecap="round" strokeLinejoin="round"/>;
-const circle=(x:number,y:number,r:number,width=1.4)=><circle cx={x} cy={y} r={r} fill="none" stroke="currentColor" strokeWidth={width}/>;
+const line=(d:string,width=.6)=><MaterialPath d={d} fill="none" stroke="currentColor" strokeWidth={width} strokeLinecap="round" strokeLinejoin="round"/>;
+const circle=(x:number,y:number,r:number,width=1.4)=><MaterialCircle cx={x} cy={y} r={r} fill="none" stroke="currentColor" strokeWidth={width}/>;
 const accent=(part:string,d:string,width=.6)=><g data-part={part} opacity="0">{line(d,width)}</g>;
 
 export function LearningArtwork({name,draw,texture}:Props){

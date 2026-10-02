@@ -1,3 +1,4 @@
+import {MaterialPath} from './OutlineMaterial';
 import {useId} from 'react';
 import type {Draw} from './ExtendedArtwork';
 import {FOLDER_ART} from './motions/folder';
@@ -6,7 +7,7 @@ import {COPY_ART} from './motions/copy';
 import {TRASH_ART} from './motions/trash';
 
 type Props={name:string;draw:Draw;texture:'dither'|'solid'|'outline'};
-const line=(d:string,width=.55)=><path d={d} fill="none" stroke="currentColor" strokeWidth={width} strokeLinecap="round" strokeLinejoin="round"/>;
+const line=(d:string,width=.55)=><MaterialPath d={d} fill="none" stroke="currentColor" strokeWidth={width} strokeLinecap="round" strokeLinejoin="round"/>;
 const accent=(part:string,d:string,width=.55)=><g data-part={part} opacity="0">{line(d,width)}</g>;
 
 /** Physical layers occlude one another before their transparent grain is drawn.

@@ -49,3 +49,14 @@ Actual and half-speed sequences reviewed through recovery. Eight native poses at
 ![expand-view motion reference](../motion-evidence/platform-08/pose-46.png)
 
 [Rest](../motion-evidence/platform-08/pose-0.png) · [Outline](../motion-evidence/platform-08/outline-52.png) · [Light solid](../motion-evidence/platform-08/light-solid-52.png) · [Compact](../motion-evidence/platform-08/collection-solid-24.png)
+
+
+## Outline material correction — 2026-10-02
+
+**Invariant and critique:** Four surrounding corners retain a fixed central subject. Outline corner bands instead of widening their single centerline strokes; preserve the fixed content and outward movement.
+
+**Material rule:** Reuse the reader's 0.5-unit Outline edges and transparent cores. Fine text and small semantic dots stay readable. Applicable: MOT-01, MOT-03, MOT-07, MOT-10, MOT-11, MOT-12, MOT-13 and MOT-15.
+
+**Storyboard retained:** Gather / Expand / Breathe, 1440ms. Authored tracks remain: `expand-corner-0`, `expand-echo-0`, `expand-corner-1`, `expand-echo-1`, `expand-corner-2`, `expand-echo-2`, `expand-corner-3`, `expand-echo-3`. This correction changes material, not the semantic action or timing.
+
+**Rendered review:** [Before/after and compact review](../outline-audit/README.md#correction-evidence) plus [actual 50% browser pose](../outline-audit/browser/pose-50.png). The six inspected poses are 0%, 10%, 35%, 50%, 75% and 100%; actor binding, material-switch pose preservation, keyboard completion and stillness checks are recorded with that evidence. User visual approval remains pending. Standalone SVG retains the authored CSS tracks; CSS hover still ends on departure while React finishes its gesture.

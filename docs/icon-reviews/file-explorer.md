@@ -50,3 +50,14 @@ Actual and half-speed sequences reviewed through recovery. Eight native poses at
 ![file-explorer motion reference](../motion-evidence/platform-08/pose-46.png)
 
 [Rest](../motion-evidence/platform-08/pose-0.png) · [Outline](../motion-evidence/platform-08/outline-52.png) · [Light solid](../motion-evidence/platform-08/light-solid-52.png) · [Compact](../motion-evidence/platform-08/collection-solid-24.png)
+
+
+## Outline material correction — 2026-10-02
+
+**Invariant and critique:** The active code pane stays beside the connected file tree. Outline the pane frame, divider, code bars and branch rails; retain node placement and shared branch extension.
+
+**Material rule:** Reuse the reader's 0.5-unit Outline edges and transparent cores. Fine text and small semantic dots stay readable. Applicable: MOT-01, MOT-03, MOT-07, MOT-10, MOT-11, MOT-12, MOT-13 and MOT-15.
+
+**Storyboard retained:** Reveal / Arrange / Settle, 1460ms. Authored tracks remain: `explorer-divider`, `explorer-code`, `explorer-nodes`, `explorer-branch-0`, `explorer-branch-1`, `explorer-branch-2`, `explorer-active`, `explorer-seat-top`, `explorer-seat-bottom`. This correction changes material, not the semantic action or timing.
+
+**Rendered review:** [Before/after and compact review](../outline-audit/README.md#correction-evidence) plus [actual 50% browser pose](../outline-audit/browser/pose-50.png). The six inspected poses are 0%, 10%, 35%, 50%, 75% and 100%; actor binding, material-switch pose preservation, keyboard completion and stillness checks are recorded with that evidence. User visual approval remains pending. Standalone SVG retains the authored CSS tracks; CSS hover still ends on departure while React finishes its gesture.

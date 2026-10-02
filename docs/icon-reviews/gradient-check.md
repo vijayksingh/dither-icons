@@ -52,3 +52,14 @@ Actual and half-speed sequences inspected through recovery. Eight poses at 0/10/
 
 [Rest](../motion-evidence/platform-06/pose-0.png) · [Outline](../motion-evidence/platform-06/outline-60.png) · [Light solid](../motion-evidence/platform-06/light-solid-60.png) · [Static export board](../motion-evidence/platform-06/static.svg)
 
+
+
+## Outline material correction — 2026-10-02
+
+**Invariant and critique:** Two symmetric probes retain the shared derivative neighborhood. Outline the curve band and probe rings while retaining the secant, tangent and matched probe knockouts.
+
+**Material rule:** Reuse the reader's 0.5-unit Outline edges and transparent cores. Fine text and small semantic dots stay readable. Applicable: MOT-01, MOT-03, MOT-07, MOT-10, MOT-11, MOT-12, MOT-13 and MOT-15.
+
+**Storyboard retained:** Sample / Narrow / Inspect, 1500ms. Authored tracks remain: `gradient-probe-0`, `gradient-knockout-0`, `gradient-probe-1`, `gradient-knockout-1`, `gradient-chord`, `gradient-center`, `gradient-witness`. This correction changes material, not the semantic action or timing.
+
+**Rendered review:** [Before/after and compact review](../outline-audit/README.md#correction-evidence) plus [actual 50% browser pose](../outline-audit/browser/pose-50.png). The six inspected poses are 0%, 10%, 35%, 50%, 75% and 100%; actor binding, material-switch pose preservation, keyboard completion and stillness checks are recorded with that evidence. User visual approval remains pending. Standalone SVG retains the authored CSS tracks; CSS hover still ends on departure while React finishes its gesture.

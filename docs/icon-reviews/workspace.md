@@ -51,3 +51,14 @@ Every track begins at 0 and ends at 1360ms. Reviewed actual/half-speed playback 
 ![Workspace ready response, position 1, at 45%](../motion-evidence/platform-03/pose-45.png)
 
 [Rest](../motion-evidence/platform-03/pose-0.png) · [Outline](../motion-evidence/platform-03/outline-36.png) · [24px solid](../motion-evidence/platform-03/compact-solid-24.png)
+
+
+## Outline material correction — 2026-10-02
+
+**Invariant and critique:** A fixed workspace frame retains its source and tree. Outline frame and toolbar bands plus the divider and source bars; the divider still creates space before the source extends.
+
+**Material rule:** Reuse the reader's 0.5-unit Outline edges and transparent cores. Fine text and small semantic dots stay readable. Applicable: MOT-01, MOT-03, MOT-07, MOT-10, MOT-11, MOT-12, MOT-13 and MOT-15.
+
+**Storyboard retained:** Open / Arrange / Return, 1360ms. Authored tracks remain: `divider`, `source`, `source-first`, `source-second`, `editor-edge`, `editor-caret`. This correction changes material, not the semantic action or timing.
+
+**Rendered review:** [Before/after and compact review](../outline-audit/README.md#correction-evidence) plus [actual 50% browser pose](../outline-audit/browser/pose-50.png). The six inspected poses are 0%, 10%, 35%, 50%, 75% and 100%; actor binding, material-switch pose preservation, keyboard completion and stillness checks are recorded with that evidence. User visual approval remains pending. Standalone SVG retains the authored CSS tracks; CSS hover still ends on departure while React finishes its gesture.

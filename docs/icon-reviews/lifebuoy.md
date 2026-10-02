@@ -50,3 +50,14 @@ Every actor begins at 0 and ends at 1460ms. Actual/half-speed playback and eight
 ![Lifebuoy contact response, position 4, at 36%](../motion-evidence/platform-03/pose-36.png)
 
 [Preparation](../motion-evidence/platform-03/pose-10.png) · [Ripples](../motion-evidence/platform-03/pose-45.png) · [Outline straps](../motion-evidence/platform-03/outline-36.png) · [64px dither](../motion-evidence/platform-03/collection-dither-64.png)
+
+
+## Outline material correction — 2026-10-02
+
+**Invariant and critique:** The rescue ring retains its center aperture and four wrapped bands. Outline the actual ring and wrap shapes instead of packing two thick circular strokes into a near-solid annulus; water contact remains fixed.
+
+**Material rule:** Reuse the reader's 0.5-unit Outline edges and transparent cores. Fine text and small semantic dots stay readable. Applicable: MOT-01, MOT-03, MOT-07, MOT-10, MOT-11, MOT-12, MOT-13 and MOT-15.
+
+**Storyboard retained:** Meet / Support / Settle, 1460ms. Authored tracks remain: `buoy`, `buoy-contact`, `ripple-left`, `echo-left`, `ripple-right`, `echo-right`. This correction changes material, not the semantic action or timing.
+
+**Rendered review:** [Before/after and compact review](../outline-audit/README.md#correction-evidence) plus [actual 50% browser pose](../outline-audit/browser/pose-50.png). The six inspected poses are 0%, 10%, 35%, 50%, 75% and 100%; actor binding, material-switch pose preservation, keyboard completion and stillness checks are recorded with that evidence. User visual approval remains pending. Standalone SVG retains the authored CSS tracks; CSS hover still ends on departure while React finishes its gesture.

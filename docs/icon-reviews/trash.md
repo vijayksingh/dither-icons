@@ -45,3 +45,14 @@ At 60% (750ms), browser-measured lid and rim edges coincided within 0.000008 CSS
 ![Trash compression and impact, fourth icon](../motion-evidence/refinement-02-polish/impact.png)
 
 [Open](../motion-evidence/refinement-02-polish/reveal.png) · [Contact](../motion-evidence/refinement-02-polish/contact.png) · [Recovery](../motion-evidence/refinement-02-polish/recover.png) · [Rest](../motion-evidence/refinement-02-polish/settled.png)
+
+
+## Outline material correction — 2026-10-02
+
+**Invariant and critique:** Lid, handle, vented bin and grounded base remain a receptacle. Use thin contour edges around bin, lid and handle; preserve open vent cores instead of filling their narrow cutouts with a wide stroke.
+
+**Material rule:** Reuse the reader's 0.5-unit Outline edges and transparent cores. Fine text and small semantic dots stay readable. Applicable: MOT-01, MOT-03, MOT-07, MOT-10, MOT-11, MOT-12, MOT-13 and MOT-15.
+
+**Storyboard retained:** Lift / Contact / Dissipate, 1250ms. Authored tracks remain: `lid`, `handle`, `bin`, `rim-light`, `impact-left`, `impact-right`. This correction changes material, not the semantic action or timing.
+
+**Rendered review:** [Before/after and compact review](../outline-audit/README.md#correction-evidence) plus [actual 50% browser pose](../outline-audit/browser/pose-50.png). The six inspected poses are 0%, 10%, 35%, 50%, 75% and 100%; actor binding, material-switch pose preservation, keyboard completion and stillness checks are recorded with that evidence. User visual approval remains pending. Standalone SVG retains the authored CSS tracks; CSS hover still ends on departure while React finishes its gesture.

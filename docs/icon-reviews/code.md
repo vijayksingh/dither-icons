@@ -76,3 +76,14 @@ Reviewed in the live browser at actual and half speed, plus 0%, 10%, 30%, 40%, 5
 ![code, icon 4 of four, browser pose at 62%](../motion-evidence/refinement-04/pose-62.png)
 
 [Rest](../motion-evidence/refinement-04/pose-0.png) · [Preparation](../motion-evidence/refinement-04/pose-10.png) · [Recovery](../motion-evidence/refinement-04/pose-82.png) · [Outline](../motion-evidence/refinement-04/outline-40.png) · [Light solid](../motion-evidence/refinement-04/light-solid-62.png)
+
+
+## Outline material correction — 2026-10-02
+
+**Invariant and critique:** Mirrored delimiters retain one intervening diagonal slash. Use thin edges around the closed delimiter and slash silhouettes so their cores remain open; retain paired registration and syntax trace.
+
+**Material rule:** Reuse the reader's 0.5-unit Outline edges and transparent cores. Fine text and small semantic dots stay readable. Applicable: MOT-01, MOT-03, MOT-07, MOT-10, MOT-11, MOT-12, MOT-13 and MOT-15.
+
+**Storyboard retained:** Open / Trace / Align, 1160ms. Authored tracks remain: `bracket-left`, `registration-left`, `alignment-left`, `bracket-right`, `registration-right`, `alignment-right`, `slash`, `syntax-trace`. This correction changes material, not the semantic action or timing.
+
+**Rendered review:** [Before/after and compact review](../outline-audit/README.md#correction-evidence) plus [actual 50% browser pose](../outline-audit/browser/pose-50.png). The six inspected poses are 0%, 10%, 35%, 50%, 75% and 100%; actor binding, material-switch pose preservation, keyboard completion and stillness checks are recorded with that evidence. User visual approval remains pending. Standalone SVG retains the authored CSS tracks; CSS hover still ends on departure while React finishes its gesture.

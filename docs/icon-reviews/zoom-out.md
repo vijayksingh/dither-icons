@@ -27,3 +27,14 @@ Keep orientation fixed; demonstrate reduction inside the lens; let new context f
 The viewed region visibly recedes while the minus and tool stay still. The new points appear around it afterward. The 24px solid/outline forms preserve the minus-lens identity; fine contextual details belong to the larger presentation. Reviewed seven poses, actual-speed keyboard completion, native half-speed playback, three materials, light Cobalt/dark Iris, reduced motion, motion off, narrow layout and compact standalone SVGs. [Evidence and limits](../motion-evidence/platform-09/README.md). Implementation and rendered review are complete; user acceptance is pending.
 
 ![Browser sequence: Back, History, Collapse Panel and Zoom Out](../motion-evidence/platform-09/native-filmstrip.png)
+
+
+## Outline material correction — 2026-10-02
+
+**Invariant and critique:** A minus lens keeps its handle and optical opening. Outline the joined magnifier body and minus bar; the shrinking context remains inside the lens.
+
+**Material rule:** Reuse the reader's 0.5-unit Outline edges and transparent cores. Fine text and small semantic dots stay readable. Applicable: MOT-01, MOT-03, MOT-07, MOT-10, MOT-11, MOT-12, MOT-13 and MOT-15.
+
+**Storyboard retained:** Frame / Recede / Reveal, 1380ms. Authored tracks remain: `zoom-field-position`, `zoom-field`, `zoom-context-0`, `zoom-context-1`, `zoom-context-2`, `zoom-context-3`. This correction changes material, not the semantic action or timing.
+
+**Rendered review:** [Before/after and compact review](../outline-audit/README.md#correction-evidence) plus [actual 50% browser pose](../outline-audit/browser/pose-50.png). The six inspected poses are 0%, 10%, 35%, 50%, 75% and 100%; actor binding, material-switch pose preservation, keyboard completion and stillness checks are recorded with that evidence. User visual approval remains pending. Standalone SVG retains the authored CSS tracks; CSS hover still ends on departure while React finishes its gesture.

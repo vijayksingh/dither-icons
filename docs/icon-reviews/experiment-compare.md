@@ -51,3 +51,14 @@ Actual and half-speed sequences inspected through recovery. Eight poses at 0/10/
 
 [Rest](../motion-evidence/platform-06/pose-0.png) · [Outline](../motion-evidence/platform-06/outline-60.png) · [Light solid](../motion-evidence/platform-06/light-solid-60.png) · [Static export board](../motion-evidence/platform-06/static.svg)
 
+
+
+## Outline material correction — 2026-10-02
+
+**Invariant and critique:** Two distinct plots retain their own values and panes. Open both pane borders; keep the synchronized scan and separate plot shapes rather than turning either into a filled panel.
+
+**Material rule:** Reuse the reader's 0.5-unit Outline edges and transparent cores. Fine text and small semantic dots stay readable. Applicable: MOT-01, MOT-03, MOT-07, MOT-10, MOT-11, MOT-12, MOT-13 and MOT-15.
+
+**Storyboard retained:** Separate / Scan / Compare, 1520ms. Authored tracks remain: `compare-pane-0`, `compare-cursor-0`, `compare-point-0`, `compare-response-0`, `compare-pane-1`, `compare-cursor-1`, `compare-point-1`, `compare-response-1`, `compare-receipt`. This correction changes material, not the semantic action or timing.
+
+**Rendered review:** [Before/after and compact review](../outline-audit/README.md#correction-evidence) plus [actual 50% browser pose](../outline-audit/browser/pose-50.png). The six inspected poses are 0%, 10%, 35%, 50%, 75% and 100%; actor binding, material-switch pose preservation, keyboard completion and stillness checks are recorded with that evidence. User visual approval remains pending. Standalone SVG retains the authored CSS tracks; CSS hover still ends on departure while React finishes its gesture.

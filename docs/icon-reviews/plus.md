@@ -35,3 +35,14 @@ bar: fixed until arrival; upright remains full length
 [Current evidence](../motion-evidence/refinement-06-rework/) replaces the rejected expansion. Tests compare the upright and receiver at registration and release, matching knockout frames, and both response dependencies. Browser review includes live speeds, frame inspection, materials, light/dark, keyboard completion, stillness and small exports. User acceptance remains open.
 
 ![Plus receives the upright before its crossbar responds](../motion-evidence/refinement-06-rework/pose-40.png)
+
+
+## Outline material correction — 2026-10-02
+
+**Invariant and critique:** Two orthogonal bars remain a plus at every stage. Open each bar body and retain the matched upper-bar crossing knockout; addition responses still travel from registration.
+
+**Material rule:** Reuse the reader's 0.5-unit Outline edges and transparent cores. Fine text and small semantic dots stay readable. Applicable: MOT-01, MOT-03, MOT-07, MOT-10, MOT-11, MOT-12, MOT-13 and MOT-15.
+
+**Storyboard retained:** Insert / Receive / Extend, 1080ms. Authored tracks remain: `plus-across`, `plus-above`, `plus-occlusion`, `plus-wave-left`, `plus-wave-right`, `addition-finish`. This correction changes material, not the semantic action or timing.
+
+**Rendered review:** [Before/after and compact review](../outline-audit/README.md#correction-evidence) plus [actual 50% browser pose](../outline-audit/browser/pose-50.png). The six inspected poses are 0%, 10%, 35%, 50%, 75% and 100%; actor binding, material-switch pose preservation, keyboard completion and stillness checks are recorded with that evidence. User visual approval remains pending. Standalone SVG retains the authored CSS tracks; CSS hover still ends on departure while React finishes its gesture.

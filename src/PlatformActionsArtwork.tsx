@@ -1,3 +1,4 @@
+import {MaterialCircle, MaterialPath, MaterialRect} from './OutlineMaterial';
 import {useId} from 'react';
 import type {Draw} from './ExtendedArtwork';
 import {SAVE_ART} from './motions/save-preferences';
@@ -5,10 +6,10 @@ import {EXPLORER_ART,EXPLORER_GEOMETRY} from './motions/file-explorer';
 import {EXPAND_ART,EXPAND_CORNERS} from './motions/expand-view';
 import {EXIT_ART} from './motions/sign-out';
 type Props={name:string;draw:Draw;texture:'dither'|'solid'|'outline'};
-const line=(d:string,width=.65)=><path d={d} fill="none" stroke="currentColor" strokeWidth={width} strokeLinecap="round" strokeLinejoin="round"/>;
+const line=(d:string,width=.65)=><MaterialPath d={d} fill="none" stroke="currentColor" strokeWidth={width} strokeLinecap="round" strokeLinejoin="round"/>;
 const accent=(part:string,d:string,width=.65)=><g data-part={part} opacity="0">{line(d,width)}</g>;
 const disc=(x:number,y:number,r:number)=>`M${x-r} ${y}a${r} ${r} 0 1 0 ${r*2} 0a${r} ${r} 0 1 0 ${-r*2} 0Z`;
-const field=<rect x="-24" y="-24" width="72" height="72" fill="white"/>;
+const field=<MaterialRect x="-24" y="-24" width="72" height="72" fill="white"/>;
 const MASK={maskUnits:'userSpaceOnUse' as const,x:-24,y:-24,width:72,height:72};
 export function PlatformActionsArtwork({name,draw,texture}:Props){
  const id=useId().replace(/:/g,'')+'-actions';
@@ -24,14 +25,14 @@ export function PlatformActionsArtwork({name,draw,texture}:Props){
  if(name==='file-explorer')return <>
   <defs><clipPath id={`${id}-editor`}><rect x="4.4" y="8.3" width="15.2" height="10.6"/></clipPath></defs>
   {texture==='outline'?line(EXPLORER_ART.frameLine,1.4):draw(EXPLORER_ART.frame)}
-  <g opacity=".5">{line(EXPLORER_ART.chrome,.65)}<circle cx="5.8" cy="5.9" r=".32"/><circle cx="7.3" cy="5.9" r=".32"/></g>
+  <g opacity=".5">{line(EXPLORER_ART.chrome,.65)}<MaterialCircle cx="5.8" cy="5.9" r=".32"/><MaterialCircle cx="7.3" cy="5.9" r=".32"/></g>
   <g clipPath={`url(#${id}-editor)`}>
    <g data-part="explorer-code" opacity=".45">{line(EXPLORER_ART.code,.8)}</g>
    <g data-part="explorer-divider" opacity=".65">{line(EXPLORER_ART.divider,.8)}</g>
    <g opacity=".6">{line(EXPLORER_ART.spine,.55)}</g>
    {EXPLORER_GEOMETRY.rows.map((y,i)=><g key={i} data-part={`explorer-branch-${i}`} opacity=".6">{line(`M5.6 ${y}h1.7`,.55)}</g>)}
-   <g data-part="explorer-nodes">{EXPLORER_GEOMETRY.rows.map((y,i)=><g key={i} opacity={i===1?.9:.6}>{texture==='outline'?<circle cx="7.3" cy={y} r=".45" fill="none" stroke="currentColor" strokeWidth=".45"/>:draw(disc(7.3,y,.65))}</g>)}
-    <g data-part="explorer-active" opacity="0"><circle cx="7.3" cy="13.8" r="1.15" fill="none" stroke="currentColor" strokeWidth=".5"/></g>
+   <g data-part="explorer-nodes">{EXPLORER_GEOMETRY.rows.map((y,i)=><g key={i} opacity={i===1?.9:.6}>{texture==='outline'?<MaterialCircle cx="7.3" cy={y} r=".45" fill="none" stroke="currentColor" strokeWidth=".45"/>:draw(disc(7.3,y,.65))}</g>)}
+    <g data-part="explorer-active" opacity="0"><MaterialCircle cx="7.3" cy="13.8" r="1.15" fill="none" stroke="currentColor" strokeWidth=".5"/></g>
    </g>
   </g>
   {accent('explorer-seat-top',EXPLORER_ART.topSeat,.6)}{accent('explorer-seat-bottom',EXPLORER_ART.bottomSeat,.6)}
@@ -50,7 +51,7 @@ export function PlatformActionsArtwork({name,draw,texture}:Props){
   </defs>
   {texture==='outline'?line(EXIT_ART.frameLine,1.4):draw(EXIT_ART.frame)}
   <g mask={`url(#${id}-arrow)`}><g data-part="exit-arrow">{texture==='outline'?line(EXIT_ART.arrowLine,1.4):draw(EXIT_ART.arrow)}</g></g>
-  <g data-part="exit-leaf">{texture==='outline'?<>{line(EXIT_ART.leafLine,1.1)}<circle cx="9.15" cy="12" r=".3"/></>:<g opacity=".7" mask={`url(#${id}-handle)`}>{draw(EXIT_ART.leaf)}</g>}</g>
+  <g data-part="exit-leaf">{texture==='outline'?<>{line(EXIT_ART.leafLine,1.1)}<MaterialCircle cx="9.15" cy="12" r=".3"/></>:<g opacity=".7" mask={`url(#${id}-handle)`}>{draw(EXIT_ART.leaf)}</g>}</g>
   {accent('exit-witness-upper',EXIT_ART.upper,.6)}{accent('exit-witness-lower',EXIT_ART.lower,.6)}
  </>;
  return null;

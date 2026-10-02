@@ -39,3 +39,14 @@ Timing source: [choreography.ts](../../src/choreography.ts). Geometry binds each
 **Review:** Independent planes stay ordered; the middle plane offsets laterally while the top and bottom create depth. See the [foundation playback and identity review](../MOTION-REVIEW.md). This rollout preserves its accepted tracks.
 
 ![Accepted foundation at 40%, light Cobalt](../motion-evidence/rollout/foundation.png)
+
+
+## Outline material correction — 2026-10-02
+
+**Invariant and critique:** Three individual planes retain their attached side faces. Outline the side faces as well as their top planes; stop those raw face paths from inheriting a solid fill.
+
+**Material rule:** Reuse the reader's 0.5-unit Outline edges and transparent cores. Fine text and small semantic dots stay readable. Applicable: MOT-01, MOT-03, MOT-07, MOT-10, MOT-11, MOT-12, MOT-13 and MOT-15.
+
+**Storyboard retained:** Gather / Separate / Nest, 1120ms. Authored tracks remain: `plane-bottom`, `plane-middle`, `plane-top`, `guides`. This correction changes material, not the semantic action or timing.
+
+**Rendered review:** [Before/after and compact review](../outline-audit/README.md#correction-evidence) plus [actual 50% browser pose](../outline-audit/browser/pose-50.png). The six inspected poses are 0%, 10%, 35%, 50%, 75% and 100%; actor binding, material-switch pose preservation, keyboard completion and stillness checks are recorded with that evidence. User visual approval remains pending. Standalone SVG retains the authored CSS tracks; CSS hover still ends on departure while React finishes its gesture.

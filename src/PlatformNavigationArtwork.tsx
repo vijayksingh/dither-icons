@@ -1,3 +1,4 @@
+import {MaterialCircle, MaterialPath, MaterialRect} from './OutlineMaterial';
 import {useId} from 'react';
 import type {Draw} from './ExtendedArtwork';
 import {WORKSPACE_ART} from './motions/workspace';
@@ -6,9 +7,9 @@ import {ORBIT_ART,ORBIT_GEOMETRY,orbitPoint} from './motions/orbit';
 import {LIFEBUOY_ART,LIFEBUOY_GEOMETRY} from './motions/lifebuoy';
 
 type Props={name:string;draw:Draw;texture:'dither'|'solid'|'outline'};
-const line=(d:string,width=.65)=><path d={d} fill="none" stroke="currentColor" strokeWidth={width} strokeLinecap="round" strokeLinejoin="round"/>;
+const line=(d:string,width=.65)=><MaterialPath d={d} fill="none" stroke="currentColor" strokeWidth={width} strokeLinecap="round" strokeLinejoin="round"/>;
 const accent=(part:string,d:string,width=.65)=><g data-part={part} opacity="0">{line(d,width)}</g>;
-const field=<rect x="-24" y="-24" width="72" height="72" fill="white"/>;
+const field=<MaterialRect x="-24" y="-24" width="72" height="72" fill="white"/>;
 const MASK={maskUnits:'userSpaceOnUse' as const,x:-24,y:-24,width:72,height:72};
 
 export function PlatformNavigationArtwork({name,draw,texture}:Props){
@@ -31,7 +32,7 @@ export function PlatformNavigationArtwork({name,draw,texture}:Props){
   {texture==='outline'?line(GAUGE_ART.rimLine,1.65):draw(GAUGE_ART.rim)}
   <g opacity=".6">{GAUGE_ART.ticks.map((d,i)=><g key={i}>{line(d,.8)}</g>)}{line(GAUGE_ART.baseline,1.2)}</g>
   <g mask={`url(#${id}-hub)`}><g data-part="needle">{draw(GAUGE_ART.needle)}</g></g>
-  {texture==='outline'?<circle cx="12" cy="14.5" r="1.175" fill="none" stroke="currentColor" strokeWidth="1.05"/>:draw(GAUGE_ART.hub)}
+  {texture==='outline'?<MaterialCircle cx="12" cy="14.5" r="1.175" fill="none" stroke="currentColor" strokeWidth="1.05"/>:draw(GAUGE_ART.hub)}
   {accent('reading-tick',GAUGE_ART.registered,1)}{accent('reading-echo',GAUGE_ART.echo,.55)}
  </>;
  if(name==='orbit'){
@@ -63,8 +64,8 @@ export function PlatformNavigationArtwork({name,draw,texture}:Props){
   <g opacity=".26">{line(LIFEBUOY_ART.water,.6)}</g>
   <g data-part="buoy">
    {texture==='outline'?<>
-    <circle cx="12" cy="10.8" r={LIFEBUOY_GEOMETRY.radius-.7} fill="none" stroke="currentColor" strokeWidth="1.4"/>
-    <circle cx="12" cy="10.8" r={LIFEBUOY_GEOMETRY.innerRadius+.7} fill="none" stroke="currentColor" strokeWidth="1.4"/>
+    <MaterialCircle cx="12" cy="10.8" r={LIFEBUOY_GEOMETRY.radius-.7} fill="none" stroke="currentColor" strokeWidth="1.4"/>
+    <MaterialCircle cx="12" cy="10.8" r={LIFEBUOY_GEOMETRY.innerRadius+.7} fill="none" stroke="currentColor" strokeWidth="1.4"/>
     {line(LIFEBUOY_ART.seams,1.4)}
    </>:<>
     <g mask={`url(#${id}-wraps)`} opacity=".62">{draw(LIFEBUOY_ART.body)}</g>

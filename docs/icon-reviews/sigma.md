@@ -51,3 +51,14 @@ Actual and half-speed playback reviewed. Eight poses include exact start/end equ
 ![Sigma output at 66%, first position](../motion-evidence/platform-04/pose-66.png)
 
 [Incoming terms](../motion-evidence/platform-04/pose-28.png) · [Rest](../motion-evidence/platform-04/pose-0.png) · [Outline](../motion-evidence/platform-04/outline-48.png)
+
+
+## Outline material correction — 2026-10-02
+
+**Invariant and critique:** The operator remains a sigma throughout the reduction gesture. Open the operator body rather than returning its original single centerline stroke; term and result actors retain their causal sequence.
+
+**Material rule:** Reuse the reader's 0.5-unit Outline edges and transparent cores. Fine text and small semantic dots stay readable. Applicable: MOT-01, MOT-03, MOT-07, MOT-10, MOT-11, MOT-12, MOT-13 and MOT-15.
+
+**Storyboard retained:** Gather / Combine / Release, 1520ms. Authored tracks remain: `term-upper`, `term-middle`, `term-lower`, `sum-receiver`, `sum-trace`, `sum-terminal`, `output-upper`, `output-lower`. This correction changes material, not the semantic action or timing.
+
+**Rendered review:** [Before/after and compact review](../outline-audit/README.md#correction-evidence) plus [actual 50% browser pose](../outline-audit/browser/pose-50.png). The six inspected poses are 0%, 10%, 35%, 50%, 75% and 100%; actor binding, material-switch pose preservation, keyboard completion and stillness checks are recorded with that evidence. User visual approval remains pending. Standalone SVG retains the authored CSS tracks; CSS hover still ends on departure while React finishes its gesture.

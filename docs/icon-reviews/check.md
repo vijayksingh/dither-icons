@@ -37,3 +37,14 @@ Reviewed preparation at 10%, traveling light at 40%, tip response at 62%, and ne
 ![Check is first, tip response at 62%](../motion-evidence/refinement-06/pose-62.png)
 
 [Rest](../motion-evidence/refinement-06/pose-0.png) · [Small sizes](../motion-evidence/refinement-06/size-and-export.png) · [Batch validation](../VALIDATION.md#focused-refinement-06--2026-09-10)
+
+
+## Outline material correction — 2026-10-02
+
+**Invariant and critique:** The check vertex and ascending arm remain recognizable. Outline the actual mark body rather than substitute a thinner filled centerline; the trace still reaches the drawn tip.
+
+**Material rule:** Reuse the reader's 0.5-unit Outline edges and transparent cores. Fine text and small semantic dots stay readable. Applicable: MOT-01, MOT-03, MOT-07, MOT-10, MOT-11, MOT-12, MOT-13 and MOT-15.
+
+**Storyboard retained:** Seat / Trace / Affirm, 1060ms. Authored tracks remain: `check-stroke`, `check-trace`, `check-tip`. This correction changes material, not the semantic action or timing.
+
+**Rendered review:** [Before/after and compact review](../outline-audit/README.md#correction-evidence) plus [actual 50% browser pose](../outline-audit/browser/pose-50.png). The six inspected poses are 0%, 10%, 35%, 50%, 75% and 100%; actor binding, material-switch pose preservation, keyboard completion and stillness checks are recorded with that evidence. User visual approval remains pending. Standalone SVG retains the authored CSS tracks; CSS hover still ends on departure while React finishes its gesture.

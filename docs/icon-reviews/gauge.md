@@ -49,3 +49,14 @@ Tracks start at 0 and finish at 1280ms. Actual/half-speed playback and eight pos
 ![Gauge reading and echo, position 2, at 45%](../motion-evidence/platform-03/pose-45.png)
 
 [Draw-back](../motion-evidence/platform-03/pose-10.png) · [Registration approach](../motion-evidence/platform-03/pose-36.png) · [Light solid](../motion-evidence/platform-03/light-solid-36.png)
+
+
+## Outline material correction — 2026-10-02
+
+**Invariant and critique:** A fixed scale surrounds a seated needle and hub. Outline the rim, needle and hub bands; preserve the existing hub knockout and the tick response after registration.
+
+**Material rule:** Reuse the reader's 0.5-unit Outline edges and transparent cores. Fine text and small semantic dots stay readable. Applicable: MOT-01, MOT-03, MOT-07, MOT-10, MOT-11, MOT-12, MOT-13 and MOT-15.
+
+**Storyboard retained:** Calibrate / Read / Hold, 1280ms. Authored tracks remain: `needle`, `reading-tick`, `reading-echo`. This correction changes material, not the semantic action or timing.
+
+**Rendered review:** [Before/after and compact review](../outline-audit/README.md#correction-evidence) plus [actual 50% browser pose](../outline-audit/browser/pose-50.png). The six inspected poses are 0%, 10%, 35%, 50%, 75% and 100%; actor binding, material-switch pose preservation, keyboard completion and stillness checks are recorded with that evidence. User visual approval remains pending. Standalone SVG retains the authored CSS tracks; CSS hover still ends on departure while React finishes its gesture.

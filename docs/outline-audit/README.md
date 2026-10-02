@@ -48,3 +48,37 @@ Regenerate the four comparison sheets and exact-match checks from repository roo
 ```sh
 node_modules/.bin/tsx docs/outline-audit/render.tsx
 ```
+
+## Correction evidence
+
+All 33 candidates now use the existing reader material's 0.5-unit contour edge. Filled silhouettes expose their boundaries; thick open strokes expose a transparent center. Fine text and semantic dots retain their existing treatment. History's hand hub and Learning Rhythm's pivot/weight exclude the underlying moving strokes so their cores remain transparent.
+
+The authored Solid silhouettes, semantic actors, timing, and causal sequences remain intact (MOT-01/03/07/12/15). Material changes rebind animation targets while preserving the inspected time (MOT-13). Individual decisions and retained storyboards are recorded in each icon's `docs/icon-reviews/` entry. User visual review remains pending.
+
+Before left; corrected Outline right. These are actual static React renders at matching color and size. `before.json` preserves the original SVGs from audit commit `ed2f969`.
+
+![Before and after: the six indistinguishable pairs](after-1.png)
+![Before and after: main contours, first group](after-2.png)
+![Before and after: main contours, second group](after-3.png)
+![Before and after: localized solid parts](after-4.png)
+
+![Corrected Outline at actual 24px and 32px](compact.png)
+
+Validation completed locally:
+
+- Consumer SVG export/raster integration checks pass for all 33 changed icons, including transparent interiors with two inherited colors. Typecheck and production build pass; downloadable reference SVG regenerated.
+- Baseline raster comparison confirms 234 renders remain pixel-identical: all 89 Solid, all 89 Dither, and the other 56 Outline icons. All 33 corrected Outline renders differ visibly. See `validation.json`.
+- Browser review inspected all 33 icons at 0%, 10%, 35%, 50%, 75%, and 100%; semantic parts remain recognizable and return to rest (MOT-01/10). Actual paused DOM exports and contact sheets are in `browser/paused-svg.json` and `browser/pose-*.png`.
+- Keyboard Enter replays work for all 33 icons and complete cleanly. Reduced motion and Motion off leave zero running animations while retaining every drawing (MOT-11). See `browser/keyboard.json` and `browser/stillness.json`.
+- Outline → Solid → Outline at 50% retains each icon's inspected time, part transforms, and opacity. See `browser/material-swap.json`.
+- Compact light/dark browser views and the ordinary local catalog confirm the material renders on host backgrounds and survives the SVG export lane. React retains full replay behavior; standalone SVG keeps the documented CSS hover lifecycle limitation.
+
+No package version or production deployment changed.
+
+Run the interactive before/after review with `npm run dev`, then open `http://127.0.0.1:4192/docs/outline-audit/review.html`. Select material, size, frame, or background; focus a current icon to replay.
+
+```sh
+node_modules/.bin/tsx docs/outline-audit/render-comparison.tsx
+node_modules/.bin/tsx docs/outline-audit/render-frames.tsx
+node_modules/.bin/tsx --test tests/outline-material.integration.test.tsx
+```

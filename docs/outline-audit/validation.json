@@ -1,0 +1,205 @@
+{
+  "baseline": "ed2f969",
+  "size": 96,
+  "preservedRenders": 234,
+  "comparisons": [
+    {
+      "name": "terminal",
+      "beforeInk": 502061,
+      "afterInk": 324972,
+      "differencePercent": 101
+    },
+    {
+      "name": "cpu",
+      "beforeInk": 496344,
+      "afterInk": 384515,
+      "differencePercent": 75
+    },
+    {
+      "name": "test-suite",
+      "beforeInk": 515921,
+      "afterInk": 512528,
+      "differencePercent": 65
+    },
+    {
+      "name": "file-explorer",
+      "beforeInk": 453307,
+      "afterInk": 356979,
+      "differencePercent": 80
+    },
+    {
+      "name": "arrow-left",
+      "beforeInk": 233423,
+      "afterInk": 122641,
+      "differencePercent": 47
+    },
+    {
+      "name": "history",
+      "beforeInk": 366090,
+      "afterInk": 240336,
+      "differencePercent": 37
+    },
+    {
+      "name": "workspace",
+      "beforeInk": 628061,
+      "afterInk": 463919,
+      "differencePercent": 94
+    },
+    {
+      "name": "experiment-compare",
+      "beforeInk": 422285,
+      "afterInk": 391737,
+      "differencePercent": 85
+    },
+    {
+      "name": "search",
+      "beforeInk": 301666,
+      "afterInk": 179074,
+      "differencePercent": 105
+    },
+    {
+      "name": "zoom-out",
+      "beforeInk": 327982,
+      "afterInk": 200910,
+      "differencePercent": 98
+    },
+    {
+      "name": "path",
+      "beforeInk": 273194,
+      "afterInk": 197815,
+      "differencePercent": 101
+    },
+    {
+      "name": "gradient-check",
+      "beforeInk": 149237,
+      "afterInk": 163941,
+      "differencePercent": 44
+    },
+    {
+      "name": "batch-sampling",
+      "beforeInk": 268785,
+      "afterInk": 243390,
+      "differencePercent": 69
+    },
+    {
+      "name": "sigma",
+      "beforeInk": 348240,
+      "afterInk": 209663,
+      "differencePercent": 115
+    },
+    {
+      "name": "save-preferences",
+      "beforeInk": 520917,
+      "afterInk": 366909,
+      "differencePercent": 91
+    },
+    {
+      "name": "panel-left-close",
+      "beforeInk": 515298,
+      "afterInk": 371668,
+      "differencePercent": 74
+    },
+    {
+      "name": "network",
+      "beforeInk": 318696,
+      "afterInk": 226835,
+      "differencePercent": 74
+    },
+    {
+      "name": "hint",
+      "beforeInk": 294360,
+      "afterInk": 230030,
+      "differencePercent": 95
+    },
+    {
+      "name": "gauge",
+      "beforeInk": 351707,
+      "afterInk": 228753,
+      "differencePercent": 81
+    },
+    {
+      "name": "sliders",
+      "beforeInk": 199404,
+      "afterInk": 150050,
+      "differencePercent": 67
+    },
+    {
+      "name": "expand-view",
+      "beforeInk": 188514,
+      "afterInk": 142098,
+      "differencePercent": 80
+    },
+    {
+      "name": "plus",
+      "beforeInk": 218326,
+      "afterInk": 136517,
+      "differencePercent": 130
+    },
+    {
+      "name": "retry",
+      "beforeInk": 284141,
+      "afterInk": 205211,
+      "differencePercent": 133
+    },
+    {
+      "name": "close",
+      "beforeInk": 287250,
+      "afterInk": 167621,
+      "differencePercent": 130
+    },
+    {
+      "name": "check",
+      "beforeInk": 169917,
+      "afterInk": 103890,
+      "differencePercent": 155
+    },
+    {
+      "name": "training-step",
+      "beforeInk": 178180,
+      "afterInk": 154683,
+      "differencePercent": 38
+    },
+    {
+      "name": "trash",
+      "beforeInk": 731971,
+      "afterInk": 285494,
+      "differencePercent": 61
+    },
+    {
+      "name": "code",
+      "beforeInk": 592854,
+      "afterInk": 216584,
+      "differencePercent": 63
+    },
+    {
+      "name": "target",
+      "beforeInk": 573360,
+      "afterInk": 360371,
+      "differencePercent": 94
+    },
+    {
+      "name": "lifebuoy",
+      "beforeInk": 455216,
+      "afterInk": 167315,
+      "differencePercent": 88
+    },
+    {
+      "name": "sign-out",
+      "beforeInk": 408906,
+      "afterInk": 211689,
+      "differencePercent": 87
+    },
+    {
+      "name": "learning-rhythm",
+      "beforeInk": 404987,
+      "afterInk": 296581,
+      "differencePercent": 100
+    },
+    {
+      "name": "layers",
+      "beforeInk": 525112,
+      "afterInk": 237154,
+      "differencePercent": 60
+    }
+  ]
+}

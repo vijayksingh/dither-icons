@@ -52,3 +52,14 @@ Actual and half-speed playback reviewed through return. Eight reference poses at
 [Rest](../motion-evidence/platform-07/pose-0.png) · [Outline](../motion-evidence/platform-07/outline-62.png) · [Light solid](../motion-evidence/platform-07/light-solid-62.png)
 
 This completed concept study is retained at the user's request. Future candidates must follow the platform interface selection policy in [PLATFORM-ICONS.md](../PLATFORM-ICONS.md).
+
+
+## Outline material correction — 2026-10-02
+
+**Invariant and critique:** Source records remain while selected copies enter a separate tray. Outline the tray band and circular records; retain copy/source occlusion and the response after the final floor contact.
+
+**Material rule:** Reuse the reader's 0.5-unit Outline edges and transparent cores. Fine text and small semantic dots stay readable. Applicable: MOT-01, MOT-03, MOT-07, MOT-10, MOT-11, MOT-12, MOT-13 and MOT-15.
+
+**Storyboard retained:** Mark / Collect / Hold, 1540ms. Authored tracks remain: `batch-copy-0`, `batch-occlusion-0`, `batch-mark-0`, `batch-seat-0`, `batch-copy-1`, `batch-occlusion-1`, `batch-mark-1`, `batch-seat-1`, `batch-copy-2`, `batch-occlusion-2`, `batch-mark-2`, `batch-seat-2`, `batch-receipt`. This correction changes material, not the semantic action or timing.
+
+**Rendered review:** [Before/after and compact review](../outline-audit/README.md#correction-evidence) plus [actual 50% browser pose](../outline-audit/browser/pose-50.png). The six inspected poses are 0%, 10%, 35%, 50%, 75% and 100%; actor binding, material-switch pose preservation, keyboard completion and stillness checks are recorded with that evidence. User visual approval remains pending. Standalone SVG retains the authored CSS tracks; CSS hover still ends on departure while React finishes its gesture.

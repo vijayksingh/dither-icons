@@ -1,3 +1,4 @@
+import {MaterialPath} from './OutlineMaterial';
 import {useId} from 'react';
 import type {Draw} from './ExtendedArtwork';
 import {CHECK_ART} from './motions/check';
@@ -7,7 +8,7 @@ import {LOCK_ART} from './motions/lock';
 import {UNLOCK_ART,UNLOCK_REST_TRANSFORM} from './motions/unlock';
 
 type Props={name:string;draw:Draw;texture:'dither'|'solid'|'outline'};
-const stroke=(d:string,width=.65)=><path d={d} fill="none" stroke="currentColor" strokeWidth={width} strokeLinecap="round" strokeLinejoin="round"/>;
+const stroke=(d:string,width=.65)=><MaterialPath d={d} fill="none" stroke="currentColor" strokeWidth={width} strokeLinecap="round" strokeLinejoin="round"/>;
 const accent=(part:string,d:string,width=.65)=><g data-part={part} opacity="0">{stroke(d,width)}</g>;
 const MASK={maskUnits:'userSpaceOnUse' as const,x:-24,y:-24,width:72,height:72};
 
@@ -48,7 +49,7 @@ export function ActionArtwork({name,draw,texture}:Props){
    {texture==='outline'?stroke(LOCK_ART.shackleLine,1.8):draw(LOCK_ART.shackle)}
    {open&&accent('unlock-end',UNLOCK_ART.freeEnd,.7)}
   </g></g></g>
-  {texture==='outline'?<>{stroke(LOCK_ART.body,1.3)}<path d={LOCK_ART.keyhole}/></>:draw(LOCK_ART.body+LOCK_ART.keyhole)}
+  {texture==='outline'?<>{stroke(LOCK_ART.body,1.3)}<MaterialPath d={LOCK_ART.keyhole}/></>:draw(LOCK_ART.body+LOCK_ART.keyhole)}
   {open?accent('unlock-gap',UNLOCK_ART.gap,.6):<>
    {accent('lock-seats',LOCK_ART.seats,.7)}
    {accent('lock-response',LOCK_ART.response,.6)}

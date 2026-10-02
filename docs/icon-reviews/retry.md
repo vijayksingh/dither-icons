@@ -56,3 +56,14 @@ Reviewed at actual and half speed and at 0%, 10%, 28%, 36%, 45%, 65%, 82%, and 1
 ![retry, position 4, browser pose at 45%](../motion-evidence/platform-01/pose-45.png)
 
 [Rest](../motion-evidence/platform-01/pose-0.png) · [Preparation](../motion-evidence/platform-01/pose-10.png) · [Recovery](../motion-evidence/platform-01/pose-82.png) · [Outline](../motion-evidence/platform-01/outline-45.png) · [Light solid](../motion-evidence/platform-01/light-solid-45.png)
+
+
+## Outline material correction — 2026-10-02
+
+**Invariant and critique:** One continuous return arc remains attached to its arrowhead. Outline the actual arc and head silhouettes; retain the joint mask and the glint following the return carrier.
+
+**Material rule:** Reuse the reader's 0.5-unit Outline edges and transparent cores. Fine text and small semantic dots stay readable. Applicable: MOT-01, MOT-03, MOT-07, MOT-10, MOT-11, MOT-12, MOT-13 and MOT-15.
+
+**Storyboard retained:** Rewind / Catch / Ready, 1280ms. Authored tracks remain: `return-arrow`, `rewind-trace`, `catch-edge`, `catch-marks`. This correction changes material, not the semantic action or timing.
+
+**Rendered review:** [Before/after and compact review](../outline-audit/README.md#correction-evidence) plus [actual 50% browser pose](../outline-audit/browser/pose-50.png). The six inspected poses are 0%, 10%, 35%, 50%, 75% and 100%; actor binding, material-switch pose preservation, keyboard completion and stillness checks are recorded with that evidence. User visual approval remains pending. Standalone SVG retains the authored CSS tracks; CSS hover still ends on departure while React finishes its gesture.

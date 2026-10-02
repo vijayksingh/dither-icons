@@ -1,3 +1,4 @@
+import {MaterialCircle, MaterialPath} from './OutlineMaterial';
 import {useId} from 'react';
 import type {Draw} from './ExtendedArtwork';
 import {TENSOR_ART} from './motions/tensor';
@@ -6,9 +7,9 @@ import {CHECKPOINT_ART} from './motions/checkpoint';
 import {HINT_ART} from './motions/hint';
 
 type Props={name:string;draw:Draw;texture:'dither'|'solid'|'outline'};
-const line=(d:string,width=.6)=><path d={d} fill="none" stroke="currentColor" strokeWidth={width} strokeLinecap="round" strokeLinejoin="round"/>;
+const line=(d:string,width=.6)=><MaterialPath d={d} fill="none" stroke="currentColor" strokeWidth={width} strokeLinecap="round" strokeLinejoin="round"/>;
 const accent=(part:string,d:string,width=.6)=><g data-part={part} opacity="0">{line(d,width)}</g>;
-const circle=(x:number,y:number,r:number,w=1.4)=><circle cx={x} cy={y} r={r} fill="none" stroke="currentColor" strokeWidth={w}/>;
+const circle=(x:number,y:number,r:number,w=1.4)=><MaterialCircle cx={x} cy={y} r={r} fill="none" stroke="currentColor" strokeWidth={w}/>;
 
 export function PlatformArtwork({name,draw,texture}:Props){
  const id=useId().replace(/:/g,'')+'-platform';

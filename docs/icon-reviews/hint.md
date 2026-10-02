@@ -51,3 +51,14 @@ All lights are hidden at 0 and 1260ms. Reviewed actual/half speed and eight pose
 ![Hint illumination, position 4, at 45%](../motion-evidence/platform-02/pose-45.png)
 
 [Unlit](../motion-evidence/platform-02/pose-0.png) · [Conduction](../motion-evidence/platform-02/pose-28.png) · [Light solid](../motion-evidence/platform-02/light-solid-45.png) · [Dissipation](../motion-evidence/platform-02/pose-65.png)
+
+
+## Outline material correction — 2026-10-02
+
+**Invariant and critique:** A lightbulb retains its empty glass, filament and base. Open the glass and base bands; keep the filament fine and preserve the internal illumination carrier.
+
+**Material rule:** Reuse the reader's 0.5-unit Outline edges and transparent cores. Fine text and small semantic dots stay readable. Applicable: MOT-01, MOT-03, MOT-07, MOT-10, MOT-11, MOT-12, MOT-13 and MOT-15.
+
+**Storyboard retained:** Conduct / Illuminate / Ease, 1260ms. Authored tracks remain: `stem-light`, `filament-light`, `illumination`, `idea-top`, `idea-left`, `idea-right`. This correction changes material, not the semantic action or timing.
+
+**Rendered review:** [Before/after and compact review](../outline-audit/README.md#correction-evidence) plus [actual 50% browser pose](../outline-audit/browser/pose-50.png). The six inspected poses are 0%, 10%, 35%, 50%, 75% and 100%; actor binding, material-switch pose preservation, keyboard completion and stillness checks are recorded with that evidence. User visual approval remains pending. Standalone SVG retains the authored CSS tracks; CSS hover still ends on departure while React finishes its gesture.

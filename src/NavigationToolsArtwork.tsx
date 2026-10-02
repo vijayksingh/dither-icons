@@ -1,13 +1,16 @@
-import {useId,type ReactNode} from 'react';
+import {MaterialCircle, MaterialPath} from './OutlineMaterial';
+import {useContext,useId,type ReactNode} from 'react';
+import {OutlineMaterial} from './OutlineMaterial';
 import type {Draw} from './ExtendedArtwork';
 import {BACK_ART} from './motions/arrow-left';
 import {HISTORY_ART} from './motions/history';
 import {PANEL_CLOSE_ART,PANEL_CLOSE_GEOMETRY} from './motions/panel-left-close';
 import {ZOOM_OUT_ART,ZOOM_OUT_GEOMETRY} from './motions/zoom-out';
-const line=(d:string,width=.6)=><path d={d} fill="none" stroke="currentColor" strokeWidth={width} strokeLinecap="round" strokeLinejoin="round"/>;
+const line=(d:string,width=.6)=><MaterialPath d={d} fill="none" stroke="currentColor" strokeWidth={width} strokeLinecap="round" strokeLinejoin="round"/>;
 const accent=(part:string,children:ReactNode)=><g data-part={part} opacity="0">{children}</g>;
 export function NavigationToolsArtwork({name,draw,texture}:{name:string;draw:Draw;texture:'dither'|'solid'|'outline'}){
  const id=useId().replace(/:/g,'')+'-navigation';let contourIndex=0;
+ const hollowOutline=useContext(OutlineMaterial);
  // Grain fills a round-stroked contour; geometry is independent of pixel marks.
  const ink=(d:string,width=1.65)=>{
   const maskId=`${id}-${contourIndex++}`;
@@ -20,10 +23,13 @@ export function NavigationToolsArtwork({name,draw,texture}:{name:string;draw:Dra
   {accent('back-arrival',line(BACK_ART.arrival,.55))}
  </>;
  if(name==='history')return <>
+  {hollowOutline&&<defs><mask id={`${id}-history-hub`} maskUnits="userSpaceOnUse" x="-24" y="-24" width="72" height="72"><rect x="-24" y="-24" width="72" height="72" fill="white"/><circle cx="12" cy="12" r="1.25" fill="black"/></mask></defs>}
   {ink(HISTORY_ART.ring,1.6)}{ink(HISTORY_ART.head,1.6)}
+  <g mask={hollowOutline?`url(#${id}-history-hub)`:undefined}>
   <g data-part="history-minute">{ink(HISTORY_ART.minute,1.25)}</g>
   <g data-part="history-hour">{ink(HISTORY_ART.hour,1.25)}</g>
-  <circle cx="12" cy="12" r="1.25"/>
+  </g>
+  <MaterialCircle cx="12" cy="12" r="1.25"/>
   {accent('history-trace',line(HISTORY_ART.trace,.7))}
   {accent('history-recall',line(HISTORY_ART.reply,.55))}
  </>;
@@ -43,10 +49,10 @@ export function NavigationToolsArtwork({name,draw,texture}:{name:string;draw:Dra
  if(name==='zoom-out'){
   const G=ZOOM_OUT_GEOMETRY;
   return <>
-   {texture==='outline'?<><circle cx="9.8" cy="9.8" r="5.48" fill="none" stroke="currentColor" strokeWidth="1.65"/>{line('M13.75 13.75 20.45 20.45',1.85)}</>:draw(ZOOM_OUT_ART.body)}
+   {texture==='outline'?<><MaterialCircle cx="9.8" cy="9.8" r="5.48" fill="none" stroke="currentColor" strokeWidth="1.65"/>{line('M13.75 13.75 20.45 20.45',1.85)}</>:draw(ZOOM_OUT_ART.body)}
    {ink(ZOOM_OUT_ART.minus,1.25)}
    <g data-part="zoom-field-position">{accent('zoom-field',line(ZOOM_OUT_ART.field,.6))}</g>
-   {G.points.map(([x,y],i)=><g key={i}>{accent(`zoom-context-${i}`,<circle cx={x} cy={y} r=".43"/>)}</g>)}
+   {G.points.map(([x,y],i)=><g key={i}>{accent(`zoom-context-${i}`,<MaterialCircle cx={x} cy={y} r=".43"/>)}</g>)}
   </>;
  }
  return null;

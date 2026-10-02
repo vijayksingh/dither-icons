@@ -1,0 +1,16 @@
+{
+  "reduced": {
+    "animations": 0,
+    "icons": 33,
+    "reduced": true
+  },
+  "reducedAfterTrigger": {
+    "animations": 0,
+    "playing": 0
+  },
+  "motionOff": {
+    "animations": 0,
+    "icons": 33,
+    "runtime": 0
+  }
+}

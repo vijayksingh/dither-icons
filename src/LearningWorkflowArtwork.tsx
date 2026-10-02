@@ -1,3 +1,4 @@
+import {MaterialCircle, MaterialPath, MaterialRect} from './OutlineMaterial';
 import {useId} from 'react';
 import type {Draw} from './ExtendedArtwork';
 import {CODE_RUN_ART} from './motions/code-run';
@@ -5,9 +6,9 @@ import {SUITE_ART,SUITE_CASES,SUITE_GEOMETRY} from './motions/test-suite';
 import {MILESTONE_ART} from './motions/milestone';
 import {REVIEW_ART,REVIEW_GEOMETRY} from './motions/concept-review';
 type Props={name:string;draw:Draw;texture:'dither'|'solid'|'outline'};
-const line=(d:string,width=.65)=><path d={d} fill="none" stroke="currentColor" strokeWidth={width} strokeLinecap="round" strokeLinejoin="round"/>;
+const line=(d:string,width=.65)=><MaterialPath d={d} fill="none" stroke="currentColor" strokeWidth={width} strokeLinecap="round" strokeLinejoin="round"/>;
 const accent=(part:string,d:string,width=.65)=><g data-part={part} opacity="0">{line(d,width)}</g>;
-const field=<rect x="-24" y="-24" width="72" height="72" fill="white"/>;
+const field=<MaterialRect x="-24" y="-24" width="72" height="72" fill="white"/>;
 const MASK={maskUnits:'userSpaceOnUse' as const,x:-24,y:-24,width:72,height:72};
 export function LearningWorkflowArtwork({name,draw,texture}:Props){
  const id=useId().replace(/:/g,'')+'-workflow';
@@ -32,7 +33,7 @@ export function LearningWorkflowArtwork({name,draw,texture}:Props){
   {SUITE_CASES.map((c,i)=><g key={i}>
    {texture==='outline'?line(SUITE_ART.centerline(c.x,c.top),.9):draw(SUITE_ART.glass(c.x,c.top))}
    {line(`M${c.x-2.2} ${c.top}h4.4`,1.05)}
-   <g clipPath={`url(#${id}-chamber-${i})`}><g data-part={`case-${i}`}><circle cx={c.x} cy={c.startY} r={SUITE_GEOMETRY.specimenRadius}/></g></g>
+   <g clipPath={`url(#${id}-chamber-${i})`}><g data-part={`case-${i}`}><MaterialCircle cx={c.x} cy={c.startY} r={SUITE_GEOMETRY.specimenRadius}/></g></g>
    {accent(`seat-light-${i}`,`M${c.x-1.15} 18.2q1.15.55 2.3 0`,.6)}
   </g>)}
   {accent('suite-datum',SUITE_ART.datum,.6)}
@@ -63,7 +64,7 @@ export function LearningWorkflowArtwork({name,draw,texture}:Props){
    {texture==='outline'?<>{line(REVIEW_ART.frontLine,1.4)}{line(REVIEW_ART.idea,1)}{line(REVIEW_ART.content,.85)}</>:<g mask={`url(#${id}-content)`}>{draw(REVIEW_ART.front)}</g>}
   </g>
   <g opacity=".7">{line(REVIEW_ART.arc+REVIEW_ART.head,REVIEW_GEOMETRY.stroke)}</g>
-  <g mask={`url(#${id}-return)`}><g data-part="recall-trace" opacity="0"><circle cx={REVIEW_GEOMETRY.tail[0]} cy={REVIEW_GEOMETRY.tail[1]} r="1.1"/></g></g>
+  <g mask={`url(#${id}-return)`}><g data-part="recall-trace" opacity="0"><MaterialCircle cx={REVIEW_GEOMETRY.tail[0]} cy={REVIEW_GEOMETRY.tail[1]} r="1.1"/></g></g>
   {accent('recall-witness',REVIEW_ART.witness,.65)}
  </>;
  return null;

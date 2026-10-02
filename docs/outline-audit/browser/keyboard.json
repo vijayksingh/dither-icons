@@ -1,0 +1,206 @@
+{
+  "checks": [
+    {
+      "count": 6,
+      "expected": 6,
+      "name": "terminal",
+      "playing": true
+    },
+    {
+      "count": 9,
+      "expected": 9,
+      "name": "cpu",
+      "playing": true
+    },
+    {
+      "count": 7,
+      "expected": 7,
+      "name": "test-suite",
+      "playing": true
+    },
+    {
+      "count": 9,
+      "expected": 9,
+      "name": "file-explorer",
+      "playing": true
+    },
+    {
+      "count": 3,
+      "expected": 3,
+      "name": "arrow-left",
+      "playing": true
+    },
+    {
+      "count": 4,
+      "expected": 4,
+      "name": "history",
+      "playing": true
+    },
+    {
+      "count": 6,
+      "expected": 6,
+      "name": "workspace",
+      "playing": true
+    },
+    {
+      "count": 9,
+      "expected": 9,
+      "name": "experiment-compare",
+      "playing": true
+    },
+    {
+      "count": 4,
+      "expected": 4,
+      "name": "search",
+      "playing": true
+    },
+    {
+      "count": 6,
+      "expected": 6,
+      "name": "zoom-out",
+      "playing": true
+    },
+    {
+      "count": 6,
+      "expected": 6,
+      "name": "path",
+      "playing": true
+    },
+    {
+      "count": 7,
+      "expected": 7,
+      "name": "gradient-check",
+      "playing": true
+    },
+    {
+      "count": 13,
+      "expected": 13,
+      "name": "batch-sampling",
+      "playing": true
+    },
+    {
+      "count": 8,
+      "expected": 8,
+      "name": "sigma",
+      "playing": true
+    },
+    {
+      "count": 6,
+      "expected": 6,
+      "name": "save-preferences",
+      "playing": true
+    },
+    {
+      "count": 4,
+      "expected": 4,
+      "name": "panel-left-close",
+      "playing": true
+    },
+    {
+      "count": 8,
+      "expected": 8,
+      "name": "network",
+      "playing": true
+    },
+    {
+      "count": 6,
+      "expected": 6,
+      "name": "hint",
+      "playing": true
+    },
+    {
+      "count": 3,
+      "expected": 3,
+      "name": "gauge",
+      "playing": true
+    },
+    {
+      "count": 6,
+      "expected": 6,
+      "name": "sliders",
+      "playing": true
+    },
+    {
+      "count": 8,
+      "expected": 8,
+      "name": "expand-view",
+      "playing": true
+    },
+    {
+      "count": 6,
+      "expected": 6,
+      "name": "plus",
+      "playing": true
+    },
+    {
+      "count": 4,
+      "expected": 4,
+      "name": "retry",
+      "playing": true
+    },
+    {
+      "count": 6,
+      "expected": 6,
+      "name": "close",
+      "playing": true
+    },
+    {
+      "count": 3,
+      "expected": 3,
+      "name": "check",
+      "playing": true
+    },
+    {
+      "count": 7,
+      "expected": 7,
+      "name": "training-step",
+      "playing": true
+    },
+    {
+      "count": 6,
+      "expected": 6,
+      "name": "trash",
+      "playing": true
+    },
+    {
+      "count": 8,
+      "expected": 8,
+      "name": "code",
+      "playing": true
+    },
+    {
+      "count": 5,
+      "expected": 5,
+      "name": "target",
+      "playing": true
+    },
+    {
+      "count": 6,
+      "expected": 6,
+      "name": "lifebuoy",
+      "playing": true
+    },
+    {
+      "count": 5,
+      "expected": 5,
+      "name": "sign-out",
+      "playing": true
+    },
+    {
+      "count": 4,
+      "expected": 4,
+      "name": "learning-rhythm",
+      "playing": true
+    },
+    {
+      "count": 4,
+      "expected": 4,
+      "name": "layers",
+      "playing": true
+    }
+  ],
+  "settled": {
+    "playing": 0,
+    "remaining": 0
+  }
+}

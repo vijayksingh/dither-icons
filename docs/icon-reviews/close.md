@@ -35,3 +35,14 @@ angles: fixed; full strokes remain visible throughout
 [Current evidence](../motion-evidence/refinement-06-rework/): eight inspected poses, both speeds, keyboard departure, three materials at the same 50% frame, reduced motion and compact SVG exports. Tests verify the moving knockout clock and finish-after-cross ordering. This replaces the rejected contraction; user acceptance of the replacement remains open.
 
 ![Close, Plus, Lock and Unlock at 60 percent](../motion-evidence/refinement-06-rework/pose-60.png)
+
+
+## Outline material correction — 2026-10-02
+
+**Invariant and critique:** Two crossing diagonals remain an X rather than a rotation gesture. Open both diagonal bodies with their original crossing occlusion; sequential marking retains the tip response.
+
+**Material rule:** Reuse the reader's 0.5-unit Outline edges and transparent cores. Fine text and small semantic dots stay readable. Applicable: MOT-01, MOT-03, MOT-07, MOT-10, MOT-11, MOT-12, MOT-13 and MOT-15.
+
+**Storyboard retained:** Mark / Cross / Resolve, 820ms. Authored tracks remain: `close-down`, `close-up`, `close-occlusion`, `mark-edge`, `cross-edge`, `cross-finish`. This correction changes material, not the semantic action or timing.
+
+**Rendered review:** [Before/after and compact review](../outline-audit/README.md#correction-evidence) plus [actual 50% browser pose](../outline-audit/browser/pose-50.png). The six inspected poses are 0%, 10%, 35%, 50%, 75% and 100%; actor binding, material-switch pose preservation, keyboard completion and stillness checks are recorded with that evidence. User visual approval remains pending. Standalone SVG retains the authored CSS tracks; CSS hover still ends on departure while React finishes its gesture.

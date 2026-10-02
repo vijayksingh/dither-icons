@@ -1,3 +1,4 @@
+import {MaterialPath} from './OutlineMaterial';
 import {useId} from 'react';
 import type {Draw} from './ExtendedArtwork';
 import {PLAY_ART} from './motions/play';
@@ -6,7 +7,7 @@ import {VOLUME_ART} from './motions/volume';
 import {CODE_ART} from './motions/code';
 
 type Props={name:string;draw:Draw;texture:'dither'|'solid'|'outline'};
-const line=(d:string,width=.6)=><path d={d} fill="none" stroke="currentColor" strokeWidth={width} strokeLinecap="round" strokeLinejoin="round"/>;
+const line=(d:string,width=.6)=><MaterialPath d={d} fill="none" stroke="currentColor" strokeWidth={width} strokeLinecap="round" strokeLinejoin="round"/>;
 const accent=(part:string,d:string,width=.6)=><g data-part={part} opacity="0">{line(d,width)}</g>;
 
 /** Highlights belong to their moving surfaces. Exterior responses stay in the
